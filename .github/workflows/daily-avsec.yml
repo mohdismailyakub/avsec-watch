@@ -1,0 +1,40 @@
+name: Daily AVSEC Watch
+
+on:
+  schedule:
+    - cron: "0 23 * * *"   # 23:00 UTC = 07:00 MYT (Sarawak)
+  workflow_dispatch: {}     # lets you run it manually from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Pull intel + send email
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+        run: node pull.mjs
+
+      - name: Commit updated data.json
+        run: |
+          git config user.name "avsec-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data.json
+          git commit -m "Daily AVSEC pull $(date -u +%F)" || echo "No changes to commit"
+          git push
