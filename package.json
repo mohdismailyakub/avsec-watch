@@ -1,0 +1,9 @@
+{
+  "name": "avsec-watch",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "nodemailer": "^6.9.16"
+  }
+}
