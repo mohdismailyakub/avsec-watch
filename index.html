@@ -17,7 +17,7 @@
   }
   *{box-sizing:border-box}
   html,body{margin:0}
-  body{background:var(--bg);color:var(--ink);font-family:var(--sans);min-height:100vh;-webkit-font-smoothing:antialiased;padding:16px}
+  body{background:linear-gradient(135deg,#e9cf72 0%,#e7a23f 100%);background-attachment:fixed;color:var(--ink);font-family:var(--sans);min-height:100vh;-webkit-font-smoothing:antialiased;padding:16px}
   .accent{position:fixed;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--red),var(--gold));z-index:5}
   .wrap{max-width:1140px;margin:0 auto}
   a{color:var(--red);text-decoration:none}
@@ -25,8 +25,8 @@
   /* header */
   .ribbon{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:14px 18px;
     display:flex;align-items:center;gap:14px;flex-wrap:wrap;box-shadow:0 6px 22px -16px #16202e40}
-  .logo{height:46px;width:auto;display:block;border-radius:6px}
-  .titlewrap{display:flex;flex-direction:column;gap:2px}
+  .logo{height:64px;width:auto;display:block;border-radius:8px}
+  .titlewrap{display:flex;flex-direction:column;gap:2px;margin-left:6px}
   .brand{font-family:var(--cond);font-weight:700;letter-spacing:2.5px;font-size:21px;text-transform:uppercase;line-height:1}
   .brand b{color:var(--red);font-weight:700}
   .tagline{font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:1.5px;text-transform:uppercase}
@@ -70,8 +70,8 @@
   .empty{color:var(--muted);font-size:13px;font-family:var(--mono);padding:26px;grid-column:1/-1;text-align:center;border:1px dashed var(--border2);border-radius:12px;line-height:1.7}
 
   /* charts */
-  .secLabel{font-family:var(--mono);font-size:10px;letter-spacing:2.5px;color:var(--gold);text-transform:uppercase;margin:26px 0 11px;display:flex;align-items:center;gap:8px}
-  .secLabel:before{content:"";width:14px;height:2px;background:var(--gold);display:inline-block;border-radius:2px}
+  .secLabel{font-family:var(--mono);font-size:10px;letter-spacing:2.5px;color:#ffffff;text-transform:uppercase;margin:26px 0 11px;display:flex;align-items:center;gap:8px}
+  .secLabel:before{content:"";width:14px;height:2px;background:#ffffff;display:inline-block;border-radius:2px}
   .charts{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:13px}
   .chart{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:15px 15px 11px;box-shadow:0 6px 22px -18px #16202e40}
   .clabel{font-size:11.5px;color:var(--ink);font-family:var(--mono);margin-bottom:10px;letter-spacing:.3px;font-weight:600}
@@ -88,7 +88,7 @@
   #tip b{font-weight:700}
   #tip .tdot{display:inline-block;width:9px;height:9px;border-radius:3px;margin-right:6px;vertical-align:middle}
 
-  .foot{text-align:center;color:var(--faint);font-family:var(--mono);font-size:10px;margin-top:24px;letter-spacing:1.5px;text-transform:uppercase}
+  .foot{text-align:center;color:rgba(255,255,255,.92);font-family:var(--mono);font-size:10px;margin-top:24px;letter-spacing:1.5px;text-transform:uppercase}
 </style>
 </head>
 <body>
