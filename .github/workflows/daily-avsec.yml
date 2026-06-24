@@ -8,6 +8,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: avsec-watch
+  cancel-in-progress: false
+
 jobs:
   pull:
     runs-on: ubuntu-latest
@@ -33,10 +37,9 @@ jobs:
         run: node pull.mjs
 
       - name: Commit updated data.json
-        run: |
-          git config user.name "avsec-bot"
-          git config user.email "actions@users.noreply.github.com"
-          git add data.json
-          git commit -m "Daily AVSEC pull $(date -u +%F)" || echo "No changes to commit"
-          git pull --rebase origin main
-          git push
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Daily AVSEC pull"
+          file_pattern: data.json
+          commit_user_name: avsec-bot
+          commit_user_email: actions@users.noreply.github.com
