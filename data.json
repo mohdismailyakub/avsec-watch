@@ -1,70 +1,96 @@
 {
-  "generatedAt": "2026-06-24T12:08:48.400Z",
+  "generatedAt": "2026-06-24T20:10:00+08:00",
+  "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
-      "date": "2026-06-24",
-      "briefing": "Global aviation security remains under significant pressure on multiple fronts, with GPS spoofing attacks confirmed at major Indian airports, cyber intrusions targeting airline booking and catering supply chains across Asia-Pacific and Europe, and escalating cartel drone incursions forcing temporary closures of U.S. civil airspace. Regulators in Europe (EASA Part-IS) and internationally (ICAO Second Edition Global Aviation Security Plan) are tightening binding cybersecurity and UAS threat frameworks, but compliance gaps and fragmented counter-drone architectures continue to leave critical vulnerabilities.",
+      "date": "2025-07-15",
+      "briefing": "Scattered Spider's social-engineering campaign sweeps global aviation, hitting carriers across three continents; analysts warn cyberattacks on the sector have surged sharply year-on-year.",
       "items": [
-        {
-          "title": "GPS Spoofing & Jamming Confirmed at Eight Indian Airports",
-          "category": "Incident",
-          "region": "Asia-Pacific",
-          "severity": "High",
-          "summary": "India's Civil Aviation Minister confirmed GPS spoofing and jamming at Delhi, Mumbai, Kolkata, Hyderabad, Bangalore, Chennai, and Amritsar airports, forcing pilots onto backup navigation procedures.",
-          "source": "The Register",
-          "url": "https://www.theregister.com/2025/12/03/india_gps_spoofing/",
-          "date": "2025-12-03"
-        },
-        {
-          "title": "Cartel Drone Incursion Forces El Paso Airport Airspace Closure",
-          "category": "Incident",
-          "region": "North America",
-          "severity": "High",
-          "summary": "Alleged cartel drones breached US airspace near El Paso International Airport; DoD neutralised threat, FAA closed airspace—only second such closure since 9/11.",
-          "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/02/11/mexican-cartel-drones-breach-us-airspace-prompt-el-paso-airport-closure-admin-says/",
-          "date": "2026-02-11"
-        },
-        {
-          "title": "Aviation Booking Software Provider Hit by MFA-Fatigue Phishing Campaign",
-          "category": "Incident",
-          "region": "North America",
-          "severity": "High",
-          "summary": "A booking software provider serving multiple major airlines suffered credential compromise via MFA fatigue, granting attackers access to Microsoft 365, cloud admin, and OT systems.",
-          "source": "HALOCK Security Labs",
-          "url": "https://www.halock.com/top-cyber-threats-in-the-aviation-sector/",
-          "date": "2026-03-01"
-        },
-        {
-          "title": "Korean Air Discloses 30,000 Employee Records Stolen via Oracle EBS Supply-Chain Hack",
-          "category": "Incident",
-          "region": "Asia-Pacific",
-          "severity": "High",
-          "summary": "Korean Air confirmed hackers stole names and bank account details of ~30,000 employees via a breach of catering supplier KC&D linked to the Oracle EBS zero-day campaign.",
-          "source": "SecurityWeek",
-          "url": "https://www.securityweek.com/korean-air-data-compromised-in-oracle-ebs-hack/",
-          "date": "2025-12-30"
-        },
-        {
-          "title": "EASA Part-IS Information Security Regulation Now Fully Applicable Across EU Aviation Ecosystem",
-          "category": "Regulatory",
-          "region": "Europe",
-          "severity": "Medium",
-          "summary": "EASA Part-IS binding cybersecurity rules, covering airlines, MROs, airports and ANSPs, reached full applicability on 22 February 2026, requiring structured ISMS aligned with aviation safety objectives.",
-          "source": "Jones Day",
-          "url": "https://www.jonesday.com/en/insights/2026/02/civil-aviation-cybersecurity-easa-partis-sets-new-information-security-obligations",
-          "date": "2026-02-22"
-        },
-        {
-          "title": "ICAO Assembly Adopts Second Edition Global Aviation Security Plan with UAS and GNSS Threat Mandate",
-          "category": "Regulatory",
-          "region": "Asia-Pacific",
-          "severity": "Medium",
-          "summary": "ICAO's 192-member Assembly endorsed the Second Edition Global Aviation Security Plan and directed a dedicated work programme on weaponised UAS and GNSS radio frequency interference in conflict zones.",
-          "source": "ICAO Newsroom",
-          "url": "https://www.icao.int/news/icao-enhances-global-aviation-safety-and-security-framework",
-          "date": "2025-10-03"
-        }
+        {"title":"Qantas breach exposes up to 6M customer records","category":"Incident","region":"Asia-Pacific","severity":"High","summary":"Scattered Spider suspected in a breach exposing personal data of up to six million Qantas customers via a third party.","source":"Help Net Security","url":"https://www.helpnetsecurity.com/2025/07/21/aviation-industry-cybersecurity-crisis/","date":"2025-07-02"},
+        {"title":"Scattered Spider hits WestJet and Hawaiian Airlines","category":"Incident","region":"North America","severity":"High","summary":"Coordinated social-engineering attacks disrupted internal systems and apps at North American carriers.","source":"Aerospace Global News","url":"https://aerospaceglobalnews.com/news/airline-airport-aviation-cyberattacks-2025/","date":"2025-06-13"},
+        {"title":"Air France-KLM third-party platform breached","category":"Incident","region":"Europe","severity":"Medium","summary":"Unauthorised activity detected on an external customer-service platform used by the carriers.","source":"Aerospace Global News","url":"https://aerospaceglobalnews.com/news/airline-airport-aviation-cyberattacks-2025/","date":"2025-07-10"},
+        {"title":"Thales: aviation cyberattacks up ~600%","category":"Threat","region":"Europe","severity":"Medium","summary":"Thales reported aviation cyberattacks rose roughly 600 percent year-on-year, with dozens of ransomware incidents logged.","source":"Help Net Security","url":"https://www.helpnetsecurity.com/2025/07/21/aviation-industry-cybersecurity-crisis/","date":"2025-07-21"}
+      ]
+    },
+    {
+      "date": "2025-08-15",
+      "briefing": "A quieter month for incidents but heavy on rule-making: regulators on both sides of the Atlantic tighten aviation cyber obligations.",
+      "items": [
+        {"title":"TSA issues aviation cybersecurity amendments","category":"Regulatory","region":"North America","severity":"Medium","summary":"TSA rolled out amendments mandating stronger cyber controls and incident-reporting protocols for the aviation sector.","source":"Breached.Company","url":"https://breached.company/aviation-under-siege-the-2025-airline-and-airport-cyberattack-crisis/","date":"2025-08-10"},
+        {"title":"EASA Part-IS information-security rules near deadline","category":"Regulatory","region":"Europe","severity":"Medium","summary":"EASA Part-IS requirements extend information-security duties to airlines, airports and ANSPs with phased deadlines into 2026.","source":"Help Net Security","url":"https://www.helpnetsecurity.com/2025/07/21/aviation-industry-cybersecurity-crisis/","date":"2025-08-12"},
+        {"title":"ICAO advances Cybersecurity Action Plan","category":"Regulatory","region":"North America","severity":"Low","summary":"ICAO pushed its Cybersecurity Action Plan focusing on governance, faster incident response and security-by-design.","source":"Help Net Security","url":"https://www.helpnetsecurity.com/2025/07/21/aviation-industry-cybersecurity-crisis/","date":"2025-08-20"}
+      ]
+    },
+    {
+      "date": "2025-09-19",
+      "briefing": "Europe's worst aviation security week in years: a supply-chain ransomware attack paralyses major-hub check-in while a wave of airport drone incursions triggers hybrid-threat fears.",
+      "items": [
+        {"title":"Collins Aerospace MUSE ransomware grounds check-in","category":"Incident","region":"Europe","severity":"High","summary":"HardBit ransomware crippled the Collins MUSE check-in platform, forcing manual processing at Heathrow, Brussels, Berlin and Dublin.","source":"Wikipedia","url":"https://en.wikipedia.org/wiki/Collins_Aerospace_cyberattack","date":"2025-09-19"},
+        {"title":"Copenhagen and Oslo airports shut by drones","category":"Incident","region":"Europe","severity":"High","summary":"Large drones forced a four-hour Copenhagen shutdown and a brief Oslo closure; Denmark called it a hybrid attack on critical infrastructure.","source":"CNN","url":"https://www.cnn.com/2025/09/25/world/drones-denmark-hybrid-attack-wwk-intl","date":"2025-09-22"},
+        {"title":"Wave of drone closures across Danish airports","category":"Incident","region":"Europe","severity":"High","summary":"Repeated sightings closed Aalborg, Billund and other Danish airports over several nights, with military sites also affected.","source":"Euronews","url":"https://www.euronews.com/my-europe/2025/11/20/fact-checking-europes-drone-problem-why-are-airports-shuttering-over-drone-sightings","date":"2025-09-25"},
+        {"title":"ENISA confirms airport outage was ransomware","category":"Regulatory","region":"Europe","severity":"Medium","summary":"The EU cyber agency ENISA confirmed the Collins airport disruption as a ransomware attack and opened investigations.","source":"Security Affairs","url":"https://securityaffairs.com/182363/hacking/a-cyberattack-on-collins-aerospace-disrupted-operations-at-major-european-airports.html","date":"2025-09-22"}
+      ]
+    },
+    {
+      "date": "2025-10-15",
+      "briefing": "The drone disruption spreads south and west across Europe; governments increasingly frame the incursions as state-linked hybrid activity.",
+      "items": [
+        {"title":"Munich Airport suspends flights twice over drones","category":"Incident","region":"Europe","severity":"High","summary":"Munich halted operations twice within 24 hours over drone sightings, stranding thousands of passengers.","source":"Wikipedia","url":"https://en.wikipedia.org/wiki/2025_European_drone_sightings","date":"2025-10-03"},
+        {"title":"Brussels and Liege airports closed by drones","category":"Incident","region":"Europe","severity":"High","summary":"Belgian airports briefly closed amid sightings; drones also seen over military bases and a nuclear plant.","source":"Wikipedia","url":"https://en.wikipedia.org/wiki/2025_European_drone_sightings","date":"2025-10-20"},
+        {"title":"Germany assesses drones as likely Russian espionage","category":"Threat","region":"Europe","severity":"High","summary":"German officials judged many overflights as probable state-linked espionage aimed at unsettling the public.","source":"Euronews","url":"https://www.euronews.com/my-europe/2025/11/20/fact-checking-europes-drone-problem-why-are-airports-shuttering-over-drone-sightings","date":"2025-10-06"}
+      ]
+    },
+    {
+      "date": "2025-11-15",
+      "briefing": "Counter-drone response moves from improvisation to coordination, with allied deployments in Europe and a US legal-authority push.",
+      "items": [
+        {"title":"Allies send counter-drone help to Belgium","category":"Incident","region":"Europe","severity":"High","summary":"Near-daily incursions over Belgian airports and bases prompted UK, France and Germany to deploy counter-drone support.","source":"Euronews","url":"https://www.euronews.com/my-europe/2025/11/20/fact-checking-europes-drone-problem-why-are-airports-shuttering-over-drone-sightings","date":"2025-11-09"},
+        {"title":"US drone incursions near airports up 25%+","category":"Regulatory","region":"North America","severity":"Medium","summary":"FAA data showed a sharp rise in airport drone incursions, intensifying the counter-UAS authority debate in Congress.","source":"DroneUp","url":"https://www.droneup.com/news/congressional-hearing","date":"2025-11-21"}
+      ]
+    },
+    {
+      "date": "2025-12-15",
+      "briefing": "Year-end sees authorities hard-coding the autumn drone lessons into temporary bans and broader take-down powers.",
+      "items": [
+        {"title":"Denmark and EU impose drone bans around summits","category":"Regulatory","region":"Europe","severity":"Medium","summary":"Temporary civilian drone bans were placed around airports and critical sites during high-profile EU events.","source":"Al Jazeera","url":"https://www.aljazeera.com/news/2025/9/28/denmark-bans-drone-flights-after-latest-drone-sightings-at-military-bases","date":"2025-12-05"},
+        {"title":"US expands counter-UAS take-down authority","category":"Regulatory","region":"North America","severity":"Medium","summary":"Congress moved to let more federal, state and local agencies disable rogue drones, subject to training.","source":"NPR","url":"https://www.npr.org/2026/02/27/g-s1-111794/lawmakers-say-us-military-used-laser-to-take-down-border-protection-drone","date":"2025-12-18"}
+      ]
+    },
+    {
+      "date": "2026-01-15",
+      "briefing": "The new year opens with drones firmly reframed from nuisance to national-security and business-continuity risk.",
+      "items": [
+        {"title":"Cartel border drones reframed as security threat","category":"Threat","region":"North America","severity":"Medium","summary":"Washington's terrorist designation of cartels recast persistent border drone activity as a national-security matter.","source":"Fox News","url":"https://www.foxnews.com/opinion/border-airspace-breached-cartel-drones-test-us-defenses-raise-new-fears","date":"2026-01-12"},
+        {"title":"2026 outlook: drones as a repeatable disruption tactic","category":"Threat","region":"North America","severity":"Low","summary":"Analysts warned drone incursions now behave like a low-cost, repeatable business-interruption tactic against critical sites.","source":"DroneShield","url":"https://www.droneshield.com/blog/the-new-airspace-risk-what-security-teams-need-to-know-about-drone-threats-2026","date":"2026-01-20"}
+      ]
+    },
+    {
+      "date": "2026-02-11",
+      "briefing": "Interagency miscoordination over counter-drone lasers shuts a major US airport twice in a month, the most disruptive domestic airspace closures since 9/11.",
+      "items": [
+        {"title":"FAA abruptly shuts El Paso airspace, then reverses","category":"Incident","region":"North America","severity":"High","summary":"The FAA grounded El Paso flights for a stated 10 days then lifted it hours later, tied to a counter-drone laser test near Fort Bliss.","source":"CNBC","url":"https://www.cnbc.com/2026/02/11/faa-el-paso-airport.html","date":"2026-02-11"},
+        {"title":"Second laser incident closes El Paso airspace again","category":"Incident","region":"North America","severity":"High","summary":"Two weeks later the military downed a CBP drone with a laser, prompting another El Paso closure and congressional criticism.","source":"NPR","url":"https://www.npr.org/2026/02/27/g-s1-111794/lawmakers-say-us-military-used-laser-to-take-down-border-protection-drone","date":"2026-02-26"}
+      ]
+    },
+    {
+      "date": "2026-03-15",
+      "briefing": "A quieter month dominated by follow-through: regulators press supply-chain resilience after the autumn ransomware shock.",
+      "items": [
+        {"title":"Post-Collins aviation supply-chain resilience review","category":"Regulatory","region":"Europe","severity":"Low","summary":"Reviews pushed EU supply-chain resilience and NIS2-aligned incident-reporting expectations for aviation technology vendors.","source":"Wikipedia","url":"https://en.wikipedia.org/wiki/Collins_Aerospace_cyberattack","date":"2026-03-15"}
+      ]
+    },
+    {
+      "date": "2026-05-08",
+      "briefing": "A fatal perimeter breach at a major US hub puts airfield intrusion and perimeter integrity back in the spotlight.",
+      "items": [
+        {"title":"Denver airport perimeter breach fatality","category":"Incident","region":"North America","severity":"High","summary":"A man breached Denver International's perimeter and was killed on a runway as a jet took off, reviving scrutiny of perimeter security.","source":"ASIS Security Management","url":"https://www.asisonline.org/security-management-magazine/latest-news/today-in-security/2026/may/denver-airport-breach/","date":"2026-05-08"}
+      ]
+    },
+    {
+      "date": "2026-06-24",
+      "briefing": "Backfill loaded. Live daily pull takes over from here; this slot auto-fills with today's global AVSEC briefing on the next Action run.",
+      "items": [
+        {"title":"System ready - awaiting first live pull","category":"Technology","region":"Asia-Pacific","severity":"Low","summary":"Historical backfill compiled. From here the GitHub Action accumulates fresh intel each morning.","source":"HSSB AVSEC System","url":"","date":"2026-06-24"}
       ]
     }
   ]
