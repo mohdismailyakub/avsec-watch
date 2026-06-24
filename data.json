@@ -1,19 +1,69 @@
 {
-  "generatedAt": "2026-06-24T07:00:00+08:00",
+  "generatedAt": "2026-06-24T12:08:48.400Z",
   "days": [
     {
       "date": "2026-06-24",
-      "briefing": "Placeholder — sistem belum jalan pull pertama. Lepas GitHub Action diaktifkan, ruang ini akan auto-isi dengan briefing AVSEC global sebenar setiap pagi (incident + regulatory, seluruh dunia).",
+      "briefing": "Global aviation security remains under significant pressure on multiple fronts, with GPS spoofing attacks confirmed at major Indian airports, cyber intrusions targeting airline booking and catering supply chains across Asia-Pacific and Europe, and escalating cartel drone incursions forcing temporary closures of U.S. civil airspace. Regulators in Europe (EASA Part-IS) and internationally (ICAO Second Edition Global Aviation Security Plan) are tightening binding cybersecurity and UAS threat frameworks, but compliance gaps and fragmented counter-drone architectures continue to leave critical vulnerabilities.",
       "items": [
         {
-          "title": "Menunggu pull automatik pertama",
-          "category": "Technology",
+          "title": "GPS Spoofing & Jamming Confirmed at Eight Indian Airports",
+          "category": "Incident",
           "region": "Asia-Pacific",
-          "severity": "Low",
-          "summary": "Item contoh sahaja. Data intel sebenar akan masuk selepas GitHub Action dikonfigurasi dan dijadualkan.",
-          "source": "HSSB AVSEC System",
-          "url": "",
-          "date": "2026-06-24"
+          "severity": "High",
+          "summary": "India's Civil Aviation Minister confirmed GPS spoofing and jamming at Delhi, Mumbai, Kolkata, Hyderabad, Bangalore, Chennai, and Amritsar airports, forcing pilots onto backup navigation procedures.",
+          "source": "The Register",
+          "url": "https://www.theregister.com/2025/12/03/india_gps_spoofing/",
+          "date": "2025-12-03"
+        },
+        {
+          "title": "Cartel Drone Incursion Forces El Paso Airport Airspace Closure",
+          "category": "Incident",
+          "region": "North America",
+          "severity": "High",
+          "summary": "Alleged cartel drones breached US airspace near El Paso International Airport; DoD neutralised threat, FAA closed airspace—only second such closure since 9/11.",
+          "source": "Military Times",
+          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/02/11/mexican-cartel-drones-breach-us-airspace-prompt-el-paso-airport-closure-admin-says/",
+          "date": "2026-02-11"
+        },
+        {
+          "title": "Aviation Booking Software Provider Hit by MFA-Fatigue Phishing Campaign",
+          "category": "Incident",
+          "region": "North America",
+          "severity": "High",
+          "summary": "A booking software provider serving multiple major airlines suffered credential compromise via MFA fatigue, granting attackers access to Microsoft 365, cloud admin, and OT systems.",
+          "source": "HALOCK Security Labs",
+          "url": "https://www.halock.com/top-cyber-threats-in-the-aviation-sector/",
+          "date": "2026-03-01"
+        },
+        {
+          "title": "Korean Air Discloses 30,000 Employee Records Stolen via Oracle EBS Supply-Chain Hack",
+          "category": "Incident",
+          "region": "Asia-Pacific",
+          "severity": "High",
+          "summary": "Korean Air confirmed hackers stole names and bank account details of ~30,000 employees via a breach of catering supplier KC&D linked to the Oracle EBS zero-day campaign.",
+          "source": "SecurityWeek",
+          "url": "https://www.securityweek.com/korean-air-data-compromised-in-oracle-ebs-hack/",
+          "date": "2025-12-30"
+        },
+        {
+          "title": "EASA Part-IS Information Security Regulation Now Fully Applicable Across EU Aviation Ecosystem",
+          "category": "Regulatory",
+          "region": "Europe",
+          "severity": "Medium",
+          "summary": "EASA Part-IS binding cybersecurity rules, covering airlines, MROs, airports and ANSPs, reached full applicability on 22 February 2026, requiring structured ISMS aligned with aviation safety objectives.",
+          "source": "Jones Day",
+          "url": "https://www.jonesday.com/en/insights/2026/02/civil-aviation-cybersecurity-easa-partis-sets-new-information-security-obligations",
+          "date": "2026-02-22"
+        },
+        {
+          "title": "ICAO Assembly Adopts Second Edition Global Aviation Security Plan with UAS and GNSS Threat Mandate",
+          "category": "Regulatory",
+          "region": "Asia-Pacific",
+          "severity": "Medium",
+          "summary": "ICAO's 192-member Assembly endorsed the Second Edition Global Aviation Security Plan and directed a dedicated work programme on weaponised UAS and GNSS radio frequency interference in conflict zones.",
+          "source": "ICAO Newsroom",
+          "url": "https://www.icao.int/news/icao-enhances-global-aviation-safety-and-security-framework",
+          "date": "2025-10-03"
         }
       ]
     }
