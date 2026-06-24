@@ -111,6 +111,19 @@
   </div>
 </div>
 
+<div class="eyebrow" id="yearLabel" style="margin:22px 0 10px">12-Month Overview</div>
+<div class="charts">
+  <div class="chart">
+    <div class="clabel">Category share (rolling 12 months)</div>
+    <svg id="chartPie" width="100%" height="210" preserveAspectRatio="none"></svg>
+    <div class="legend" id="pieLegend"></div>
+  </div>
+  <div class="chart">
+    <div class="clabel">Items per month</div>
+    <svg id="chartMonth" width="100%" height="210" preserveAspectRatio="none"></svg>
+  </div>
+</div>
+
 <div class="foot">HSSB AVSEC · Situational Awareness Board · data builds daily</div>
 
 <script>
@@ -146,7 +159,7 @@ function render(){
   const feed=document.getElementById("feed");
   if(!f.length){feed.innerHTML='<div class="empty">'+(items.length?"Tiada item untuk filter ni.":"Feed kosong.")+'</div>';}
   else feed.innerHTML=f.map(card).join("");
-  drawTrend(); drawCat();
+  drawTrend(); drawCat(); drawPie(); drawMonth();
 }
 
 function card(it){
@@ -219,7 +232,61 @@ document.querySelectorAll(".chip").forEach(ch=>ch.addEventListener("click",()=>{
   const col=CATCOLOR[cat]||"#c9a227"; ch.style.background=col; ch.style.color="#10131a"; ch.style.borderColor=col;
   render();
 }));
-window.addEventListener("resize",()=>{drawTrend();drawCat()});
+
+/* ----- 12-month aggregation ----- */
+function yearTotals(){
+  const t={Incident:0,Regulatory:0,Threat:0,Technology:0};
+  (DATA.days||[]).forEach(d=>(d.items||[]).forEach(i=>{if(t[i.category]!=null)t[i.category]++}));
+  return t;
+}
+function monthAgg(){
+  const m={};
+  (DATA.days||[]).forEach(d=>{
+    const key=(d.date||"").slice(0,7); if(!key)return;
+    if(!m[key])m[key]={month:key,Incident:0,Regulatory:0,Threat:0,Technology:0,total:0};
+    (d.items||[]).forEach(i=>{if(m[key][i.category]!=null){m[key][i.category]++;m[key].total++}});
+  });
+  return Object.values(m).sort((a,b)=>a.month<b.month?-1:1).slice(-12);
+}
+
+/* SVG donut — category share over the year */
+function drawPie(){
+  const svg=document.getElementById("chartPie"), leg=document.getElementById("pieLegend");
+  const t=yearTotals(), total=CATS.reduce((s,c)=>s+t[c],0);
+  const W=svg.clientWidth||300,H=210,cx=W/2,cy=H/2,r=Math.min(W/2,cy)-14,ri=r*0.58;
+  if(total===0){svg.innerHTML='<text x="'+cx+'" y="'+cy+'" fill="#7d94ac" font-size="11" text-anchor="middle" font-family="ui-monospace">No data yet</text>';leg.innerHTML="";return;}
+  let start=-Math.PI/2,g="";
+  CATS.forEach(c=>{
+    const frac=t[c]/total; if(frac<=0)return;
+    const end=start+2*Math.PI*frac, large=(end-start)>Math.PI?1:0;
+    const x1=cx+r*Math.cos(start),y1=cy+r*Math.sin(start),x2=cx+r*Math.cos(end),y2=cy+r*Math.sin(end);
+    g+='<path d="M '+cx+' '+cy+' L '+x1.toFixed(1)+' '+y1.toFixed(1)+' A '+r+' '+r+' 0 '+large+' 1 '+x2.toFixed(1)+' '+y2.toFixed(1)+' Z" fill="'+CATCOLOR[c]+'" stroke="#0b1622" stroke-width="2"/>';
+    start=end;
+  });
+  g+='<circle cx="'+cx+'" cy="'+cy+'" r="'+ri+'" fill="#122236"/>';
+  g+='<text x="'+cx+'" y="'+(cy-2)+'" fill="#e6edf5" font-size="20" font-weight="700" text-anchor="middle" font-family="ui-monospace">'+total+'</text>';
+  g+='<text x="'+cx+'" y="'+(cy+15)+'" fill="#7d94ac" font-size="9" text-anchor="middle" font-family="ui-monospace">ITEMS</text>';
+  svg.innerHTML=g;
+  leg.innerHTML=CATS.map(c=>'<span><i style="background:'+CATCOLOR[c]+'"></i>'+c+' '+Math.round(t[c]/total*100)+'%</span>').join("");
+}
+
+/* SVG stacked bar — items per month */
+function drawMonth(){
+  const data=monthAgg(), svg=document.getElementById("chartMonth");
+  const W=svg.clientWidth||300,H=210,pad=24,max=Math.max(1,...data.map(d=>d.total));
+  document.getElementById("yearLabel").textContent="12-Month Overview · "+data.length+" month"+(data.length===1?"":"s");
+  let g="";
+  for(let k=0;k<=2;k++){const y=pad+(H-pad*2)*k/2;g+='<line x1="'+pad+'" y1="'+y+'" x2="'+(W-pad)+'" y2="'+y+'" stroke="#1e3851" stroke-dasharray="3 3"/>';}
+  const slot=(W-pad*2)/Math.max(data.length,1),bw=Math.max(8,Math.min(40,slot-8));
+  data.forEach((d,i)=>{
+    const x=pad+i*slot+(slot-bw)/2; let yb=H-pad;
+    CATS.forEach(c=>{const h=(H-pad*2)*(d[c]/max);if(h>0){g+='<rect x="'+x+'" y="'+(yb-h)+'" width="'+bw+'" height="'+h+'" fill="'+CATCOLOR[c]+'" opacity="0.85"/>';yb-=h;}});
+    g+='<text x="'+(x+bw/2)+'" y="'+(H-7)+'" fill="#7d94ac" font-size="8" text-anchor="middle" font-family="ui-monospace">'+d.month.slice(2)+'</text>';
+  });
+  svg.innerHTML=g;
+}
+
+window.addEventListener("resize",()=>{drawTrend();drawCat();drawPie();drawMonth()});
 </script>
 </body>
 </html>
