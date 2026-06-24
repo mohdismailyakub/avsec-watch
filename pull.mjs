@@ -42,7 +42,7 @@ function updateStore(parsed, today) {
   if (!Array.isArray(store.days)) store.days = [];
   store.days = store.days.filter((d) => d.date !== today); // replace if re-run same day
   store.days.push({ date: today, briefing: parsed.briefing, items: parsed.items });
-  store.days = store.days.slice(-30); // keep last 30 days for the trend
+  store.days = store.days.slice(-366); // keep up to a year for the 12-month overview
   store.generatedAt = new Date().toISOString();
   writeFileSync("data.json", JSON.stringify(store, null, 2));
 }
@@ -91,7 +91,7 @@ function emailHtml(parsed, today) {
   </table>`;
 }
 
-async function sendEmail(parsed, today) {
+async function sendEmail(parsed, today, flaggedCount) {
   const t = nodemailer.createTransport({
     host: "smtp.gmail.com", port: 465, secure: true,
     auth: { user: process.env.GMAIL_USER, pass: process.env.GMAIL_APP_PASSWORD },
@@ -99,7 +99,7 @@ async function sendEmail(parsed, today) {
   await t.sendMail({
     from: `"HSSB AVSEC Watch" <${process.env.GMAIL_USER}>`,
     to: process.env.MAIL_TO,
-    subject: `AVSEC Global Watch — ${today}`,
+    subject: `AVSEC Global Watch — ${today} — ${flaggedCount} High/Medium`,
     html: emailHtml(parsed, today),
   });
 }
@@ -111,10 +111,18 @@ async function sendEmail(parsed, today) {
   console.log("Got", (parsed.items || []).length, "items");
   updateStore(parsed, today);
   console.log("data.json updated");
-  if (process.env.GMAIL_USER && process.env.GMAIL_APP_PASSWORD && process.env.MAIL_TO) {
-    await sendEmail(parsed, today);
-    console.log("Email sent to", process.env.MAIL_TO);
-  } else {
+
+  // Option 2: only email when there's at least one High or Medium severity item.
+  // data.json is still written every day, so the dashboard trend keeps building.
+  const flagged = (parsed.items || []).filter((i) => i.severity === "High" || i.severity === "Medium");
+  const haveSecrets = process.env.GMAIL_USER && process.env.GMAIL_APP_PASSWORD && process.env.MAIL_TO;
+
+  if (!haveSecrets) {
     console.log("Email skipped — Gmail secrets not set");
+  } else if (flagged.length === 0) {
+    console.log("Email skipped — quiet day, no High/Medium (" + (parsed.items || []).length + " Low only)");
+  } else {
+    await sendEmail(parsed, today, flagged.length);
+    console.log("Email sent to", process.env.MAIL_TO, "—", flagged.length, "High/Medium");
   }
 })().catch((e) => { console.error(e); process.exit(1); });
