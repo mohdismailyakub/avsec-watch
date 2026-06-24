@@ -1,24 +1,30 @@
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import nodemailer from "nodemailer";
 
-const KEY = process.env.ANTHROPIC_API_KEY;
-if (!KEY) { console.error("Missing ANTHROPIC_API_KEY"); process.exit(1); }
+const ANTHROPIC_KEY = process.env.ANTHROPIC_API_KEY;
+const GEMINI_KEY = process.env.GEMINI_API_KEY;
+if (!ANTHROPIC_KEY && !GEMINI_KEY) { console.error("No API key set (need ANTHROPIC_API_KEY or GEMINI_API_KEY)"); process.exit(1); }
 
 const PROMPT = `You are an aviation security (AVSEC) intelligence analyst. Search the web for the most significant aviation security developments worldwide from the last 72 hours. Cover a MIX of: security incidents/breaches (hijack, unauthorised access, drone/UAS near airports, smuggling, insider threat, screening failure, cyber attack on aviation systems), and regulatory/policy news (ICAO Annex 17 amendments, CAAM/EASA/TSA/ECAC/IATA circulars, directives or new standards). Cover the whole world.
 
-Return ONLY valid JSON, no markdown, no preamble, in this exact shape:
+Output ONLY valid JSON, no markdown fences, no preamble, in this exact shape:
 {"briefing":"2 sentence global situation summary","items":[{"title":"short headline","category":"Incident|Regulatory|Threat|Technology","region":"Asia-Pacific|Europe|North America|Latin America|Middle East|Africa","severity":"High|Medium|Low","summary":"max 25 words","source":"publication name","url":"link","date":"YYYY-MM-DD"}]}
 
-Give exactly 6 items, most recent and most significant first. Be factual; only report developments you actually found in search results.`;
+Give exactly 6 items, most recent and most significant first. Only report developments you actually found in search results.`;
 
-async function pullIntel() {
+function parseJSON(text) {
+  const s = text.indexOf("{"), e = text.lastIndexOf("}");
+  if (s === -1 || e === -1) throw new Error("no JSON in response");
+  const obj = JSON.parse(text.slice(s, e + 1));
+  if (!obj.items || !obj.items.length) throw new Error("empty items");
+  return obj;
+}
+
+/* ---------- provider 1: Anthropic (Claude) ---------- */
+async function pullViaClaude() {
   const res = await fetch("https://api.anthropic.com/v1/messages", {
     method: "POST",
-    headers: {
-      "content-type": "application/json",
-      "x-api-key": KEY,
-      "anthropic-version": "2023-06-01",
-    },
+    headers: { "content-type": "application/json", "x-api-key": ANTHROPIC_KEY, "anthropic-version": "2023-06-01" },
     body: JSON.stringify({
       model: "claude-sonnet-4-6",
       max_tokens: 2500,
@@ -27,27 +33,44 @@ async function pullIntel() {
     }),
   });
   const data = await res.json();
-  if (data.error) throw new Error("API error: " + JSON.stringify(data.error));
+  if (data.error) throw new Error(JSON.stringify(data.error));
   const text = (data.content || []).filter((b) => b.type === "text").map((b) => b.text).join("\n");
-  const s = text.indexOf("{"), e = text.lastIndexOf("}");
-  if (s === -1 || e === -1) throw new Error("No JSON found in model response");
-  return JSON.parse(text.slice(s, e + 1));
+  return parseJSON(text);
 }
 
-function updateStore(parsed, today) {
+/* ---------- provider 2: Gemini (fallback) ---------- */
+async function pullViaGemini() {
+  const url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent";
+  const res = await fetch(url, {
+    method: "POST",
+    headers: { "content-type": "application/json", "x-goog-api-key": GEMINI_KEY },
+    body: JSON.stringify({
+      contents: [{ role: "user", parts: [{ text: PROMPT }] }],
+      tools: [{ google_search: {} }],
+      generationConfig: { temperature: 0.4, maxOutputTokens: 2500 },
+    }),
+  });
+  const data = await res.json();
+  if (data.error) throw new Error(JSON.stringify(data.error));
+  const parts = data?.candidates?.[0]?.content?.parts || [];
+  return parseJSON(parts.map((p) => p.text || "").join("\n"));
+}
+
+function updateStore(parsed, today, provider) {
   let store = { days: [] };
   if (existsSync("data.json")) {
     try { store = JSON.parse(readFileSync("data.json", "utf8")); } catch {}
   }
   if (!Array.isArray(store.days)) store.days = [];
-  store.days = store.days.filter((d) => d.date !== today); // replace if re-run same day
+  store.days = store.days.filter((d) => d.date !== today);
   store.days.push({ date: today, briefing: parsed.briefing, items: parsed.items });
-  store.days = store.days.slice(-366); // keep up to a year for the 12-month overview
+  store.days = store.days.slice(-366);
   store.generatedAt = new Date().toISOString();
+  store.lastProvider = provider;
   writeFileSync("data.json", JSON.stringify(store, null, 2));
 }
 
-/* ---------- email rendering (light, table-based for client safety) ---------- */
+/* ---------- email ---------- */
 const sevColor = (s) => (s === "High" ? "#ef4444" : s === "Medium" ? "#f59e0b" : "#34d399");
 const catColor = (c) => ({ Incident: "#ef4444", Regulatory: "#c9a227", Threat: "#f97316", Technology: "#38bdf8" }[c] || "#c9a227");
 const esc = (s) => (s == null ? "" : ("" + s)).replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
@@ -107,20 +130,30 @@ async function sendEmail(parsed, today, flaggedCount) {
 (async () => {
   const today = new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Kuching" });
   console.log("Pulling AVSEC intel for", today);
-  const parsed = await pullIntel();
-  console.log("Got", (parsed.items || []).length, "items");
-  updateStore(parsed, today);
+
+  // Try Claude first (use up your Anthropic credit), then fall back to Gemini.
+  let parsed = null, provider = null; const errors = [];
+  if (ANTHROPIC_KEY) {
+    try { parsed = await pullViaClaude(); provider = "Claude (Sonnet 4.6)"; }
+    catch (e) { errors.push("Claude failed: " + e.message); console.log("Claude failed, trying Gemini…"); }
+  }
+  if (!parsed && GEMINI_KEY) {
+    try { parsed = await pullViaGemini(); provider = "Gemini 2.5 Flash"; }
+    catch (e) { errors.push("Gemini failed: " + e.message); }
+  }
+  if (!parsed) { console.error("All providers failed:\n" + errors.join("\n")); process.exit(1); }
+
+  console.log("Provider:", provider, "—", parsed.items.length, "items");
+  updateStore(parsed, today, provider);
   console.log("data.json updated");
 
-  // Option 2: only email when there's at least one High or Medium severity item.
-  // data.json is still written every day, so the dashboard trend keeps building.
-  const flagged = (parsed.items || []).filter((i) => i.severity === "High" || i.severity === "Medium");
+  const flagged = parsed.items.filter((i) => i.severity === "High" || i.severity === "Medium");
   const haveSecrets = process.env.GMAIL_USER && process.env.GMAIL_APP_PASSWORD && process.env.MAIL_TO;
 
   if (!haveSecrets) {
     console.log("Email skipped — Gmail secrets not set");
   } else if (flagged.length === 0) {
-    console.log("Email skipped — quiet day, no High/Medium (" + (parsed.items || []).length + " Low only)");
+    console.log("Email skipped — quiet day, no High/Medium (" + parsed.items.length + " Low only)");
   } else {
     await sendEmail(parsed, today, flagged.length);
     console.log("Email sent to", process.env.MAIL_TO, "—", flagged.length, "High/Medium");
