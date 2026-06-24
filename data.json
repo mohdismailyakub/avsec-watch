@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T12:41:02.467Z",
+  "generatedAt": "2026-06-24T14:24:23.455Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -304,69 +304,70 @@
     },
     {
       "date": "2026-06-24",
-      "briefing": "Global aviation security remains under sustained pressure from ransomware and social-engineering cyber campaigns, with IATA reporting an estimated 600% surge in aviation cyberattacks in 2025 vs 2024, while regulators in Europe and internationally are enforcing new binding cybersecurity frameworks and physical perimeter security gaps continue to expose vulnerabilities at major hubs.",
+      "briefing": "Global aviation security remains under significant pressure in mid-2026, with GPS spoofing attacks targeting Indian airports, a fatal perimeter breach at Denver International, and persistent cyber threats against aviation supply chains dominating the threat landscape. Regulatory activity is intensifying, with the FAA advancing long-delayed counter-UAS rulemaking, EASA's Part-IS cybersecurity mandate now fully in force, and ICAO's 2026-2028 Global Aviation Security Plan directing new work on weaponised UAS and GNSS interference.",
       "items": [
         {
-          "title": "Aegle Aviation Hit by RansomHouse Data Breach",
+          "title": "GPS Spoofing Cyberattack Hits Seven Major Indian Airports",
           "category": "Incident",
           "region": "Asia-Pacific",
           "severity": "High",
-          "summary": "Indian aviation services firm Aegle Aviation breached by ransomware actor RansomHouse; full leak size unknown as of discovery date.",
-          "source": "Breachsense",
-          "url": "https://www.breachsense.com/breaches/aegle-aviation-data-breach/",
-          "date": "2026-06-09"
+          "summary": "India confirmed GPS spoofing at seven airports including Delhi, Mumbai and Bengaluru, delivering false navigation data during landing; no flights cancelled.",
+          "source": "Bright Defense / Financial Express",
+          "url": "https://www.brightdefense.com/resources/recent-data-breaches/",
+          "date": "2026-06-01"
         },
         {
-          "title": "Denver Airport Perimeter Breach Exposes Sensor Blind Spot",
+          "title": "Fatal Perimeter Breach at Denver International Airport Triggers Security Review",
           "category": "Incident",
           "region": "North America",
           "severity": "High",
-          "summary": "Intruder breached Denver International's 53-sq-mile perimeter undetected after analyst misidentified sensor alert as deer; Frontier flight 4345 crew acted swiftly.",
-          "source": "ASIS Security Management",
+          "summary": "A man breached Denver Airport's perimeter on 8 May and was killed on an active runway, exposing critical perimeter security gaps.",
+          "source": "ASIS Security Management / Associated Press",
           "url": "https://www.asisonline.org/security-management-magazine/latest-news/today-in-security/2026/may/denver-airport-breach/",
           "date": "2026-05-15"
         },
         {
-          "title": "Aviation Booking Software Provider Compromised in Phishing Campaign",
+          "title": "FAA Publishes Long-Awaited NPRM for Drone Flight Restrictions Over Critical Infrastructure",
+          "category": "Regulatory",
+          "region": "North America",
+          "severity": "Medium",
+          "summary": "FAA's Section 2209 NPRM, published 6 May 2026, establishes drone flight restriction zones over critical facilities; comments due 6 July 2026.",
+          "source": "Holland & Knight",
+          "url": "https://www.hklaw.com/en/insights/publications/2026/05/citing-national-security-needs-the-fcc-and-faa-take-steps-on-uas",
+          "date": "2026-05-12"
+        },
+        {
+          "title": "Aviation Booking Software Provider Breached in MFA-Fatigue Phishing Campaign",
           "category": "Incident",
           "region": "North America",
           "severity": "High",
-          "summary": "MFA-fatigue social engineering attack on airline booking software provider in March 2026 granted attackers access to cloud, OT systems, and Microsoft 365 accounts.",
+          "summary": "March 2026 phishing attack compromised an airline booking software provider's IT admin credentials via MFA fatigue, exposing cloud and OT systems.",
           "source": "HALOCK Security Labs",
           "url": "https://www.halock.com/top-cyber-threats-in-the-aviation-sector/",
           "date": "2026-03-01"
         },
         {
-          "title": "EASA Part-IS Information Security Framework Enters Full Force",
-          "category": "Regulatory",
-          "region": "Europe",
-          "severity": "Medium",
-          "summary": "EASA Part-IS (EU Regulations 2022/1645 and 2023/203) became applicable February 22, 2026, mandating ISMS across airlines, airports, MROs, and ANSPs.",
-          "source": "Jones Day Insights",
-          "url": "https://www.jonesday.com/en/insights/2026/02/civil-aviation-cybersecurity-easa-partis-sets-new-information-security-obligations",
-          "date": "2026-02-22"
-        },
-        {
-          "title": "ICAO Assembly Adopts Second Edition Global Aviation Security Plan with UAS/GNSS Spoofing Mandate",
+          "title": "ICAO 2026–2028 Global Aviation Security Plan Targets Weaponised UAS and GNSS Threats",
           "category": "Regulatory",
           "region": "Asia-Pacific",
           "severity": "Medium",
-          "summary": "ICAO's 192-member Assembly endorsed the Second Edition Global Aviation Security Plan and directed a new work programme on weaponised UAS and GNSS radio-frequency interference in conflict zones.",
+          "summary": "ICAO Assembly adopted the Second Edition Global Aviation Security Plan, directing new work programme on weaponised UAS and GNSS radio frequency interference.",
           "source": "ICAO Newsroom",
           "url": "https://www.icao.int/news/icao-enhances-global-aviation-safety-and-security-framework",
           "date": "2025-10-03"
         },
         {
-          "title": "GPS/ADS-B Spoofing Escalates as Top 2026 Aviation Cyber-Safety Threat",
-          "category": "Threat",
-          "region": "Middle East",
-          "severity": "High",
-          "summary": "State-affiliated GPS and ADS-B spoofing near Persian Gulf and Eastern Mediterranean conflict zones identified as most likely 2026 vector for a safety-adjacent aviation incident.",
-          "source": "Aviate AI",
-          "url": "https://aviateai.com/aviation-cybersecurity-threats-airlines-must-prepare-for-in-2026/",
-          "date": "2026-04-10"
+          "title": "EASA Part-IS Information Security Mandate Now Fully Binding Across EU Aviation",
+          "category": "Regulatory",
+          "region": "Europe",
+          "severity": "Medium",
+          "summary": "EASA Part-IS cybersecurity regulation became fully applicable as of February 2026, covering airlines, airports, MROs and ATC with mandatory ISMS requirements.",
+          "source": "EASA / Airbus Protect",
+          "url": "https://www.easa.europa.eu/en/the-agency/faqs/information-security-part",
+          "date": "2026-02-22"
         }
       ]
     }
-  ]
+  ],
+  "lastProvider": "Claude (Sonnet 4.6)"
 }
