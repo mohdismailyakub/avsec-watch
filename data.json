@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-06-24T07:00:00+08:00",
+  "days": [
+    {
+      "date": "2026-06-24",
+      "briefing": "Placeholder — sistem belum jalan pull pertama. Lepas GitHub Action diaktifkan, ruang ini akan auto-isi dengan briefing AVSEC global sebenar setiap pagi (incident + regulatory, seluruh dunia).",
+      "items": [
+        {
+          "title": "Menunggu pull automatik pertama",
+          "category": "Technology",
+          "region": "Asia-Pacific",
+          "severity": "Low",
+          "summary": "Item contoh sahaja. Data intel sebenar akan masuk selepas GitHub Action dikonfigurasi dan dijadualkan.",
+          "source": "HSSB AVSEC System",
+          "url": "",
+          "date": "2026-06-24"
+        }
+      ]
+    }
+  ]
+}
