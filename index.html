@@ -6,177 +6,236 @@
 <title>HSSB AVSEC Global Watch</title>
 <style>
   :root{
-    --bg:#0b1622; --panel:#122236; --panel2:#0f1c2e; --border:#1e3851;
-    --gold:#c9a227; --goldDim:#8a7320; --text:#e6edf5; --muted:#7d94ac;
-    --high:#ef4444; --med:#f59e0b; --low:#34d399;
-    --cIncident:#ef4444; --cRegulatory:#c9a227; --cThreat:#f97316; --cTechnology:#38bdf8;
-    --mono:ui-monospace,"SF Mono",Menlo,monospace;
+    --bg:#0a1320; --bg2:#0d1c2e; --panel:#112236; --panel2:#0e1a2b; --border:#20405e; --border2:#2c5478;
+    --gold:#cba43c; --goldSoft:#e0c878; --text:#e8eef6; --muted:#88a0ba; --faint:#5d7790;
+    --high:#f04545; --med:#f5a623; --low:#34d39a;
+    --cIncident:#f04545; --cRegulatory:#cba43c; --cThreat:#f97316; --cTechnology:#3aa9f0;
+    --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
     --cond:"Arial Narrow","Helvetica Neue",Arial,sans-serif;
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
   }
   *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,sans-serif;padding:14px}
+  html,body{margin:0}
+  body{
+    background:
+      radial-gradient(1200px 600px at 80% -10%, #13314d33, transparent 60%),
+      radial-gradient(900px 500px at -10% 10%, #1a2a1a22, transparent 55%),
+      linear-gradient(180deg,var(--bg),var(--bg2));
+    background-attachment:fixed;
+    color:var(--text); font-family:var(--sans); min-height:100vh;
+    -webkit-font-smoothing:antialiased; padding:16px;
+  }
+  .accent{position:fixed;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:.7;z-index:5}
+  .wrap{max-width:1140px;margin:0 auto}
   a{color:var(--gold);text-decoration:none}
-  .ribbon{background:linear-gradient(90deg,var(--panel2),var(--panel));border:1px solid var(--border);
-    border-radius:8px;padding:10px 14px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
-  .dot{width:9px;height:9px;border-radius:99px;background:var(--low);box-shadow:0 0 10px var(--low)}
-  .title{font-family:var(--cond);font-weight:700;letter-spacing:2px;font-size:18px;text-transform:uppercase}
-  .title span{color:var(--gold)}
-  .sub{font-family:var(--mono);font-size:11px;color:var(--muted)}
-  .tally{margin-left:auto;display:flex;gap:10px;align-items:center;font-family:var(--mono);font-size:11px}
-  .clock{color:var(--muted);border-left:1px solid var(--border);padding-left:10px}
-  .row{display:flex;gap:12px;margin-top:12px;flex-wrap:wrap;align-items:stretch}
-  .brief{flex:1 1 260px;background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:14px}
-  .eyebrow{font-family:var(--mono);font-size:10px;letter-spacing:2px;color:var(--gold);text-transform:uppercase;margin-bottom:6px}
-  .briefText{font-size:13.5px;line-height:1.55}
-  .stamp{font-family:var(--mono);font-size:10px;color:var(--muted);margin-top:8px}
-  .filters{display:flex;gap:6px;margin-top:14px;flex-wrap:wrap}
-  select,.chip{background:var(--panel2);color:var(--muted);border:1px solid var(--border);border-radius:6px;
-    padding:7px 12px;font-family:var(--mono);font-size:11.5px;cursor:pointer;text-transform:uppercase;letter-spacing:.5px}
-  select{color:var(--text);text-transform:none}
-  .chip.active{color:#10131a;font-weight:600}
-  .feed{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;margin-top:12px}
-  .card{background:var(--panel);border:1px solid var(--border);border-radius:6px;padding:12px 14px;
-    display:flex;flex-direction:column;gap:6px;border-left:3px solid var(--gold)}
-  .meta{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
-  .cat{font-family:var(--mono);font-size:10px;letter-spacing:1px;text-transform:uppercase}
+
+  /* ribbon */
+  .ribbon{background:linear-gradient(100deg,var(--panel2),var(--panel));border:1px solid var(--border);
+    border-radius:12px;padding:13px 18px;display:flex;align-items:center;gap:13px;flex-wrap:wrap;
+    box-shadow:0 1px 0 #ffffff0a inset, 0 10px 30px -18px #000}
+  .dot{width:9px;height:9px;border-radius:99px;background:var(--low);box-shadow:0 0 0 0 var(--low)}
+  @media (prefers-reduced-motion:no-preference){.dot{animation:pulse 2.4s ease-out infinite}}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 #34d39a99}70%{box-shadow:0 0 0 7px #34d39a00}100%{box-shadow:0 0 0 0 #34d39a00}}
+  .brand{font-family:var(--cond);font-weight:700;letter-spacing:2.5px;font-size:19px;text-transform:uppercase}
+  .brand b{color:var(--gold);font-weight:700}
+  .sub{font-family:var(--mono);font-size:10.5px;color:var(--muted);letter-spacing:.5px}
+  .tally{margin-left:auto;display:flex;gap:7px;align-items:center}
+  .pill{font-family:var(--mono);font-size:10.5px;padding:3px 9px;border-radius:99px;border:1px solid var(--border2);background:#0c1726}
+  .clock{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:1px;padding-left:4px}
+
+  /* briefing */
+  .brief{margin-top:14px;background:linear-gradient(180deg,var(--panel),var(--panel2));
+    border:1px solid var(--border);border-radius:12px;padding:18px 20px;position:relative;overflow:hidden}
+  .brief:before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(180deg,var(--gold),transparent)}
+  .eyebrow{font-family:var(--mono);font-size:10px;letter-spacing:2.5px;color:var(--gold);text-transform:uppercase;display:flex;align-items:center;gap:8px}
+  .eyebrow:before{content:"";width:14px;height:1px;background:var(--gold);display:inline-block}
+  .briefText{font-size:14.5px;line-height:1.6;color:#dbe6f2;margin-top:9px}
+  .stamp{font-family:var(--mono);font-size:10px;color:var(--muted);margin-top:11px;letter-spacing:.5px}
+
+  /* filters */
+  .filters{display:flex;gap:7px;margin-top:16px;flex-wrap:wrap;align-items:center}
+  select,.chip{font-family:var(--mono);font-size:11.5px;border-radius:8px;padding:8px 13px;cursor:pointer;
+    transition:all .16s ease;border:1px solid var(--border2);background:#0c1726;color:var(--muted)}
+  select{color:var(--text)}
+  .chip{text-transform:uppercase;letter-spacing:.6px}
+  .chip:hover{border-color:var(--gold);color:var(--text)}
+  .chip.active{color:#0c1320;font-weight:700;border-color:transparent}
+
+  /* feed */
+  .feed{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:12px;margin-top:14px}
+  .card{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--border);
+    border-radius:11px;padding:14px 16px;display:flex;flex-direction:column;gap:7px;border-left:3px solid var(--gold);
+    transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
+  .card:hover{transform:translateY(-3px);box-shadow:0 18px 36px -22px #000,0 0 0 1px #ffffff0a inset}
+  .meta{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+  .cat{font-family:var(--mono);font-size:10px;letter-spacing:1.2px;text-transform:uppercase;font-weight:600}
   .reg{font-family:var(--mono);font-size:10px;color:var(--muted)}
-  .sev{margin-left:auto;display:flex;align-items:center;gap:5px;font-family:var(--mono);font-size:10px}
-  .sevdot{width:8px;height:8px;border-radius:99px;display:inline-block}
-  .ctitle{font-size:14px;font-weight:600;line-height:1.3}
-  .csum{color:var(--muted);font-size:12.5px;line-height:1.5}
-  .cfoot{display:flex;gap:8px;align-items:center;margin-top:2px}
+  .sev{margin-left:auto;display:flex;align-items:center;gap:6px;font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:.5px}
+  .sevdot{width:7px;height:7px;border-radius:99px;display:inline-block}
+  .ctitle{font-size:14.5px;font-weight:650;line-height:1.32;color:#eef4fb}
+  .csum{color:var(--muted);font-size:12.5px;line-height:1.55}
+  .cfoot{display:flex;gap:8px;align-items:center;margin-top:3px}
   .cfoot .date{font-family:var(--mono);font-size:10px;color:var(--muted)}
   .cfoot .src{font-family:var(--mono);font-size:10px;margin-left:auto}
-  .empty{color:var(--muted);font-size:13px;font-family:var(--mono);padding:20px;grid-column:1/-1;
-    text-align:center;border:1px dashed var(--border);border-radius:8px;line-height:1.6}
-  .charts{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
-  .chart{background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:12px}
-  .clabel{font-size:11px;color:var(--muted);font-family:var(--mono);margin-bottom:8px}
-  .legend{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px;font-family:var(--mono);font-size:10px;color:var(--muted)}
-  .legend i{width:9px;height:9px;border-radius:2px;display:inline-block;margin-right:4px;vertical-align:middle}
-  .foot{text-align:center;color:var(--muted);font-family:var(--mono);font-size:10px;margin-top:18px;letter-spacing:1px}
+  .empty{color:var(--muted);font-size:13px;font-family:var(--mono);padding:26px;grid-column:1/-1;
+    text-align:center;border:1px dashed var(--border2);border-radius:11px;line-height:1.7}
+
+  /* charts */
+  .secLabel{font-family:var(--mono);font-size:10px;letter-spacing:2.5px;color:var(--gold);text-transform:uppercase;margin:26px 0 11px;display:flex;align-items:center;gap:8px}
+  .secLabel:before{content:"";width:14px;height:1px;background:var(--gold);display:inline-block}
+  .charts{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:13px}
+  .chart{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--border);border-radius:12px;padding:14px 14px 10px}
+  .clabel{font-size:11.5px;color:#c3d2e2;font-family:var(--mono);margin-bottom:10px;letter-spacing:.4px}
+  svg{display:block;width:100%}
+  svg [data-tip]{cursor:pointer;transition:opacity .12s ease}
+  svg:hover [data-tip]{opacity:.45}
+  svg [data-tip]:hover{opacity:1}
+  .legend{display:flex;gap:14px;flex-wrap:wrap;margin-top:10px;font-family:var(--mono);font-size:10px;color:var(--muted)}
+  .legend i{width:9px;height:9px;border-radius:2px;display:inline-block;margin-right:5px;vertical-align:middle}
+
+  /* tooltip */
+  #tip{position:fixed;pointer-events:none;z-index:50;opacity:0;transform:translateY(4px);
+    transition:opacity .12s ease,transform .12s ease;background:#0a1422f2;border:1px solid var(--border2);
+    border-radius:8px;padding:8px 11px;font-family:var(--mono);font-size:11px;color:var(--text);
+    box-shadow:0 14px 34px -16px #000;max-width:220px;line-height:1.5}
+  #tip.on{opacity:1;transform:translateY(0)}
+  #tip b{font-weight:700}
+  #tip .tdot{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:6px;vertical-align:middle}
+
+  .foot{text-align:center;color:var(--muted);font-family:var(--mono);font-size:10px;margin-top:22px;letter-spacing:1.5px;text-transform:uppercase;opacity:.8}
 </style>
 </head>
 <body>
+<div class="accent"></div>
+<div id="tip"></div>
+<div class="wrap">
 
-<div class="ribbon">
-  <span class="dot"></span>
-  <div class="title">AVSEC <span>Global Watch</span></div>
-  <span class="sub">HSSB · KCH/MYY</span>
-  <div class="tally">
-    <span style="color:var(--high)">H <b id="tH">0</b></span>
-    <span style="color:var(--med)">M <b id="tM">0</b></span>
-    <span style="color:var(--low)">L <b id="tL">0</b></span>
-    <span class="clock" id="clock">--:--:--</span>
-  </div>
-</div>
-
-<div class="row">
-  <div class="brief">
-    <div class="eyebrow">Daily Briefing</div>
-    <div class="briefText" id="brief">Memuatkan…</div>
-    <div class="stamp" id="stamp"></div>
-  </div>
-</div>
-
-<div class="filters">
-  <select id="region">
-    <option>Global</option><option>Asia-Pacific</option><option>Europe</option>
-    <option>North America</option><option>Latin America</option><option>Middle East</option><option>Africa</option>
-  </select>
-  <span class="chip active" data-cat="All">All</span>
-  <span class="chip" data-cat="Incident">Incident</span>
-  <span class="chip" data-cat="Regulatory">Regulatory</span>
-  <span class="chip" data-cat="Threat">Threat</span>
-  <span class="chip" data-cat="Technology">Technology</span>
-</div>
-
-<div class="feed" id="feed"></div>
-
-<div class="eyebrow" id="trendLabel" style="margin:22px 0 10px">Trend</div>
-<div class="charts">
-  <div class="chart">
-    <div class="clabel">Items per day by category</div>
-    <svg id="chartTrend" width="100%" height="190" preserveAspectRatio="none"></svg>
-    <div class="legend">
-      <span><i style="background:var(--cIncident)"></i>Incident</span>
-      <span><i style="background:var(--cRegulatory)"></i>Regulatory</span>
-      <span><i style="background:var(--cThreat)"></i>Threat</span>
-      <span><i style="background:var(--cTechnology)"></i>Technology</span>
+  <div class="ribbon">
+    <span class="dot"></span>
+    <div class="brand">AVSEC <b>Global Watch</b></div>
+    <span class="sub">HSSB · KCH / MYY</span>
+    <div class="tally">
+      <span class="pill" style="color:var(--high)">H <b id="tH">0</b></span>
+      <span class="pill" style="color:var(--med)">M <b id="tM">0</b></span>
+      <span class="pill" style="color:var(--low)">L <b id="tL">0</b></span>
+      <span class="clock" id="clock">--:--:--</span>
     </div>
   </div>
-  <div class="chart">
-    <div class="clabel">Total by category</div>
-    <svg id="chartCat" width="100%" height="190" preserveAspectRatio="none"></svg>
-  </div>
-</div>
 
-<div class="eyebrow" id="yearLabel" style="margin:22px 0 10px">12-Month Overview</div>
-<div class="charts">
-  <div class="chart">
-    <div class="clabel">Category share (rolling 12 months)</div>
-    <svg id="chartPie" width="100%" height="210" preserveAspectRatio="none"></svg>
-    <div class="legend" id="pieLegend"></div>
+  <div class="brief">
+    <div class="eyebrow">Daily Briefing</div>
+    <div class="briefText" id="brief">Loading…</div>
+    <div class="stamp" id="stamp"></div>
   </div>
-  <div class="chart">
-    <div class="clabel">Items per month</div>
-    <svg id="chartMonth" width="100%" height="210" preserveAspectRatio="none"></svg>
-  </div>
-</div>
 
-<div class="foot">HSSB AVSEC · Situational Awareness Board · data builds daily</div>
+  <div class="filters">
+    <select id="region">
+      <option>Global</option><option>Asia-Pacific</option><option>Europe</option>
+      <option>North America</option><option>Latin America</option><option>Middle East</option><option>Africa</option>
+    </select>
+    <span class="chip active" data-cat="All">All</span>
+    <span class="chip" data-cat="Incident">Incident</span>
+    <span class="chip" data-cat="Regulatory">Regulatory</span>
+    <span class="chip" data-cat="Threat">Threat</span>
+    <span class="chip" data-cat="Technology">Technology</span>
+  </div>
+
+  <div class="feed" id="feed"></div>
+
+  <div class="secLabel" id="trendLabel">Recent Trend</div>
+  <div class="charts">
+    <div class="chart">
+      <div class="clabel">Items per day by category</div>
+      <svg id="chartTrend" height="200"></svg>
+      <div class="legend">
+        <span><i style="background:var(--cIncident)"></i>Incident</span>
+        <span><i style="background:var(--cRegulatory)"></i>Regulatory</span>
+        <span><i style="background:var(--cThreat)"></i>Threat</span>
+        <span><i style="background:var(--cTechnology)"></i>Technology</span>
+      </div>
+    </div>
+    <div class="chart">
+      <div class="clabel">Total by category (rolling window)</div>
+      <svg id="chartCat" height="200"></svg>
+    </div>
+  </div>
+
+  <div class="secLabel" id="yearLabel">12-Month Overview</div>
+  <div class="charts">
+    <div class="chart">
+      <div class="clabel">Category share</div>
+      <svg id="chartPie" height="220"></svg>
+      <div class="legend" id="pieLegend"></div>
+    </div>
+    <div class="chart">
+      <div class="clabel">Items per month — total shown above each bar, hover for breakdown</div>
+      <svg id="chartMonth" height="220"></svg>
+    </div>
+  </div>
+
+  <div class="foot">HSSB AVSEC · Situational Awareness Board</div>
+</div>
 
 <script>
 const CATS=["Incident","Regulatory","Threat","Technology"];
-const CATCOLOR={Incident:"#ef4444",Regulatory:"#c9a227",Threat:"#f97316",Technology:"#38bdf8"};
-const SEVCOLOR={High:"#ef4444",Medium:"#f59e0b",Low:"#34d399"};
+const CATCOLOR={Incident:"#f04545",Regulatory:"#cba43c",Threat:"#f97316",Technology:"#3aa9f0"};
+const SEVCOLOR={High:"#f04545",Medium:"#f5a623",Low:"#34d39a"};
+const MON=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 let DATA={days:[]}, region="Global", cat="All";
 
-/* live clock */
+const tip=document.getElementById("tip");
+function showTip(html,x,y){tip.innerHTML=html;tip.classList.add("on");
+  let nx=x+14,ny=y+14; if(nx>innerWidth-230)nx=x-tip.offsetWidth-14; if(ny>innerHeight-80)ny=y-tip.offsetHeight-14;
+  tip.style.left=nx+"px";tip.style.top=ny+"px";}
+function hideTip(){tip.classList.remove("on")}
+function wireTip(svg){
+  svg.addEventListener("pointermove",e=>{const t=e.target.getAttribute&&e.target.getAttribute("data-tip");t?showTip(t,e.clientX,e.clientY):hideTip()});
+  svg.addEventListener("pointerdown",e=>{const t=e.target.getAttribute&&e.target.getAttribute("data-tip");if(t)showTip(t,e.clientX,e.clientY)});
+  svg.addEventListener("pointerleave",hideTip);
+}
+document.addEventListener("scroll",hideTip,true);
+
 setInterval(()=>{document.getElementById("clock").textContent=new Date().toLocaleTimeString("en-GB")},1000);
 
-/* load data.json produced by the GitHub Action */
 fetch("data.json",{cache:"no-store"})
   .then(r=>{if(!r.ok)throw 0;return r.json()})
   .then(d=>{DATA=d;render()})
   .catch(()=>{
-    document.getElementById("brief").textContent="data.json belum ada atau tak dapat dibaca. Lepas GitHub Action jalan pull pertama, ruang ni auto-isi.";
-    document.getElementById("feed").innerHTML='<div class="empty">Feed kosong — tunggu Action tarik intel pertama, atau buka site ni dari Netlify (bukan klik fail terus, sebab browser sekat fetch fail tempatan).</div>';
+    document.getElementById("brief").textContent="data.json belum ada atau tak dapat dibaca. Lepas GitHub Action jalan pull pertama, ruang ini auto-isi.";
+    document.getElementById("feed").innerHTML='<div class="empty">Feed kosong — buka site ini dari Netlify (bukan klik fail terus, sebab browser sekat fetch fail tempatan).</div>';
   });
 
 function latest(){return DATA.days&&DATA.days.length?DATA.days[DATA.days.length-1]:null}
+function monthLabel(ym){const p=(ym||"").split("-");return p.length<2?ym:MON[(+p[1])-1]+" "+p[0].slice(2)}
+function tdot(c){return '<span class="tdot" style="background:'+c+'"></span>'}
 
 function render(){
   const day=latest();
   document.getElementById("brief").textContent=day?day.briefing:"Tiada briefing.";
   document.getElementById("stamp").textContent=DATA.generatedAt?("Updated "+new Date(DATA.generatedAt).toLocaleString("en-GB")):"";
   const items=day?day.items:[];
-  // tally
   let t={High:0,Medium:0,Low:0}; items.forEach(i=>{if(t[i.severity]!=null)t[i.severity]++});
   tH.textContent=t.High; tM.textContent=t.Medium; tL.textContent=t.Low;
-  // feed
   const f=items.filter(i=>(region==="Global"||i.region===region)&&(cat==="All"||i.category===cat));
   const feed=document.getElementById("feed");
-  if(!f.length){feed.innerHTML='<div class="empty">'+(items.length?"Tiada item untuk filter ni.":"Feed kosong.")+'</div>';}
-  else feed.innerHTML=f.map(card).join("");
+  feed.innerHTML=f.length?f.map(card).join(""):'<div class="empty">'+(items.length?"Tiada item untuk filter ni.":"Feed kosong.")+'</div>';
   drawTrend(); drawCat(); drawPie(); drawMonth();
 }
 
 function card(it){
-  const ac=CATCOLOR[it.category]||"#c9a227", sv=SEVCOLOR[it.severity]||"#34d399";
-  const src=it.url?('<a class="src" style="color:#c9a227" href="'+it.url+'" target="_blank" rel="noreferrer">'+esc(it.source)+' ↗</a>')
-                  :('<span class="src" style="color:#7d94ac">'+esc(it.source)+'</span>');
+  const ac=CATCOLOR[it.category]||"#cba43c", sv=SEVCOLOR[it.severity]||"#34d39a";
+  const src=it.url?('<a class="src" style="color:#cba43c" href="'+it.url+'" target="_blank" rel="noreferrer">'+esc(it.source)+' ↗</a>')
+                  :('<span class="src" style="color:#88a0ba">'+esc(it.source)+'</span>');
   return '<div class="card" style="border-left-color:'+ac+'">'
     +'<div class="meta"><span class="cat" style="color:'+ac+'">'+esc(it.category)+'</span>'
     +'<span class="reg">· '+esc(it.region)+'</span>'
-    +'<span class="sev" style="color:'+sv+'"><span class="sevdot" style="background:'+sv+';box-shadow:0 0 8px '+sv+'"></span>'+esc(it.severity)+'</span></div>'
+    +'<span class="sev" style="color:'+sv+'"><span class="sevdot" style="background:'+sv+';box-shadow:0 0 7px '+sv+'"></span>'+esc(it.severity)+'</span></div>'
     +'<div class="ctitle">'+esc(it.title)+'</div>'
     +'<div class="csum">'+esc(it.summary)+'</div>'
     +'<div class="cfoot"><span class="date">'+esc(it.date||"")+'</span>'+src+'</div></div>';
 }
-function esc(s){return(s==null?"":(""+s)).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]))}
+function esc(s){return(s==null?"":(""+s)).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
 
-/* per-day category counts */
 function trendData(){
   return (DATA.days||[]).slice(-14).map(d=>{
     const c={date:(d.date||"").slice(5),Incident:0,Regulatory:0,Threat:0,Technology:0,total:0};
@@ -184,109 +243,99 @@ function trendData(){
     return c;
   });
 }
-
-/* SVG stacked bar — items per day */
-function drawTrend(){
-  const data=trendData(), svg=document.getElementById("chartTrend");
-  const W=svg.clientWidth||300,H=190,pad=24,bw=Math.max(6,Math.min(34,(W-pad*2)/Math.max(data.length,1)-8));
-  const max=Math.max(1,...data.map(d=>d.total));
-  document.getElementById("trendLabel").textContent="Trend · "+(DATA.days?DATA.days.length:0)+" day"+((DATA.days&&DATA.days.length===1)?"":"s")+" tracked";
-  let g="";
-  // gridlines
-  for(let k=0;k<=2;k++){const y=pad+(H-pad*2)*k/2;g+='<line x1="'+pad+'" y1="'+y+'" x2="'+(W-pad)+'" y2="'+y+'" stroke="#1e3851" stroke-dasharray="3 3"/>';}
-  data.forEach((d,i)=>{
-    const x=pad+i*((W-pad*2)/Math.max(data.length,1))+ ((W-pad*2)/Math.max(data.length,1)-bw)/2;
-    let yb=H-pad;
-    CATS.forEach(c=>{
-      const h=(H-pad*2)*(d[c]/max);
-      if(h>0){g+='<rect x="'+x+'" y="'+(yb-h)+'" width="'+bw+'" height="'+h+'" fill="'+CATCOLOR[c]+'" opacity="0.85"/>';yb-=h;}
-    });
-    g+='<text x="'+(x+bw/2)+'" y="'+(H-7)+'" fill="#7d94ac" font-size="9" text-anchor="middle" font-family="ui-monospace">'+d.date+'</text>';
-  });
-  svg.innerHTML=g;
+function monthAgg(){
+  const m={};
+  (DATA.days||[]).forEach(d=>{const key=(d.date||"").slice(0,7);if(!key)return;
+    if(!m[key])m[key]={month:key,Incident:0,Regulatory:0,Threat:0,Technology:0,total:0};
+    (d.items||[]).forEach(i=>{if(m[key][i.category]!=null){m[key][i.category]++;m[key].total++}});});
+  return Object.values(m).sort((a,b)=>a.month<b.month?-1:1).slice(-12);
 }
-
-/* SVG bar — totals by category */
-function drawCat(){
-  const d=trendData(), svg=document.getElementById("chartCat");
-  const totals=CATS.map(c=>({name:c,v:d.reduce((s,x)=>s+x[c],0)}));
-  const W=svg.clientWidth||300,H=190,pad=24,max=Math.max(1,...totals.map(t=>t.v));
-  const bw=Math.min(46,(W-pad*2)/totals.length-12);
-  let g="";
-  for(let k=0;k<=2;k++){const y=pad+(H-pad*2)*k/2;g+='<line x1="'+pad+'" y1="'+y+'" x2="'+(W-pad)+'" y2="'+y+'" stroke="#1e3851" stroke-dasharray="3 3"/>';}
-  totals.forEach((t,i)=>{
-    const x=pad+i*((W-pad*2)/totals.length)+((W-pad*2)/totals.length-bw)/2;
-    const h=(H-pad*2)*(t.v/max);
-    g+='<rect x="'+x+'" y="'+(H-pad-h)+'" width="'+bw+'" height="'+h+'" rx="4" fill="'+CATCOLOR[t.name]+'"/>';
-    g+='<text x="'+(x+bw/2)+'" y="'+(H-pad-h-5)+'" fill="#e6edf5" font-size="10" text-anchor="middle" font-family="ui-monospace">'+t.v+'</text>';
-    g+='<text x="'+(x+bw/2)+'" y="'+(H-7)+'" fill="#7d94ac" font-size="8" text-anchor="middle" font-family="ui-monospace">'+t.name.slice(0,4).toUpperCase()+'</text>';
-  });
-  svg.innerHTML=g;
-}
-
-/* filters */
-document.getElementById("region").addEventListener("change",e=>{region=e.target.value;render()});
-document.querySelectorAll(".chip").forEach(ch=>ch.addEventListener("click",()=>{
-  document.querySelectorAll(".chip").forEach(c=>{c.classList.remove("active");c.style.background="";c.style.color="";c.style.borderColor=""});
-  ch.classList.add("active"); cat=ch.dataset.cat;
-  const col=CATCOLOR[cat]||"#c9a227"; ch.style.background=col; ch.style.color="#10131a"; ch.style.borderColor=col;
-  render();
-}));
-
-/* ----- 12-month aggregation ----- */
 function yearTotals(){
   const t={Incident:0,Regulatory:0,Threat:0,Technology:0};
   (DATA.days||[]).forEach(d=>(d.items||[]).forEach(i=>{if(t[i.category]!=null)t[i.category]++}));
   return t;
 }
-function monthAgg(){
-  const m={};
-  (DATA.days||[]).forEach(d=>{
-    const key=(d.date||"").slice(0,7); if(!key)return;
-    if(!m[key])m[key]={month:key,Incident:0,Regulatory:0,Threat:0,Technology:0,total:0};
-    (d.items||[]).forEach(i=>{if(m[key][i.category]!=null){m[key][i.category]++;m[key].total++}});
+
+function W(svg){return svg.clientWidth||svg.parentNode.clientWidth-28||300}
+
+/* generic stacked-bar drawer with totals + per-segment tooltips */
+function stacked(svgId,data,labelKey,labelFmt){
+  const svg=document.getElementById(svgId),Wd=W(svg),H=+svg.getAttribute("height"),pad=26;
+  const max=Math.max(1,...data.map(d=>d.total));
+  let g="";
+  for(let k=0;k<=2;k++){const y=pad+(H-pad*2)*k/2;g+='<line x1="'+pad+'" y1="'+y.toFixed(1)+'" x2="'+(Wd-pad)+'" y2="'+y.toFixed(1)+'" stroke="#20405e" stroke-dasharray="3 4"/>';}
+  const slot=(Wd-pad*2)/Math.max(data.length,1),bw=Math.max(7,Math.min(38,slot-9));
+  data.forEach((d,i)=>{
+    const x=pad+i*slot+(slot-bw)/2; let yb=H-pad; const lbl=labelFmt(d[labelKey]);
+    CATS.forEach(c=>{
+      const h=(H-pad*2)*(d[c]/max);
+      if(h>0){const pct=d.total?Math.round(d[c]/d.total*100):0;
+        const tipv=tdot(CATCOLOR[c])+'<b>'+c+'</b><br>'+d[c]+' item'+(d[c]===1?"":"s")+' · '+pct+'% of '+lbl;
+        g+='<rect data-tip="'+tipv.replace(/"/g,"&quot;")+'" x="'+x.toFixed(1)+'" y="'+(yb-h).toFixed(1)+'" width="'+bw.toFixed(1)+'" height="'+h.toFixed(1)+'" rx="2" fill="'+CATCOLOR[c]+'"/>';
+        yb-=h;}
+    });
+    if(d.total>0)g+='<text x="'+(x+bw/2).toFixed(1)+'" y="'+(yb-6).toFixed(1)+'" fill="#e8eef6" font-size="10.5" font-weight="700" text-anchor="middle" font-family="ui-monospace">'+d.total+'</text>';
+    g+='<text x="'+(x+bw/2).toFixed(1)+'" y="'+(H-8)+'" fill="#88a0ba" font-size="8.5" text-anchor="middle" font-family="ui-monospace">'+lbl+'</text>';
   });
-  return Object.values(m).sort((a,b)=>a.month<b.month?-1:1).slice(-12);
+  svg.innerHTML=g; wireTip(svg);
 }
 
-/* SVG donut — category share over the year */
+function drawTrend(){
+  document.getElementById("trendLabel").textContent="Recent Trend · "+(DATA.days?DATA.days.length:0)+" entr"+((DATA.days&&DATA.days.length===1)?"y":"ies");
+  stacked("chartTrend",trendData(),"date",v=>v);
+}
+function drawMonth(){
+  const data=monthAgg();
+  document.getElementById("yearLabel").textContent="12-Month Overview · "+data.length+" month"+(data.length===1?"":"s");
+  stacked("chartMonth",data,"month",monthLabel);
+}
+
+function drawCat(){
+  const svg=document.getElementById("chartCat"),Wd=W(svg),H=+svg.getAttribute("height"),pad=26;
+  const d=monthAgg(), totals=CATS.map(c=>({name:c,v:d.reduce((s,x)=>s+x[c],0)}));
+  const grand=totals.reduce((s,t)=>s+t.v,0), max=Math.max(1,...totals.map(t=>t.v));
+  let g="";
+  for(let k=0;k<=2;k++){const y=pad+(H-pad*2)*k/2;g+='<line x1="'+pad+'" y1="'+y.toFixed(1)+'" x2="'+(Wd-pad)+'" y2="'+y.toFixed(1)+'" stroke="#20405e" stroke-dasharray="3 4"/>';}
+  const slot=(Wd-pad*2)/totals.length,bw=Math.min(52,slot-16);
+  totals.forEach((t,i)=>{
+    const x=pad+i*slot+(slot-bw)/2,h=(H-pad*2)*(t.v/max),pct=grand?Math.round(t.v/grand*100):0;
+    const tipv=tdot(CATCOLOR[t.name])+'<b>'+t.name+'</b><br>'+t.v+' items · '+pct+'% of total';
+    g+='<rect data-tip="'+tipv.replace(/"/g,"&quot;")+'" x="'+x.toFixed(1)+'" y="'+(H-pad-h).toFixed(1)+'" width="'+bw.toFixed(1)+'" height="'+h.toFixed(1)+'" rx="4" fill="'+CATCOLOR[t.name]+'"/>';
+    g+='<text x="'+(x+bw/2).toFixed(1)+'" y="'+(H-pad-h-6).toFixed(1)+'" fill="#e8eef6" font-size="11" font-weight="700" text-anchor="middle" font-family="ui-monospace">'+t.v+'</text>';
+    g+='<text x="'+(x+bw/2).toFixed(1)+'" y="'+(H-8)+'" fill="#88a0ba" font-size="8.5" text-anchor="middle" font-family="ui-monospace">'+t.name.slice(0,4).toUpperCase()+'</text>';
+  });
+  svg.innerHTML=g; wireTip(svg);
+}
+
 function drawPie(){
-  const svg=document.getElementById("chartPie"), leg=document.getElementById("pieLegend");
-  const t=yearTotals(), total=CATS.reduce((s,c)=>s+t[c],0);
-  const W=svg.clientWidth||300,H=210,cx=W/2,cy=H/2,r=Math.min(W/2,cy)-14,ri=r*0.58;
-  if(total===0){svg.innerHTML='<text x="'+cx+'" y="'+cy+'" fill="#7d94ac" font-size="11" text-anchor="middle" font-family="ui-monospace">No data yet</text>';leg.innerHTML="";return;}
+  const svg=document.getElementById("chartPie"),leg=document.getElementById("pieLegend");
+  const Wd=W(svg),H=+svg.getAttribute("height"),cx=Wd/2,cy=H/2,r=Math.min(Wd/2,cy)-16,ri=r*0.6;
+  const t=yearTotals(),total=CATS.reduce((s,c)=>s+t[c],0);
+  if(total===0){svg.innerHTML='<text x="'+cx+'" y="'+cy+'" fill="#88a0ba" font-size="11" text-anchor="middle" font-family="ui-monospace">No data yet</text>';leg.innerHTML="";return;}
   let start=-Math.PI/2,g="";
   CATS.forEach(c=>{
     const frac=t[c]/total; if(frac<=0)return;
-    const end=start+2*Math.PI*frac, large=(end-start)>Math.PI?1:0;
+    const end=start+2*Math.PI*frac,large=(end-start)>Math.PI?1:0,pct=Math.round(frac*100);
     const x1=cx+r*Math.cos(start),y1=cy+r*Math.sin(start),x2=cx+r*Math.cos(end),y2=cy+r*Math.sin(end);
-    g+='<path d="M '+cx+' '+cy+' L '+x1.toFixed(1)+' '+y1.toFixed(1)+' A '+r+' '+r+' 0 '+large+' 1 '+x2.toFixed(1)+' '+y2.toFixed(1)+' Z" fill="'+CATCOLOR[c]+'" stroke="#0b1622" stroke-width="2"/>';
+    const tipv=tdot(CATCOLOR[c])+'<b>'+c+'</b><br>'+t[c]+' items · '+pct+'%';
+    g+='<path data-tip="'+tipv.replace(/"/g,"&quot;")+'" d="M '+cx+' '+cy+' L '+x1.toFixed(1)+' '+y1.toFixed(1)+' A '+r+' '+r+' 0 '+large+' 1 '+x2.toFixed(1)+' '+y2.toFixed(1)+' Z" fill="'+CATCOLOR[c]+'" stroke="#0a1320" stroke-width="2.5"/>';
     start=end;
   });
-  g+='<circle cx="'+cx+'" cy="'+cy+'" r="'+ri+'" fill="#122236"/>';
-  g+='<text x="'+cx+'" y="'+(cy-2)+'" fill="#e6edf5" font-size="20" font-weight="700" text-anchor="middle" font-family="ui-monospace">'+total+'</text>';
-  g+='<text x="'+cx+'" y="'+(cy+15)+'" fill="#7d94ac" font-size="9" text-anchor="middle" font-family="ui-monospace">ITEMS</text>';
-  svg.innerHTML=g;
+  g+='<circle cx="'+cx+'" cy="'+cy+'" r="'+ri+'" fill="#0f1d2e"/>';
+  g+='<text x="'+cx+'" y="'+(cy-2)+'" fill="#e8eef6" font-size="22" font-weight="700" text-anchor="middle" font-family="ui-monospace">'+total+'</text>';
+  g+='<text x="'+cx+'" y="'+(cy+16)+'" fill="#88a0ba" font-size="9" letter-spacing="1.5" text-anchor="middle" font-family="ui-monospace">ITEMS</text>';
+  svg.innerHTML=g; wireTip(svg);
   leg.innerHTML=CATS.map(c=>'<span><i style="background:'+CATCOLOR[c]+'"></i>'+c+' '+Math.round(t[c]/total*100)+'%</span>').join("");
 }
 
-/* SVG stacked bar — items per month */
-function drawMonth(){
-  const data=monthAgg(), svg=document.getElementById("chartMonth");
-  const W=svg.clientWidth||300,H=210,pad=24,max=Math.max(1,...data.map(d=>d.total));
-  document.getElementById("yearLabel").textContent="12-Month Overview · "+data.length+" month"+(data.length===1?"":"s");
-  let g="";
-  for(let k=0;k<=2;k++){const y=pad+(H-pad*2)*k/2;g+='<line x1="'+pad+'" y1="'+y+'" x2="'+(W-pad)+'" y2="'+y+'" stroke="#1e3851" stroke-dasharray="3 3"/>';}
-  const slot=(W-pad*2)/Math.max(data.length,1),bw=Math.max(8,Math.min(40,slot-8));
-  data.forEach((d,i)=>{
-    const x=pad+i*slot+(slot-bw)/2; let yb=H-pad;
-    CATS.forEach(c=>{const h=(H-pad*2)*(d[c]/max);if(h>0){g+='<rect x="'+x+'" y="'+(yb-h)+'" width="'+bw+'" height="'+h+'" fill="'+CATCOLOR[c]+'" opacity="0.85"/>';yb-=h;}});
-    g+='<text x="'+(x+bw/2)+'" y="'+(H-7)+'" fill="#7d94ac" font-size="8" text-anchor="middle" font-family="ui-monospace">'+d.month.slice(2)+'</text>';
-  });
-  svg.innerHTML=g;
-}
-
-window.addEventListener("resize",()=>{drawTrend();drawCat();drawPie();drawMonth()});
+document.getElementById("region").addEventListener("change",e=>{region=e.target.value;render()});
+document.querySelectorAll(".chip").forEach(ch=>ch.addEventListener("click",()=>{
+  document.querySelectorAll(".chip").forEach(c=>{c.classList.remove("active");c.style.background="";c.style.color="";c.style.borderColor=""});
+  ch.classList.add("active"); cat=ch.dataset.cat;
+  const col=CATCOLOR[cat]||"#cba43c"; ch.style.background=col; ch.style.color="#0c1320"; ch.style.borderColor=col;
+  render();
+}));
+window.addEventListener("resize",()=>{render()});
 </script>
 </body>
 </html>
