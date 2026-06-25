@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T14:24:23.455Z",
+  "generatedAt": "2026-06-25T00:19:45.402Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -365,6 +365,72 @@
           "source": "EASA / Airbus Protect",
           "url": "https://www.easa.europa.eu/en/the-agency/faqs/information-security-part",
           "date": "2026-02-22"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-25",
+      "briefing": "Aviation security faces a converging threat landscape in mid-2026, with ransomware and GPS/GNSS spoofing attacks targeting critical navigation and data systems across Asia-Pacific, Europe, and North America. Regulatory pressure is intensifying globally as EASA Part-IS cybersecurity obligations take full effect and the EU Council releases a revised Aviation Security Strategy addressing DDoS, IED, and conflict-zone risks.",
+      "items": [
+        {
+          "title": "EU Council Publishes Updated Aviation Security Strategy Addressing DDoS, IED and Conflict-Zone Threats",
+          "category": "Regulatory",
+          "region": "Europe",
+          "severity": "High",
+          "summary": "EU Council document dated 19 June 2026 outlines revised aviation security strategy covering DDoS threats, IED air-cargo supply chain measures, and conflict-zone risk-sharing with EASA.",
+          "source": "Council of the European Union",
+          "url": "https://data.consilium.europa.eu/doc/document/ST-10901-2026-INIT/en/pdf",
+          "date": "2026-06-19"
+        },
+        {
+          "title": "Denver International Airport Perimeter Breach Triggers Security Review After Intruder Reaches Runway",
+          "category": "Incident",
+          "region": "North America",
+          "severity": "High",
+          "summary": "Intruder breached Denver Airport perimeter, reached Frontier Flight 4345; ground sensor alert was misattributed to deer, exposing perimeter detection gap.",
+          "source": "ASIS Security Management",
+          "url": "https://www.asisonline.org/security-management-magazine/latest-news/today-in-security/2026/may/denver-airport-breach/",
+          "date": "2026-05-15"
+        },
+        {
+          "title": "RansomHouse Claims Cyber Breach of Indian Aviation Services Firm Aegle Aviation",
+          "category": "Incident",
+          "region": "Asia-Pacific",
+          "severity": "Medium",
+          "summary": "Threat actor RansomHouse breached India-based Aegle Aviation, an aircraft charter and ground-handling firm; leak size undisclosed as of 9 June 2026.",
+          "source": "BreachSense",
+          "url": "https://www.breachsense.com/breaches/aegle-aviation-data-breach/",
+          "date": "2026-06-09"
+        },
+        {
+          "title": "EASA Part-IS Information Security Regulation Now Fully in Force Across EU Aviation Sector",
+          "category": "Regulatory",
+          "region": "Europe",
+          "severity": "Medium",
+          "summary": "EASA Part-IS (EU 2023/203 & 2022/1645) mandatory for all EU airlines, airports, MROs and ATC providers from February 2026, requiring certified ISMS and incident reporting.",
+          "source": "EASA",
+          "url": "https://www.easa.europa.eu/en/the-agency/faqs/information-security-part",
+          "date": "2026-02-22"
+        },
+        {
+          "title": "Coordinated GPS Spoofing Hits Seven Major Indian Airports Including Delhi IGI, Mumbai and Kolkata",
+          "category": "Incident",
+          "region": "Asia-Pacific",
+          "severity": "High",
+          "summary": "India's Civil Aviation Minister confirmed coordinated GNSS spoofing at Delhi IGI, Mumbai, Kolkata, Hyderabad, Bengaluru and Chennai airports, causing flight delays and triggering mandatory 10-minute pilot reporting SOPs.",
+          "source": "Bank Info Security / Daily Pioneer",
+          "url": "https://www.bankinfosecurity.asia/indias-gps-spoofing-sparks-calls-for-aviation-resilience-a-30200",
+          "date": "2025-12-05"
+        },
+        {
+          "title": "Aviation Booking Software Supply-Chain Phishing Attack Compromises Multiple Major Airlines",
+          "category": "Incident",
+          "region": "North America",
+          "severity": "High",
+          "summary": "March 2026 phishing and MFA-fatigue attack on a multi-airline booking software provider compromised IT admin credentials, giving attackers access to Microsoft 365, cloud admin and OT systems.",
+          "source": "HALOCK Security Labs",
+          "url": "https://www.halock.com/top-cyber-threats-in-the-aviation-sector/",
+          "date": "2026-03-01"
         }
       ]
     }
