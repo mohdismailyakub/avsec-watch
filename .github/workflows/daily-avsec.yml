@@ -3,7 +3,7 @@ name: Daily AVSEC Watch
 on:
   schedule:
     - cron: "0 23 * * *"   # 23:00 UTC = 07:00 MYT (Sarawak)
-  workflow_dispatch: {}     # lets you run it manually from the Actions tab
+  workflow_dispatch: {}
 
 permissions:
   contents: write
@@ -18,6 +18,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0          # full history so rebase works cleanly
 
       - name: Set up Node
         uses: actions/setup-node@v4
@@ -36,10 +38,24 @@ jobs:
           MAIL_TO: ${{ secrets.MAIL_TO }}
         run: node pull.mjs
 
-      - name: Commit updated data.json
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "Daily AVSEC pull"
-          file_pattern: data.json
-          commit_user_name: avsec-bot
-          commit_user_email: actions@users.noreply.github.com
+      - name: Commit updated data.json (rebase-safe)
+        run: |
+          git config user.name  "avsec-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data.json
+          if git diff --staged --quiet; then
+            echo "No data.json changes to commit."
+            exit 0
+          fi
+          git commit -m "Daily AVSEC pull"
+          for i in 1 2 3 4 5; do
+            echo "Push attempt $i..."
+            if git pull --rebase origin main && git push origin main; then
+              echo "Pushed successfully."
+              exit 0
+            fi
+            echo "Remote moved ahead — retrying in 5s..."
+            sleep 5
+          done
+          echo "Push still failing after 5 attempts."
+          exit 1
