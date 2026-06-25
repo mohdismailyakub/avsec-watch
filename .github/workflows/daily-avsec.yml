@@ -19,7 +19,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0          # full history so rebase works cleanly
+          fetch-depth: 0
 
       - name: Set up Node
         uses: actions/setup-node@v4
@@ -38,19 +38,23 @@ jobs:
           MAIL_TO: ${{ secrets.MAIL_TO }}
         run: node pull.mjs
 
-      - name: Commit updated data.json (rebase-safe)
+      - name: Commit updated data.json (conflict-proof)
         run: |
           git config user.name  "avsec-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data.json
-          if git diff --staged --quiet; then
-            echo "No data.json changes to commit."
-            exit 0
-          fi
-          git commit -m "Daily AVSEC pull"
+          cp data.json /tmp/data.json.new
           for i in 1 2 3 4 5; do
             echo "Push attempt $i..."
-            if git pull --rebase origin main && git push origin main; then
+            git fetch origin main
+            git reset --hard origin/main      # take latest remote as clean base
+            cp /tmp/data.json.new data.json   # bot's version wins
+            git add data.json
+            if git diff --staged --quiet; then
+              echo "No data.json changes to commit."
+              exit 0
+            fi
+            git commit -m "Daily AVSEC pull"
+            if git push origin main; then
               echo "Pushed successfully."
               exit 0
             fi
