@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T00:19:45.402Z",
+  "generatedAt": "2026-06-25T00:32:32.149Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -370,67 +370,67 @@
     },
     {
       "date": "2026-06-25",
-      "briefing": "Aviation security faces a converging threat landscape in mid-2026, with ransomware and GPS/GNSS spoofing attacks targeting critical navigation and data systems across Asia-Pacific, Europe, and North America. Regulatory pressure is intensifying globally as EASA Part-IS cybersecurity obligations take full effect and the EU Council releases a revised Aviation Security Strategy addressing DDoS, IED, and conflict-zone risks.",
+      "briefing": "Aviation security threats worldwide are intensifying on two fronts: the United States is managing an unprecedented UAS enforcement surge during the FIFA World Cup with over 300 drones seized in 72 hours, while cyber-physical attacks on aviation navigation infrastructure — GPS spoofing, ransomware on airport platforms, and supply-chain credential theft — continue to affect carriers and airports across Asia-Pacific, Europe, and North America. Regulatory bodies including EASA, ICAO, and the FAA are responding with new binding cybersecurity frameworks and airspace enforcement initiatives, but enforcement gaps and fragmented counter-UAS intelligence remain critical vulnerabilities.",
       "items": [
         {
-          "title": "EU Council Publishes Updated Aviation Security Strategy Addressing DDoS, IED and Conflict-Zone Threats",
-          "category": "Regulatory",
-          "region": "Europe",
-          "severity": "High",
-          "summary": "EU Council document dated 19 June 2026 outlines revised aviation security strategy covering DDoS threats, IED air-cargo supply chain measures, and conflict-zone risk-sharing with EASA.",
-          "source": "Council of the European Union",
-          "url": "https://data.consilium.europa.eu/doc/document/ST-10901-2026-INIT/en/pdf",
-          "date": "2026-06-19"
-        },
-        {
-          "title": "Denver International Airport Perimeter Breach Triggers Security Review After Intruder Reaches Runway",
+          "title": "TSA Seizes 300+ Drones Violating FIFA World Cup No-Fly Zones",
           "category": "Incident",
           "region": "North America",
           "severity": "High",
-          "summary": "Intruder breached Denver Airport perimeter, reached Frontier Flight 4345; ground sensor alert was misattributed to deer, exposing perimeter detection gap.",
-          "source": "ASIS Security Management",
-          "url": "https://www.asisonline.org/security-management-magazine/latest-news/today-in-security/2026/may/denver-airport-breach/",
-          "date": "2026-05-15"
+          "summary": "TSA Federal Air Marshals and partners confiscated 300+ drones breaching World Cup restricted airspace; violators face up to $100,000 fines and federal charges.",
+          "source": "The National News Desk / New Straits Times",
+          "url": "https://thenationaldesk.com/news/americas-news-now/more-than-300-drones-seized-by-tsa-transportation-security-administration-federal-air-marshals-for-violating-fifa-world-cup-no-fly-zones-fines-prison-time-faa-no-drone-zones-fbi",
+          "date": "2026-06-24"
         },
         {
-          "title": "RansomHouse Claims Cyber Breach of Indian Aviation Services Firm Aegle Aviation",
+          "title": "DOJ Arrests 12 in Sophisticated Multi-State Prison Drone Smuggling Network",
           "category": "Incident",
-          "region": "Asia-Pacific",
-          "severity": "Medium",
-          "summary": "Threat actor RansomHouse breached India-based Aegle Aviation, an aircraft charter and ground-handling firm; leak size undisclosed as of 9 June 2026.",
-          "source": "BreachSense",
-          "url": "https://www.breachsense.com/breaches/aegle-aviation-data-breach/",
-          "date": "2026-06-09"
+          "region": "North America",
+          "severity": "High",
+          "summary": "Federal grand jury indicts 12 for coordinating heavy-payload drone deliveries of drugs and weapons to 10 federal prisons across eight US states from 2023–2026.",
+          "source": "CNN Politics",
+          "url": "https://www.cnn.com/2026/06/24/politics/justice-department-drone-network-delivery-prisons",
+          "date": "2026-06-24"
         },
         {
-          "title": "EASA Part-IS Information Security Regulation Now Fully in Force Across EU Aviation Sector",
+          "title": "India Confirms GPS Spoofing and Jamming at Eight Major Airports",
+          "category": "Threat",
+          "region": "Asia-Pacific",
+          "severity": "High",
+          "summary": "India's Civil Aviation Minister confirmed coordinated GPS spoofing at Delhi, Mumbai, Kolkata, Hyderabad, Bengaluru, and other airports; WMO and CERT-In still tracing signal sources.",
+          "source": "The Register / AeroMorning",
+          "url": "https://www.theregister.com/2025/12/03/india_gps_spoofing/",
+          "date": "2025-12-03"
+        },
+        {
+          "title": "EASA Part-IS Information Security Regulation Enters Full Force for EU Aviation",
           "category": "Regulatory",
           "region": "Europe",
           "severity": "Medium",
-          "summary": "EASA Part-IS (EU 2023/203 & 2022/1645) mandatory for all EU airlines, airports, MROs and ATC providers from February 2026, requiring certified ISMS and incident reporting.",
-          "source": "EASA",
-          "url": "https://www.easa.europa.eu/en/the-agency/faqs/information-security-part",
+          "summary": "EASA Part-IS binding cybersecurity rules now apply across EU aviation ecosystem including airlines, MROs, ANSPs, and aerodromes; full ISMS compliance required by August 2027.",
+          "source": "Jones Day / Airbus Protect",
+          "url": "https://www.jonesday.com/en/insights/2026/02/civil-aviation-cybersecurity-easa-partis-sets-new-information-security-obligations",
           "date": "2026-02-22"
         },
         {
-          "title": "Coordinated GPS Spoofing Hits Seven Major Indian Airports Including Delhi IGI, Mumbai and Kolkata",
+          "title": "Ransomware Attack on Collins Aerospace vMUSE Disrupted Heathrow, Brussels, Berlin Airports",
           "category": "Incident",
-          "region": "Asia-Pacific",
+          "region": "Europe",
           "severity": "High",
-          "summary": "India's Civil Aviation Minister confirmed coordinated GNSS spoofing at Delhi IGI, Mumbai, Kolkata, Hyderabad, Bengaluru and Chennai airports, causing flight delays and triggering mandatory 10-minute pilot reporting SOPs.",
-          "source": "Bank Info Security / Daily Pioneer",
-          "url": "https://www.bankinfosecurity.asia/indias-gps-spoofing-sparks-calls-for-aviation-resilience-a-30200",
-          "date": "2025-12-05"
+          "summary": "Ransomware encrypted backend servers of Collins Aerospace's airport operations platform, forcing manual check-in and causing hundreds of delays at three major European hubs.",
+          "source": "CSIS Significant Cyber Incidents",
+          "url": "https://www.csis.org/programs/strategic-technologies-program/significant-cyber-incidents",
+          "date": "2025-09-01"
         },
         {
-          "title": "Aviation Booking Software Supply-Chain Phishing Attack Compromises Multiple Major Airlines",
-          "category": "Incident",
-          "region": "North America",
-          "severity": "High",
-          "summary": "March 2026 phishing and MFA-fatigue attack on a multi-airline booking software provider compromised IT admin credentials, giving attackers access to Microsoft 365, cloud admin and OT systems.",
-          "source": "HALOCK Security Labs",
-          "url": "https://www.halock.com/top-cyber-threats-in-the-aviation-sector/",
-          "date": "2026-03-01"
+          "title": "ICAO Assembly Endorses Second Edition Global Aviation Security Plan with UAS and GNSS Threat Mandates",
+          "category": "Regulatory",
+          "region": "Asia-Pacific",
+          "severity": "Medium",
+          "summary": "ICAO's 192-member Assembly adopted updated Global Aviation Security Plan targeting weaponised UAS and GNSS jamming, directing Council to develop a dedicated conflict-zone work programme.",
+          "source": "ICAO Newsroom",
+          "url": "https://www.icao.int/news/icao-enhances-global-aviation-safety-and-security-framework",
+          "date": "2025-10-03"
         }
       ]
     }
