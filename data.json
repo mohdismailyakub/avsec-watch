@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T00:32:32.149Z",
+  "generatedAt": "2026-06-25T10:25:05.790Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -370,67 +370,67 @@
     },
     {
       "date": "2026-06-25",
-      "briefing": "Aviation security threats worldwide are intensifying on two fronts: the United States is managing an unprecedented UAS enforcement surge during the FIFA World Cup with over 300 drones seized in 72 hours, while cyber-physical attacks on aviation navigation infrastructure — GPS spoofing, ransomware on airport platforms, and supply-chain credential theft — continue to affect carriers and airports across Asia-Pacific, Europe, and North America. Regulatory bodies including EASA, ICAO, and the FAA are responding with new binding cybersecurity frameworks and airspace enforcement initiatives, but enforcement gaps and fragmented counter-UAS intelligence remain critical vulnerabilities.",
+      "briefing": "Global aviation security faces a high-tempo threat environment driven by escalating GPS/GNSS spoofing campaigns targeting multiple countries, a sustained wave of cyber intrusions against airline and airport IT infrastructure, and fresh physical disruptions to critical airport facilities. Regulatory bodies including EASA, FAA, and ICAO are actively issuing conflict-zone bulletins, UAS restriction frameworks, and mandatory cybersecurity compliance deadlines in response to these converging threats.",
       "items": [
         {
-          "title": "TSA Seizes 300+ Drones Violating FIFA World Cup No-Fly Zones",
+          "title": "Caracas Simón Bolívar Airport Shut Down After Earthquake Destroys Terminal",
+          "category": "Incident",
+          "region": "Latin America",
+          "severity": "High",
+          "summary": "Twin earthquakes caused severe structural damage to Venezuela's main international gateway, suspending all flights pending full safety inspections of screening areas and infrastructure.",
+          "source": "AirLive",
+          "url": "https://airlive.net/news/2026/06/25/breaking-caracas-airport-shut-down-after-twin-earthquakes-devastate-venezuela/",
+          "date": "2026-06-25"
+        },
+        {
+          "title": "EASA Issues New Conflict Zone Bulletin on Iran, Iraq and Lebanon Airspace",
+          "category": "Regulatory",
+          "region": "Middle East",
+          "severity": "High",
+          "summary": "EASA CZIB 2026-03-R12 directs operators to avoid Iran, Iraq and Lebanon airspace and exercise caution across Bahrain, Israel, Jordan, Kuwait, Qatar, UAE, Oman and Saudi Arabia.",
+          "source": "Safe Airspace / EASA",
+          "url": "https://safeairspace.net/summary/",
+          "date": "2026-06-10"
+        },
+        {
+          "title": "FAA Publishes Long-Awaited NPRM to Restrict Drone Flights Over Critical Infrastructure",
+          "category": "Regulatory",
+          "region": "North America",
+          "severity": "Medium",
+          "summary": "FAA's Section 2209 NPRM establishes a process for facility owners to apply for UAS flight restrictions; public comment period closes 6 July 2026.",
+          "source": "Holland & Knight / Federal Register",
+          "url": "https://www.hklaw.com/en/insights/publications/2026/05/citing-national-security-needs-the-fcc-and-faa-take-steps-on-uas",
+          "date": "2026-05-06"
+        },
+        {
+          "title": "Aviation Booking Software Provider Hit by MFA-Fatigue Phishing Attack Affecting Multiple Airlines",
           "category": "Incident",
           "region": "North America",
           "severity": "High",
-          "summary": "TSA Federal Air Marshals and partners confiscated 300+ drones breaching World Cup restricted airspace; violators face up to $100,000 fines and federal charges.",
-          "source": "The National News Desk / New Straits Times",
-          "url": "https://thenationaldesk.com/news/americas-news-now/more-than-300-drones-seized-by-tsa-transportation-security-administration-federal-air-marshals-for-violating-fifa-world-cup-no-fly-zones-fines-prison-time-faa-no-drone-zones-fbi",
-          "date": "2026-06-24"
+          "summary": "Threat actors used social engineering and MFA fatigue to compromise an IT administrator's credentials, gaining access to identity systems, Microsoft 365 and OT environments.",
+          "source": "HALOCK Security Labs",
+          "url": "https://www.halock.com/top-cyber-threats-in-the-aviation-sector/",
+          "date": "2026-03-01"
         },
         {
-          "title": "DOJ Arrests 12 in Sophisticated Multi-State Prison Drone Smuggling Network",
-          "category": "Incident",
-          "region": "North America",
-          "severity": "High",
-          "summary": "Federal grand jury indicts 12 for coordinating heavy-payload drone deliveries of drugs and weapons to 10 federal prisons across eight US states from 2023–2026.",
-          "source": "CNN Politics",
-          "url": "https://www.cnn.com/2026/06/24/politics/justice-department-drone-network-delivery-prisons",
-          "date": "2026-06-24"
-        },
-        {
-          "title": "India Confirms GPS Spoofing and Jamming at Eight Major Airports",
-          "category": "Threat",
-          "region": "Asia-Pacific",
-          "severity": "High",
-          "summary": "India's Civil Aviation Minister confirmed coordinated GPS spoofing at Delhi, Mumbai, Kolkata, Hyderabad, Bengaluru, and other airports; WMO and CERT-In still tracing signal sources.",
-          "source": "The Register / AeroMorning",
-          "url": "https://www.theregister.com/2025/12/03/india_gps_spoofing/",
-          "date": "2025-12-03"
-        },
-        {
-          "title": "EASA Part-IS Information Security Regulation Enters Full Force for EU Aviation",
+          "title": "EASA Part-IS Information Security Implementing Regulation Now Fully Applicable",
           "category": "Regulatory",
           "region": "Europe",
           "severity": "Medium",
-          "summary": "EASA Part-IS binding cybersecurity rules now apply across EU aviation ecosystem including airlines, MROs, ANSPs, and aerodromes; full ISMS compliance required by August 2027.",
-          "source": "Jones Day / Airbus Protect",
-          "url": "https://www.jonesday.com/en/insights/2026/02/civil-aviation-cybersecurity-easa-partis-sets-new-information-security-obligations",
+          "summary": "EASA's Part-IS cybersecurity rule became fully applicable on 22 February 2026, mandating Information Security Management Systems for airlines, airports, MROs and air navigation service providers.",
+          "source": "EASA",
+          "url": "https://www.easa.europa.eu/en/the-agency/faqs/information-security-part",
           "date": "2026-02-22"
         },
         {
-          "title": "Ransomware Attack on Collins Aerospace vMUSE Disrupted Heathrow, Brussels, Berlin Airports",
-          "category": "Incident",
-          "region": "Europe",
-          "severity": "High",
-          "summary": "Ransomware encrypted backend servers of Collins Aerospace's airport operations platform, forcing manual check-in and causing hundreds of delays at three major European hubs.",
-          "source": "CSIS Significant Cyber Incidents",
-          "url": "https://www.csis.org/programs/strategic-technologies-program/significant-cyber-incidents",
-          "date": "2025-09-01"
-        },
-        {
-          "title": "ICAO Assembly Endorses Second Edition Global Aviation Security Plan with UAS and GNSS Threat Mandates",
-          "category": "Regulatory",
+          "title": "India Confirms Coordinated GPS Spoofing Campaign Targeting Eight Major Airports",
+          "category": "Threat",
           "region": "Asia-Pacific",
-          "severity": "Medium",
-          "summary": "ICAO's 192-member Assembly adopted updated Global Aviation Security Plan targeting weaponised UAS and GNSS jamming, directing Council to develop a dedicated conflict-zone work programme.",
-          "source": "ICAO Newsroom",
-          "url": "https://www.icao.int/news/icao-enhances-global-aviation-safety-and-security-framework",
-          "date": "2025-10-03"
+          "severity": "High",
+          "summary": "India's Civil Aviation Minister confirmed GPS spoofing and GNSS jamming at Delhi, Mumbai, Kolkata, Amritsar, Hyderabad, Bengaluru and Chennai airports; source unattributed, state-sponsored actor suspected.",
+          "source": "The Register / Daily Pioneer",
+          "url": "https://www.theregister.com/2025/12/03/india_gps_spoofing/",
+          "date": "2025-12-03"
         }
       ]
     }
