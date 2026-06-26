@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T16:57:36.454Z",
+  "generatedAt": "2026-06-26T16:58:22.141Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -502,67 +502,67 @@
     },
     {
       "date": "2026-06-27",
-      "briefing": "The global aviation security environment remains under significant strain in mid-2026, marked by a deadly jihadist assault on Niamey's international airport, an escalating wave of ransomware and GPS-spoofing cyber attacks targeting airlines and airports across Asia-Pacific and Europe, and active regulatory enforcement of EASA Part-IS cybersecurity obligations now in full effect. Threat actors ranging from state-affiliated electronic warfare operators to criminal ransomware groups are simultaneously probing physical perimeters and digital infrastructure, demanding a whole-of-government and industry response.",
+      "briefing": "Global aviation security remains under significant pressure heading into late June 2026, with recurring runway incursion close calls at major US airports drawing Congressional scrutiny, an active EU Council aviation security legislative push underway in Brussels, and a sustained wave of cyber and GPS-spoofing threats targeting carriers and airports worldwide. Regulatory bodies including EASA, ICAO, and the EU Commission are simultaneously accelerating cybersecurity and conflict-zone threat frameworks, while drone misuse continues to escalate across criminal and potentially hostile dimensions.",
       "items": [
         {
-          "title": "JNIM Militants Storm Niamey International Airport, 13 Killed",
+          "title": "Second Delta Go-Around at Boston Logan in Two Days Triggers Congressional Hearing",
           "category": "Incident",
-          "region": "Africa",
-          "severity": "High",
-          "summary": "Al-Qaeda affiliate JNIM attacked Diori Hamani Airport on 18 June 2026; 13 dead, 22 attackers killed, major weapons cache seized.",
-          "source": "Wikipedia / multiple newswires",
-          "url": "https://en.wikipedia.org/wiki/June_2026_Diori_Hamani_International_Airport_attack",
-          "date": "2026-06-18"
-        },
-        {
-          "title": "RansomHouse Claims Aegle Aviation Data Breach in India",
-          "category": "Incident",
-          "region": "Asia-Pacific",
-          "severity": "High",
-          "summary": "Ransomware group RansomHouse breached India-based Aegle Aviation on 9 June 2026, exposing sensitive aviation services data.",
-          "source": "BreachSense",
-          "url": "https://www.breachsense.com/breaches/aegle-aviation-data-breach/",
-          "date": "2026-06-09"
-        },
-        {
-          "title": "SkySafe Expands Counter-UAS Airspace Intelligence at University Airport",
-          "category": "Technology",
           "region": "North America",
-          "severity": "Low",
-          "summary": "SkySafe and University of Illinois expanded a drone-detection partnership covering a commercial airport, stadiums, and major public events.",
-          "source": "UAS Weekly",
-          "url": "https://uasweekly.com/2026/06/25/skysafe-and-university-of-illinois-expand-partnership-to-advance-drone-detection-and-airspace-intelligence/",
+          "severity": "High",
+          "summary": "A second Delta flight aborted landing at Boston Logan within 24 hours due to runway occupancy, prompting Senate aviation safety hearings and FAA confirmation.",
+          "source": "Boston Globe / CNN",
+          "url": "https://www.cnn.com/2026/06/25/us/latest-aviation-incidents",
           "date": "2026-06-25"
         },
         {
-          "title": "EASA Part-IS Cybersecurity Regulation Now Fully Applicable Across EU Aviation",
+          "title": "EU Council Publishes Aviation Security Strategy Progress Report, Flags IID and DDoS Threats",
           "category": "Regulatory",
           "region": "Europe",
           "severity": "Medium",
-          "summary": "EASA Part-IS (EU 2023/203) became applicable February 2026 for all aviation entities; full ISMS compliance required within 18 months.",
-          "source": "Jones Day Insights",
+          "summary": "Brussels document dated 19 June 2026 details EU aviation security strategy, highlighting incendiary device and DDoS risks and moves to amend classified-information sharing legislation.",
+          "source": "Council of the European Union",
+          "url": "https://data.consilium.europa.eu/doc/document/ST-10901-2026-INIT/en/pdf",
+          "date": "2026-06-19"
+        },
+        {
+          "title": "US DOJ Busts Sophisticated Multi-State Drone Smuggling Network Targeting Federal Prisons",
+          "category": "Incident",
+          "region": "North America",
+          "severity": "High",
+          "summary": "Grand jury indicted 12 defendants for using heavy-payload drones to smuggle drugs, weapons, and phones into 10 federal prisons across eight US states.",
+          "source": "CNN",
+          "url": "https://www.cnn.com/2026/06/24/politics/justice-department-drone-network-delivery-prisons",
+          "date": "2026-06-24"
+        },
+        {
+          "title": "India Confirms GPS Spoofing Cyberattack on Seven Major Airports Including Delhi and Mumbai",
+          "category": "Incident",
+          "region": "Asia-Pacific",
+          "severity": "High",
+          "summary": "India's government confirmed GPS spoofing attacks disrupted aircraft navigation at seven airports; no flights cancelled due to ATC backup procedures and countermeasures deployed.",
+          "source": "Financial Express / Bright Defense",
+          "url": "https://www.brightdefense.com/resources/recent-data-breaches/",
+          "date": "2026-06-01"
+        },
+        {
+          "title": "EASA Part-IS Full Compliance Deadline Now Active; Airlines and Airports Enter 18-Month Implementation Window",
+          "category": "Regulatory",
+          "region": "Europe",
+          "severity": "Medium",
+          "summary": "EASA's binding Part-IS cybersecurity framework became fully applicable February 2026; organisations now have 18 months to reach operational and effective compliance levels.",
+          "source": "Jones Day / EASA",
           "url": "https://www.jonesday.com/en/insights/2026/02/civil-aviation-cybersecurity-easa-partis-sets-new-information-security-obligations",
           "date": "2026-02-22"
         },
         {
-          "title": "India Confirms Coordinated GPS-Spoofing Cyber Attacks on Seven Major Airports",
+          "title": "Myanmar National Airlines ATR-72 Struck by FPV Drone at Myitkyina Airport",
           "category": "Incident",
           "region": "Asia-Pacific",
           "severity": "High",
-          "summary": "Indian government confirmed GPS spoofing at Delhi IGI, Mumbai, Bengaluru, Kolkata, and Hyderabad airports; no flights cancelled; suspected state actor.",
-          "source": "NewsFirst Prime / BankInfoSecurity Asia",
-          "url": "https://newsfirstprime.com/nation/govt-confirms-cyber-attack-on-indian-airports-involving-gps-spoofing-10829545",
-          "date": "2025-12-01"
-        },
-        {
-          "title": "Pentagon Approves Autonomous SkyValor Counter-UAS System Following Border Airspace Disruptions",
-          "category": "Regulatory",
-          "region": "North America",
-          "severity": "Medium",
-          "summary": "DoD approved CACI's SkyValor detect-and-defeat system for military-wide use after Texas airspace was disrupted by counter-drone miscoordination between FAA and DHS.",
-          "source": "DefenseScoop",
-          "url": "https://defensescoop.com/2026/06/09/pentagon-approves-autonomous-counter-drone-system-after-border-testing/",
-          "date": "2026-06-09"
+          "summary": "A Myanmar National Airlines ATR-72-600 was struck by an alleged first-person-view drone while preparing for take-off at Myitkyina Airport on 20 February 2026.",
+          "source": "D-Fend Solutions Rogue Drone Activity Briefing",
+          "url": "https://d-fendsolutions.com/blog/rogue-drone-activity-briefing-feb-2026/",
+          "date": "2026-02-20"
         }
       ]
     }
