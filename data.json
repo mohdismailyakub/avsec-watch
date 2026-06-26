@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T10:38:12.758Z",
+  "generatedAt": "2026-06-26T13:55:49.864Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -436,67 +436,67 @@
     },
     {
       "date": "2026-06-26",
-      "briefing": "Global aviation security remains under sustained cyber threat, with ransomware and GPS/GNSS spoofing emerging as the dominant attack vectors against airports and airlines worldwide; regulatory frameworks are tightening as EASA Part-IS full-compliance obligations and ICAO's Second Edition Global Aviation Security Plan press operators to embed information security into core safety management. Counter-UAS pressure is also rising, with the US Pentagon formalising autonomous counter-drone systems for border and airspace protection following repeated incursions that temporarily shut down Texas airspace.",
+      "briefing": "The global aviation security environment over the past 72 hours has been marked by a deadly JNIM terrorist assault on Niamey's international airport in Niger and confirmed GPS spoofing attacks across seven major Indian airports, underscoring persistent physical and cyber threats to civil aviation worldwide. Simultaneously, the EU Council circulated a new Aviation Security Strategy document on 19 June 2026, and the FAA's critical infrastructure drone-restriction rulemaking (NPRM) entered its public-comment phase, reflecting accelerating regulatory responses to evolving UAS and hybrid threats.",
       "items": [
         {
-          "title": "Aegle Aviation Ransomware Data Breach by RansomHouse",
+          "title": "JNIM Militants Storm Niamey International Airport; 13 Killed",
+          "category": "Incident",
+          "region": "Africa",
+          "severity": "High",
+          "summary": "Al-Qaeda-linked JNIM attacked Diori Hamani Airport on 18 Jun 2026, killing 13; 22 attackers killed, 20 arrested. Second airport attack in 2026.",
+          "source": "Wikipedia / multiple newswires",
+          "url": "https://en.wikipedia.org/wiki/June_2026_Diori_Hamani_International_Airport_attack",
+          "date": "2026-06-18"
+        },
+        {
+          "title": "GPS Spoofing Cyberattack Hits Seven Major Indian Airports",
           "category": "Incident",
           "region": "Asia-Pacific",
           "severity": "High",
-          "summary": "Indian aviation services firm Aegle Aviation breached by RansomHouse ransomware group; data volume and scope under investigation.",
-          "source": "BreachSense",
-          "url": "https://www.breachsense.com/breaches/aegle-aviation-data-breach/",
-          "date": "2026-06-09"
+          "summary": "India confirmed GPS spoofing at Delhi, Mumbai, Kolkata, Hyderabad and Bengaluru airports, feeding false navigation data to approaching aircraft; no flights cancelled.",
+          "source": "Bright Defense / Financial Express",
+          "url": "https://www.brightdefense.com/resources/recent-data-breaches/",
+          "date": "2026-06-20"
         },
         {
-          "title": "Pentagon Approves Autonomous Counter-UAS 'SkyValor' System After Border Testing",
-          "category": "Technology",
-          "region": "North America",
-          "severity": "Medium",
-          "summary": "DoD approves CACI SkyValor detect-and-defeat counter-drone system following Yuma border tests; Texas airspace closures prompted urgency.",
-          "source": "DefenseScoop",
-          "url": "https://defensescoop.com/2026/06/09/pentagon-approves-autonomous-counter-drone-system-after-border-testing/",
-          "date": "2026-06-09"
-        },
-        {
-          "title": "EASA Part-IS Full Compliance Deadline Active for Wider Aviation Sector",
+          "title": "EU Council Circulates New Aviation Security Strategy Document",
           "category": "Regulatory",
           "region": "Europe",
           "severity": "Medium",
-          "summary": "EASA Part-IS cybersecurity framework now binding for airlines, MROs and ANSPs from Feb 2026; 18-month PSOE compliance roadmap in force.",
-          "source": "Jones Day / EASA",
-          "url": "https://www.jonesday.com/en/insights/2026/02/civil-aviation-cybersecurity-easa-partis-sets-new-information-security-obligations",
-          "date": "2026-02-22"
+          "summary": "Council document COM(2026)229 dated 19 Jun proposes faster classified-information sharing, cargo supply-chain hardening, and a conflict-zone risk-assessment mechanism with EASA/EEAS.",
+          "source": "Council of the European Union",
+          "url": "https://data.consilium.europa.eu/doc/document/ST-10901-2026-INIT/en/pdf",
+          "date": "2026-06-19"
         },
         {
-          "title": "India Confirms GPS Spoofing Cyberattacks at Seven Major Airports",
-          "category": "Incident",
-          "region": "Asia-Pacific",
-          "severity": "High",
-          "summary": "Government confirmed coordinated GPS spoofing at Delhi IGI, Mumbai, Kolkata, Hyderabad and Bengaluru airports; no flights disrupted due to backup systems.",
-          "source": "NewsFirst Prime / Bank Info Security Asia",
-          "url": "https://newsfirstprime.com/nation/govt-confirms-cyber-attack-on-indian-airports-involving-gps-spoofing-10829545",
-          "date": "2025-12-01"
-        },
-        {
-          "title": "Aviation Booking Software Provider Hit by MFA-Fatigue Phishing Supply Chain Attack",
-          "category": "Incident",
-          "region": "North America",
-          "severity": "High",
-          "summary": "Phishing campaign compromised airline booking software provider's admin credentials via MFA fatigue, exposing Microsoft 365 and OT systems of multiple airlines.",
-          "source": "HALOCK Security",
-          "url": "https://www.halock.com/top-cyber-threats-in-the-aviation-sector/",
-          "date": "2026-03-01"
-        },
-        {
-          "title": "ICAO Adopts Second Edition Global Aviation Security Plan with UAS and GNSS Threat Mandate",
+          "title": "FAA Publishes NPRM for Drone Flight Restrictions Over Critical Infrastructure",
           "category": "Regulatory",
+          "region": "North America",
+          "severity": "Medium",
+          "summary": "FAA published long-awaited Section 2209 NPRM on 6 May 2026 to allow facility operators to apply for UAS flight restrictions; public comments due 6 July 2026.",
+          "source": "Holland & Knight / Federal Register",
+          "url": "https://www.hklaw.com/en/insights/publications/2026/05/citing-national-security-needs-the-fcc-and-faa-take-steps-on-uas",
+          "date": "2026-05-06"
+        },
+        {
+          "title": "FAA Reports 100+ Monthly Drone Incursions Near Airports Amid World Cup Security Pressure",
+          "category": "Threat",
+          "region": "North America",
+          "severity": "Medium",
+          "summary": "FAA receives over 100 monthly drone sighting reports near airports; experts warn counter-UAS readiness remains uneven across federal, state and local agencies ahead of FIFA World Cup.",
+          "source": "Federal News Network",
+          "url": "https://federalnewsnetwork.com/commentary/2026/05/drone-threats-are-escalating-americas-airspace-intelligence-isnt-keeping-pace/",
+          "date": "2026-05-07"
+        },
+        {
+          "title": "Korean Air Data Breach Exposes 30,000 Employee Records via Oracle EBS Campaign",
+          "category": "Incident",
           "region": "Asia-Pacific",
           "severity": "Medium",
-          "summary": "ICAO Assembly endorsed updated Global Aviation Security Plan targeting weaponised UAS and GNSS spoofing; Council directed to develop conflict-zone work programme.",
-          "source": "ICAO",
-          "url": "https://www.icao.int/news/icao-enhances-global-aviation-safety-and-security-framework",
-          "date": "2025-10-03"
+          "summary": "Hackers exploited Oracle EBS zero-days to steal Korean Air employee names and bank details from catering subsidiary KC&D; Envoy Air also confirmed victim of same campaign.",
+          "source": "SecurityWeek",
+          "url": "https://www.securityweek.com/korean-air-data-compromised-in-oracle-ebs-hack/",
+          "date": "2025-12-30"
         }
       ]
     }
