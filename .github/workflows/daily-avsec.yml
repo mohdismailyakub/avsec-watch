@@ -2,8 +2,9 @@ name: Daily AVSEC Watch
 
 on:
   schedule:
-    - cron: "0 23 * * *"   # 23:00 UTC = 07:00 MYT (Sarawak)
-  workflow_dispatch: {}
+    - cron: "0 0 * * *"   # 00:00 UTC = 08:00 MYT (Sarawak) — pagi
+    - cron: "0 9 * * *"   # 09:00 UTC = 17:00 MYT (Sarawak) — petang
+  workflow_dispatch: {}     # cron-job.org / manual trigger
 
 permissions:
   contents: write
@@ -46,14 +47,14 @@ jobs:
           for i in 1 2 3 4 5; do
             echo "Push attempt $i..."
             git fetch origin main
-            git reset --hard origin/main      # take latest remote as clean base
-            cp /tmp/data.json.new data.json   # bot's version wins
+            git reset --hard origin/main
+            cp /tmp/data.json.new data.json
             git add data.json
             if git diff --staged --quiet; then
               echo "No data.json changes to commit."
               exit 0
             fi
-            git commit -m "Daily AVSEC pull"
+            git commit -m "AVSEC pull $(date -u +%Y-%m-%dT%H:%MZ)"
             if git push origin main; then
               echo "Pushed successfully."
               exit 0
