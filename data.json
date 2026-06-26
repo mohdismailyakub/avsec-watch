@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T10:25:05.790Z",
+  "generatedAt": "2026-06-26T10:38:12.758Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -431,6 +431,72 @@
           "source": "The Register / Daily Pioneer",
           "url": "https://www.theregister.com/2025/12/03/india_gps_spoofing/",
           "date": "2025-12-03"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-26",
+      "briefing": "Global aviation security remains under sustained cyber threat, with ransomware and GPS/GNSS spoofing emerging as the dominant attack vectors against airports and airlines worldwide; regulatory frameworks are tightening as EASA Part-IS full-compliance obligations and ICAO's Second Edition Global Aviation Security Plan press operators to embed information security into core safety management. Counter-UAS pressure is also rising, with the US Pentagon formalising autonomous counter-drone systems for border and airspace protection following repeated incursions that temporarily shut down Texas airspace.",
+      "items": [
+        {
+          "title": "Aegle Aviation Ransomware Data Breach by RansomHouse",
+          "category": "Incident",
+          "region": "Asia-Pacific",
+          "severity": "High",
+          "summary": "Indian aviation services firm Aegle Aviation breached by RansomHouse ransomware group; data volume and scope under investigation.",
+          "source": "BreachSense",
+          "url": "https://www.breachsense.com/breaches/aegle-aviation-data-breach/",
+          "date": "2026-06-09"
+        },
+        {
+          "title": "Pentagon Approves Autonomous Counter-UAS 'SkyValor' System After Border Testing",
+          "category": "Technology",
+          "region": "North America",
+          "severity": "Medium",
+          "summary": "DoD approves CACI SkyValor detect-and-defeat counter-drone system following Yuma border tests; Texas airspace closures prompted urgency.",
+          "source": "DefenseScoop",
+          "url": "https://defensescoop.com/2026/06/09/pentagon-approves-autonomous-counter-drone-system-after-border-testing/",
+          "date": "2026-06-09"
+        },
+        {
+          "title": "EASA Part-IS Full Compliance Deadline Active for Wider Aviation Sector",
+          "category": "Regulatory",
+          "region": "Europe",
+          "severity": "Medium",
+          "summary": "EASA Part-IS cybersecurity framework now binding for airlines, MROs and ANSPs from Feb 2026; 18-month PSOE compliance roadmap in force.",
+          "source": "Jones Day / EASA",
+          "url": "https://www.jonesday.com/en/insights/2026/02/civil-aviation-cybersecurity-easa-partis-sets-new-information-security-obligations",
+          "date": "2026-02-22"
+        },
+        {
+          "title": "India Confirms GPS Spoofing Cyberattacks at Seven Major Airports",
+          "category": "Incident",
+          "region": "Asia-Pacific",
+          "severity": "High",
+          "summary": "Government confirmed coordinated GPS spoofing at Delhi IGI, Mumbai, Kolkata, Hyderabad and Bengaluru airports; no flights disrupted due to backup systems.",
+          "source": "NewsFirst Prime / Bank Info Security Asia",
+          "url": "https://newsfirstprime.com/nation/govt-confirms-cyber-attack-on-indian-airports-involving-gps-spoofing-10829545",
+          "date": "2025-12-01"
+        },
+        {
+          "title": "Aviation Booking Software Provider Hit by MFA-Fatigue Phishing Supply Chain Attack",
+          "category": "Incident",
+          "region": "North America",
+          "severity": "High",
+          "summary": "Phishing campaign compromised airline booking software provider's admin credentials via MFA fatigue, exposing Microsoft 365 and OT systems of multiple airlines.",
+          "source": "HALOCK Security",
+          "url": "https://www.halock.com/top-cyber-threats-in-the-aviation-sector/",
+          "date": "2026-03-01"
+        },
+        {
+          "title": "ICAO Adopts Second Edition Global Aviation Security Plan with UAS and GNSS Threat Mandate",
+          "category": "Regulatory",
+          "region": "Asia-Pacific",
+          "severity": "Medium",
+          "summary": "ICAO Assembly endorsed updated Global Aviation Security Plan targeting weaponised UAS and GNSS spoofing; Council directed to develop conflict-zone work programme.",
+          "source": "ICAO",
+          "url": "https://www.icao.int/news/icao-enhances-global-aviation-safety-and-security-framework",
+          "date": "2025-10-03"
         }
       ]
     }
