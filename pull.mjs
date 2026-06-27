@@ -183,7 +183,101 @@ Give up to 6 items, most recent and most significant first. Only include items f
 }
 
 // ---------- Terjemah ke Bahasa Malaysia ----------
+async function callAIForTranslation(prompt) {
+  // Claude dulu
+  if (ANTHROPIC_API_KEY) {
+    try {
+      const r = await fetch("https://api.anthropic.com/v1/messages", {
+        method: "POST",
+        headers: { "content-type":"application/json","x-api-key":ANTHROPIC_API_KEY,"anthropic-version":"2023-06-01" },
+        body: JSON.stringify({ model:"claude-sonnet-4-6", max_tokens:3000, messages:[{role:"user",content:prompt}] }),
+      });
+      if (r.ok) {
+        const d = await r.json();
+        const t = (d.content||[]).filter(b=>b.type==="text").map(b=>b.text).join("\n");
+        const c = t.replace(/```json|```/g,"").trim();
+        return JSON.parse(c.slice(c.indexOf("{"),c.lastIndexOf("}")+1));
+      }
+    } catch(e){ console.log("Claude translate error: "+e.message); }
+  }
+  // Gemini fallback
+  if (GEMINI_API_KEY) {
+    const url="https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key="+GEMINI_API_KEY;
+    const r = await fetch(url, {
+      method:"POST", headers:{"content-type":"application/json"},
+      body:JSON.stringify({contents:[{parts:[{text:prompt}]}]}),
+    });
+    if (r.ok) {
+      const d = await r.json();
+      const t = (d?.candidates?.[0]?.content?.parts||[]).map(p=>p.text||"").join("\n");
+      const c = t.replace(/```json|```/g,"").trim();
+      return JSON.parse(c.slice(c.indexOf("{"),c.lastIndexOf("}")+1));
+    }
+  }
+  throw new Error("All translation providers failed");
+}
+
 async function translateToBM(parsed) {
+  const BM_RULES = `STRICT VOCABULARY RULES — Bahasa Malaysia ONLY, NOT Bahasa Indonesia:
+- "lapangan terbang" NOT "bandara"
+- "keselamatan" NOT "keamanan"
+- "syarikat" NOT "perusahaan"
+- "nombor" NOT "nomor"
+- "maklumat" NOT "informasi"
+- "perkhidmatan" NOT "layanan"
+- "antarabangsa" NOT "internasional"
+DO NOT TRANSLATE: organisation names (ICAO,EASA,TSA,CAAM,FAA), place names, acronyms (UAS,GPS,GNSS,DDoS), aviation terms (runway,airside,NOTAM,TCAS), cyber terms (ransomware,malware), regulatory refs (Annex 17,Part-IS,NCASP), severity labels (High,Medium,Low).`;
+
+  // Langkah 1: Terjemah briefing + title + summary (pendek, satu call)
+  const shortPayload = {
+    briefing: parsed.briefing || "",
+    items: (parsed.items || []).map(it => ({ title: it.title||"", summary: it.summary||"" }))
+  };
+  const shortPrompt = `You are a professional Bahasa Malaysia translator. ${BM_RULES}
+Translate ONLY the fields: briefing, title, summary. Leave ALL other fields unchanged.
+INPUT: ${JSON.stringify(shortPayload)}
+OUTPUT: Return ONLY valid JSON, same structure. No markdown, no preamble.`;
+
+  let shortResult = shortPayload; // fallback
+  try {
+    shortResult = await callAIForTranslation(shortPrompt);
+    console.log("Terjemahan pendek: berjaya");
+  } catch(e) { console.log("Terjemahan pendek gagal: "+e.message); }
+
+  // Langkah 2: Terjemah setiap fullContent satu per satu (lebih reliable)
+  const translatedFullContents = [];
+  for (let i = 0; i < (parsed.items||[]).length; i++) {
+    const it = parsed.items[i];
+    const fc = it.fullContent || it.summary || "";
+    if (!fc) { translatedFullContents.push(""); continue; }
+    const fcPrompt = `You are a professional Bahasa Malaysia translator. ${BM_RULES}
+Translate the following aviation security news content into formal Bahasa Malaysia.
+IMPORTANT: Translate the COMPLETE text. Do NOT shorten, summarise or omit any details.
+INPUT TEXT:
+${fc}
+OUTPUT: Return ONLY the translated Bahasa Malaysia text. No JSON, no preamble, no explanation.`;
+    try {
+      const result = await callAIForTranslation(fcPrompt);
+      // result might be object if AI wraps in JSON, or just text
+      const text = typeof result === "string" ? result : (result.text || result.content || fc);
+      translatedFullContents.push(text);
+      console.log("fullContent item "+(i+1)+": terjemahan berjaya ("+text.length+" chars)");
+    } catch(e) {
+      console.log("fullContent item "+(i+1)+" gagal — guna English: "+e.message);
+      translatedFullContents.push(fc); // fallback to English
+    }
+  }
+
+  // Gabung keputusan
+  return {
+    briefing: shortResult.briefing || parsed.briefing || "",
+    items: (parsed.items||[]).map((it, i) => ({
+      title:       shortResult.items?.[i]?.title   || it.title,
+      summary:     shortResult.items?.[i]?.summary || it.summary,
+      fullContent: translatedFullContents[i]       || it.fullContent || "",
+    }))
+  };
+
   const payload = {
     briefing: parsed.briefing || "",
     items: (parsed.items || []).map(it => ({
@@ -228,54 +322,6 @@ ${JSON.stringify(payload, null, 2)}
 
 OUTPUT: Return ONLY valid JSON, same structure as input. Translate ONLY these fields: briefing, title, summary, fullContent. Leave ALL other fields unchanged: category, region, severity, source, url, date. No markdown fences, no preamble, no explanation.`;
 
-  // Cuba Claude dulu (tak perlu web search untuk terjemahan)
-  if (ANTHROPIC_API_KEY) {
-    try {
-      const r = await fetch("https://api.anthropic.com/v1/messages", {
-        method: "POST",
-        headers: {
-          "content-type": "application/json",
-          "x-api-key": ANTHROPIC_API_KEY,
-          "anthropic-version": "2023-06-01",
-        },
-        body: JSON.stringify({
-          model: "claude-sonnet-4-6",
-          max_tokens: 2000,
-          messages: [{ role: "user", content: PROMPT_BM }],
-        }),
-      });
-      if (r.ok) {
-        const data = await r.json();
-        const text = (data.content || []).filter(b => b.type === "text").map(b => b.text).join("\n");
-        const clean = text.replace(/```json|```/g, "").trim();
-        const obj = JSON.parse(clean.slice(clean.indexOf("{"), clean.lastIndexOf("}") + 1));
-        if (obj.briefing && obj.items) { console.log("Terjemahan: Claude"); return obj; }
-      }
-    } catch (e) { console.log("Terjemahan Claude gagal: " + e.message); }
-  }
-
-  // Fallback: Gemini
-  if (GEMINI_API_KEY) {
-    try {
-      const url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=" + GEMINI_API_KEY;
-      const r = await fetch(url, {
-        method: "POST",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify({ contents: [{ parts: [{ text: PROMPT_BM }] }] }),
-      });
-      if (r.ok) {
-        const data = await r.json();
-        const parts = data?.candidates?.[0]?.content?.parts || [];
-        const text = parts.map(p => p.text || "").join("\n");
-        const clean = text.replace(/```json|```/g, "").trim();
-        const obj = JSON.parse(clean.slice(clean.indexOf("{"), clean.lastIndexOf("}") + 1));
-        if (obj.briefing && obj.items) { console.log("Terjemahan: Gemini"); return obj; }
-      }
-    } catch (e) { console.log("Terjemahan Gemini gagal: " + e.message); }
-  }
-
-  console.log("Terjemahan gagal — guna English sebagai fallback");
-  return payload;
 }
 
 
@@ -446,3 +492,4 @@ async function main() {
 }
 
 main().catch((e) => { console.error("FATAL: " + e.message); process.exit(1); });
+
