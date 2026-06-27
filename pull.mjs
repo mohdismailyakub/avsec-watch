@@ -183,147 +183,106 @@ Give up to 6 items, most recent and most significant first. Only include items f
 }
 
 // ---------- Terjemah ke Bahasa Malaysia ----------
-async function callAIForTranslation(prompt) {
-  // Claude dulu
+const BM_RULES = `Bahasa Malaysia ONLY, NOT Bahasa Indonesia. Rules:
+- "lapangan terbang" NOT "bandara"; "keselamatan" NOT "keamanan"; "syarikat" NOT "perusahaan"
+- "nombor" NOT "nomor"; "maklumat" NOT "informasi"; "perkhidmatan" NOT "layanan"
+- "antarabangsa" NOT "internasional"; "pihak berkuasa" NOT "pihak berwenang"
+DO NOT TRANSLATE: ICAO EASA TSA CAAM FAA FBI NATO, place/airport names,
+acronyms (UAS GPS GNSS DDoS RF), aviation terms (runway airside NOTAM TCAS ATC),
+cyber terms (ransomware malware phishing), refs (Annex 17 Part-IS NCASP AVSEC),
+severity labels (High Medium Low).`;
+
+async function geminiText(prompt) {
+  const url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=" + GEMINI_API_KEY;
+  const r = await fetch(url, {
+    method: "POST", headers: { "content-type": "application/json" },
+    body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] }),
+  });
+  if (!r.ok) throw new Error("Gemini HTTP " + r.status);
+  const d = await r.json();
+  return (d?.candidates?.[0]?.content?.parts || []).map(p => p.text || "").join("\n").trim();
+}
+
+async function claudeText(prompt) {
+  const r = await fetch("https://api.anthropic.com/v1/messages", {
+    method: "POST",
+    headers: { "content-type": "application/json", "x-api-key": ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01" },
+    body: JSON.stringify({ model: "claude-sonnet-4-6", max_tokens: 2000, messages: [{ role: "user", content: prompt }] }),
+  });
+  if (!r.ok) throw new Error("Claude HTTP " + r.status);
+  const d = await r.json();
+  return (d.content || []).filter(b => b.type === "text").map(b => b.text).join("\n").trim();
+}
+
+async function aiText(prompt) {
   if (ANTHROPIC_API_KEY) {
-    try {
-      const r = await fetch("https://api.anthropic.com/v1/messages", {
-        method: "POST",
-        headers: { "content-type":"application/json","x-api-key":ANTHROPIC_API_KEY,"anthropic-version":"2023-06-01" },
-        body: JSON.stringify({ model:"claude-sonnet-4-6", max_tokens:3000, messages:[{role:"user",content:prompt}] }),
-      });
-      if (r.ok) {
-        const d = await r.json();
-        const t = (d.content||[]).filter(b=>b.type==="text").map(b=>b.text).join("\n");
-        const c = t.replace(/```json|```/g,"").trim();
-        return JSON.parse(c.slice(c.indexOf("{"),c.lastIndexOf("}")+1));
-      }
-    } catch(e){ console.log("Claude translate error: "+e.message); }
+    try { return await claudeText(prompt); } catch(e) { console.log("Claude text: " + e.message); }
   }
-  // Gemini fallback
   if (GEMINI_API_KEY) {
-    const url="https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key="+GEMINI_API_KEY;
-    const r = await fetch(url, {
-      method:"POST", headers:{"content-type":"application/json"},
-      body:JSON.stringify({contents:[{parts:[{text:prompt}]}]}),
-    });
-    if (r.ok) {
-      const d = await r.json();
-      const t = (d?.candidates?.[0]?.content?.parts||[]).map(p=>p.text||"").join("\n");
-      const c = t.replace(/```json|```/g,"").trim();
-      return JSON.parse(c.slice(c.indexOf("{"),c.lastIndexOf("}")+1));
-    }
+    try { return await geminiText(prompt); } catch(e) { console.log("Gemini text: " + e.message); }
   }
   throw new Error("All translation providers failed");
 }
 
-async function translateToBM(parsed) {
-  const BM_RULES = `STRICT VOCABULARY RULES — Bahasa Malaysia ONLY, NOT Bahasa Indonesia:
-- "lapangan terbang" NOT "bandara"
-- "keselamatan" NOT "keamanan"
-- "syarikat" NOT "perusahaan"
-- "nombor" NOT "nomor"
-- "maklumat" NOT "informasi"
-- "perkhidmatan" NOT "layanan"
-- "antarabangsa" NOT "internasional"
-DO NOT TRANSLATE: organisation names (ICAO,EASA,TSA,CAAM,FAA), place names, acronyms (UAS,GPS,GNSS,DDoS), aviation terms (runway,airside,NOTAM,TCAS), cyber terms (ransomware,malware), regulatory refs (Annex 17,Part-IS,NCASP), severity labels (High,Medium,Low).`;
+async function aiJSON(prompt) {
+  const raw = await aiText(prompt);
+  const clean = raw.replace(/```json|```/g, "").trim();
+  const a = clean.indexOf("{"), b = clean.lastIndexOf("}");
+  if (a === -1 || b === -1) throw new Error("No JSON in response: " + raw.slice(0, 100));
+  return JSON.parse(clean.slice(a, b + 1));
+}
 
-  // Langkah 1: Terjemah briefing + title + summary (pendek, satu call)
+async function translateToBM(parsed) {
+  // Langkah 1: Terjemah briefing + title + summary dalam satu call JSON
   const shortPayload = {
     briefing: parsed.briefing || "",
-    items: (parsed.items || []).map(it => ({ title: it.title||"", summary: it.summary||"" }))
+    items: (parsed.items || []).map(it => ({ title: it.title || "", summary: it.summary || "" }))
   };
   const shortPrompt = `You are a professional Bahasa Malaysia translator. ${BM_RULES}
-Translate ONLY the fields: briefing, title, summary. Leave ALL other fields unchanged.
-INPUT: ${JSON.stringify(shortPayload)}
-OUTPUT: Return ONLY valid JSON, same structure. No markdown, no preamble.`;
+Translate ONLY fields: briefing, title, summary. Keep ALL other fields unchanged.
+Return ONLY valid JSON (no markdown, no preamble) in this exact structure:
+{"briefing":"...","items":[{"title":"...","summary":"..."}]}
+INPUT: ${JSON.stringify(shortPayload)}`;
 
-  let shortResult = shortPayload; // fallback
+  let shortResult = shortPayload;
   try {
-    shortResult = await callAIForTranslation(shortPrompt);
+    shortResult = await aiJSON(shortPrompt);
     console.log("Terjemahan pendek: berjaya");
-  } catch(e) { console.log("Terjemahan pendek gagal: "+e.message); }
+  } catch(e) {
+    console.log("Terjemahan pendek gagal: " + e.message + " — guna English");
+  }
 
-  // Langkah 2: Terjemah setiap fullContent satu per satu (lebih reliable)
-  const translatedFullContents = [];
-  for (let i = 0; i < (parsed.items||[]).length; i++) {
-    const it = parsed.items[i];
-    const fc = it.fullContent || it.summary || "";
-    if (!fc) { translatedFullContents.push(""); continue; }
+  // Langkah 2: Terjemah fullContent setiap item satu per satu (plain text)
+  const translatedFull = [];
+  for (let i = 0; i < (parsed.items || []).length; i++) {
+    const fc = parsed.items[i].fullContent || parsed.items[i].summary || "";
+    if (!fc) { translatedFull.push(""); continue; }
     const fcPrompt = `You are a professional Bahasa Malaysia translator. ${BM_RULES}
-Translate the following aviation security news content into formal Bahasa Malaysia.
-IMPORTANT: Translate the COMPLETE text. Do NOT shorten, summarise or omit any details.
-INPUT TEXT:
-${fc}
-OUTPUT: Return ONLY the translated Bahasa Malaysia text. No JSON, no preamble, no explanation.`;
+Translate the COMPLETE text below into formal Bahasa Malaysia.
+Do NOT shorten, summarise or omit ANY details. Translate every sentence.
+Return ONLY the translated Bahasa Malaysia text. No JSON, no explanation.
+
+TEXT TO TRANSLATE:
+${fc}`;
     try {
-      const result = await callAIForTranslation(fcPrompt);
-      // result might be object if AI wraps in JSON, or just text
-      const text = typeof result === "string" ? result : (result.text || result.content || fc);
-      translatedFullContents.push(text);
-      console.log("fullContent item "+(i+1)+": terjemahan berjaya ("+text.length+" chars)");
+      const translated = await aiText(fcPrompt);
+      translatedFull.push(translated);
+      console.log("fullContent item " + (i+1) + ": OK (" + translated.length + " chars)");
     } catch(e) {
-      console.log("fullContent item "+(i+1)+" gagal — guna English: "+e.message);
-      translatedFullContents.push(fc); // fallback to English
+      console.log("fullContent item " + (i+1) + " gagal — guna English: " + e.message);
+      translatedFull.push(fc);
     }
   }
 
-  // Gabung keputusan
   return {
     briefing: shortResult.briefing || parsed.briefing || "",
-    items: (parsed.items||[]).map((it, i) => ({
+    items: (parsed.items || []).map((it, i) => ({
       title:       shortResult.items?.[i]?.title   || it.title,
       summary:     shortResult.items?.[i]?.summary || it.summary,
-      fullContent: translatedFullContents[i]       || it.fullContent || "",
+      fullContent: translatedFull[i]               || it.fullContent || "",
     }))
   };
-
-  const payload = {
-    briefing: parsed.briefing || "",
-    items: (parsed.items || []).map(it => ({
-      title:       it.title       || "",
-      summary:     it.summary     || "",
-      fullContent: it.fullContent || ""
-    }))
-  };
-
-  const PROMPT_BM = `You are a professional Bahasa Malaysia translator specialising in aviation security intelligence content. Translate the provided JSON fields into formal Bahasa Malaysia — as used in official Malaysian government documents and CAAM/ICAO correspondence — NOT Bahasa Indonesia.
-
-STRICT VOCABULARY RULES — use Malaysian terms only:
-- "lapangan terbang" NOT "bandara"
-- "keselamatan" NOT "keamanan" (for security context)
-- "syarikat" NOT "perusahaan"
-- "nombor" NOT "nomor"
-- "maklumat" NOT "informasi"
-- "perkhidmatan" NOT "layanan"
-- "pihak berkuasa" NOT "pihak berwenang"
-- "wang" NOT "uang"
-- "telefon" NOT "telepon"
-- "pengimbas" NOT "pemindai"
-- "antarabangsa" NOT "internasional"
-
-DO NOT TRANSLATE — keep in English exactly as-is:
-- Organisation names: ICAO, EASA, TSA, CAAM, FAA, FBI, NATO, Europol, Frontex, ASIS, Qantas, WestJet, Collins Aerospace
-- Place names: all airports, cities, countries
-- Technical acronyms: UAS, GPS, GNSS, DDoS, VPN, AI, RF
-- Aviation terms: runway, taxiway, airside, NOTAM, BVLOS, TCAS, ATC
-- Cybersecurity terms: ransomware, malware, phishing, spyware, cyberattack, dark web
-- Regulatory references: Annex 17, Part-IS, NPRM, Section 2209, NCASP, AVSEC
-- Severity/category labels: High, Medium, Low, Incident, Regulatory, Threat, Technology
-
-TRANSLATION RULES:
-1. Translate COMPLETELY — do not omit, shorten, or paraphrase differently from the original
-2. Preserve all numbers, statistics, dates exactly
-3. Maintain formal register — ini laporan risikan rasmi, bukan artikel popular
-4. Never default to Bahasa Indonesia vocabulary under any circumstances
-
-INPUT (JSON):
-${JSON.stringify(payload, null, 2)}
-
-OUTPUT: Return ONLY valid JSON, same structure as input. Translate ONLY these fields: briefing, title, summary, fullContent. Leave ALL other fields unchanged: category, region, severity, source, url, date. No markdown fences, no preamble, no explanation.`;
-
 }
-
 
 // ---------- email (white / gold / Hornbill-red branding) ----------
 const RED = "#d4242a", GOLD = "#b8901f", INK = "#15202e", MUT = "#5a6a7e";
