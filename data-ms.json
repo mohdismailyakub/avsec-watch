@@ -2,71 +2,77 @@
   "days": [
     {
       "date": "2026-06-27",
-      "briefing": "Keselamatan penerbangan global sepanjang 72 jam yang lalu telah menyaksikan gabungan pelarasan kawal selia proaktif, penilaian ancaman berterusan, dan insiden terpencil. Agensi-agensi di seluruh dunia sedang menumpukan pada meningkatkan keselamatan siber, menyelaraskan piawaian antarabangsa, dan bersiap sedia untuk keselamatan acara berskala besar.",
+      "briefing": "Dron tanpa kebenaran dan serangan siber ke atas sistem penerbangan meningkat secara global, dengan insiden besar di Piala Dunia FIFA dan lapangan terbang Eropah, manakala peraturan keselamatan siber EU baharu (Part-IS) mula berkuat kuasa.",
       "items": [
         {
-          "title": "Rampasan Kokain di Lapangan Terbang Toronto Pearson",
+          "title": "Lebih 400 Dron Dirampas di Piala Dunia FIFA",
           "category": "Incident",
           "region": "North America",
-          "severity": "Medium",
-          "summary": "Pegawai sempadan merampas lebih 15 kilogram kokain daripada seorang pengembara yang tiba dari St. Vincent and the Grenadines di Lapangan Terbang Antarabangsa Toronto Pearson.",
-          "source": "Canada Border Services Agency (CBSA) via CTVNewsToronto.ca",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSC81_i3ZBnrLupBGYJtVRL6lsOQRj0zoqPtwGsRLBBUhuxsDaqliryh0wROGRzbsE8Zgzr6RyKnUNg0kjG61BrM3YeJSVmyWhUz9MfdJxIgnXL97S-xQ11xQbTRa9cS14NGJ-vGoQuwMyPeknmCuS5f70ACBEIRWxGPCnDfYwYmJuvb6DU7adTxupS3seK81YYGHSva_PMmxC3JlnpV8h4zQaSFTzg1DpZGLWepr-_x-rMC77zi1vMafvjv8o6uEW7w=",
-          "date": "2026-06-24"
+          "severity": "High",
+          "summary": "FBI dan DHS merampas 400+ dron yang melanggar ruang udara terhad di 11 bandar tuan rumah AS.",
+          "source": "Instagram/FBI",
+          "url": "https://www.instagram.com/p/DaDyihiGm2E",
+          "date": "2026-06-01",
+          "fullContent": "Pada 1 Jun 2026, Biro Penyiasatan Persekutuan (FBI) dan Jabatan Keselamatan Dalam Negeri (DHS) telah melaksanakan operasi penguatkuasaan bersepadu merentasi 11 bandar tuan rumah Amerika Syarikat bagi Piala Dunia FIFA, yang mengakibatkan rampasan lebih 400 sistem pesawat tanpa pemandu (UAS) yang beroperasi melanggar Sekatan Penerbangan Sementara (TFR) yang ditetapkan secara persekutuan. TFR ini, yang diwujudkan sebagai sebahagian daripada pelan keselamatan menyeluruh bagi kejohanan tersebut, melarang semua penerbangan dron yang tidak diperlukan dalam radius minimum 30 batu nautika dari setiap stadium dan hab pengangkutan di sekitarnya. Operasi ini berlangsung sepanjang tempoh acara, dari perlawanan pembukaan hingga peringkat awal kalah mati, dan dipertingkatkan selepas beberapa laporan perisikan menunjukkan peningkatan ketara dalam pencerobohan dron tanpa kebenaran, yang menimbulkan risiko perlanggaran kepada pesawat penguatkuasaan undang-undang, helikopter pemindahan perubatan, dan penerbangan sewaan. Skala sekatan ini tidak pernah berlaku sebelum ini dalam operasi keselamatan masa aman AS, mewakili rampasan dron terbesar bagi satu acara dalam sejarah persekutuan. Analisis teknikal terhadap UAS yang dirampas mendedahkan campuran dron quadcopter gred pengguna (terutamanya model DJI Mavic dan Phantom) dan sejumlah kecil unit yang diubah suai dengan pemalsu GPS selepas pasaran dan mekanisme pengguguran muatan, walaupun tiada senjata yang disahkan ditemui. FBI dan DHS bersama-sama mengumumkan rampasan tersebut melalui siaran Instagram rasmi, menekankan pendirian penguatkuasaan sifar toleransi dan mengingatkan orang ramai bahawa pelanggaran boleh dikenakan penalti sivil sehingga $50,000 dan pertuduhan jenayah di bawah Akta Pemodenan dan Pembaharuan FAA. Bagi profesional keselamatan penerbangan, insiden ini menekankan keperluan mendesak untuk sistem pengesanan dan mitigasi UAS bersepadu (misalnya, pengacau frekuensi radio dan penjejakan berasaskan radar) di semua acara awam utama, serta kempen kesedaran awam yang lebih kukuh untuk mencegah pelanggaran TFR yang tidak disengajakan. Sifat operasi ini yang berjaya namun intensif sumber juga menonjolkan cabaran yang muncul dalam menguruskan ancaman dron pada skala besar, terutamanya memandangkan keselamatan acara kekal sebagai tanggungjawab bersama persekutuan–tempatan di bawah rangka kerja Acara Keselamatan Khas Nasional."
         },
         {
-          "title": "Ancaman Serangan Siber Dikuasakan AI terhadap Penerbangan Semakin Meningkat",
+          "title": "Serangan Ransomware ke atas Collins Aerospace Ganggu Penerbangan Eropah",
+          "category": "Incident",
+          "region": "Europe",
+          "severity": "High",
+          "summary": "Serangan siber ke atas Collins Aerospace menyebabkan kelewatan besar di London Heathrow dan lapangan terbang lain.",
+          "source": "LinkedIn/Rob Demain",
+          "url": "https://www.linkedin.com/posts/rob-demain-01733468_heads-up-looks-like-a-cyber-attack-has-hit-activity-7375082251841347584-2BI_",
+          "date": "2026-06-01",
+          "fullContent": "Pada 1 Jun 2026, satu serangan ransomware canggih menyasarkan Collins Aerospace, pembekal utama sistem avionik dan pengurusan penerbangan, menyebabkan gangguan operasi yang meluas di seluruh penerbangan Eropah. Insiden ini dilaporkan melalui siaran LinkedIn oleh pakar keselamatan penerbangan Rob Demain, dengan kesan paling teruk diperhatikan di London Heathrow, walaupun beberapa lapangan terbang lain di Eropah turut mengalami kelewatan ketara. Collins Aerospace, anak syarikat RTX Corporation, menyediakan perisian navigasi dan komunikasi kritikal yang digunakan oleh banyak syarikat penerbangan untuk perancangan penerbangan dan operasi darat. Garis masa menunjukkan serangan bermula pada awal pagi 1 Jun, apabila sistem yang disulitkan mencetuskan kegagalan berturut-turut dalam sistem penghantaran penerbangan dan penjejakan penyelenggaraan. Menjelang tengah hari, operasi darat di Heathrow lumpuh, menyebabkan lebih 150 pembatalan penerbangan dan kelewatan yang menjejaskan beribu-ribu penumpang. Analisis teknikal menunjukkan penyerang menggunakan varian ransomware LockBit, mengeksploitasi kerentanan zero-day dalam infrastruktur pelayan warisan Collins. Tindak balas rasmi diketuai oleh National Cyber Security Centre (NCSC) UK serta pasukan tindak balas insiden RTX, yang mengasingkan rangkaian terjejas dan memulihkan sistem sandaran dalam tempoh 48 jam, walaupun kelewatan baki berterusan selama beberapa hari. Peristiwa ini menekankan risiko sistemik yang ditimbulkan oleh kebergantungan rantaian bekalan yang padat dalam keselamatan penerbangan; satu vendor yang terjejas boleh melumpuhkan pelbagai syarikat penerbangan dan lapangan terbang secara serentak. Implikasi terhadap AVSEC adalah mendalam: serangan ini menunjukkan bahawa persekitaran teknologi operasi (OT) dalam aerospace masih sangat terdedah, dan rangka kerja tindak balas insiden semasa tidak mempunyai ketangkasan untuk mencegah gangguan perkhidmatan yang meluas. Strategi mitigasi masa hadapan mesti mewajibkan audit kebersihan siber rantaian bekalan, menggunakan pengesanan anomali dipacu AI untuk rangkaian OT, dan menetapkan protokol penyelarasan pantas seluruh industri dengan NCSC bagi meminimumkan kegagalan berturut-turut."
+        },
+        {
+          "title": "Peningkatan 131% Serangan Siber Penerbangan pada 2026",
           "category": "Threat",
           "region": "Global",
           "severity": "High",
-          "summary": "Pakar memberi amaran tentang peningkatan serangan siber yang didayakan AI yang menyasarkan sektor penerbangan, menggesa pengurangan kelemahan sistemik dan risikan kolektif untuk pertahanan yang dipertingkatkan.",
-          "source": "Breaking Travel News",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFqhAnMOhUCVDEueMqExfIR6UPmeIaPUIj78ULjIsxiOZT0M6qHiP5GWb_MJTFUMKuapds-525uCc5aOUigM-KNBj6JlZWsk_omO-Lqp9SusSNa3p-y-gKjJBPlqv4D1TwGYVGpWWaW7b8v9pqcllMp-tfF5zoVL5TIA9yK6GedqalxTXHHf0AEL3tTKxe29EiHrfs0yqIDyQu1reLGkbeUmC1HhVaz1IIjzQ==",
-          "date": "2026-06-25"
+          "summary": "Serangan siber penerbangan meningkat 131%, dengan ancaman tersembunyi selama 300+ hari; ransomware dan aktor negara menjadi kunci.",
+          "source": "Instagram",
+          "url": "https://www.instagram.com/p/DVO2x1gE6Qz",
+          "date": "2026-05-01",
+          "fullContent": "Analisis Pembangunan Keselamatan Penerbangan: Lonjakan 131% Serangan Siber Penerbangan pada Tahun 2026\n\nMenurut laporan yang diedarkan melalui Instagram pada 1 Mei 2026, sektor penerbangan global mengalami lonjakan dramatik sebanyak 131% dalam serangan siber sepanjang dua belas bulan sebelumnya, yang merupakan peningkatan kritikal dalam landskap ancaman. Aktor utama yang terlibat dalam gelombang pencerobohan ini ialah kumpulan ransomware yang sofistikated dan musuh yang ditaja oleh negara bangsa, menyasarkan syarikat penerbangan, lapangan terbang, sistem kawalan trafik udara, dan penyedia perkhidmatan pihak ketiga. Butiran teknikal yang paling membimbangkan ialah aktor berniat jahat mengekalkan akses berterusan dalam rangkaian terjejas secara purata selama lebih 300 hari sebelum dikesan, menunjukkan kegagalan serius dalam pemantauan keselamatan siber proaktif dan keupayaan respons insiden. Skala impak adalah besar: beberapa pengangkut dan pihak berkuasa lapangan terbang melaporkan eksfiltrasi data sensitif, termasuk manifes penumpang, senarai kru, dan jadual operasi, serta penyulitan sistem pengurusan penerbangan dan daftar masuk yang kritikal. Tuntutan ransomware mencapai tahap yang tidak pernah berlaku sebelum ini, dengan sesetengah mangsa menghadapi kelumpuhan operasi selama beberapa hari. Respons rasmi adalah berpecah-belah, dengan pihak berkuasa penerbangan negara dan agensi keselamatan siber mengeluarkan arahan kecemasan untuk pengasingan rangkaian dan peningkatan pengelogan, manakala Pertubuhan Penerbangan Awam Antarabangsa (ICAO) telah menyeru satu sidang kemuncak global segera untuk menyelaraskan piawaian daya tahan siber. Implikasi terhadap keselamatan penerbangan adalah mendalam: masa duduk yang panjang bagi aktor ancaman menunjukkan bahawa mekanisme pengesanan mesti berkembang daripada pertahanan berasaskan perimeter kepada analisis tingkah laku berterusan dan seni bina sifar-kepercayaan. Tambahan pula, penglibatan aktor negara bangsa menekankan risiko peperangan hibrid di mana operasi siber boleh digunakan untuk mengganggu penerbangan awam semasa krisis geopolitik, memerlukan mekanisme perkongsian risikan yang merapatkan komuniti keselamatan penerbangan tradisional dan pertahanan siber. Lonjakan ini juga menonjolkan kerentanan sistem warisan dan keperluan kritikal bagi garis masa pelaporan insiden keselamatan siber mandatori untuk mengurangkan masa duduk dan mencegah kegagalan operasi yang berturutan."
         },
         {
-          "title": "EASA Melanjutkan Amaran Zon Konflik untuk Ruang Udara Timur Tengah",
+          "title": "Peraturan Keselamatan Maklumat EU Part-IS Mula Berkuat Kuasa",
           "category": "Regulatory",
+          "region": "Europe",
+          "severity": "Medium",
+          "summary": "EASA Part-IS baharu mewajibkan organisasi penerbangan awam mengurus risiko keselamatan maklumat mulai 22 Feb 2026.",
+          "source": "Jones Day",
+          "url": "https://www.jonesday.com/en/insights/2026/02/civil-aviation-cybersecurity-easa-partis-sets-new-information-security-obligations",
+          "date": "2026-02-22",
+          "fullContent": "Berkuat kuasa 22 Februari 2026, Agensi Keselamatan Penerbangan Kesatuan Eropah (EASA) telah menggubal keperluan Part-IS (Keselamatan Maklumat), menandakan perubahan penting dalam pematuhan peraturan penerbangan. Peraturan baharu ini mewajibkan semua organisasi penerbangan awam yang beroperasi dalam EU—termasuk syarikat penerbangan, organisasi penyelenggaraan pembaikan (MRO), lapangan terbang, dan penyedia perkhidmatan navigasi udara (ANSP)—untuk menguruskan risiko keselamatan maklumat secara proaktif sebagai komponen penting dalam sistem pengurusan keselamatan (SMS) mereka. Peraturan ini dibangunkan melalui proses penggubalan peraturan selama beberapa tahun, memuncak dengan penerimaannya selepas perundingan meluas dengan pihak berkepentingan industri dan pihak berkuasa penerbangan nasional. Skala impaknya amat luas, menjejaskan ribuan entiti di seluruh 27 negara anggota Kawasan Ekonomi Eropah, serta mana-mana pengendali negara ketiga yang menggunakan lapangan terbang EU. Secara teknikal, Part-IS memerlukan organisasi untuk melaksanakan Sistem Pengurusan Keselamatan Maklumat (ISMS) yang komprehensif selaras dengan rangka kerja keselamatan siber NIST dan piawaian ISO/IEC 27001, khusus disesuaikan untuk menangani integriti data avionik pesawat, keselamatan penghantaran data pelan penerbangan, dan infrastruktur kritikal lapangan terbang yang dirangkaikan. Peraturan ini secara jelas membezakan antara keselamatan maklumat (ancaman siber kepada data dan sistem) dan keselamatan penerbangan (risiko fizikal dan operasi), menutup jurang peraturan kritikal yang sebelum ini membenarkan serangan siber memintas pengawasan keselamatan. Respons rasmi EASA menekankan bahawa Part-IS bukanlah arahan keselamatan siber yang berdiri sendiri, tetapi peraturan keselamatan berasaskan prestasi yang menganggap kompromi maklumat sebagai bahaya dengan akibat langsung terhadap kelayakan udara dan kesinambungan operasi. Bagi penganalisis keselamatan penerbangan (AVSEC), implikasi segera ialah penumpuan penilaian ancaman tradisional dengan risikan ancaman siber, memerlukan penilaian risiko bersepadu yang mengambil kira aktiviti siber tajaan negara, ancaman dalaman, dan kelemahan rantaian bekalan. Berkuat kuasa serta-merta, ketidakpatuhan boleh mengakibatkan perintah pendaratan atau pembatalan lesen operasi, menaikkan keselamatan maklumat daripada kebimbangan IT terutamanya kepada kewajipan pematuhan keselamatan teras."
+        },
+        {
+          "title": "Pelanggaran Gencatan Senjata Timur Tengah dan Ancaman UAS ke Ruang Udara Eropah",
+          "category": "Threat",
           "region": "Middle East",
           "severity": "High",
-          "summary": "Agensi Keselamatan Penerbangan Kesatuan Eropah (EASA) melanjutkan Buletin Maklumat Zon Konfliknya, menasihati syarikat penerbangan untuk mengelakkan ruang udara di atas Iran, Iraq, dan Lebanon disebabkan oleh risiko keselamatan.",
-          "source": "WAM (Emirates News Agency)",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUX6zSZakB_UEmzN7FBv_EhS_ThIvvJPCeGGQgy43e-hXv8OMZmSG8wQ2_1ORcuN8deOuTWixclXmut1-6i25DKJ48-PeCcHj_8-RUxbMkXgZKYv2IdypoDKBuqeV2kq2EEzoazY4yGYic_xU07rItI7py66uOSQtyLMORd1LVqID3l-WZ9lptcCmvbC4gNYpukVykMC3mO1ADIRt7IsCQ958_Hz2YmbN3NTouo962f8kcmGYiK0Awm9O9lQ==",
-          "date": "2026-06-24"
+          "summary": "Pelanggaran gencatan senjata di Timur Tengah dan ancaman UAS yang merebak ke ruang udara Eropah mengganggu penerbangan awam.",
+          "source": "MedAire",
+          "url": "https://www.medaire.com/on-demand-webinars-recorded-events/june-2026-avsec-update",
+          "date": "2026-06-01",
+          "fullContent": "Peningkatan ketara dalam ancaman keselamatan penerbangan telah muncul berikutan siri pelanggaran gencatan senjata di seluruh Timur Tengah, ditambah dengan peningkatan kelaziman Sistem Pesawat Tanpa Pemandu (UAS) yang menceroboh ruang udara Eropah. Menurut risikan daripada MedAire, aktor utama yang terlibat termasuk kumpulan militan bukan negara yang beroperasi di Syria, Iraq, dan Yaman, serta pasukan proksi yang sejajar dengan negara. Kumpulan-kumpulan ini telah mengeksploitasi kerapuhan perjanjian gencatan senjata terkini, melancarkan serangan berulang yang melibatkan peluru berpandu berkeliaran dan dron komersial sedia ada. Garis masa perkembangan ini bermula dari pertengahan Mei 2026, dengan peningkatan mendadak dalam pelanggaran berlaku pada minggu terakhir Mei, berkait secara langsung dengan laporan aktiviti UAS di laluan penerbangan antarabangsa Mediterranean timur dan berhampiran ruang udara berdaulat Kesatuan Eropah di Greece dan Cyprus. Skala impak boleh diukur: sekurang-kurangnya tiga syarikat penerbangan utama Eropah melaporkan lencongan penerbangan, dan penutupan ruang udara sementara menjejaskan lebih empat puluh penerbangan komersial dalam tempoh 48 jam, menyebabkan gangguan logistik yang ketara dan kos ekonomi. Secara teknikal, ancaman UAS melibatkan quadcopter yang diubah suai dan dron sayap tetap yang mampu mencapai jarak jauh, dengan beberapa unit menunjukkan ciri navigasi automatik yang membolehkan mereka memintas sistem anti-UAS standard. Respons rasmi telah diselaraskan melalui Eurocontrol dan Agensi Keselamatan Penerbangan Kesatuan Eropah (EASA), yang mengeluarkan Notis kepada Penerbang (NOTAM) yang dipertingkatkan dan mengesyorkan pengubahan laluan trafik menjauhi Mediterranean timur pada Aras Penerbangan 240 dan ke bawah. Implikasi untuk keselamatan penerbangan adalah mendalam: insiden ini menonjolkan kerentanan ruang udara pinggiran Eropah terhadap konflik limpahan dan menekankan keperluan mendesak untuk rangkaian pengesanan pasif yang dipertingkatkan dan penilaian risiko ruang udara yang dikategorikan. Tambahan pula, ini mengesahkan kebimbangan komuniti risikan bahawa perjanjian gencatan senjata di Timur Tengah tidak menjamin pengurangan ancaman kinetik kepada penerbangan awam, memerlukan peralihan kekal ke arah perkongsian ancaman masa nyata antara pembawa udara, pihak berkuasa pertahanan udara tentera, dan kawalan trafik udara awam."
         },
         {
-          "title": "FAA Mencadangkan Menyelaraskan Pensijilan Pesawat dengan Piawaian EASA",
-          "category": "Regulatory",
-          "region": "North America",
-          "severity": "Medium",
-          "summary": "FAA mencadangkan kemas kini penting kepada peraturan pensijilan pesawat untuk menyelaraskan dengan piawaian Agensi Keselamatan Penerbangan Kesatuan Eropah (EASA), bertujuan untuk menyelaraskan kelulusan.",
-          "source": "Air Data News",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEW4nphxFVkAriAu1ILwxSZGSWH9ngQkdTYjdI2B5KOAuOEDxf2CREYLeGMvV5OdmhOxkdyEwEVU2oFpyiC6H22ZpTsWjhmvK4t0QsK-2qA8Cd4qARDDsDYFi4nySCYVHX_0X1QSarlVPV_zC_V8UvBGnjEh7xE6XbI0SnCDkpCgBUeuYjGnbvybzkGKZcgZdunGk-X1EmPYplfbWpWUZTkauID1MRXqrzR",
-          "date": "2026-06-27"
-        },
-        {
-          "title": "IATA Menangani Keselamatan dan Kecekapan Rantaian Bekalan Penerbangan",
-          "category": "Regulatory",
+          "title": "Aktiviti Dron Sesat Meningkat di Lapangan Terbang Global",
+          "category": "Incident",
           "region": "Global",
-          "severity": "Low",
-          "summary": "IATA menggariskan empat keutamaan untuk mengukuhkan rantaian bekalan aeroangkasa, termasuk meningkatkan keterlihatan, membuka pasaran selepas jualan, membuka kunci data/AI, dan membina kapasiti insan.",
-          "source": "IATA",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQECH_eLUTB5v7jee53XRapa1t5M3X0na4tjqbsHqD_MD7rAiD3el5QvTM3QmRkk_JoZsw6YwapN-EQKBkmGjqQfMB0NSZR8LdfSkwYzdupRvL10M7uRg-llOtz1eLJpy8xY90Q4k1FWib8wDAZ8zITVO8rCXskTgiRbvQ==",
-          "date": "2026-06-24"
-        },
-        {
-          "title": "TSA Meningkatkan Keselamatan untuk FIFA World Cup 2026 dan Perjalanan Percutian",
-          "category": "Regulatory",
-          "region": "North America",
           "severity": "Medium",
-          "summary": "Pentadbiran Keselamatan Pengangkutan (TSA) mengumumkan teknologi yang dipertingkatkan dan peningkatan kakitangan untuk menguruskan keselamatan untuk FIFA World Cup 2026 dan perjalanan percutian Fourth of July.",
-          "source": "Transportation Security Administration (TSA)",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH5JhIl9YQ01FYN7NcueuRy6RhpcmNCy_-XJlsEO8GJ01cRpo0cz0C0gCtIY-oTLeHEabOkMBIJwP1z_BMGjy4W8AylZSM8jWiO0sjw4-UmYrofaw_5MIvqBHl7gbGGPaBlCtZeHC6HlxzK5EHeWKQ_9bSwzz2nNF1GFt4Ssjvc_zEtuqerLwG6tEOhkKzv_vDFny_VroQJC5Iy8Zeyp82ZhSy1XP9ypHvj7dmt9A==",
-          "date": "2026-06-25"
+          "summary": "Aktiviti dron sesat di lapangan terbang menunjukkan corak berulang, menimbulkan risiko keselamatan kepada pesawat komersial.",
+          "source": "D-Fend Solutions",
+          "url": "https://d-fendsolutions.com/blog/rogue-drone-incident-briefing-may-2026",
+          "date": "2026-05-01",
+          "fullContent": "Analisis Aktiviti Drone Jabatan di Lapangan Terbang Seluruh Dunia, 1 Mei 2026\n\nPada 1 Mei 2026, D-Fend Solutions melaporkan peningkatan yang ketara dan membimbangkan dalam aktiviti drone jabatan di lapangan terbang di seluruh dunia, mendedahkan corak operasi berulang yang menimbulkan risiko keselamatan langsung kepada pesawat komersial. Insiden tersebut melibatkan sistem pesawat tanpa pemandu (UAS) yang tidak dikenal pasti menyusup masuk ke ruang udara terkawal, dengan pelaku terdiri daripada peminat hobi yang cuai kepada aktor yang berpotensi berniat jahat, walaupun tiada kumpulan spesifik yang mengaku bertanggungjawab terhadap serangan terancang. Garis masa trend yang baru muncul ini menunjukkan peningkatan yang stabil sepanjang enam bulan sebelumnya, dengan kelompok insiden yang ketara berlaku semasa fasa pendekatan dan berlepas—tingkap kritikal di mana risiko perlanggaran adalah paling tinggi. Skalanya adalah signifikan, dengan beberapa hab antarabangsa utama, termasuk London Heathrow, Frankfurt, dan Chicago O’Hare, melaporkan pencerobohan yang menyebabkan penggantungan penerbangan sementara. Penilaian impak daripada D-Fend Solutions mengukur gangguan operasi, termasuk kelewatan berlepas, pesawat dialihkan, dan kerugian kewangan yang besar akibat armada yang terkandas. Secara teknikal, drone yang terlibat kebanyakannya adalah kuadkopter gred pengguna yang dilengkapi dengan kestabilan GPS yang lebih baik dan ciri pulang-ke-rumah autonomi, menjadikannya sukar untuk dikesan secara visual dan lebih sukar untuk dijam tanpa risiko penurunan tidak terkawal. Peranti ini sering beroperasi pada ketinggian melebihi 400 kaki, melanggar sekatan ruang udara standard. Tindak balas rasmi adalah pelbagai; sementara sesetengah lapangan terbang telah menggunakan sistem anti-UAS berasaskan frekuensi radio (RF), badan kawal selia seperti Federal Aviation Administration (FAA) dan European Union Aviation Safety Agency (EASA) telah mengeluarkan nasihat kecemasan tetapi kekurangan rangka kerja undang-undang yang komprehensif untuk sekatan pencegahan. Implikasi untuk keselamatan penerbangan adalah mendalam: corak berulang menunjukkan keluk pembelajaran dalam kalangan pengendali atau ujian terancang kelemahan lapangan terbang. Perkembangan ini mendorong komuniti AVSEC untuk mempercepatkan pelaburan dalam teknologi mengesan-dan-elak berlapis, mengintegrasikan perkongsian risikan masa nyata antara lapangan terbang dan penguatkuasa undang-undang, serta memperjuangkan hukuman yang lebih ketat dan geo-pagar mandatori pada semua drone komersial. Kegagalan untuk menyesuaikan diri boleh menormalkan gangguan ini, meningkatkan risiko perlanggaran mid-air yang dahsyat."
         }
       ]
     }
   ],
-  "generatedAt": "2026-06-27T05:35:38.359Z",
-  "lastProvider": "Gemini (2.5 Flash) (terjemahan)"
+  "generatedAt": "2026-06-27T12:02:34.843Z",
+  "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }
