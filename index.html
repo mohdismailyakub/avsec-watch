@@ -64,15 +64,15 @@
   .sevdot{width:7px;height:7px;border-radius:99px;display:inline-block}
   .ctitle{font-size:14.5px;font-weight:700;line-height:1.32;color:var(--ink)}
   .csum{color:var(--muted);font-size:12.5px;line-height:1.55}
-  .expand-btn,.close-btn{display:flex;align-items:center;gap:5px;width:100%;padding:9px 16px;
-    border:none;border-top:1px solid var(--border);background:var(--soft);cursor:pointer;
-    font-family:var(--mono);font-size:11px;font-weight:600;color:var(--gold);
-    letter-spacing:.8px;text-transform:uppercase;transition:background .15s ease}
-  .expand-btn:hover{background:#ede8d8}
-  .close-btn{color:var(--muted);border-top:1px solid var(--border);margin-top:10px}
-  .close-btn:hover{background:#ede8d8}
-  .card-body{max-height:0;overflow:hidden;transition:max-height .5s ease,padding .4s ease;padding:0 16px}
-  .card-body.open{max-height:2000px;padding:14px 16px 0}
+  .expand-btn,.close-btn{display:flex;align-items:center;justify-content:center;gap:5px;width:100%;padding:10px 16px;border:none;border-top:1px solid var(--border);background:var(--soft);cursor:pointer;font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;transition:background .15s ease}
+  .expand-btn{color:var(--gold)}.expand-btn:hover{background:#ede8d8}
+  .close-btn{color:var(--muted)}.close-btn:hover{background:#ede8d8}
+  .card-body{display:none;border-top:1px solid var(--border);padding:14px 16px 4px}
+  .card-body.open{display:block}
+  .card-scroll{max-height:300px;overflow-y:auto;-webkit-overflow-scrolling:touch;padding-right:4px;margin-bottom:10px}
+  .card-scroll::-webkit-scrollbar{width:4px}
+  .card-scroll::-webkit-scrollbar-track{background:var(--soft);border-radius:4px}
+  .card-scroll::-webkit-scrollbar-thumb{background:var(--gold);border-radius:4px}
   .cfoot{display:flex;gap:8px;align-items:center;margin-top:3px}
   .cfoot .date{font-family:var(--mono);font-size:10px;color:var(--faint)}
   .cfoot .src{font-family:var(--mono);font-size:10px;margin-left:auto;font-weight:600}
@@ -235,10 +235,12 @@ function card(it){
     +'</div>'
     +'<button class="expand-btn" onclick="toggleKad(this)">Read More ▼</button>'
     +'<div class="card-body">'
-    +'<div style="color:var(--muted);font-size:13.5px;line-height:1.75;margin-bottom:14px;white-space:pre-line">'+esc(full)+'</div>'
-    +'<div class="cfoot" style="margin-bottom:10px"><span class="date">'+esc(it.date||"")+'</span>'+src+'</div>'
-    +'<button class="close-btn" onclick="toggleKad(this)">Close ▲</button>'
+    +'<div class="card-scroll">'
+    +'<div style="color:var(--muted);font-size:13.5px;line-height:1.75;margin-bottom:12px;white-space:pre-line">'+esc(full)+'</div>'
+    +'<div class="cfoot"><span class="date">'+esc(it.date||"")+'</span>'+src+'</div>'
     +'</div>'
+    +'</div>'
+    +'<button class="close-btn" onclick="toggleKad(this)">Close ▲</button>'
     +'</div>';
 }
 function esc(s){return(s==null?"":(""+s)).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
@@ -346,12 +348,12 @@ function toggleKad(btn){
   const isOpen=body.classList.contains('open');
   if(isOpen){
     body.classList.remove('open');
-    expandBtn.style.display='flex';
-    if(closeBtn) closeBtn.style.display='none';
+    expandBtn.style.display='';
+    closeBtn.style.display='none';
   } else {
     body.classList.add('open');
     expandBtn.style.display='none';
-    if(closeBtn) closeBtn.style.display='flex';
+    closeBtn.style.display='';
   }
 }
 </script>
