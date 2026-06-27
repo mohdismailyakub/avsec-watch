@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T16:58:22.141Z",
+  "generatedAt": "2026-06-27T00:32:30.454Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -502,70 +502,70 @@
     },
     {
       "date": "2026-06-27",
-      "briefing": "Global aviation security remains under significant pressure heading into late June 2026, with recurring runway incursion close calls at major US airports drawing Congressional scrutiny, an active EU Council aviation security legislative push underway in Brussels, and a sustained wave of cyber and GPS-spoofing threats targeting carriers and airports worldwide. Regulatory bodies including EASA, ICAO, and the EU Commission are simultaneously accelerating cybersecurity and conflict-zone threat frameworks, while drone misuse continues to escalate across criminal and potentially hostile dimensions.",
+      "briefing": "Global aviation security in the past 72 hours highlights significant challenges from unauthorized drone activities, particularly around major events. Concurrently, regulatory bodies are actively updating certification standards and addressing evolving cyber threats to bolster overall safety and security worldwide.",
       "items": [
         {
-          "title": "Second Delta Go-Around at Boston Logan in Two Days Triggers Congressional Hearing",
+          "title": "Over 300 Drones Seized at FIFA World Cup 2026 Venues in U.S.",
           "category": "Incident",
           "region": "North America",
           "severity": "High",
-          "summary": "A second Delta flight aborted landing at Boston Logan within 24 hours due to runway occupancy, prompting Senate aviation safety hearings and FAA confirmation.",
-          "source": "Boston Globe / CNN",
-          "url": "https://www.cnn.com/2026/06/25/us/latest-aviation-incidents",
-          "date": "2026-06-25"
-        },
-        {
-          "title": "EU Council Publishes Aviation Security Strategy Progress Report, Flags IID and DDoS Threats",
-          "category": "Regulatory",
-          "region": "Europe",
-          "severity": "Medium",
-          "summary": "Brussels document dated 19 June 2026 details EU aviation security strategy, highlighting incendiary device and DDoS risks and moves to amend classified-information sharing legislation.",
-          "source": "Council of the European Union",
-          "url": "https://data.consilium.europa.eu/doc/document/ST-10901-2026-INIT/en/pdf",
-          "date": "2026-06-19"
-        },
-        {
-          "title": "US DOJ Busts Sophisticated Multi-State Drone Smuggling Network Targeting Federal Prisons",
-          "category": "Incident",
-          "region": "North America",
-          "severity": "High",
-          "summary": "Grand jury indicted 12 defendants for using heavy-payload drones to smuggle drugs, weapons, and phones into 10 federal prisons across eight US states.",
-          "source": "CNN",
-          "url": "https://www.cnn.com/2026/06/24/politics/justice-department-drone-network-delivery-prisons",
+          "summary": "U.S. authorities seized over 300 unauthorized drones near FIFA World Cup venues, enforcing strict no-fly zones and highlighting UAS security challenges.",
+          "source": "Travel Tomorrow",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEq1De16ejrNeVFZ_eh9NQbDG9PGx4_LVtQQGKAxwM9CxMyK-XnjkBbXvzqLFSumJ_zCMDkC84ll-UVty4LHjOXNR4wDSc6X064q_cVu9zAobGEvtfRveZGvzRPi9khbzGYPt0bHlMtt0SyTDiCbihIqFvxNrYTa882EYVh6SGTBSi9SASoJPwOOZ7Y4-mKespMdzg43cDjYge1",
           "date": "2026-06-24"
         },
         {
-          "title": "India Confirms GPS Spoofing Cyberattack on Seven Major Airports Including Delhi and Mumbai",
-          "category": "Incident",
-          "region": "Asia-Pacific",
-          "severity": "High",
-          "summary": "India's government confirmed GPS spoofing attacks disrupted aircraft navigation at seven airports; no flights cancelled due to ATC backup procedures and countermeasures deployed.",
-          "source": "Financial Express / Bright Defense",
-          "url": "https://www.brightdefense.com/resources/recent-data-breaches/",
-          "date": "2026-06-01"
-        },
-        {
-          "title": "EASA Part-IS Full Compliance Deadline Now Active; Airlines and Airports Enter 18-Month Implementation Window",
+          "title": "FAA Proposes Sweeping Changes to Commercial Aircraft Certification Rules",
           "category": "Regulatory",
-          "region": "Europe",
+          "region": "North America",
           "severity": "Medium",
-          "summary": "EASA's binding Part-IS cybersecurity framework became fully applicable February 2026; organisations now have 18 months to reach operational and effective compliance levels.",
-          "source": "Jones Day / EASA",
-          "url": "https://www.jonesday.com/en/insights/2026/02/civil-aviation-cybersecurity-easa-partis-sets-new-information-security-obligations",
-          "date": "2026-02-22"
+          "summary": "FAA proposes modernizing Part 25 certification for transport aircraft, aiming to streamline processes and align with EASA standards for global harmonization.",
+          "source": "AVweb",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH-zVVF9wVpGLioZqi6D27olMtnJ5TM9jGuUb0r5PiFAYHfcYf0momQ10RsjelDhfbsGvCnODuic11hJoLUJ9d88aM9u-Y9Zgw_gJOpBlUpC0dzOSc-FiNM__E5y93VVhFOZ_MCxVfBvumFp4jsRoCrpW26VeUU3Ev0qX-KkUMG0-BRjcGDQvM3P1OMBXKMf8JjnQ",
+          "date": "2026-06-26"
         },
         {
-          "title": "Myanmar National Airlines ATR-72 Struck by FPV Drone at Myitkyina Airport",
+          "title": "Near Collision Reported Between Two Passenger Jets at Boston Logan",
           "category": "Incident",
-          "region": "Asia-Pacific",
+          "region": "North America",
           "severity": "High",
-          "summary": "A Myanmar National Airlines ATR-72-600 was struck by an alleged first-person-view drone while preparing for take-off at Myitkyina Airport on 20 February 2026.",
-          "source": "D-Fend Solutions Rogue Drone Activity Briefing",
-          "url": "https://d-fendsolutions.com/blog/rogue-drone-activity-briefing-feb-2026/",
-          "date": "2026-02-20"
+          "summary": "A Delta jet aborted landing as an American Airlines plane took off on an intersecting runway, prompting investigations into the near-miss.",
+          "source": "CNN Wire",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGUyhHiUBGLr2aHf8Z00B20JnkErPiSp_5NbIvCjnBDMnzN1kj-hacpT4rgv1GutlaUP0AaUFKkhTzaWt4QkCEB2BDINtl1hzurZsp7oLVIwzir71NTD7LbZeUBENzlf9JP7-JyvChrPuoOq2bmzu7ZD7DVdn9Zo7I2RuVTZoD3CfYqo8weH8HFdo1OOHsyHyabk0m78w==",
+          "date": "2026-06-25"
+        },
+        {
+          "title": "ACI Europe Warns Aviation Industry of AI-Enabled Cyberattack Risks",
+          "category": "Threat",
+          "region": "Europe",
+          "severity": "High",
+          "summary": "ACI Europe Director General cautioned against the growing threat of AI-enabled cyberattacks, urging industry to enhance systemic vulnerability reduction.",
+          "source": "Breaking Travel News",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHQUG-EKOXUHb-QXuk7dE-lADwGkNWOt2WXkRl42YNsAKAr7OR3mQlWHN91N4vWvDTEUw_wZlILxeCIo8dk_sR0n5U3OTa8aP6qjm-ocZyL8XS7md3cUUea6CWve5O_ZDdkLhSP3FxYiIJpdPUGtDE-Hp7LJ5AWg6jb-JR6wHaNZw0HR28qdLcIuPjrYuY9AnXctd2wvEfFJTc0cfFRIEOGIWfBfdqJdLFj1A==",
+          "date": "2026-06-25"
+        },
+        {
+          "title": "ICAO Council to Consider Proposed Amendments to Aviation Security Annex 17",
+          "category": "Regulatory",
+          "region": "Global",
+          "severity": "Medium",
+          "summary": "The ICAO Council is scheduled to consider proposed amendments to Annex 17, focusing on global aviation security standards and recommended practices.",
+          "source": "European Commission",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE6wYeHwtvI6tMZ6kKeIbqhpiH1YMd02luKLkll7NTi_NysiTmZT0Z2VgVpxGpptHaqaPTdxyX8TzcBtSGpvDLQ7tnXwlwCxkZ-qHh9QyCc0kXhoFenrQ0RC3n1cBE43wp0sUJwg3HIoKPdNV0pLitt5jhwTNWA==",
+          "date": "2026-06-27"
+        },
+        {
+          "title": "U.S. Authorities Discuss Drone Contraband Smuggling into Georgia Prisons",
+          "category": "Incident",
+          "region": "North America",
+          "severity": "Medium",
+          "summary": "Federal and state authorities highlighted serious public safety and aviation system integrity threats from drones used to smuggle contraband into prisons.",
+          "source": "ABC 7 News - WJLA",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEpt7wM12TmQGQx654r1v-JxPdXT3m8vYyNHiJcKm7wWgzzGtrWAVPmqLXHpkfuEUm56QPUyVekhO5LHYKcrtMvU8RLPH3qwWr006lcgPASEeXQTtXUZjJJvRo8V2ezFA-7CWB-8Q==",
+          "date": "2026-06-25"
         }
       ]
     }
   ],
-  "lastProvider": "Claude (Sonnet 4.6)"
+  "lastProvider": "Gemini (2.5 Flash)"
 }
