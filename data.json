@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T00:38:33.717Z",
+  "generatedAt": "2026-06-27T05:35:38.359Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -502,67 +502,67 @@
     },
     {
       "date": "2026-06-27",
-      "briefing": "The global aviation security landscape over the past 72 hours has seen significant regulatory updates and ongoing efforts to counter illicit activities. Authorities are intensifying measures for major events and addressing airworthiness concerns, alongside continued vigilance against smuggling and transportation cyber threats.",
+      "briefing": "Global aviation security over the past 72 hours has seen a mix of proactive regulatory adjustments, ongoing threat assessments, and isolated incidents. Agencies worldwide are focusing on enhancing cybersecurity, streamlining international standards, and preparing for large-scale event security.",
       "items": [
         {
-          "title": "EASA Extends Middle East Airspace Risk Advisory",
+          "title": "Cocaine Seizure at Toronto Pearson Airport",
+          "category": "Incident",
+          "region": "North America",
+          "severity": "Medium",
+          "summary": "Border officials seized over 15 kilograms of cocaine from a traveler arriving from St. Vincent and the Grenadines at Toronto Pearson International Airport.",
+          "source": "Canada Border Services Agency (CBSA) via CTVNewsToronto.ca",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSC81_i3ZBnrLupBGYJtVRL6lsOQRj0zoqPtwGsRLBBUhuxsDaqliryh0wROGRzbsE8Zgzr6RyKnUNg0kjG61BrM3YeJSVmyWhUz9MfdJxIgnXL97S-xQ11xQbTRa9cS14NGJ-vGoQuwMyPeknmCuS5f70ACBEIRWxGPCnDfYwYmJuvb6DU7adTxupS3seK81YYGHSva_PMmxC3JlnpV8h4zQaSFTzg1DpZGLWepr-_x-rMC77zi1vMafvjv8o6uEW7w=",
+          "date": "2026-06-24"
+        },
+        {
+          "title": "AI-Enabled Cyberattack Threat to Aviation Growing",
+          "category": "Threat",
+          "region": "Global",
+          "severity": "High",
+          "summary": "Experts warn of increasing AI-enabled cyberattacks targeting the aviation sector, urging systemic vulnerability reduction and collective intelligence for enhanced defense.",
+          "source": "Breaking Travel News",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFqhAnMOhUCVDEueMqExfIR6UPmeIaPUIj78ULjIsxiOZT0M6qHiP5GWb_MJTFUMKuapds-525uCc5aOUigM-KNBj6JlZWsk_omO-Lqp9SusSNa3p-y-gKjJBPlqv4D1TwGYVGpWWaW7b8v9pqcllMp-tfF5zoVL5TIA9yK6GedqalxTXHHf0AEL3tTKxe29EiHrfs0yqIDyQu1reLGkbeUmC1HhVaz1IIjzQ==",
+          "date": "2026-06-25"
+        },
+        {
+          "title": "EASA Extends Conflict Zone Warning for Middle East Airspace",
           "category": "Regulatory",
           "region": "Middle East",
-          "severity": "Medium",
-          "summary": "EASA prolonged its conflict zone bulletin for Middle Eastern airspace until July 1, 2026, citing persistent security concerns for airlines.",
-          "source": "The Eastleigh Voice",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGw0Vs2imf0ewDiGDSnHIMH9K05ta7jVt9gibgw-x2ZOh8l423pkXGVPkVJYs7v0ZalXb7cUBy4ZZhT9aZQ2TyiyI5-3jen-cH1LYyetSyf7XVam3B2MnavG--igiowW5RrPw39pGJU9yzW2GwvbK-XW3391MM4e9vAt_YQHN1R1-RD2yzEDgGrp_uIf9dVhke-RknGs0YTuUwzVbIPnWShyW948WFTjka8",
-          "date": "2026-06-24"
-        },
-        {
-          "title": "EASA Orders Urgent A380 Wing Inspections",
-          "category": "Regulatory",
-          "region": "Europe",
           "severity": "High",
-          "summary": "EASA mandated urgent inspections for 16 Airbus A380s (Emirates, Qantas) due to wing spar cracks, impacting structural integrity and flight operations.",
-          "source": "Brussels Signal",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH-bbA_GIuMdtTMIkQqEvd4JkDJh9PB2Vp-cpXL_d24emBbxqj0o8Myumgwim73xwcEhJ5hdtJXuENJb4tMz3FaxNYCxBwVL03NRNMsQmu8UcDnlPTN_wi8nW812GeKKMxbJ4LOhNGwKzeF0fPCch3Tul_zQRaumxonh-8rCDDpyhhrHBxKkLyldBNRyRBTIrAkdpR11ZA4MdP2gyrKeFj0oi4",
+          "summary": "The European Union Aviation Safety Agency (EASA) extended its Conflict Zone Information Bulletin, advising airlines to avoid airspace over Iran, Iraq, and Lebanon due to security risks.",
+          "source": "WAM (Emirates News Agency)",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUX6zSZakB_UEmzN7FBv_EhS_ThIvvJPCeGGQgy43e-hXv8OMZmSG8wQ2_1ORcuN8deOuTWixclXmut1-6i25DKJ48-PeCcHj_8-RUxbMkXgZKYv2IdypoDKBuqeV2kq2EEzoazY4yGYic_xU07rItI7py66uOSQtyLMORd1LVqID3l-WZ9lptcCmvbC4gNYpukVykMC3mO1ADIRt7IsCQ958_Hz2YmbN3NTouo962f8kcmGYiK0Awm9O9lQ==",
           "date": "2026-06-24"
         },
         {
-          "title": "TSA Boosts Security for Fourth of July and FIFA World Cup 2026",
+          "title": "FAA Proposes Aligning Aircraft Certification with EASA Standards",
           "category": "Regulatory",
           "region": "North America",
           "severity": "Medium",
-          "summary": "The TSA is deploying enhanced screening technologies and increased staffing at U.S. airports to manage record passenger volumes for upcoming major events.",
-          "source": "Transportation Security Administration (TSA)",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFgpIC0aoaZJ9QWQHpJJF-KT50KeaQ7FFucVrDfWreTd6jhQnzu8jQQ8PwaxPQ7mCPTDP1ockCDHNsb53WVN1ybZuz3fx6d4LCEFJPcXndalFUyHzvDB2HjWx9m5yJdJqsDosWjeMtTAg-qrHDlQ_lljyAJBoJ1lVgwG4LfnwWdJ6oqWxqtLLOMoW5kOCBhcFZXLFVjHdjlg5f-4Mhj859slbDjIarON3GyDoAj-A==",
-          "date": "2026-06-25"
+          "summary": "The FAA proposed significant updates to aircraft certification rules to harmonize with European Union Aviation Safety Agency (EASA) standards, aiming to streamline approvals.",
+          "source": "Air Data News",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEW4nphxFVkAriAu1ILwxSZGSWH9ngQkdTYjdI2B5KOAuOEDxf2CREYLeGMvV5OdmhOxkdyEwEVU2oFpyiC6H22ZpTsWjhmvK4t0QsK-2qA8Cd4qARDDsDYFi4nySCYVHX_0X1QSarlVPV_zC_V8UvBGnjEh7xE6XbI0SnCDkpCgBUeuYjGnbvybzkGKZcgZdunGk-X1EmPYplfbWpWUZTkauID1MRXqrzR",
+          "date": "2026-06-27"
         },
         {
-          "title": "Indonesia Foils Major Drug Smuggling Operations at Soekarno-Hatta Airport",
-          "category": "Incident",
-          "region": "Asia-Pacific",
-          "severity": "High",
-          "summary": "Indonesian customs seized 18.5kg of marijuana and hashish, arresting foreign nationals in two cases at Soekarno-Hatta International Airport.",
-          "source": "ANTARA News",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH3fTnjOxdaylSNTh3cdNpN-0DX9Mm_a2LoXAdjC8_BHvSkD5OtbWW1n3BLw9yHezOtL59X32km_UB99DCRCwuHYjAmRYjtUpsdRrf2EulEZ46lYIxIwFS6UEpkci8peTvLejX-pu2ukw8p_Abfg-dmfsincXEIwJ2-Gal814Lg5rpQ5n7fUuK_cgXVmxE",
+          "title": "IATA Addresses Aviation Supply Chain Security and Efficiency",
+          "category": "Regulatory",
+          "region": "Global",
+          "severity": "Low",
+          "summary": "IATA outlined four priorities to strengthen the aerospace supply chain, including enhancing visibility, opening the aftermarket, unlocking data/AI, and building human capacity.",
+          "source": "IATA",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQECH_eLUTB5v7jee53XRapa1t5M3X0na4tjqbsHqD_MD7rAiD3el5QvTM3QmRkk_JoZsw6YwapN-EQKBkmGjqQfMB0NSZR8LdfSkwYzdupRvL10M7uRg-llOtz1eLJpy8xY90Q4k1FWib8wDAZ8zITVO8rCXskTgiRbvQ==",
           "date": "2026-06-24"
         },
         {
-          "title": "Danish Police Conclude Copenhagen Airport Drone Investigation with No Proof",
-          "category": "Threat",
-          "region": "Europe",
+          "title": "TSA Boosts Security for FIFA World Cup 2026 and Holiday Travel",
+          "category": "Regulatory",
+          "region": "North America",
           "severity": "Medium",
-          "summary": "After a nine-month probe, Danish police found no definitive proof of drone activity causing a Copenhagen Airport shutdown last year, closing the investigation.",
-          "source": "The Straits Times",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH0ift7djGYOP0UxHtZQLxliwikJMudGcR53jcehuK4PkyseUMy_AegXfpu7GrnzRS8iWDPMkyY0fo5bIlBqnZjWq3epHLHeEQyYT60vhwU_kKKxnnwdXAJwypehmJK34cUGrHPX4L9kTPiySGQtSiVsOwuImmukXjafGsDsI2bSQPOsVqoGJd6EGihEEGgZQjbmWmfbVczpFtwFWkw4CKzkJUTV7PsGjdr",
+          "summary": "The Transportation Security Administration (TSA) announced enhanced technology and increased staffing to manage security for the FIFA World Cup 2026 and Fourth of July holiday travel.",
+          "source": "Transportation Security Administration (TSA)",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH5JhIl9YQ01FYN7NcueuRy6RhpcmNCy_-XJlsEO8GJ01cRpo0cz0C0gCtIY-oTLeHEabOkMBIJwP1z_BMGjy4W8AylZSM8jWiO0sjw4-UmYrofaw_5MIvqBHl7gbGGPaBlCtZeHC6HlxzK5EHeWKQ_9bSwzz2nNF1GFt4Ssjvc_zEtuqerLwG6tEOhkKzv_vDFny_VroQJC5Iy8Zeyp82ZhSy1XP9ypHvj7dmt9A==",
           "date": "2026-06-25"
-        },
-        {
-          "title": "Scattered Spider Members Plead Guilty for Transport for London Cyberattack",
-          "category": "Incident",
-          "region": "Europe",
-          "severity": "High",
-          "summary": "Two members of the Scattered Spider hacking group pleaded guilty to a cyberattack on Transport for London, causing $39 million in damages.",
-          "source": "TECHMANIACS.com",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGvzPEZTBwP6wJo3L4u8p9wdFRwOSX8opnQeo0yjZEyrVGfSrULsp98LpS-vtdDpaJeMV377aFXqxYlhBNeN_GnpOckWVrZ_kPHmkeGcNQo5JPtGdYIKYybdJj3hYi96mt9SWrRpVUwKpd5RjDgISeYc5c-GuJl7w",
-          "date": "2026-06-24"
         }
       ]
     }

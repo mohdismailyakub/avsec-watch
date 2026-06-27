@@ -1,0 +1,72 @@
+{
+  "days": [
+    {
+      "date": "2026-06-27",
+      "briefing": "Keselamatan penerbangan global sepanjang 72 jam yang lalu telah menyaksikan gabungan pelarasan kawal selia proaktif, penilaian ancaman berterusan, dan insiden terpencil. Agensi-agensi di seluruh dunia sedang menumpukan pada meningkatkan keselamatan siber, menyelaraskan piawaian antarabangsa, dan bersiap sedia untuk keselamatan acara berskala besar.",
+      "items": [
+        {
+          "title": "Rampasan Kokain di Lapangan Terbang Toronto Pearson",
+          "category": "Incident",
+          "region": "North America",
+          "severity": "Medium",
+          "summary": "Pegawai sempadan merampas lebih 15 kilogram kokain daripada seorang pengembara yang tiba dari St. Vincent and the Grenadines di Lapangan Terbang Antarabangsa Toronto Pearson.",
+          "source": "Canada Border Services Agency (CBSA) via CTVNewsToronto.ca",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSC81_i3ZBnrLupBGYJtVRL6lsOQRj0zoqPtwGsRLBBUhuxsDaqliryh0wROGRzbsE8Zgzr6RyKnUNg0kjG61BrM3YeJSVmyWhUz9MfdJxIgnXL97S-xQ11xQbTRa9cS14NGJ-vGoQuwMyPeknmCuS5f70ACBEIRWxGPCnDfYwYmJuvb6DU7adTxupS3seK81YYGHSva_PMmxC3JlnpV8h4zQaSFTzg1DpZGLWepr-_x-rMC77zi1vMafvjv8o6uEW7w=",
+          "date": "2026-06-24"
+        },
+        {
+          "title": "Ancaman Serangan Siber Dikuasakan AI terhadap Penerbangan Semakin Meningkat",
+          "category": "Threat",
+          "region": "Global",
+          "severity": "High",
+          "summary": "Pakar memberi amaran tentang peningkatan serangan siber yang didayakan AI yang menyasarkan sektor penerbangan, menggesa pengurangan kelemahan sistemik dan risikan kolektif untuk pertahanan yang dipertingkatkan.",
+          "source": "Breaking Travel News",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFqhAnMOhUCVDEueMqExfIR6UPmeIaPUIj78ULjIsxiOZT0M6qHiP5GWb_MJTFUMKuapds-525uCc5aOUigM-KNBj6JlZWsk_omO-Lqp9SusSNa3p-y-gKjJBPlqv4D1TwGYVGpWWaW7b8v9pqcllMp-tfF5zoVL5TIA9yK6GedqalxTXHHf0AEL3tTKxe29EiHrfs0yqIDyQu1reLGkbeUmC1HhVaz1IIjzQ==",
+          "date": "2026-06-25"
+        },
+        {
+          "title": "EASA Melanjutkan Amaran Zon Konflik untuk Ruang Udara Timur Tengah",
+          "category": "Regulatory",
+          "region": "Middle East",
+          "severity": "High",
+          "summary": "Agensi Keselamatan Penerbangan Kesatuan Eropah (EASA) melanjutkan Buletin Maklumat Zon Konfliknya, menasihati syarikat penerbangan untuk mengelakkan ruang udara di atas Iran, Iraq, dan Lebanon disebabkan oleh risiko keselamatan.",
+          "source": "WAM (Emirates News Agency)",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUX6zSZakB_UEmzN7FBv_EhS_ThIvvJPCeGGQgy43e-hXv8OMZmSG8wQ2_1ORcuN8deOuTWixclXmut1-6i25DKJ48-PeCcHj_8-RUxbMkXgZKYv2IdypoDKBuqeV2kq2EEzoazY4yGYic_xU07rItI7py66uOSQtyLMORd1LVqID3l-WZ9lptcCmvbC4gNYpukVykMC3mO1ADIRt7IsCQ958_Hz2YmbN3NTouo962f8kcmGYiK0Awm9O9lQ==",
+          "date": "2026-06-24"
+        },
+        {
+          "title": "FAA Mencadangkan Menyelaraskan Pensijilan Pesawat dengan Piawaian EASA",
+          "category": "Regulatory",
+          "region": "North America",
+          "severity": "Medium",
+          "summary": "FAA mencadangkan kemas kini penting kepada peraturan pensijilan pesawat untuk menyelaraskan dengan piawaian Agensi Keselamatan Penerbangan Kesatuan Eropah (EASA), bertujuan untuk menyelaraskan kelulusan.",
+          "source": "Air Data News",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEW4nphxFVkAriAu1ILwxSZGSWH9ngQkdTYjdI2B5KOAuOEDxf2CREYLeGMvV5OdmhOxkdyEwEVU2oFpyiC6H22ZpTsWjhmvK4t0QsK-2qA8Cd4qARDDsDYFi4nySCYVHX_0X1QSarlVPV_zC_V8UvBGnjEh7xE6XbI0SnCDkpCgBUeuYjGnbvybzkGKZcgZdunGk-X1EmPYplfbWpWUZTkauID1MRXqrzR",
+          "date": "2026-06-27"
+        },
+        {
+          "title": "IATA Menangani Keselamatan dan Kecekapan Rantaian Bekalan Penerbangan",
+          "category": "Regulatory",
+          "region": "Global",
+          "severity": "Low",
+          "summary": "IATA menggariskan empat keutamaan untuk mengukuhkan rantaian bekalan aeroangkasa, termasuk meningkatkan keterlihatan, membuka pasaran selepas jualan, membuka kunci data/AI, dan membina kapasiti insan.",
+          "source": "IATA",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQECH_eLUTB5v7jee53XRapa1t5M3X0na4tjqbsHqD_MD7rAiD3el5QvTM3QmRkk_JoZsw6YwapN-EQKBkmGjqQfMB0NSZR8LdfSkwYzdupRvL10M7uRg-llOtz1eLJpy8xY90Q4k1FWib8wDAZ8zITVO8rCXskTgiRbvQ==",
+          "date": "2026-06-24"
+        },
+        {
+          "title": "TSA Meningkatkan Keselamatan untuk FIFA World Cup 2026 dan Perjalanan Percutian",
+          "category": "Regulatory",
+          "region": "North America",
+          "severity": "Medium",
+          "summary": "Pentadbiran Keselamatan Pengangkutan (TSA) mengumumkan teknologi yang dipertingkatkan dan peningkatan kakitangan untuk menguruskan keselamatan untuk FIFA World Cup 2026 dan perjalanan percutian Fourth of July.",
+          "source": "Transportation Security Administration (TSA)",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH5JhIl9YQ01FYN7NcueuRy6RhpcmNCy_-XJlsEO8GJ01cRpo0cz0C0gCtIY-oTLeHEabOkMBIJwP1z_BMGjy4W8AylZSM8jWiO0sjw4-UmYrofaw_5MIvqBHl7gbGGPaBlCtZeHC6HlxzK5EHeWKQ_9bSwzz2nNF1GFt4Ssjvc_zEtuqerLwG6tEOhkKzv_vDFny_VroQJC5Iy8Zeyp82ZhSy1XP9ypHvj7dmt9A==",
+          "date": "2026-06-25"
+        }
+      ]
+    }
+  ],
+  "generatedAt": "2026-06-27T05:35:38.359Z",
+  "lastProvider": "Gemini (2.5 Flash) (terjemahan)"
+}
