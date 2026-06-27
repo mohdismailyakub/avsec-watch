@@ -19,9 +19,24 @@ const today = new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Kuching" 
 const PROMPT = `You are an aviation security (AVSEC) intelligence analyst. Search the web for the most significant aviation security developments worldwide from the last 72 hours. Cover a MIX of: security incidents/breaches (hijack, unauthorised access, drone/UAS near airports, smuggling, insider threat, screening failure, cyber attack on aviation systems), and regulatory/policy news (ICAO Annex 17 amendments, CAAM/EASA/TSA/ECAC/IATA circulars, directives or new standards). Cover the whole world.
 
 Output ONLY valid JSON, no markdown fences, no preamble, in this exact shape:
-{"briefing":"2 sentence global situation summary","items":[{"title":"short headline","category":"Incident|Regulatory|Threat|Technology","region":"Asia-Pacific|Europe|North America|Latin America|Middle East|Africa","severity":"High|Medium|Low","summary":"max 25 words — short teaser only","fullContent":"200 to 400 words — comprehensive coverage of this development: what happened, who was involved, exact timeline, scale and impact, technical details, official response, and implications for aviation security worldwide. Write in full paragraphs, not bullet points. Include all specific facts, figures, and named organisations found in search results.","source":"publication name","url":"link","date":"YYYY-MM-DD"}]}
+{"briefing":"2 sentence global situation summary","items":[{"title":"short headline","category":"Incident|Regulatory|Threat|Technology","region":"Asia-Pacific|Europe|North America|Latin America|Middle East|Africa","severity":"High|Medium|Low","summary":"max 25 words","source":"publication name","url":"link","date":"YYYY-MM-DD"}]}
 
-Give exactly 6 items, most recent and most significant first. Only report developments you actually found in search results. The fullContent field must be substantive — never repeat the summary verbatim.`;
+Give exactly 6 items, most recent and most significant first. Only report developments you actually found in search results.`;
+
+// Prompt berasingan untuk jana fullContent setiap item
+function makeFullPrompt(item) {
+  return `You are an aviation security (AVSEC) intelligence analyst writing a detailed briefing.
+Write a comprehensive 200-300 word analysis of this aviation security development:
+
+Title: ${item.title}
+Category: ${item.category}
+Region: ${item.region}
+Date: ${item.date}
+Summary: ${item.summary}
+Source: ${item.source}
+
+Write in full paragraphs covering: what happened, who was involved, timeline, scale and impact, technical details, official response, and implications for aviation security. Be factual and specific. Do NOT use bullet points. Return ONLY the analysis text, no title, no preamble.`;
+}
 
 // ---------- helpers ----------
 function parseJSON(text) {
@@ -78,6 +93,7 @@ async function pullViaGemini() {
       body: JSON.stringify({
         contents: [{ parts: [{ text: PROMPT }] }],
         tools: [{ google_search: {} }],
+        generationConfig: { maxOutputTokens: 8192 },
       }),
     });
     if (r.status === 503 && attempt < 3) {
@@ -414,6 +430,7 @@ async function main() {
       provider = "Gemini (2.5 Flash)";
     } catch (e2) {
       console.log("Gemini failed: " + e2.message + " — trying DeepSeek+Tavily");
+      if (!DEEPSEEK_API_KEY || !TAVILY_API_KEY) throw new Error("DeepSeek/Tavily keys not set");
       parsed = await pullViaDeepSeekTavily();
       provider = "DeepSeek V4-Flash + Tavily";
     }
@@ -430,6 +447,23 @@ async function main() {
   store.days = store.days.slice(-366);
   store.generatedAt = new Date().toISOString();
   store.lastProvider = provider;
+  // Jana fullContent untuk setiap item secara berasingan
+  console.log("Jana fullContent untuk " + items.length + " item...");
+  await sleep(10000); // jeda sebelum call berasingan
+  for (let i = 0; i < items.length; i++) {
+    if (i > 0) await sleep(6000);
+    const fcPrompt = makeFullPrompt(items[i]);
+    try {
+      const fc = await aiText(fcPrompt);
+      items[i].fullContent = fc;
+      console.log("fullContent item " + (i+1) + ": OK (" + fc.length + " chars)");
+    } catch(e) {
+      items[i].fullContent = items[i].summary || "";
+      console.log("fullContent item " + (i+1) + " gagal — guna summary: " + e.message);
+    }
+  }
+  parsed.items = items;
+
   writeFileSync("data.json", JSON.stringify(store, null, 2));
   console.log("data.json updated");
 
