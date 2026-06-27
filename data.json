@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T00:32:30.454Z",
+  "generatedAt": "2026-06-27T00:38:33.717Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -502,67 +502,67 @@
     },
     {
       "date": "2026-06-27",
-      "briefing": "Global aviation security in the past 72 hours highlights significant challenges from unauthorized drone activities, particularly around major events. Concurrently, regulatory bodies are actively updating certification standards and addressing evolving cyber threats to bolster overall safety and security worldwide.",
+      "briefing": "The global aviation security landscape over the past 72 hours has seen significant regulatory updates and ongoing efforts to counter illicit activities. Authorities are intensifying measures for major events and addressing airworthiness concerns, alongside continued vigilance against smuggling and transportation cyber threats.",
       "items": [
         {
-          "title": "Over 300 Drones Seized at FIFA World Cup 2026 Venues in U.S.",
-          "category": "Incident",
-          "region": "North America",
-          "severity": "High",
-          "summary": "U.S. authorities seized over 300 unauthorized drones near FIFA World Cup venues, enforcing strict no-fly zones and highlighting UAS security challenges.",
-          "source": "Travel Tomorrow",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEq1De16ejrNeVFZ_eh9NQbDG9PGx4_LVtQQGKAxwM9CxMyK-XnjkBbXvzqLFSumJ_zCMDkC84ll-UVty4LHjOXNR4wDSc6X064q_cVu9zAobGEvtfRveZGvzRPi9khbzGYPt0bHlMtt0SyTDiCbihIqFvxNrYTa882EYVh6SGTBSi9SASoJPwOOZ7Y4-mKespMdzg43cDjYge1",
+          "title": "EASA Extends Middle East Airspace Risk Advisory",
+          "category": "Regulatory",
+          "region": "Middle East",
+          "severity": "Medium",
+          "summary": "EASA prolonged its conflict zone bulletin for Middle Eastern airspace until July 1, 2026, citing persistent security concerns for airlines.",
+          "source": "The Eastleigh Voice",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGw0Vs2imf0ewDiGDSnHIMH9K05ta7jVt9gibgw-x2ZOh8l423pkXGVPkVJYs7v0ZalXb7cUBy4ZZhT9aZQ2TyiyI5-3jen-cH1LYyetSyf7XVam3B2MnavG--igiowW5RrPw39pGJU9yzW2GwvbK-XW3391MM4e9vAt_YQHN1R1-RD2yzEDgGrp_uIf9dVhke-RknGs0YTuUwzVbIPnWShyW948WFTjka8",
           "date": "2026-06-24"
         },
         {
-          "title": "FAA Proposes Sweeping Changes to Commercial Aircraft Certification Rules",
+          "title": "EASA Orders Urgent A380 Wing Inspections",
           "category": "Regulatory",
-          "region": "North America",
-          "severity": "Medium",
-          "summary": "FAA proposes modernizing Part 25 certification for transport aircraft, aiming to streamline processes and align with EASA standards for global harmonization.",
-          "source": "AVweb",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH-zVVF9wVpGLioZqi6D27olMtnJ5TM9jGuUb0r5PiFAYHfcYf0momQ10RsjelDhfbsGvCnODuic11hJoLUJ9d88aM9u-Y9Zgw_gJOpBlUpC0dzOSc-FiNM__E5y93VVhFOZ_MCxVfBvumFp4jsRoCrpW26VeUU3Ev0qX-KkUMG0-BRjcGDQvM3P1OMBXKMf8JjnQ",
-          "date": "2026-06-26"
-        },
-        {
-          "title": "Near Collision Reported Between Two Passenger Jets at Boston Logan",
-          "category": "Incident",
-          "region": "North America",
-          "severity": "High",
-          "summary": "A Delta jet aborted landing as an American Airlines plane took off on an intersecting runway, prompting investigations into the near-miss.",
-          "source": "CNN Wire",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGUyhHiUBGLr2aHf8Z00B20JnkErPiSp_5NbIvCjnBDMnzN1kj-hacpT4rgv1GutlaUP0AaUFKkhTzaWt4QkCEB2BDINtl1hzurZsp7oLVIwzir71NTD7LbZeUBENzlf9JP7-JyvChrPuoOq2bmzu7ZD7DVdn9Zo7I2RuVTZoD3CfYqo8weH8HFdo1OOHsyHyabk0m78w==",
-          "date": "2026-06-25"
-        },
-        {
-          "title": "ACI Europe Warns Aviation Industry of AI-Enabled Cyberattack Risks",
-          "category": "Threat",
           "region": "Europe",
           "severity": "High",
-          "summary": "ACI Europe Director General cautioned against the growing threat of AI-enabled cyberattacks, urging industry to enhance systemic vulnerability reduction.",
-          "source": "Breaking Travel News",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHQUG-EKOXUHb-QXuk7dE-lADwGkNWOt2WXkRl42YNsAKAr7OR3mQlWHN91N4vWvDTEUw_wZlILxeCIo8dk_sR0n5U3OTa8aP6qjm-ocZyL8XS7md3cUUea6CWve5O_ZDdkLhSP3FxYiIJpdPUGtDE-Hp7LJ5AWg6jb-JR6wHaNZw0HR28qdLcIuPjrYuY9AnXctd2wvEfFJTc0cfFRIEOGIWfBfdqJdLFj1A==",
-          "date": "2026-06-25"
+          "summary": "EASA mandated urgent inspections for 16 Airbus A380s (Emirates, Qantas) due to wing spar cracks, impacting structural integrity and flight operations.",
+          "source": "Brussels Signal",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH-bbA_GIuMdtTMIkQqEvd4JkDJh9PB2Vp-cpXL_d24emBbxqj0o8Myumgwim73xwcEhJ5hdtJXuENJb4tMz3FaxNYCxBwVL03NRNMsQmu8UcDnlPTN_wi8nW812GeKKMxbJ4LOhNGwKzeF0fPCch3Tul_zQRaumxonh-8rCDDpyhhrHBxKkLyldBNRyRBTIrAkdpR11ZA4MdP2gyrKeFj0oi4",
+          "date": "2026-06-24"
         },
         {
-          "title": "ICAO Council to Consider Proposed Amendments to Aviation Security Annex 17",
+          "title": "TSA Boosts Security for Fourth of July and FIFA World Cup 2026",
           "category": "Regulatory",
-          "region": "Global",
-          "severity": "Medium",
-          "summary": "The ICAO Council is scheduled to consider proposed amendments to Annex 17, focusing on global aviation security standards and recommended practices.",
-          "source": "European Commission",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE6wYeHwtvI6tMZ6kKeIbqhpiH1YMd02luKLkll7NTi_NysiTmZT0Z2VgVpxGpptHaqaPTdxyX8TzcBtSGpvDLQ7tnXwlwCxkZ-qHh9QyCc0kXhoFenrQ0RC3n1cBE43wp0sUJwg3HIoKPdNV0pLitt5jhwTNWA==",
-          "date": "2026-06-27"
-        },
-        {
-          "title": "U.S. Authorities Discuss Drone Contraband Smuggling into Georgia Prisons",
-          "category": "Incident",
           "region": "North America",
           "severity": "Medium",
-          "summary": "Federal and state authorities highlighted serious public safety and aviation system integrity threats from drones used to smuggle contraband into prisons.",
-          "source": "ABC 7 News - WJLA",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEpt7wM12TmQGQx654r1v-JxPdXT3m8vYyNHiJcKm7wWgzzGtrWAVPmqLXHpkfuEUm56QPUyVekhO5LHYKcrtMvU8RLPH3qwWr006lcgPASEeXQTtXUZjJJvRo8V2ezFA-7CWB-8Q==",
+          "summary": "The TSA is deploying enhanced screening technologies and increased staffing at U.S. airports to manage record passenger volumes for upcoming major events.",
+          "source": "Transportation Security Administration (TSA)",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFgpIC0aoaZJ9QWQHpJJF-KT50KeaQ7FFucVrDfWreTd6jhQnzu8jQQ8PwaxPQ7mCPTDP1ockCDHNsb53WVN1ybZuz3fx6d4LCEFJPcXndalFUyHzvDB2HjWx9m5yJdJqsDosWjeMtTAg-qrHDlQ_lljyAJBoJ1lVgwG4LfnwWdJ6oqWxqtLLOMoW5kOCBhcFZXLFVjHdjlg5f-4Mhj859slbDjIarON3GyDoAj-A==",
           "date": "2026-06-25"
+        },
+        {
+          "title": "Indonesia Foils Major Drug Smuggling Operations at Soekarno-Hatta Airport",
+          "category": "Incident",
+          "region": "Asia-Pacific",
+          "severity": "High",
+          "summary": "Indonesian customs seized 18.5kg of marijuana and hashish, arresting foreign nationals in two cases at Soekarno-Hatta International Airport.",
+          "source": "ANTARA News",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH3fTnjOxdaylSNTh3cdNpN-0DX9Mm_a2LoXAdjC8_BHvSkD5OtbWW1n3BLw9yHezOtL59X32km_UB99DCRCwuHYjAmRYjtUpsdRrf2EulEZ46lYIxIwFS6UEpkci8peTvLejX-pu2ukw8p_Abfg-dmfsincXEIwJ2-Gal814Lg5rpQ5n7fUuK_cgXVmxE",
+          "date": "2026-06-24"
+        },
+        {
+          "title": "Danish Police Conclude Copenhagen Airport Drone Investigation with No Proof",
+          "category": "Threat",
+          "region": "Europe",
+          "severity": "Medium",
+          "summary": "After a nine-month probe, Danish police found no definitive proof of drone activity causing a Copenhagen Airport shutdown last year, closing the investigation.",
+          "source": "The Straits Times",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH0ift7djGYOP0UxHtZQLxliwikJMudGcR53jcehuK4PkyseUMy_AegXfpu7GrnzRS8iWDPMkyY0fo5bIlBqnZjWq3epHLHeEQyYT60vhwU_kKKxnnwdXAJwypehmJK34cUGrHPX4L9kTPiySGQtSiVsOwuImmukXjafGsDsI2bSQPOsVqoGJd6EGihEEGgZQjbmWmfbVczpFtwFWkw4CKzkJUTV7PsGjdr",
+          "date": "2026-06-25"
+        },
+        {
+          "title": "Scattered Spider Members Plead Guilty for Transport for London Cyberattack",
+          "category": "Incident",
+          "region": "Europe",
+          "severity": "High",
+          "summary": "Two members of the Scattered Spider hacking group pleaded guilty to a cyberattack on Transport for London, causing $39 million in damages.",
+          "source": "TECHMANIACS.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGvzPEZTBwP6wJo3L4u8p9wdFRwOSX8opnQeo0yjZEyrVGfSrULsp98LpS-vtdDpaJeMV377aFXqxYlhBNeN_GnpOckWVrZ_kPHmkeGcNQo5JPtGdYIKYybdJj3hYi96mt9SWrRpVUwKpd5RjDgISeYc5c-GuJl7w",
+          "date": "2026-06-24"
         }
       ]
     }
