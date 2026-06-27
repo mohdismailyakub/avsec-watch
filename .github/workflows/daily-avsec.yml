@@ -37,6 +37,8 @@ jobs:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           MAIL_TO: ${{ secrets.MAIL_TO }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
         run: node pull.mjs
 
       - name: Commit updated data.json (conflict-proof)
@@ -49,7 +51,7 @@ jobs:
             git fetch origin main
             git reset --hard origin/main
             cp /tmp/data.json.new data.json
-            git add data.json
+            git add data.json data-ms.json
             if git diff --staged --quiet; then
               echo "No data.json changes to commit."
               exit 0
