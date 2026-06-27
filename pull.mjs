@@ -192,15 +192,26 @@ acronyms (UAS GPS GNSS DDoS RF), aviation terms (runway airside NOTAM TCAS ATC),
 cyber terms (ransomware malware phishing), refs (Annex 17 Part-IS NCASP AVSEC),
 severity labels (High Medium Low).`;
 
-async function geminiText(prompt) {
-  const url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=" + GEMINI_API_KEY;
-  const r = await fetch(url, {
-    method: "POST", headers: { "content-type": "application/json" },
-    body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] }),
-  });
-  if (!r.ok) throw new Error("Gemini HTTP " + r.status);
-  const d = await r.json();
-  return (d?.candidates?.[0]?.content?.parts || []).map(p => p.text || "").join("\n").trim();
+const sleep = (ms) => new Promise(r => setTimeout(r, ms));
+
+async function geminiText(prompt, retries = 3) {
+  for (let attempt = 1; attempt <= retries; attempt++) {
+    const url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=" + GEMINI_API_KEY;
+    const r = await fetch(url, {
+      method: "POST", headers: { "content-type": "application/json" },
+      body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] }),
+    });
+    if (r.status === 429) {
+      const wait = attempt * 15000; // 15s, 30s, 45s backoff
+      console.log("Gemini 429 — tunggu " + (wait/1000) + "s sebelum retry...");
+      await sleep(wait);
+      continue;
+    }
+    if (!r.ok) throw new Error("Gemini HTTP " + r.status);
+    const d = await r.json();
+    return (d?.candidates?.[0]?.content?.parts || []).map(p => p.text || "").join("\n").trim();
+  }
+  throw new Error("Gemini HTTP 429 selepas " + retries + " percubaan");
 }
 
 async function claudeText(prompt) {
@@ -244,6 +255,10 @@ Return ONLY valid JSON (no markdown, no preamble) in this exact structure:
 {"briefing":"...","items":[{"title":"...","summary":"..."}]}
 INPUT: ${JSON.stringify(shortPayload)}`;
 
+  // Tunggu 20 saat supaya Gemini rate limit reset selepas main pull
+  console.log("Jeda 20s sebelum terjemahan (Gemini rate limit)...");
+  await sleep(20000);
+
   let shortResult = shortPayload;
   try {
     shortResult = await aiJSON(shortPrompt);
@@ -264,6 +279,10 @@ Return ONLY the translated Bahasa Malaysia text. No JSON, no explanation.
 
 TEXT TO TRANSLATE:
 ${fc}`;
+    if (i > 0) {
+      console.log("Jeda 8s antara item terjemahan...");
+      await sleep(8000);
+    }
     try {
       const translated = await aiText(fcPrompt);
       translatedFull.push(translated);
