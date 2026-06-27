@@ -46,14 +46,16 @@ jobs:
           git config user.name  "avsec-bot"
           git config user.email "actions@users.noreply.github.com"
           cp data.json /tmp/data.json.new
+          [ -f data-ms.json ] && cp data-ms.json /tmp/data-ms.json.new || true
           for i in 1 2 3 4 5; do
             echo "Push attempt $i..."
             git fetch origin main
             git reset --hard origin/main
             cp /tmp/data.json.new data.json
+            [ -f /tmp/data-ms.json.new ] && cp /tmp/data-ms.json.new data-ms.json || true
             git add data.json data-ms.json
             if git diff --staged --quiet; then
-              echo "No data.json changes to commit."
+              echo "No changes to commit."
               exit 0
             fi
             git commit -m "AVSEC pull $(date -u +%Y-%m-%dT%H:%MZ)"
