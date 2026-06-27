@@ -19,9 +19,9 @@ const today = new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Kuching" 
 const PROMPT = `You are an aviation security (AVSEC) intelligence analyst. Search the web for the most significant aviation security developments worldwide from the last 72 hours. Cover a MIX of: security incidents/breaches (hijack, unauthorised access, drone/UAS near airports, smuggling, insider threat, screening failure, cyber attack on aviation systems), and regulatory/policy news (ICAO Annex 17 amendments, CAAM/EASA/TSA/ECAC/IATA circulars, directives or new standards). Cover the whole world.
 
 Output ONLY valid JSON, no markdown fences, no preamble, in this exact shape:
-{"briefing":"2 sentence global situation summary","items":[{"title":"short headline","category":"Incident|Regulatory|Threat|Technology","region":"Asia-Pacific|Europe|North America|Latin America|Middle East|Africa","severity":"High|Medium|Low","summary":"max 25 words","source":"publication name","url":"link","date":"YYYY-MM-DD"}]}
+{"briefing":"2 sentence global situation summary","items":[{"title":"short headline","category":"Incident|Regulatory|Threat|Technology","region":"Asia-Pacific|Europe|North America|Latin America|Middle East|Africa","severity":"High|Medium|Low","summary":"max 25 words — short teaser only","fullContent":"200 to 400 words — comprehensive coverage of this development: what happened, who was involved, exact timeline, scale and impact, technical details, official response, and implications for aviation security worldwide. Write in full paragraphs, not bullet points. Include all specific facts, figures, and named organisations found in search results.","source":"publication name","url":"link","date":"YYYY-MM-DD"}]}
 
-Give exactly 6 items, most recent and most significant first. Only report developments you actually found in search results.`;
+Give exactly 6 items, most recent and most significant first. Only report developments you actually found in search results. The fullContent field must be substantive — never repeat the summary verbatim.`;
 
 // ---------- helpers ----------
 function parseJSON(text) {
@@ -187,8 +187,9 @@ async function translateToBM(parsed) {
   const payload = {
     briefing: parsed.briefing || "",
     items: (parsed.items || []).map(it => ({
-      title: it.title || "",
-      summary: it.summary || ""
+      title:       it.title       || "",
+      summary:     it.summary     || "",
+      fullContent: it.fullContent || ""
     }))
   };
 
@@ -225,7 +226,7 @@ TRANSLATION RULES:
 INPUT (JSON):
 ${JSON.stringify(payload, null, 2)}
 
-OUTPUT: Return ONLY valid JSON, same structure as input. Translate ONLY these fields: briefing, title, summary. Leave ALL other fields unchanged. No markdown fences, no preamble, no explanation.`;
+OUTPUT: Return ONLY valid JSON, same structure as input. Translate ONLY these fields: briefing, title, summary, fullContent. Leave ALL other fields unchanged: category, region, severity, source, url, date. No markdown fences, no preamble, no explanation.`;
 
   // Cuba Claude dulu (tak perlu web search untuk terjemahan)
   if (ANTHROPIC_API_KEY) {
@@ -419,8 +420,9 @@ async function main() {
     const translated = await translateToBM(parsed);
     const msItems = (parsed.items || []).map((it, i) => ({
       ...it,
-      title:   translated.items?.[i]?.title   || it.title,
-      summary: translated.items?.[i]?.summary || it.summary,
+      title:       translated.items?.[i]?.title       || it.title,
+      summary:     translated.items?.[i]?.summary     || it.summary,
+      fullContent: translated.items?.[i]?.fullContent || it.fullContent || "",
     }));
     storeMS.days = storeMS.days.filter(d => d.date !== today);
     storeMS.days.push({ date: today, briefing: translated.briefing || parsed.briefing, items: msItems });
