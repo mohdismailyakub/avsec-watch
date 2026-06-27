@@ -265,11 +265,11 @@ async function aiText(prompt) {
   if (ANTHROPIC_API_KEY) {
     try { return await claudeText(prompt); } catch(e) { console.log("Claude text: " + e.message); }
   }
-  if (GEMINI_API_KEY) {
-    try { return await geminiText(prompt); } catch(e) { console.log("Gemini text: " + e.message); }
-  }
   if (DEEPSEEK_API_KEY) {
     try { return await deepseekText(prompt); } catch(e) { console.log("DeepSeek text: " + e.message); }
+  }
+  if (GEMINI_API_KEY) {
+    try { return await geminiText(prompt); } catch(e) { console.log("Gemini text: " + e.message); }
   }
   throw new Error("All translation providers failed");
 }
@@ -441,21 +441,21 @@ async function main() {
   const seen = new Set();
   store.days.forEach((d) => (d.items || []).forEach((it) => seen.add(keyOf(it))));
 
-  // pull — Claude → Gemini (3x retry) → DeepSeek+Tavily (3x retry)
+  // pull — Claude → DeepSeek+Tavily → Gemini
   let parsed, provider;
   try {
     parsed = await pullViaClaude();
     provider = "Claude (Sonnet 4.6)";
   } catch (e1) {
-    console.log("Claude failed: " + e1.message + " — trying Gemini");
+    console.log("Claude failed: " + e1.message + " — trying DeepSeek+Tavily");
     try {
-      parsed = await pullViaGemini();
-      provider = "Gemini (2.5 Flash)";
-    } catch (e2) {
-      console.log("Gemini failed: " + e2.message + " — trying DeepSeek+Tavily");
       if (!DEEPSEEK_API_KEY || !TAVILY_API_KEY) throw new Error("DeepSeek/Tavily keys not set");
       parsed = await pullViaDeepSeekTavily();
       provider = "DeepSeek V4-Flash + Tavily";
+    } catch (e2) {
+      console.log("DeepSeek failed: " + e2.message + " — trying Gemini");
+      parsed = await pullViaGemini();
+      provider = "Gemini (2.5 Flash)";
     }
   }
   const items = parsed.items || [];
