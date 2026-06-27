@@ -16,6 +16,23 @@ const TAVILY_API_KEY     = process.env.TAVILY_API_KEY;
 
 const today = new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Kuching" }); // YYYY-MM-DD
 
+// Tentukan giliran provider: alternate DeepSeek/Gemini ikut hari + pagi/petang
+function getProviderOrder() {
+  const now = new Date();
+  const kuchingHour = parseInt(now.toLocaleString("en-US", { timeZone: "Asia/Kuching", hour: "2-digit", hour12: false }));
+  const dayOfMonth = parseInt(today.split("-")[2]); // 1-31
+  const isMorning = kuchingHour < 12; // sebelum tengah hari = pagi
+  const isEvenDay = dayOfMonth % 2 === 0;
+  // Hari genap pagi → DeepSeek; genap petang → Gemini
+  // Hari ganjil pagi → Gemini; ganjil petang → DeepSeek
+  let useDeepSeekFirst;
+  if (isEvenDay) useDeepSeekFirst = isMorning;
+  else useDeepSeekFirst = !isMorning;
+  const slot = isMorning ? "pagi" : "petang";
+  console.log("Giliran: hari " + dayOfMonth + " (" + (isEvenDay?"genap":"ganjil") + ") " + slot + " → " + (useDeepSeekFirst ? "DeepSeek dahulu" : "Gemini dahulu"));
+  return useDeepSeekFirst;
+}
+
 const PROMPT = `You are an aviation security (AVSEC) intelligence analyst. Search the web for the most significant aviation security developments worldwide from the last 72 hours. Cover a MIX of: security incidents/breaches (hijack, unauthorised access, drone/UAS near airports, smuggling, insider threat, screening failure, cyber attack on aviation systems), and regulatory/policy news (ICAO Annex 17 amendments, CAAM/EASA/TSA/ECAC/IATA circulars, directives or new standards). Cover the whole world.
 
 IMPORTANT: Respond with ONLY raw JSON starting with { and ending with }. No markdown, no explanation, no preamble. Exact structure:
@@ -262,14 +279,16 @@ async function deepseekText(prompt) {
 }
 
 async function aiText(prompt) {
+  // Ikut giliran yang sama macam main pull, Claude kecemasan terakhir
+  const deepSeekFirst = (typeof globalThis.__deepSeekFirst === "boolean") ? globalThis.__deepSeekFirst : true;
+  const tryDS = async () => { if (!DEEPSEEK_API_KEY) throw new Error("no key"); return await deepseekText(prompt); };
+  const tryGM = async () => { if (!GEMINI_API_KEY) throw new Error("no key"); return await geminiText(prompt); };
+  const order = deepSeekFirst ? [tryDS, tryGM] : [tryGM, tryDS];
+  for (const fn of order) {
+    try { return await fn(); } catch(e) { console.log("aiText provider gagal: " + e.message); }
+  }
   if (ANTHROPIC_API_KEY) {
     try { return await claudeText(prompt); } catch(e) { console.log("Claude text: " + e.message); }
-  }
-  if (DEEPSEEK_API_KEY) {
-    try { return await deepseekText(prompt); } catch(e) { console.log("DeepSeek text: " + e.message); }
-  }
-  if (GEMINI_API_KEY) {
-    try { return await geminiText(prompt); } catch(e) { console.log("Gemini text: " + e.message); }
   }
   throw new Error("All translation providers failed");
 }
@@ -441,21 +460,40 @@ async function main() {
   const seen = new Set();
   store.days.forEach((d) => (d.items || []).forEach((it) => seen.add(keyOf(it))));
 
-  // pull — Claude → DeepSeek+Tavily → Gemini
+  // pull — alternate DeepSeek/Gemini ikut giliran, Claude lapisan ketiga (kecemasan)
+  const deepSeekFirst = getProviderOrder();
+  globalThis.__deepSeekFirst = deepSeekFirst;
   let parsed, provider;
-  try {
+
+  // Bina senarai cubaan ikut giliran
+  const tryDeepSeek = async () => {
+    if (!DEEPSEEK_API_KEY || !TAVILY_API_KEY) throw new Error("DeepSeek/Tavily keys not set");
+    parsed = await pullViaDeepSeekTavily();
+    provider = "DeepSeek V4-Flash + Tavily";
+  };
+  const tryGemini = async () => {
+    parsed = await pullViaGemini();
+    provider = "Gemini (2.5 Flash)";
+  };
+  const tryClaude = async () => {
     parsed = await pullViaClaude();
     provider = "Claude (Sonnet 4.6)";
+  };
+
+  const primary = deepSeekFirst ? tryDeepSeek : tryGemini;
+  const secondary = deepSeekFirst ? tryGemini : tryDeepSeek;
+  const primaryName = deepSeekFirst ? "DeepSeek+Tavily" : "Gemini";
+  const secondaryName = deepSeekFirst ? "Gemini" : "DeepSeek+Tavily";
+
+  try {
+    await primary();
   } catch (e1) {
-    console.log("Claude failed: " + e1.message + " — trying DeepSeek+Tavily");
+    console.log(primaryName + " gagal: " + e1.message + " — cuba " + secondaryName);
     try {
-      if (!DEEPSEEK_API_KEY || !TAVILY_API_KEY) throw new Error("DeepSeek/Tavily keys not set");
-      parsed = await pullViaDeepSeekTavily();
-      provider = "DeepSeek V4-Flash + Tavily";
+      await secondary();
     } catch (e2) {
-      console.log("DeepSeek failed: " + e2.message + " — trying Gemini");
-      parsed = await pullViaGemini();
-      provider = "Gemini (2.5 Flash)";
+      console.log(secondaryName + " gagal: " + e2.message + " — cuba Claude (kecemasan)");
+      await tryClaude();
     }
   }
   const items = parsed.items || [];
