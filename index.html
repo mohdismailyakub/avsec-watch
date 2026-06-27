@@ -68,10 +68,11 @@
     border:none;border-top:1px solid var(--border);background:var(--soft);cursor:pointer;
     font-family:var(--mono);font-size:11px;font-weight:600;color:var(--gold);
     letter-spacing:.8px;text-transform:uppercase;transition:background .15s ease}
-  .expand-btn:hover,.close-btn:hover{background:#ede8d8}
-  .close-btn{color:var(--muted)}
-  .card-body{max-height:0;overflow:hidden;transition:max-height .32s ease,padding .32s ease;padding:0 16px}
-  .card-body.open{max-height:600px;padding:12px 16px 14px}
+  .expand-btn:hover{background:#ede8d8}
+  .close-btn{color:var(--muted);border-top:1px solid var(--border);margin-top:10px}
+  .close-btn:hover{background:#ede8d8}
+  .card-body{max-height:0;overflow:hidden;transition:max-height .5s ease,padding .4s ease;padding:0 16px}
+  .card-body.open{max-height:2000px;padding:14px 16px 0}
   .cfoot{display:flex;gap:8px;align-items:center;margin-top:3px}
   .cfoot .date{font-family:var(--mono);font-size:10px;color:var(--faint)}
   .cfoot .src{font-family:var(--mono);font-size:10px;margin-left:auto;font-weight:600}
@@ -234,10 +235,10 @@ function card(it){
     +'</div>'
     +'<button class="expand-btn" onclick="toggleKad(this)">Read More ▼</button>'
     +'<div class="card-body">'
-    +'<div style="color:var(--muted);font-size:13px;line-height:1.65;margin-bottom:10px">'+esc(full)+'</div>'
-    +'<div class="cfoot"><span class="date">'+esc(it.date||"")+'</span>'+src+'</div>'
+    +'<div style="color:var(--muted);font-size:13.5px;line-height:1.75;margin-bottom:14px;white-space:pre-line">'+esc(full)+'</div>'
+    +'<div class="cfoot" style="margin-bottom:10px"><span class="date">'+esc(it.date||"")+'</span>'+src+'</div>'
+    +'<button class="close-btn" onclick="toggleKad(this)">Close ▲</button>'
     +'</div>'
-    +'<button class="close-btn" onclick="toggleKad(this)" style="display:none">Close ▲</button>'
     +'</div>';
 }
 function esc(s){return(s==null?"":(""+s)).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
@@ -343,226 +344,16 @@ function toggleKad(btn){
   const expandBtn=card.querySelector('.expand-btn');
   const closeBtn=card.querySelector('.close-btn');
   const isOpen=body.classList.contains('open');
-  if(isOpen){body.classList.remove('open');expandBtn.style.display='flex';closeBtn.style.display='none';}
-  else{body.classList.add('open');expandBtn.style.display='none';closeBtn.style.display='flex';}
+  if(isOpen){
+    body.classList.remove('open');
+    expandBtn.style.display='flex';
+    if(closeBtn) closeBtn.style.display='none';
+  } else {
+    body.classList.add('open');
+    expandBtn.style.display='none';
+    if(closeBtn) closeBtn.style.display='flex';
+  }
 }
-</script>
-</body>
-</html>
-      <span class="clock"><span class="dot"></span><span id="clock">--:--:--</span></span>
-    </div>
-  </div>
-
-  <div class="brief">
-    <div class="eyebrow">Daily Briefing</div>
-    <div class="briefText" id="brief">Loading…</div>
-    <div class="stamp" id="stamp"></div>
-  </div>
-
-  <div class="filters">
-    <select id="region">
-      <option>Global</option><option>Asia-Pacific</option><option>Europe</option>
-      <option>North America</option><option>Latin America</option><option>Middle East</option><option>Africa</option>
-    </select>
-    <span class="chip active" data-cat="All">All</span>
-    <span class="chip" data-cat="Incident">Incident</span>
-    <span class="chip" data-cat="Regulatory">Regulatory</span>
-    <span class="chip" data-cat="Threat">Threat</span>
-    <span class="chip" data-cat="Technology">Technology</span>
-  </div>
-
-  <div class="feed" id="feed"></div>
-
-  <div class="secLabel" id="trendLabel">Recent Trend</div>
-  <div class="charts">
-    <div class="chart">
-      <div class="clabel">Items per day by category</div>
-      <svg id="chartTrend" height="200"></svg>
-      <div class="legend">
-        <span><i style="background:var(--cIncident)"></i>Incident</span>
-        <span><i style="background:var(--cRegulatory)"></i>Regulatory</span>
-        <span><i style="background:var(--cThreat)"></i>Threat</span>
-        <span><i style="background:var(--cTechnology)"></i>Technology</span>
-      </div>
-    </div>
-    <div class="chart">
-      <div class="clabel">Total by category</div>
-      <svg id="chartCat" height="200"></svg>
-    </div>
-  </div>
-
-  <div class="secLabel" id="yearLabel">Monthly Overview</div>
-  <div class="charts">
-    <div class="chart">
-      <div class="clabel">Category share</div>
-      <svg id="chartPie" height="220"></svg>
-      <div class="legend" id="pieLegend"></div>
-    </div>
-    <div class="chart">
-      <div class="clabel">Items per month — total above each bar, hover for breakdown</div>
-      <svg id="chartMonth" height="220"></svg>
-    </div>
-  </div>
-
-  <div class="foot">Hornbill Skyways Sdn. Bhd. · AVSEC Situational Awareness Board</div>
-</div>
-
-<script>
-const CATS=["Incident","Regulatory","Threat","Technology"];
-const CATCOLOR={Incident:"#e23b3b",Regulatory:"#c9921f",Threat:"#ea7317",Technology:"#2563eb"};
-const SEVCOLOR={High:"#dc2626",Medium:"#d97706",Low:"#059669"};
-const MON=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-const GRID="#eef2f7", INK="#15202e", MUT="#5a6a7e";
-const SHADOW='<defs><filter id="sh" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="1.5" stdDeviation="1.5" flood-color="#16202e" flood-opacity="0.14"/></filter></defs>';
-let DATA={days:[]}, region="Global", cat="All";
-
-const tip=document.getElementById("tip");
-function showTip(html,x,y){tip.innerHTML=html;tip.classList.add("on");
-  let nx=x+14,ny=y+14; if(nx>innerWidth-240)nx=x-tip.offsetWidth-14; if(ny>innerHeight-80)ny=y-tip.offsetHeight-14;
-  tip.style.left=nx+"px";tip.style.top=ny+"px";}
-function hideTip(){tip.classList.remove("on")}
-function wireTip(svg){
-  svg.addEventListener("pointermove",e=>{const t=e.target.getAttribute&&e.target.getAttribute("data-tip");t?showTip(t,e.clientX,e.clientY):hideTip()});
-  svg.addEventListener("pointerdown",e=>{const t=e.target.getAttribute&&e.target.getAttribute("data-tip");if(t)showTip(t,e.clientX,e.clientY)});
-  svg.addEventListener("pointerleave",hideTip);
-}
-document.addEventListener("scroll",hideTip,true);
-setInterval(()=>{document.getElementById("clock").textContent=new Date().toLocaleTimeString("en-GB")},1000);
-
-fetch("data.json",{cache:"no-store"})
-  .then(r=>{if(!r.ok)throw 0;return r.json()})
-  .then(d=>{DATA=d;render()})
-  .catch(()=>{
-    document.getElementById("brief").textContent="data.json belum ada atau tak dapat dibaca. Lepas GitHub Action jalan pull pertama, ruang ini auto-isi.";
-    document.getElementById("feed").innerHTML='<div class="empty">Feed kosong — buka site ini dari Netlify (bukan klik fail terus, sebab browser sekat fetch fail tempatan).</div>';
-  });
-
-function latest(){return DATA.days&&DATA.days.length?DATA.days[DATA.days.length-1]:null}
-function monthLabel(ym){const p=(ym||"").split("-");return p.length<2?ym:MON[(+p[1])-1]+" "+p[0].slice(2)}
-function tdot(c){return '<span class="tdot" style="background:'+c+'"></span>'}
-
-function render(){
-  const day=latest();
-  document.getElementById("brief").textContent=day?day.briefing:"Tiada briefing.";
-  document.getElementById("stamp").textContent=DATA.generatedAt?("Updated "+new Date(DATA.generatedAt).toLocaleString("en-GB")+(DATA.lastProvider?" · "+DATA.lastProvider:"")):"";
-  const items=day?day.items:[];
-  let t={High:0,Medium:0,Low:0}; items.forEach(i=>{if(t[i.severity]!=null)t[i.severity]++});
-  tH.textContent=t.High; tM.textContent=t.Medium; tL.textContent=t.Low;
-  const f=items.filter(i=>(region==="Global"||i.region===region)&&(cat==="All"||i.category===cat));
-  const feed=document.getElementById("feed");
-  feed.innerHTML=f.length?f.map(card).join(""):'<div class="empty">'+(items.length?"Tiada item untuk filter ni.":"Feed kosong.")+'</div>';
-  drawTrend(); drawCat(); drawPie(); drawMonth();
-}
-
-function card(it){
-  const ac=CATCOLOR[it.category]||"#b8901f", sv=SEVCOLOR[it.severity]||"#059669";
-  const src=it.url?('<a class="src" href="'+it.url+'" target="_blank" rel="noreferrer">'+esc(it.source)+' ↗</a>')
-                  :('<span class="src" style="color:#8b99ac">'+esc(it.source)+'</span>');
-  return '<div class="card" style="border-left-color:'+ac+'">'
-    +'<div class="meta"><span class="cat" style="color:'+ac+'">'+esc(it.category)+'</span>'
-    +'<span class="reg">· '+esc(it.region)+'</span>'
-    +'<span class="sev" style="color:'+sv+'"><span class="sevdot" style="background:'+sv+'"></span>'+esc(it.severity)+'</span></div>'
-    +'<div class="ctitle">'+esc(it.title)+'</div>'
-    +'<div class="csum">'+esc(it.summary)+'</div>'
-    +'<div class="cfoot"><span class="date">'+esc(it.date||"")+'</span>'+src+'</div></div>';
-}
-function esc(s){return(s==null?"":(""+s)).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
-
-function trendData(){
-  return (DATA.days||[]).slice(-14).map(d=>{
-    const c={date:(d.date||"").slice(5),Incident:0,Regulatory:0,Threat:0,Technology:0,total:0};
-    (d.items||[]).forEach(i=>{if(c[i.category]!=null){c[i.category]++;c.total++}});
-    return c;
-  });
-}
-function monthAgg(){
-  const m={};
-  (DATA.days||[]).forEach(d=>{const key=(d.date||"").slice(0,7);if(!key)return;
-    if(!m[key])m[key]={month:key,Incident:0,Regulatory:0,Threat:0,Technology:0,total:0};
-    (d.items||[]).forEach(i=>{if(m[key][i.category]!=null){m[key][i.category]++;m[key].total++}});});
-  return Object.values(m).sort((a,b)=>a.month<b.month?-1:1).slice(-18);
-}
-function yearTotals(){
-  const t={Incident:0,Regulatory:0,Threat:0,Technology:0};
-  (DATA.days||[]).forEach(d=>(d.items||[]).forEach(i=>{if(t[i.category]!=null)t[i.category]++}));
-  return t;
-}
-function W(svg){return svg.clientWidth||svg.parentNode.clientWidth-30||300}
-
-function stacked(svgId,data,labelKey,labelFmt){
-  const svg=document.getElementById(svgId),Wd=W(svg),H=+svg.getAttribute("height"),pad=26;
-  const max=Math.max(1,...data.map(d=>d.total));
-  let g="";
-  for(let k=0;k<=2;k++){const y=pad+(H-pad*2)*k/2;g+='<line x1="'+pad+'" y1="'+y.toFixed(1)+'" x2="'+(Wd-pad)+'" y2="'+y.toFixed(1)+'" stroke="'+GRID+'"/>';}
-  const slot=(Wd-pad*2)/Math.max(data.length,1),bw=Math.max(7,Math.min(38,slot-9));
-  data.forEach((d,i)=>{
-    const x=pad+i*slot+(slot-bw)/2; let yb=H-pad; const lbl=labelFmt(d[labelKey]);
-    CATS.forEach(c=>{
-      const h=(H-pad*2)*(d[c]/max);
-      if(h>0){const pct=d.total?Math.round(d[c]/d.total*100):0;
-        const tipv=tdot(CATCOLOR[c])+'<b>'+c+'</b><br>'+d[c]+' item'+(d[c]===1?"":"s")+' · '+pct+'% of '+lbl;
-        g+='<rect data-tip="'+tipv.replace(/"/g,"&quot;")+'" x="'+x.toFixed(1)+'" y="'+(yb-h).toFixed(1)+'" width="'+bw.toFixed(1)+'" height="'+h.toFixed(1)+'" rx="2" fill="'+CATCOLOR[c]+'"/>';
-        yb-=h;}
-    });
-    if(d.total>0)g+='<text x="'+(x+bw/2).toFixed(1)+'" y="'+(yb-6).toFixed(1)+'" fill="'+INK+'" font-size="10.5" font-weight="700" text-anchor="middle" font-family="ui-monospace">'+d.total+'</text>';
-    g+='<text x="'+(x+bw/2).toFixed(1)+'" y="'+(H-8)+'" fill="'+MUT+'" font-size="8.5" text-anchor="middle" font-family="ui-monospace">'+lbl+'</text>';
-  });
-  svg.innerHTML=g; wireTip(svg);
-}
-function drawTrend(){
-  document.getElementById("trendLabel").textContent="Recent Trend · "+(DATA.days?DATA.days.length:0)+" entr"+((DATA.days&&DATA.days.length===1)?"y":"ies");
-  stacked("chartTrend",trendData(),"date",v=>v);
-}
-function drawMonth(){
-  const data=monthAgg();
-  document.getElementById("yearLabel").textContent="Monthly Overview · "+data.length+" month"+(data.length===1?"":"s");
-  stacked("chartMonth",data,"month",monthLabel);
-}
-function drawCat(){
-  const svg=document.getElementById("chartCat"),Wd=W(svg),H=+svg.getAttribute("height"),pad=26;
-  const d=monthAgg(), totals=CATS.map(c=>({name:c,v:d.reduce((s,x)=>s+x[c],0)}));
-  const grand=totals.reduce((s,t)=>s+t.v,0), max=Math.max(1,...totals.map(t=>t.v));
-  let g=SHADOW;
-  for(let k=0;k<=2;k++){const y=pad+(H-pad*2)*k/2;g+='<line x1="'+pad+'" y1="'+y.toFixed(1)+'" x2="'+(Wd-pad)+'" y2="'+y.toFixed(1)+'" stroke="'+GRID+'"/>';}
-  const slot=(Wd-pad*2)/totals.length,bw=Math.min(52,slot-16);
-  totals.forEach((t,i)=>{
-    const x=pad+i*slot+(slot-bw)/2,h=(H-pad*2)*(t.v/max),pct=grand?Math.round(t.v/grand*100):0;
-    const tipv=tdot(CATCOLOR[t.name])+'<b>'+t.name+'</b><br>'+t.v+' items · '+pct+'% of total';
-    g+='<rect filter="url(#sh)" data-tip="'+tipv.replace(/"/g,"&quot;")+'" x="'+x.toFixed(1)+'" y="'+(H-pad-h).toFixed(1)+'" width="'+bw.toFixed(1)+'" height="'+h.toFixed(1)+'" rx="5" fill="'+CATCOLOR[t.name]+'"/>';
-    g+='<text x="'+(x+bw/2).toFixed(1)+'" y="'+(H-pad-h-6).toFixed(1)+'" fill="'+INK+'" font-size="11" font-weight="700" text-anchor="middle" font-family="ui-monospace">'+t.v+'</text>';
-    g+='<text x="'+(x+bw/2).toFixed(1)+'" y="'+(H-8)+'" fill="'+MUT+'" font-size="8.5" text-anchor="middle" font-family="ui-monospace">'+t.name.slice(0,4).toUpperCase()+'</text>';
-  });
-  svg.innerHTML=g; wireTip(svg);
-}
-function drawPie(){
-  const svg=document.getElementById("chartPie"),leg=document.getElementById("pieLegend");
-  const Wd=W(svg),H=+svg.getAttribute("height"),cx=Wd/2,cy=H/2,r=Math.min(Wd/2,cy)-16,ri=r*0.6;
-  const t=yearTotals(),total=CATS.reduce((s,c)=>s+t[c],0);
-  if(total===0){svg.innerHTML='<text x="'+cx+'" y="'+cy+'" fill="'+MUT+'" font-size="11" text-anchor="middle" font-family="ui-monospace">No data yet</text>';leg.innerHTML="";return;}
-  let start=-Math.PI/2,g=SHADOW;
-  CATS.forEach(c=>{
-    const frac=t[c]/total; if(frac<=0)return;
-    const end=start+2*Math.PI*frac,large=(end-start)>Math.PI?1:0,pct=Math.round(frac*100);
-    const x1=cx+r*Math.cos(start),y1=cy+r*Math.sin(start),x2=cx+r*Math.cos(end),y2=cy+r*Math.sin(end);
-    const tipv=tdot(CATCOLOR[c])+'<b>'+c+'</b><br>'+t[c]+' items · '+pct+'%';
-    g+='<path filter="url(#sh)" data-tip="'+tipv.replace(/"/g,"&quot;")+'" d="M '+cx+' '+cy+' L '+x1.toFixed(1)+' '+y1.toFixed(1)+' A '+r+' '+r+' 0 '+large+' 1 '+x2.toFixed(1)+' '+y2.toFixed(1)+' Z" fill="'+CATCOLOR[c]+'" stroke="#ffffff" stroke-width="2.5"/>';
-    start=end;
-  });
-  g+='<circle cx="'+cx+'" cy="'+cy+'" r="'+ri+'" fill="#ffffff"/>';
-  g+='<text x="'+cx+'" y="'+(cy-2)+'" fill="'+INK+'" font-size="23" font-weight="700" text-anchor="middle" font-family="ui-monospace">'+total+'</text>';
-  g+='<text x="'+cx+'" y="'+(cy+16)+'" fill="'+MUT+'" font-size="9" letter-spacing="1.5" text-anchor="middle" font-family="ui-monospace">ITEMS</text>';
-  svg.innerHTML=g; wireTip(svg);
-  leg.innerHTML=CATS.map(c=>'<span><i style="background:'+CATCOLOR[c]+'"></i>'+c+' '+Math.round(t[c]/total*100)+'%</span>').join("");
-}
-
-document.getElementById("region").addEventListener("change",e=>{region=e.target.value;render()});
-document.querySelectorAll(".chip").forEach(ch=>ch.addEventListener("click",()=>{
-  document.querySelectorAll(".chip").forEach(c=>{c.classList.remove("active");c.style.background="";c.style.color="";c.style.borderColor=""});
-  ch.classList.add("active"); cat=ch.dataset.cat;
-  const col=CATCOLOR[cat]||"#d4242a"; ch.style.background=col; ch.style.color="#fff"; ch.style.borderColor=col;
-  render();
-}));
-window.addEventListener("resize",()=>{render()});
 </script>
 </body>
 </html>
