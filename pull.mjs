@@ -246,12 +246,30 @@ async function claudeText(prompt) {
   return (d.content || []).filter(b => b.type === "text").map(b => b.text).join("\n").trim();
 }
 
+async function deepseekText(prompt) {
+  const r = await fetchT("https://api.deepseek.com/v1/chat/completions", {
+    method: "POST",
+    headers: { "content-type": "application/json", "Authorization": "Bearer " + DEEPSEEK_API_KEY },
+    body: JSON.stringify({
+      model: "deepseek-chat",
+      messages: [{ role: "user", content: prompt }],
+      max_tokens: 2000,
+    }),
+  });
+  if (!r.ok) throw new Error("DeepSeek HTTP " + r.status);
+  const d = await r.json();
+  return (d?.choices?.[0]?.message?.content || "").trim();
+}
+
 async function aiText(prompt) {
   if (ANTHROPIC_API_KEY) {
     try { return await claudeText(prompt); } catch(e) { console.log("Claude text: " + e.message); }
   }
   if (GEMINI_API_KEY) {
     try { return await geminiText(prompt); } catch(e) { console.log("Gemini text: " + e.message); }
+  }
+  if (DEEPSEEK_API_KEY) {
+    try { return await deepseekText(prompt); } catch(e) { console.log("DeepSeek text: " + e.message); }
   }
   throw new Error("All translation providers failed");
 }
@@ -277,7 +295,7 @@ Return ONLY valid JSON (no markdown, no preamble) in this exact structure:
 INPUT: ${JSON.stringify(shortPayload)}`;
 
   // Tunggu 20 saat supaya Gemini rate limit reset selepas main pull
-  console.log("Jeda 20s sebelum terjemahan (Gemini rate limit)...");
+  console.log("Mula terjemahan BM...");
   await sleep(5000);
 
   let shortResult = shortPayload;
@@ -452,14 +470,15 @@ async function main() {
   store.days = store.days.slice(-366);
   store.generatedAt = new Date().toISOString();
   store.lastProvider = provider;
-  // Jana fullContent untuk setiap item secara berasingan
+  writeFileSync("data.json", JSON.stringify(store, null, 2));
+  console.log("data.json updated");
+
+  // ---- Jana fullContent untuk setiap item (berita penuh) ----
   console.log("Jana fullContent untuk " + items.length + " item...");
-  await sleep(5000); // jeda sebelum call berasingan
   for (let i = 0; i < items.length; i++) {
-    if (i > 0) await sleep(4000);
-    const fcPrompt = makeFullPrompt(items[i]);
+    if (i > 0) await sleep(3000);
     try {
-      const fc = await aiText(fcPrompt);
+      const fc = await aiText(makeFullPrompt(items[i]));
       items[i].fullContent = fc;
       console.log("fullContent item " + (i+1) + ": OK (" + fc.length + " chars)");
     } catch(e) {
@@ -467,36 +486,42 @@ async function main() {
       console.log("fullContent item " + (i+1) + " gagal — guna summary: " + e.message);
     }
   }
-  parsed.items = items;
-
+  // Tulis semula data.json dengan fullContent
+  store.days = store.days.filter((d) => d.date !== today);
+  store.days.push({ date: today, briefing: parsed.briefing || "", items });
+  store.days = store.days.slice(-366);
+  store.generatedAt = new Date().toISOString();
+  store.lastProvider = provider;
   writeFileSync("data.json", JSON.stringify(store, null, 2));
-  console.log("data.json updated");
+  console.log("data.json updated dengan fullContent");
 
-  // Jana data-ms.json (versi Bahasa Malaysia)
-  let storeMS = { days: [] };
-  if (existsSync("data-ms.json")) {
-    try { storeMS = JSON.parse(readFileSync("data-ms.json", "utf8")); } catch {}
-  }
-  if (!Array.isArray(storeMS.days)) storeMS.days = [];
-
+  // ---- Jana data-ms.json (versi Bahasa Malaysia) ----
   try {
-    const translated = await translateToBM(parsed);
-    const msItems = (parsed.items || []).map((it, i) => ({
+    let storeMS = { days: [] };
+    if (existsSync("data-ms.json")) {
+      try { storeMS = JSON.parse(readFileSync("data-ms.json", "utf8")); } catch {}
+    }
+    if (!Array.isArray(storeMS.days)) storeMS.days = [];
+
+    const translated = await translateToBM({ briefing: parsed.briefing || "", items });
+    const msItems = items.map((it, i) => ({
       ...it,
       title:       translated.items?.[i]?.title       || it.title,
       summary:     translated.items?.[i]?.summary     || it.summary,
       fullContent: translated.items?.[i]?.fullContent || it.fullContent || "",
     }));
-    storeMS.days = storeMS.days.filter(d => d.date !== today);
-    storeMS.days.push({ date: today, briefing: translated.briefing || parsed.briefing, items: msItems });
+    storeMS.days = storeMS.days.filter((d) => d.date !== today);
+    storeMS.days.push({ date: today, briefing: translated.briefing || parsed.briefing || "", items: msItems });
     storeMS.days = storeMS.days.slice(-366);
-    storeMS.generatedAt  = store.generatedAt;
+    storeMS.generatedAt = store.generatedAt;
     storeMS.lastProvider = provider + " (terjemahan)";
     writeFileSync("data-ms.json", JSON.stringify(storeMS, null, 2));
     console.log("data-ms.json updated (BM)");
   } catch (e) {
     console.log("data-ms.json gagal: " + e.message);
   }
+
+
 
   // email ONLY if there is at least one new item (any severity)
   if (newItems.length === 0) {
