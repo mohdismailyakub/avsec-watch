@@ -11,6 +11,8 @@ const GEMINI_API_KEY     = process.env.GEMINI_API_KEY;
 const GMAIL_USER         = process.env.GMAIL_USER;
 const GMAIL_APP_PASSWORD = process.env.GMAIL_APP_PASSWORD;
 const MAIL_TO            = process.env.MAIL_TO;
+const DEEPSEEK_API_KEY   = process.env.DEEPSEEK_API_KEY;
+const TAVILY_API_KEY     = process.env.TAVILY_API_KEY;
 
 const today = new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Kuching" }); // YYYY-MM-DD
 
@@ -92,6 +94,188 @@ async function pullViaGemini() {
   throw new Error("Gemini failed after 3 attempts (503 overload)");
 }
 
+
+
+
+// ---------- DeepSeek V4-Flash + Tavily (free, third fallback) ----------
+async function pullViaDeepSeekTavily() {
+  if (!DEEPSEEK_API_KEY) throw new Error("no DEEPSEEK_API_KEY");
+  if (!TAVILY_API_KEY)   throw new Error("no TAVILY_API_KEY");
+
+  // Step 1: Tavily searches — 3 targeted queries, last 3 days
+  const queries = [
+    "aviation security incident airport breach drone UAS 2026",
+    "airport cyber attack ransomware aviation supply chain 2026",
+    "ICAO EASA TSA CAAM aviation security regulation directive 2026"
+  ];
+  const allResults = [];
+  for (const query of queries) {
+    console.log("Tavily search: " + query.slice(0, 50) + "...");
+    try {
+      const r = await fetch("https://api.tavily.com/search", {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+          "Authorization": "Bearer " + TAVILY_API_KEY
+        },
+        body: JSON.stringify({
+          query,
+          search_depth: "basic",
+          max_results: 5,
+          days: 3
+        })
+      });
+      if (!r.ok) { console.log("Tavily query failed: " + r.status); continue; }
+      const data = await r.json();
+      allResults.push(...(data.results || []));
+    } catch (e) { console.log("Tavily error: " + e.message); }
+  }
+  if (allResults.length === 0) throw new Error("Tavily returned no results");
+  console.log("Tavily: " + allResults.length + " results collected");
+
+  // Step 2: Format search results as context for DeepSeek
+  const context = allResults.slice(0, 12).map((r, i) =>
+    "[" + (i + 1) + "] " + (r.title || "") +
+    "\nSource: " + (r.url || "") +
+    "\nDate: " + (r.published_date || "recent") +
+    "\nContent: " + ((r.content || "").slice(0, 400))
+  ).join("\n\n");
+
+  const deepseekPrompt = `You are an aviation security (AVSEC) intelligence analyst. Based on the following recent web search results from the last 72 hours, identify the most significant aviation security developments worldwide.
+
+SEARCH RESULTS:
+${context}
+
+From these results, extract and format the most significant AVSEC developments. Cover a MIX of: security incidents/breaches (hijack, unauthorised access, drone/UAS near airports, smuggling, insider threat, screening failure, cyber attack on aviation systems), and regulatory/policy news (ICAO Annex 17 amendments, CAAM/EASA/TSA/ECAC/IATA circulars, directives or new standards).
+
+Output ONLY valid JSON, no markdown fences, no preamble, in this exact shape:
+{"briefing":"2 sentence global situation summary","items":[{"title":"short headline","category":"Incident|Regulatory|Threat|Technology","region":"Asia-Pacific|Europe|North America|Latin America|Middle East|Africa","severity":"High|Medium|Low","summary":"max 25 words","source":"publication name","url":"link","date":"YYYY-MM-DD"}]}
+
+Give up to 6 items, most recent and most significant first. Only include items found in the search results provided.`;
+
+  // Step 3: Send to DeepSeek (with retry on 503)
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    console.log("DeepSeek attempt " + attempt + "/3...");
+    const r = await fetch("https://api.deepseek.com/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+        "Authorization": "Bearer " + DEEPSEEK_API_KEY
+      },
+      body: JSON.stringify({
+        model: "deepseek-v4-flash",
+        messages: [{ role: "user", content: deepseekPrompt }],
+        max_tokens: 2000,
+        response_format: { type: "json_object" }
+      })
+    });
+    if (r.status === 503 && attempt < 3) {
+      console.log("DeepSeek 503 — waiting 30s...");
+      await new Promise(res => setTimeout(res, 30000));
+      continue;
+    }
+    if (!r.ok) throw new Error("DeepSeek HTTP " + r.status + " " + (await r.text()).slice(0, 300));
+    const data = await r.json();
+    const text = data?.choices?.[0]?.message?.content || "";
+    return parseJSON(text);
+  }
+  throw new Error("DeepSeek failed after 3 attempts");
+}
+
+// ---------- Terjemah ke Bahasa Malaysia ----------
+async function translateToBM(parsed) {
+  const payload = {
+    briefing: parsed.briefing || "",
+    items: (parsed.items || []).map(it => ({
+      title: it.title || "",
+      summary: it.summary || ""
+    }))
+  };
+
+  const PROMPT_BM = `You are a professional Bahasa Malaysia translator specialising in aviation security intelligence content. Translate the provided JSON fields into formal Bahasa Malaysia — as used in official Malaysian government documents and CAAM/ICAO correspondence — NOT Bahasa Indonesia.
+
+STRICT VOCABULARY RULES — use Malaysian terms only:
+- "lapangan terbang" NOT "bandara"
+- "keselamatan" NOT "keamanan" (for security context)
+- "syarikat" NOT "perusahaan"
+- "nombor" NOT "nomor"
+- "maklumat" NOT "informasi"
+- "perkhidmatan" NOT "layanan"
+- "pihak berkuasa" NOT "pihak berwenang"
+- "wang" NOT "uang"
+- "telefon" NOT "telepon"
+- "pengimbas" NOT "pemindai"
+- "antarabangsa" NOT "internasional"
+
+DO NOT TRANSLATE — keep in English exactly as-is:
+- Organisation names: ICAO, EASA, TSA, CAAM, FAA, FBI, NATO, Europol, Frontex, ASIS, Qantas, WestJet, Collins Aerospace
+- Place names: all airports, cities, countries
+- Technical acronyms: UAS, GPS, GNSS, DDoS, VPN, AI, RF
+- Aviation terms: runway, taxiway, airside, NOTAM, BVLOS, TCAS, ATC
+- Cybersecurity terms: ransomware, malware, phishing, spyware, cyberattack, dark web
+- Regulatory references: Annex 17, Part-IS, NPRM, Section 2209, NCASP, AVSEC
+- Severity/category labels: High, Medium, Low, Incident, Regulatory, Threat, Technology
+
+TRANSLATION RULES:
+1. Translate COMPLETELY — do not omit, shorten, or paraphrase differently from the original
+2. Preserve all numbers, statistics, dates exactly
+3. Maintain formal register — ini laporan risikan rasmi, bukan artikel popular
+4. Never default to Bahasa Indonesia vocabulary under any circumstances
+
+INPUT (JSON):
+${JSON.stringify(payload, null, 2)}
+
+OUTPUT: Return ONLY valid JSON, same structure as input. Translate ONLY these fields: briefing, title, summary. Leave ALL other fields unchanged. No markdown fences, no preamble, no explanation.`;
+
+  // Cuba Claude dulu (tak perlu web search untuk terjemahan)
+  if (ANTHROPIC_API_KEY) {
+    try {
+      const r = await fetch("https://api.anthropic.com/v1/messages", {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+          "x-api-key": ANTHROPIC_API_KEY,
+          "anthropic-version": "2023-06-01",
+        },
+        body: JSON.stringify({
+          model: "claude-sonnet-4-6",
+          max_tokens: 2000,
+          messages: [{ role: "user", content: PROMPT_BM }],
+        }),
+      });
+      if (r.ok) {
+        const data = await r.json();
+        const text = (data.content || []).filter(b => b.type === "text").map(b => b.text).join("\n");
+        const clean = text.replace(/```json|```/g, "").trim();
+        const obj = JSON.parse(clean.slice(clean.indexOf("{"), clean.lastIndexOf("}") + 1));
+        if (obj.briefing && obj.items) { console.log("Terjemahan: Claude"); return obj; }
+      }
+    } catch (e) { console.log("Terjemahan Claude gagal: " + e.message); }
+  }
+
+  // Fallback: Gemini
+  if (GEMINI_API_KEY) {
+    try {
+      const url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=" + GEMINI_API_KEY;
+      const r = await fetch(url, {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ contents: [{ parts: [{ text: PROMPT_BM }] }] }),
+      });
+      if (r.ok) {
+        const data = await r.json();
+        const parts = data?.candidates?.[0]?.content?.parts || [];
+        const text = parts.map(p => p.text || "").join("\n");
+        const clean = text.replace(/```json|```/g, "").trim();
+        const obj = JSON.parse(clean.slice(clean.indexOf("{"), clean.lastIndexOf("}") + 1));
+        if (obj.briefing && obj.items) { console.log("Terjemahan: Gemini"); return obj; }
+      }
+    } catch (e) { console.log("Terjemahan Gemini gagal: " + e.message); }
+  }
+
+  console.log("Terjemahan gagal — guna English sebagai fallback");
+  return payload;
+}
 
 
 // ---------- email (white / gold / Hornbill-red branding) ----------
@@ -193,15 +377,21 @@ async function main() {
   const seen = new Set();
   store.days.forEach((d) => (d.items || []).forEach((it) => seen.add(keyOf(it))));
 
-  // pull — Claude → Gemini (3x retry on 503)
+  // pull — Claude → Gemini (3x retry) → DeepSeek+Tavily (3x retry)
   let parsed, provider;
   try {
     parsed = await pullViaClaude();
     provider = "Claude (Sonnet 4.6)";
   } catch (e1) {
     console.log("Claude failed: " + e1.message + " — trying Gemini");
-    parsed = await pullViaGemini();
-    provider = "Gemini (2.5 Flash)";
+    try {
+      parsed = await pullViaGemini();
+      provider = "Gemini (2.5 Flash)";
+    } catch (e2) {
+      console.log("Gemini failed: " + e2.message + " — trying DeepSeek+Tavily");
+      parsed = await pullViaDeepSeekTavily();
+      provider = "DeepSeek V4-Flash + Tavily";
+    }
   }
   const items = parsed.items || [];
   console.log("Provider: " + provider + " — " + items.length + " items");
@@ -217,6 +407,31 @@ async function main() {
   store.lastProvider = provider;
   writeFileSync("data.json", JSON.stringify(store, null, 2));
   console.log("data.json updated");
+
+  // Jana data-ms.json (versi Bahasa Malaysia)
+  let storeMS = { days: [] };
+  if (existsSync("data-ms.json")) {
+    try { storeMS = JSON.parse(readFileSync("data-ms.json", "utf8")); } catch {}
+  }
+  if (!Array.isArray(storeMS.days)) storeMS.days = [];
+
+  try {
+    const translated = await translateToBM(parsed);
+    const msItems = (parsed.items || []).map((it, i) => ({
+      ...it,
+      title:   translated.items?.[i]?.title   || it.title,
+      summary: translated.items?.[i]?.summary || it.summary,
+    }));
+    storeMS.days = storeMS.days.filter(d => d.date !== today);
+    storeMS.days.push({ date: today, briefing: translated.briefing || parsed.briefing, items: msItems });
+    storeMS.days = storeMS.days.slice(-366);
+    storeMS.generatedAt  = store.generatedAt;
+    storeMS.lastProvider = provider + " (terjemahan)";
+    writeFileSync("data-ms.json", JSON.stringify(storeMS, null, 2));
+    console.log("data-ms.json updated (BM)");
+  } catch (e) {
+    console.log("data-ms.json gagal: " + e.message);
+  }
 
   // email ONLY if there is at least one new item (any severity)
   if (newItems.length === 0) {
