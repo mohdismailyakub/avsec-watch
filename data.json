@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T05:35:38.359Z",
+  "generatedAt": "2026-06-27T05:49:46.897Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -502,67 +502,73 @@
     },
     {
       "date": "2026-06-27",
-      "briefing": "Global aviation security over the past 72 hours has seen a mix of proactive regulatory adjustments, ongoing threat assessments, and isolated incidents. Agencies worldwide are focusing on enhancing cybersecurity, streamlining international standards, and preparing for large-scale event security.",
+      "briefing": "Globally, aviation security in the last 72 hours has been marked by significant incidents including a near-miss drone collision with a commercial airliner in North America and high-value smuggling operations in Asia-Pacific, alongside key regulatory developments from the FAA and EASA. Cyber threats and enhanced screening technologies continue to shape the evolving security landscape.",
       "items": [
         {
-          "title": "Cocaine Seizure at Toronto Pearson Airport",
+          "title": "Drone Nearly Collides with United Airlines Jet at Newark Airport",
           "category": "Incident",
           "region": "North America",
-          "severity": "Medium",
-          "summary": "Border officials seized over 15 kilograms of cocaine from a traveler arriving from St. Vincent and the Grenadines at Toronto Pearson International Airport.",
-          "source": "Canada Border Services Agency (CBSA) via CTVNewsToronto.ca",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSC81_i3ZBnrLupBGYJtVRL6lsOQRj0zoqPtwGsRLBBUhuxsDaqliryh0wROGRzbsE8Zgzr6RyKnUNg0kjG61BrM3YeJSVmyWhUz9MfdJxIgnXL97S-xQ11xQbTRa9cS14NGJ-vGoQuwMyPeknmCuS5f70ACBEIRWxGPCnDfYwYmJuvb6DU7adTxupS3seK81YYGHSva_PMmxC3JlnpV8h4zQaSFTzg1DpZGLWepr-_x-rMC77zi1vMafvjv8o6uEW7w=",
-          "date": "2026-06-24"
+          "severity": "High",
+          "summary": "A United Airlines Boeing 737 narrowly avoided a collision with a drone during landing approach at Newark Liberty International Airport, New Jersey.",
+          "fullContent": "On Friday, June 26, 2026, a United Airlines Boeing 737, carrying 106 passengers and 5 crew members from Key West, Florida, experienced a near-collision with a drone while on final approach to Newark Liberty International Airport (EWR) in New Jersey. The pilot reported the cylindrical drone, approximately three feet wide, passed about 100 feet below the aircraft as it was coming in to land around 5:30 p.m.. Air traffic control (ATC) audio, later verified by CNN, captured the pilot's urgent report stating, \"We almost hit a drone\". Around the same time, another pilot operating a United Express flight for GoJet Airlines into Newark also reported a drone sighting at roughly 2,000 feet. The Federal Aviation Administration (FAA) prohibits drone use in controlled airspaces or near manned aircraft without official permission, noting that approximately 100 drone sightings occur near U.S. airports monthly. Despite the close encounter, the Boeing 737 landed safely, and passengers exited without incident. This event underscores the persistent and growing threat posed by unauthorized drone activity to civil aviation safety, particularly around busy airport environments, and highlights the challenges faced by air traffic control and pilots in mitigating such risks. CNN reportedly reached out to the FAA, GoJet, and Newark Airport for further information regarding the incident.",
+          "source": "KRDO, CNN Newssource",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE2Rw8qS_U4XGnXKJX8Ex0ETES0h1TUpnLp5jzNNL9cMKzc1GCt77WJmQCgj8iUkvmcRyGcemz_DwMc2qDgnuaSvBEi9ZvGIYdsPjLEdlT8d679kIytS5dHWXawEkq4wD0pAMVfBGGwspfuiKB5lO4mP_1Wb4kDISlcYtgkr1xsinRQeZYHRG3iMYM7qSirAwujq7p-pPLRkQ==",
+          "date": "2026-06-26"
         },
         {
-          "title": "AI-Enabled Cyberattack Threat to Aviation Growing",
-          "category": "Threat",
-          "region": "Global",
+          "title": "Malaysian Customs Intercept $13 Million AI Chip Smuggling Attempt at Kuala Lumpur Airport",
+          "category": "Incident",
+          "region": "Asia-Pacific",
           "severity": "High",
-          "summary": "Experts warn of increasing AI-enabled cyberattacks targeting the aviation sector, urging systemic vulnerability reduction and collective intelligence for enhanced defense.",
-          "source": "Breaking Travel News",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFqhAnMOhUCVDEueMqExfIR6UPmeIaPUIj78ULjIsxiOZT0M6qHiP5GWb_MJTFUMKuapds-525uCc5aOUigM-KNBj6JlZWsk_omO-Lqp9SusSNa3p-y-gKjJBPlqv4D1TwGYVGpWWaW7b8v9pqcllMp-tfF5zoVL5TIA9yK6GedqalxTXHHf0AEL3tTKxe29EiHrfs0yqIDyQu1reLGkbeUmC1HhVaz1IIjzQ==",
+          "summary": "Malaysian authorities foiled a $13 million bid to smuggle 72 advanced AI servers through Kuala Lumpur International Airport's free trade zone.",
+          "fullContent": "On Friday, June 26, 2026, Malaysian customs officials announced the successful interception of an attempt to smuggle advanced Artificial Intelligence (AI) chips, valued at nearly $13 million (approximately RM 61.2 million), through the Kuala Lumpur International Airport (KLIA). The operation involved a raid on June 5 within KLIA's free trade zone, where a team seized 72 servers that were reportedly destined for export to another Asian country. According to airport customs director Zulkifli Muhammad, the servers were deliberately declared as \"computer components\" to evade detection by authorities. The syndicate behind the operation allegedly used Malaysia as a transit point to circumvent existing export restrictions. This incident highlights a growing concern following Malaysia's tightening of export and transshipment controls on chips originating from the United States last year. These controls necessitate a strategic trade permit and advance notification if there is suspicion of misuse or diversion. As Malaysia increasingly positions itself as a data-center hub, the nation is actively working to prevent its territory from being exploited as a transit route for restricted chips heading to other destinations, particularly in the context of the U.S. tightening restrictions on advanced semiconductors to curb their diversion to China. Zulkifli Muhammad did not disclose the precise origin of the servers or chips, nor their ultimate destination, stating that investigations are ongoing. A local logistics company involved in the shipment has been asked to assist with the inquiry. Malaysia has been actively probing several such cases, including one where U.S.-made Nvidia chips, originally bound for Singapore, were found in Malaysia.",
+          "source": "The Peninsula Qatar, AFP",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFb_AZnkCezFb9ruefOlQWz2qdgh0eZhx3lT6-Fs7c39EQf3OOV_bAZlWQ05qk49rA3QrZVA-vFyC8vH5V0hNJaV80cihuT194sMFTePqyteB6q9sI4WWIKrL3ZAYlnMF9Idm1o_s7clxW4Hf8s835iHW8H16LtV22FdBJVrVv9yQXW2d3vG5GODdlgrvCM7tnUiUxB51jpiuC8SwugG1PpRLKqYfE=",
+          "date": "2026-06-26"
+        },
+        {
+          "title": "FAA Proposes Sweeping Reforms to Modernize Aircraft Certification, Align with EASA",
+          "category": "Regulatory",
+          "region": "North America",
+          "severity": "Medium",
+          "summary": "The FAA proposed significant rule changes to streamline aircraft certification, aiming to align U.S. standards with European regulations, reducing costs and time.",
+          "fullContent": "On Thursday, June 25, 2026, the U.S. Federal Aviation Administration (FAA) published a Notice of Proposed Rulemaking (NPRM) to amend various airworthiness regulations, aiming to modernize and accelerate the certification process for transport category airplanes and propulsion systems. The proposal, officially docketed as FAA-2026-0430, seeks to reduce the number of exemptions, special conditions, and equivalent level of safety findings currently required, which are often necessary when existing rules do not precisely fit new designs. This initiative is expected to reduce certification costs and time for both industry and the FAA, while maintaining or enhancing safety levels. A key aspect of the proposed changes is to align U.S. regulations more closely with those of the European Union Aviation Safety Agency (EASA). By mirroring certain EASA requirements, manufacturers like Boeing, Airbus, Embraer, and Bombardier would benefit from more consistent international regulations, thereby lowering costs and complexity in the global certification process. The FAA Administrator, Bryan Bedford, has advocated for these reforms, with the agency having several projects underway to streamline the process. The proposed changes also include moving aspects of Special Federal Aviation Regulation (SFAR) No. 109 from Part 25 into new sections, and updating rules for cabin systems, emergency exits, fire protection, and medical stretchers. Public comments on the NPRM are invited until August 25, 2026. This move reinforces the commitment of both the FAA and EASA to closer cooperation on safety and certification, especially as both agencies are progressing towards approving new Boeing 737 MAX variants.",
+          "source": "Federal Register, IndexBox, AVweb, 102.7 WBOW, Air Data News",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGawHG6DlGJPXz9STbDQCrAMr2QfpbFgFEiIn5a-u0w9wuDdIP6tAL_L6NqTxF3T3eIZ87j7st5-LXISA6qw2P47gGZBSthgLpfP38SuNYeGEpQJGTtsBz_GKHYJYsCAFIj5oi34xKkPrrdRNnrBQoeVM0rSrCjzvbPDAp-B1soDwDWD5Ip9ELtz6uCmamuHSKoUvYKwmyq2114A1VFU-_-tXYbjy5ewiZ2wp-DSui8RpmWXkQlS9rf",
           "date": "2026-06-25"
         },
         {
-          "title": "EASA Extends Conflict Zone Warning for Middle East Airspace",
+          "title": "Malaysian Authorities Foil Multiple Drug Smuggling Attempts at Kuala Lumpur International Airport",
+          "category": "Incident",
+          "region": "Asia-Pacific",
+          "severity": "High",
+          "summary": "Malaysian police disrupted three drug smuggling operations at KLIA and surrounding areas, seizing 171.6 kg of marijuana worth RM13.73 million.",
+          "fullContent": "On Thursday, June 25, 2026, Selangor police chief Comm Datuk Shazeli Kahar announced the successful disruption of three separate attempts to smuggle large quantities of drugs out of Malaysia, primarily through the Kuala Lumpur International Airport (KLIA). These operations, conducted between June 17 and June 22, led to the arrest of four suspects, including one local. The first incident occurred on June 17 at KLIA's Terminal One, where luggage scanning flagged suspicious bags, resulting in the arrest of a foreigner in his 30s. Police found 29.6 kg of suspected marijuana buds, estimated to be worth around RM2.37 million (approximately $500,000 USD). A second major bust on June 18 saw Sepang and Nilai police arrest two men outside a hotel in Bandar Baru Enstek, Negri Sembilan, seizing approximately 36 kg of suspected marijuana. Further investigation led to the discovery of an additional 72 kg of marijuana at a house in Banting, bringing the total value from this operation to about RM8.64 million (approximately $1.8 million USD). The third case, on June 22, again at KLIA, involved the detention of a European man after scans revealed suspicious packages in his two pieces of luggage, containing approximately 34 kg of marijuana buds valued at RM2.72 million (approximately $575,000 USD). In total, police confiscated 171.6 kg of suspected marijuana buds with an estimated market value of RM13.73 million (approximately $2.9 million USD). All arrested suspects reportedly had no prior police records. Authorities believe the drugs were sourced from neighboring countries and intended for distribution, particularly to Europe. This year alone, from January to June, 653.6 kg of marijuana buds have been seized from KLIA, with 38 suspects arrested and 28 charged in court, highlighting a persistent challenge in aviation security for the region.",
+          "source": "The Star",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF2rSFgbyM6PGfegn3EhG_R3Tl0--qCYKgGA4j0bgQlhuVp3YB3tQJTRG1WMjzOL0geFb8JiYJVR2RiE5TFRV3osjtdcRfY3r99blpwfqDCNzYSlfnrfjeHdi-Odeh6uDmTzJCxWIWn_LZKVsL_WANWXl3b0YZOLNE47ZcrNeS4p-A9wTOs7cfCEdNvUko8_TY=",
+          "date": "2026-06-25"
+        },
+        {
+          "title": "EASA Extends Middle East Conflict Zone Information Bulletin Amid Ongoing Tensions",
           "category": "Regulatory",
           "region": "Middle East",
-          "severity": "High",
-          "summary": "The European Union Aviation Safety Agency (EASA) extended its Conflict Zone Information Bulletin, advising airlines to avoid airspace over Iran, Iraq, and Lebanon due to security risks.",
-          "source": "WAM (Emirates News Agency)",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUX6zSZakB_UEmzN7FBv_EhS_ThIvvJPCeGGQgy43e-hXv8OMZmSG8wQ2_1ORcuN8deOuTWixclXmut1-6i25DKJ48-PeCcHj_8-RUxbMkXgZKYv2IdypoDKBuqeV2kq2EEzoazY4yGYic_xU07rItI7py66uOSQtyLMORd1LVqID3l-WZ9lptcCmvbC4gNYpukVykMC3mO1ADIRt7IsCQ958_Hz2YmbN3NTouo962f8kcmGYiK0Awm9O9lQ==",
+          "severity": "Medium",
+          "summary": "EASA has extended its Conflict Zone Information Bulletin until July 1, advising airlines to avoid Iranian, Iraqi, and Lebanese airspace.",
+          "fullContent": "On June 24, 2026, the European Union Aviation Safety Agency (EASA) announced the extension of its Conflict Zone Information Bulletin until July 1, 2026. This updated warning continues to advise airlines to avoid the airspace over Iran, Iraq, and Lebanon, and to exercise the highest degree of caution across the broader Middle East region. The decision comes despite a recently established framework understanding between the United States and Iran aimed at de-escalating tensions. EASA's assessment is based on the persistent possibility of short-term violations of any ceasefire agreements, particularly around the Strait of Hormuz and adjacent airspaces, which continue to present operational and security risks to civil aviation traffic. The ongoing geopolitical instability in the region necessitates continued vigilance and proactive measures to ensure the safety of international flights. The bulletin serves as a critical advisory for European and international carriers, guiding their flight path decisions to mitigate potential threats arising from military activities or unforeseen escalations in contested airspaces. Such directives are crucial for maintaining aviation security standards in volatile areas, emphasizing that even with diplomatic efforts, tangible reductions in operational risk for civil aviation must be clearly observed before advisories are relaxed.",
+          "source": "APP.com.pk (via BRUSSELS - The European Union Aviation Safety Agency (EASA))",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG-jY9Xf3llrzheoUsDcZmyvn-2RMVI7F-AqFtT-FryHS_qB0OfreFJPyQKxoGo13P1De50AP0SL0smHOwBN2H0XF8ZlVaNsFN4n44ssUrLhVEoqNrld3Usa1ycqW64Ui3vJ9l0hI6ecC8P2blSdcj0zysjNUCzFyCEroVFDOqaq5t0N9Rru8DzV9doxP-4PwWyD3AgeN8wN0DqQSjb2pdtXWQTStSZlWCt1OLsmLI=",
           "date": "2026-06-24"
         },
         {
-          "title": "FAA Proposes Aligning Aircraft Certification with EASA Standards",
-          "category": "Regulatory",
+          "title": "TSA Launches New PreCheck Touchless ID Option with Google Wallet Integration",
+          "category": "Technology",
           "region": "North America",
-          "severity": "Medium",
-          "summary": "The FAA proposed significant updates to aircraft certification rules to harmonize with European Union Aviation Safety Agency (EASA) standards, aiming to streamline approvals.",
-          "source": "Air Data News",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEW4nphxFVkAriAu1ILwxSZGSWH9ngQkdTYjdI2B5KOAuOEDxf2CREYLeGMvV5OdmhOxkdyEwEVU2oFpyiC6H22ZpTsWjhmvK4t0QsK-2qA8Cd4qARDDsDYFi4nySCYVHX_0X1QSarlVPV_zC_V8UvBGnjEh7xE6XbI0SnCDkpCgBUeuYjGnbvybzkGKZcgZdunGk-X1EmPYplfbWpWUZTkauID1MRXqrzR",
-          "date": "2026-06-27"
-        },
-        {
-          "title": "IATA Addresses Aviation Supply Chain Security and Efficiency",
-          "category": "Regulatory",
-          "region": "Global",
           "severity": "Low",
-          "summary": "IATA outlined four priorities to strengthen the aerospace supply chain, including enhancing visibility, opening the aftermarket, unlocking data/AI, and building human capacity.",
-          "source": "IATA",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQECH_eLUTB5v7jee53XRapa1t5M3X0na4tjqbsHqD_MD7rAiD3el5QvTM3QmRkk_JoZsw6YwapN-EQKBkmGjqQfMB0NSZR8LdfSkwYzdupRvL10M7uRg-llOtz1eLJpy8xY90Q4k1FWib8wDAZ8zITVO8rCXskTgiRbvQ==",
+          "summary": "The TSA, in collaboration with Google Wallet, introduced a new opt-in Touchless ID experience for TSA PreCheck passengers at select U.S. airports.",
+          "fullContent": "On June 24, 2026, the Transportation Security Administration (TSA) announced a new opt-in experience for TSA PreCheck passengers, enabling a Touchless ID system through Google Wallet integration. This initiative aims to streamline the identity verification process at security checkpoints, enhancing efficiency and reducing physical contact. The new system allows eligible travelers to utilize their digital IDs stored in Google Wallet, which is accepted at over 50 U.S. airports. This technological advancement is part of a broader push by the TSA to modernize security screening processes, which also includes the deployment of advanced computed tomography (CT) scanners that create 3D images of bags, potentially allowing passengers to keep liquids and laptops inside their carry-ons at participating airports. While facial recognition technology is also expanding at international arrival facilities, passengers retain the option to opt-out and request a manual ID check, though this may increase processing time. The Touchless ID system, along with other innovations like AutoCAT eGates being tested at airports such as Charlotte Douglas, Los Angeles International, and Ronald Reagan Washington National, represents a significant step towards improving passenger flow and security effectiveness, particularly as the agency prepares for high travel volumes, such as the upcoming Fourth of July holiday weekend where nearly 18.7 million travelers are anticipated. The collaboration with Google Wallet specifically expands the digital ID options available to travelers, offering another convenient method for expedited security screening for those enrolled in trusted traveler programs.",
+          "source": "TSA, CTV News, LegalShield, YouTube",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCsC99H0Nj6NWJGau3jXzZInuzbgC5qpcAo2KpmSXxBhLdMjDjcn_NLWvHo9yK8tI2SJK3scMD9cC_XmmS_uhJOkwamJWth17abBlDR7u5tTQIbQ==",
           "date": "2026-06-24"
-        },
-        {
-          "title": "TSA Boosts Security for FIFA World Cup 2026 and Holiday Travel",
-          "category": "Regulatory",
-          "region": "North America",
-          "severity": "Medium",
-          "summary": "The Transportation Security Administration (TSA) announced enhanced technology and increased staffing to manage security for the FIFA World Cup 2026 and Fourth of July holiday travel.",
-          "source": "Transportation Security Administration (TSA)",
-          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH5JhIl9YQ01FYN7NcueuRy6RhpcmNCy_-XJlsEO8GJ01cRpo0cz0C0gCtIY-oTLeHEabOkMBIJwP1z_BMGjy4W8AylZSM8jWiO0sjw4-UmYrofaw_5MIvqBHl7gbGGPaBlCtZeHC6HlxzK5EHeWKQ_9bSwzz2nNF1GFt4Ssjvc_zEtuqerLwG6tEOhkKzv_vDFny_VroQJC5Iy8Zeyp82ZhSy1XP9ypHvj7dmt9A==",
-          "date": "2026-06-25"
         }
       ]
     }
