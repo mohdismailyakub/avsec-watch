@@ -208,6 +208,12 @@ cyber terms (ransomware malware phishing), refs (Annex 17 Part-IS NCASP AVSEC),
 severity labels (High Medium Low).`;
 
 const sleep = (ms) => new Promise(r => setTimeout(r, ms));
+async function fetchT(url, opts = {}, ms = 25000) {
+  const ctrl = new AbortController();
+  const tid = setTimeout(() => ctrl.abort(), ms);
+  try { return await fetch(url, { ...opts, signal: ctrl.signal }); }
+  finally { clearTimeout(tid); }
+}
 
 async function geminiText(prompt, retries = 3) {
   for (let attempt = 1; attempt <= retries; attempt++) {
@@ -217,7 +223,7 @@ async function geminiText(prompt, retries = 3) {
       body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] }),
     });
     if (r.status === 429) {
-      const wait = attempt * 15000; // 15s, 30s, 45s backoff
+      const wait = attempt * 8000; // 15s, 30s, 45s backoff
       console.log("Gemini 429 — tunggu " + (wait/1000) + "s sebelum retry...");
       await sleep(wait);
       continue;
@@ -272,7 +278,7 @@ INPUT: ${JSON.stringify(shortPayload)}`;
 
   // Tunggu 20 saat supaya Gemini rate limit reset selepas main pull
   console.log("Jeda 20s sebelum terjemahan (Gemini rate limit)...");
-  await sleep(20000);
+  await sleep(5000);
 
   let shortResult = shortPayload;
   try {
@@ -296,7 +302,7 @@ TEXT TO TRANSLATE:
 ${fc}`;
     if (i > 0) {
       console.log("Jeda 8s antara item terjemahan...");
-      await sleep(8000);
+      await sleep(4000);
     }
     try {
       const translated = await aiText(fcPrompt);
@@ -448,9 +454,9 @@ async function main() {
   store.lastProvider = provider;
   // Jana fullContent untuk setiap item secara berasingan
   console.log("Jana fullContent untuk " + items.length + " item...");
-  await sleep(10000); // jeda sebelum call berasingan
+  await sleep(5000); // jeda sebelum call berasingan
   for (let i = 0; i < items.length; i++) {
-    if (i > 0) await sleep(6000);
+    if (i > 0) await sleep(4000);
     const fcPrompt = makeFullPrompt(items[i]);
     try {
       const fc = await aiText(fcPrompt);
