@@ -18,7 +18,7 @@ const today = new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Kuching" 
 
 const PROMPT = `You are an aviation security (AVSEC) intelligence analyst. Search the web for the most significant aviation security developments worldwide from the last 72 hours. Cover a MIX of: security incidents/breaches (hijack, unauthorised access, drone/UAS near airports, smuggling, insider threat, screening failure, cyber attack on aviation systems), and regulatory/policy news (ICAO Annex 17 amendments, CAAM/EASA/TSA/ECAC/IATA circulars, directives or new standards). Cover the whole world.
 
-Output ONLY valid JSON, no markdown fences, no preamble, in this exact shape:
+IMPORTANT: Respond with ONLY raw JSON starting with { and ending with }. No markdown, no explanation, no preamble. Exact structure:
 {"briefing":"2 sentence global situation summary","items":[{"title":"short headline","category":"Incident|Regulatory|Threat|Technology","region":"Asia-Pacific|Europe|North America|Latin America|Middle East|Africa","severity":"High|Medium|Low","summary":"max 25 words","source":"publication name","url":"link","date":"YYYY-MM-DD"}]}
 
 Give exactly 6 items, most recent and most significant first. Only report developments you actually found in search results.`;
@@ -164,10 +164,10 @@ ${context}
 
 From these results, extract and format the most significant AVSEC developments. Cover a MIX of: security incidents/breaches (hijack, unauthorised access, drone/UAS near airports, smuggling, insider threat, screening failure, cyber attack on aviation systems), and regulatory/policy news (ICAO Annex 17 amendments, CAAM/EASA/TSA/ECAC/IATA circulars, directives or new standards).
 
-Output ONLY valid JSON, no markdown fences, no preamble, in this exact shape:
+IMPORTANT: Respond with ONLY raw JSON starting with { and ending with }. No markdown, no explanation, no preamble. Exact structure:
 {"briefing":"2 sentence global situation summary","items":[{"title":"short headline","category":"Incident|Regulatory|Threat|Technology","region":"Asia-Pacific|Europe|North America|Latin America|Middle East|Africa","severity":"High|Medium|Low","summary":"max 25 words","source":"publication name","url":"link","date":"YYYY-MM-DD"}]}
 
-Give up to 6 items, most recent and most significant first. Only include items found in the search results provided.`;
+Give up to 6 items, most recent and most significant first. Only include items found in the search results provided. Your entire response must be valid JSON starting with { character.`;
 
   // Step 3: Send to DeepSeek (with retry on 503)
   for (let attempt = 1; attempt <= 3; attempt++) {
@@ -179,10 +179,9 @@ Give up to 6 items, most recent and most significant first. Only include items f
         "Authorization": "Bearer " + DEEPSEEK_API_KEY
       },
       body: JSON.stringify({
-        model: "deepseek-v4-flash",
+        model: "deepseek-chat",
         messages: [{ role: "user", content: deepseekPrompt }],
         max_tokens: 2000,
-        response_format: { type: "json_object" }
       })
     });
     if (r.status === 503 && attempt < 3) {
