@@ -36,6 +36,11 @@
   @media (prefers-reduced-motion:no-preference){.dot{animation:pulse 2.4s ease-out infinite}}
   @keyframes pulse{0%{box-shadow:0 0 0 0 #05966966}70%{box-shadow:0 0 0 6px #05966900}100%{box-shadow:0 0 0 0 #05966900}}
   .clock{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:1px;display:flex;align-items:center;gap:6px}
+  .lang-toggle{display:inline-flex;border:1.5px solid var(--border2);border-radius:99px;overflow:hidden;font-family:var(--mono);font-size:13px;font-weight:700;box-shadow:0 2px 8px -4px #16202e40}
+  .lang-toggle a{padding:9px 20px;color:var(--muted);text-decoration:none;letter-spacing:.5px;transition:all .15s ease;background:var(--soft)}
+  .lang-toggle a.active{background:var(--red);color:#fff}
+  .lang-toggle a:not(.active):hover{background:#ede8d8;color:var(--ink)}
+
 
   /* briefing */
   .brief{margin-top:14px;background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:18px 20px;position:relative;overflow:hidden;box-shadow:0 6px 22px -18px #16202e40}
@@ -116,6 +121,7 @@
       <span class="pill" style="color:var(--med)">M <b id="tM">0</b></span>
       <span class="pill" style="color:var(--low)">L <b id="tL">0</b></span>
       <span class="clock"><span class="dot"></span><span id="clock">--:--:--</span></span>
+      <span class="lang-toggle"><a href="index.html" class="active">English</a><a href="index-ms.html">Melayu</a></span>
     </div>
   </div>
 
