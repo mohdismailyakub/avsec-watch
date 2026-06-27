@@ -11,6 +11,7 @@ const GEMINI_API_KEY     = process.env.GEMINI_API_KEY;
 const GMAIL_USER         = process.env.GMAIL_USER;
 const GMAIL_APP_PASSWORD = process.env.GMAIL_APP_PASSWORD;
 const MAIL_TO            = process.env.MAIL_TO;
+const GLM_API_KEY        = process.env.GLM_API_KEY;
 
 const today = new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Kuching" }); // YYYY-MM-DD
 
@@ -67,19 +68,63 @@ async function pullViaGemini() {
   const url =
     "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=" +
     GEMINI_API_KEY;
-  const r = await fetch(url, {
-    method: "POST",
-    headers: { "content-type": "application/json" },
-    body: JSON.stringify({
-      contents: [{ parts: [{ text: PROMPT }] }],
-      tools: [{ google_search: {} }],
-    }),
-  });
-  if (!r.ok) throw new Error("Gemini HTTP " + r.status + " " + (await r.text()).slice(0, 300));
-  const data = await r.json();
-  const parts = data?.candidates?.[0]?.content?.parts || [];
-  const text = parts.map((p) => p.text || "").join("\n");
-  return parseJSON(text);
+  // retry up to 3 times on 503 (server overload — temporary)
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    console.log("Gemini attempt " + attempt + "/3...");
+    const r = await fetch(url, {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({
+        contents: [{ parts: [{ text: PROMPT }] }],
+        tools: [{ google_search: {} }],
+      }),
+    });
+    if (r.status === 503 && attempt < 3) {
+      console.log("Gemini 503 (overloaded) — waiting 30s before retry...");
+      await new Promise(res => setTimeout(res, 30000));
+      continue;
+    }
+    if (!r.ok) throw new Error("Gemini HTTP " + r.status + " " + (await r.text()).slice(0, 300));
+    const data = await r.json();
+    const parts = data?.candidates?.[0]?.content?.parts || [];
+    const text = parts.map((p) => p.text || "").join("\n");
+    return parseJSON(text);
+  }
+  throw new Error("Gemini failed after 3 attempts (503 overload)");
+}
+
+
+// ---------- GLM-4-Flash (Zhipu AI — free, third fallback) ----------
+async function pullViaGLM() {
+  if (!GLM_API_KEY) throw new Error("no GLM_API_KEY");
+  const url = "https://open.bigmodel.cn/api/paas/v4/chat/completions";
+  // retry up to 3 times on 503
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    console.log("GLM attempt " + attempt + "/3...");
+    const r = await fetch(url, {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+        "Authorization": "Bearer " + GLM_API_KEY,
+      },
+      body: JSON.stringify({
+        model: "glm-4-flash",
+        messages: [{ role: "user", content: PROMPT }],
+        tools: [{ type: "web_search", web_search: { enable: true, search_result: true } }],
+        max_tokens: 2000,
+      }),
+    });
+    if (r.status === 503 && attempt < 3) {
+      console.log("GLM 503 — waiting 30s before retry...");
+      await new Promise(res => setTimeout(res, 30000));
+      continue;
+    }
+    if (!r.ok) throw new Error("GLM HTTP " + r.status + " " + (await r.text()).slice(0, 300));
+    const data = await r.json();
+    const text = data?.choices?.[0]?.message?.content || "";
+    return parseJSON(text);
+  }
+  throw new Error("GLM failed after 3 attempts");
 }
 
 // ---------- email (white / gold / Hornbill-red branding) ----------
@@ -181,15 +226,21 @@ async function main() {
   const seen = new Set();
   store.days.forEach((d) => (d.items || []).forEach((it) => seen.add(keyOf(it))));
 
-  // pull (Claude first, Gemini fallback)
+  // pull — Claude → Gemini (3x retry) → GLM (3x retry)
   let parsed, provider;
   try {
     parsed = await pullViaClaude();
     provider = "Claude (Sonnet 4.6)";
   } catch (e1) {
     console.log("Claude failed: " + e1.message + " — trying Gemini");
-    parsed = await pullViaGemini();
-    provider = "Gemini (2.5 Flash)";
+    try {
+      parsed = await pullViaGemini();
+      provider = "Gemini (2.5 Flash)";
+    } catch (e2) {
+      console.log("Gemini failed: " + e2.message + " — trying GLM");
+      parsed = await pullViaGLM();
+      provider = "GLM-4-Flash (Zhipu AI)";
+    }
   }
   const items = parsed.items || [];
   console.log("Provider: " + provider + " — " + items.length + " items");
