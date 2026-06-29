@@ -33,12 +33,19 @@ function getProviderOrder() {
   return useDeepSeekFirst;
 }
 
-const PROMPT = `You are an aviation security (AVSEC) intelligence analyst. Search the web for the most significant aviation security developments worldwide from the last 72 hours. Cover a MIX of: security incidents/breaches (hijack, unauthorised access, drone/UAS near airports, smuggling, insider threat, screening failure, cyber attack on aviation systems), and regulatory/policy news (ICAO Annex 17 amendments, CAAM/EASA/TSA/ECAC/IATA circulars, directives or new standards). Cover the whole world.
+function buildPrompt(existingTitles) {
+  const excludeBlock = existingTitles && existingTitles.length
+    ? `\n\nIMPORTANT — these stories are ALREADY in our archive. Do NOT repeat them or report the same development again. Find DIFFERENT, newer stories:\n` + existingTitles.slice(0, 40).map(t => "- " + t).join("\n")
+    : "";
+  return `You are an aviation security (AVSEC) intelligence analyst. Search the web for the most significant aviation security developments worldwide from the LAST 24 HOURS ONLY. Cover a MIX of: security incidents/breaches (hijack, unauthorised access, drone/UAS near airports, smuggling, insider threat, screening failure, cyber attack on aviation systems), and regulatory/policy news (ICAO Annex 17 amendments, CAAM/EASA/TSA/ECAC/IATA circulars, directives or new standards). Cover the whole world.${excludeBlock}
 
 IMPORTANT: Respond with ONLY raw JSON starting with { and ending with }. No markdown, no explanation, no preamble. Exact structure:
 {"briefing":"2 sentence global situation summary","items":[{"title":"short headline","category":"Incident|Regulatory|Threat|Technology","region":"Asia-Pacific|Europe|North America|Latin America|Middle East|Africa","severity":"High|Medium|Low","summary":"max 25 words","source":"publication name","url":"link","date":"YYYY-MM-DD"}]}
 
-Give exactly 6 items, most recent and most significant first. Only report developments you actually found in search results.`;
+Give up to 6 items, most recent and most significant first. Only report genuinely NEW developments from the last 24 hours. If fewer than 6 genuinely new stories exist, return fewer — do NOT pad with old news.`;
+}
+
+let PROMPT = buildPrompt([]);
 
 // Prompt berasingan untuk jana fullContent setiap item
 function makeFullPrompt(item) {
@@ -458,7 +465,13 @@ async function main() {
   }
   if (!Array.isArray(store.days)) store.days = [];
   const seen = new Set();
-  store.days.forEach((d) => (d.items || []).forEach((it) => seen.add(keyOf(it))));
+  const existingTitles = [];
+  store.days.forEach((d) => (d.items || []).forEach((it) => {
+    seen.add(keyOf(it));
+    if (it.title) existingTitles.push(it.title);
+  }));
+  // Kemaskini PROMPT untuk elak ulang berita lama (tetingkap 24 jam)
+  PROMPT = buildPrompt(existingTitles);
 
   // pull — alternate DeepSeek/Gemini ikut giliran, Claude lapisan ketiga (kecemasan)
   const deepSeekFirst = getProviderOrder();
@@ -555,11 +568,76 @@ async function main() {
     storeMS.lastProvider = provider + " (terjemahan)";
     writeFileSync("data-ms.json", JSON.stringify(storeMS, null, 2));
     console.log("data-ms.json updated (BM)");
+
+    // board-ms.json: sticky per kategori (versi BM)
+    const newMsItems = msItems.filter((it) => !seen.has(keyOf(it)));
+    if (newMsItems.length > 0) {
+      const CATS_B = ["Incident", "Regulatory", "Threat", "Technology"];
+      let boardMS = { categories: {} };
+      if (existsSync("board-ms.json")) {
+        try { boardMS = JSON.parse(readFileSync("board-ms.json", "utf8")); } catch {}
+      }
+      if (!boardMS.categories) boardMS.categories = {};
+      const newByCatMS = {};
+      CATS_B.forEach((c) => { newByCatMS[c] = []; });
+      newMsItems.forEach((it) => { if (newByCatMS[it.category]) newByCatMS[it.category].push(it); });
+      CATS_B.forEach((c) => { if (newByCatMS[c].length > 0) boardMS.categories[c] = newByCatMS[c]; });
+      boardMS.briefing = translated.briefing || parsed.briefing || "";
+      boardMS.generatedAt = storeMS.generatedAt;
+      boardMS.lastProvider = provider + " (terjemahan)";
+      writeFileSync("board-ms.json", JSON.stringify(boardMS, null, 2));
+      console.log("board-ms.json updated (BM)");
+    }
   } catch (e) {
     console.log("data-ms.json gagal: " + e.message);
   }
 
 
+
+  // ========== BOARD: berita terkini setiap kategori (sticky per kategori) ==========
+  // board.json simpan SATU seksyen setiap kategori. Bila ada berita baru utk kategori X,
+  // ganti penuh slot X dengan berita baru. Kategori tanpa berita baru kekal.
+  const CATS_BOARD = ["Incident", "Regulatory", "Threat", "Technology"];
+
+  function updateBoard(boardFile, allItems, briefingText) {
+    let board = { categories: {} };
+    if (existsSync(boardFile)) {
+      try { board = JSON.parse(readFileSync(boardFile, "utf8")); } catch {}
+    }
+    if (!board.categories) board.categories = {};
+
+    // Kumpul berita BARU ikut kategori
+    const newByCat = {};
+    CATS_BOARD.forEach((c) => { newByCat[c] = []; });
+    allItems.forEach((it) => {
+      if (newByCat[it.category]) newByCat[it.category].push(it);
+    });
+
+    // Untuk setiap kategori yang ada berita baru → ganti penuh slot
+    CATS_BOARD.forEach((c) => {
+      if (newByCat[c].length > 0) {
+        board.categories[c] = newByCat[c];
+      }
+      // kalau takda berita baru kategori c → kekal yang sedia ada (tak sentuh)
+    });
+
+    board.briefing = briefingText;
+    board.generatedAt = new Date().toISOString();
+    board.lastProvider = provider;
+    writeFileSync(boardFile, JSON.stringify(board, null, 2));
+    return board;
+  }
+
+  // Hanya kemaskini board untuk kategori yang ada NEW items
+  // (newItems = yang belum pernah nampak; ikut konsep ganti penuh per kategori)
+  const newItemsForBoard = items.filter((it) => !seen.has(keyOf(it)));
+
+  if (newItemsForBoard.length > 0) {
+    updateBoard("board.json", newItemsForBoard, parsed.briefing || "");
+    console.log("board.json updated — kategori dengan berita baru diganti");
+  } else {
+    console.log("Tiada berita baru — board.json kekal");
+  }
 
   // email ONLY if there is at least one new item (any severity)
   if (newItems.length === 0) {
