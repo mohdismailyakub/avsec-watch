@@ -56,6 +56,10 @@
 
   /* feed */
   .feed{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:12px;margin-top:14px}
+  .cat-section{margin-bottom:22px}
+  .cat-section-label{font-family:var(--mono);font-size:14px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin:0 0 12px;display:flex;align-items:center;gap:9px}
+  .cat-section-label span{width:18px;height:3px;display:inline-block;border-radius:2px}
+  .cat-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:12px}
 
   /* kad accordion */
   .card{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:0;
@@ -291,13 +295,16 @@ document.addEventListener("scroll",hideTip,true);
 setInterval(()=>{document.getElementById("clock").textContent=new Date().toLocaleTimeString("ms-MY")},1000);
 
 // muat data
-fetch("data-ms.json",{cache:"no-store"})
-  .then(r=>{if(!r.ok)throw 0;return r.json()})
-  .then(d=>{DATA=d;render()})
-  .catch(()=>{
-    document.getElementById("brief").textContent="data.json belum tersedia. Sistem akan mengemas kini secara automatik selepas GitHub Action berjalan.";
-    document.getElementById("feed").innerHTML='<div class="empty">Feed kosong — sila akses melalui pautan Netlify.</div>';
-  });
+let BOARD={categories:{}};
+Promise.all([
+  fetch("data-ms.json",{cache:"no-store"}).then(r=>r.ok?r.json():{days:[]}).catch(()=>({days:[]})),
+  fetch("board-ms.json",{cache:"no-store"}).then(r=>r.ok?r.json():{categories:{}}).catch(()=>({categories:{}}))
+]).then(([d,b])=>{
+  DATA=d; BOARD=b; render();
+}).catch(()=>{
+  document.getElementById("brief").textContent="data-ms.json belum tersedia. Sistem akan mengemas kini secara automatik selepas GitHub Action berjalan.";
+  document.getElementById("feed").innerHTML='<div class="empty">Feed kosong — sila akses melalui pautan Netlify.</div>';
+});
 
 function latest(){return DATA.days&&DATA.days.length?DATA.days[DATA.days.length-1]:null}
 function monthLabel(ym){const p=(ym||"").split("-");return p.length<2?ym:MON[(+p[1])-1]+" '"+p[0].slice(2)}
@@ -305,19 +312,35 @@ function tdot(c){return '<span class="tdot" style="background:'+c+'"></span>'}
 function esc(s){return(s==null?"":(""+s)).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':'&quot;'}[c]))}
 
 function render(){
-  const day=latest();
-  document.getElementById("brief").textContent=day?day.briefing:"Tiada taklimat.";
-  const upd=DATA.generatedAt?("Dikemaskini "+new Date(DATA.generatedAt).toLocaleString("ms-MY")+(DATA.lastProvider?" · "+DATA.lastProvider:"")):"";
+  document.getElementById("brief").textContent=BOARD.briefing||"Tiada taklimat.";
+  const upd=BOARD.generatedAt?("Dikemaskini "+new Date(BOARD.generatedAt).toLocaleString("ms-MY")+(BOARD.lastProvider?" · "+BOARD.lastProvider:"")):"";
   document.getElementById("stamp").textContent=upd;
-  const items=day?day.items:[];
+  let allBoardItems=[];
+  CATS_EN.forEach(c=>{ (BOARD.categories?.[c]||[]).forEach(it=>allBoardItems.push(it)); });
   let t={High:0,Medium:0,Low:0};
-  items.forEach(i=>{if(t[i.severity]!=null)t[i.severity]++});
+  allBoardItems.forEach(i=>{if(t[i.severity]!=null)t[i.severity]++});
   tH.textContent=t.High;tM.textContent=t.Medium;tL.textContent=t.Low;
-  const catEN=CAT_EN[catFilter]||null;
-  const f=items.filter(i=>(region==="Global"||i.region===region)&&(!catEN||i.category===catEN));
-  const feed=document.getElementById("feed");
-  feed.innerHTML=f.length?f.map(card).join(""):'<div class="empty">'+( items.length?"Tiada item untuk tapis ini.":"Feed kosong.")+'</div>';
+  renderSections();
   drawTrend();drawCat();drawPie();drawMonth();
+}
+
+function renderSections(){
+  const feed=document.getElementById("feed");
+  const catEN=CAT_EN[catFilter]||null;
+  let html="";
+  CATS_EN.forEach(c=>{
+    let items=BOARD.categories?.[c]||[];
+    if(region!=="Global") items=items.filter(i=>i.region===region);
+    if(catEN && catEN!==c) return;
+    if(items.length===0) return;
+    const ac=CATCOLOR[c]||"#b8901f";
+    const catMs=CAT_MS[c]||c;
+    html+='<div class="cat-section">'
+      +'<div class="cat-section-label" style="color:'+ac+'"><span style="background:'+ac+'"></span>'+esc(catMs)+'</div>'
+      +'<div class="cat-cards">'+items.map(card).join("")+'</div>'
+      +'</div>';
+  });
+  feed.innerHTML=html||'<div class="empty">Feed kosong. Selepas pull pertama, berita akan dipaparkan ikut kategori.</div>';
 }
 
 // --- KAD ACCORDION ---
