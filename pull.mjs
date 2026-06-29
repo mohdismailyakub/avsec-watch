@@ -74,8 +74,14 @@ function parseJSON(text) {
   return obj;
 }
 
-const keyOf = (it) =>
-  ((it.title || "").trim().toLowerCase() + "||" + (it.url || "").trim().toLowerCase());
+// Dedup guna tajuk (dinormalkan) sahaja — URL tak stabil antara provider/run
+// (Gemini & Tavily bagi URL redirect unik setiap kali, jadi URL tak boleh dipakai)
+const normTitle = (t) => (t || "")
+  .toLowerCase()
+  .replace(/[^a-z0-9 ]/g, "")   // buang tanda baca
+  .replace(/\s+/g, " ")          // ringkaskan ruang
+  .trim();
+const keyOf = (it) => normTitle(it.title);
 
 // ---------- providers ----------
 async function pullViaClaude() {
