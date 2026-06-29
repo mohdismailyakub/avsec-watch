@@ -424,7 +424,7 @@ function emailHtml(briefing, items, dateStr) {
           <table width="100%" cellpadding="0" cellspacing="0">${cards}</table>
           <div style="font:10px Arial;color:#94a3b8;text-align:center;margin-top:8px;border-top:1px solid #e4e9f0;padding-top:12px;">
             Hornbill Skyways Sdn. Bhd. &middot; AVSEC Situational Awareness Board<br>
-            Full board: <a href="https://avsec-watch.netlify.app" style="color:${GOLD};text-decoration:none;">avsec-watch.netlify.app</a>
+            Full board: <a href="https://sites.google.com/view/department-avsec/news-avsec" style="color:${GOLD};text-decoration:none;">AVSEC News Portal &#8599;</a>
           </div>
         </td></tr>
       </table>
