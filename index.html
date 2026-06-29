@@ -41,6 +41,36 @@
   .lang-toggle a.active{background:var(--red);color:#fff}
   .lang-toggle a:not(.active):hover{background:#ede8d8;color:var(--ink)}
 
+  .archive-btn{font-family:var(--mono);font-size:12px;font-weight:700;padding:8px 16px;border-radius:99px;border:1.5px solid var(--gold);background:var(--gold);color:#fff;cursor:pointer;letter-spacing:.5px;transition:all .15s ease;box-shadow:0 2px 8px -4px #16202e40}
+  .archive-btn:hover{background:#a37d18;border-color:#a37d18}
+  .archive-overlay{position:fixed;inset:0;background:rgba(21,32,46,.55);backdrop-filter:blur(3px);z-index:100;display:none;padding:20px;overflow-y:auto}
+  .archive-overlay.open{display:block}
+  .archive-panel{max-width:900px;margin:0 auto;background:var(--panel);border-radius:16px;box-shadow:0 30px 80px -20px #16202e88;overflow:hidden}
+  .archive-head{background:linear-gradient(135deg,#fff,#fbf4dd);padding:18px 22px;border-bottom:2px solid var(--gold);display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+  .archive-head h2{margin:0;font-family:var(--cond);font-size:22px;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink)}
+  .archive-head h2 b{color:var(--red)}
+  .archive-close{margin-left:auto;font-family:var(--mono);font-size:13px;font-weight:700;padding:8px 16px;border-radius:99px;border:1.5px solid var(--border2);background:var(--soft);color:var(--muted);cursor:pointer}
+  .archive-close:hover{border-color:var(--red);color:var(--red)}
+  .archive-filters{padding:16px 22px;border-bottom:1px solid var(--border);display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  .archive-filters select{font-family:var(--mono);font-size:12px;border-radius:9px;padding:8px 13px;border:1px solid var(--border2);background:var(--soft);color:var(--ink);cursor:pointer}
+  .archive-count{font-family:var(--mono);font-size:11px;color:var(--muted);margin-left:auto}
+  .archive-list{max-height:60vh;overflow-y:auto;padding:8px 0}
+  .archive-list::-webkit-scrollbar{width:6px}
+  .archive-list::-webkit-scrollbar-thumb{background:var(--gold);border-radius:6px}
+  .arch-item{border-bottom:1px solid var(--border)}
+  .arch-row{display:flex;align-items:center;gap:10px;padding:13px 22px;cursor:pointer;transition:background .12s ease}
+  .arch-row:hover{background:var(--soft)}
+  .arch-sevdot{width:8px;height:8px;border-radius:99px;flex-shrink:0}
+  .arch-cat{font-family:var(--mono);font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:2px 7px;border-radius:99px;flex-shrink:0}
+  .arch-title{font-size:13.5px;font-weight:600;color:var(--ink);flex:1;line-height:1.4}
+  .arch-meta{font-family:var(--mono);font-size:10px;color:var(--faint);white-space:nowrap;display:flex;flex-direction:column;align-items:flex-end;gap:2px}
+  .arch-body{max-height:0;overflow:hidden;transition:max-height .3s ease;background:var(--soft)}
+  .arch-body.open{max-height:700px}
+  .arch-body-inner{padding:14px 22px}
+  .arch-full{font-size:13px;line-height:1.7;color:var(--muted);margin-bottom:10px;white-space:pre-line}
+  .arch-src{font-family:var(--mono);font-size:11px;font-weight:700;color:var(--gold);text-decoration:none}
+  .arch-empty{padding:40px 22px;text-align:center;color:var(--muted);font-family:var(--mono);font-size:13px}
+
 
   /* briefing */
   .brief{margin-top:14px;background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:18px 20px;position:relative;overflow:hidden;box-shadow:0 6px 22px -18px #16202e40}
@@ -121,6 +151,7 @@
       <span class="pill" style="color:var(--med)">M <b id="tM">0</b></span>
       <span class="pill" style="color:var(--low)">L <b id="tL">0</b></span>
       <span class="clock"><span class="dot"></span><span id="clock">--:--:--</span></span>
+      <button class="archive-btn" onclick="openArchive()">&#128230; Archive</button>
       <span class="lang-toggle"><a href="index.html" class="active">English</a><a href="index-ms.html">Melayu</a></span>
     </div>
   </div>
@@ -177,6 +208,41 @@
   </div>
 
   <div class="foot">Hornbill Skyways Sdn. Bhd. · AVSEC Situational Awareness Board</div>
+</div>
+
+<div class="archive-overlay" id="archiveOverlay">
+  <div class="archive-panel">
+    <div class="archive-head">
+      <h2>AVSEC <b>Archive</b></h2>
+      <button class="archive-close" onclick="closeArchive()">&#10005; Close</button>
+    </div>
+    <div class="archive-filters">
+      <select id="archCat" onchange="renderArchive()">
+        <option value="All">All Categories</option>
+        <option value="Incident">Incident</option>
+        <option value="Regulatory">Regulatory</option>
+        <option value="Threat">Threat</option>
+        <option value="Technology">Technology</option>
+      </select>
+      <select id="archRegion" onchange="renderArchive()">
+        <option value="All">All Regions</option>
+        <option value="Asia-Pacific">Asia-Pacific</option>
+        <option value="Europe">Europe</option>
+        <option value="North America">North America</option>
+        <option value="Latin America">Latin America</option>
+        <option value="Middle East">Middle East</option>
+        <option value="Africa">Africa</option>
+      </select>
+      <select id="archSev" onchange="renderArchive()">
+        <option value="All">All Severity</option>
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+      </select>
+      <span class="archive-count" id="archCount"></span>
+    </div>
+    <div class="archive-list" id="archiveList"></div>
+  </div>
 </div>
 
 <script>
@@ -362,6 +428,65 @@ function toggleKad(btn){
     closeBtn.style.display='';
   }
 }
+
+// ===== ARCHIVE =====
+function allArchiveItems(){
+  const out=[];
+  (DATA.days||[]).forEach(d=>{
+    (d.items||[]).forEach(it=>out.push({...it, _date: it.date||d.date||""}));
+  });
+  // terbaru dulu
+  out.sort((a,b)=>(a._date<b._date?1:a._date>b._date?-1:0));
+  return out;
+}
+function openArchive(){
+  document.getElementById("archiveOverlay").classList.add("open");
+  document.body.style.overflow="hidden";
+  renderArchive();
+}
+function closeArchive(){
+  document.getElementById("archiveOverlay").classList.remove("open");
+  document.body.style.overflow="";
+}
+function renderArchive(){
+  const cat=document.getElementById("archCat").value;
+  const region=document.getElementById("archRegion").value;
+  const sev=document.getElementById("archSev").value;
+  let items=allArchiveItems();
+  if(cat!=="All") items=items.filter(i=>i.category===cat);
+  if(region!=="All") items=items.filter(i=>i.region===region);
+  if(sev!=="All") items=items.filter(i=>i.severity===sev);
+  document.getElementById("archCount").textContent=items.length+" result"+(items.length===1?"":"s");
+  const list=document.getElementById("archiveList");
+  if(!items.length){list.innerHTML='<div class="arch-empty">No news matches these filters.</div>';return;}
+  list.innerHTML=items.map((it,idx)=>{
+    const ac=CATCOLOR[it.category]||"#b8901f", sv=SEVCOLOR[it.severity]||"#059669";
+    const full=it.fullContent||it.summary||"";
+    const src=it.url?('<a class="arch-src" href="'+esc(it.url)+'" target="_blank" rel="noreferrer">'+esc(it.source)+' \u2197</a>'):('<span class="arch-src" style="color:#8b99ac">'+esc(it.source)+'</span>');
+    return '<div class="arch-item">'
+      +'<div class="arch-row" onclick="toggleArch('+idx+')">'
+      +'<span class="arch-sevdot" style="background:'+sv+'"></span>'
+      +'<span class="arch-cat" style="color:'+ac+';background:'+ac+'1a">'+esc(it.category)+'</span>'
+      +'<span class="arch-title">'+esc(it.title)+'</span>'
+      +'<span class="arch-meta"><span>'+esc(it._date)+'</span><span>'+esc(it.region)+'</span></span>'
+      +'</div>'
+      +'<div class="arch-body" id="archBody'+idx+'">'
+      +'<div class="arch-body-inner">'
+      +'<div class="arch-full">'+esc(full)+'</div>'
+      +'<div>'+src+'</div>'
+      +'</div></div>'
+      +'</div>';
+  }).join("");
+}
+function toggleArch(idx){
+  const body=document.getElementById("archBody"+idx);
+  if(body) body.classList.toggle("open");
+}
+// tutup archive bila tekan luar panel
+document.addEventListener("click",e=>{
+  const ov=document.getElementById("archiveOverlay");
+  if(e.target===ov) closeArchive();
+});
 </script>
 </body>
 </html>
