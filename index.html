@@ -90,6 +90,11 @@
 
   /* feed */
   .feed{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:12px;margin-top:14px}
+  .cat-section{margin-bottom:22px}
+  .cat-section-label{font-family:var(--mono);font-size:14px;font-weight:700;letter-spacing:1.5px;
+    text-transform:uppercase;margin:0 0 12px;display:flex;align-items:center;gap:9px}
+  .cat-section-label span{width:18px;height:3px;display:inline-block;border-radius:2px}
+  .cat-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:12px}
   .card{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:7px;border-left:4px solid var(--gold);transition:transform .18s ease,box-shadow .18s ease;box-shadow:0 4px 16px -14px #16202e55}
   .card:hover{transform:translateY(-3px);box-shadow:0 18px 34px -20px #16202e55}
   .meta{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
@@ -267,29 +272,51 @@ function wireTip(svg){
 document.addEventListener("scroll",hideTip,true);
 setInterval(()=>{document.getElementById("clock").textContent=new Date().toLocaleTimeString("en-GB")},1000);
 
-fetch("data.json",{cache:"no-store"})
-  .then(r=>{if(!r.ok)throw 0;return r.json()})
-  .then(d=>{DATA=d;render()})
-  .catch(()=>{
-    document.getElementById("brief").textContent="data.json belum ada atau tak dapat dibaca. Lepas GitHub Action jalan pull pertama, ruang ini auto-isi.";
-    document.getElementById("feed").innerHTML='<div class="empty">Feed kosong — buka site ini dari Netlify (bukan klik fail terus, sebab browser sekat fetch fail tempatan).</div>';
-  });
+let BOARD={categories:{}};
+Promise.all([
+  fetch("data.json",{cache:"no-store"}).then(r=>r.ok?r.json():{days:[]}).catch(()=>({days:[]})),
+  fetch("board.json",{cache:"no-store"}).then(r=>r.ok?r.json():{categories:{}}).catch(()=>({categories:{}}))
+]).then(([d,b])=>{
+  DATA=d; BOARD=b; render();
+}).catch(()=>{
+  document.getElementById("brief").textContent="data.json belum ada atau tak dapat dibaca. Lepas GitHub Action jalan pull pertama, ruang ini auto-isi.";
+  document.getElementById("feed").innerHTML='<div class="empty">Feed kosong — buka site ini dari Netlify (bukan klik fail terus, sebab browser sekat fetch fail tempatan).</div>';
+});
 
 function latest(){return DATA.days&&DATA.days.length?DATA.days[DATA.days.length-1]:null}
 function monthLabel(ym){const p=(ym||"").split("-");return p.length<2?ym:MON[(+p[1])-1]+" "+p[0].slice(2)}
 function tdot(c){return '<span class="tdot" style="background:'+c+'"></span>'}
 
+const CAT_LABEL={Incident:"Incident",Regulatory:"Regulatory",Threat:"Threat",Technology:"Technology"};
 function render(){
-  const day=latest();
-  document.getElementById("brief").textContent=day?day.briefing:"Tiada briefing.";
-  document.getElementById("stamp").textContent=DATA.generatedAt?("Updated "+new Date(DATA.generatedAt).toLocaleString("en-GB")+(DATA.lastProvider?" · "+DATA.lastProvider:"")):"";
-  const items=day?day.items:[];
-  let t={High:0,Medium:0,Low:0}; items.forEach(i=>{if(t[i.severity]!=null)t[i.severity]++});
+  document.getElementById("brief").textContent=BOARD.briefing||"No briefing yet.";
+  document.getElementById("stamp").textContent=BOARD.generatedAt?("Updated "+new Date(BOARD.generatedAt).toLocaleString("en-GB")+(BOARD.lastProvider?" · "+BOARD.lastProvider:"")):"";
+  // tally dari semua kategori dalam board
+  let allBoardItems=[];
+  CATS.forEach(c=>{ (BOARD.categories?.[c]||[]).forEach(it=>allBoardItems.push(it)); });
+  let t={High:0,Medium:0,Low:0}; allBoardItems.forEach(i=>{if(t[i.severity]!=null)t[i.severity]++});
   tH.textContent=t.High; tM.textContent=t.Medium; tL.textContent=t.Low;
-  const f=items.filter(i=>(region==="Global"||i.region===region)&&(cat==="All"||i.category===cat));
-  const feed=document.getElementById("feed");
-  feed.innerHTML=f.length?f.map(card).join(""):'<div class="empty">'+(items.length?"Tiada item untuk filter ni.":"Feed kosong.")+'</div>';
+  renderSections();
   drawTrend(); drawCat(); drawPie(); drawMonth();
+}
+
+function renderSections(){
+  const feed=document.getElementById("feed");
+  let html="";
+  CATS.forEach(c=>{
+    let items=BOARD.categories?.[c]||[];
+    // tapis ikut region jika dipilih
+    if(region!=="Global") items=items.filter(i=>i.region===region);
+    // tapis kategori jika user pilih satu kategori
+    if(cat!=="All" && cat!==c) return;
+    if(items.length===0) return;
+    const ac=CATCOLOR[c]||"#b8901f";
+    html+='<div class="cat-section">'
+      +'<div class="cat-section-label" style="color:'+ac+'"><span style="background:'+ac+'"></span>'+esc(CAT_LABEL[c]||c)+'</div>'
+      +'<div class="cat-cards">'+items.map(card).join("")+'</div>'
+      +'</div>';
+  });
+  feed.innerHTML=html||'<div class="empty">Feed kosong. Lepas pull pertama, berita akan dipaparkan ikut kategori.</div>';
 }
 
 function card(it){
