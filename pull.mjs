@@ -569,8 +569,15 @@ async function main() {
     writeFileSync("data-ms.json", JSON.stringify(storeMS, null, 2));
     console.log("data-ms.json updated (BM)");
 
-    // board-ms.json: sticky per kategori (versi BM)
-    const newMsItems = msItems.filter((it) => !seen.has(keyOf(it)));
+    // board-ms.json: sticky per kategori (versi BM) — guna tapisan kesegaran sama
+    function isFreshMS(it) {
+      if (!it.date) return true;
+      const itemDate = new Date(it.date + "T00:00:00Z");
+      const todayDate = new Date(today + "T00:00:00Z");
+      const diffDays = (todayDate - itemDate) / (1000 * 60 * 60 * 24);
+      return diffDays >= -1 && diffDays <= 2;
+    }
+    const newMsItems = msItems.filter((it) => !seen.has(keyOf(it)) && isFreshMS(it));
     if (newMsItems.length > 0) {
       const CATS_B = ["Incident", "Regulatory", "Threat", "Technology"];
       let boardMS = { categories: {} };
@@ -628,15 +635,30 @@ async function main() {
     return board;
   }
 
-  // Hanya kemaskini board untuk kategori yang ada NEW items
-  // (newItems = yang belum pernah nampak; ikut konsep ganti penuh per kategori)
-  const newItemsForBoard = items.filter((it) => !seen.has(keyOf(it)));
+  // Tapis berita untuk board: (1) belum pernah dalam arkib, DAN (2) tarikh segar (<= 2 hari)
+  // Ini halang berita lama yang AI tersilap tarik daripada naik ke dashboard.
+  function isFresh(it) {
+    if (!it.date) return true; // kalau takda tarikh, terima
+    const itemDate = new Date(it.date + "T00:00:00Z");
+    const todayDate = new Date(today + "T00:00:00Z");
+    const diffDays = (todayDate - itemDate) / (1000 * 60 * 60 * 24);
+    return diffDays >= -1 && diffDays <= 2; // dalam 2 hari ke belakang (atau esok, jaga-jaga timezone)
+  }
+
+  const newItemsForBoard = items.filter((it) => {
+    if (seen.has(keyOf(it))) return false;      // dah dalam arkib → skip
+    if (!isFresh(it)) {
+      console.log("Skip board (berita lama " + (it.date||"?") + "): " + (it.title||"").slice(0,50));
+      return false;
+    }
+    return true;
+  });
 
   if (newItemsForBoard.length > 0) {
     updateBoard("board.json", newItemsForBoard, parsed.briefing || "");
-    console.log("board.json updated — kategori dengan berita baru diganti");
+    console.log("board.json updated — " + newItemsForBoard.length + " berita terkini, kategori berkaitan diganti");
   } else {
-    console.log("Tiada berita baru — board.json kekal");
+    console.log("Tiada berita terkini baru — board.json kekal");
   }
 
   // email ONLY if there is at least one new item (any severity)
