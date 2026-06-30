@@ -34,15 +34,24 @@ function getProviderOrder() {
 }
 
 function buildPrompt(existingTitles) {
+  const todayStr = new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Kuching" });
   const excludeBlock = existingTitles && existingTitles.length
-    ? `\n\nIMPORTANT — these stories are ALREADY in our archive. Do NOT repeat them or report the same development again. Find DIFFERENT, newer stories:\n` + existingTitles.slice(0, 40).map(t => "- " + t).join("\n")
+    ? `\n\nALREADY IN OUR ARCHIVE — do NOT repeat these or report the same development again. Find DIFFERENT, newer stories:\n` + existingTitles.slice(0, 40).map(t => "- " + t).join("\n")
     : "";
-  return `You are an aviation security (AVSEC) intelligence analyst. Search the web for the most significant aviation security developments worldwide from the LAST 24 HOURS ONLY. Cover a MIX of: security incidents/breaches (hijack, unauthorised access, drone/UAS near airports, smuggling, insider threat, screening failure, cyber attack on aviation systems), and regulatory/policy news (ICAO Annex 17 amendments, CAAM/EASA/TSA/ECAC/IATA circulars, directives or new standards). Cover the whole world.${excludeBlock}
+  return `You are an aviation security (AVSEC) intelligence analyst. Today's date is ${todayStr}. Search the web for the most RECENT and significant aviation security developments worldwide.
+
+CRITICAL RECENCY RULES:
+- Prioritise stories published in the LAST 1-3 DAYS. Today is ${todayStr}.
+- Set each item's "date" to the ACTUAL publication date you find. Do NOT guess or invent dates.
+- If a story is clearly old (weeks or months ago), do NOT include it — we only want fresh news.
+- Prefer breaking/recent developments over background or historical articles.
+
+Cover a MIX of: security incidents/breaches (hijack, unauthorised access, drone/UAS near airports, smuggling, insider threat, screening failure, cyber attack on aviation systems), and regulatory/policy news (ICAO Annex 17 amendments, CAAM/EASA/TSA/ECAC/IATA circulars, directives or new standards). Cover the whole world.${excludeBlock}
 
 IMPORTANT: Respond with ONLY raw JSON starting with { and ending with }. No markdown, no explanation, no preamble. Exact structure:
 {"briefing":"2 sentence global situation summary","items":[{"title":"short headline","category":"Incident|Regulatory|Threat|Technology","region":"Asia-Pacific|Europe|North America|Latin America|Middle East|Africa","severity":"High|Medium|Low","summary":"max 25 words","source":"publication name","url":"link","date":"YYYY-MM-DD"}]}
 
-Give up to 6 items, most recent and most significant first. Only report genuinely NEW developments from the last 24 hours. If fewer than 6 genuinely new stories exist, return fewer — do NOT pad with old news.`;
+Give up to 6 items, MOST RECENT first, using the real publication date for each. Only report genuinely NEW developments from the last few days. If fewer than 6 fresh stories exist, return fewer — do NOT pad with old news.`;
 }
 
 let PROMPT = buildPrompt([]);
@@ -168,7 +177,7 @@ async function pullViaDeepSeekTavily() {
           query,
           search_depth: "basic",
           max_results: 5,
-          days: 3
+          days: 2
         })
       });
       if (!r.ok) { console.log("Tavily query failed: " + r.status); continue; }
@@ -187,17 +196,23 @@ async function pullViaDeepSeekTavily() {
     "\nContent: " + ((r.content || "").slice(0, 400))
   ).join("\n\n");
 
-  const deepseekPrompt = `You are an aviation security (AVSEC) intelligence analyst. Based on the following recent web search results from the last 72 hours, identify the most significant aviation security developments worldwide.
+  const deepseekPrompt = `You are an aviation security (AVSEC) intelligence analyst. Today's date is ${today}. Based on the following web search results, identify the most RECENT and significant aviation security developments.
 
 SEARCH RESULTS:
 ${context}
 
-From these results, extract and format the most significant AVSEC developments. Cover a MIX of: security incidents/breaches (hijack, unauthorised access, drone/UAS near airports, smuggling, insider threat, screening failure, cyber attack on aviation systems), and regulatory/policy news (ICAO Annex 17 amendments, CAAM/EASA/TSA/ECAC/IATA circulars, directives or new standards).
+CRITICAL RECENCY RULES:
+- Prioritise stories from the LAST 1-3 DAYS. Today is ${today}.
+- For each item, set "date" to the ACTUAL publication date from the search result. Do NOT guess or invent dates.
+- If a story is clearly old (weeks or months ago), do NOT include it — we only want fresh news.
+- Prefer breaking/recent developments over background or historical articles.
+
+Cover a MIX of: security incidents/breaches (hijack, unauthorised access, drone/UAS, smuggling, insider threat, screening failure, cyber attack), and regulatory/policy news (ICAO, CAAM, EASA, TSA, ECAC, IATA directives or standards).
 
 IMPORTANT: Respond with ONLY raw JSON starting with { and ending with }. No markdown, no explanation, no preamble. Exact structure:
 {"briefing":"2 sentence global situation summary","items":[{"title":"short headline","category":"Incident|Regulatory|Threat|Technology","region":"Asia-Pacific|Europe|North America|Latin America|Middle East|Africa","severity":"High|Medium|Low","summary":"max 25 words","source":"publication name","url":"link","date":"YYYY-MM-DD"}]}
 
-Give up to 6 items, most recent and most significant first. Only include items found in the search results provided. Your entire response must be valid JSON starting with { character.`;
+Give up to 6 items, MOST RECENT first. Use the real publication date for each. Your entire response must be valid JSON starting with { character.`;
 
   // Step 3: Send to DeepSeek (with retry on 503)
   for (let attempt = 1; attempt <= 3; attempt++) {
@@ -575,15 +590,8 @@ async function main() {
     writeFileSync("data-ms.json", JSON.stringify(storeMS, null, 2));
     console.log("data-ms.json updated (BM)");
 
-    // board-ms.json: sticky per kategori (versi BM) — guna tapisan kesegaran sama
-    function isFreshMS(it) {
-      if (!it.date) return true;
-      const itemDate = new Date(it.date + "T00:00:00Z");
-      const todayDate = new Date(today + "T00:00:00Z");
-      const diffDays = (todayDate - itemDate) / (1000 * 60 * 60 * 24);
-      return diffDays >= -1 && diffDays <= 2;
-    }
-    const newMsItems = msItems.filter((it) => !seen.has(keyOf(it)) && isFreshMS(it));
+    // board-ms.json: sticky per kategori (versi BM) — banding tarikh dalam updateBoard
+    const newMsItems = msItems.filter((it) => !seen.has(keyOf(it)));
     if (newMsItems.length > 0) {
       const CATS_B = ["Incident", "Regulatory", "Threat", "Technology"];
       let boardMS = { categories: {} };
@@ -594,7 +602,15 @@ async function main() {
       const newByCatMS = {};
       CATS_B.forEach((c) => { newByCatMS[c] = []; });
       newMsItems.forEach((it) => { if (newByCatMS[it.category]) newByCatMS[it.category].push(it); });
-      CATS_B.forEach((c) => { if (newByCatMS[c].length > 0) boardMS.categories[c] = newByCatMS[c]; });
+      const latestDateMS = (arr) => (!arr||!arr.length) ? "" : arr.reduce((m,it)=>(it.date&&it.date>m?it.date:m),"");
+      CATS_B.forEach((c) => {
+        if (newByCatMS[c].length === 0) return;
+        const existLatest = latestDateMS(boardMS.categories[c]);
+        const inLatest = latestDateMS(newByCatMS[c]);
+        if (!existLatest || (inLatest && inLatest > existLatest)) {
+          boardMS.categories[c] = newByCatMS[c];
+        }
+      });
       boardMS.briefing = translated.briefing || parsed.briefing || "";
       boardMS.generatedAt = storeMS.generatedAt;
       boardMS.lastProvider = provider + " (terjemahan)";
@@ -612,6 +628,12 @@ async function main() {
   // ganti penuh slot X dengan berita baru. Kategori tanpa berita baru kekal.
   const CATS_BOARD = ["Incident", "Regulatory", "Threat", "Technology"];
 
+  // Tarikh terkini dalam slot kategori sedia ada (untuk perbandingan)
+  function latestDateInSlot(slotItems) {
+    if (!slotItems || !slotItems.length) return "";
+    return slotItems.reduce((max, it) => (it.date && it.date > max ? it.date : max), "");
+  }
+
   function updateBoard(boardFile, allItems, briefingText) {
     let board = { categories: {} };
     if (existsSync(boardFile)) {
@@ -619,19 +641,27 @@ async function main() {
     }
     if (!board.categories) board.categories = {};
 
-    // Kumpul berita BARU ikut kategori
+    // Kumpul berita ikut kategori
     const newByCat = {};
     CATS_BOARD.forEach((c) => { newByCat[c] = []; });
     allItems.forEach((it) => {
       if (newByCat[it.category]) newByCat[it.category].push(it);
     });
 
-    // Untuk setiap kategori yang ada berita baru → ganti penuh slot
+    // Untuk setiap kategori: ganti slot HANYA jika berita baru LEBIH BARU dari yang sedia ada
     CATS_BOARD.forEach((c) => {
-      if (newByCat[c].length > 0) {
+      if (newByCat[c].length === 0) return; // takda berita kategori ni → kekal
+
+      const existingLatest = latestDateInSlot(board.categories[c]);
+      const incomingLatest = latestDateInSlot(newByCat[c]);
+
+      // kalau slot kosong, atau berita masuk lebih baru → ganti
+      if (!existingLatest || (incomingLatest && incomingLatest > existingLatest)) {
         board.categories[c] = newByCat[c];
+        console.log("  board[" + c + "] diganti → " + incomingLatest + " (lama: " + (existingLatest||"kosong") + ")");
+      } else {
+        console.log("  board[" + c + "] kekal → berita masuk (" + incomingLatest + ") tak lebih baru dari " + existingLatest);
       }
-      // kalau takda berita baru kategori c → kekal yang sedia ada (tak sentuh)
     });
 
     board.briefing = briefingText;
@@ -641,30 +671,16 @@ async function main() {
     return board;
   }
 
-  // Tapis berita untuk board: (1) belum pernah dalam arkib, DAN (2) tarikh segar (<= 2 hari)
-  // Ini halang berita lama yang AI tersilap tarik daripada naik ke dashboard.
-  function isFresh(it) {
-    if (!it.date) return true; // kalau takda tarikh, terima
-    const itemDate = new Date(it.date + "T00:00:00Z");
-    const todayDate = new Date(today + "T00:00:00Z");
-    const diffDays = (todayDate - itemDate) / (1000 * 60 * 60 * 24);
-    return diffDays >= -1 && diffDays <= 2; // dalam 2 hari ke belakang (atau esok, jaga-jaga timezone)
-  }
-
-  const newItemsForBoard = items.filter((it) => {
-    if (seen.has(keyOf(it))) return false;      // dah dalam arkib → skip
-    if (!isFresh(it)) {
-      console.log("Skip board (berita lama " + (it.date||"?") + "): " + (it.title||"").slice(0,50));
-      return false;
-    }
-    return true;
-  });
+  // Board: hantar semua berita baru (belum dalam arkib) ke updateBoard.
+  // updateBoard akan banding tarikh — hanya ganti slot jika berita LEBIH BARU dari sedia ada.
+  // Jadi board takkan mundur ke belakang; hanya bergerak ke depan.
+  const newItemsForBoard = items.filter((it) => !seen.has(keyOf(it)));
 
   if (newItemsForBoard.length > 0) {
+    console.log("Proses board dengan " + newItemsForBoard.length + " berita baru...");
     updateBoard("board.json", newItemsForBoard, parsed.briefing || "");
-    console.log("board.json updated — " + newItemsForBoard.length + " berita terkini, kategori berkaitan diganti");
   } else {
-    console.log("Tiada berita terkini baru — board.json kekal");
+    console.log("Tiada berita baru — board.json kekal");
   }
 
   // email ONLY if there is at least one new item (any severity)
