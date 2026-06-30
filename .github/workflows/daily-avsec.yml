@@ -1,9 +1,8 @@
 name: Daily AVSEC Watch
 
 on:
-  schedule:
-    - cron: "0 0 * * *"   # 00:00 UTC = 08:00 MYT (Sarawak) — pagi
-    - cron: "0 9 * * *"   # 09:00 UTC = 17:00 MYT (Sarawak) — petang
+  # GitHub cron dibuang — guna cron-job.org je untuk timing tepat (8 pagi & 5 petang MYT).
+  # GitHub cron tak tepat (lari ke 1 pagi/7 malam) dan buat email kerap.
   workflow_dispatch: {}     # cron-job.org / manual trigger
 
 permissions:
