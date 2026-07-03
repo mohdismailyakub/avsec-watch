@@ -16,6 +16,30 @@ const TAVILY_API_KEY     = process.env.TAVILY_API_KEY;
 
 const today = new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Kuching" }); // YYYY-MM-DD
 
+// Tentukan tetingkap masa untuk run ni — pagi (8am) ambik dari 5pm semalam,
+// petang (5pm) ambik dari 8am hari ni. Guna ni untuk (a) bagitau AI dalam prompt,
+// dan (b) tapis server-side lepas dapat balik hasil (jaga-jaga AI overshoot tarikh lama).
+function getCutoffWindow() {
+  const now = new Date();
+  const kuchingHour = parseInt(now.toLocaleString("en-US", { timeZone: "Asia/Kuching", hour: "2-digit", hour12: false }));
+  const isMorning = kuchingHour < 12;
+  const yesterday = new Date(now.getTime() - 24 * 60 * 60 * 1000).toLocaleDateString("en-CA", { timeZone: "Asia/Kuching" });
+  if (isMorning) {
+    return {
+      cutoffDate: yesterday, // items bertarikh < yesterday akan ditapis keluar
+      cutoffLabel: yesterday + " 17:00 (5:00 PM) MYT — iaitu run petang sebelum ni",
+    };
+  }
+  return {
+    cutoffDate: today, // run petang — hanya terima berita bertarikh hari ni
+    cutoffLabel: today + " 08:00 (8:00 AM) MYT — iaitu run pagi hari ni",
+  };
+}
+
+// Sumber yang boleh dijadikan keutamaan carian (bukan restriction total — AI masih boleh
+// cari sumber lain, ni just hint supaya carian lebih tepat sasaran untuk AVSEC).
+const PRIORITY_SOURCES_HINT = `When searching, give priority to (but are not limited to) these aviation-security-relevant sources: Homeland Security Today (hstoday.us) Airport & Aviation Security section, Aviation Week / Aerospace Daily, FlightGlobal, official ICAO/IATA/EASA/TSA/CAAM/ECAC channels, and reputable national news outlets covering aviation incidents. Do not limit yourself only to these — include any credible source with genuinely new AVSEC-relevant information.`;
+
 // Tentukan giliran provider: alternate DeepSeek/Gemini ikut hari + pagi/petang
 function getProviderOrder() {
   const now = new Date();
@@ -35,16 +59,19 @@ function getProviderOrder() {
 
 function buildPrompt(existingTitles) {
   const todayStr = new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Kuching" });
+  const { cutoffLabel } = getCutoffWindow();
   const excludeBlock = existingTitles && existingTitles.length
     ? `\n\nALREADY IN OUR ARCHIVE — do NOT repeat these or report the same development again. Find DIFFERENT, newer stories:\n` + existingTitles.slice(0, 40).map(t => "- " + t).join("\n")
     : "";
   return `You are an aviation security (AVSEC) intelligence analyst. Today's date is ${todayStr}. Search the web for the most RECENT and significant aviation security developments worldwide.
 
 CRITICAL RECENCY RULES:
-- Prioritise stories published in the LAST 1-3 DAYS. Today is ${todayStr}.
+- This is a twice-daily briefing. ONLY include stories published SINCE ${cutoffLabel}. Anything published before that is considered ALREADY COVERED — do not include it.
 - Set each item's "date" to the ACTUAL publication date you find. Do NOT guess or invent dates.
 - If a story is clearly old (weeks or months ago), do NOT include it — we only want fresh news.
 - Prefer breaking/recent developments over background or historical articles.
+
+${PRIORITY_SOURCES_HINT}
 
 Cover a MIX of: security incidents/breaches (hijack, unauthorised access, drone/UAS near airports, smuggling, insider threat, screening failure, cyber attack on aviation systems), and regulatory/policy news (ICAO Annex 17 amendments, CAAM/EASA/TSA/ECAC/IATA circulars, directives or new standards). Cover the whole world.${excludeBlock}
 
@@ -91,6 +118,25 @@ const normTitle = (t) => (t || "")
   .replace(/\s+/g, " ")          // ringkaskan ruang
   .trim();
 const keyOf = (it) => normTitle(it.title);
+
+// Gabung (bukan ganti) entry hari yang sama — supaya run petang tak wipe out
+// items yang run pagi dah simpan untuk tarikh yang sama. Dedup ikut tajuk.
+function mergeDayEntry(daysArr, dateStr, briefingText, newItems) {
+  const idx = daysArr.findIndex((d) => d.date === dateStr);
+  if (idx === -1) {
+    daysArr.push({ date: dateStr, briefing: briefingText, items: newItems });
+    return daysArr;
+  }
+  const existingItems = daysArr[idx].items || [];
+  const existingKeys = new Set(existingItems.map(keyOf));
+  const toAdd = newItems.filter((it) => !existingKeys.has(keyOf(it)));
+  daysArr[idx] = {
+    date: dateStr,
+    briefing: briefingText || daysArr[idx].briefing || "",
+    items: existingItems.concat(toAdd),
+  };
+  return daysArr;
+}
 
 // ---------- providers ----------
 async function pullViaClaude() {
@@ -196,16 +242,19 @@ async function pullViaDeepSeekTavily() {
     "\nContent: " + ((r.content || "").slice(0, 400))
   ).join("\n\n");
 
+  const { cutoffLabel: dsCutoffLabel } = getCutoffWindow();
   const deepseekPrompt = `You are an aviation security (AVSEC) intelligence analyst. Today's date is ${today}. Based on the following web search results, identify the most RECENT and significant aviation security developments.
 
 SEARCH RESULTS:
 ${context}
 
 CRITICAL RECENCY RULES:
-- Prioritise stories from the LAST 1-3 DAYS. Today is ${today}.
+- This is a twice-daily briefing. ONLY include stories published SINCE ${dsCutoffLabel}. Anything before that is considered ALREADY COVERED.
 - For each item, set "date" to the ACTUAL publication date from the search result. Do NOT guess or invent dates.
 - If a story is clearly old (weeks or months ago), do NOT include it — we only want fresh news.
 - Prefer breaking/recent developments over background or historical articles.
+
+${PRIORITY_SOURCES_HINT}
 
 Cover a MIX of: security incidents/breaches (hijack, unauthorised access, drone/UAS, smuggling, insider threat, screening failure, cyber attack), and regulatory/policy news (ICAO, CAAM, EASA, TSA, ECAC, IATA directives or standards).
 
@@ -530,15 +579,24 @@ async function main() {
       await tryClaude();
     }
   }
-  const items = parsed.items || [];
-  console.log("Provider: " + provider + " — " + items.length + " items");
+  let items = parsed.items || [];
+  console.log("Provider: " + provider + " — " + items.length + " items (sebelum tapis tarikh)");
+
+  // Safety-net: buang item yang tarikhnya lebih lama dari cutoff run ni,
+  // walaupun AI dah diarah dalam prompt — ni jaga-jaga AI overshoot/salah tarikh.
+  const { cutoffDate } = getCutoffWindow();
+  const beforeFilter = items.length;
+  items = items.filter((it) => !it.date || it.date >= cutoffDate);
+  if (items.length < beforeFilter) {
+    console.log("Tapis tarikh: buang " + (beforeFilter - items.length) + " item bertarikh sebelum " + cutoffDate);
+  }
+  console.log(items.length + " item selepas tapis tarikh (cutoff: " + cutoffDate + ")");
 
   // which are genuinely new?
   const newItems = items.filter((it) => !seen.has(keyOf(it)));
 
-  // update store (replace today's entry, keep last 366, stamp)
-  store.days = store.days.filter((d) => d.date !== today);
-  store.days.push({ date: today, briefing: parsed.briefing || "", items });
+  // update store (gabung dengan entry hari ni yang sedia ada, keep last 366, stamp)
+  store.days = mergeDayEntry(store.days, today, parsed.briefing || "", items);
   store.days = store.days.slice(-366);
   store.generatedAt = new Date().toISOString();
   store.lastProvider = provider;
@@ -558,9 +616,8 @@ async function main() {
       console.log("fullContent item " + (i+1) + " gagal — guna summary: " + e.message);
     }
   }
-  // Tulis semula data.json dengan fullContent
-  store.days = store.days.filter((d) => d.date !== today);
-  store.days.push({ date: today, briefing: parsed.briefing || "", items });
+  // Tulis semula data.json dengan fullContent (merge, bukan ganti)
+  store.days = mergeDayEntry(store.days, today, parsed.briefing || "", items);
   store.days = store.days.slice(-366);
   store.generatedAt = new Date().toISOString();
   store.lastProvider = provider;
@@ -582,8 +639,7 @@ async function main() {
       summary:     translated.items?.[i]?.summary     || it.summary,
       fullContent: translated.items?.[i]?.fullContent || it.fullContent || "",
     }));
-    storeMS.days = storeMS.days.filter((d) => d.date !== today);
-    storeMS.days.push({ date: today, briefing: translated.briefing || parsed.briefing || "", items: msItems });
+    storeMS.days = mergeDayEntry(storeMS.days, today, translated.briefing || parsed.briefing || "", msItems);
     storeMS.days = storeMS.days.slice(-366);
     storeMS.generatedAt = store.generatedAt;
     storeMS.lastProvider = provider + " (terjemahan)";
