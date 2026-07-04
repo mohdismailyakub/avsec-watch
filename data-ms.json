@@ -506,7 +506,7 @@
     },
     {
       "date": "2026-07-04",
-      "briefing": "Dalam beberapa hari kebelakangan ini, telah berlaku perlanggaran dron dengan pesawat JetBlue di JFK dan satu nyaris-nyaris terlanggar di Newark, manakala FAA dan rakan kongsi melancarkan operasi menentang dron yang bersejarah untuk Piala Dunia FIFA. Pada masa yang sama, ancaman keselamatan siber terhadap penerbangan terus meningkat, dengan peningkatan serangan sebanyak 600% dilaporkan dan peraturan EASA Part-IS yang baharu kini berkuat kuasa.",
+      "briefing": "Kejadian dron dan ancaman keselamatan siber mendominasi perkembangan keselamatan penerbangan terkini, dengan insiden nyaris berlaku di Newark dan serangan siber besar terhadap pembekal lapangan terbang menyebabkan gangguan, di samping operasi anti-dron secara meluas untuk Piala Dunia FIFA.",
       "items": [
         {
           "title": "Dron Berlanggar dengan Pesawat JetBlue di JFK; Nyaris-nyaris Terlanggar di Newark",
@@ -544,6 +544,6 @@
       ]
     }
   ],
-  "generatedAt": "2026-07-04T00:01:34.334Z",
+  "generatedAt": "2026-07-04T09:01:30.319Z",
   "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }

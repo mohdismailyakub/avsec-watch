@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T00:01:34.334Z",
+  "generatedAt": "2026-07-04T09:01:30.319Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -1006,7 +1006,7 @@
     },
     {
       "date": "2026-07-04",
-      "briefing": "Recent days have seen a drone collision with a JetBlue aircraft at JFK and a near-miss at Newark, while the FAA and partners launch a historic counter-drone operation for the FIFA World Cup. Concurrently, cybersecurity threats to aviation continue to escalate, with a 600% surge in attacks reported and new EASA Part-IS regulations now in effect.",
+      "briefing": "Drone incidents and cybersecurity threats dominate recent aviation security developments, with a near-miss at Newark and major cyber attacks on airport suppliers causing disruptions, alongside extensive counter-drone operations for the FIFA World Cup.",
       "items": [
         {
           "title": "Drone Collides with JetBlue Plane at JFK; Near-Miss at Newark",
