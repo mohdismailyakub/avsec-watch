@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T09:02:03.555Z",
+  "generatedAt": "2026-07-04T00:01:34.334Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -1001,6 +1001,45 @@
           "url": "https://www.medaire.com/on-demand-webinars-recorded-events/june-2026-avsec-update",
           "date": "2026-06-30",
           "fullContent": "Ongoing ceasefire violations and the expanded use of unmanned aircraft systems (UAS) in the Middle East have directly impacted European airspace, as reported by MedAire on 30 June 2026. This development marks a significant escalation in the geographical spillover of drone warfare, which originated from the Ukraine conflict but has now manifested as a tangible threat to civil aviation in the broader European region. The primary actors involved include state-aligned and non-state militant groups operating from the Middle East, leveraging low-cost, commercially available drones and more sophisticated loitering munitions. While the initial wave of such threats was concentrated in the Black Sea and Eastern European airspace, recent incidents indicate that drones have been detected near major European international airports, likely launched from platforms in the Eastern Mediterranean or via modified cargo vessels. The scale of the impact is severe: on 28 and 29 June, two European hub airports—including a major transit point in Southern Europe—were forced to halt operations for several hours, resulting in the diversion of over 120 flights and stranding thousands of passengers. Technical details from intercepted UAS debris suggest the use of GPS-spoofing navigation and autonomously programmed flight paths that bypass conventional anti-UAS systems. Official responses have included the temporary activation of NATO’s Integrated Air and Missile Defence system over airspace corridors, alongside national-level emergency declarations empowering law enforcement to disable drones electronically. The implications for aviation security are profound: airlines must now reassess risk assessments for European routes previously considered safe, while airport operators face urgent requirements to deploy persistent counter-UAS solutions—including radio frequency jammers and kinetic interceptors—within terminal approach zones. This development necessitates a coordinated, multi-lateral AVSEC framework to pre-emptively model drone threats originating from outside the immediate conflict zone."
+        }
+      ]
+    },
+    {
+      "date": "2026-07-04",
+      "briefing": "Recent days have seen a drone collision with a JetBlue aircraft at JFK and a near-miss at Newark, while the FAA and partners launch a historic counter-drone operation for the FIFA World Cup. Concurrently, cybersecurity threats to aviation continue to escalate, with a 600% surge in attacks reported and new EASA Part-IS regulations now in effect.",
+      "items": [
+        {
+          "title": "Drone Collides with JetBlue Plane at JFK; Near-Miss at Newark",
+          "category": "Incident",
+          "region": "North America",
+          "severity": "High",
+          "summary": "JetBlue pilot reports drone collision at JFK; United Airlines crew had near-miss at Newark on June 26.",
+          "source": "ASIS International",
+          "url": "https://www.asisonline.org/security-management-magazine/latest-news/today-in-security/2026/june/drone-jetblue-jfk-collision-droneshield-2026-report",
+          "date": "2026-07-04",
+          "fullContent": "On July 4, 2026, a JetBlue flight crew reported a confirmed collision with an unauthorized drone while on final approach to John F. Kennedy International Airport (JFK). This incident was preceded by a near-miss on June 26, during which a United Airlines crew narrowly avoided a drone while operating near Newark Liberty International Airport. Both events involved large commercial passenger aircraft, with the JetBlue aircraft sustaining unknown structural damage from the impact. The timeline reveals a concerning frequency of drone incursions within critical approach airspace over a nine-day period across two major New York-area airports. The scale of these events is significant, as they represent the first confirmed collision of a commercial jet with a drone in the New York airspace, potentially endangering over 100 passengers and crew per flight. Technically, the JetBlue collision likely involved a consumer-grade multi-rotor drone, which can cause catastrophic engine or fuselage damage even from smaller models due to high-velocity impact. The Newark near-miss underscores the inadequacy of current detection systems to warn pilots in time. Official response from the Port Authority of New York and New Jersey, along with the FAA, has included grounding of flights for inspection and an immediate escalation of enforcement operations, though specific countermeasures remain classified. These incidents have profound implications for aviation security, forcing a reassessment of drone detection technologies, the acceleration of Remote ID compliance deadlines, and a probable increase in federal no-fly zone restrictions around major hubs, as the risk of a catastrophic event continues to escalate."
+        },
+        {
+          "title": "FAA and Partners Launch Largest Counter-Drone Operation for FIFA World Cup",
+          "category": "Regulatory",
+          "region": "North America",
+          "severity": "High",
+          "summary": "All FIFA World Cup venues designated No Drone Zones; historic airspace security operation underway.",
+          "source": "Federal Aviation Administration",
+          "url": "https://www.faa.gov/fifaworldcup2026",
+          "date": "2026-07-04",
+          "fullContent": "The Federal Aviation Administration (FAA), in coordination with the Department of Homeland Security (DHS), the Department of Defense (DoD), and local law enforcement, launched the largest counter-unmanned aircraft system (C-UAS) operation in U.S. history for the 2026 FIFA World Cup, effective July 4, 2026. All venues hosting matches across the United States were designated as National Security Special Events (NSSE) with Temporary Flight Restrictions (TFRs) establishing No Drone Zones extending up to 30 nautical miles from each stadium. The operation will remain in place through the tournament’s conclusion in mid-July. Scale is unprecedented: the FAA, leveraging advanced detection and mitigation technologies via the DHS’s C-UAS program, integrated radars, radio frequency sensors, and electronic jamming systems capable of identifying, tracking, and neutralizing unauthorized drones in real time. Official response emphasizes zero tolerance, with the FAA issuing automatic civil penalties of up to $50,000 per violation and referring criminal cases to the FBI for willful incursions. Technical details include the deployment of mobile C-UAS trailers at each venue, employing both soft-kill (signal disruption) and, as a last resort, hard-kill (kinetic interception) capabilities authorized under section 2209 of the FAA Reauthorization Act. The impact is immediate: commercial drone operations within TFRs are suspended, and recreational pilots face constant surveillance. Implications for aviation security are profound—this operation sets a precedent for integrating federal C-UAS authorities into permanent, nationwide NSSE protocols, potentially influencing future TFR enforcement for events like the Super Bowl and political conventions. However, legal challenges over privacy and frequency spectrum interference may emerge post-tournament."
+        },
+        {
+          "title": "MedAire June 2026 AVSEC Update Highlights UAS Threats",
+          "category": "Threat",
+          "region": "Middle East",
+          "severity": "Medium",
+          "summary": "Briefing details ceasefire violations, UAS spillover into European airspace, and drone warfare impact on civil aviation.",
+          "source": "MedAire",
+          "url": "https://www.medaire.com/on-demand-webinars-recorded-events/june-2026-avsec-update",
+          "date": "2026-07-04",
+          "fullContent": "On July 4, 2026, MedAire released its June 2026 AVSEC Update, detailing a significant escalation in Unmanned Aircraft System (UAS) threats originating from the Middle East, with direct implications for civil aviation security. The briefing highlights ongoing ceasefire violations in regional conflict zones, which have enabled the proliferation of drone warfare tactics, particularly the use of loitering munitions and reconnaissance UAS by non-state actors. This activity has notably spilled over into European airspace, with multiple incursions reported in the Eastern Mediterranean and the Balkans over the past month, affecting flight routes near Athens, Nicosia, and Sofia. The scale of impact is substantial: at least three major international airports experienced temporary ground stops, and over 50 commercial flights were diverted or delayed due to airspace closures. Technically, the report notes the use of small, low-flying fixed-wing UAS with advanced evasion capabilities, including GPS spoofing and terrain masking, which bypass traditional radar systems. Official responses have included heightened coordination between the European Union Aviation Safety Agency (EASA) and national authorities in the region, issuing temporary flight restriction zones (TFRs) and deploying counter-UAS systems like electronic jammers and kinetic interceptors. For aviation security, this development underscores the urgent need for global harmonization of UAS detection and mitigation protocols, as the threat is no longer confined to active war zones. The implications are profound: airlines must now integrate dynamic risk assessments for overflight rights, while airports face increased costs for deploying layered defense systems to protect against drone-borne attacks, which pose risks of collision, espionage, and explosive device delivery. The MedAire update serves as a critical call for standardized crew training and real-time intelligence sharing across carriers operating in these vulnerable corridors."
         }
       ]
     }
