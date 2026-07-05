@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-05T00:02:36.824Z",
+  "generatedAt": "2026-07-05T09:01:08.661Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -1045,7 +1045,7 @@
     },
     {
       "date": "2026-07-05",
-      "briefing": "Drone incursions at European airports and a TSA security breach at Houston's Bush Intercontinental Airport are the most recent significant aviation security incidents, while cyber attacks on Collins Aerospace continue to disrupt European flights, and ICAO has adopted a new amendment to Annex 13. The growing frequency of both physical UAS intrusions and supply-chain ransomware attacks underscores escalating threats to global aviation security.",
+      "briefing": "Multiple drone incursions near major US airports and a cyberattack on Collins Aerospace systems have caused significant disruptions, while the FAA has designated the FIFA World Cup 2026 a no-drone zone to mitigate aerial threats.",
       "items": []
     }
   ],
