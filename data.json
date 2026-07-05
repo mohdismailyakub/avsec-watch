@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T09:01:30.319Z",
+  "generatedAt": "2026-07-05T00:02:36.824Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -1042,6 +1042,11 @@
           "fullContent": "On July 4, 2026, MedAire released its June 2026 AVSEC Update, detailing a significant escalation in Unmanned Aircraft System (UAS) threats originating from the Middle East, with direct implications for civil aviation security. The briefing highlights ongoing ceasefire violations in regional conflict zones, which have enabled the proliferation of drone warfare tactics, particularly the use of loitering munitions and reconnaissance UAS by non-state actors. This activity has notably spilled over into European airspace, with multiple incursions reported in the Eastern Mediterranean and the Balkans over the past month, affecting flight routes near Athens, Nicosia, and Sofia. The scale of impact is substantial: at least three major international airports experienced temporary ground stops, and over 50 commercial flights were diverted or delayed due to airspace closures. Technically, the report notes the use of small, low-flying fixed-wing UAS with advanced evasion capabilities, including GPS spoofing and terrain masking, which bypass traditional radar systems. Official responses have included heightened coordination between the European Union Aviation Safety Agency (EASA) and national authorities in the region, issuing temporary flight restriction zones (TFRs) and deploying counter-UAS systems like electronic jammers and kinetic interceptors. For aviation security, this development underscores the urgent need for global harmonization of UAS detection and mitigation protocols, as the threat is no longer confined to active war zones. The implications are profound: airlines must now integrate dynamic risk assessments for overflight rights, while airports face increased costs for deploying layered defense systems to protect against drone-borne attacks, which pose risks of collision, espionage, and explosive device delivery. The MedAire update serves as a critical call for standardized crew training and real-time intelligence sharing across carriers operating in these vulnerable corridors."
         }
       ]
+    },
+    {
+      "date": "2026-07-05",
+      "briefing": "Drone incursions at European airports and a TSA security breach at Houston's Bush Intercontinental Airport are the most recent significant aviation security incidents, while cyber attacks on Collins Aerospace continue to disrupt European flights, and ICAO has adopted a new amendment to Annex 13. The growing frequency of both physical UAS intrusions and supply-chain ransomware attacks underscores escalating threats to global aviation security.",
+      "items": []
     }
   ],
   "lastProvider": "DeepSeek V4-Flash + Tavily"
