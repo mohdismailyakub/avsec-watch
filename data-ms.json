@@ -633,7 +633,7 @@
     },
     {
       "date": "2026-07-07",
-      "briefing": "Insiden dron baru-baru ini berhampiran lapangan terbang utama AS dan peningkatan serangan ransomware pada rantaian bekalan penerbangan menyerlahkan peningkatan ancaman fizikal dan siber menjelang Piala Dunia FIFA 2026, mendorong zon larangan dron FAA yang dipertingkat dan kerjasama keselamatan siber antarabangsa.",
+      "briefing": "Insiden dron di lapangan terbang AS dan ancaman UAS yang semakin meningkat di Eropah mendominasi perkembangan AVSEC terkini, bersama peraturan keselamatan kerajaan AS yang baharu untuk Piala Dunia FIFA 2026. Laporan serangan siber yang ketara menekankan risiko berterusan terhadap infrastruktur penerbangan.",
       "items": [
         {
           "title": "ICAO Security Week 2026 Menangani Ancaman Keselamatan Siber yang Muncul",
@@ -649,6 +649,6 @@
       ]
     }
   ],
-  "generatedAt": "2026-07-07T00:02:52.346Z",
+  "generatedAt": "2026-07-07T09:01:20.248Z",
   "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }

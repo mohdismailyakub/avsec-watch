@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T00:02:52.346Z",
+  "generatedAt": "2026-07-07T09:01:20.248Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -1133,7 +1133,7 @@
     },
     {
       "date": "2026-07-07",
-      "briefing": "Recent drone incidents near major US airports and a surge in ransomware attacks on aviation supply chains highlight escalating physical and cyber threats ahead of the FIFA World Cup 2026, prompting heightened FAA no-drone zones and international cybersecurity collaboration.",
+      "briefing": "Drone incidents at US airports and escalating UAS threats in Europe dominate recent AVSEC developments, alongside new US government safety regulations for the FIFA World Cup 2026. A significant cyberattacks report underscores continuing risks to aviation infrastructure.",
       "items": [
         {
           "title": "ICAO Security Week 2026 Addresses Emerging Cybersecurity Threats",
