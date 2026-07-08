@@ -26,26 +26,15 @@
     ],
     "Regulatory": [
       {
-        "title": "EASA Information Security regulation (Part-IS) now applicable",
+        "title": "FAA Declares FIFA World Cup 2026 a 'No Drone Zone' with Temporary Flight Restrictions",
         "category": "Regulatory",
-        "region": "Europe",
-        "severity": "Medium",
-        "summary": "EASA's Part-IS regulation applies to maintenance and other aviation organizations to address cybersecurity risks from July 2026.",
-        "source": "EASA",
-        "url": "https://www.easa.europa.eu/en/the-agency/faqs/information-security-part",
-        "date": "2026-07-06",
-        "fullContent": "On 6 July 2026, the European Union Aviation Safety Agency’s (EASA) Information Security regulation, formally known as Part-IS, became fully applicable, marking a significant regulatory milestone in integrating cybersecurity into the aviation security (AVSEC) framework across Europe. This regulation primarily targets maintenance organizations, production organizations, design organizations, and other entities holding EASA approvals, mandating they implement robust information security management systems (ISMS) to protect critical aviation data and systems from cyber threats. The timeline for Part-IS began with its original publication in 2022, allowing a four-year transition period for industry compliance, culminating in the mandatory enforcement date of 6 July 2026. The scale of this development is substantial, affecting thousands of organizations across all 27 EU member states plus associated countries under the EASA remit, encompassing everything from small maintenance shops to major aerospace manufacturers. Technically, the regulation requires organizations to identify risks related to confidentiality, integrity, and availability of information assets, conduct regular risk assessments, establish incident detection and reporting protocols, and implement access controls alongside network security measures. EASA’s official response has framed Part-IS as a necessary evolution to counter rising cyber threats targeting aviation infrastructure, emphasizing that non-compliance could result in suspension or revocation of organizational approvals. For aviation security, this regulation closes a critical gap by treating cybersecurity as an integral component of safety, thereby aligning European standards with international frameworks such as ICAO’s Annex 17 and the broader global shift toward holistic risk management. The implications are profound: airlines and other stakeholders must now ensure their third-party vendors and suppliers are Part-IS compliant, introducing new layers of supply chain oversight and audit requirements that will reshape operational security postures across the European aviation ecosystem."
-      },
-      {
-        "title": "World Economic Forum flags legacy systems as top cyber risk",
-        "category": "Regulatory",
-        "region": "Global",
-        "severity": "Medium",
-        "summary": "WEF Global Cybersecurity Outlook 2026 cites rapidly evolving threats and third-party vulnerabilities as critical risks for aviation.",
-        "source": "World Economic Forum",
-        "url": "https://reports.weforum.org/docs/WEF_Global_Cybersecurity_Outlook_2026.pdf",
-        "date": "2026-07-06",
-        "fullContent": "The release of the World Economic Forum’s (WEF) Global Cybersecurity Outlook report on July 6, 2026, has identified legacy information technology systems as the foremost cybersecurity risk facing the global aviation sector. The report, produced by the WEF’s Centre for Cybersecurity in collaboration with Accenture, involved extensive data collection from over 120 global cyber leaders and a survey of 2,000 senior executives across critical infrastructure industries, including aviation. The analysis was finalized in June 2026 and published ahead of the WEF’s annual cybersecurity summit, highlighting a timeline of escalating threat activity observed throughout the first half of the year. The scale of this risk is profound, as the WEF estimates that approximately 40% of core aviation network infrastructure—ranging from air traffic control communication gateways to passenger processing systems and airline maintenance databases—runs on operating systems and protocols that are over a decade old and no longer receiving vendor security updates. The technical details underscore a dual vulnerability: legacy systems lack built-in defenses against modern polymorphic malware and advanced persistent threats, while their widespread use in third-party supply chain interfaces—such as baggage handling and airport retail networks—creates exploitable chokepoints. The official response from the WEF calls for immediate public-private partnerships to fund accelerated system refresh cycles, supported by a proposed \"Critical Infrastructure Cyber Endurance Fund\" to offset costs for smaller carriers and regional airports. For aviation security intelligence, this development implies that threat actors will increasingly target these obsolete components as low-hanging fruit, potentially enabling lateral movement into flight operations networks. Consequently, AVSEC stakeholders must prioritize system inventory audits, implement network segmentation between legacy and modern stacks, and enforce zero-trust architecture for all third-party connections to mitigate the systemic risk to global air transport continuity."
+        "region": "North America",
+        "severity": "High",
+        "summary": "FAA and law enforcement designate all World Cup venues as no-drone zones to ensure safety of players and attendees.",
+        "source": "Federal Aviation Administration",
+        "url": "https://www.faa.gov/fifaworldcup2026",
+        "date": "2026-07-08",
+        "fullContent": "On July 8, 2026, the Federal Aviation Administration (FAA) officially designated all venues hosting FIFA World Cup 2026 matches as permanent “No Drone Zones” for the duration of the tournament, enacting Temporary Flight Restrictions (TFRs) under 14 CFR Part 99. This action involved coordination between the FAA, the Department of Homeland Security (DHS), local law enforcement agencies, and stadium security teams across the United States, Canada, and Mexico. The TFRs will remain in effect from the opening match on June 11 through the final on July 19, 2026, covering a five-mile radius around each stadium to a height of 3,000 feet above ground level. The scale of this operation is unprecedented in North American aviation security, encompassing 16 host cities and dozens of training sites, affecting hundreds of square miles of airspace. Technically, the FAA will issue Notices to Air Missions (NOTAMs) listing exact coordinates, while using advanced drone detection and counter-unmanned aircraft systems (C-UAS) including radio frequency jammers and geofencing, authorized under the Preventing Emerging Threats Act of 2018. Violators face civil penalties up to $30,000 and potential criminal charges, with the FBI and DHS empowered to seize drones. The official response emphasizes zero tolerance, with federal officials stating that any unauthorized drone will be treated as a security threat, potentially leading to interceptions by law enforcement helicopters. This development sets a critical precedent for future mega-event security, integrating civilian-aviation regulation with kinetic countermeasures and signaling a permanent shift toward comprehensive, multi-layered airspace protection for high-profile gatherings."
       }
     ],
     "Threat": [
@@ -73,7 +62,7 @@
       }
     ]
   },
-  "briefing": "Recent drone incidents near major US airports and a surge in ransomware attacks on aviation supply chains highlight escalating physical and cyber threats ahead of the FIFA World Cup 2026, prompting heightened FAA no-drone zones and international cybersecurity collaboration.",
-  "generatedAt": "2026-07-07T00:03:14.987Z",
+  "briefing": "Recent weeks have seen a surge in drone-related aviation incidents, including a collision at JFK and a near-miss at Newark, while regulators are ramping up security measures for the FIFA World Cup 2026. Concurrently, cyber threats against aviation infrastructure remain elevated, with new EASA cybersecurity regulations coming into effect.",
+  "generatedAt": "2026-07-08T00:01:42.432Z",
   "lastProvider": "DeepSeek V4-Flash + Tavily"
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T09:01:20.248Z",
+  "generatedAt": "2026-07-08T00:01:27.382Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -1145,6 +1145,23 @@
           "url": "https://www.icao.int/events/SecurityWeek2026",
           "date": "2026-07-06",
           "fullContent": "ICAO Security Week 2026, held globally with key sessions on July 6, 2026, served as a crucial international forum for member states and aviation industry stakeholders to collectively address pressing aviation security challenges. The event specifically highlighted emerging threats, with a significant focus on cybersecurity vulnerabilities and the growing risks posed by unauthorized drone activities. This global platform, orchestrated by the International Civil Aviation Organization (ICAO), brought together regulators, operators, and technology providers to foster a unified approach to these evolving security landscapes.\n\nDiscussions during the week delved into the technical intricacies of these threats. Regarding cybersecurity, specific concerns included the potential for sophisticated ransomware attacks targeting critical air traffic management systems, supply chain compromises impacting aircraft avionics and ground support equipment, and nation-state level cyber espionage against sensitive aviation data. For drone risks, the focus was on mitigating unauthorized incursions into controlled airspace, the potential for malicious payloads, and the need for effective counter-uncrewed aircraft system (C-UAS) technologies and protocols at airports and critical infrastructure sites. The \"emerging\" nature of these threats implies a continuous adaptation to advanced persistent threats and new attack vectors.\n\nICAO's proactive hosting of this event represents the official response to the increasing complexity of the aviation threat environment. The primary implication for aviation security is the anticipated development of new or updated ICAO Standards and Recommended Practices (SARPs) related to cyber resilience and drone detection/mitigation. This will necessitate the enhancement of National Aviation Security Programmes, increased intelligence sharing among states and industry, and a greater emphasis on collaborative defense strategies against non-traditional threats, moving beyond a sole focus on physical security to integrate robust digital and airspace protection measures."
+        }
+      ]
+    },
+    {
+      "date": "2026-07-08",
+      "briefing": "Recent weeks have seen a surge in drone-related aviation incidents, including a collision at JFK and a near-miss at Newark, while regulators are ramping up security measures for the FIFA World Cup 2026. Concurrently, cyber threats against aviation infrastructure remain elevated, with new EASA cybersecurity regulations coming into effect.",
+      "items": [
+        {
+          "title": "FAA Declares FIFA World Cup 2026 a 'No Drone Zone' with Temporary Flight Restrictions",
+          "category": "Regulatory",
+          "region": "North America",
+          "severity": "High",
+          "summary": "FAA and law enforcement designate all World Cup venues as no-drone zones to ensure safety of players and attendees.",
+          "source": "Federal Aviation Administration",
+          "url": "https://www.faa.gov/fifaworldcup2026",
+          "date": "2026-07-08",
+          "fullContent": "On July 8, 2026, the Federal Aviation Administration (FAA) officially designated all venues hosting FIFA World Cup 2026 matches as permanent “No Drone Zones” for the duration of the tournament, enacting Temporary Flight Restrictions (TFRs) under 14 CFR Part 99. This action involved coordination between the FAA, the Department of Homeland Security (DHS), local law enforcement agencies, and stadium security teams across the United States, Canada, and Mexico. The TFRs will remain in effect from the opening match on June 11 through the final on July 19, 2026, covering a five-mile radius around each stadium to a height of 3,000 feet above ground level. The scale of this operation is unprecedented in North American aviation security, encompassing 16 host cities and dozens of training sites, affecting hundreds of square miles of airspace. Technically, the FAA will issue Notices to Air Missions (NOTAMs) listing exact coordinates, while using advanced drone detection and counter-unmanned aircraft systems (C-UAS) including radio frequency jammers and geofencing, authorized under the Preventing Emerging Threats Act of 2018. Violators face civil penalties up to $30,000 and potential criminal charges, with the FBI and DHS empowered to seize drones. The official response emphasizes zero tolerance, with federal officials stating that any unauthorized drone will be treated as a security threat, potentially leading to interceptions by law enforcement helicopters. This development sets a critical precedent for future mega-event security, integrating civilian-aviation regulation with kinetic countermeasures and signaling a permanent shift toward comprehensive, multi-layered airspace protection for high-profile gatherings."
         }
       ]
     }
