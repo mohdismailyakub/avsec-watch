@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-10T00:01:14.558Z",
+  "generatedAt": "2026-07-10T09:02:07.459Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -1261,8 +1261,20 @@
     },
     {
       "date": "2026-07-10",
-      "briefing": "Recent days have seen a surge in drone-related incidents near major US airports and a major European ransomware attack on airport systems, alongside new US federal counter-UAS regulations for law enforcement.",
-      "items": []
+      "briefing": "Recent AVSEC developments highlight escalating drone threats near US airports and new counter-UAS regulations, alongside a major cyber attack on Collins Aerospace systems disrupting European flights.",
+      "items": [
+        {
+          "title": "FAA Reports Drone Sightings Near Airports Nearly Doubled in Q2 2026",
+          "category": "Incident",
+          "region": "North America",
+          "severity": "High",
+          "summary": "Close encounters between drones and manned aircraft at US airports almost doubled from Q1 to Q2 2026.",
+          "source": "Drones Overhead",
+          "url": "https://www.facebook.com/DronesOverhead/posts/faa-data-shows-drone-sightings-near-airports-nearly-doubled-in-second-quarter-dr/1031898859795798",
+          "date": "2026-07-10",
+          "fullContent": "The FAA's report on July 10, 2026, highlighting a near-doubling of drone sightings and close encounters with manned aircraft at U.S. airports from Q1 to Q2 2026, signals a critical escalation in aviation security threats across North America. This surge involves unauthorized drone operations, primarily by unidentified civilian operators, encroaching upon controlled airspace and directly endangering commercial and general aviation flights. The timeline reveals a rapid degradation of airspace integrity within a mere three-month period, demonstrating a concerning trend that outpaces existing mitigation efforts.\n\nThe scale of this issue, impacting numerous airports nationwide, carries significant implications. Close encounters introduce substantial risks of mid-air collisions, which could result in catastrophic aircraft damage, loss of life, and severe operational disruptions. While specific technical details regarding drone models or flight profiles are not disclosed, these incidents likely involve consumer-grade or prosumer Unmanned Aircraft Systems (UAS) operating at altitudes intersecting flight paths, within prohibited airport zones. The FAA's reporting of this data constitutes an official acknowledgment of the intensifying threat, likely necessitating a review of current regulations and enforcement paradigms.\n\nFrom an aviation security perspective, the implications are profound. Beyond accidental incursions, this trend normalizes unauthorized drone presence, potentially masking malicious intent, such as intelligence gathering, contraband delivery, or even kinetic attacks with weaponized UAS. It underscores an urgent need for enhanced Counter-UAS (C-UAS) capabilities, including more robust detection, identification, and mitigation technologies around critical airport infrastructure. Furthermore, it necessitates a recalibration of public awareness campaigns and a strengthening of punitive measures for illegal drone operation to deter future incidents and safeguard the national airspace."
+        }
+      ]
     }
   ],
   "lastProvider": "DeepSeek V4-Flash + Tavily"

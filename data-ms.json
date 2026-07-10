@@ -761,10 +761,22 @@
     },
     {
       "date": "2026-07-10",
-      "briefing": "Beberapa hari kebelakangan ini menyaksikan peningkatan insiden berkaitan dron berhampiran lapangan terbang utama AS dan serangan ransomware Eropah yang besar ke atas sistem lapangan terbang, bersama peraturan persekutuan AS baharu untuk penguatkuasaan undang-undang menentang UAS.",
-      "items": []
+      "briefing": "Perkembangan AVSEC terkini menonjolkan ancaman dron yang semakin meningkat berhampiran lapangan terbang AS dan peraturan anti-UAS baharu, bersama serangan siber utama ke atas sistem Collins Aerospace yang mengganggu penerbangan Eropah.",
+      "items": [
+        {
+          "title": "FAA Melaporkan Penampakan Dron Berhampiran Lapangan Terbang Hampir Meningkat Dua Kali Ganda pada Suku Kedua 2026",
+          "category": "Incident",
+          "region": "North America",
+          "severity": "High",
+          "summary": "Perjumpaan rapat antara dron dan pesawat berpenumpang di lapangan terbang AS hampir meningkat dua kali ganda dari suku pertama ke suku kedua 2026.",
+          "source": "Drones Overhead",
+          "url": "https://www.facebook.com/DronesOverhead/posts/faa-data-shows-drone-sightings-near-airports-nearly-doubled-in-second-quarter-dr/1031898859795798",
+          "date": "2026-07-10",
+          "fullContent": "Laporan FAA pada 10 Julai 2026, yang menyerlahkan peningkatan hampir dua kali ganda penemuan dron dan pertemuan rapat dengan pesawat berawak di lapangan terbang A.S. dari Suku Pertama ke Suku Kedua 2026, menandakan peningkatan kritikal dalam ancaman keselamatan penerbangan di seluruh Amerika Utara. Peningkatan mendadak ini melibatkan operasi dron tanpa kebenaran, terutamanya oleh pengendali awam yang tidak dikenal pasti, yang menceroboh ruang udara terkawal dan secara langsung membahayakan penerbangan penerbangan komersial dan am. Garis masa mendedahkan kemerosotan pantas integriti ruang udara dalam tempoh hanya tiga bulan, yang menunjukkan trend membimbangkan yang mengatasi usaha mitigasi sedia ada.\n\nSkala isu ini, yang menjejaskan banyak lapangan terbang di seluruh negara, membawa implikasi penting. Pertemuan rapat memperkenalkan risiko besar perlanggaran di udara, yang boleh mengakibatkan kerosakan pesawat yang dahsyat, kehilangan nyawa, dan gangguan operasi yang teruk. Walaupun butiran teknikal spesifik mengenai model dron atau profil penerbangan tidak didedahkan, insiden-insiden ini mungkin melibatkan Sistem Pesawat Tanpa Pemandu (UAS) gred pengguna atau prosumer yang beroperasi pada ketinggian yang bersilang dengan laluan penerbangan, dalam zon lapangan terbang yang dilarang. Pelaporan data ini oleh FAA merupakan pengakuan rasmi terhadap ancaman yang semakin meningkat, kemungkinan memerlukan semakan semula peraturan semasa dan paradigma penguatkuasaan.\n\nDari perspektif keselamatan penerbangan, implikasinya adalah mendalam. Di luar pencerobohan tidak sengaja, trend ini menormalisasikan kehadiran dron tanpa kebenaran, yang berpotensi menyembunyikan niat jahat, seperti pengumpulan risikan, penghantaran kontraban, atau bahkan serangan kinetik dengan UAS yang dipersenjatakan. Ia menekankan keperluan mendesak untuk keupayaan Counter-UAS (C-UAS) yang dipertingkatkan, termasuk teknologi pengesanan, pengenalpastian, dan mitigasi yang lebih teguh di sekitar infrastruktur lapangan terbang kritikal. Tambahan pula, ia memerlukan penentukuran semula kempen kesedaran awam dan pengukuhan langkah-langkah punitif bagi operasi dron haram untuk menghalang insiden masa depan dan melindungi ruang udara negara."
+        }
+      ]
     }
   ],
-  "generatedAt": "2026-07-10T00:01:14.558Z",
+  "generatedAt": "2026-07-10T09:02:07.459Z",
   "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }
