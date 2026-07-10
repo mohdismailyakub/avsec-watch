@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T09:06:37.547Z",
+  "generatedAt": "2026-07-10T00:01:14.558Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -1258,6 +1258,11 @@
           "fullContent": "Analysis of FAA data for Q2 2026 reveals a near-doubling of close encounters between drones and manned aircraft at US airports compared to Q1 2026, as reported by DRONELIFE on July 9, 2026. This significant escalation involves a broad range of airspace users, including commercial airliners, general aviation pilots, and air traffic controllers operating within the National Airspace System. The timeframe covers the period from April 1 through June 30, 2026, representing a sharp quarter-over-quarter spike in incidents that now approaches double the numerical total seen in the previous three-month period. The scale of the increase is unprecedented, with the raw number of reported encounters nearly doubling, posing a direct and immediate threat to aviation safety due to the risk of catastrophic collision, engine ingestion, or pilot evasive maneuvers leading to loss of control. Technically, the reports encompass drones of varying sizes and altitudes, frequently operating above the 400-foot statutory limit and penetrating controlled airspace around Class B and C airports without authorization or transponder-based detect-and-avoid capability. In response, the Federal Aviation Administration has intensified enforcement actions, including civil penalties and criminal referrals, and has reiterated its existing prohibitions against drone operations within five miles of airports without prior waiver. The Transportation Security Administration and local law enforcement have also increased airborne and ground-based interdiction patrols. For aviation security, this development underscores a critical failure in deterrence and compliance; the persistent, high-velocity growth of incidents demands accelerated deployment of remote identification technology, geofencing mandates for all consumer drones, and potentially the integration of non-kinetic counter-UAS systems at high-traffic airports to prevent a catastrophic midair collision."
         }
       ]
+    },
+    {
+      "date": "2026-07-10",
+      "briefing": "Recent days have seen a surge in drone-related incidents near major US airports and a major European ransomware attack on airport systems, alongside new US federal counter-UAS regulations for law enforcement.",
+      "items": []
     }
   ],
   "lastProvider": "DeepSeek V4-Flash + Tavily"
