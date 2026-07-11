@@ -15,15 +15,15 @@
     ],
     "Regulatory": [
       {
-        "title": "FAA Declares FIFA World Cup 2026 a 'No Drone Zone' with Temporary Flight Restrictions",
+        "title": "FBI Boston Warns Drone Operators of Temporary Flight Restrictions for World Cup",
         "category": "Regulatory",
         "region": "North America",
-        "severity": "High",
-        "summary": "FAA and law enforcement designate all World Cup venues as no-drone zones to ensure safety of players and attendees.",
-        "source": "Federal Aviation Administration",
-        "url": "https://www.faa.gov/fifaworldcup2026",
-        "date": "2026-07-08",
-        "fullContent": "On July 8, 2026, the Federal Aviation Administration (FAA) officially designated all venues hosting FIFA World Cup 2026 matches as permanent “No Drone Zones” for the duration of the tournament, enacting Temporary Flight Restrictions (TFRs) under 14 CFR Part 99. This action involved coordination between the FAA, the Department of Homeland Security (DHS), local law enforcement agencies, and stadium security teams across the United States, Canada, and Mexico. The TFRs will remain in effect from the opening match on June 11 through the final on July 19, 2026, covering a five-mile radius around each stadium to a height of 3,000 feet above ground level. The scale of this operation is unprecedented in North American aviation security, encompassing 16 host cities and dozens of training sites, affecting hundreds of square miles of airspace. Technically, the FAA will issue Notices to Air Missions (NOTAMs) listing exact coordinates, while using advanced drone detection and counter-unmanned aircraft systems (C-UAS) including radio frequency jammers and geofencing, authorized under the Preventing Emerging Threats Act of 2018. Violators face civil penalties up to $30,000 and potential criminal charges, with the FBI and DHS empowered to seize drones. The official response emphasizes zero tolerance, with federal officials stating that any unauthorized drone will be treated as a security threat, potentially leading to interceptions by law enforcement helicopters. This development sets a critical precedent for future mega-event security, integrating civilian-aviation regulation with kinetic countermeasures and signaling a permanent shift toward comprehensive, multi-layered airspace protection for high-profile gatherings."
+        "severity": "Medium",
+        "summary": "FBI Boston issued a PSA warning drone operators of temporary flight restrictions around World Cup stadiums and fan festivals.",
+        "source": "Instagram (FBI Boston)",
+        "url": "https://www.instagram.com/reel/DZdBX4rEfRs?hl=en",
+        "date": "2026-07-11",
+        "fullContent": "On July 11, 2026, the FBI’s Boston field office issued a public service announcement via Instagram, warning drone operators of temporary flight restrictions (TFRs) surrounding stadiums and designated fan festival zones hosting matches for the 2026 FIFA World Cup. This regulatory action targeted both recreational and commercial unmanned aircraft system (UAS) operators, emphasizing that unauthorized drone flights within the restricted airspace would constitute a federal violation. The timeline of the advisory aligns with the tournament’s active phases, which in 2026 spanned from June through July across multiple North American host cities, with Boston-specific TFRs likely covering Gillette Stadium and adjacent fan zones. The scale of this development is significant, as the World Cup involves dozens of matches drawing tens of thousands of spectators per event, creating a high-density target environment for potential drone-based threats, including surveillance, smuggling, or kinetic attacks. Technically, TFRs for major sporting events typically impose a no-fly zone of up to 30 nautical miles and an altitude ceiling of 18,000 feet, enforced via temporary Notices to Airmen (NOTAMs) and monitored by federal air marshal and local law enforcement assets with counter-UAS capabilities, such as electronic jamming or net-based interceptors. The official response from the FBI Boston, coordinated with the Transportation Security Administration (TSA) and Department of Homeland Security (DHS), underscores a proactive, public-facing deterrence strategy aimed at reducing inadvertent violations while maintaining operational security. The implications for aviation security are twofold: first, it reinforces the pattern of elevated threat posture during mega-events, requiring seamless interagency cooperation and real-time airspace management. Second, it highlights the growing need for permanent, scalable counter-UAS frameworks, as current temporary TFRs rely heavily on voluntary compliance and may be insufficient against malicious actors exploiting gaps in detection and enforcement. This development signals that UAS governance will remain a critical focal point for AVSEC planners during high-profile international gatherings."
       }
     ],
     "Threat": [
@@ -51,7 +51,7 @@
       }
     ]
   },
-  "briefing": "Recent aviation security developments highlight escalating UAS threats to airports in Europe and the US, alongside a significant cyber attack disrupting European airports via a supply chain compromise.",
-  "generatedAt": "2026-07-11T00:02:59.149Z",
+  "briefing": "Today's most significant AVSEC developments include a critical cyber attack on Collins Aerospace causing European flight delays and the FBI issuing drone restrictions for upcoming World Cup events. These incidents underscore escalating cyber and UAS threats to civil aviation operations.",
+  "generatedAt": "2026-07-11T09:01:59.201Z",
   "lastProvider": "DeepSeek V4-Flash + Tavily"
 }

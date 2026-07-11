@@ -15,15 +15,15 @@
     ],
     "Regulatory": [
       {
-        "title": "FAA Mengisytiharkan Piala Dunia FIFA 2026 sebagai 'Zon Tanpa Dron' dengan Sekatan Penerbangan Sementara",
+        "title": "FBI Boston Memberi Amaran kepada Pengendali Dron tentang Sekatan Penerbangan Sementara untuk Piala Dunia",
         "category": "Regulatory",
         "region": "North America",
-        "severity": "High",
-        "summary": "FAA dan pihak berkuasa penguatkuasa undang-undang menetapkan semua venue Piala Dunia sebagai zon tanpa dron untuk memastikan keselamatan pemain dan hadirin.",
-        "source": "Federal Aviation Administration",
-        "url": "https://www.faa.gov/fifaworldcup2026",
-        "date": "2026-07-08",
-        "fullContent": "Pada 8 Julai 2026, Federal Aviation Administration (FAA) secara rasmi menetapkan semua venue yang menjadi tuan rumah perlawanan Piala Dunia FIFA 2026 sebagai \"Zon Dilarang Drone\" kekal sepanjang tempoh kejohanan, dengan menguatkuasakan Sekatan Penerbangan Sementara (TFRs) di bawah 14 CFR Bahagian 99. Tindakan ini melibatkan penyelarasan antara FAA, Jabatan Keselamatan Dalam Negeri (DHS), agensi penguatkuasaan undang-undang tempatan, dan pasukan keselamatan stadium di seluruh Amerika Syarikat, Kanada, dan Mexico. TFRs akan berkuat kuasa dari perlawanan pembukaan pada 11 Jun hingga perlawanan akhir pada 19 Julai 2026, meliputi radius lima batu di sekitar setiap stadium sehingga ketinggian 3,000 kaki dari aras tanah. Skala operasi ini tidak pernah berlaku sebelum ini dalam keselamatan penerbangan Amerika Utara, merangkumi 16 bandar tuan rumah dan puluhan tapak latihan, menjejaskan beratus-ratus batu persegi ruang udara. Secara teknikal, FAA akan mengeluarkan Notis kepada Misi Penerbangan (NOTAMs) yang menyenaraikan koordinat tepat, sambil menggunakan sistem pengesanan dron termaju dan sistem anti-pesawat udara tanpa pemandu (C-UAS) termasuk pengganggu frekuensi radio dan geofencing, yang diberi kuasa di bawah Akta Mencegah Ancaman Muncul 2018. Pelanggar berdepan dengan penalti sivil sehingga $30,000 dan kemungkinan pertuduhan jenayah, dengan FBI dan DHS diberi kuasa untuk merampas dron. Respons rasmi menekankan dasar toleransi sifar, dengan pegawai persekutuan menyatakan bahawa sebarang dron tanpa kebenaran akan dianggap sebagai ancaman keselamatan, yang berpotensi membawa kepada pemintasan oleh helikopter penguatkuasaan undang-undang. Perkembangan ini mewujudkan duluan kritikal untuk keselamatan acara mega pada masa hadapan, mengintegrasikan peraturan penerbangan awam dengan langkah balas kinetik dan menandakan peralihan kekal ke arah perlindungan ruang udara yang menyeluruh dan berlapis-lapis untuk perhimpunan berprofil tinggi."
+        "severity": "Medium",
+        "summary": "FBI Boston mengeluarkan PSA memberi amaran kepada pengendali dron tentang sekatan penerbangan sementara di sekitar stadium Piala Dunia dan pesta peminat.",
+        "source": "Instagram (FBI Boston)",
+        "url": "https://www.instagram.com/reel/DZdBX4rEfRs?hl=en",
+        "date": "2026-07-11",
+        "fullContent": "Pada 11 Julai 2026, pejabat lapangan FBI di Boston telah mengeluarkan pengumuman perkhidmatan awam melalui Instagram, memberi amaran kepada pengendali dron mengenai sekatan penerbangan sementara (TFR) di sekitar stadium dan zon perayaan peminat yang ditetapkan untuk menganjurkan perlawanan Piala Dunia FIFA 2026. Tindakan kawal selia ini menyasarkan kedua-dua pengendali sistem pesawat tanpa pemandu (UAS) rekreasi dan komersial, menekankan bahawa penerbangan dron tanpa kebenaran dalam ruang udara terhad akan menjadi pelanggaran persekutuan. Garis masa nasihat ini sejajar dengan fasa aktif kejohanan, yang pada tahun 2026 berlangsung dari bulan Jun hingga Julai di pelbagai bandar tuan rumah Amerika Utara, dengan TFR khusus Boston mungkin meliputi Stadium Gillette dan zon peminat berdekatan. Skala perkembangan ini signifikan, kerana Piala Dunia melibatkan berpuluh-puluh perlawanan yang menarik puluhan ribu penonton setiap acara, mewujudkan persekitaran sasaran berketumpatan tinggi untuk potensi ancaman berasaskan dron, termasuk pengintipan, penyeludupan, atau serangan kinetik. Secara teknikal, TRF untuk acara sukan utama biasanya mengenakan zon larangan terbang sehingga 30 batu nautika dan siling ketinggian 18,000 kaki, dikuatkuasakan melalui Notis Sementara kepada Penerbang (NOTAM) dan dipantau oleh marsyal udara persekutuan serta aset penguatkuasaan undang-undang tempatan dengan keupayaan menentang-UAS, seperti gangguan elektronik atau pemintas berasaskan jaring. Respons rasmi daripada FBI Boston, yang diselaraskan dengan Pentadbiran Keselamatan Pengangkutan (TSA) dan Jabatan Keselamatan Dalam Negeri (DHS), menekankan strategi pencegahan proaktif yang menghadap orang awam bertujuan mengurangkan pelanggaran tidak sengaja sambil mengekalkan keselamatan operasi. Implikasi untuk keselamatan penerbangan adalah dua kali ganda: pertama, ia mengukuhkan corak postur ancaman tinggi semasa acara mega, memerlukan kerjasama antara agensi yang lancar dan pengurusan ruang udara masa nyata. Kedua, ia menonjolkan keperluan yang semakin meningkat untuk rangka kerja menentang-UAS kekal dan berskala, memandangkan TFR sementara semasa banyak bergantung pada pematuhan sukarela dan mungkin tidak mencukupi terhadap pelaku jahat yang mengeksploitasi jurang dalam pengesanan dan penguatkuasaan. Perkembangan ini menandakan bahawa tadbir urus UAS akan kekal sebagai tumpuan kritikal bagi perancang AVSEC semasa perhimpunan antarabangsa berprofil tinggi."
       }
     ],
     "Threat": [
@@ -51,7 +51,7 @@
       }
     ]
   },
-  "briefing": "Perkembangan keselamatan penerbangan terkini menyerlahkan ancaman UAS yang semakin meningkat kepada lapangan terbang di Eropah dan AS, bersama serangan siber yang ketara mengganggu lapangan terbang Eropah melalui kompromi rantaian bekalan.",
-  "generatedAt": "2026-07-11T00:02:42.431Z",
+  "briefing": "Perkembangan AVSEC paling signifikan hari ini termasuk serangan siber kritikal terhadap Collins Aerospace yang menyebabkan kelewatan penerbangan di Eropah dan FBI mengeluarkan sekatan dron untuk acara Piala Dunia yang akan datang. Insiden ini menekankan ancaman siber dan UAS yang semakin meningkat terhadap operasi penerbangan awam.",
+  "generatedAt": "2026-07-11T09:01:31.668Z",
   "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }
