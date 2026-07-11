@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-10T09:02:07.459Z",
+  "generatedAt": "2026-07-11T00:02:42.431Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -1273,6 +1273,23 @@
           "url": "https://www.facebook.com/DronesOverhead/posts/faa-data-shows-drone-sightings-near-airports-nearly-doubled-in-second-quarter-dr/1031898859795798",
           "date": "2026-07-10",
           "fullContent": "The FAA's report on July 10, 2026, highlighting a near-doubling of drone sightings and close encounters with manned aircraft at U.S. airports from Q1 to Q2 2026, signals a critical escalation in aviation security threats across North America. This surge involves unauthorized drone operations, primarily by unidentified civilian operators, encroaching upon controlled airspace and directly endangering commercial and general aviation flights. The timeline reveals a rapid degradation of airspace integrity within a mere three-month period, demonstrating a concerning trend that outpaces existing mitigation efforts.\n\nThe scale of this issue, impacting numerous airports nationwide, carries significant implications. Close encounters introduce substantial risks of mid-air collisions, which could result in catastrophic aircraft damage, loss of life, and severe operational disruptions. While specific technical details regarding drone models or flight profiles are not disclosed, these incidents likely involve consumer-grade or prosumer Unmanned Aircraft Systems (UAS) operating at altitudes intersecting flight paths, within prohibited airport zones. The FAA's reporting of this data constitutes an official acknowledgment of the intensifying threat, likely necessitating a review of current regulations and enforcement paradigms.\n\nFrom an aviation security perspective, the implications are profound. Beyond accidental incursions, this trend normalizes unauthorized drone presence, potentially masking malicious intent, such as intelligence gathering, contraband delivery, or even kinetic attacks with weaponized UAS. It underscores an urgent need for enhanced Counter-UAS (C-UAS) capabilities, including more robust detection, identification, and mitigation technologies around critical airport infrastructure. Furthermore, it necessitates a recalibration of public awareness campaigns and a strengthening of punitive measures for illegal drone operation to deter future incidents and safeguard the national airspace."
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "briefing": "Recent aviation security developments highlight escalating UAS threats to airports in Europe and the US, alongside a significant cyber attack disrupting European airports via a supply chain compromise.",
+      "items": [
+        {
+          "title": "Cyber attack on Collins Aerospace causes delays at European airports",
+          "category": "Incident",
+          "region": "Europe",
+          "severity": "High",
+          "summary": "A cyber attack on systems supplied by Collins Aerospace resulted in significant flight delays at London Heathrow and other European airports.",
+          "source": "LinkedIn",
+          "url": "https://www.linkedin.com/posts/rob-demain-01733468_heads-up-looks-like-a-cyber-attack-has-hit-activity-7375082251841347584-2BI_",
+          "date": "2026-07-11",
+          "fullContent": "On 2026-07-11, a targeted cyber attack on systems supplied by Collins Aerospace precipitated significant operational disruptions, leading to extensive flight delays at London Heathrow and other major European airports. This incident represents a direct attack on a critical aviation supply chain vendor, with the effects cascading to numerous end-user airport facilities across the region. The immediate impact, manifesting as substantial flight delays, indicates a compromise of systems essential for daily airport operations, suggesting the attack was not isolated or quickly contained and affected multiple locations concurrently.\n\nWhile specific technical details remain limited, the nature of \"systems supplied by Collins Aerospace\" points towards a compromise of airport operational technology (OT) or information technology (IT) infrastructure, such as check-in, baggage handling, gate assignment, or data exchange systems crucial for air traffic flow management. The cyber attack could involve ransomware, a data wiper, or a sophisticated denial-of-service operation designed to disrupt service availability and integrity. Although no official response has been publicly detailed, it is highly probable that Collins Aerospace, affected airports, national cybersecurity agencies (e.g., NCSC UK), and aviation regulators (e.g., EASA) initiated emergency protocols to mitigate the impact, restore services, and conduct forensic analysis.\n\nThis incident carries profound implications for aviation security, underscoring the escalating threat of cyber-physical attacks through the supply chain. It demonstrates how a single point of failure in a critical vendor's infrastructure can propagate widespread disruption, impacting passenger experience, economic stability, and potentially safety margins if crucial operational data is compromised. This event necessitates a re-evaluation of cybersecurity resilience, robust vendor risk management, enhanced threat intelligence sharing, and contingency planning across the entire aviation ecosystem to counter sophisticated and geographically extensive cyber threats."
         }
       ]
     }
