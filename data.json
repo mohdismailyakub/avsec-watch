@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T09:03:37.863Z",
+  "generatedAt": "2026-07-13T00:03:06.919Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -1386,7 +1386,24 @@
           "fullContent": "The intelligence update dated 2026-07-12, sourced from The Times of India, highlights a significant and global aviation security concern: smartphones have become the most frequently stolen items at airport security checkpoints. This phenomenon involves opportunistic thieves targeting distracted travelers during the divestment and recomposure phases of the screening process across numerous international airports. The widespread nature of these thefts, categorized as a \"threat,\" indicates a persistent vulnerability within the high-traffic, often chaotic environment of pre-boarding security zones, impacting countless passengers daily.\n\nThe technical aspect of these thefts primarily involves the ease with which a smartphone, placed in a security tray or bin, can be snatched by a passing individual while the owner is preoccupied with removing other belongings, passing through a walk-through detector, or retrieving items from the x-ray machine's output. The immediate impact on travelers includes substantial financial loss, the emotional distress of losing a personal device, and the potential compromise of sensitive personal and corporate data stored on the device. For airport operations, these incidents lead to increased reports, police investigations, and potential delays as passengers manage the aftermath, diverting resources from core security functions.\n\nIn response to this escalating issue, authorities have emphasized the urgent need for heightened passenger vigilance as a primary countermeasure, as indicated by the warning itself. This likely extends to public awareness campaigns via signage, announcements, and digital media, advising travelers to secure their valuables closely and avoid leaving them unattended in security trays. The broader implications for aviation security are significant; while not a direct threat to aircraft safety, such prevalent criminal activity erodes passenger trust in the security ecosystem. Furthermore, the vulnerability exposed by these thefts – namely, the distraction and temporary separation of passengers from their belongings – could potentially be exploited by malicious actors for more serious security breaches, such as planting prohibited items or conducting surveillance, by mimicking opportunistic theft or creating diversionary tactics. This necessitates a re-evaluation of checkpoint design, passenger flow management, and surveillance capabilities to mitigate both criminal activity and potential higher-level threats."
         }
       ]
+    },
+    {
+      "date": "2026-07-13",
+      "briefing": "Drone incidents near U.S. airports surged 88% in Q2 2026, while a cyberattack on Collins Aerospace systems caused widespread flight delays in Europe, highlighting persistent UAS and cyber threats to aviation security.",
+      "items": [
+        {
+          "title": "Collins Aerospace Cyberattack Disrupts European Flights",
+          "category": "Incident",
+          "region": "Europe",
+          "severity": "High",
+          "summary": "Ransomware attack on Collins Aerospace systems caused significant delays at Heathrow and other European airports.",
+          "source": "LinkedIn",
+          "url": "https://www.linkedin.com/posts/rob-demain-01733468_heads-up-looks-like-a-cyber-attack-has-hit-activity-7375082251841347584-2BI_",
+          "date": "2026-07-13",
+          "fullContent": "On July 13, 2026, a ransomware attack targeted critical systems of Collins Aerospace, a key aviation technology provider. This cyber incident immediately caused significant operational disruptions, primarily manifesting as widespread flight delays at London Heathrow and other major European airports. The attack's nature suggests unauthorized network access leading to data encryption or system lockout, impairing the availability of essential services. Given Collins Aerospace's portfolio, compromised systems likely pertained to avionics, air traffic management support, or integral airport IT infrastructure, thereby directly impacting flight scheduling and ground operations.\n\nThe incident's scale, affecting multiple major hubs, underscores the systemic vulnerability of the global aviation ecosystem to supply chain cyberattacks. Collins Aerospace would have initiated comprehensive incident response protocols, engaging internal cybersecurity teams and potentially external forensic experts. Concurrently, affected airports and airlines would have activated crisis management plans, coordinating closely with civil aviation authorities and law enforcement, including national cyber agencies, to mitigate operational fallout and investigate the breach's origins and vectors.\n\nThis event carries profound implications for aviation security, particularly regarding the increasing reliance on integrated digital systems and third-party vendors. It underscores the critical need for enhanced cybersecurity frameworks that extend across the entire aviation supply chain, robust threat intelligence sharing, and resilient contingency planning. The incident serves as a stark reminder that maintaining cyber resilience is paramount to preserving the integrity, safety, and operational continuity of the air transport system against evolving digital threats."
+        }
+      ]
     }
   ],
-  "lastProvider": "Gemini (2.5 Flash)"
+  "lastProvider": "DeepSeek V4-Flash + Tavily"
 }

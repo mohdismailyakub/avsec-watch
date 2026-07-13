@@ -2,15 +2,15 @@
   "categories": {
     "Incident": [
       {
-        "title": "Iran Closes Strait of Hormuz; US Launches Retaliatory Air Strikes",
+        "title": "Collins Aerospace Cyberattack Disrupts European Flights",
         "category": "Incident",
-        "region": "Middle East",
+        "region": "Europe",
         "severity": "High",
-        "summary": "Iran declared the Strait of Hormuz closed after detaining a vessel, prompting US air strikes on Iranian air surveillance, missile, and drone facilities.",
-        "source": "Israel Hayom",
-        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGMnf33Hgf5CHoPQRX4ZYgEYs75wOHuY3R6ejjivitw-gWV1pu09-PY-fMxFiSioh9iK_OY4Cvr67thnQESp6E9zckpWUcF9hhOw47if0elUv-lwbvjsxRzVyM7OCkdW3pW-jRTyp6_BuriklraEjPSX3ztQxE1f3YiQGsDRHlBz1_VoApGM-HSCFv52SOCBKg6D6VJ5DtAw33-VKPxYatzT_2yOAJu",
-        "date": "2026-07-12",
-        "fullContent": "On July 12, 2026, a significant escalation in the Middle East unfolded as Iran declared the Strait of Hormuz closed following the detention of an unspecified vessel. This provocative act immediately prompted retaliatory air strikes by the United States against key Iranian military infrastructure. The incident represents a direct military confrontation between the two nations, elevating regional tensions to a critical level with broad geopolitical and economic ramifications, particularly concerning global energy supplies.\n\nUS forces specifically targeted Iranian air surveillance, missile, and drone facilities, indicating precision strikes aimed at degrading Iran's ability to monitor, project power, and potentially retaliate. Iran's declaration of closure and detention of the vessel served as its initial official response to an undisclosed prior event, which was then met with decisive military action from the United States. While no explicit official statements beyond these actions are detailed, the scale of military engagement suggests a severe deterioration of diplomatic relations.\n\nFor aviation security, the implications are immediate and severe. The closure of a critical international waterway and subsequent military action drastically heightens risks for civilian aviation in the broader Middle East region. Airspace restrictions and new NOTAMs are highly probable, necessitating extensive re-routing and increasing flight times and operational costs. There is an elevated threat of misidentification due to heightened military alerts or compromised air defense systems, posing a direct hazard to commercial aircraft. Additionally, the instability could fuel state-sponsored cyber threats targeting aviation infrastructure and inspire heightened vigilance against terror groups potentially exploiting the chaotic environment. Global security postures are likely to be raised, particularly at airports with routes or connections to the affected region."
+        "summary": "Ransomware attack on Collins Aerospace systems caused significant delays at Heathrow and other European airports.",
+        "source": "LinkedIn",
+        "url": "https://www.linkedin.com/posts/rob-demain-01733468_heads-up-looks-like-a-cyber-attack-has-hit-activity-7375082251841347584-2BI_",
+        "date": "2026-07-13",
+        "fullContent": "On July 13, 2026, a ransomware attack targeted critical systems of Collins Aerospace, a key aviation technology provider. This cyber incident immediately caused significant operational disruptions, primarily manifesting as widespread flight delays at London Heathrow and other major European airports. The attack's nature suggests unauthorized network access leading to data encryption or system lockout, impairing the availability of essential services. Given Collins Aerospace's portfolio, compromised systems likely pertained to avionics, air traffic management support, or integral airport IT infrastructure, thereby directly impacting flight scheduling and ground operations.\n\nThe incident's scale, affecting multiple major hubs, underscores the systemic vulnerability of the global aviation ecosystem to supply chain cyberattacks. Collins Aerospace would have initiated comprehensive incident response protocols, engaging internal cybersecurity teams and potentially external forensic experts. Concurrently, affected airports and airlines would have activated crisis management plans, coordinating closely with civil aviation authorities and law enforcement, including national cyber agencies, to mitigate operational fallout and investigate the breach's origins and vectors.\n\nThis event carries profound implications for aviation security, particularly regarding the increasing reliance on integrated digital systems and third-party vendors. It underscores the critical need for enhanced cybersecurity frameworks that extend across the entire aviation supply chain, robust threat intelligence sharing, and resilient contingency planning. The incident serves as a stark reminder that maintaining cyber resilience is paramount to preserving the integrity, safety, and operational continuity of the air transport system against evolving digital threats."
       }
     ],
     "Regulatory": [
@@ -40,7 +40,7 @@
       }
     ]
   },
-  "briefing": "Recent global aviation security developments highlight escalating geopolitical tensions in the Middle East, directly impacting regional airspace, and localized security challenges at major international airports. Authorities are addressing both broad airspace threats and specific vulnerabilities like access control and passenger property theft at security checkpoints.",
-  "generatedAt": "2026-07-12T09:04:44.182Z",
-  "lastProvider": "Gemini (2.5 Flash)"
+  "briefing": "Drone incidents near U.S. airports surged 88% in Q2 2026, while a cyberattack on Collins Aerospace systems caused widespread flight delays in Europe, highlighting persistent UAS and cyber threats to aviation security.",
+  "generatedAt": "2026-07-13T00:03:29.984Z",
+  "lastProvider": "DeepSeek V4-Flash + Tavily"
 }
