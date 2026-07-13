@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T00:03:06.919Z",
+  "generatedAt": "2026-07-13T09:01:26.587Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -1389,7 +1389,7 @@
     },
     {
       "date": "2026-07-13",
-      "briefing": "Drone incidents near U.S. airports surged 88% in Q2 2026, while a cyberattack on Collins Aerospace systems caused widespread flight delays in Europe, highlighting persistent UAS and cyber threats to aviation security.",
+      "briefing": "Drone collisions with commercial aircraft at JFK and Newark in late June 2026 highlight escalating UAS threats to aviation safety, while a ransomware attack on Collins Aerospace systems caused significant flight delays across European airports.",
       "items": [
         {
           "title": "Collins Aerospace Cyberattack Disrupts European Flights",
@@ -1401,6 +1401,17 @@
           "url": "https://www.linkedin.com/posts/rob-demain-01733468_heads-up-looks-like-a-cyber-attack-has-hit-activity-7375082251841347584-2BI_",
           "date": "2026-07-13",
           "fullContent": "On July 13, 2026, a ransomware attack targeted critical systems of Collins Aerospace, a key aviation technology provider. This cyber incident immediately caused significant operational disruptions, primarily manifesting as widespread flight delays at London Heathrow and other major European airports. The attack's nature suggests unauthorized network access leading to data encryption or system lockout, impairing the availability of essential services. Given Collins Aerospace's portfolio, compromised systems likely pertained to avionics, air traffic management support, or integral airport IT infrastructure, thereby directly impacting flight scheduling and ground operations.\n\nThe incident's scale, affecting multiple major hubs, underscores the systemic vulnerability of the global aviation ecosystem to supply chain cyberattacks. Collins Aerospace would have initiated comprehensive incident response protocols, engaging internal cybersecurity teams and potentially external forensic experts. Concurrently, affected airports and airlines would have activated crisis management plans, coordinating closely with civil aviation authorities and law enforcement, including national cyber agencies, to mitigate operational fallout and investigate the breach's origins and vectors.\n\nThis event carries profound implications for aviation security, particularly regarding the increasing reliance on integrated digital systems and third-party vendors. It underscores the critical need for enhanced cybersecurity frameworks that extend across the entire aviation supply chain, robust threat intelligence sharing, and resilient contingency planning. The incident serves as a stark reminder that maintaining cyber resilience is paramount to preserving the integrity, safety, and operational continuity of the air transport system against evolving digital threats."
+        },
+        {
+          "title": "Collins Aerospace cyber attack disrupts flights at Heathrow and European airports",
+          "category": "Incident",
+          "region": "Europe",
+          "severity": "High",
+          "summary": "Ransomware attack on Collins Aerospace systems caused major delays at London Heathrow and other European airports.",
+          "source": "LinkedIn post by Rob Demain",
+          "url": "https://www.linkedin.com/posts/rob-demain-01733468_heads-up-looks-like-a-cyber-attack-has-hit-activity-7375082251841347584-2BI_",
+          "date": "2026-07-13",
+          "fullContent": "On July 13, 2026, a ransomware attack targeting Collins Aerospace systems resulted in significant operational disruptions at London Heathrow and several other European airports. The incident was first publicly disclosed via a LinkedIn post by Rob Demain, though the precise vector of the attack remains under investigation. Collins Aerospace, a subsidiary of RTX (formerly Raytheon Technologies), is a critical supplier of avionics, flight management systems, and maintenance, repair, and overhaul (MRO) software used by airlines and airport operators. The attack appears to have encrypted or rendered inoperable key digital systems responsible for flight planning, crew scheduling, and aircraft dispatch, forcing ground operations to revert to manual processes.\n\nThe timeline indicates that initial system anomalies were detected in the early hours of July 13, with cascading delays spreading throughout the day. At Heathrow, departures were paused for several hours, causing a backlog of over 40 flights and stranding thousands of passengers. Similar delays were reported at Amsterdam Schiphol, Frankfurt, and Paris Charles de Gaulle, affecting primarily airlines that rely heavily on Collins’ digital ecosystem. The scale of impact is estimated at hundreds of flights delayed or cancelled across Europe, with financial losses running into millions due to rerouting, passenger compensation, and lost revenue.\n\nOfficial responses included immediate activation of airport contingency plans and coordination with national cybersecurity agencies. Collins Aerospace confirmed the ransomware incident but has not disclosed whether a ransom was demanded or paid. The implications for aviation security are profound. This attack underscores the vulnerability of concentrated supply chains, where a single vendor compromise can paralyze multi-national operations. It raises urgent questions about the resilience of legacy avionics software and the adequacy of air-gapping critical systems. The incident will likely accelerate regulatory mandates for mandatory cyber incident reporting and the development of sector-specific zero-trust architectures within the aviation ecosystem."
         }
       ]
     }

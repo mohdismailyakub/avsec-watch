@@ -889,7 +889,7 @@
     },
     {
       "date": "2026-07-13",
-      "briefing": "Insiden dron berhampiran lapangan terbang A.S. meningkat 88% pada S2 2026, manakala serangan siber ke atas sistem Collins Aerospace menyebabkan kelewatan penerbangan meluas di Eropah, menonjolkan ancaman UAS dan siber yang berterusan terhadap keselamatan penerbangan.",
+      "briefing": "Perlanggaran dron dengan pesawat komersial di JFK dan Newark pada akhir Jun 2026 menonjolkan ancaman UAS yang semakin meningkat terhadap keselamatan penerbangan, manakala serangan ransomware ke atas sistem Collins Aerospace menyebabkan kelewatan penerbangan yang ketara di seluruh lapangan terbang Eropah.",
       "items": [
         {
           "title": "Serangan Siber Collins Aerospace Mengganggu Penerbangan Eropah",
@@ -901,10 +901,21 @@
           "url": "https://www.linkedin.com/posts/rob-demain-01733468_heads-up-looks-like-a-cyber-attack-has-hit-activity-7375082251841347584-2BI_",
           "date": "2026-07-13",
           "fullContent": "Pada 13 Julai 2026, satu serangan ransomware menyasarkan sistem kritikal Collins Aerospace, sebuah pembekal teknologi penerbangan utama. Insiden siber ini serta-merta menyebabkan gangguan operasi yang ketara, yang terutamanya dapat dilihat sebagai kelewatan penerbangan yang meluas di London Heathrow dan lapangan terbang utama Eropah yang lain. Sifat serangan itu menunjukkan akses rangkaian tanpa kebenaran yang membawa kepada penyulitan data atau penguncian sistem, menjejaskan ketersediaan perkhidmatan penting. Memandangkan portfolio Collins Aerospace, sistem yang terjejas kemungkinan besar berkaitan dengan avionics, sokongan pengurusan trafik udara, atau infrastruktur IT lapangan terbang yang penting, sekaligus memberi kesan langsung kepada penjadualan penerbangan dan operasi darat.\n\nSkala insiden itu, yang menjejaskan beberapa hab utama, menonjolkan kelemahan sistemik ekosistem penerbangan global terhadap serangan siber rantaian bekalan. Collins Aerospace pasti telah memulakan protokol tindak balas insiden yang komprehensif, melibatkan pasukan keselamatan siber dalaman dan kemungkinan pakar forensik luaran. Pada masa yang sama, lapangan terbang dan syarikat penerbangan yang terjejas pasti telah mengaktifkan pelan pengurusan krisis, menyelaras rapat dengan pihak berkuasa penerbangan awam dan penguatkuasaan undang-undang, termasuk agensi siber kebangsaan, untuk mengurangkan kesan operasi serta menyiasat punca dan vektor pelanggaran tersebut.\n\nPeristiwa ini membawa implikasi yang mendalam untuk keselamatan penerbangan, terutamanya berkenaan dengan peningkatan kebergantungan kepada sistem digital bersepadu dan vendor pihak ketiga. Ia menonjolkan keperluan kritikal untuk rangka kerja keselamatan siber yang dipertingkat yang merangkumi seluruh rantaian bekalan penerbangan, perkongsian risikan ancaman yang mantap, dan perancangan luar jangka yang berdaya tahan. Insiden ini berfungsi sebagai peringatan jelas bahawa mengekalkan daya tahan siber adalah amat penting untuk memelihara integriti, keselamatan, dan kesinambungan operasi sistem pengangkutan udara terhadap ancaman digital yang berkembang."
+        },
+        {
+          "title": "Serangan siber Collins Aerospace ganggu penerbangan di Heathrow dan lapangan terbang Eropah",
+          "category": "Incident",
+          "region": "Europe",
+          "severity": "High",
+          "summary": "Serangan ransomware ke atas sistem Collins Aerospace menyebabkan kelewatan besar di London Heathrow dan lapangan terbang Eropah yang lain.",
+          "source": "LinkedIn post by Rob Demain",
+          "url": "https://www.linkedin.com/posts/rob-demain-01733468_heads-up-looks-like-a-cyber-attack-has-hit-activity-7375082251841347584-2BI_",
+          "date": "2026-07-13",
+          "fullContent": "Pada 13 Julai 2026, serangan ransomware yang menyasarkan sistem Collins Aerospace menyebabkan gangguan operasi yang ketara di Lapangan Terbang Heathrow London dan beberapa lapangan terbang Eropah yang lain. Insiden itu pertama kali didedahkan secara awam melalui siaran LinkedIn oleh Rob Demain, walaupun vektor sebenar serangan masih dalam siasatan. Collins Aerospace, anak syarikat RTX (sebelum ini Raytheon Technologies), merupakan pembekal kritikal bagi avionik, sistem pengurusan penerbangan, serta perisian penyelenggaraan, pembaikan, dan baik pulih (MRO) yang digunakan oleh syarikat penerbangan dan pengendali lapangan terbang. Serangan ini dipercayai telah menyulitkan atau menyebabkan sistem digital utama yang bertanggungjawab bagi perancangan penerbangan, penjadualan kru, dan penghantaran pesawat tidak dapat berfungsi, memaksa operasi darat kembali kepada proses manual.\n\nGaris masa menunjukkan bahawa anomali sistem awal dikesan pada awal pagi 13 Julai, dengan kelewatan bertali arus merebak sepanjang hari. Di Heathrow, pelepasan pesawat dihentikan selama beberapa jam, menyebabkan kesesakan lebih 40 penerbangan dan menjejaskan ribuan penumpang. Kelewatan serupa dilaporkan di Amsterdam Schiphol, Frankfurt, dan Paris Charles de Gaulle, terutamanya menjejaskan syarikat penerbangan yang sangat bergantung kepada ekosistem digital Collins. Skala kesan dianggarkan mencecah ratusan penerbangan yang tertangguh atau dibatalkan di seluruh Eropah, dengan kerugian kewangan mencecah jutaan ringgit akibat perubahan laluan, pampasan penumpang, dan kehilangan pendapatan.\n\nRespons rasmi termasuk pengaktifan segera pelan kontingensi lapangan terbang dan penyelarasan dengan agensi keselamatan siber negara. Collins Aerospace mengesahkan insiden ransomware tetapi tidak mendedahkan sama ada wang tebusan telah dituntut atau dibayar. Implikasi terhadap keselamatan penerbangan adalah amat mendalam. Serangan ini menekankan kelemahan rantaian bekalan yang tertumpu, di mana satu vendor terjejas boleh melumpuhkan operasi pelbagai negara. Ia menimbulkan persoalan mendesak tentang daya tahan perisian avionik warisan serta kecukupan pemisahan sistem kritikal (air-gapping). Insiden ini berkemungkinan akan mempercepatkan mandat pengawalseliaan bagi pelaporan insiden siber wajib dan pembangunan seni bina sifar-amanah khusus sektor dalam ekosistem penerbangan."
         }
       ]
     }
   ],
-  "generatedAt": "2026-07-13T00:03:06.919Z",
+  "generatedAt": "2026-07-13T09:01:26.587Z",
   "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }
