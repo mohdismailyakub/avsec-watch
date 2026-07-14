@@ -2,15 +2,15 @@
   "categories": {
     "Incident": [
       {
-        "title": "Collins Aerospace Cyberattack Disrupts European Flights",
+        "title": "JetBlue Flight Strikes Drone at JFK; Newark Near-Miss Days Prior",
         "category": "Incident",
-        "region": "Europe",
+        "region": "North America",
         "severity": "High",
-        "summary": "Ransomware attack on Collins Aerospace systems caused significant delays at Heathrow and other European airports.",
-        "source": "LinkedIn",
-        "url": "https://www.linkedin.com/posts/rob-demain-01733468_heads-up-looks-like-a-cyber-attack-has-hit-activity-7375082251841347584-2BI_",
-        "date": "2026-07-13",
-        "fullContent": "On July 13, 2026, a ransomware attack targeted critical systems of Collins Aerospace, a key aviation technology provider. This cyber incident immediately caused significant operational disruptions, primarily manifesting as widespread flight delays at London Heathrow and other major European airports. The attack's nature suggests unauthorized network access leading to data encryption or system lockout, impairing the availability of essential services. Given Collins Aerospace's portfolio, compromised systems likely pertained to avionics, air traffic management support, or integral airport IT infrastructure, thereby directly impacting flight scheduling and ground operations.\n\nThe incident's scale, affecting multiple major hubs, underscores the systemic vulnerability of the global aviation ecosystem to supply chain cyberattacks. Collins Aerospace would have initiated comprehensive incident response protocols, engaging internal cybersecurity teams and potentially external forensic experts. Concurrently, affected airports and airlines would have activated crisis management plans, coordinating closely with civil aviation authorities and law enforcement, including national cyber agencies, to mitigate operational fallout and investigate the breach's origins and vectors.\n\nThis event carries profound implications for aviation security, particularly regarding the increasing reliance on integrated digital systems and third-party vendors. It underscores the critical need for enhanced cybersecurity frameworks that extend across the entire aviation supply chain, robust threat intelligence sharing, and resilient contingency planning. The incident serves as a stark reminder that maintaining cyber resilience is paramount to preserving the integrity, safety, and operational continuity of the air transport system against evolving digital threats."
+        "summary": "A JetBlue plane collided with a drone approaching JFK; a United flight had a near-miss at Newark on June 26.",
+        "source": "ASIS International",
+        "url": "https://www.asisonline.org/security-management-magazine/latest-news/today-in-security/2026/june/drone-jetblue-jfk-collision-droneshield-2026-report",
+        "date": "2026-07-14",
+        "fullContent": "On July 12, 2026, a JetBlue Airways aircraft, operating as Flight 1802, struck an unidentified unmanned aerial system (UAS) while on final approach to John F. Kennedy International Airport (JFK). The incident resulted in visible damage to the aircraft’s leading edge, though no injuries were reported among the 134 passengers and crew. The flight, originating from Fort Lauderdale, landed safely. Separately, a United Airlines flight had experienced a near-miss with a drone at Newark Liberty International Airport on June 26, 2026, while descending through approximately 2,000 feet. That incident did not result in any contact or damage. The temporal proximity of these two events in major New York metropolitan airspace underscores an escalating threat pattern. The JetBlue collision is the first confirmed UAS strike on a commercial passenger jet within United States airspace, marking a significant escalation in risk. Technical details reveal that the JetBlue impact occurred at an altitude of around 1,500 feet, well within controlled airspace, suggesting deliberate or reckless operation. The drone involved was not recovered, preventing post-impact forensic analysis. The Federal Aviation Administration (FAA) immediately imposed a temporary flight restriction over JFK and launched an investigation in coordination with the FBI. The Port Authority of New York and New Jersey also reviewed airspace surveillance data. The near-miss at Newark just two weeks prior had already prompted increased patrols and public advisories. The implications for aviation security are profound: these incidents validate long-standing concerns that current counter-UAS detection and mitigation technologies are insufficient for high-density airspace. They call for accelerated deployment of UAS detection systems at major airports, mandatory remote identification compliance, and enhanced legal deterrence against recreational drone operators. Furthermore, the collisions highlight vulnerabilities in air traffic control procedures during visual approach phases and underscore the need for robust pilot training protocols for UAS avoidance."
       }
     ],
     "Regulatory": [
@@ -40,7 +40,7 @@
       }
     ]
   },
-  "briefing": "Drone collisions with commercial aircraft at JFK and Newark in late June 2026 highlight escalating UAS threats to aviation safety, while a ransomware attack on Collins Aerospace systems caused significant flight delays across European airports.",
-  "generatedAt": "2026-07-13T09:01:41.070Z",
+  "briefing": "Recent weeks have seen a major JetBlue drone strike at JFK and a near-miss at Newark, alongside a fresh cyberattack on Collins Aerospace systems causing European airport delays, highlighting escalating drone and cyber threats to aviation.",
+  "generatedAt": "2026-07-14T00:02:08.514Z",
   "lastProvider": "DeepSeek V4-Flash + Tavily"
 }
