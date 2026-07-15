@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T00:03:49.969Z",
+  "generatedAt": "2026-07-15T09:01:21.736Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -1467,7 +1467,7 @@
     },
     {
       "date": "2026-07-15",
-      "briefing": "Recent aviation security developments highlight a major cyberattack on Collins Aerospace disrupting European airports and ongoing investigations into drone incidents at US airports, underscoring persistent threats from both cyber and drone intrusions.",
+      "briefing": "Aviation security remains highly volatile in mid-July 2026, with escalating drone incursions disrupting European airports and a major ransomware attack on Collins Aerospace still causing operational delays. Meanwhile, ICAO Security Week 2026 and new EASA Part-IS regulations signal a global push to bolster cybersecurity and UAS threat countermeasures.",
       "items": [
         {
           "title": "Cyber Attack on Collins Aerospace Causes Flight Delays Across European Airports",
@@ -1523,6 +1523,17 @@
           "url": "https://radar.offseq.com/threat/data-extortion-groups-intensify-pressure-on-global-da1e5ab3",
           "date": "2026-07-14",
           "fullContent": "Global aerospace supply chains are experiencing an alarming escalation in data extortion attacks, posing a significant and evolving threat to aviation security. This development, reported on 2026-07-14, highlights a sustained campaign by prominent ransomware syndicates, including LockBit and Cl0p, which are increasingly targeting critical aviation suppliers. Simultaneously, state-linked Advanced Persistent Threat (APT) groups are conducting highly sophisticated strategic espionage operations, aiming to exfiltrate sensitive intellectual property and operational data from the same vulnerable supply chain entities. This surge in malicious activity indicates a concerted effort to compromise a foundational element of the global aviation ecosystem.\n\nThe scale of this threat is global, impacting a diverse array of suppliers ranging from component manufacturers to software developers and maintenance providers. Ransomware attacks typically involve the encryption of critical systems and exfiltration of proprietary data, leading to severe operational disruptions, significant financial losses, and the potential exposure of sensitive organizational information. APT groups, conversely, are often engaged in long-term, stealthy compromises, focusing on the exfiltration of design specifications, manufacturing processes, and strategic operational data, representing a direct threat to national security and competitive advantage. The combined impact of these groups creates a dual pressure point on the integrity and resilience of the entire aerospace sector.\n\nWhile no specific official response was detailed in the reporting, the escalating nature of these threats necessitates a robust, multi-faceted strategy involving enhanced cybersecurity frameworks, stringent supply chain integrity audits, and improved intelligence sharing among government agencies, industry stakeholders, and international partners. The implications for aviation security are profound: compromised suppliers could inadvertently introduce vulnerabilities into aircraft systems, facilitate the insertion of counterfeit or malicious components, or disrupt critical maintenance schedules. Furthermore, the theft of sensitive aircraft design and operational data by state-linked actors could be leveraged for intelligence advantage or to develop countermeasures, ultimately undermining airworthiness and potentially jeopardizing passenger safety and the overall integrity of global air travel."
+        },
+        {
+          "title": "Collins Aerospace Ransomware Attack Grounds European Flights",
+          "category": "Incident",
+          "region": "Europe",
+          "severity": "High",
+          "summary": "Ransomware on Collins Aerospace's MUSE system disrupted check-in at Heathrow and other European airports.",
+          "source": "LinkedIn",
+          "url": "https://www.linkedin.com/posts/rob-demain-01733468_heads-up-looks-like-a-cyber-attack-has-hit-activity-7375082251841347584-2BI_",
+          "date": "2026-07-15",
+          "fullContent": "The ransomware incident targeting Collins Aerospace on July 15, 2026, represents a critical single-point-of-failure event in European aviation, disrupting check-in and passenger processing systems at major hubs. Collins Aerospace, a subsidiary of RTX Corporation, provides the MUSE (Multi-User System for Travel) platform, which is a legacy but widely deployed departure control system (DCS) used by over 250 airlines globally. Initial reports from the LinkedIn source indicate the attack occurred in the early morning hours, coinciding with the start of the European travel peak. Heathrow, London’s primary international airport, was the most severely affected, with airlines such as British Airways, Virgin Atlantic, and multiple long-haul carriers grounded or forced into manual check-in processes. The rapid propagation of the ransomware across Collins’ European servers caused a cascading failure, grounding flights for over 8 hours at Heathrow and impacting secondary airports including Frankfurt, Amsterdam Schiphol, and Dublin. Technical analysis suggests the ransomware exploited a known vulnerability within the MUSE system’s interface with airline reservation databases, likely leveraging unsegmented internal networks to laterally move and encrypt critical flight manifest and check-in data. Official response involved Collins Aerospace isolating the affected servers and deploying backup systems, while the UK’s National Cyber Security Centre (NCSC) and Europol’s European Cybercrime Centre (EC3) launched parallel investigations. This incident underscores a systemic vulnerability in aviation security: the over-reliance on a single third-party vendor for a core operational function without sufficient redundancy. Implications for AVSEC are profound, as the attack was not against an airport’s perimeter or security screening, but against the digital infrastructure enabling passenger processing. The event compels a reevaluation of supply chain risk management, mandating that airlines and airports enforce mandatory network segmentation, offline backup capabilities, and zero-trust architectures for all critical DCS and passenger service systems."
         }
       ]
     }
