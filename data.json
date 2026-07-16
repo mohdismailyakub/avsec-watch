@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T00:01:16.273Z",
+  "generatedAt": "2026-07-16T09:02:10.791Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -1539,9 +1539,43 @@
     },
     {
       "date": "2026-07-16",
-      "briefing": "Drone incursions near US airports nearly doubled in Q2 2026, while a JetBlue drone collision at JFK highlights escalating UAS risks. Concurrently, European airports faced major disruptions from a supply-chain cyberattack, underscoring persistent cybersecurity threats to aviation.",
-      "items": []
+      "briefing": "The global aviation security landscape is currently focused on mitigating persistent drone threats, with a recent drone attack violating Iraqi airspace near Erbil International Airport prompting strong condemnation. Concurrently, international efforts are targeting illicit procurement networks using aviation channels for drone components, while experts advocate for comprehensive, integrated counter-drone strategies to safeguard airports worldwide.",
+      "items": [
+        {
+          "title": "Iraqi PM Condemns Drone Attack Violating Erbil Airspace",
+          "category": "Incident",
+          "region": "Middle East",
+          "severity": "High",
+          "summary": "Iraqi Prime Minister Ali al-Zaidi condemned a recent drone attack violating airspace over Erbil, near the international airport, amid regional tensions.",
+          "source": "The Uninvited Press",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEyogTzOMtPNpdOwGZ-qTWIxIeZw2nbaZav4dT7KtRHEkzh07B0EA2VX6tsq9DpZpym06ZvI2ei6itJfuhGqw23KnE5TM0IR-q8hik-HotL-cSANOlJrdRHOCFutacC9p8UlS4L7haEBrdZ0qlRA4WSPRqVEtaWiMuraahotX0xi03_8V5xrOQWOqIPwK0TRdm74h35f5VzzigcWw==",
+          "date": "2026-07-16",
+          "fullContent": "On July 16, 2026, Erbil’s airspace, specifically near Erbil International Airport (EBL), experienced a drone attack, prompting a strong condemnation from Iraqi Prime Minister Ali al-Zaidi. The incident occurred amidst broader regional tensions, signaling a deliberate act against critical civilian infrastructure. While the perpetrators remain unnamed, the targeting of airspace near an international airport underscores a significant and evolving threat landscape.\n\nThis incident represents a direct security breach and a substantial risk to civil aviation operations at EBL. The scale of impact includes potential disruption to flight schedules, heightened security alerts, and a diminished sense of safety for passengers and airlines operating in the region. Technical details, though unspecified, typically involve commercially available or modified off-the-shelf (COTS) drones, often carrying explosive payloads, a common tactic for non-state actors in the Middle East to inflict damage or project influence. Such proximity to an airport poses immediate dangers to aircraft during takeoff or landing, air traffic control systems, and ground infrastructure.\n\nPrime Minister al-Zaidi's official condemnation highlights the Iraqi government’s concern over national sovereignty and the security implications for vital civilian assets. For aviation security, this development necessitates an urgent re-evaluation of counter-UAS (C-UAS) capabilities and air defense systems around Erbil International Airport and other critical aviation infrastructure in Iraq. It underscores the persistent challenge posed by sophisticated drone threats from malicious actors, demanding enhanced intelligence sharing, stricter airspace control, and continuous risk assessments. The ongoing regional instability suggests a heightened probability of similar future incidents, requiring proactive and adaptive security measures to mitigate risks to air travel."
+        },
+        {
+          "title": "US Sanctions Network for Illicit Aviation Procurement of Drone Components",
+          "category": "Regulatory",
+          "region": "North America",
+          "severity": "Medium",
+          "summary": "US sanctioned a network accused of using aviation and logistics firms in Iran, Italy, and Russia to procure drone components for the IRGC.",
+          "source": "The Jerusalem Post",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHr6vc3JUDlto6CzZJFG5Xl7w3vFLlqi3jskYjATK6qVD0uZGd9bsSvXsW2MJ8R8Hw8fgJiHoCg1gi3sH70mV61I4C2jH-Ej52puQwAleGPJEZQU-xh8U4nP0QgkUh4oP1fUPBatdN3poRzNYP7MMjdVg==",
+          "date": "2026-07-16",
+          "fullContent": "On July 16, 2026, the United States imposed sanctions on a sophisticated network implicated in the illicit procurement of drone components. This network leveraged aviation and logistics companies situated across Iran, Italy, and Russia to funnel critical parts to the Islamic Revolutionary Guard Corps (IRGC), a designated terrorist organization. The sanctions aim to disrupt the IRGC's ability to acquire components necessary for its Unmanned Aerial Vehicle (UAV) program, a key element in its regional destabilization efforts.\n\nThe sanctioned network's activities spanned multiple countries, highlighting a significant challenge in controlling dual-use technologies through complex global supply chains. While specific component details were not disclosed, \"drone components\" typically encompass specialized items such as navigation systems, propulsion units, optical sensors, and flight control modules, all critical for advanced UAV operations. The use of legitimate aviation and logistics firms indicates a deliberate strategy to obscure the end-user and evade export controls, leveraging established air cargo routes and customs procedures. This abuse allows for the rapid movement of sensitive materials, posing a direct threat to international security and the integrity of global trade.\n\nThe US sanctions represent a forceful official response to counter the proliferation of advanced weaponry and curb the IRGC's operational capabilities. The Jerusalem Post reported the development, underscoring the international concern. For aviation security, this incident carries serious implications. It reinforces the persistent threat of illicit procurement exploiting legitimate air cargo networks, demanding enhanced vigilance and intelligence sharing among international partners. Security protocols concerning cargo screening, shipper verification, and freight forwarder due diligence must be continually strengthened to identify misdeclared or covert shipments of high-risk components. Furthermore, the involvement of seemingly legitimate aviation entities in multiple jurisdictions necessitates improved insider threat mitigation programs and a deeper understanding of beneficial ownership across the logistics sector to prevent the misuse of aviation assets for hostile state-sponsored activities."
+        },
+        {
+          "title": "Experts Urge Integrated Layered Defense Against Global Airport Drone Threat",
+          "category": "Threat|Technology|Regulatory",
+          "region": "Worldwide",
+          "severity": "Medium",
+          "summary": "Aviation security experts advocate a comprehensive counter-drone ecosystem combining regulation, technology, intelligence, and coordinated response to tackle increasing airport disruptions.",
+          "source": "Aviation Jeta",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFGHyM7VnMLc9UleG3rJSUuukx0DfhukrTR31VKWH7sKL5MFlTp-k09Pm3aVh3Rr-QosKXEF5nPE97GrVwr4uG-TS2RhgOwIM43apgdbyQzTsPZngHveASPVvwBKecM4w73ydP5TB1nnuMjng3Bm1MRqQvqEzwODcj59A==",
+          "date": "2026-07-16",
+          "fullContent": "On 2026-07-16, aviation security experts, as reported by Aviation Jeta, issued a critical call to action, urging the immediate implementation of an integrated layered defense against the pervasive global airport drone threat. This development highlights the escalating concerns within the AVSEC community regarding the widespread and increasing airport disruptions attributed to unauthorized unmanned aerial system (UAS) activity worldwide, signaling a significant evolution in the perceived threat landscape.\n\nThe experts advocate for a comprehensive \"counter-drone ecosystem,\" which encompasses four primary pillars: strengthened regulatory frameworks to control drone usage near critical infrastructure, the deployment of advanced technological solutions for detection and mitigation, enhanced intelligence gathering and analysis to understand threat actor capabilities and intentions, and meticulously coordinated response protocols among airports, law enforcement, and air traffic control. This strategic approach aims to move beyond reactive measures to establish a proactive defense posture, necessitating a blend of sophisticated sensor arrays, non-kinetic countermeasures, and robust data analytics to address the diverse technical capabilities of modern drones.\n\nWhile this is currently an expert recommendation, rather than an official governmental directive, its implications for aviation security are substantial. It underscores the urgent need for aviation authorities and operators globally to re-evaluate existing security paradigms and invest significantly in specialized counter-UAS infrastructure and training. The focus on a unified, multi-faceted defense implies a future where AVSEC operations will demand closer inter-agency collaboration, standardized global regulations, and continuous technological updates to stay ahead of evolving drone capabilities. This proactive stance is deemed essential to prevent major operational gridlock and protect passengers and assets from deliberate or accidental drone-related incidents, profoundly shaping future aviation security strategies."
+        }
+      ]
     }
   ],
-  "lastProvider": "DeepSeek V4-Flash + Tavily"
+  "lastProvider": "Gemini (2.5 Flash)"
 }
