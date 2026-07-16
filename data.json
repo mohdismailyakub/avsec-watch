@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T09:01:21.736Z",
+  "generatedAt": "2026-07-16T00:01:16.273Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -1536,6 +1536,11 @@
           "fullContent": "The ransomware incident targeting Collins Aerospace on July 15, 2026, represents a critical single-point-of-failure event in European aviation, disrupting check-in and passenger processing systems at major hubs. Collins Aerospace, a subsidiary of RTX Corporation, provides the MUSE (Multi-User System for Travel) platform, which is a legacy but widely deployed departure control system (DCS) used by over 250 airlines globally. Initial reports from the LinkedIn source indicate the attack occurred in the early morning hours, coinciding with the start of the European travel peak. Heathrow, London’s primary international airport, was the most severely affected, with airlines such as British Airways, Virgin Atlantic, and multiple long-haul carriers grounded or forced into manual check-in processes. The rapid propagation of the ransomware across Collins’ European servers caused a cascading failure, grounding flights for over 8 hours at Heathrow and impacting secondary airports including Frankfurt, Amsterdam Schiphol, and Dublin. Technical analysis suggests the ransomware exploited a known vulnerability within the MUSE system’s interface with airline reservation databases, likely leveraging unsegmented internal networks to laterally move and encrypt critical flight manifest and check-in data. Official response involved Collins Aerospace isolating the affected servers and deploying backup systems, while the UK’s National Cyber Security Centre (NCSC) and Europol’s European Cybercrime Centre (EC3) launched parallel investigations. This incident underscores a systemic vulnerability in aviation security: the over-reliance on a single third-party vendor for a core operational function without sufficient redundancy. Implications for AVSEC are profound, as the attack was not against an airport’s perimeter or security screening, but against the digital infrastructure enabling passenger processing. The event compels a reevaluation of supply chain risk management, mandating that airlines and airports enforce mandatory network segmentation, offline backup capabilities, and zero-trust architectures for all critical DCS and passenger service systems."
         }
       ]
+    },
+    {
+      "date": "2026-07-16",
+      "briefing": "Drone incursions near US airports nearly doubled in Q2 2026, while a JetBlue drone collision at JFK highlights escalating UAS risks. Concurrently, European airports faced major disruptions from a supply-chain cyberattack, underscoring persistent cybersecurity threats to aviation.",
+      "items": []
     }
   ],
   "lastProvider": "DeepSeek V4-Flash + Tavily"
