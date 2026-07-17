@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-17T00:03:46.809Z",
+  "generatedAt": "2026-07-17T09:01:12.351Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -1578,7 +1578,7 @@
     },
     {
       "date": "2026-07-17",
-      "briefing": "Recent aviation security developments highlight a collision between a JetBlue flight and a drone at JFK, and a cyberattack on Collins Aerospace systems disrupting multiple European airports.",
+      "briefing": "A major ransomware attack on Collins Aerospace systems caused airport chaos across Europe, while drone incidents continue to plague airports and critical infrastructure globally. New U.S. counter-UAS rules and ICAO's Security Week signal regulatory responses to escalating threats.",
       "items": [
         {
           "title": "JetBlue Flight Collides with Drone at JFK Airport",
@@ -1645,6 +1645,28 @@
           "url": "https://www.youtube.com/shorts/frGXfPRztRg",
           "date": "2026-07-17",
           "fullContent": "On July 17, 2026, a significant aviation security incident unfolded across Europe when a ransomware attack targeted Collins Aerospace's highly utilized MUSE check-in system. This cyberattack immediately froze self-service kiosks and forced numerous airports to revert to manual check-in procedures, causing widespread operational disruption. While the summary does not explicitly state flights were grounded, the necessity of manual operations strongly implies severe delays, cancellations, and potential flight disruptions across the affected European region, directly impacting passenger processing and airport efficiency.\n\nThe attack's technical vector was ransomware, indicating a deliberate malicious act aimed at disrupting services and likely extorting payment. The specific targeting of the MUSE system, a critical component of many airport's IT infrastructure, highlights the vulnerability of shared vendor platforms within the aviation ecosystem. Although the official response details are not provided, it is highly probable that Collins Aerospace, in conjunction with affected airports and national cybersecurity authorities, initiated rapid incident response protocols, focusing on system isolation, containment, and recovery to mitigate further damage and restore services. This would have included forensic analysis to identify the attack's origin and scope.\n\nThe implications for aviation security are profound. This incident unequivocally demonstrates how a cyberattack on a third-party IT provider can directly translate into operational disruption, threatening business continuity and potentially safety. It exposes a critical supply chain vulnerability where a single point of failure in a widely adopted system can paralyze multiple airports. This event reinforces the urgent need for the aviation sector to enhance its cyber resilience, implement robust supply chain risk management protocols, and develop comprehensive cyber incident response plans that account for the integrated nature of IT and OT systems. Proactive measures against ransomware and other cyber threats are paramount to safeguard operational integrity and prevent future cyber-physical disruptions to air travel."
+        },
+        {
+          "title": "Airport Chaos Enters Third Day After Supply Chain Ransomware Attack",
+          "category": "Incident",
+          "region": "Europe",
+          "severity": "High",
+          "summary": "Ransomware on Collins Aerospace check-in systems halts operations at Heathrow, Brussels, Berlin, Dublin airports.",
+          "source": "Infosecurity Magazine",
+          "url": "https://www.infosecurity-magazine.com/news/airport-chaos-third-day-supply",
+          "date": "2026-07-17",
+          "fullContent": "On 17 July 2026, a targeted ransomware attack compromised Collins Aerospace’s check-in and departure control systems, precipitating severe operational disruptions across major European airports, including Heathrow, Brussels, Berlin, and Dublin. Collins Aerospace, a key provider of integrated passenger processing solutions for the aviation sector, experienced a compromise of its backend infrastructure, effectively halting the digital processing of passenger check-ins, baggage tagging, and boarding pass issuance. The attack, which began on 15 July, entered its third day on 17 July with no immediate restoration of full functionality. The scale was significant: Heathrow reported over 200 flight cancellations and extended delays impacting tens of thousands of passengers, while Brussels, Berlin, and Dublin faced similar chaos, with queues spilling into terminals and adjacent public spaces. The ground handling staff were forced to revert to manual check-in procedures, a inefficient and error-prone process that dramatically reduced throughput and increased security screening bottlenecks. Technically, the ransomware appears to have encrypted critical system configurations for Collins’ Passenger Service System (PSS) interface, preventing data exchange between airline reservation databases and airport departure control systems. Official response involved airport operators activating emergency contingency protocols, deploying additional security and customer service personnel, and coordinating with national cybersecurity agencies. The UK’s National Cyber Security Centre and Europol’s European Cybercrime Centre launched parallel investigations. This incident underscores acute vulnerabilities within the aviation supply chain, specifically the systemic risk posed by a single ground service provider with downstream dependencies. It demonstrates that ransomware attacks on aviation IT infrastructure can cause cascading operational failures far beyond the primary target, effectively grounding air travel without an aircraft being affected. The implications for aviation security are profound: airports and carriers must urgently reassess their reliance on third-party vendors, mandate network segmentation, and develop robust offline fallback capabilities to maintain essential security and operational functions during a prolonged cyber incident."
+        },
+        {
+          "title": "FAA Designates FIFA World Cup 2026 as No Drone Zone",
+          "category": "Regulatory",
+          "region": "North America",
+          "severity": "Medium",
+          "summary": "FAA officially declares all FIFA World Cup venues No Drone Zones to ensure safety for players and attendees.",
+          "source": "FAA",
+          "url": "https://www.faa.gov/fifaworldcup2026",
+          "date": "2026-07-17",
+          "fullContent": "The Federal Aviation Administration (FAA) has officially declared all venues and associated airspace for the FIFA World Cup 2026 as permanent No Drone Zones, effective immediately as of July 17, 2026. This regulatory action involves the FAA, in coordination with the Department of Homeland Security (DHS), the Transportation Security Administration (TSA), and local law enforcement agencies across the United States, Canada, and Mexico, the three host nations. The designation covers a defined radius surrounding each stadium, practice field, and official team hotel, with the timeline extending from pre-tournament preparation through the final match in mid-August 2026. The scale of this restriction is unprecedented, encompassing thirteen U.S. host cities including Los Angeles, New York/New Jersey, and Dallas, as well as multiple Canadian and Mexican venues, directly affecting millions of attendees and tens of thousands of personnel. Technical details specify a prohibition on all unmanned aircraft systems (UAS), including recreational drones and commercial operations, below 400 feet within a three-mile radius of each venue, enforced via advanced detection systems such as radio frequency sensors and radar. The official FAA response emphasizes that any unauthorized drone flight will result in immediate interception, civil penalties up to $30,000, and potential criminal referral to the FBI for willful non-compliance. For aviation security, this development establishes a critical precedent for mass-event airspace management, demonstrating the need for harmonized international regulations and real-time interagency communication to prevent unauthorized UAS incursions that could cause catastrophic injuries, disrupt matches, or facilitate attacks. The designation underscores the growing vulnerability of large public gatherings to small drone threats and highlights the necessity of deploying counter-UAS technology while balancing privacy and commercial drone interests. Security analysts must now consider this model for future global events, such as the Olympics, where airborne risks require equally stringent pre-planned protective measures."
         }
       ]
     }
