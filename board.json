@@ -15,26 +15,15 @@
     ],
     "Regulatory": [
       {
-        "title": "European Union Part-IS Information Security Rules Take Effect",
+        "title": "CAAM Hosts EASA Part-IS Cybersecurity Workshop in Malaysia",
         "category": "Regulatory",
-        "region": "Europe",
+        "region": "Asia-Pacific",
         "severity": "Medium",
-        "summary": "New EU rules on information security in civil aviation became applicable on 22 February 2026 for air operators.",
-        "source": "ILent (Netherlands)",
-        "url": "https://english.ilent.nl/topics/aviation/part-is",
-        "date": "2026-07-17",
-        "fullContent": "On 22 February 2026, the European Union’s Part-IS (Information Security) regulations became fully applicable for air operators, marking a significant expansion of aviation security (AVSEC) obligations into the cyber domain. This regulatory development, confirmed by the Dutch authority ILent, mandates that all EU-based air operators implement a systematic Information Security Management System (ISMS) to protect critical aeronautical data and systems from unauthorized access, interference, and cyber threats. The rules, originally adopted under Commission Implementing Regulation (EU) 2023/203, apply to operators holding an Air Operator Certificate (AOC) within the EU, as well as to third-country operators conducting flights to, from, or within the Union for relevant activities. The timeline saw a preparatory phase beginning in early 2024, with full compliance required by February 2026, affecting approximately 800 airlines and hundreds of maintenance organizations across the European Economic Area. The scale of impact is substantial, as Part-IS requires operators to conduct risk assessments, establish incident detection and response protocols, and undergo regular audits by national aviation authorities such as the Netherlands’ ILent. Technically, the regulation focuses on the security of communication networks, flight planning systems, electronic flight bags, and aircraft onboard information systems, integrating these with existing AVSEC measures under Regulation (EU) 2015/1998. Official responses have emphasized that non-compliance could result in operating restrictions or revocation of AOCs. For aviation security, this development closes a critical gap between physical security and information security, forcing operators to treat cyber threats as equivalent to traditional threats like sabotage or unlawful interference, thereby harmonizing EU AVSEC with global cybersecurity frameworks such as ICAO’s Annex 17."
-      },
-      {
-        "title": "ICAO Security Week 2026 Announced as Global Platform",
-        "category": "Regulatory",
-        "region": "Global",
-        "severity": "Low",
-        "summary": "ICAO scheduled Security Week 2026 to address emerging aviation security challenges, including UAS threats.",
-        "source": "ICAO",
-        "url": "https://www.icao.int/events/SecurityWeek2026",
-        "date": "2026-07-17",
-        "fullContent": "During ICAO Security Week 2026, scheduled by the International Civil Aviation Organization (ICAO) as a dedicated global platform, the event convened member states, industry stakeholders, and international security bodies from July 13 to July 17, 2026, at ICAO headquarters in Montreal. The primary focus was addressing emerging aviation security challenges, with particular emphasis on the proliferation of Unmanned Aircraft Systems (UAS) threats, including rogue drones and potential weaponized UAS. The timeline reflects ICAO’s strategic response to the rapid increase in UAS incidents near airports and critical infrastructure, with the week-long event providing a structured forum for policy harmonization. Scale and impact were significant, as over 100 participating nations and 200 experts engaged in workshops and plenaries, resulting in draft amendments to Annex 17 (Security) and a new UAS-specific security framework annex. Technical details included discussions on detect-and-avoid technologies, C-UAS countermeasure protocols, and cybersecurity integration for UAS traffic management (UTM) systems. The official response, articulated in ICAO’s final communiqué, emphasized the urgent need for standardized risk assessment methodologies and incident reporting mechanisms for UAS threats, with a call for accelerated implementation of the Global Aviation Security Plan (GASeP) by 2028. Implications for aviation security are profound: the event signals a shift from reactive to proactive regulatory measures, likely mandating mandatory UAS registration in member states, enhanced perimeter surveillance, and real-time data sharing between civil aviation authorities and law enforcement. This development also pressures lagging jurisdictions to adopt baseline security frameworks, reducing vulnerabilities exposed by cross-border drone incursions. Overall, ICAO Security Week 2026 marks a pivotal step toward integrating UAS threat management into mainstream AVSEC operations, with long-term effects on airport design, pilot training, and passenger screening protocols."
+        "summary": "Malaysia's CAAM, with EASA, held a workshop on cybersecurity regulations (Part-IS) for aviation organizations.",
+        "source": "Civil Aviation Authority of Malaysia (Facebook)",
+        "url": "https://www.facebook.com/CivilAviationAuthorityOfMalaysia.Official/posts/the-civil-aviation-authority-of-malaysia-caam-in-collaboration-with-the-easa-eur/1515170609975269",
+        "date": "2026-07-18",
+        "fullContent": "On July 18, 2026, the Civil Aviation Authority of Malaysia (CAAM), in a significant collaborative effort with the European Union Aviation Safety Agency (EASA), hosted a pivotal workshop focused on EASA Part-IS cybersecurity regulations. This initiative engaged various Malaysian aviation organizations, including airlines, airports, air navigation service providers, and maintenance organizations, all vital stakeholders in the national aviation ecosystem. The workshop's future date indicates a proactive, forward-looking strategy by CAAM to address emerging cyber threats well in advance.\n\nThe scale of this event underscores Malaysia's commitment to fortifying its aviation cybersecurity resilience and potentially positioning itself as a regional leader in the Asia-Pacific. By aligning with or adopting EASA Part-IS, Malaysia could influence broader harmonization of cybersecurity standards and practices across the region, enhancing the overall security posture against increasingly sophisticated cyber threats. Technically, EASA Part-IS mandates comprehensive cybersecurity requirements for critical network and information systems supporting aviation operations, encompassing risk management, incident response, and vulnerability management to protect against attacks impacting safety and regularity.\n\nCAAM's proactive hosting, leveraging EASA's expertise, signifies a robust official response to the escalating cyber threat landscape, strategically fortifying national aviation infrastructure against digital vulnerabilities through international collaboration. The implications for aviation security are substantial, signaling a progressive integration of robust cybersecurity frameworks into traditional security paradigms. Enhanced adherence to Part-IS principles will directly mitigate risks from cyber-attacks targeting operational and information technology systems, preventing disruptions and potential safety incidents. This proactive capacity building will ultimately strengthen Malaysia's aviation security framework, making it more resilient and adaptive to future cyber threats and fostering a safer air transport environment."
       }
     ],
     "Threat": [
@@ -75,7 +64,7 @@
       }
     ]
   },
-  "briefing": "Recent drone incidents near US airports and at World Cup venues highlight escalating UAS threats, while a 600% surge in cyberattacks on aviation signals an urgent need for enhanced security measures.",
-  "generatedAt": "2026-07-18T00:02:04.107Z",
+  "briefing": "Drone incidents continue to impact US airports, with a reported collision at JFK, while cyberattacks on aviation supply chains cause operational disruptions across Europe. Regulatory efforts like EASA Part-IS workshops highlight growing focus on aviation cybersecurity resilience.",
+  "generatedAt": "2026-07-18T09:04:13.660Z",
   "lastProvider": "DeepSeek V4-Flash + Tavily"
 }
