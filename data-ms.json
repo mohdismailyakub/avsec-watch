@@ -1294,7 +1294,7 @@
     },
     {
       "date": "2026-07-20",
-      "briefing": "Dua insiden keselamatan penerbangan berketinggian tinggi telah muncul sejak 19 Julai 2026: perlanggaran dron dengan penerbangan JetBlue di JFK dan serangan ransomware baharu yang mengganggu beberapa lapangan terbang Eropah, menonjolkan ancaman UAS dan siber yang semakin meningkat.",
+      "briefing": "Perkembangan keselamatan penerbangan terkini termasuk serangan ransomware ke atas Collins Aerospace yang menyebabkan gangguan besar di lapangan terbang Eropah, kuasa baharu AS untuk penguatkuasaan undang-undang menentang UAS, dan larangan dron FAA bagi Piala Dunia FIFA 2026. Pelaku ancaman terus menyiasat kelemahan rantaian bekalan dan dron.",
       "items": [
         {
           "title": "Pesawat JetBlue Berlanggar dengan Dron di Lapangan Terbang JFK",
@@ -1365,6 +1365,6 @@
       ]
     }
   ],
-  "generatedAt": "2026-07-20T00:01:54.346Z",
+  "generatedAt": "2026-07-20T09:02:08.746Z",
   "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }

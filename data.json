@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-20T00:01:54.346Z",
+  "generatedAt": "2026-07-20T09:02:08.746Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -1794,7 +1794,7 @@
     },
     {
       "date": "2026-07-20",
-      "briefing": "Two high-severity aviation security incidents have emerged since July 19, 2026: a drone collision with a JetBlue flight at JFK and a fresh ransomware attack disrupting multiple European airports, highlighting escalating UAS and cyber threats.",
+      "briefing": "The most recent aviation security developments include a ransomware attack on Collins Aerospace causing major European airport disruptions, new US counter-UAS authority for law enforcement, and the FAA's FIFA World Cup 2026 drone ban. Threat actors continue probing supply chain and drone vulnerabilities.",
       "items": [
         {
           "title": "JetBlue Plane Collides with Drone at JFK Airport",
