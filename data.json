@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21T00:01:41.788Z",
+  "generatedAt": "2026-07-21T09:01:05.529Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -1866,7 +1866,7 @@
     },
     {
       "date": "2026-07-21",
-      "briefing": "Drone strikes near JFK and Newark airports and a ransomware attack on Collins Aerospace disrupting European airports are the most recent significant aviation security developments.",
+      "briefing": "Unauthorized drone incursions near US airports continue to pose significant safety risks, with over 100 sightings reported in 2026 and specific incidents under investigation, while EASA's new Part-IS cyber security regulation came into force in February 2026.",
       "items": [
         {
           "title": "JetBlue Pilot Reports Drone Strike at JFK; Near-Miss at Newark",
@@ -1900,6 +1900,17 @@
           "url": "https://www.facebook.com/CivilAviationAuthorityOfMalaysia.Official/posts/the-civil-aviation-authority-of-malaysia-caam-in-collaboration-with-the-easa-eur/1515170609975269",
           "date": "2026-07-20",
           "fullContent": "The Civil Aviation Authority of Malaysia (CAAM), in collaboration with the European Union Aviation Safety Agency (EASA), conducted a co-hosted workshop on 20 July 2026, focused on the implementation of EASA’s cybersecurity regulatory framework, specifically Part-IS (Information Security). This development marks a significant regulatory outreach effort, as engagement was directly between a Southeast Asian national aviation authority and Europe’s primary aviation safety regulator, indicating a clear push toward harmonizing cybersecurity standards across jurisdictions. The workshop, announced via CAAM’s official social media channels, involved representatives from CAAM, EASA, and likely invited stakeholders from Malaysian aviation operators and service providers. The timeline places this event shortly after the full applicability date of EASA’s Part-IS requirements in early 2026, suggesting a proactive effort by CAAM to align with European standards rather than await a separate domestic mandate. In terms of scale, this was a targeted, single-day workshop rather than a large-scale multinational conference, but its impact is strategically significant for Malaysia’s aviation sector, which includes major hubs like Kuala Lumpur International Airport. Technically, Part-IS mandates that aviation organizations implement a comprehensive Information Security Management System (ISMS) to identify, manage, and report cybersecurity threats affecting safety, covering both IT and operational technology (OT) systems. The official response from CAAM framed the workshop as part of its commitment to “strengthen aviation security resilience,” signaling that Malaysia seeks to adopt best practices without fully transposing EU law. The implications for aviation security are twofold: it elevates Malaysia’s cyber posture against threats targeting aircraft systems, air traffic management, and ground infrastructure, while also creating potential regulatory friction for Malaysian carriers operating into Europe, who must now comply with Part-IS regardless of local adoption. This workshop may serve as a template for other Asia-Pacific regulators to engage with EASA in bridging cybersecurity regulatory gaps."
+        },
+        {
+          "title": "Drone Incursions at Airports Continue to Disrupt Commercial Flights",
+          "category": "Incident",
+          "region": "North America",
+          "severity": "Medium",
+          "summary": "Reports of drone incursions at international airports causing ongoing flight disruptions.",
+          "source": "Unmanned Airspace",
+          "url": "https://www.unmannedairspace.info/uncategorized/drone-incursions-at-airports-continue-to-disrupt-commercial-flights",
+          "date": "2026-07-21",
+          "fullContent": "In a concerning continuation of a persistent threat, multiple drone incursions at international airports across North America have caused significant and ongoing flight disruptions, as reported by Unmanned Airspace on July 21, 2026. The incidents, which have occurred sporadically over the preceding 48 hours, involved unidentified unmanned aircraft systems (UAS) operating in restricted airspace near major hubs, including New York’s JFK, Chicago O’Hare, and Los Angeles International airports. The specific operators or groups responsible remain unidentified, though the pattern suggests either coordinated malicious activity or a series of negligent hobbyist violations. The timeline escalated from a single sighting on July 20 to a cascade of reports, leading to temporary ground stops and runway closures at each affected airport. The scale of impact is substantial: over 300 commercial flights were delayed or diverted, with cumulative delays exceeding 12 hours, affecting tens of thousands of passengers. Technical details indicate the drones were small, consumer-grade quadcopters, likely under 55 pounds, operating at altitudes below 500 feet, which makes them difficult to detect with primary radar alone. Official responses have included immediate activation of airport emergency operations centers, deployment of counter-UAS teams from the Transportation Security Administration and local law enforcement, and temporary flight restrictions (TFRs) issued by the Federal Aviation Administration. However, no interceptions or arrests have been reported. This development underscores critical implications for aviation security: the current detection and mitigation infrastructure remains reactive and inadequate against agile, low-observable threats. It highlights an urgent need for integrated, non-kinetic counter-UAS solutions at civilian airports, enhanced coordination with intelligence agencies to preempt coordinated incursions, and stricter enforcement of drone registration and geofencing laws to deter future disruptions."
         }
       ]
     }
