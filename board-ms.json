@@ -50,15 +50,15 @@
     ],
     "Threat": [
       {
-        "title": "Serangan Ransomware Ganggu Lapangan Terbang Heathrow, Brussels, Berlin",
+        "title": "Dron Mendominasi Perbincangan Ancaman di Persidangan Keselamatan Siber Lapangan Terbang",
         "category": "Threat",
-        "region": "Europe",
-        "severity": "High",
-        "summary": "ENISA mengesahkan ransomware pihak ketiga menyebabkan kelewatan penerbangan di seluruh lapangan terbang utama Eropah.",
-        "source": "Industrial Cyber",
-        "url": "https://industrialcyber.co/threats-attacks/enisa-confirms-ransomware-behind-airport-disruptions-delays-at-heathrow-brussels-berlin-continue",
-        "date": "2026-07-20",
-        "fullContent": "Pada 20 Julai 2026, satu serangan ransomware yang diselaraskan telah mengganggu operasi dengan teruk di tiga hab penerbangan paling sibuk di Eropah: lapangan terbang Heathrow, Brussels, dan Berlin. Agensi Keselamatan Siber Kesatuan Eropah (ENISA) mengesahkan bahawa insiden tersebut berpunca daripada kompromi terhadap penyedia perkhidmatan pihak ketiga yang dikongsi, kemungkinan platform perisian pengurusan trafik udara atau pengendalian bagasi yang lazim, yang membolehkan kod berniat jahat merebak merentasi rangkaian lapangan terbang yang berbeza. Urutan serangan bermula pada awal pagi, dengan sistem kritikal untuk penjadualan penerbangan dan daftar masuk penumpang menjadi disulitkan, memaksa pemberhentian operasi segera dan kelewatan meluas yang berturutan sepanjang hari. Skala impak adalah ketara, menjejaskan ribuan penumpang di ketiga-tiga lapangan terbang, dengan banyak penerbangan dibatalkan atau ditangguh lebih enam jam ketika pihak berkuasa bergelut untuk kembali kepada prosedur manual. Analisis teknikal menunjukkan varian ransomware menggunakan algoritma penyulitan yang canggih, walaupun laporan awal mencadangkan tiada bukti pengeluaran data melampaui muatan penyulitan. Respons rasmi adalah pantas, dengan ENISA menyelaraskan respons insiden bersama dan setiap lapangan terbang mengasingkan sistem mereka yang terjejas. Agensi penguatkuasaan undang-undang tempatan, termasuk Pusat Keselamatan Siber Kebangsaan UK, melancarkan siasatan selari. Perkembangan ini adalah peringatan nyata tentang kelemahan sistemik dalam ekosistem penerbangan yang saling berkait, menunjukkan bahawa satu kelemahan rantaian bekalan boleh melumpuhkan beberapa lapangan terbang antarabangsa utama secara serentak. Bagi keselamatan penerbangan, ini menekankan keperluan mendesak untuk audit kebersihan siber pihak ketiga yang wajib, peralihan ke arah seni bina rangkaian sifar-amanah dalam sistem IT lapangan terbang, serta pelan luar jangka yang mengutamakan keselamatan penumpang dan kesinambungan operasi berbanding pembayaran tebusan. Insiden ini kemungkinan akan mempercepatkan mandat kawal selia untuk infrastruktur kritikal mengekalkan keupayaan siap sedia luar talian bagi fungsi teras."
+        "region": "North America",
+        "severity": "Medium",
+        "summary": "Panel di Lapangan Terbang BWI memberi tumpuan kepada ancaman dron sebagai kebimbangan utama keselamatan penerbangan pada Julai 2026.",
+        "source": "BizMonthly",
+        "url": "https://bizmonthly.com/news/business/cyber/2026/07/drones-dominate-threat-discussion-at-airport-cybersecurity-conference",
+        "date": "2026-07-22",
+        "fullContent": "Pada Persidangan Keselamatan Siber Lapangan Terbang BWI pada Julai 2026, satu panel khusus telah mengangkat ancaman dron ke barisan hadapan wacana keselamatan penerbangan, menandakan perubahan ketara dalam keutamaan ancaman. Acara yang dilaporkan oleh BizMonthly pada 22 Julai itu telah menghimpunkan pengawal selia persekutuan, penguat kuasa undang-undang lapangan terbang, dan pakar keselamatan siber sektor swasta dari seluruh Amerika Utara untuk menangani risiko yang semakin meningkat yang ditimbulkan oleh sistem udara tanpa pemandu (UAS). Garis masa kebimbangan telah memuncak secara mendadak sejak awal tahun 2025, apabila pelbagai insiden hampir berlanggar membabitkan dron pengguna dan pesawat komersial telah didokumenkan berhampiran hab utama seperti Newark dan O'Hare. Skala ancaman kini dianggap sistemik, dengan panel menyebut lebih 1,200 pencerobohan UAS yang disahkan ke dalam ruang udara terkawal pada separuh pertama tahun 2026 sahaja, mewakili peningkatan 40% tahun ke tahun. Butiran teknikal yang dibincangkan termasuk eksploitasi pemalsuan GPS dan gangguan Wi-Fi oleh dron yang diubah suai mampu membawa muatan sehingga lima kilogram, serta penggunaan teknologi \"kawanan\" yang baru muncul untuk mengatasi sistem pengesanan sedia ada. Respons rasmi adalah desakan untuk percepatan penggunaan teknologi C-UAS (sistem pesawat tanpa pemandu balas), termasuk pengimbas frekuensi radio dan pemintas kinetik, walaupun halangan undang-undang berkaitan gangguan frekuensi dan liabiliti masih belum diselesaikan. Untuk keselamatan penerbangan, hasil persidangan itu menekankan implikasi kritikal: lapangan terbang mesti melayan dron bukan sekadar sebagai gangguan tetapi sebagai ancaman berterusan dan adaptif yang memerlukan langkah balas keselamatan siber dan keselamatan fizikal bersepadu, memandangkan sistem kawalan trafik udara dan radar tradisional sebahagian besarnya buta terhadap dron altitud rendah yang bergerak perlahan. Perkembangan ini menandakan bahawa tanpa penyesuaian kawal selia dan teknikal yang pantas, sektor penerbangan berisiko mengalami insiden bencana yang boleh menghentikan operasi di seluruh benua."
       }
     ],
     "Technology": [
@@ -75,7 +75,7 @@
       }
     ]
   },
-  "briefing": "Pencerobohan dron tanpa kebenaran berhampiran lapangan terbang AS terus menimbulkan risiko keselamatan yang ketara, dengan lebih 100 penampakan dilaporkan pada tahun 2026 dan insiden tertentu sedang disiasat, sementara peraturan keselamatan siber Part-IS baharu EASA mula berkuat kuasa pada Februari 2026.",
-  "generatedAt": "2026-07-21T09:01:05.529Z",
+  "briefing": "Jun 2026 menyaksikan peningkatan insiden dron yang serius di lapangan terbang, manakala serangan ransomware terhadap rantaian bekalan penerbangan dan gelombang gangguan IT di lapangan terbang Eropah pada April 2026 kekal sebagai ancaman siber utama. Berita terkini termasuk perbincangan ancaman dron di persidangan keselamatan siber lapangan terbang pada Julai 2026.",
+  "generatedAt": "2026-07-22T00:01:04.131Z",
   "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }

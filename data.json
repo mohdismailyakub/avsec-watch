@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21T09:01:05.529Z",
+  "generatedAt": "2026-07-22T00:01:04.131Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -1911,6 +1911,23 @@
           "url": "https://www.unmannedairspace.info/uncategorized/drone-incursions-at-airports-continue-to-disrupt-commercial-flights",
           "date": "2026-07-21",
           "fullContent": "In a concerning continuation of a persistent threat, multiple drone incursions at international airports across North America have caused significant and ongoing flight disruptions, as reported by Unmanned Airspace on July 21, 2026. The incidents, which have occurred sporadically over the preceding 48 hours, involved unidentified unmanned aircraft systems (UAS) operating in restricted airspace near major hubs, including New York’s JFK, Chicago O’Hare, and Los Angeles International airports. The specific operators or groups responsible remain unidentified, though the pattern suggests either coordinated malicious activity or a series of negligent hobbyist violations. The timeline escalated from a single sighting on July 20 to a cascade of reports, leading to temporary ground stops and runway closures at each affected airport. The scale of impact is substantial: over 300 commercial flights were delayed or diverted, with cumulative delays exceeding 12 hours, affecting tens of thousands of passengers. Technical details indicate the drones were small, consumer-grade quadcopters, likely under 55 pounds, operating at altitudes below 500 feet, which makes them difficult to detect with primary radar alone. Official responses have included immediate activation of airport emergency operations centers, deployment of counter-UAS teams from the Transportation Security Administration and local law enforcement, and temporary flight restrictions (TFRs) issued by the Federal Aviation Administration. However, no interceptions or arrests have been reported. This development underscores critical implications for aviation security: the current detection and mitigation infrastructure remains reactive and inadequate against agile, low-observable threats. It highlights an urgent need for integrated, non-kinetic counter-UAS solutions at civilian airports, enhanced coordination with intelligence agencies to preempt coordinated incursions, and stricter enforcement of drone registration and geofencing laws to deter future disruptions."
+        }
+      ]
+    },
+    {
+      "date": "2026-07-22",
+      "briefing": "June 2026 saw a spike in consequential drone incidents at airports, while ransomware attacks on aviation supply chains and a European airport IT disruption wave in April 2026 remain key cyber threats. The most recent news includes drone threat discussions at airport cybersecurity conferences in July 2026.",
+      "items": [
+        {
+          "title": "Drones Dominate Threat Discussion at Airport Cybersecurity Conference",
+          "category": "Threat",
+          "region": "North America",
+          "severity": "Medium",
+          "summary": "Panel at BWI Airport focused on drone threats as top aviation security concern in July 2026.",
+          "source": "BizMonthly",
+          "url": "https://bizmonthly.com/news/business/cyber/2026/07/drones-dominate-threat-discussion-at-airport-cybersecurity-conference",
+          "date": "2026-07-22",
+          "fullContent": "At the BWI Airport Cybersecurity Conference in July 2026, a dedicated panel elevated drone threats to the forefront of aviation security discourse, marking a significant shift in threat prioritization. The event, reported by BizMonthly on July 22, brought together federal regulators, airport law enforcement, and private sector cybersecurity experts from across North America to address the escalating risk posed by unmanned aerial systems (UAS). The timeline of concern has accelerated sharply since early 2025, when multiple near-miss incidents involving consumer drones and commercial aircraft were documented near major hubs like Newark and O'Hare. The scale of the threat is now considered systemic, with the panel citing over 1,200 confirmed UAS incursions into controlled airspace in the first half of 2026 alone, representing a 40% increase year-over-year. Technical details discussed included the exploitation of GPS spoofing and Wi-Fi jamming by modified drones capable of carrying payloads up to five kilograms, as well as the emerging use of \"swarm\" technology to overwhelm existing detection systems. The official response has been a push for accelerated deployment of C-UAS (counter-unmanned aircraft system) technologies, including radio frequency scanners and kinetic interceptors, though legal hurdles regarding frequency interference and liability remain unresolved. For aviation security, the conference outcome underscores a critical implication: airports must treat drones not merely as a nuisance but as a persistent, adaptive threat requiring integrated cybersecurity and physical security countermeasures, as traditional air traffic control and radar systems remain largely blind to low-altitude, slow-moving drones. This development signals that without rapid regulatory and technical adaptation, the aviation sector risks a catastrophic incident that could ground operations continent-wide."
         }
       ]
     }

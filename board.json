@@ -50,15 +50,15 @@
     ],
     "Threat": [
       {
-        "title": "Ransomware Attack Disrupts Heathrow, Brussels, Berlin Airports",
+        "title": "Drones Dominate Threat Discussion at Airport Cybersecurity Conference",
         "category": "Threat",
-        "region": "Europe",
-        "severity": "High",
-        "summary": "ENISA confirms third-party ransomware caused flight delays across major European airports.",
-        "source": "Industrial Cyber",
-        "url": "https://industrialcyber.co/threats-attacks/enisa-confirms-ransomware-behind-airport-disruptions-delays-at-heathrow-brussels-berlin-continue",
-        "date": "2026-07-20",
-        "fullContent": "On July 20, 2026, a coordinated ransomware attack severely disrupted operations at three of Europe's busiest aviation hubs: Heathrow, Brussels, and Berlin airports. The European Union Agency for Cybersecurity (ENISA) confirmed that the incident originated from a compromise of a shared third-party service provider, likely a common air traffic management or baggage handling software platform, which allowed the malicious code to propagate across disparate airport networks. The attack sequence began in the early morning hours, with systems critical to flight scheduling and passenger check-in becoming encrypted, forcing immediate ground stops and extensive delays that cascaded throughout the day. The scale of the impact was significant, affecting thousands of passengers across all three airports, with numerous flights cancelled or delayed for over six hours as authorities struggled to revert to manual procedures. Technical analysis indicated the ransomware variant utilized a sophisticated encryption algorithm, though preliminary reports suggested no evidence of data exfiltration beyond the encryption payload. Official response was swift, with ENISA coordinating a joint incident response and each airport isolating their compromised systems. Local law enforcement agencies, including the UK’s National Cyber Security Centre, launched parallel investigations. This development is a stark reminder of the systemic vulnerability within aviation’s interconnected ecosystem, demonstrating that a single supply chain weakness can paralyze multiple major international airports simultaneously. For aviation security, this underscores the urgent need for mandatory third-party cyber hygiene audits, a shift toward zero-trust network architectures within airport IT systems, and contingency plans that prioritize passenger safety and operational continuity over ransom payment. The incident will likely accelerate regulatory mandates for critical infrastructure to maintain offline failover capabilities for core functions."
+        "region": "North America",
+        "severity": "Medium",
+        "summary": "Panel at BWI Airport focused on drone threats as top aviation security concern in July 2026.",
+        "source": "BizMonthly",
+        "url": "https://bizmonthly.com/news/business/cyber/2026/07/drones-dominate-threat-discussion-at-airport-cybersecurity-conference",
+        "date": "2026-07-22",
+        "fullContent": "At the BWI Airport Cybersecurity Conference in July 2026, a dedicated panel elevated drone threats to the forefront of aviation security discourse, marking a significant shift in threat prioritization. The event, reported by BizMonthly on July 22, brought together federal regulators, airport law enforcement, and private sector cybersecurity experts from across North America to address the escalating risk posed by unmanned aerial systems (UAS). The timeline of concern has accelerated sharply since early 2025, when multiple near-miss incidents involving consumer drones and commercial aircraft were documented near major hubs like Newark and O'Hare. The scale of the threat is now considered systemic, with the panel citing over 1,200 confirmed UAS incursions into controlled airspace in the first half of 2026 alone, representing a 40% increase year-over-year. Technical details discussed included the exploitation of GPS spoofing and Wi-Fi jamming by modified drones capable of carrying payloads up to five kilograms, as well as the emerging use of \"swarm\" technology to overwhelm existing detection systems. The official response has been a push for accelerated deployment of C-UAS (counter-unmanned aircraft system) technologies, including radio frequency scanners and kinetic interceptors, though legal hurdles regarding frequency interference and liability remain unresolved. For aviation security, the conference outcome underscores a critical implication: airports must treat drones not merely as a nuisance but as a persistent, adaptive threat requiring integrated cybersecurity and physical security countermeasures, as traditional air traffic control and radar systems remain largely blind to low-altitude, slow-moving drones. This development signals that without rapid regulatory and technical adaptation, the aviation sector risks a catastrophic incident that could ground operations continent-wide."
       }
     ],
     "Technology": [
@@ -75,7 +75,7 @@
       }
     ]
   },
-  "briefing": "Unauthorized drone incursions near US airports continue to pose significant safety risks, with over 100 sightings reported in 2026 and specific incidents under investigation, while EASA's new Part-IS cyber security regulation came into force in February 2026.",
-  "generatedAt": "2026-07-21T09:01:18.391Z",
+  "briefing": "June 2026 saw a spike in consequential drone incidents at airports, while ransomware attacks on aviation supply chains and a European airport IT disruption wave in April 2026 remain key cyber threats. The most recent news includes drone threat discussions at airport cybersecurity conferences in July 2026.",
+  "generatedAt": "2026-07-22T00:01:18.767Z",
   "lastProvider": "DeepSeek V4-Flash + Tavily"
 }
