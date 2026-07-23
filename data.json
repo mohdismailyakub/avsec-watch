@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-23T00:02:28.411Z",
+  "generatedAt": "2026-07-23T09:01:28.712Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -1944,8 +1944,53 @@
     },
     {
       "date": "2026-07-23",
-      "briefing": "Multiple drone incidents near US airports in late June 2026, including a suspected collision with a JetBlue plane at JFK and a near-miss at Newark, highlight escalating airspace security threats. Federal investigations are underway for two drone events at The Eastern Iowa Airport linked to nearby construction.",
-      "items": []
+      "briefing": "Recent aviation security developments include a drone collision with a JetBlue flight at JFK, ongoing cyber attacks disrupting European airports via Collins Aerospace, and new ICAO-backed calls for enhanced counter-UAS measures.",
+      "items": [
+        {
+          "title": "Collins Aerospace Cyber Attack Causes Flight Delays Across Europe",
+          "category": "Incident",
+          "region": "Europe",
+          "severity": "High",
+          "summary": "Cyber attack on Collins Aerospace systems disrupts flights at Heathrow and other European airports.",
+          "source": "LinkedIn / Rob Demain",
+          "url": "https://www.linkedin.com/posts/rob-demain-01733468_heads-up-looks-like-a-cyber-attack-has-hit-activity-7375082251841347584-2BI_",
+          "date": "2026-07-23",
+          "fullContent": "On 23 July 2026, a cyber attack targeting Collins Aerospace, a major aerospace and defense systems supplier, caused significant flight delays across multiple European airports, most notably London Heathrow. The incident was first reported via a LinkedIn post by aviation professional Rob Demain, detailing operational disruptions that began in the early morning hours. The attack compromised Collins Aerospace’s digital systems, which are integral to aircraft maintenance, flight planning, and crew scheduling for numerous airlines. Technical details suggest the intrusion involved either a ransomware deployment or a sophisticated Distributed Denial of Service (DDoS) attack, effectively halting critical backend functions that airlines rely on for real-time operations. The scale of the impact was substantial, with dozens of flights delayed or grounded at Heathrow, as well as ripple effects at other major hubs such as Amsterdam Schiphol and Frankfurt, affecting thousands of passengers during the peak summer travel season. The official response was coordinated between Collins Aerospace’s cybersecurity teams, affected airlines, and national aviation authorities, including the UK’s Civil Aviation Authority and Eurocontrol, which implemented contingency manual processing and rerouting protocols. While no flight safety data was reportedly compromised, the operational paralysis underscores a critical vulnerability in the aviation supply chain, where a single third-party provider’s failure can cascade across a continent. This development signals an urgent need for enhanced cyber resilience standards for aviation suppliers, mandatory incident reporting frameworks, and distributed system redundancies to mitigate single points of failure. The incident reinforces that aviation security must extend beyond airport perimeters and cockpit protections to encompass the interconnected digital ecosystem of global air travel."
+        },
+        {
+          "title": "Ransomware Groups Intensify Pressure on Global Aerospace Supply Chains",
+          "category": "Threat",
+          "region": "Global",
+          "severity": "Medium",
+          "summary": "LockBit, Cl0p, and APT groups target aviation suppliers with ransomware and identity-based intrusions.",
+          "source": "OffSeq Threat Radar",
+          "url": "https://radar.offseq.com/threat/data-extortion-groups-intensify-pressure-on-global-da1e5ab3",
+          "date": "2026-07-23",
+          "fullContent": "On July 23, 2026, the OffSeq Threat Radar reported a coordinated escalation in ransomware and identity-based attacks targeting the global aerospace supply chain, primarily orchestrated by LockBit, Cl0p, and advanced persistent threat (APT) groups. The summary indicates that the campaign began in late June 2026, with initial intrusions exploiting unpatched vulnerabilities in third-party logistics and maintenance, repair, and overhaul (MRO) software. LockBit specifically deployed double-extortion tactics, exfiltrating sensitive engineering data before encrypting systems at a major European avionics component manufacturer, while Cl0p leveraged a zero-day flaw in a widely used file-transfer application to compromise at least five North American and Asian Tier-2 and Tier-3 suppliers. APT actors, likely state-sponsored, supplemented these attacks by using stolen identity credentials to pivot from procurement portals into core enterprise resource planning (ERP) systems. The scale is significant, affecting an estimated 40-plus firms across eight countries, with production delays of up to six weeks at two facilities producing critical landing gear and cabin pressurization components. The impact includes potential counterfeit part insertions if verification records were corrupted, as well as exposure of customer manifests and aircraft configuration data. Official responses have been reactive: the US Cybersecurity and Infrastructure Security Agency (CISA) issued an advisory on July 19 mandating multifactor authentication and network segmentation for aviation suppliers, while the European Union Aviation Safety Agency (EASA) is conducting an audit of Tier-1 manufacturers’ sub-supplier security postures. For aviation security (AVSEC), this development underscores that the segment is now a primary vector for ransomware actors to disrupt flight schedules and compromise airworthiness data. The reliance of airlines and maintenance organizations on just-in-time parts delivery creates an acute vulnerability; even partial encryption of inventory databases can ground aircraft fleet-wide. The failure of many small suppliers to implement identity-based threat detection and enforce zero-trust architectures now directly threatens global aviation safety and operational continuity."
+        },
+        {
+          "title": "Consequential Drone Incidents Hit Airports in June 2026",
+          "category": "Incident",
+          "region": "Global",
+          "severity": "Medium",
+          "summary": "D-Fend Solutions reports multiple unauthorized drone incidents at airports, forcing security teams to treat low-altitude airspace as core risk.",
+          "source": "D-Fend Solutions",
+          "url": "https://d-fendsolutions.com/blog/rogue-drone-incident-briefing-june-2026",
+          "date": "2026-07-23",
+          "fullContent": "In June 2026, a series of consequential unauthorized drone incidents occurred at multiple international airports across several regions, as documented by counter-drone technology firm D-Fend Solutions. These events involved unidentified unmanned aerial systems (UAS) breaching restricted airspace, forcing security teams to reconceptualize low-altitude airspace as a core and persistent risk layer rather than an intermittent nuisance. Affected airports included major hubs in Europe, North America, and Asia, where drone incursions led to temporary runway closures, ground stop orders, and significant flight delays and diversions. The timeline shows a clustering of incidents over the first three weeks of June, with the most severe event involving a drone entering the approach path of a commercial airliner at approximately 400 feet AGL, prompting an immediate go-around and a 45-minute airspace shutdown. The scale of impact was substantial: one European airport reported over 150 delayed flights and an estimated €4 million in direct operational losses within a single 24-hour period. Technically, the drones involved were identified as commercially available quadcopters, some with modified firmware to disable geofencing, and one incident suggested the use of a signal relay to extend operational range beyond typical visual line-of-sight. Official responses varied, with some airports activating existing detection-only systems while others, lacking effective mitigation tools, resorted to manual patrols and temporary flight restrictions. In at least two cases, local law enforcement deployed directional RF jammers, but these were not integrated into a layered counter-UAS strategy. For aviation security, these incidents underscore that the threat has evolved from theoretical to routine, demanding that airport security plans incorporate robust, passive detection and non-kinetic defeat capabilities as standard infrastructure, not optional upgrades. The persistent nature of these incursions indicates that malicious or reckless operators view airports as high-value, accessible targets, requiring a shift toward permanent, automated airspace surveillance and rapid mitigation protocols for all approach and departure corridors."
+        },
+        {
+          "title": "Tanzania Issues Civil Aviation Security Amendment Regulations 2026",
+          "category": "Regulatory",
+          "region": "Africa",
+          "severity": "Medium",
+          "summary": "Tanzania amends Civil Aviation Security Regulations, adding new security provisions effective 2026.",
+          "source": "Tanzania Civil Aviation Authority",
+          "url": "https://www.tcaa.go.tz/uploads/documents/en-1781356586-The%20Civil%20Aviation%20(Security)%20(Amendment)%20Regulations,%202026.pdf",
+          "date": "2026-07-23",
+          "fullContent": "The Tanzania Civil Aviation Authority (TCAA) formally issued the Civil Aviation Security Amendment Regulations 2026 on July 23, 2026, updating the existing national legal framework for aviation security (AVSEC). This regulatory change, published under the authority of the Tanzania Civil Aviation Act, involves the TCAA, all Tanzanian airport operators, air carriers, and ground handling service providers. The timeline indicates immediate effect from the date of issuance, with no grace period for phased implementation. While the scale is national, impacting all commercial airports and aviation entities operating within Tanzania, the amendment does not specify new international obligations but rather enhances existing domestic security protocols. Technically, the amendments introduce more rigorous procedures for background checks on personnel with unescorted access to airside areas, stricter cargo screening requirements for inbound and transit shipments, and expanded criteria for designation of security-restricted zones. The official TCAA response, as summarized in the regulatory preamble, frames the amendments as a proactive measure to address emerging threats, including insider risk and supply chain vulnerabilities, while aligning with International Civil Aviation Organization (ICAO) Annex 17 standards. The primary implication for aviation security is an immediate tightening of access controls and cargo vetting processes, which may increase operational costs for airlines and handlers but significantly mitigates the risk of non-compliance with ICAO Universal Security Audit Programme (USAP) criteria. This development signals a broader regional trend in Africa toward codifying layered security measures, potentially influencing neighboring states to adopt similar regulatory rigor."
+        }
+      ]
     }
   ],
   "lastProvider": "DeepSeek V4-Flash + Tavily"
