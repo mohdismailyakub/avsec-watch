@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-22T09:01:16.611Z",
+  "generatedAt": "2026-07-23T00:02:28.411Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -1941,7 +1941,12 @@
           "fullContent": "The US President officially announced on 2026-07-22 the resumption of direct commercial flights between the United States and Lebanon, ending a nearly 40-year suspension. This significant regulatory shift follows a ban imposed after the 1985 hijacking of TWA Flight 847. The decision involves the US government, including agencies like the Department of Homeland Security (DHS) and the Federal Aviation Administration (FAA), and the Lebanese Directorate General of Civil Aviation, alongside various US and potentially Lebanese air carriers.\n\nThis development marks the reopening of a critical air corridor after decades, impacting millions of potential travelers, trade routes, and diplomatic engagement. The scale is substantial, introducing new direct international operations to and from Beirut-Rafic Hariri International Airport (BEY). Technically, the resumption necessitates the establishment of formal bilateral air service agreements and rigorous security protocols. The Transportation Security Administration (TSA) will have conducted comprehensive security assessments and audits of BEY to ensure compliance with US-mandated aviation security standards, encompassing passenger and baggage screening, cargo security, perimeter control, and insider threat mitigation programs.\n\nThe official response underscores a perceived improvement in security conditions, likely facilitated by ongoing diplomatic efforts and security cooperation. However, the implications for aviation security are considerable. The reintroduction of direct flights exposes US operations and citizens to a region characterized by complex geopolitical dynamics and persistent threat landscapes from various state and non-state actors. This demands sustained, high-level intelligence sharing and collaboration between US and Lebanese security services to counter evolving threats, including potential terrorist plots, illicit smuggling, and insider threats. Continuous risk assessments, adaptable mitigation strategies, and potential deployment of advanced security technologies at BEY will be essential to manage the elevated security posture required for this resumed air link."
         }
       ]
+    },
+    {
+      "date": "2026-07-23",
+      "briefing": "Multiple drone incidents near US airports in late June 2026, including a suspected collision with a JetBlue plane at JFK and a near-miss at Newark, highlight escalating airspace security threats. Federal investigations are underway for two drone events at The Eastern Iowa Airport linked to nearby construction.",
+      "items": []
     }
   ],
-  "lastProvider": "Gemini (2.5 Flash)"
+  "lastProvider": "DeepSeek V4-Flash + Tavily"
 }
