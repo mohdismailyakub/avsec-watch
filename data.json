@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-24T00:01:36.910Z",
+  "generatedAt": "2026-07-24T09:01:21.206Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -1994,7 +1994,7 @@
     },
     {
       "date": "2026-07-24",
-      "briefing": "A major ransomware attack on Collins Aerospace has disrupted check-in and boarding systems at Heathrow and other European airports, highlighting critical supply chain vulnerabilities. New EASA Part-IS cybersecurity regulations came into effect in February 2026, mandating information security obligations for aviation entities.",
+      "briefing": "Drone collisions and near-misses at US airports escalated in June 2026, while a cyber attack on Collins Aerospace caused widespread flight delays across European airports, highlighting critical aviation security vulnerabilities.",
       "items": [
         {
           "title": "Cyberattack on Collins Aerospace disrupts flights at Heathrow and European airports",
@@ -2039,6 +2039,17 @@
           "url": "https://www.linkedin.com/pulse/600-surge-what-aviations-cybersecurity-crisis-means-burak-da%C4%9Fdeviren-qnlxf",
           "date": "2026-07-23",
           "fullContent": "Analysis of the aviation security development titled “What Aviation's Cybersecurity Crisis Means for Airport IT” reveals a significant and escalating threat to global aviation infrastructure. The core development, sourced from industry research shared via LinkedIn by Burak Dağdeviren, reports a staggering 600% surge in cyberattacks targeting the aviation sector between 2024 and 2025. This indicates an aggressive pivot by malicious actors, likely including state-sponsored groups and sophisticated cybercriminal syndicates, from traditional physical threats to digital vectors. The timeline, while not specifying exact incidents, contextualizes the crisis as an acute development over a 12-month period, suggesting that 2024 was a threshold year for adversarial capability building before the exponential increase in 2025. The scale of this surge is global, impacting airport IT systems, airline reservations, flight operations, and passenger data management. The impact is multidimensional, including potential groundings, operational delays, sensitive data exfiltration, and erosion of public trust. While the summary lacks specific technical details—such as ransomwares, zero-day exploits, or supply-chain compromises—the 600% figure strongly implies an exploitation of legacy OT/IT convergences and unpatched vulnerabilities within air traffic control and airport infrastructure. Official response, as inferred from the burgeoning nature of the crisis, appears to be reactive and straining, with aviation authorities and airport IT departments racing to implement layered cybersecurity frameworks, network segmentation, and real-time threat intelligence sharing, though likely outpaced by the attack tempo. The implications for aviation security are profound: cybersecurity can no longer be an isolated IT concern but must be integrated as a primary AVSEC domain, equivalent in priority to physical screening and access control. Airport IT must pivot from cost centers to critical security enablers, requiring baseline cyber hygiene mandates, continuous penetration testing, and international regulatory harmonization, as the global aviation system now faces its first true cyber crisis of scale."
+        },
+        {
+          "title": "Collins Aerospace Cyber Attack Disrupts European Airports",
+          "category": "Incident",
+          "region": "Europe",
+          "severity": "High",
+          "summary": "Cyber attack on Collins Aerospace systems caused flight delays at Heathrow and other European airports in late July 2026.",
+          "source": "LinkedIn / Rob Demain",
+          "url": "https://www.linkedin.com/posts/rob-demain-01733468_heads-up-looks-like-a-cyber-attack-has-hit-activity-7375082251841347584-2BI_",
+          "date": "2026-07-24",
+          "fullContent": "A significant aviation security incident unfolded in late July 2026, when a cyber attack targeting Collins Aerospace systems caused widespread flight delays across Europe. The incident, initially reported via a LinkedIn update by Rob Demain, involved malicious actors compromising critical IT infrastructure belonging to Collins Aerospace, a major global supplier of avionics, cabin systems, and information management solutions to the aerospace and defense industries. This compromise directly led to operational disruptions at several major European air hubs, prominently including London Heathrow and other unnamed airports across the continent, within the specified timeframe.\n\nThe scale of the disruption points to a considerable impact on essential airport operations, likely affecting systems related to flight planning, passenger processing, baggage handling, or air traffic management support that rely on Collins Aerospace technology. While the precise technical vector and nature of the attack remain undisclosed, the outcome – systemic flight delays – suggests a denial-of-service, data integrity compromise, or ransomware event impacting operational technology or critical IT services integrated into airport environments. This type of incident underscores the sophisticated tactics employed by cyber adversaries targeting complex supply chains within critical national infrastructure sectors.\n\nAs of the briefing date, official responses are anticipated or are likely ongoing, with Collins Aerospace expected to provide detailed information on the breach, its remediation efforts, and notification to affected clients and regulatory bodies. National aviation authorities and affected airports will undoubtedly be coordinating incident response and recovery. The implications for aviation security are profound; this event starkly illustrates how cyber attacks on third-party suppliers can cascade into significant operational disruptions with physical consequences for passenger movement and safety. It reinforces the urgent need for enhanced supply chain cybersecurity, collaborative threat intelligence sharing, and robust resilience strategies across the entire aviation ecosystem to mitigate such vulnerabilities."
         }
       ]
     }
