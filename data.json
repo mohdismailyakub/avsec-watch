@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-24T09:01:21.206Z",
+  "generatedAt": "2026-07-25T00:01:48.306Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -2052,7 +2052,57 @@
           "fullContent": "A significant aviation security incident unfolded in late July 2026, when a cyber attack targeting Collins Aerospace systems caused widespread flight delays across Europe. The incident, initially reported via a LinkedIn update by Rob Demain, involved malicious actors compromising critical IT infrastructure belonging to Collins Aerospace, a major global supplier of avionics, cabin systems, and information management solutions to the aerospace and defense industries. This compromise directly led to operational disruptions at several major European air hubs, prominently including London Heathrow and other unnamed airports across the continent, within the specified timeframe.\n\nThe scale of the disruption points to a considerable impact on essential airport operations, likely affecting systems related to flight planning, passenger processing, baggage handling, or air traffic management support that rely on Collins Aerospace technology. While the precise technical vector and nature of the attack remain undisclosed, the outcome – systemic flight delays – suggests a denial-of-service, data integrity compromise, or ransomware event impacting operational technology or critical IT services integrated into airport environments. This type of incident underscores the sophisticated tactics employed by cyber adversaries targeting complex supply chains within critical national infrastructure sectors.\n\nAs of the briefing date, official responses are anticipated or are likely ongoing, with Collins Aerospace expected to provide detailed information on the breach, its remediation efforts, and notification to affected clients and regulatory bodies. National aviation authorities and affected airports will undoubtedly be coordinating incident response and recovery. The implications for aviation security are profound; this event starkly illustrates how cyber attacks on third-party suppliers can cascade into significant operational disruptions with physical consequences for passenger movement and safety. It reinforces the urgent need for enhanced supply chain cybersecurity, collaborative threat intelligence sharing, and robust resilience strategies across the entire aviation ecosystem to mitigate such vulnerabilities."
         }
       ]
+    },
+    {
+      "date": "2026-07-25",
+      "briefing": "Global aviation security efforts are intensifying, with a new U.S. government report highlighting critical cybersecurity vulnerabilities within aviation infrastructure. Simultaneously, agencies are introducing new programs to evolve security screening methods and intelligence services are issuing warnings regarding sophisticated state-backed cyber threats to critical sectors worldwide.",
+      "items": [
+        {
+          "title": "GAO Report Uncovers Major FAA and TSA Cybersecurity Shortfalls",
+          "category": "Regulatory",
+          "region": "North America",
+          "severity": "Medium",
+          "summary": "A new U.S. Government Accountability Office (GAO) report reveals significant cybersecurity gaps between the FAA and TSA, urging improved collaboration to protect aviation.",
+          "source": "ClearanceJobs",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGiyKAjhxbSg-OpEQrLPQFGsF6Rd2xahmsY2aqqefRisT7PdNngLfCCdwhxvXyPcNqOeb0tqx3oSmUpUvKCvy4xM7VpLqPVqGZd-_sRFakRq-jwMeENjpK55BvbDq0976KK25ds76gCAAfPbadVsOSuWB-v2cwBmwOGAVY1flvlnk2WEon9cqyqGWG0zbmulUkVWhwY-V8tocyJNFP-S_N_Kni1LEszSDbgB0H0Bg_g-y7PmOsluDw=",
+          "date": "2026-07-24",
+          "fullContent": "A significant aviation security development occurred on July 24, 2026, with the release of a U.S. Government Accountability Office (GAO) report revealing critical cybersecurity shortfalls between the Federal Aviation Administration (FAA) and the Transportation Security Administration (TSA). This comprehensive regulatory analysis, sourced by ClearanceJobs, underscores a severe lack of collaborative cybersecurity measures impacting North American aviation infrastructure. The report highlights vulnerabilities spanning both agencies' domains, indicating a disjointed approach to protecting vital systems that underpin air traffic management, airport operations, and passenger screening processes.\n\nThe scale of these identified gaps is described as \"major,\" implying widespread deficiencies in areas such as integrated threat intelligence sharing, coordinated incident response protocols, and harmonized security standards across their respective IT and operational technology (OT) environments. The potential impact is substantial, ranging from increased susceptibility to sophisticated cyberattacks targeting critical aviation systems, data breaches compromising sensitive traveler information, to potential disruptions in air traffic control or airport functionality. Exploiting these shortfalls could undermine public confidence in aviation security and pose direct safety risks if operational systems were compromised.\n\nWhile the report primarily serves as an urgent call for action, its immediate official \"response\" is the GAO's strong urging for improved, systemic collaboration between the FAA and TSA. This implies an expectation that both agencies will develop and implement joint strategies to fortify their cyber defenses and establish clear, consistent information sharing mechanisms. The implications for aviation security are profound: failure to swiftly address these findings could leave the National Airspace System vulnerable to persistent and evolving cyber threats, necessitating immediate and concerted efforts to establish a unified and resilient cybersecurity posture across the U.S. aviation sector."
+        },
+        {
+          "title": "TSA Expands Private Security Screening Program (TSA Gold+)",
+          "category": "Regulatory",
+          "region": "North America",
+          "severity": "Low",
+          "summary": "The TSA unveiled 'TSA Gold+', an expanded program allowing more U.S. airports to use private security contractors for passenger screening, under federal oversight.",
+          "source": "Reason Magazine",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG2JTAplMDHZS1LxEotIeI0cxLQTOFEmvaCp1LbXh6uJcxz5h0OZZfsAK_UsuvCNaLuIyuUyWsi6bzU37-ie0LG3DfBDCgYxX1Gk4cLXGcmmtKJXiJ9qVywkWcQD-Z9xm5K25ds76gCAAfPbadVsOSuWB-v2cwBmwOGAVY1flvlnk2WEon9cqyqGWG0zbmulUkVWhwY-V8tocyJNFP-S_N_Kni1LEszSDbgB0H0Bg_g-y7PmOsluDw=",
+          "date": "2026-07-24",
+          "fullContent": "On 2026-07-24, the Transportation Security Administration (TSA) officially unveiled 'TSA Gold+', a significant regulatory expansion allowing an increased number of U.S. airports to employ private security contractors for passenger screening operations. This initiative, reported by Reason Magazine, marks a broader embrace of privatized screening services across North America, building upon existing programs like the Screening Partnership Program (SPP), which permits airports to opt out of TSA-staffed screening in favor of private companies under federal supervision. The program’s unveiling indicates a strategic shift in how the agency aims to manage its extensive screening footprint.\n\nThe scale of 'TSA Gold+' is anticipated to be substantial, inviting \"more U.S. airports\" to participate, implying a potential nationwide rollout beyond the limited scope of previous private screening initiatives. Technically, all private screening services under 'TSA Gold+' will operate \"under federal oversight,\" meaning the TSA retains ultimate authority over security protocols, training standards, technology deployment, and performance metrics, ensuring compliance with federal aviation security regulations. This model aims to combine the flexibility and potential cost efficiencies of private enterprise with the unwavering security standards mandated by the federal government, with private contractors directly responsible for personnel and day-to-day operations.\n\nThe official response from the TSA is implicitly positive, as they \"unveiled\" the program, likely citing benefits such as increased operational efficiency, reduced federal staffing burdens, and enhanced adaptability to fluctuating passenger volumes. For aviation security, the implications are multifaceted. While proponents argue for improved passenger experience, potential cost savings, and agile resource allocation, concerns exist regarding maintaining uniform screening standards, ensuring consistent accountability in security breaches, and potential impacts on employee morale and turnover rates within private firms. Intelligence analysts will closely monitor the program's rollout to assess its effectiveness in maintaining a robust security posture while integrating diversified operational models, particularly concerning potential vulnerabilities arising from varied contractor performance."
+        },
+        {
+          "title": "Finnish Intelligence Warns of New Russian Cyber Espionage Group 'Laundry Bear'",
+          "category": "Threat",
+          "region": "Europe",
+          "severity": "Medium",
+          "summary": "Finnish intelligence services issued a warning about 'Laundry Bear,' a Russian state-backed cyber-espionage group targeting critical infrastructure, including likely aviation sectors.",
+          "source": "Ukrainska Pravda",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEhFG4hX1DMKSPjxYyS7gDpfk2WDIRNn5a_QoDAx_H0ldar4rvm51HGGc6zpE-ZutubL0jNqoNMJBzTaZAeYeklKdGiW12kJdAkCXYm0cQzZY9jkdtrekHYFXdHDqfV8k020VdV0Ms9nPvVtHihwv_B",
+          "date": "2026-07-24",
+          "fullContent": "Finnish intelligence services issued a warning about 'Laundry Bear,' a Russian state-backed cyber-espionage group targeting critical infrastructure, including likely aviation sectors."
+        },
+        {
+          "title": "Origin Energy Cyber Breach Highlights Critical Infrastructure Vulnerabilities",
+          "category": "Threat",
+          "region": "Asia-Pacific",
+          "severity": "Medium",
+          "summary": "Australia's Origin Energy confirmed a data breach, with experts emphasizing the broad applicability of such cyber threats to other critical sectors, including aviation.",
+          "source": "Elnion",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHIA-by6nGYb8CJvgYUG1R6L_nUAXN3J5KkYq4_c6NS0dm7pXtc_Edw-E00jIQtRZ1jJbtTWqM-z8J_g7ceUjE_MOL8ddQ7wRT7ajIpTvcjICu5MthCrzBetpsXdR4nwtAeePnE7ly1UpAmJjbpkaq0VQn0hmHHhVffo81FlCw1WfHRcEjgo1y-IwC1LFLTTYsTMlMxNWR-8ykj2A=",
+          "date": "2026-07-24",
+          "fullContent": "Australia's Origin Energy confirmed a data breach, with experts emphasizing the broad applicability of such cyber threats to other critical sectors, including aviation."
+        }
+      ]
     }
   ],
-  "lastProvider": "DeepSeek V4-Flash + Tavily"
+  "lastProvider": "Gemini (2.5 Flash)"
 }

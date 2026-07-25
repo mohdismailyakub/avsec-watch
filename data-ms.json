@@ -1552,8 +1552,58 @@
           "fullContent": "Insiden keselamatan penerbangan yang ketara telah berlaku pada akhir Julai 2026, apabila serangan siber yang menyasarkan sistem Collins Aerospace menyebabkan kelewatan penerbangan yang meluas di seluruh Eropah. Insiden tersebut, yang pada mulanya dilaporkan melalui kemas kini LinkedIn oleh Rob Demain, melibatkan pelakon jahat mengkompromi infrastruktur IT kritikal milik Collins Aerospace, pembekal global utama avionik, sistem kabin, dan penyelesaian pengurusan maklumat kepada industri aeroangkasa dan pertahanan. Kompromi ini secara langsung membawa kepada gangguan operasi di beberapa hab udara utama Eropah, termasuk secara ketara London Heathrow dan lapangan terbang lain yang tidak dinamakan di seluruh benua, dalam tempoh masa yang ditetapkan.\n\nSkala gangguan tersebut menunjukkan kesan yang besar terhadap operasi lapangan terbang penting, kemungkinan menjejaskan sistem berkaitan dengan perancangan penerbangan, pemprosesan penumpang, pengendalian bagasi, atau sokongan pengurusan trafik udara yang bergantung pada teknologi Collins Aerospace. Walaupun vektor teknikal yang tepat dan sifat serangan masih belum didedahkan, hasilnya – kelewatan penerbangan yang sistematik – mencadangkan peristiwa penafian perkhidmatan, kompromi integriti data, atau perisian tebusan yang menjejaskan teknologi operasi atau perkhidmatan IT kritikal yang disepadukan ke dalam persekitaran lapangan terbang. Jenis insiden ini menggariskan taktik canggih yang digunakan oleh musuh siber yang menyasarkan rantaian bekalan yang kompleks dalam sektor infrastruktur nasional kritikal.\n\nSehingga tarikh taklimat, tindak balas rasmi dijangka atau kemungkinan sedang berjalan, dengan Collins Aerospace dijangka akan memberikan maklumat terperinci mengenai pelanggaran tersebut, usaha pemulihannya, dan pemberitahuan kepada pelanggan yang terjejas serta badan kawal selia. Pihak berkuasa penerbangan negara dan lapangan terbang yang terjejas sudah pasti akan menyelaraskan tindak balas dan pemulihan insiden. Implikasi terhadap keselamatan penerbangan adalah mendalam; peristiwa ini dengan jelas menggambarkan bagaimana serangan siber ke atas pembekal pihak ketiga boleh menyebabkan gangguan operasi yang ketara dengan akibat fizikal terhadap pergerakan dan keselamatan penumpang. Ia mengukuhkan keperluan mendesak untuk keselamatan siber rantaian bekalan yang dipertingkatkan, perkongsian risikan ancaman kolaboratif, dan strategi daya tahan yang kukuh di seluruh ekosistem penerbangan bagi mengurangkan kelemahan sedemikian."
         }
       ]
+    },
+    {
+      "date": "2026-07-25",
+      "briefing": "Global aviation security efforts are intensifying, with a new U.S. government report highlighting critical cybersecurity vulnerabilities within aviation infrastructure. Simultaneously, agencies are introducing new programs to evolve security screening methods and intelligence services are issuing warnings regarding sophisticated state-backed cyber threats to critical sectors worldwide.",
+      "items": [
+        {
+          "title": "GAO Report Uncovers Major FAA and TSA Cybersecurity Shortfalls",
+          "category": "Regulatory",
+          "region": "North America",
+          "severity": "Medium",
+          "summary": "A new U.S. Government Accountability Office (GAO) report reveals significant cybersecurity gaps between the FAA and TSA, urging improved collaboration to protect aviation.",
+          "source": "ClearanceJobs",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGiyKAjhxbSg-OpEQrLPQFGsF6Rd2xahmsY2aqqefRisT7PdNngLfCCdwhxvXyPcNqOeb0tqx3oSmUpUvKCvy4xM7VpLqPVqGZd-_sRFakRq-jwMeENjpK55BvbDq0976KK25ds76gCAAfPbadVsOSuWB-v2cwBmwOGAVY1flvlnk2WEon9cqyqGWG0zbmulUkVWhwY-V8tocyJNFP-S_N_Kni1LEszSDbgB0H0Bg_g-y7PmOsluDw=",
+          "date": "2026-07-24",
+          "fullContent": "A significant aviation security development occurred on July 24, 2026, with the release of a U.S. Government Accountability Office (GAO) report revealing critical cybersecurity shortfalls between the Federal Aviation Administration (FAA) and the Transportation Security Administration (TSA). This comprehensive regulatory analysis, sourced by ClearanceJobs, underscores a severe lack of collaborative cybersecurity measures impacting North American aviation infrastructure. The report highlights vulnerabilities spanning both agencies' domains, indicating a disjointed approach to protecting vital systems that underpin air traffic management, airport operations, and passenger screening processes.\n\nThe scale of these identified gaps is described as \"major,\" implying widespread deficiencies in areas such as integrated threat intelligence sharing, coordinated incident response protocols, and harmonized security standards across their respective IT and operational technology (OT) environments. The potential impact is substantial, ranging from increased susceptibility to sophisticated cyberattacks targeting critical aviation systems, data breaches compromising sensitive traveler information, to potential disruptions in air traffic control or airport functionality. Exploiting these shortfalls could undermine public confidence in aviation security and pose direct safety risks if operational systems were compromised.\n\nWhile the report primarily serves as an urgent call for action, its immediate official \"response\" is the GAO's strong urging for improved, systemic collaboration between the FAA and TSA. This implies an expectation that both agencies will develop and implement joint strategies to fortify their cyber defenses and establish clear, consistent information sharing mechanisms. The implications for aviation security are profound: failure to swiftly address these findings could leave the National Airspace System vulnerable to persistent and evolving cyber threats, necessitating immediate and concerted efforts to establish a unified and resilient cybersecurity posture across the U.S. aviation sector."
+        },
+        {
+          "title": "TSA Expands Private Security Screening Program (TSA Gold+)",
+          "category": "Regulatory",
+          "region": "North America",
+          "severity": "Low",
+          "summary": "The TSA unveiled 'TSA Gold+', an expanded program allowing more U.S. airports to use private security contractors for passenger screening, under federal oversight.",
+          "source": "Reason Magazine",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG2JTAplMDHZS1LxEotIeI0cxLQTOFEmvaCp1LbXh6uJcxz5h0OZZfsAK_UsuvCNaLuIyuUyWsi6bzU37-ie0LG3DfBDCgYxX1Gk4cLXGcmmtKJXiJ9qVywkWcQD-Z9xm5K25ds76gCAAfPbadVsOSuWB-v2cwBmwOGAVY1flvlnk2WEon9cqyqGWG0zbmulUkVWhwY-V8tocyJNFP-S_N_Kni1LEszSDbgB0H0Bg_g-y7PmOsluDw=",
+          "date": "2026-07-24",
+          "fullContent": "Pada 2026-07-24, Transportation Security Administration (TSA) melancarkan secara rasmi 'TSA Gold+', iaitu perluasan kawal selia yang ketara yang membenarkan peningkatan bilangan lapangan terbang A.S. untuk mengambil kontraktor keselamatan swasta bagi operasi saringan penumpang. Inisiatif ini, yang dilaporkan oleh Reason Magazine, menandakan penerimaan yang lebih luas terhadap perkhidmatan saringan yang diswastakan di seluruh Amerika Utara, berdasarkan program sedia ada seperti Screening Partnership Program (SPP), yang membenarkan lapangan terbang untuk tidak mengambil saringan yang dikendalikan oleh TSA demi syarikat swasta di bawah penyeliaan persekutuan. Pelancaran program ini menunjukkan perubahan strategik dalam cara agensi itu bertujuan untuk mengurus jejak saringan yang meluas.\n\nSkala 'TSA Gold+' dijangka besar, menjemput \"lebih banyak lapangan terbang A.S.\" untuk mengambil bahagian, membayangkan kemungkinan pelancaran di seluruh negara melangkaui skop terhad inisiatif saringan swasta yang sebelumnya. Dari segi teknikal, semua perkhidmatan saringan swasta di bawah 'TSA Gold+' akan beroperasi \"di bawah pengawasan persekutuan,\" bermakna TSA mengekalkan kuasa muktamad ke atas protokol keselamatan, piawaian latihan, penggunaan teknologi, dan metrik prestasi, memastikan pematuhan dengan peraturan keselamatan penerbangan persekutuan. Model ini bertujuan untuk menggabungkan fleksibiliti dan potensi kecekapan kos perusahaan swasta dengan piawaian keselamatan yang tidak berbelah bahagi yang diamanahkan oleh kerajaan persekutuan, dengan kontraktor swasta bertanggungjawab secara langsung untuk kakitangan dan operasi harian.\n\nRespons rasmi daripada TSA secara tersirat adalah positif, kerana mereka \"melancarkan\" program itu, kemungkinan besar menyebut faedah seperti peningkatan kecekapan operasi, pengurangan beban kakitangan persekutuan, dan peningkatan kebolehsuaian kepada jumlah penumpang yang berubah-ubah. Bagi keselamatan penerbangan, implikasinya adalah pelbagai aspek. Walaupun penyokong berhujah untuk pengalaman penumpang yang lebih baik, potensi penjimatan kos, dan peruntukan sumber yang tangkas, kebimbangan wujud mengenai mengekalkan piawaian saringan yang seragam, memastikan akauntabiliti yang konsisten dalam pelanggaran keselamatan, dan potensi kesan ke atas moral pekerja dan kadar pusing ganti dalam firma swasta. Penganalisis perisikan akan memantau dengan teliti pelancaran program itu untuk menilai keberkesanannya dalam mengekalkan postur keselamatan yang mantap sambil mengintegrasikan model operasi yang pelbagai, terutamanya mengenai potensi kelemahan yang timbul daripada prestasi kontraktor yang berbeza-beza."
+        },
+        {
+          "title": "Finnish Intelligence Warns of New Russian Cyber Espionage Group 'Laundry Bear'",
+          "category": "Threat",
+          "region": "Europe",
+          "severity": "Medium",
+          "summary": "Finnish intelligence services issued a warning about 'Laundry Bear,' a Russian state-backed cyber-espionage group targeting critical infrastructure, including likely aviation sectors.",
+          "source": "Ukrainska Pravda",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEhFG4hX1DMKSPjxYyS7gDpfk2WDIRNn5a_QoDAx_H0ldar4rvm51HGGc6zpE-ZutubL0jNqoNMJBzTaZAeYeklKdGiW12kJdAkCXYm0cQzZY9jkdtrekHYFXdHDqfV8k020VdV0Ms9nPvVtHihwv_B",
+          "date": "2026-07-24",
+          "fullContent": "Finnish intelligence services issued a warning about 'Laundry Bear,' a Russian state-backed cyber-espionage group targeting critical infrastructure, including likely aviation sectors."
+        },
+        {
+          "title": "Origin Energy Cyber Breach Highlights Critical Infrastructure Vulnerabilities",
+          "category": "Threat",
+          "region": "Asia-Pacific",
+          "severity": "Medium",
+          "summary": "Australia's Origin Energy confirmed a data breach, with experts emphasizing the broad applicability of such cyber threats to other critical sectors, including aviation.",
+          "source": "Elnion",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHIA-by6nGYb8CJvgYUG1R6L_nUAXN3J5KkYq4_c6NS0dm7pXtc_Edw-E00jIQtRZ1jJbtTWqM-z8J_g7ceUjE_MOL8ddQ7wRT7ajIpTvcjICu5MthCrzBetpsXdR4nwtAeePnE7ly1UpAmJjbpkaq0VQn0hmHHhVffo81FlCw1WfHRcEjgo1y-IwC1LFLTTYsTMlMxNWR-8ykj2A=",
+          "date": "2026-07-24",
+          "fullContent": "Origin Energy Australia mengesahkan berlakunya pelanggaran data, dengan pakar-pakar menekankan kebolehgunaan meluas ancaman siber sedemikian kepada sektor-sektor kritikal lain, termasuk penerbangan."
+        }
+      ]
     }
   ],
-  "generatedAt": "2026-07-24T09:01:21.206Z",
-  "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
+  "generatedAt": "2026-07-25T00:01:48.306Z",
+  "lastProvider": "Gemini (2.5 Flash) (terjemahan)"
 }
