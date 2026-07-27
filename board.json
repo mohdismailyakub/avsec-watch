@@ -75,7 +75,7 @@
       }
     ]
   },
-  "briefing": "A recent flight diversion in Asia-Pacific led to temporary passenger issues at a diverted airport, while a significant cybersecurity incident involving an AI agent highlights evolving global threat landscapes. These events underscore the continuous need for robust aviation security and adaptable threat mitigation strategies worldwide.",
-  "generatedAt": "2026-07-27T00:03:15.245Z",
-  "lastProvider": "Gemini (2.5 Flash)"
+  "briefing": "Recent drone incursions at US airports and a confirmed ransomware attack on European airport systems highlight escalating physical and cyber threats to aviation security globally. Regulatory bodies continue to emphasize the need for enhanced counter-UAS technologies and cyber resilience measures.",
+  "generatedAt": "2026-07-27T09:01:20.978Z",
+  "lastProvider": "DeepSeek V4-Flash + Tavily"
 }
