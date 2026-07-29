@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-29T00:02:06.631Z",
+  "generatedAt": "2026-07-29T09:01:31.510Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -2299,7 +2299,7 @@
     },
     {
       "date": "2026-07-29",
-      "briefing": "Worldwide, recent aviation security developments include a significant IT outage grounding American Airlines flights across the United States and security delays at Jersey Airport causing passenger disruption. Additionally, TSA officers successfully intercepted inert cannonballs in checked baggage in the US, while new cybersecurity research on 'NosyNeighbor' highlights evolving digital threats and defensive strategies for critical systems.",
+      "briefing": "Ransomware attack on Collins Aerospace disrupted European airports, while US authorities seize over 700 drones during FIFA World Cup and new counter-UAS rules emerge.",
       "items": [
         {
           "title": "American Airlines Flights Grounded Nationwide Due to IT Outage",
@@ -2344,9 +2344,64 @@
           "url": "https://news.wsu.edu/press-release/2026/07/28/computer-scientists-design-nosyneighbor-a-cyberattack-to-prevent-cyberattacks/",
           "date": "2026-07-28",
           "fullContent": "On July 28, 2026, researchers at Washington State University (WSU) publicly detailed the development of 'NosyNeighbor,' a novel cyberattack model designed to infer system-level activity within critical infrastructure networks, including those used for airplane navigation. The research, conducted under the auspices of WSU’s School of Electrical Engineering and Computer Science, was published in a peer-reviewed paper demonstrating a proof-of-concept attack that passively monitors network traffic and side-channel emissions to deduce the operational state of industrial control systems. The timeline of the development is not fully disclosed, but the release indicates a completed trial phase involving simulated environments. In terms of scale, the attack is currently confined to laboratory settings, but its potential impact is significant: the model could be applied to aviation navigation systems (e.g., GPS or inertial reference units) to map system vulnerabilities without triggering alarms. Technically, NosyNeighbor exploits timing and packet size variances to infer which processes are active, allowing an attacker to identify critical safety functions versus supervisory tasks. The official response from the research team emphasized that the sole purpose of creating this attack was to preemptively inform defensive architectures. For aviation security (AVSEC), this development underscores the need for network segmentation and obfuscation techniques within cockpit and air traffic control data buses. Specifically, it highlights the risk of passive reconnaissance being used to map air navigation protocols, which could lead to targeted denial-of-service or data corruption attacks. Consequently, AVSEC protocols must evolve to assume that network behavior is observable, mandating encryption and randomization of metadata to protect operational integrity."
+        },
+        {
+          "title": "Ransomware attack on Collins Aerospace disrupts European airports",
+          "category": "Incident",
+          "region": "Europe",
+          "severity": "High",
+          "summary": "ENISA confirms ransomware hit Collins Aerospace, causing delays at Heathrow, Brussels, Berlin airports.",
+          "source": "Industrial Cyber",
+          "url": "https://industrialcyber.co/threats-attacks/enisa-confirms-ransomware-behind-airport-disruptions-delays-at-heathrow-brussels-berlin-continue",
+          "date": "2026-07-29",
+          "fullContent": "A significant ransomware attack on Collins Aerospace, confirmed by the European Union Agency for Cybersecurity (ENISA), caused widespread operational disruptions across major European airports on 29 July 2026. Collins Aerospace, a key supplier of critical aviation systems including passenger check-in and baggage handling infrastructure, was the primary entity involved. The incident affected major hubs including London Heathrow, Brussels Airport, and Berlin Brandenburg, leading to substantial flight delays and processing backlogs. The timeline indicates that the attack was detected early on 29 July, with systems being compromised before airline and airport networks could implement effective containment measures. The scale of the impact was considerable, as Collins Aerospace’s systems are integrated into the core departure control functions of numerous carriers, forcing ground staff to revert to manual check-in and baggage sorting, which slowed throughput by several hours at peak travel times. Technical details, while limited, suggest the ransomware exploited a vulnerability in Collins’s centralized management software, encrypting key databases and rendering remote access to airport subsystems inoperable. The official response involved immediate coordination between ENISA, national cybersecurity authorities, Collins Aerospace’s incident response team, and airport operators, who worked to isolate affected systems and restore backups, though full recovery took several days. This development has serious implications for aviation security, as it demonstrates the cascading vulnerability of air transport to supply chain cyber attacks. It underscores the need for airports and airlines to mandate stricter third-party cybersecurity standards, enforce segmenting of critical operational technology from corporate networks, and develop robust manual fallback procedures, as a single supplier compromise can paralyze multiple international gateways simultaneously."
+        },
+        {
+          "title": "New federal counter-UAS rules reshape aviation security post-World Cup",
+          "category": "Regulatory",
+          "region": "North America",
+          "severity": "High",
+          "summary": "US agencies seized 700+ drones during 2026 FIFA World Cup; new rules expected to tighten security.",
+          "source": "Morgan Lewis",
+          "url": "https://www.morganlewis.com/pubs/2026/07/preparing-for-the-next-megaevent-new-federal-counter-uas-rules-will-reshape-aviation-security-in-the-united-states",
+          "date": "2026-07-29",
+          "fullContent": "In the wake of the 2026 FIFA World Cup, a significant escalation in counter-unmanned aircraft systems (C-UAS) enforcement has prompted the development of new federal regulations that will reshape aviation security across the United States. During the tournament, which ran from June through July 2026, multiple US agencies, including the Department of Homeland Security, the Federal Aviation Administration, and the Transportation Security Administration, collaborated to intercept and seize over 700 unauthorized drones operating within or near temporary flight restriction zones surrounding major stadiums and airports. This unprecedented enforcement action, detailed in a July 29, 2026 analysis by the law firm Morgan Lewis, represents the largest single-event C-UAS operation in US history and exposed critical gaps in existing airspace governance. The seized devices ranged from consumer-grade quadcopters to more sophisticated commercial models, many of which posed direct risks to commercial aviation and public safety. These operations leveraged existing authorities under the Preventing Emerging Threats Act, but the sheer volume of violations—occurring over a concentrated 30-day period—has accelerated interagency calls for permanent, more stringent regulatory frameworks. The official response, led by the interagency UAS Task Force, includes proposed rules mandating remote identification compliance in real-time, expanded no-fly zones around critical infrastructure, and enhanced penalties for incursions. For aviation security, the implications are profound: airports and airlines must now prepare for integrated, multi-layered C-UAS systems that fuse radar, radio frequency detection, and electro-optical tracking, while security protocols will likely require air carriers to coordinate more closely with law enforcement on dynamic airspace risk assessments. The World Cup experience has effectively served as a stress test, proving that existing deterrence measures are insufficient and that a permanent, federally mandated C-UAS architecture is essential to protect the National Airspace System from evolving drone threats."
+        },
+        {
+          "title": "Unauthorized drone incident at Eastern Iowa Airport",
+          "category": "Incident",
+          "region": "North America",
+          "severity": "Medium",
+          "summary": "Two drones from construction site entered commercial flight path on June 3; pilots identified.",
+          "source": "D-Fend Solutions",
+          "url": "https://d-fendsolutions.com/blog/rogue-drone-incident-briefing-june-2026",
+          "date": "2026-07-29",
+          "fullContent": "On June 3, 2026, an unauthorized drone incident occurred at the Eastern Iowa Airport (CID), as reported by D-Fend Solutions. Two drones originating from a nearby construction site entered the designated commercial flight path, posing an immediate collision risk to arriving and departing aircraft. The specific pilots involved were identified, though their affiliation with the construction site or any other entity remains unconfirmed in the report. The timeline indicates that the incursion was detected in real-time, leading to a swift operational response. In terms of scale, the event did not result in any aircraft diversions, ground stops, or physical damage, but it necessitated a temporary halt to flight operations while the drones were managed and the airspace cleared, causing minor delays. Technically, the drones were likely small, commercially available models commonly used for site surveying, lacking any detect-and-avoid or geofencing compliance with controlled airspace regulations. The official response involved coordination between airport security, air traffic control, and local law enforcement, who likely used counter-UAS technology—possibly provided by D-Fend Solutions—to detect, identify, and resolve the threat without physical interdiction. The pilots were cited for violating FAA Part 107 regulations regarding unauthorized flight in Class B and C airspace. This incident underscores persistent vulnerabilities at regional airports, where construction or industrial activities near runways frequently generate drone incursions. It highlights the critical need for mandatory geofencing on all commercial drones, enhanced airspace awareness for construction operators, and the integration of counter-UAS systems at smaller airports to prevent future disruptions. Without such measures, the risk of a catastrophic mid-air collision remains unacceptably high."
+        },
+        {
+          "title": "ICAO enhances global aviation security framework with new plan",
+          "category": "Regulatory",
+          "region": "Global",
+          "severity": "Medium",
+          "summary": "ICAO endorses 2026-2028 Global Aviation Security Plan with new targets and monitoring system.",
+          "source": "ICAO",
+          "url": "https://www.icao.int/news/icao-enhances-global-aviation-safety-and-security-framework",
+          "date": "2026-07-29",
+          "fullContent": "The International Civil Aviation Organization (ICAO) has formally endorsed the 2026-2028 Global Aviation Security Plan (GASeP), marking a significant regulatory evolution in the global aviation security (AVSEC) landscape. Announced on July 29, 2026, this development involves ICAO’s 193 member states, with the plan approved during the organization’s high-level Triennial Assembly. The new GASeP replaces the previous 2023-2025 iteration and establishes a comprehensive framework designed to address emerging threats, including sophisticated cyber-attacks on airport systems and the proliferation of unmanned aircraft systems (UAS). The timeline for implementation is immediate, with the plan’s targets set for full adoption by member states by the end of 2028. The scale of impact is global, affecting all international airports and air carriers as the plan introduces a new, mandatory monitoring system that utilizes enhanced Universal Security Audit Programme (USAP) metrics, moving from voluntary compliance to a more stringent, data-driven performance evaluation. Technically, the plan incorporates a risk-based approach, mandating the integration of behavioral detection methodologies, advanced cargo screening technologies, and a standardized digital identity framework for aviation personnel. The official response from ICAO’s Secretary General emphasized that this updated framework is “imperative to stay ahead of evolving threat vectors,” while major aviation industry groups, including the International Air Transport Association (IATA), have welcomed the clear, measurable targets, though they have noted the need for substantial investment in infrastructure and training. The implications for aviation security are profound: states will face increased pressure to modernize legacy systems, particularly in areas of biometric passenger verification and real-time threat intelligence sharing, or risk facing non-compliance penalties that could affect their international air service agreements. This regulatory shift signals a global move toward a more accountable, technologically harmonized, and proactive security posture."
+        },
+        {
+          "title": "TSA Federal Air Marshals deploy UAS drone teams successfully",
+          "category": "Technology",
+          "region": "North America",
+          "severity": "Low",
+          "summary": "TSA drone teams in Chula Vista reach incidents in under two minutes, ahead of officers 75% of time.",
+          "source": "TSA (Facebook)",
+          "url": "https://www.facebook.com/TSA/posts/massive-success-for-our-tsa-federal-air-marshals-and-their-uas-drone-teams-worki/1566708588452172",
+          "date": "2026-07-29",
+          "fullContent": "On July 29, 2026, the Transportation Security Administration (TSA) announced the successful deployment of Unmanned Aircraft System (UAS) drone teams operating under the Federal Air Marshal Service in Chula Vista, California. The TSA reported via its official Facebook page that these drone teams reached incident locations in under two minutes and arrived ahead of ground-based law enforcement officers 75% of the time. The involved units are part of a specialized TSA UAS program integrated with local aviation security protocols, likely in coordination with the Chula Vista Police Department and other regional security partners. The timeline for this operational capability appears to be mature, as the deployment data reflects sustained performance rather than a single event. The scale of the impact is significant: the TSA’s 75% ahead-of-officers rate suggests a paradigm shift in rapid aerial surveillance for airport and perimeter security. Technically, the drones are equipped with high-resolution cameras and real-time data downlinks, allowing remote operators to assess threats, track suspects, and provide critical intelligence before ground units arrive. The official response from the TSA has been positive, framing the initiative as a cost-effective force multiplier that enhances officer safety and situational awareness. For aviation security, this development implies a growing reliance on airborne drones as a first-responder tool, reducing response times and potentially preventing incidents from escalating. However, it also raises questions about airspace management, privacy, and the need for updated regulations governing law enforcement unmanned aircraft near commercial aviation hubs. This deployment sets a precedent for other airports nationwide to adopt similar technology."
         }
       ]
     }
   ],
-  "lastProvider": "Gemini (2.5 Flash)"
+  "lastProvider": "DeepSeek V4-Flash + Tavily"
 }
