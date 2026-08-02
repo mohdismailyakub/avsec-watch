@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-02T00:01:00.017Z",
+  "generatedAt": "2026-08-02T09:01:07.798Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -2719,9 +2719,21 @@
     },
     {
       "date": "2026-08-02",
-      "briefing": "Recent aviation security is dominated by a European ransomware supply-chain attack causing airport disruptions, a surge in counter-UAS regulations following the FIFA World Cup, and continued drone incursions at major airports.",
-      "items": []
+      "briefing": "The global aviation security landscape is currently focused on an ongoing investigation in Malaysia regarding potential insider threats and screening failures following a pilot's drug arrest. Regulatory compliance and existing security procedures are under scrutiny in the Asia-Pacific region.",
+      "items": [
+        {
+          "title": "CAAM probes aviation security compliance after Malaysia Airlines pilot's drug arrest",
+          "category": "Incident|Regulatory",
+          "region": "Asia-Pacific",
+          "severity": "Medium",
+          "summary": "Malaysian authorities are investigating aviation security procedures following a Malaysia Airlines pilot's drug arrest in Jakarta, raising concerns about compliance and insider threat.",
+          "source": "News Report",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFcnUKwZ7l-vXIEYArMj_LSHL-EgUFdKDIk-jM3dlDBn35MhtsryLVotsL89quE_SZfR-xVZA0dNIb_Sx1pGcf_6HtXQ9d1DAYxOaUa4Ep7b5nE7_gaFlXi4rTjpBrETnKrZhhukVx8WK-rgjd4c7ICD4tDAF4BrWUU9YoDirP4ebFThwXejEuKMczEfgh-Vl7IhxnghRz8vKtgKPdaFyPIFScAeOJRw0E6UwtxuU5TTo5usKAR1oBEHQvywbU",
+          "date": "2026-08-02",
+          "fullContent": "On 2026-08-02, the Civil Aviation Authority of Malaysia (CAAM) initiated a comprehensive investigation into aviation security compliance following the arrest of a Malaysia Airlines pilot for drug offenses in Jakarta. This incident involved a credentialed airline employee, raising immediate concerns about insider threat vulnerabilities within the Asia-Pacific aviation sector. While the specific nature of the drug charges and the full details of the pilot's arrest are being handled by Indonesian authorities, CAAM’s focus is on understanding potential failures in Malaysian aviation security procedures.\n\nThe scale of this development is significant, prompting a regulatory review rather than just an internal airline matter. It underscores the critical technical challenge of mitigating insider threats, where trusted individuals, possessing privileged access to secure areas and aircraft, exploit their positions for illicit activities. This incident, while criminal in nature involving drugs, fundamentally exposes potential weaknesses in personnel vetting, background checks, recurrent screening protocols, and overall access control mechanisms for flight crew. The fact that a pilot was involved is particularly alarming due to their extensive access and potential operational influence.\n\nIn response, CAAM’s probe will meticulously examine Malaysia Airlines’ adherence to national and international aviation security standards, with a particular emphasis on personnel security, drug screening policies, and the effectiveness of their internal security culture. The broader implications for aviation security are substantial, mandating a critical re-evaluation of insider threat mitigation strategies across the industry. This event could trigger the implementation of more stringent pre-employment and recurrent background checks, enhanced drug testing regimes for critical aviation personnel, and a bolstered emphasis on continuous monitoring programs to safeguard against such compromises."
+        }
+      ]
     }
   ],
-  "lastProvider": "DeepSeek V4-Flash + Tavily"
+  "lastProvider": "Gemini (2.5 Flash)"
 }

@@ -2219,10 +2219,22 @@
     },
     {
       "date": "2026-08-02",
-      "briefing": "Keselamatan penerbangan terkini didominasi oleh serangan rantai bekalan ransomware Eropah yang menyebabkan gangguan lapangan terbang, peningkatan peraturan anti-UAS selepas Piala Dunia FIFA, dan pencerobohan dron yang berterusan di lapangan terbang utama.",
-      "items": []
+      "briefing": "Landskap keselamatan penerbangan global sedang tertumpu kepada siasatan yang sedang berjalan di Malaysia mengenai ancaman orang dalam yang berpotensi dan kegagalan pemeriksaan berikutan penahanan juruterbang kerana dadah. Pematuhan kawal selia dan prosedur keselamatan sedia ada sedang diteliti di rantau Asia Pasifik.",
+      "items": [
+        {
+          "title": "CAAM menyiasat pematuhan keselamatan penerbangan selepas penahanan juruterbang Malaysia Airlines kerana dadah",
+          "category": "Incident|Regulatory",
+          "region": "Asia-Pacific",
+          "severity": "Medium",
+          "summary": "Pihak berkuasa Malaysia sedang menyiasat prosedur keselamatan penerbangan berikutan penahanan juruterbang Malaysia Airlines kerana dadah di Jakarta, menimbulkan kebimbangan mengenai pematuhan dan ancaman orang dalam.",
+          "source": "News Report",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFcnUKwZ7l-vXIEYArMj_LSHL-EgUFdKDIk-jM3dlDBn35MhtsryLVotsL89quE_SZfR-xVZA0dNIb_Sx1pGcf_6HtXQ9d1DAYxOaUa4Ep7b5nE7_gaFlXi4rTjpBrETnKrZhhukVx8WK-rgjd4c7ICD4tDAF4BrWUU9YoDirP4ebFThwXejEuKMczEfgh-Vl7IhxnghRz8vKtgKPdaFyPIFScAeOJRw0E6UwtxuU5TTo5usKAR1oBEHQvywbU",
+          "date": "2026-08-02",
+          "fullContent": "Pada 2026-08-02, Pihak Berkuasa Penerbangan Awam Malaysia (CAAM) telah memulakan siasatan menyeluruh terhadap pematuhan keselamatan penerbangan susulan penahanan seorang juruterbang Malaysia Airlines atas kesalahan dadah di Jakarta. Kejadian ini melibatkan seorang pekerja syarikat penerbangan yang mempunyai kelayakan (credential), menimbulkan kebimbangan segera mengenai kelemahan ancaman dalaman (insider threat) dalam sektor penerbangan Asia-Pasifik. Walaupun sifat khusus pertuduhan dadah dan butiran penuh penahanan juruterbang tersebut sedang dikendalikan oleh pihak berkuasa Indonesia, tumpuan CAAM adalah untuk memahami potensi kegagalan dalam prosedur keselamatan penerbangan Malaysia.\n\nSkala perkembangan ini adalah signifikan, mendorong semakan kawal selia dan bukannya sekadar perkara dalaman syarikat penerbangan. Ini menekankan cabaran teknikal kritikal dalam mengurangkan ancaman dalaman, di mana individu yang dipercayai, yang mempunyai akses istimewa ke kawasan keselamatan dan pesawat, mengeksploitasi kedudukan mereka untuk aktiviti haram. Kejadian ini, walaupun bersifat jenayah melibatkan dadah, pada asasnya mendedahkan kelemahan potensi dalam saringan kakitangan, semakan latar belakang, protokol saringan berulang, dan mekanisme kawalan akses keseluruhan bagi krew penerbangan. Fakta bahawa seorang juruterbang terlibat amat membimbangkan kerana akses meluas dan pengaruh operasi yang berpotensi.\n\nSebagai respons, siasatan CAAM akan meneliti secara terperinci pematuhan Malaysia Airlines terhadap piawaian keselamatan penerbangan nasional dan antarabangsa, dengan penekanan khusus terhadap keselamatan kakitangan, dasar saringan dadah, dan keberkesanan budaya keselamatan dalaman mereka. Implikasi yang lebih luas untuk keselamatan penerbangan adalah besar, mewajibkan penilaian semula kritikal terhadap strategi pengurangan ancaman dalaman di seluruh industri. Peristiwa ini boleh mencetuskan pelaksanaan semakan latar belakang pra-pekerjaan dan berulang yang lebih ketat, rejim ujian dadah yang dipertingkatkan bagi kakitangan penerbangan kritikal, dan penekanan yang diperkukuh terhadap program pemantauan berterusan untuk melindungi daripada kompromi sedemikian."
+        }
+      ]
     }
   ],
-  "generatedAt": "2026-08-02T00:01:00.017Z",
-  "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
+  "generatedAt": "2026-08-02T09:01:07.798Z",
+  "lastProvider": "Gemini (2.5 Flash) (terjemahan)"
 }
