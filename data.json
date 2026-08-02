@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-01T09:00:59.983Z",
+  "generatedAt": "2026-08-02T00:01:00.017Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -2716,6 +2716,11 @@
           "fullContent": "ICAO’s Security Week, scheduled for late 2026, represents a consolidated multilateral effort to advance global aviation security standards, bringing together the Traveller Identification Programme (TRIP) Symposium, the Regional Security Oversight Organisations (RSOO) and Regional Accident Investigation Organisations (RAIO) forums, and concurrent air navigation events. The initiative, announced by ICAO on 1 August 2026, involves the organisation’s 193 member states, industry stakeholders, security regulators, and international bodies such as IATA and ACI, with the timeline spanning approximately one week of plenary sessions, technical workshops, and bilateral consultations at ICAO Headquarters in Montreal. The scale is significant: the TRIP Symposium alone typically draws over 500 delegates, and the combination of RSOO/RAIO forums signals a deliberate integration of safety oversight mechanisms with security protocols, addressing the convergence of physical security, cybersecurity, and passenger facilitation. Technically, the agenda will focus on updating Annex 9 (Facilitation) and Annex 17 (Security) provisions, particularly around biometric identity verification, machine-readable travel documents, and the interoperability of globally recognised passenger screening data. The official response from ICAO Secretary General frames the week as a critical checkpoint ahead of the 2026–2027 Assembly cycle, emphasising the need to harmonise national implementation gaps in the Universal Security Audit Programme (USAP). The dual focus on RSOOs and RAIOs is particularly notable, as it aims to strengthen regional capacity-building for states with limited resources, pushing for standardised risk assessment frameworks and real-time information sharing on emerging threats. The implications for aviation security are substantial: first, the event may catalyse binding amendments to passport issuance standards and biometric data-sharing protocols; second, it will likely produce recommendations for aligning national security programmes with evolving drone and cyber threats; third, the integration with air navigation events suggests a future where security and operational efficiency are treated as inseparable, potentially leading to stricter pre-departure security checks at the cost of passenger convenience. Delayed implementation timelines, however, remain a risk, as divergent state interests and infrastructure limitations could dilute the consensus documents. Overall, Security Week 2026 is a pivotal, forward-looking forum intended to harden global AVSEC architecture against next-generation threats while preserving the integrity of international air travel."
         }
       ]
+    },
+    {
+      "date": "2026-08-02",
+      "briefing": "Recent aviation security is dominated by a European ransomware supply-chain attack causing airport disruptions, a surge in counter-UAS regulations following the FIFA World Cup, and continued drone incursions at major airports.",
+      "items": []
     }
   ],
   "lastProvider": "DeepSeek V4-Flash + Tavily"
