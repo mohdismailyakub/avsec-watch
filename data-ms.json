@@ -2236,7 +2236,7 @@
     },
     {
       "date": "2026-08-03",
-      "briefing": "Keselamatan penerbangan global telah menyaksikan perkembangan terkini termasuk insiden ancaman dalaman di Asia-Pasifik dan kebimbangan keselamatan yang diperbaharui menyebabkan penggantungan penerbangan di Timur Tengah. Serentak itu, ancaman siber daripada model AI canggih dan serangan dron di zon konflik menyerlahkan cabaran yang sentiasa berubah, manakala pertikaian buruh mengganggu operasi di Amerika Utara dan sebuah lapangan terbang dibuka semula di Amerika Latin di bawah protokol AVSEC baharu.",
+      "briefing": "Gangguan dron berhampiran lapangan terbang AS dan gangguan IT penerbangan utama Eropah mendominasi kebimbangan AVSEC terkini, dengan peraturan siber EU baharu berkuat kuasa pada awal 2026. Tiada insiden baharu sejak 08:00 MYT hari ini dikenal pasti; item di bawah adalah perkembangan disahkan terkini daripada sumber akhir Julai/awal Ogos 2026.",
       "items": [
         {
           "title": "Juruterbang Malaysia Airlines Ditahan kerana Penyeludupan Dadah",
@@ -2307,6 +2307,6 @@
       ]
     }
   ],
-  "generatedAt": "2026-08-03T00:02:35.829Z",
-  "lastProvider": "Gemini (2.5 Flash) (terjemahan)"
+  "generatedAt": "2026-08-03T09:01:56.591Z",
+  "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }

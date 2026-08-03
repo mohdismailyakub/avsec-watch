@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-03T00:02:35.829Z",
+  "generatedAt": "2026-08-03T09:01:56.591Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -2736,7 +2736,7 @@
     },
     {
       "date": "2026-08-03",
-      "briefing": "Global aviation security has seen recent developments including an insider threat incident in Asia-Pacific and renewed security concerns leading to flight suspensions in the Middle East. Simultaneously, cyber threats from advanced AI models and drone attacks in conflict zones highlight evolving challenges, while labor disputes disrupt operations in North America and an airport reopens in Latin America under new AVSEC protocols.",
+      "briefing": "Drone incursions near US airports and a major European aviation IT outage dominate recent AVSEC concerns, with new EU cyber rules taking effect in early 2026. No fresh incidents since 08:00 MYT today identified; items below are the most recent confirmed developments from late July/early August 2026 sources.",
       "items": [
         {
           "title": "Malaysia Airlines Pilot Arrested for Drug Smuggling",
@@ -2807,5 +2807,5 @@
       ]
     }
   ],
-  "lastProvider": "Gemini (2.5 Flash)"
+  "lastProvider": "DeepSeek V4-Flash + Tavily"
 }
