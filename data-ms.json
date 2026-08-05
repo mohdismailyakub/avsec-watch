@@ -2391,7 +2391,7 @@
     },
     {
       "date": "2026-08-05",
-      "briefing": "Keselamatan penerbangan global kini sedang menumpukan perhatian pada meningkatkan kesiapsiagaan terhadap ancaman yang muncul, terutamanya daripada aktiviti dron tanpa kebenaran, sambil pada masa yang sama memajukan rangka kerja kawal selia dan bertindak balas terhadap insiden operasi. Perkembangan terkini termasuk satu kajian baharu yang menonjolkan ketidaksiapan lapangan terbang terhadap dron, FAA mencadangkan perubahan kepada keperluan kit perubatan kecemasan, dan gangguan runway di Lapangan Terbang Cape Town.",
+      "briefing": "Keselamatan penerbangan kekal meningkat berikutan pencerobohan dron serentak di lapangan terbang utama dan peningkatan mendadak serangan siber terhadap syarikat penerbangan serta pembekal, dengan peraturan baharu AS terhadap anti-UAS mengubah landskap kawal selia.",
       "items": [
         {
           "title": "Lapangan Terbang Tidak Bersedia untuk Ancaman Dron, Kajian Global Memberi Amaran",
@@ -2440,6 +2440,6 @@
       ]
     }
   ],
-  "generatedAt": "2026-08-05T00:03:18.638Z",
-  "lastProvider": "Gemini (2.5 Flash) (terjemahan)"
+  "generatedAt": "2026-08-05T09:00:57.448Z",
+  "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }
