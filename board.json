@@ -64,7 +64,7 @@
       }
     ]
   },
-  "briefing": "Global aviation security saw a significant incident in Germany with an explosive drone at a major cargo airport, raising concerns about hybrid attack scenarios. Meanwhile, new warnings emerged from the US regarding AI-powered cyber threats and exposed critical infrastructure vulnerabilities, including at airports.",
-  "generatedAt": "2026-08-07T00:07:20.071Z",
-  "lastProvider": "Gemini (2.5 Flash)"
+  "briefing": "Drone incursions and aviation cyberattacks remain top near-term threats, with fresh incidents at JFK and European airports underscoring persistent vulnerabilities as regulators tighten rules.",
+  "generatedAt": "2026-08-07T09:01:34.096Z",
+  "lastProvider": "DeepSeek V4-Flash + Tavily"
 }

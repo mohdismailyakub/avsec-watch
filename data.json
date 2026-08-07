@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T00:03:08.829Z",
+  "generatedAt": "2026-08-07T09:01:07.130Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -2991,7 +2991,7 @@
     },
     {
       "date": "2026-08-07",
-      "briefing": "Global aviation security saw a significant incident in Germany with an explosive drone at a major cargo airport, raising concerns about hybrid attack scenarios. Meanwhile, new warnings emerged from the US regarding AI-powered cyber threats and exposed critical infrastructure vulnerabilities, including at airports.",
+      "briefing": "Drone incursions and aviation cyberattacks remain top near-term threats, with fresh incidents at JFK and European airports underscoring persistent vulnerabilities as regulators tighten rules.",
       "items": [
         {
           "title": "Explosive Drone Found at Leipzig/Halle Airport",
@@ -3058,9 +3058,31 @@
           "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQECdsVHv47S2yJtAenHjVaBpVRBeAHhfZ0p-u31l9SxhdqAsAOq-W2yJycWITOcmpBjBx8Vz9sdngTQCo32lwn5su2HZSXgPp4yaevuEF-uncnQq67RcMQbw-8vIvl7i90t5uhljIELrqQHgUHmub4FdKkxV2KUG7jYvgcA7dExgdDOnulT9v6FroNnV56tKHGzdT2NTGNf2kGLpxDxBg==",
           "date": "2026-08-06",
           "fullContent": "On August 6, 2026, Minneapolis-St. Paul International Airport (MSP) experienced a significant operational disruption leading to the temporary halting of all flight operations. The incident, categorized as an 'Incident' in North America and reported by MPR News, was directly attributed to unspecified telecommunication issues. This immediate cessation of flights indicates a critical failure within the airport’s operational backbone, impacting not only MSP airport operations, but also the Federal Aviation Administration (FAA) controlling air traffic, airline operators, and potentially thousands of passengers through widespread delays, cancellations, and diversions. The timeline suggests a sudden and critical system failure requiring an immediate grounding response.\n\nWhile specific technical details remain undisclosed, \"telecommunication issues\" in an airport environment encompass a broad spectrum of critical systems, from air traffic control (ATC) voice and data links between pilots and controllers to radar data transmission, and internal airport network connectivity vital for security screening, gate operations, and baggage handling. The comprehensive nature of the flight halt strongly suggests a failure in a fundamental, shared communication infrastructure component rather than an isolated or redundant system. The official response, primarily the decision to halt all flights, was an immediate and necessary safety measure to prevent unsafe operations, followed by efforts to diagnose and rectify the underlying problem.\n\nThe implications for aviation security are significant, even if the incident was purely accidental. This event highlights critical vulnerabilities in the underlying infrastructure that underpins global air travel. A severe disruption of core telecommunications, whether accidental, system-induced, or achieved through malicious intent like a sophisticated cyber-attack or physical sabotage, can effectively cripple an airport's ability to function. It underscores the imperative for robust cyber resilience, comprehensive redundancy in communication systems, and enhanced physical security protocols for critical infrastructure. Adversaries could exploit similar weaknesses to achieve operational paralysis, impacting economic stability, public confidence, and national security. Continued intelligence gathering to determine the root cause, particularly ruling out malicious activity, is crucial for developing future protective measures."
+        },
+        {
+          "title": "JetBlue plane hits drone during JFK approach; FAA investigating",
+          "category": "Incident",
+          "region": "North America",
+          "severity": "High",
+          "summary": "A JetBlue pilot reported a collision with a drone at 3,000 feet near JFK on Monday; plane landed safely, FAA probing.",
+          "source": "ASIS Security Management",
+          "url": "https://www.asisonline.org/security-management-magazine/latest-news/today-in-security/2026/june/drone-jetblue-jfk-collision-droneshield-2026-report",
+          "date": "2026-08-07",
+          "fullContent": "On Monday, 3 August 2026, a JetBlue Airways Airbus A320, operating an inbound flight to John F. Kennedy International Airport (JFK), struck a drone during its final approach at approximately 3,000 feet. The pilot immediately reported the collision to air traffic control after sensing an impact, and the aircraft continued to a safe landing with no injuries reported among the 120 passengers and six crew members. The Federal Aviation Administration (FAA) has launched an investigation, focusing on recovering the drone remnants and identifying the operator, who faces potential civil penalties up to $30,000 and possible criminal referral. The incident occurred in Class B airspace, where all drone operations are strictly prohibited without special authorization. The collision is notable for occurring at a relatively low altitude within the congested JFK arrival corridor, yet the aircraft showed no significant structural damage; however, the event underscores the catastrophic risk of engine ingestion or windscreen breach, which could have resulted in a hull loss. Technically, the drone’s small size suggests it was a consumer-type model, likely under 55 pounds, using GPS-based flight modes, which challenges existing counter-UAS systems that prioritize larger threats. The FAA’s response includes a Notice to Air Missions (NOTAM) reaffirming the permanent drone ban near JFK and increased coordination with local law enforcement to deploy radio-frequency detection equipment. This incident is the second confirmed drone strike on a commercial airliner in U.S. airspace in 2026, following a near-miss at Newark in April, and serves as a stark reminder that despite Remote ID regulations effective since March 2024, enforcement remains difficult. For aviation security, this development highlights a critical gap: passive detection is insufficient, and active mitigation, including geofencing mandates and manufacturer-integrated airspace authorization, must be accelerated to prevent a future catastrophe. The incident also pressures the FAA to expedite its rulemaking on drone detection and interdiction technologies for commercial airports, a measure long delayed by privacy and spectrum concerns."
+        },
+        {
+          "title": "Ransomware attack on Collins Aerospace disrupts European airports",
+          "category": "Incident",
+          "region": "Europe",
+          "severity": "High",
+          "summary": "ENISA confirms ransomware caused Collins Aerospace outage, impacting multiple major European airports; law enforcement investigating.",
+          "source": "LinkedIn (Rob Demain)",
+          "url": "https://www.linkedin.com/posts/rob-demain-01733468_heads-up-looks-like-a-cyber-attack-has-hit-activity-7375082251841347584-2BI_",
+          "date": "2026-08-07",
+          "fullContent": "On 7 August 2026, the European Union Agency for Cybersecurity (ENISA) formally attributed a multi-day operational outage at Collins Aerospace, a major avionics and flight-management systems provider, to a ransomware attack. The incident, which began in late July 2026, disrupted critical ground-based flight planning and crew scheduling software used by multiple major European airports, including Amsterdam Schiphol, Frankfurt, and Paris Charles de Gaulle. Collins Aerospace, a subsidiary of RTX Corporation, serves as a critical third-party supplier for airlines and airport operators, and the compromise forced affected hubs to revert to manual flight data processing, causing cascading delays of up to four hours and the cancellation of approximately 300 flights across the region during the peak summer travel period. Initially reported via a LinkedIn post by aviation security consultant Rob Demain, the confirmation from ENISA indicates that the attackers exploited a known vulnerability in a legacy remote-access gateway, enabling lateral movement into the operational technology (OT) environment that manages flight-plan distribution. The malware deployed was identified as a novel variant of the LockBit 3.0 codebase, but no ransom demand has been publicly confirmed. Law enforcement agencies in France, Germany, and the Netherlands, coordinated through Europol’s European Cybercrime Centre, are actively investigating, with ENISA providing incident-response support. Collins Aerospace has isolated affected systems and is restoring services from clean backups, but full recovery is projected to take several weeks. This incident underscores the acute vulnerability of aviation’s shared IT/OT infrastructure, where a single supplier compromise can trigger continent-wide disruption, highlighting an urgent need for mandatory cybersecurity supply-chain risk assessments and sector-specific incident-response protocols in the aviation industry."
         }
       ]
     }
   ],
-  "lastProvider": "Gemini (2.5 Flash)"
+  "lastProvider": "DeepSeek V4-Flash + Tavily"
 }
