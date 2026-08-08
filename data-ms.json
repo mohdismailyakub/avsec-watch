@@ -2582,8 +2582,13 @@
           "fullContent": "Pada 7 Ogos 2026, Agensi Keselamatan Siber Kesatuan Eropah (ENISA) secara rasmi mengaitkan gangguan operasi selama beberapa hari di Collins Aerospace, pembekal utama sistem avionik dan pengurusan penerbangan, kepada serangan ransomware. Insiden yang bermula pada akhir Julai 2026 itu telah mengganggu perisian kritikal perancangan penerbangan dan penjadualan kru berasaskan darat yang digunakan oleh beberapa lapangan terbang utama Eropah, termasuk Amsterdam Schiphol, Frankfurt, dan Paris Charles de Gaulle. Collins Aerospace, anak syarikat RTX Corporation, berperanan sebagai pembekal pihak ketiga yang kritikal bagi syarikat penerbangan dan pengendali lapangan terbang, dan kompromi tersebut memaksa hab yang terjejas untuk kembali kepada pemprosesan data penerbangan secara manual, menyebabkan kelewatan berturut-turut sehingga empat jam serta pembatalan kira-kira 300 penerbangan di seluruh rantau tersebut semasa musim puncak perjalanan musim panas. Pada mulanya dilaporkan melalui siaran LinkedIn oleh perunding keselamatan penerbangan Rob Demain, pengesahan daripada ENISA menunjukkan bahawa penyerang mengeksploitasi kelemahan yang diketahui dalam gerbang akses jauh warisan, membolehkan pergerakan sisi ke dalam persekitaran teknologi operasi (OT) yang menguruskan pengedaran pelan penerbangan. Perisian hasad yang digunakan dikenal pasti sebagai varian baharu kod asas LockBit 3.0, tetapi tiada tuntutan tebusan telah disahkan secara terbuka. Agensi penguatkuasaan undang-undang di Perancis, Jerman, dan Belanda, yang diselaraskan melalui Pusat Jenayah Siber Eropah Europol, sedang giat menjalankan siasatan, dengan ENISA menyediakan sokongan tindak balas insiden. Collins Aerospace telah mengasingkan sistem yang terjejas dan sedang memulihkan perkhidmatan daripada sandaran bersih, tetapi pemulihan penuh dijangka mengambil masa beberapa minggu. Insiden ini menonjolkan kerentanan kritikal infrastruktur IT/OT perkongsian sektor penerbangan, di mana kompromi seorang pembekal tunggal boleh mencetuskan gangguan di seluruh benua, menekankan keperluan mendesak untuk penilaian risiko rantaian bekalan keselamatan siber yang mandatori serta protokol tindak balas insiden khusus sektor dalam industri penerbangan."
         }
       ]
+    },
+    {
+      "date": "2026-08-08",
+      "briefing": "Beberapa minggu kebelakangan ini menunjukkan pencerobohan dron yang berterusan berhampiran lapangan terbang utama walaupun terdapat penempatan sistem anti-UAS, manakala peraturan keselamatan siber Eropah baharu mula berkuat kuasa di tengah-tengah laporan ancaman UAS yang semakin meningkat.",
+      "items": []
     }
   ],
-  "generatedAt": "2026-08-07T09:01:07.130Z",
+  "generatedAt": "2026-08-08T00:01:06.585Z",
   "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }

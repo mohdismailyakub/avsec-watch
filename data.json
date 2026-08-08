@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T09:01:07.130Z",
+  "generatedAt": "2026-08-08T00:01:06.585Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -3082,6 +3082,11 @@
           "fullContent": "On 7 August 2026, the European Union Agency for Cybersecurity (ENISA) formally attributed a multi-day operational outage at Collins Aerospace, a major avionics and flight-management systems provider, to a ransomware attack. The incident, which began in late July 2026, disrupted critical ground-based flight planning and crew scheduling software used by multiple major European airports, including Amsterdam Schiphol, Frankfurt, and Paris Charles de Gaulle. Collins Aerospace, a subsidiary of RTX Corporation, serves as a critical third-party supplier for airlines and airport operators, and the compromise forced affected hubs to revert to manual flight data processing, causing cascading delays of up to four hours and the cancellation of approximately 300 flights across the region during the peak summer travel period. Initially reported via a LinkedIn post by aviation security consultant Rob Demain, the confirmation from ENISA indicates that the attackers exploited a known vulnerability in a legacy remote-access gateway, enabling lateral movement into the operational technology (OT) environment that manages flight-plan distribution. The malware deployed was identified as a novel variant of the LockBit 3.0 codebase, but no ransom demand has been publicly confirmed. Law enforcement agencies in France, Germany, and the Netherlands, coordinated through Europol’s European Cybercrime Centre, are actively investigating, with ENISA providing incident-response support. Collins Aerospace has isolated affected systems and is restoring services from clean backups, but full recovery is projected to take several weeks. This incident underscores the acute vulnerability of aviation’s shared IT/OT infrastructure, where a single supplier compromise can trigger continent-wide disruption, highlighting an urgent need for mandatory cybersecurity supply-chain risk assessments and sector-specific incident-response protocols in the aviation industry."
         }
       ]
+    },
+    {
+      "date": "2026-08-08",
+      "briefing": "Recent weeks show persistent drone incursions near major airports despite counter-UAS deployments, while new European cybersecurity rules take effect amid rising UAS threat reports.",
+      "items": []
     }
   ],
   "lastProvider": "DeepSeek V4-Flash + Tavily"
