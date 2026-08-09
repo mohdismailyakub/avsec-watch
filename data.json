@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T00:01:52.524Z",
+  "generatedAt": "2026-08-09T09:00:53.228Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -3157,7 +3157,7 @@
     },
     {
       "date": "2026-08-09",
-      "briefing": "Recent aviation security developments are highlighted by drone incidents in Germany, including an explosive-laden drone found at Leipzig Airport and subsequent sightings over a military base, both raising concerns of foreign state involvement. Meanwhile, volcanic activity caused operational disruption at Sicily's Catania airport, underscoring diverse threats to aviation resilience worldwide.",
+      "briefing": "Counter-UAS operations and aviation cybersecurity dominate recent AVSEC developments, with new US federal rules and major event security successes shaping the landscape.",
       "items": [
         {
           "title": "Explosive Drone Found at Leipzig Airport, US Links to Russia",
@@ -3195,5 +3195,5 @@
       ]
     }
   ],
-  "lastProvider": "Gemini (2.5 Flash)"
+  "lastProvider": "DeepSeek V4-Flash + Tavily"
 }

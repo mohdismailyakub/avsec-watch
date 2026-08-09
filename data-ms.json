@@ -2657,7 +2657,7 @@
     },
     {
       "date": "2026-08-09",
-      "briefing": "Perkembangan keselamatan penerbangan terkini diserlahkan oleh insiden dron di Jerman, termasuk dron berisi bahan letupan yang ditemui di Leipzig Airport dan penemuan seterusnya di atas pangkalan tentera, kedua-duanya menimbulkan kebimbangan penglibatan negara asing. Sementara itu, aktiviti gunung berapi menyebabkan gangguan operasi di Catania airport, Sicily, menekankan pelbagai ancaman kepada ketahanan penerbangan di seluruh dunia.",
+      "briefing": "Operasi Counter-UAS dan keselamatan siber penerbangan mendominasi perkembangan AVSEC terkini, dengan peraturan persekutuan AS yang baharu dan kejayaan keselamatan acara utama membentuk landskap tersebut.",
       "items": [
         {
           "title": "Dron Bahan Letupan Ditemui di Leipzig Airport, Amerika Syarikat Kaitkan dengan Rusia",
@@ -2695,6 +2695,6 @@
       ]
     }
   ],
-  "generatedAt": "2026-08-09T00:01:52.524Z",
-  "lastProvider": "Gemini (2.5 Flash) (terjemahan)"
+  "generatedAt": "2026-08-09T09:00:53.228Z",
+  "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }
