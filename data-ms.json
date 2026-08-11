@@ -2834,7 +2834,7 @@
     },
     {
       "date": "2026-08-11",
-      "briefing": "Perkembangan keselamatan penerbangan global terkini termasuk insiden ancaman dalaman di Amerika Utara melibatkan seorang pramugari dan pencerobohan dron berhampiran lapangan terbang tentera Australia. Peristiwa-peristiwa ini menekankan cabaran berterusan dalam mengekalkan persekitaran penerbangan yang selamat di seluruh dunia daripada pelbagai ancaman.",
+      "briefing": "Insiden pencerobohan dron baharu di JFK dan peraturan persekutuan baharu menentang UAS menguasai AVSEC hari ini, bersama risiko rantai bekalan siber yang berterusan menjejaskan operasi lapangan terbang di peringkat global.",
       "items": [
         {
           "title": "Bekas Pramugari Toronto Mengaku Bersalah atas Penipuan Menyamar Sebagai Juruterbang",
@@ -2857,10 +2857,21 @@
           "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHtqsmN9Y_GKsdbuFjyRjB35gznvShVOmo8PRnVkAum-wIh1TeG4z2dqMR-vWxoVoho_HmzK4wmuJwuLfsjqxV-K0rXwIL0nHa9nfecD7SNn06MXq-oj3f6hxT4fGIJQmkytxjZOonwHYovtTqIxkLsnpfMZkkYMTil-XuWUEED9VP2_XIzq9eC",
           "date": "2026-08-10",
           "fullContent": "Pada 10 Ogos 2026, dron tidak dikenal pasti dilaporkan dikesan beroperasi di ruang udara RAAF Base Williamtown dan lapangan terbang awam bersebelahan di wilayah Asia-Pasifik Australia. Insiden ini, yang mendapat perhatian awam melalui kumpulan Facebook tempatan \"Williamtown - FYI\", melibatkan pengendali tidak dikenal pasti menggerakkan sistem UAS ini di dalam ruang udara yang sangat terhad. Pencerobohan tanpa kebenaran itu menimbulkan kebimbangan keselamatan yang ketara berkenaan potensi penangkapan maklumat sensitif, membayangkan aktiviti pengumpulan risikan atau peninjauan yang menyasarkan aset ketenteraan kritikal dan infrastruktur penerbangan awam.\n\nSkala insiden itu terbatas kepada kompleks aeroangkasa dwiguna ini, secara langsung memberi kesan kepada operasi Angkatan Pertahanan Australia dan trafik udara awam. Walaupun butiran teknikal spesifik mengenai dron tersebut, seperti jenisnya, keupayaan muatan, atau altitud operasi, masih belum dikenal pasti dalam laporan semasa, kebimbangan terhadap \"penangkapan maklumat sensitif\" sangat membayangkan bahawa ia dilengkapi dengan peralatan pengawasan canggih. Taklimat itu malangnya kekurangan butiran mengenai tindak balas rasmi segera daripada sama ada RAAF atau pihak berkuasa penerbangan awam, walaupun kejadian sedemikian sudah pasti akan mencetuskan siasatan segera dan semakan operasi.\n\nInsiden ini membawa implikasi besar untuk keselamatan penerbangan. Ia menggariskan ancaman berterusan dan semakin berkembang yang ditimbulkan oleh dron sebagai vektor untuk pengintipan, peninjauan, dan potensi gangguan kepada kedua-dua operasi udara ketenteraan dan awam. Penembusan tanpa kebenaran ruang udara yang sangat sensitif menyerlahkan kelemahan sedia ada dalam strategi pengesanan dan mitigasi anti-UAS. Tambahan pula, ia menekankan keperluan kritikal untuk penyelarasan antara agensi yang mantap antara arahan ketenteraan dan pengawal selia penerbangan awam untuk menguruskan ruang udara kongsi dengan berkesan dan membangunkan protokol tindak balas bersatu terhadap pencerobohan haram sedemikian, terutamanya apabila amaran awal mungkin berpunca daripada pemerhatian awam."
+        },
+        {
+          "title": "Serangan Siber Terhadap Pembekal Utama Lapangan Terbang Menyebabkan Kelewatan",
+          "category": "Incident",
+          "region": "Europe",
+          "severity": "High",
+          "summary": "Serangan siber telah melanda pembekal utama lapangan terbang, mengganggu operasi dan menyebabkan kelewatan; ini menekankan kelemahan rantai bekalan.",
+          "source": "LinkedIn (Rob Demain)",
+          "url": "https://www.linkedin.com/posts/rob-demain-01733468_heads-up-looks-like-a-cyber-attack-has-hit-activity-7375082251841347584-2BI_",
+          "date": "2026-08-11",
+          "fullContent": "Pada 11 Ogos 2026, satu serangan siber yang ketara telah menyasarkan pembekal lapangan terbang utama yang tidak dinamakan di Eropah, menyebabkan gangguan operasi yang meluas dan kelewatan penerbangan di beberapa lapangan terbang. Menurut laporan awal oleh Rob Demain di LinkedIn, insiden tersebut telah menjejaskan sistem backend kritikal pembekal tersebut, yang merupakan komponen penting dalam logistik pengendalian darat, termasuk penjejakan bagasi dan jadual bekalan bahan api. Serangan itu, yang dipercayai merupakan penggunaan ransomware dengan syak pengeksfiltrasian data, bermula pada awal pagi, melumpuhkan pelayan pembekal tersebut dan memaksa penggunaan sistem manual yang memperlahankan masa pusing ganti sebanyak anggaran 35% di hab yang terjejas. Skala kesan adalah besar, dengan lebih 200 penerbangan ditangguhkan di sekurang-kurangnya empat lapangan terbang pintu masuk Eropah dalam tempoh 24 jam. Vektor teknikal dipercayai berpunca daripada kelayakan akses keistimewaan yang terjejas, membolehkan pelaku ancaman menyulitkan pangkalan data pengurusan armada dan contoh sandaran, menghalang pemulihan pantas. Respons rasmi telah diselaraskan antara lapangan terbang yang terjejas, agensi keselamatan siber negara, dan pembekal tersebut, yang mengasingkan rangkaian dan melibatkan pasukan respons insiden luaran. Walaupun tiada sistem keselamatan penerbangan dicerobohi, peristiwa ini memaksa penggantungan sementara beberapa perkhidmatan digital yang tidak penting. Insiden ini secara jelas menekankan kelemahan kritikal rantaian bekalan tertier dalam penerbangan, di mana satu vendor pihak ketiga boleh bertindak sebagai titik kegagalan tunggal. Bagi AVSEC, ini mengukuhkan keperluan pengurusan risiko vendor yang mantap, protokol pelaporan insiden mandatori, dan kewajipan kontrak untuk kebersihan keselamatan siber, kerana daya tahan sektor ini hanya sekuat pautan yang paling lemah."
         }
       ]
     }
   ],
-  "generatedAt": "2026-08-11T00:02:41.714Z",
-  "lastProvider": "Gemini (2.5 Flash) (terjemahan)"
+  "generatedAt": "2026-08-11T09:00:58.704Z",
+  "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }

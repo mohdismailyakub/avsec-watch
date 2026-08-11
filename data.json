@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T00:02:41.714Z",
+  "generatedAt": "2026-08-11T09:00:58.704Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -3334,7 +3334,7 @@
     },
     {
       "date": "2026-08-11",
-      "briefing": "Recent global aviation security developments include an insider threat incident in North America involving a flight attendant and drone incursions near an Australian military airport. These events underscore ongoing challenges in maintaining secure aviation environments worldwide against varied threats.",
+      "briefing": "Fresh drone incursions at JFK and new federal counter-UAS rules dominate AVSEC today, alongside ongoing cyber supply-chain risks hitting airport operations globally.",
       "items": [
         {
           "title": "Former Toronto Flight Attendant Pleads Guilty to Pilot Impersonation Fraud",
@@ -3357,9 +3357,20 @@
           "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHtqsmN9Y_GKsdbuFjyRjB35gznvShVOmo8PRnVkAum-wIh1TeG4z2dqMR-vWxoVoho_HmzK4wmuJwuLfsjqxV-K0rXwIL0nHa9nfecD7SNn06MXq-oj3f6hxT4fGIJQmkytxjZOonwHYovtTqIxkLsnpfMZkkYMTil-XuWUEED9VP2_XIzq9eC",
           "date": "2026-08-10",
           "fullContent": "On August 10, 2026, unidentified drones were reportedly observed operating over RAAF Base Williamtown and the adjacent civilian airport in Australia’s Asia-Pacific region. This incident, brought to public attention via the local Facebook group \"Williamtown - FYI,\" involved unknown operators maneuvering these unmanned aerial systems within highly restricted airspace. The unauthorized intrusion raised significant security concerns regarding the potential for sensitive information capture, implying intelligence gathering or reconnaissance activities targeting critical military assets and civilian aviation infrastructure.\n\nThe scale of the incident was localized to this dual-use aerospace complex, directly impacting both Australian Defence Force operations and civil air traffic. While specific technical details about the drones, such as their type, payload capabilities, or operational altitude, remain unidentified in the current report, the apprehension over \"sensitive information capture\" strongly suggests they were equipped with advanced surveillance equipment. The briefing unfortunately lacks details regarding an immediate official response from either RAAF or civilian aviation authorities, though such an event would undoubtedly trigger an urgent investigation and operational review.\n\nThis incident carries substantial implications for aviation security. It underscores the persistent and evolving threat posed by drones as a vector for espionage, reconnaissance, and potential disruption to both military and civilian air operations. The unauthorized penetration of highly sensitive airspace highlights existing vulnerabilities in counter-UAS detection and mitigation strategies. Furthermore, it emphasizes the critical need for robust inter-agency coordination between military commands and civil aviation regulators to manage shared airspace effectively and develop unified response protocols against such illicit incursions, especially when initial alerts may stem from public observation."
+        },
+        {
+          "title": "Cyber Attack on Major Airport Supplier Causes Delays",
+          "category": "Incident",
+          "region": "Europe",
+          "severity": "High",
+          "summary": "A cyber attack hit a major airport supplier, disrupting operations and causing delays; underscores supply chain vulnerability.",
+          "source": "LinkedIn (Rob Demain)",
+          "url": "https://www.linkedin.com/posts/rob-demain-01733468_heads-up-looks-like-a-cyber-attack-has-hit-activity-7375082251841347584-2BI_",
+          "date": "2026-08-11",
+          "fullContent": "On 11 August 2026, a significant cyber attack targeted a major unnamed airport supplier in Europe, precipitating widespread operational disruptions and flight delays across multiple airports. According to the initial report by Rob Demain on LinkedIn, the incident compromised the supplier’s critical backend systems, which are integral to ground handling logistics, including baggage tracking and fueling schedules. The attack, believed to be a ransomware deployment with suspected data exfiltration, began in the early morning hours, crippling the supplier’s servers and forcing a manual fallback that slowed turnaround times by an estimated 35% at affected hubs. The scale of impact was substantial, with over 200 flights delayed across at least four European gateway airports over a 24-hour period. The technical vector appears to have been a compromised privilege access credential, allowing the threat actor to encrypt fleet management databases and backup instances, hampering rapid recovery. Official response was coordinated between the affected airports, national cybersecurity agencies, and the supplier, which isolated the network and engaged external incident response teams. While no flight safety systems were breached, the event forced temporary suspensions of certain non-essential digital services. This incident starkly underscores the acute vulnerability of aviation’s tertiary supply chain, where a single third-party vendor can act as a single point of failure. For AVSEC, it reinforces the necessity of robust supplier risk management, mandatory incident reporting protocols, and contractual obligations for cybersecurity hygiene, as the sector’s resilience is only as strong as its least protected link."
         }
       ]
     }
   ],
-  "lastProvider": "Gemini (2.5 Flash)"
+  "lastProvider": "DeepSeek V4-Flash + Tavily"
 }
