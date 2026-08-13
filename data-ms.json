@@ -2923,7 +2923,7 @@
     },
     {
       "date": "2026-08-13",
-      "briefing": "Keselamatan penerbangan global menyaksikan perkembangan peraturan dan teknologi baharu, dengan Jerman dan Turki menggubal langkah-langkah untuk meningkatkan kuasa keselamatan negara yang mungkin memberi kesan kepada penerbangan. Sementara itu, AS merancang untuk merasmikan penempatan sistem anti-drone termaju di kemudahan penerbangan utamanya.",
+      "briefing": "Pencerobohan drone dan serangan siber kekal sebagai ancaman keselamatan penerbangan yang paling aktif, dengan insiden terkini berhampiran lapangan terbang AS dan risiko infrastruktur Eropah yang berterusan. Rangka kerja kawal selia semakin berkembang tetapi insiden baharu sejak pagi ini adalah terhad.",
       "items": [
         {
           "title": "Turki Memindahkan Kuasa Keselamatan Siber kepada Badan Presiden, Termasuk Penerbangan",
@@ -2961,6 +2961,6 @@
       ]
     }
   ],
-  "generatedAt": "2026-08-13T00:02:58.829Z",
-  "lastProvider": "Gemini (2.5 Flash) (terjemahan)"
+  "generatedAt": "2026-08-13T09:00:54.717Z",
+  "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }

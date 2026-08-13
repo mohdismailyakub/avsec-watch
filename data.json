@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T00:02:58.829Z",
+  "generatedAt": "2026-08-13T09:00:54.717Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -3423,7 +3423,7 @@
     },
     {
       "date": "2026-08-13",
-      "briefing": "Global aviation security is seeing new regulatory and technological developments, with Germany and Turkey enacting measures to enhance national security powers which may impact aviation. Meanwhile, the US plans to formalize the deployment of advanced counter-drone systems at its key aviation facilities.",
+      "briefing": "Drone incursions and cyber attacks remain the most active aviation security threats, with recent incidents near US airports and ongoing European infrastructure risks. Regulatory frameworks are evolving but fresh incidents since this morning are limited.",
       "items": [
         {
           "title": "Turkey Shifts Cybersecurity Powers to Presidential Body, Including Aviation",
@@ -3461,5 +3461,5 @@
       ]
     }
   ],
-  "lastProvider": "Gemini (2.5 Flash)"
+  "lastProvider": "DeepSeek V4-Flash + Tavily"
 }
