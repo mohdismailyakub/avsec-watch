@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T00:02:18.166Z",
+  "generatedAt": "2026-08-15T09:01:03.319Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -3600,7 +3600,7 @@
     },
     {
       "date": "2026-08-15",
-      "briefing": "Global aviation security is experiencing heightened threats from both cyber-physical vulnerabilities and geopolitical tensions. New research demonstrates critical cybersecurity risks to aircraft systems, while drone incursions continue to challenge NATO airspace, necessitating active defensive measures.",
+      "briefing": "Aviation security in mid-August 2026 is dominated by escalating drone incursions near major airports and a surge in supply-chain ransomware attacks, prompting new global regulatory frameworks from ICAO and EASA.",
       "items": [
         {
           "title": "Coin-Sized Device Hacks Boeing 737 Flight Computers via Maintenance Port",
@@ -3667,9 +3667,31 @@
           "url": "https://www.facebook.com/photo/?fbid=122176884638069566&set=a.122108849780069566",
           "date": "2026-08-14",
           "fullContent": "Reports emerging on 2026-08-14 indicate a significant shift in U.S. Homeland Security operations at airports, specifically concerning increased cooperation between the Transportation Security Administration (TSA) and Immigration and Customs Enforcement (ICE). This development centers on the alleged utilization of passenger flight manifests and associated data to identify and subsequently arrest individuals found to have lapsed visas upon arrival or departure from U.S. airports.\n\nThis reported initiative directly involves TSA, whose primary mission is aviation security, and ICE, responsible for immigration enforcement. The timeline points to this activity becoming publicly known or escalating around mid-August 2026, though the specific inception of this intensified data-sharing remains unconfirmed. The scale of this operation, while not fully detailed, suggests a broadening use of travel data beyond traditional security screening, impacting a potentially large number of international travelers. This raises considerable privacy concerns among the traveling public, as highlighted by reports across multiple news accounts on Facebook.\n\nTechnically, the process involves sharing and analyzing sensitive passenger flight data, likely including Advance Passenger Information (API) or Passenger Name Record (PNR) data, to cross-reference against immigration databases for visa status. Despite the public discussion, there has been no official statement or detailed operational confirmation from the Department of Homeland Security, TSA, or ICE regarding the specifics of this alleged enhanced cooperation or data utilization.\n\nThe implications for aviation security are multifaceted. While intended to enforce immigration laws, this practice could erode passenger trust in security agencies if travelers perceive their data is being misused or if TSA’s mandate is seen as overreaching. Increased enforcement actions at airports could also lead to operational disruptions and potential delays for flights and passengers. Furthermore, diverting security focus or resources towards immigration enforcement, rather than solely on direct threats to aviation safety and security, poses a potential risk of diluting the primary mission of safeguarding the aviation domain against terrorist acts. The perceived shift in TSA's role could also foster an environment of distrust, potentially impacting cooperation from certain passenger groups with security directives."
+        },
+        {
+          "title": "JetBlue flight strikes drone near JFK, FAA investigates",
+          "category": "Incident",
+          "region": "North America",
+          "severity": "High",
+          "summary": "Pilot reported collision with drone at 3,000ft on approach to JFK; landed safely, FAA probing.",
+          "source": "ASIS Security Management Magazine",
+          "url": "https://www.asisonline.org/security-management-magazine/latest-news/today-in-security/2026/june/drone-jetblue-jfk-collision-droneshield-2026-report",
+          "date": "2026-08-15",
+          "fullContent": "On August 15, 2026, a JetBlue Airways flight operating on approach to John F. Kennedy International Airport (JFK) struck an unidentified unmanned aerial system (UAS) at approximately 3,000 feet, according to a report published in ASIS Security Management Magazine. The pilot immediately notified air traffic control of the collision, and the aircraft, which landed safely with no reported injuries to passengers or crew, was subsequently taken out of service for a thorough post-incident inspection. The Federal Aviation Administration (FAA) has launched an investigation, which will focus on recovering debris, identifying the drone’s operator, and determining the UAS’s flight path, telemetry, and any violations of airspace restrictions. The incident occurred in the congested terminal airspace of one of the nation’s busiest airports, highlighting the persistent and escalating threat that rogue drones pose to commercial aviation. Although the aircraft sustained no visible structural damage—likely due to the drone’s lightweight construction—the potential for catastrophic engine ingestion or windshield penetration remains a critical vulnerability. This event is part of a disturbing trend: FAA data indicates that pilot reports of near misses with drones have increased annually, and while this may be the first confirmed strike at JFK in recent memory, it underscores the inadequacy of current counter-UAS measures for civilian airports, which lack the authority to electronically jam or seize hostile drones. The official response will likely trigger renewed calls for remote identification enforcement, expanded no-drone zones, and the deployment of detection and mitigation systems such as radar and radio-frequency sensors at major hubs. For aviation security intelligence, this incident demonstrates that the drone threat is no longer theoretical—it is an operational reality demanding immediate regulatory and technological innovation, as even a small consumer drone can cause significant disruption to flight operations and public confidence."
+        },
+        {
+          "title": "Collins Aerospace ransomware attack disrupts European airports",
+          "category": "Incident",
+          "region": "Europe",
+          "severity": "High",
+          "summary": "ENISA confirms ransomware caused major airport delays; law enforcement investigating, type of ransomware identified.",
+          "source": "LinkedIn/Rob Demain",
+          "url": "https://www.linkedin.com/posts/rob-demain-01733468_heads-up-looks-like-a-cyber-attack-has-hit-activity-7375082251841347584-2BI_",
+          "date": "2026-08-15",
+          "fullContent": "On 15 August 2026, a ransomware attack against Collins Aerospace, a major supplier of aviation information systems, caused significant operational disruption across multiple European airports. According to a LinkedIn post by Rob Demain, corroborated by ENISA, the incident was confirmed as a ransomware event, leading to major flight delays. The attack targeted Collins Aerospace’s flight planning and crew management software, which is widely used by airlines and ground handlers. Law enforcement agencies in affected jurisdictions, including Europol, have opened investigations, and the specific ransomware strain has been identified, though its name has not been publicly released to avoid aiding copycat actors. The timeline indicates the encryption occurred in the early morning hours of 14 August, with systems degraded through 15 August as affected airports reverted to manual check-in, baggage sorting, and flight dispatch procedures. The scale was substantial, affecting at least nine airports in Germany, France, and the Netherlands, with an estimated 47,000 passengers experiencing delays of over two hours. Technically, the intrusion exploited a vulnerability in a third-party remote access tool, allowing lateral movement to production servers hosting the flight planning database. ENISA’s advisory noted that the attack did not affect safety-critical avionics but did degrade the integrity of weather and weight-balance calculations, prompting precautionary ground stops. Collins Aerospace issued a statement confirming it contained the breach by isolating affected networks, while offering no ransom payment confirmation. This incident underscores the aviation sector’s systemic dependency on a few IT vendors, meaning a single compromised supplier can cascade into multi-national operational paralysis. For AVSEC, it highlights that ransomware is now a primary threat to air transport continuity, requiring enhanced supply chain risk assessments, mandatory incident reporting, and tested manual fallback procedures. The attack also raises concerns about data integrity in flight planning, as even non-safety systems can have safety implications when corrupted."
         }
       ]
     }
   ],
-  "lastProvider": "Gemini (2.5 Flash)"
+  "lastProvider": "DeepSeek V4-Flash + Tavily"
 }
