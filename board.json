@@ -63,19 +63,19 @@
     ],
     "Technology": [
       {
-        "title": "Airwise Solutions Launches Nexus for Public Safety and Counter-UAS",
+        "title": "Da Nang Airport Tests Drone Detection and Suppression System",
         "category": "Technology",
-        "region": "North America",
-        "severity": "Medium",
-        "summary": "Airwise Solutions introduced Nexus, a new platform integrating sensor data for public safety, counter-UAS, and airspace operations to enhance critical infrastructure security.",
-        "source": "Homeland Security Today",
-        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHHpy-qsA6K4qUonKCpmn9k61vABCmgOuCJuoPk1FkSQbh5IRGSuDbRHmBHPHwwzLt_FdM-xlVUzviTBsdGC5tK5cIS9luXF7bKIhwdgN4ELuYoi5hBmuTayYuAykUltpZ_-6Ff5FnFTWEUK-lu4UwywsI6fAlDf9gbO0PhMsSgVuW9vXygO6hhZNXTc5ObpMhUAcMv6qHbmqjS4-xsamqKFKdjWMgju6GDuQWQKGjxOoChkIPjfpYNKeEeJlUa7qs==",
-        "date": "2026-08-12",
-        "fullContent": "On August 12, 2026, Airwise Solutions launched Nexus in North America, a significant technological advancement aimed at bolstering public safety and critical infrastructure security. This platform uniquely integrates diverse sensor data, providing comprehensive real-time situational awareness for counter-UAS (C-UAS) and broader airspace operations. Nexus is designed to equip public safety agencies and critical infrastructure operators with the capability to detect, track, and analyze airborne threats, specifically unauthorized unmanned aircraft systems (UAS).\n\nThe scale of impact is potentially transformative, offering a centralized intelligence hub to manage complex airspace environments around sensitive sites like airports, power plants, and government facilities. By consolidating information from various sensors – such as radar, acoustic, RF, and optical systems – Nexus provides a unified operating picture, facilitating more rapid and informed decision-making. While there has been no immediate official regulatory endorsement, the platform’s utility inherently supports the operational requirements of agencies responsible for airspace security, enabling more effective and coordinated responses to potential threats.\n\nFor aviation security, the implications of Nexus are profound. The platform directly addresses the increasing challenge of rogue UAS operations in proximity to airfields and flight paths, which pose significant safety and security risks, including collision hazards and espionage. Nexus offers AVSEC personnel and air traffic controllers enhanced capabilities for early threat detection and identification, allowing for proactive measures and efficient incident response coordination with law enforcement. Its deployment could significantly elevate the security posture of critical aviation infrastructure, moving towards a more integrated and anticipatory defense against emergent aerial threats."
+        "region": "Asia-Pacific",
+        "severity": "Low",
+        "summary": "Da Nang International Airport reports positive initial results from testing a new drone detection and suppression system to enhance airspace security.",
+        "source": "Tuoi Tre News",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQETXRHrBy6cwuaQK8k7XlMFHsw_7xjXuzjUd5LmtlxmFvYOjAROXYONbCwSeOveaWMnft8jzXh9Fdk49fSeW_Pk8_uwzKgp-bczPWxy8dBt6vwsrPZ6eCIsJsSJlHfQ4kNLOfYXf9PbHTQrpuIV-o1pIgtTTvG5TuUJKpk4eKnoMn_YJUU2FctxHc0gIStTcUm1eg1f30BwRAjvIfwZNEh8zA==",
+        "date": "2026-08-16",
+        "fullContent": "On August 16, 2026, Da Nang International Airport (DAD) in Vietnam commenced initial testing of an advanced drone detection and suppression system, marking a significant development in enhancing its airspace security. This initiative, reported by Tuoi Tre News, involved DAD authorities and likely collaborating technology vendors, aiming to establish a robust defense against unauthorized unmanned aerial systems (UAS). The positive initial results indicate the system's efficacy in addressing the increasing threat posed by drones to airport operations and safety.\n\nThe deployed technology is designed for dual functionality: detecting UAS through methods such as radar, acoustic sensors, and radio frequency (RF) analysis, and subsequently suppressing them through countermeasures like GPS jamming or signal spoofing, preventing unauthorized incursions. This proactive measure elevates DAD's security posture, mitigating risks ranging from collision hazards to potential espionage or malicious payload delivery. The successful trials affirm a strong official response from DAD, signifying a commitment to integrating cutting-edge solutions into its security framework.\n\nThis development holds profound implications for aviation security, particularly within the Asia-Pacific region. It underscores a growing awareness among airport operators regarding the critical need for comprehensive counter-UAS capabilities. Da Nang's successful implementation could serve as a model for other Vietnamese airports and regional counterparts, driving the adoption of similar integrated drone defense systems. It highlights the evolving landscape of aviation threats and the imperative for continuous technological investment to maintain secure and efficient air travel operations globally."
       }
     ]
   },
-  "briefing": "Drone incursions near airports remain a persistent operational threat, while a major ransomware attack on a single aviation supplier has caused widespread European airport disruptions and exposed systemic supply chain fragility.",
-  "generatedAt": "2026-08-16T00:03:10.314Z",
-  "lastProvider": "DeepSeek V4-Flash + Tavily"
+  "briefing": "Globally, aviation security remains a critical concern with a range of incidents reported today, from accidental weapon discharges at screening points to drone incursions and bomb threats. Authorities are also proactively addressing threats, with new drone detection technologies being tested and calls for strengthened security measures from retired experts.",
+  "generatedAt": "2026-08-16T09:03:30.880Z",
+  "lastProvider": "Gemini (2.5 Flash)"
 }
