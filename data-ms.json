@@ -3332,7 +3332,7 @@
     },
     {
       "date": "2026-08-17",
-      "briefing": "Insiden keselamatan penerbangan terkini termasuk satu tembakan senjata api secara tidak sengaja di Lapangan Terbang Varanasi dan satu ancaman bom menyebabkan kelewatan di Lapangan Terbang Houston Hobby. Sementara itu, lapangan terbang Moscow mengalami gangguan ketara akibat serangan dron besar-besaran, dan kajian baharu mengetengahkan kelemahan berpotensi dalam sistem avionik pesawat.",
+      "briefing": "Fokus keselamatan penerbangan terkini adalah terhadap gangguan rantaian bekalan siber yang berantai di lapangan terbang Eropah dan ancaman pencerobohan UAS yang semakin meningkat, di samping rangka kerja kawal selia EASA yang semakin diperketatkan.",
       "items": [
         {
           "title": "Tembakan Pistol Secara Tidak Sengaja Mencederakan Dua Orang di Lapangan Terbang Varanasi",
@@ -3381,6 +3381,6 @@
       ]
     }
   ],
-  "generatedAt": "2026-08-17T00:01:47.048Z",
-  "lastProvider": "Gemini (2.5 Flash) (terjemahan)"
+  "generatedAt": "2026-08-17T09:00:49.260Z",
+  "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T00:01:47.048Z",
+  "generatedAt": "2026-08-17T09:00:49.260Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -3832,7 +3832,7 @@
     },
     {
       "date": "2026-08-17",
-      "briefing": "Recent aviation security incidents include an accidental firearm discharge at Varanasi Airport and a bomb threat causing delays at Houston Hobby Airport. Meanwhile, Moscow airports experienced significant disruptions due to a massive drone attack, and new research highlights potential vulnerabilities in aircraft avionics systems.",
+      "briefing": "Fresh aviation security focus is on cascading cyber supply-chain disruptions at European airports and escalating UAS incursion threats, alongside tightening EASA regulatory frameworks.",
       "items": [
         {
           "title": "Accidental Pistol Discharge Injures Two at Varanasi Airport",
@@ -3881,5 +3881,5 @@
       ]
     }
   ],
-  "lastProvider": "Gemini (2.5 Flash)"
+  "lastProvider": "DeepSeek V4-Flash + Tavily"
 }
