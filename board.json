@@ -63,19 +63,19 @@
     ],
     "Technology": [
       {
-        "title": "Da Nang Airport Tests Drone Detection and Suppression System",
+        "title": "FAA Awards AT&T $74M to Build Next-Gen Air Traffic Network",
         "category": "Technology",
-        "region": "Asia-Pacific",
+        "region": "North America",
         "severity": "Low",
-        "summary": "Da Nang International Airport reports positive initial results from testing a new drone detection and suppression system to enhance airspace security.",
-        "source": "Tuoi Tre News",
-        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQETXRHrBy6cwuaQK8k7XlMFHsw_7xjXuzjUd5LmtlxmFvYOjAROXYONbCwSeOveaWMnft8jzXh9Fdk49fSeW_Pk8_uwzKgp-bczPWxy8dBt6vwsrPZ6eCIsJsSJlHfQ4kNLOfYXf9PbHTQrpuIV-o1pIgtTTvG5TuUJKpk4eKnoMn_YJUU2FctxHc0gIStTcUm1eg1f30BwRAjvIfwZNEh8zA==",
-        "date": "2026-08-16",
-        "fullContent": "On August 16, 2026, Da Nang International Airport (DAD) in Vietnam commenced initial testing of an advanced drone detection and suppression system, marking a significant development in enhancing its airspace security. This initiative, reported by Tuoi Tre News, involved DAD authorities and likely collaborating technology vendors, aiming to establish a robust defense against unauthorized unmanned aerial systems (UAS). The positive initial results indicate the system's efficacy in addressing the increasing threat posed by drones to airport operations and safety.\n\nThe deployed technology is designed for dual functionality: detecting UAS through methods such as radar, acoustic sensors, and radio frequency (RF) analysis, and subsequently suppressing them through countermeasures like GPS jamming or signal spoofing, preventing unauthorized incursions. This proactive measure elevates DAD's security posture, mitigating risks ranging from collision hazards to potential espionage or malicious payload delivery. The successful trials affirm a strong official response from DAD, signifying a commitment to integrating cutting-edge solutions into its security framework.\n\nThis development holds profound implications for aviation security, particularly within the Asia-Pacific region. It underscores a growing awareness among airport operators regarding the critical need for comprehensive counter-UAS capabilities. Da Nang's successful implementation could serve as a model for other Vietnamese airports and regional counterparts, driving the adoption of similar integrated drone defense systems. It highlights the evolving landscape of aviation threats and the imperative for continuous technological investment to maintain secure and efficient air travel operations globally."
+        "summary": "The FAA awarded AT&T $74 million to begin developing a next-generation air traffic network, enhancing aviation infrastructure resilience and security.",
+        "source": "Homeland Security Today",
+        "url": "https://hstoday.us/",
+        "date": "2026-08-18",
+        "fullContent": "On August 18, 2026, the Federal Aviation Administration (FAA) awarded AT&T a $74 million contract, initiating the development of a next-generation air traffic network for North America. This significant collaboration involves the FAA, the primary governmental body overseeing civil aviation safety in the U.S., partnering with AT&T, a major telecommunications provider, to modernize critical aviation infrastructure. This development marks a proactive step by the FAA to enhance the underlying technology managing air traffic.\n\nThe initial $74 million award represents the foundational phase of what will likely be a multi-year, multi-billion dollar project to overhaul the existing air traffic control communication and data infrastructure. While specific technical details are broadly defined as \"next-generation,\" it inherently implies a shift towards more advanced, resilient, and potentially IP-based network architecture, incorporating enhanced cybersecurity measures, increased data processing capabilities, and greater system redundancy. This upgrade is intended to improve the overall operational efficiency and reliability of air traffic services across the region.\n\nThe FAA's awarding of this contract signifies a clear official commitment to fortifying aviation infrastructure. The explicitly stated goal of \"enhancing aviation infrastructure resilience and security\" directly addresses key aviation security concerns. By developing a next-generation network, the FAA aims to bolster defenses against sophisticated cyber threats targeting air traffic management systems, mitigate the impact of physical or digital disruptions, and secure critical communication pathways. This modernization will ultimately reduce vulnerabilities to unauthorized access, data corruption, or service interruptions that could severely compromise flight safety and national security, ensuring a more robust and protected airspace."
       }
     ]
   },
-  "briefing": "Aviation security in mid-August 2026 is dominated by cascading impacts from a European airport supply-chain ransomware attack and persistent UAS intrusion threats, alongside new regulatory pushes from ICAO and national bodies.",
-  "generatedAt": "2026-08-18T00:03:25.278Z",
-  "lastProvider": "DeepSeek V4-Flash + Tavily"
+  "briefing": "Global aviation security developments remain focused on enhancing infrastructure resilience and refining cybersecurity practices. Recent initiatives include significant investments in next-generation air traffic networks and the advancement of human-centered cybersecurity guidance.",
+  "generatedAt": "2026-08-18T09:02:26.896Z",
+  "lastProvider": "Gemini (2.5 Flash)"
 }
