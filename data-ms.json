@@ -3808,7 +3808,7 @@
     },
     {
       "date": "2026-08-23",
-      "briefing": "Keselamatan penerbangan global telah menyaksikan insiden-insiden terkini termasuk pencerobohan airfield yang ketara di Manchester Airport dan sebuah kenderaan merempuh perimeter di San Antonio International. Kejadian-kejadian ini menyerlahkan cabaran-cabaran berterusan dalam keselamatan perimeter fizikal dan keperluan berterusan untuk tindak balas insiden yang mantap.",
+      "briefing": "Keselamatan penerbangan terus tertekan oleh serangan drone yang semakin meningkat berhampiran lapangan terbang AS dan lonjakan serangan ransomware yang menyasarkan infrastruktur penerbangan Eropah, dengan pihak berkuasa kawal selia memperketat peraturan keselamatan maklumat.",
       "items": [
         {
           "title": "Pencerobohan Airfield Manchester Airport Mengalih Penerbangan",
@@ -3846,6 +3846,6 @@
       ]
     }
   ],
-  "generatedAt": "2026-08-23T00:01:38.484Z",
-  "lastProvider": "Gemini (2.5 Flash) (terjemahan)"
+  "generatedAt": "2026-08-23T09:00:46.182Z",
+  "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }
