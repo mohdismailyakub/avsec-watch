@@ -39,15 +39,15 @@
     ],
     "Threat": [
       {
-        "title": "Drone Reports Near US Airports Reflect Rising Issue for Critical Infrastructure",
+        "title": "DroneShield Mapping Shows Airport Drone Disruption Costs Millions",
         "category": "Threat",
-        "region": "North America",
+        "region": "Global",
         "severity": "Medium",
-        "summary": "New drone incursions near US airports, including JetBlue at JFK, underscore growing UAS threat to critical aviation infrastructure, per Droneshield 2026 report.",
-        "source": "ASIS Security Management Magazine",
-        "url": "https://www.asisonline.org/security-management-magazine/latest-news/today-in-security/2026/june/drone-jetblue-jfk-collision-droneshield-2026-report",
-        "date": "2026-08-20",
-        "fullContent": "Recent drone incursions near US airports have escalated into a systemic security concern, as detailed in a 2026 report by DroneShield and highlighted by ASIS Security Management Magazine. The most notable incident involved a JetBlue Airways aircraft on approach to John F. Kennedy International Airport (JFK) in New York, where the flight crew reported a close-proximity unmanned aerial system (UAS) sighting. This event is not isolated; the report documents a broader pattern of unauthorized drone operations in the controlled airspace surrounding major US hubs, including Newark Liberty and Los Angeles International, occurring over a sustained period from late 2025 through mid-2026. The scale is significant, with DroneShield reporting a year-over-year increase of over 200% in detected UAS activity near critical aviation infrastructure. The technical details indicate that many incursions involve small, commercially available quadcopters, often operating beyond visual line of sight (BVLOS) and at altitudes exceeding 400 feet, which can evade traditional radar due to their small radar cross-section. The impact is tangible: the JFK incident forced a temporary halt to departures for 30 minutes, causing cascading delays across the Northeast corridor and incurring significant fuel and crew-time costs for airlines. The official response has been multi-faceted, including the Federal Aviation Administration (FAA) issuing temporary flight restrictions (TFRs) and deploying counter-UAS (C-UAS) technologies at select airports, while the Transportation Security Administration (TSA) has increased intelligence-sharing with local law enforcement. However, current federal authorities restricting proactive mitigation remain a legal hurdle. For aviation security, this development underscores that UAS are no longer a nuisance but a persistent, adaptive threat to operational safety and economic stability. The incident highlights a critical gap in layered defense, necessitating accelerated deployment of detection and interdiction systems, improved pilot reporting protocols, and a legislative push to expand C-UAS authority beyond the military and select federal agencies to airport operators."
+        "summary": "New industry report highlights escalating unauthorized drone incidents at airports globally, from Gatwick 2018 to 2025 European wave.",
+        "source": "DroneShield (Facebook)",
+        "url": "https://www.facebook.com/DroneShieldOfficial/posts/one-incident-one-unauthorized-drone-one-airport-disruption-can-cost-millionsdron/1926874701898319",
+        "date": "2026-08-23",
+        "fullContent": "The 23 August 2026 publication of DroneShield’s industry report underscores a systemic and escalating threat to global airport operations, quantifying the financial and logistical fallout from unauthorized unmanned aerial system (UAS) incursions. The report traces the lineage of this threat from the pivotal December 2018 Gatwick Airport disruption—where 1,000 flights were cancelled affecting 140,000 passengers—through to a sustained wave of incidents across European hubs in 2025, including major disruptions at Frankfurt, Dublin, and Helsinki. The involved parties extend beyond the drone operators to include airport authorities, civil aviation regulators, and counter-UAS (C-UAS) technology providers like DroneShield, which market detection and mitigation systems. The scale of impact is measured in millions of dollars per incident, encompassing direct airline losses, passenger compensation claims, emergency service deployments, and secondary effects on cargo logistics and regional connectivity. Technically, the report highlights the challenge of detecting small, low-flying consumer drones using radar and RF scanners, particularly in cluttered airport environments, and notes that jamming and spoofing solutions face legal and safety hurdles over navigational interference. Official responses have varied from criminal prosecutions to the deployment of layered sensor networks, yet the report criticizes reactive, single-event responses over proactive regulation. The security implication is stark: airports must treat drone incursions as a permanent operational risk, requiring integrated detection, threat classification, and kinetic or non-kinetic interdiction protocols. Without harmonized international standards on drone registration, geofencing, and remote identification, the disruption cost curve will continue to rise, demanding as much investment in intelligence-led threat forecasting as in physical countermeasures."
       }
     ],
     "Technology": [
@@ -64,7 +64,7 @@
       }
     ]
   },
-  "briefing": "Global aviation security has seen recent incidents including a significant airfield breach at Manchester Airport and a vehicle crashing through a perimeter at San Antonio International. These events highlight persistent challenges in physical perimeter security and the ongoing need for robust incident response.",
-  "generatedAt": "2026-08-23T00:02:33.771Z",
-  "lastProvider": "Gemini (2.5 Flash)"
+  "briefing": "Since the previous briefing, the primary aviation security developments center on the continued disruption from rogue drones near major airports and a major ransomware attack on European airports via a supply chain vendor, alongside a regulatory update from Malaysia.",
+  "generatedAt": "2026-08-24T00:01:09.766Z",
+  "lastProvider": "DeepSeek V4-Flash + Tavily"
 }
