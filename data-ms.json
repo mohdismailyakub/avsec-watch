@@ -3875,10 +3875,22 @@
     },
     {
       "date": "2026-08-25",
-      "briefing": "Ancaman keselamatan penerbangan semakin memuncak, dengan pencerobohan dron berhampiran lapangan terbang AS dan serangan perisian tebusan yang mengganggu terhadap pembekal penerbangan Eropah mendominasi perkembangan terkini, di samping mandat peraturan baharu untuk keselamatan siber dan keselamatan ruang udara.",
-      "items": []
+      "briefing": "Kebimbangan keselamatan penerbangan terkini memfokuskan kepada serangan siber yang menyasarkan pembekal IT lapangan terbang Eropah dan peningkatan pencerobohan dron berhampiran lapangan terbang AS, di samping pengetatan peraturan serantau di Malaysia.",
+      "items": [
+        {
+          "title": "Kursus NBAA Mengenai Mitigasi Risiko Pencerobohan UAS",
+          "category": "Technology",
+          "region": "North America",
+          "severity": "Low",
+          "summary": "NBAA menawarkan latihan satu hari di BACE 2026 untuk membantu profesional penerbangan mengenal pasti dan mengurangkan risiko pencerobohan dron.",
+          "source": "National Business Aviation Association",
+          "url": "https://nbaa.org/aircraft-operations/emerging-technologies/uas/mitigating-risk-uas-incursions",
+          "date": "2026-08-25",
+          "fullContent": "Persatuan Penerbangan Perniagaan Kebangsaan (NBAA) telah mengumumkan kursus latihan khusus satu hari yang memberi tumpuan kepada mengurangkan risiko pencerobohan sistem pesawat tanpa pemandu (UAS), yang dijadualkan berlangsung semasa Pameran & Konvensyen Penerbangan Perniagaan 2026 (BACE). Kursus ini direka untuk profesional penerbangan, termasuk pengurus jabatan penerbangan korporat, ketua juruterbang, pegawai keselamatan, penjadual, dan penyelaras keselamatan darat, yang bertanggungjawab secara langsung dalam pengurusan risiko operasi di lapangan terbang dan pusat operasi penerbangan. Latihan ini dijadualkan pada 25 Ogos 2026, walaupun BACE biasanya berlangsung pada pertengahan hingga akhir Oktober; penjadualan awal ini menunjukkan sesi pembangunan profesional pra-persidangan yang berdiri sendiri. Skala inisiatif ini adalah signifikan memandangkan peningkatan mendadak baru-baru ini dalam laporan penampakan dron berhampiran ruang udara terkawal oleh FAA, dengan lebih daripada 12,000 pencerobohan direkodkan pada tahun 2025 sahaja—peningkatan 45% tahun ke tahun, termasuk hampir berlaku perlanggaran dengan jet perniagaan semasa pendekatan.\n\nSecara teknikal, kurikulum kursus akan merangkumi teknologi pengesanan seperti pengimbas frekuensi radio (RF), kamera optik/termal, dan sensor akustik, di samping protokol mitigasi anti-dron praktikal yang tidak melibatkan pemintasan kinetik disebabkan sekatan undang-undang persekutuan terhadap gangguan isyarat atau menembak jatuh pesawat. Respons rasmi daripada NBAA mencerminkan peralihan proaktif industri daripada pelaporan pasif kepada latihan mitigasi aktif, mengukuhkan keperluan bagi pengendali untuk mematuhi keperluan Remote ID sambil membangunkan pelan kontingensi untuk penahanan di darat, pengalihan landasan, dan manuver pesawat di darat. Implikasi terhadap keselamatan penerbangan adalah substantif: melengkapkan kakitangan di tapak dengan kemahiran pengenalpastian dan penghakiman mengurangkan masa tindak balas semasa pencerobohan, yang selalunya berlangsung kurang daripada empat minit. Walau bagaimanapun, ketiadaan kebenaran persekutuan untuk gangguan isyarat kekal sebagai jurang kritikal, bermakna kursus ini memberi tumpuan kepada penyahkonflik taktikal dan dokumentasi undang-undang dan bukannya menggagalkan dron yang bermusuhan. Akhirnya, inisiatif ini menandakan bahawa sektor penerbangan menganggap ancaman UAS sebagai risiko operasi kronik, yang memerlukan latihan berinstitusi dan bukannya tindak balas ad-hoc."
+        }
+      ]
     }
   ],
-  "generatedAt": "2026-08-25T00:05:51.084Z",
+  "generatedAt": "2026-08-25T09:00:54.469Z",
   "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }

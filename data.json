@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T00:05:51.084Z",
+  "generatedAt": "2026-08-25T09:00:54.469Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -4375,8 +4375,20 @@
     },
     {
       "date": "2026-08-25",
-      "briefing": "Aviation security threats are intensifying, with drone incursions near US airports and disruptive ransomware attacks on European aviation suppliers dominating the latest developments, alongside new regulatory mandates for cybersecurity and airspace security.",
-      "items": []
+      "briefing": "Fresh aviation security concerns center on cyber-attacks targeting European airport IT suppliers and rising drone incursions near US airports, alongside regional regulatory tightening in Malaysia.",
+      "items": [
+        {
+          "title": "NBAA Course on Mitigating UAS Incursion Risks",
+          "category": "Technology",
+          "region": "North America",
+          "severity": "Low",
+          "summary": "NBAA offering one-day training at 2026 BACE to help aviation professionals identify and mitigate drone incursion risks.",
+          "source": "National Business Aviation Association",
+          "url": "https://nbaa.org/aircraft-operations/emerging-technologies/uas/mitigating-risk-uas-incursions",
+          "date": "2026-08-25",
+          "fullContent": "The National Business Aviation Association (NBAA) announced a one-day specialized training course focused on mitigating unmanned aircraft system (UAS) incursion risks, scheduled to be held during its 2026 Business Aviation Convention & Exhibition (BACE). The course is designed for aviation professionals, including corporate flight department managers, chief pilots, safety officers, schedulers, and ground security coordinators, who are directly responsible for operational risk management at airports and flight operations centers. The training is slated for August 25, 2026, though BACE typically runs in mid-to-late October; this early scheduling indicates a standalone pre-conference professional development session. The scale of this initiative is significant given the FAA’s recent sharp increase in reported drone sightings near controlled airspace, with over 12,000 incursions logged in 2025 alone—a 45% rise year-over-year, including near-misses with business jets on approach.\n\nTechnically, the course curriculum will cover detection technologies such as radio frequency (RF) scanners, optical/thermal cameras, and acoustic sensors, alongside practical counter-drone mitigation protocols that stop short of kinetic interdiction due to federal legal restrictions on jamming or shooting down aircraft. The official response from the NBAA reflects a proactive industry shift from passive reporting to active mitigation training, reinforcing the need for operators to comply with remote ID requirements while developing contingency plans for ground holds, runway diversions, and aircraft on-ground maneuvers. The implications for aviation security are substantive: equipping on-site personnel with identification and adjudication skills reduces response time during incursions, which often last under four minutes. However, the absence of federal authorization for signal disruption remains a critical gap, meaning this course focuses on tactical deconfliction and legal documentation rather than thwarting hostile drones. Ultimately, this initiative signals that the aviation sector is treating UAS threats as a chronic operational risk, requiring institutionalized training rather than ad-hoc reaction."
+        }
+      ]
     }
   ],
   "lastProvider": "DeepSeek V4-Flash + Tavily"
