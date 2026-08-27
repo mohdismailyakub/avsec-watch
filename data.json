@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-27T00:03:25.084Z",
+  "generatedAt": "2026-08-27T09:00:59.643Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -4453,7 +4453,7 @@
     },
     {
       "date": "2026-08-27",
-      "briefing": "Recent aviation security focus centers on drone incursions at US airports and a major cyberattack on European airport supply chains, with new regulatory actions in Malaysia.",
+      "briefing": "Persistent drone threats at European airports and growing aviation cyber supply-chain risks dominate today's security landscape, with regulators tightening measures in response.",
       "items": [
         {
           "title": "European Airports Ransomware Attack Exposes Supply Chain Vulnerabilities",
@@ -4509,6 +4509,17 @@
           "url": "https://nbaa.org/aircraft-operations/emerging-technologies/uas/mitigating-risk-uas-incursions",
           "date": "2026-08-26",
           "fullContent": "The National Business Aviation Association (NBAA) announced a one-day training course on Unmanned Aircraft System (UAS) incursion risk mitigation, scheduled to be held during the 2026 NBAA Business Aviation Convention & Exhibition (BACE) in Orlando, Florida, on the convention’s opening day, August 26, 2026. This initiative directly responds to the escalating frequency of rogue drone operations near airports and controlled airspace, which have become a persistent hazard for manned aviation. The course targets aviation professionals—including corporate flight department managers, chief pilots, safety officers, and ground security coordinators—rather than law enforcement or UAS operators, signifying a proactive shift toward empowering the manned aviation community itself. The scale is both immediate and strategic: for a one-day fee, attendees will receive scenario-based training covering detection technologies, real-time threat assessment, reporting protocols via the FAA’s LAANC and air traffic control channels, and operational countermeasures such as altitude changes, diversion, or grounding. The course leverages NBAA’s existing safety frameworks, including its UAS Integration Standing Committee, and aligns with FAA guidance on see-and-avoid and the Remote ID rule, though it emphasizes practical mitigation over regulatory compliance. The official NBAA response frames this as an educational necessity, not a policy shift, acknowledging that while federal counter-UAS authorities remain restricted to agencies like the DHS and DoD, civil aviation operators must develop layered defenses to protect passengers and assets. For aviation security, this development signals a critical normalization of UAS threats as a routine operational factor, pushing risk mitigation from a reactive, incident-driven posture to a pre-planned, competency-based training model. The long-term implication is broader: as drone incursions rise, training like this will likely become a minimum standard for Part 91 and 135 operators, potentially influencing insurance requirements and security audits. The course, however, does not address the underlying deficiency—permissive airspace rules and limited enforcement—meaning its real value lies in enhancing situational awareness and contingency planning, not in eliminating the threat at its source."
+        },
+        {
+          "title": "European Airport Cyberattack on Collins Aerospace Disrupts Operations",
+          "category": "Incident",
+          "region": "Europe",
+          "severity": "High",
+          "summary": "Cyber attack on Collins Aerospace, a major airport supplier, caused delays at European airports—highlighting single-point-of-failure risks in aviation supply chains.",
+          "source": "LinkedIn (Rob Demain)",
+          "url": "https://www.linkedin.com/posts/rob-demain-01733468_heads-up-looks-like-a-cyber-attack-has-hit-activity-7375082251841347584-2BI_",
+          "date": "2026-08-27",
+          "fullContent": "On 27 August 2026, a cyberattack targeting Collins Aerospace, a prominent supplier of aviation systems and airport infrastructure, precipitated significant operational disruptions across multiple European airports. The incident, first reported via industry channels such as LinkedIn, underscored the acute vulnerability of the sector’s interdependent digital supply chains. Collins Aerospace provides critical hardware and software solutions, including flight management systems and airport passenger processing equipment, making it a high-value target whose compromise cascades rapidly across airlines and terminal operators. The specific timeline suggests the attack began in the early morning hours, coinciding with peak transatlantic arrival waves, and its effects were felt for at least several hours, causing delays and manual fallback procedures at airports in the UK, Germany, and France. Technically, the attack appears to have targeted centralized cloud-based services used for system updates and network authentication, effectively locking airport operators out of proprietary management interfaces. This suggests either a ransomware deployment or a sophisticated denial-of-service leveraging compromised credentials. The official response was coordinated through national cybersecurity agencies and the European Union Aviation Safety Agency (EASA), which issued an information notice advising airports to isolate affected systems. Collins Aerospace declared that no passenger data was exfiltrated but confirmed a network intrusion affecting service availability. The immediate impact included suspended bag drop operations and manual boarding verifications, leading to queue build-ups and missed connections. This incident is a stark demonstration of the single-point-of-failure risk inherent in the aviation supply chain; a compromise of one vendor with broad market penetration can incapacitate diverse national airports simultaneously. Aviation security implications are profound: this event validates the need for robust zero-trust architectures, mandatory supply-chain risk assessments, and the development of rapid manual contingency protocols. It also highlights a critical gap in cross-border incident information sharing, as real-time threat intelligence was delayed. Future resilience will depend on vendor diversification and regulatory mandates for continuous third-party security audits, moving beyond reactive mitigation toward systemic architectural change."
         }
       ]
     }
