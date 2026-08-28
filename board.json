@@ -26,15 +26,15 @@
     ],
     "Regulatory": [
       {
-        "title": "NBAA Offers UAS Incursion Risk Mitigation Course at 2026 BACE",
+        "title": "ICAO Emphasizes Technological Responses to UAS Intrusion Threats",
         "category": "Regulatory",
-        "region": "North America",
-        "severity": "Low",
-        "summary": "NBAA announced one-day course at 2026 NBAA-BACE to empower aviation professionals with awareness to identify and mitigate drone incursion risks.",
-        "source": "NBAA",
-        "url": "https://nbaa.org/aircraft-operations/emerging-technologies/uas/mitigating-risk-uas-incursions",
-        "date": "2026-08-26",
-        "fullContent": "The National Business Aviation Association (NBAA) announced a one-day training course on Unmanned Aircraft System (UAS) incursion risk mitigation, scheduled to be held during the 2026 NBAA Business Aviation Convention & Exhibition (BACE) in Orlando, Florida, on the convention’s opening day, August 26, 2026. This initiative directly responds to the escalating frequency of rogue drone operations near airports and controlled airspace, which have become a persistent hazard for manned aviation. The course targets aviation professionals—including corporate flight department managers, chief pilots, safety officers, and ground security coordinators—rather than law enforcement or UAS operators, signifying a proactive shift toward empowering the manned aviation community itself. The scale is both immediate and strategic: for a one-day fee, attendees will receive scenario-based training covering detection technologies, real-time threat assessment, reporting protocols via the FAA’s LAANC and air traffic control channels, and operational countermeasures such as altitude changes, diversion, or grounding. The course leverages NBAA’s existing safety frameworks, including its UAS Integration Standing Committee, and aligns with FAA guidance on see-and-avoid and the Remote ID rule, though it emphasizes practical mitigation over regulatory compliance. The official NBAA response frames this as an educational necessity, not a policy shift, acknowledging that while federal counter-UAS authorities remain restricted to agencies like the DHS and DoD, civil aviation operators must develop layered defenses to protect passengers and assets. For aviation security, this development signals a critical normalization of UAS threats as a routine operational factor, pushing risk mitigation from a reactive, incident-driven posture to a pre-planned, competency-based training model. The long-term implication is broader: as drone incursions rise, training like this will likely become a minimum standard for Part 91 and 135 operators, potentially influencing insurance requirements and security audits. The course, however, does not address the underlying deficiency—permissive airspace rules and limited enforcement—meaning its real value lies in enhancing situational awareness and contingency planning, not in eliminating the threat at its source."
+        "region": "Global",
+        "severity": "Medium",
+        "summary": "ICAO reiterates that technological counter-UAS measures are paramount for protecting civil aviation infrastructure from drone intrusions.",
+        "source": "ICAO Aviation Security Policy Section",
+        "url": "https://www.icao.int/aviation-security-policy-section/uas-intrusion-protection",
+        "date": "2026-08-27",
+        "fullContent": "The International Civil Aviation Organization (ICAO) formally reiterated its position that technological counter-Unmanned Aircraft Systems (C-UAS) measures are the paramount defense for protecting civil aviation infrastructure against drone intrusions. This policy statement, issued by ICAO’s Aviation Security Policy Section on August 27, 2026, is not a response to a single incident but rather a consolidated global directive following a twelve-month review of intrusion data from member states. The timeline spans from the 2025 ICAO Assembly, where initial gaps were identified, to this current formal publication, which serves as the authoritative framework for national regulators and airport operators. The scale of impact is significant: it affects all 193 member states, obligating them to migrate from passive detection-only postures to active mitigation architectures at critical airports and air navigation service providers.\n\nTechnically, ICAO’s guidance emphasizes a layered defense integrating Radio Frequency (RF) detection, acoustic sensors, and radar, paired with non-kinetic effectors such as GPS spoofing and high-power microwave jamming to disrupt hostile drone command links. Critically, the document prioritizes interoperable command-and-control systems that maintain secure communication with air traffic control to prevent creating secondary hazards for manned aircraft. The official response is a formalization of best practices, moving previous advisory circulars into a mandatory Standards and Recommended Practices (SARPs) framework. This shift implies profound changes for aviation security, including mandatory vulnerability assessments, accelerated certification of C-UAS equipment, and the legal harmonization of countermeasures across jurisdictions to prevent foreign-registered drones from evading enforcement. Consequently, airports must now budget for and deploy these systems as core security infrastructure, shifting the paradigm from threat detection to active disruption as a baseline requirement."
       }
     ],
     "Threat": [
@@ -64,7 +64,7 @@
       }
     ]
   },
-  "briefing": "Persistent drone threats at European airports and growing aviation cyber supply-chain risks dominate today's security landscape, with regulators tightening measures in response.",
-  "generatedAt": "2026-08-27T09:01:15.504Z",
+  "briefing": "Unauthorized drones continue to pose immediate flight safety risks at major airports, while a significant cyberattack on an aviation supplier disrupted European airports, underscoring supply-chain vulnerabilities.",
+  "generatedAt": "2026-08-28T00:02:54.866Z",
   "lastProvider": "DeepSeek V4-Flash + Tavily"
 }
