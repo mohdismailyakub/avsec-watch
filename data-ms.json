@@ -4141,7 +4141,7 @@
     },
     {
       "date": "2026-08-29",
-      "briefing": "Keselamatan penerbangan global kekal berwaspada terhadap ancaman yang semakin berkembang. Laporan terkini menunjukkan gangguan operasi yang ketara di lapangan terbang utama akibat pencerobohan dron.",
+      "briefing": "Insiden dron sesat berhampiran lapangan terbang AS melonjak pada S2 2026, manakala serangan siber penerbangan meningkat 600% tahun demi tahun, mendorong peraturan keselamatan maklumat Part-IS EU baharu berkuat kuasa Februari 2026. Insiden terkini dari hari ini adalah terhad, jadi perkembangan disahkan terbaru dari akhir Ogos diberi keutamaan.",
       "items": [
         {
           "title": "Lapangan Terbang Moscow Hentikan Operasi Akibat Serangan Dron Beramai-ramai",
@@ -4157,6 +4157,6 @@
       ]
     }
   ],
-  "generatedAt": "2026-08-29T00:01:04.284Z",
-  "lastProvider": "Gemini (2.5 Flash) (terjemahan)"
+  "generatedAt": "2026-08-29T09:00:51.004Z",
+  "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }

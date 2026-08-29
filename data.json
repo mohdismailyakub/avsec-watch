@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T00:01:04.284Z",
+  "generatedAt": "2026-08-29T09:00:51.004Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -4641,7 +4641,7 @@
     },
     {
       "date": "2026-08-29",
-      "briefing": "Global aviation security remains vigilant against evolving threats. Recent reports indicate significant operational disruptions at major airports due to drone incursions.",
+      "briefing": "Rogue drone incidents near US airports surged in Q2 2026, while aviation cyberattacks rose 600% year-over-year, prompting new EU Part-IS information security rules effective February 2026. Fresh incidents from today are limited, so the most recent verified developments from late August are prioritized.",
       "items": [
         {
           "title": "Moscow Airports Halt Operations Amid Mass Drone Attack",
@@ -4657,5 +4657,5 @@
       ]
     }
   ],
-  "lastProvider": "Gemini (2.5 Flash)"
+  "lastProvider": "DeepSeek V4-Flash + Tavily"
 }
