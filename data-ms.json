@@ -4216,8 +4216,13 @@
           "fullContent": "Lonjakan 600% yang dilaporkan dalam serangan siber terhadap sektor penerbangan menunjukkan peningkatan daripada jenayah oportunis kepada vektor ancaman strategik, dengan data Ogos 2026 menunjukkan eksploitasi terkoordinasi terhadap perimeter rangkaian warisan. Aktor utama dikenal pasti sebagai sindiket ransomware yang menggunakan taktik pemerasan berganda dan kumpulan Advanced Persistent Threat (APT) yang sejajar dengan negara, kemungkinan mencari risikan atau leverage yang mengganggu. Garis masa tersebut menunjukkan kempen tertumpu sepanjang enam bulan sebelumnya, menyasarkan teknologi operasi (OT) lapangan terbang dan sistem perkhidmatan penumpang (PSS) dan bukannya hanya IT korporat. Skalanya adalah besar, dengan lonjakan tersebut merangkumi percubaan pencerobohan di hab antarabangsa utama, mengakibatkan manipulasi jadual penerbangan, gangguan sistem bagasi, dan eksfiltrasi data manifes anak kapal dan penumpang. Secara teknikal, serangan tersebut mengeksploitasi peranti IoT yang tidak selamat, kelayakan vendor pihak ketiga yang terjejas, dan kepercayaan semula jadi antara rangkaian lapangan terbang dan syarikat penerbangan. Seruan untuk seni bina zero trust adalah tindak balas langsung terhadap kegagalan pertahanan berasaskan perimeter, mewajibkan pemisahan mikro antara Wi-Fi yang menghadapi awam, kiosk daftar masuk, dan rangkaian operasi penerbangan kritikal. Tindak balas rasmi daripada pengawal selia penerbangan dan Pertubuhan Penerbangan Awam Antarabangsa (ICAO) adalah untuk mengeluarkan nasihat kecemasan, tetapi pelaksanaannya kekal secara sukarela, meninggalkan jurang yang ketara. Bagi keselamatan penerbangan, perkembangan ini membingkai semula model ancaman: pencerobohan siber bukan lagi sekadar pelanggaran data tetapi berpotensi menjadi pemangkin langsung kepada pelanggaran keselamatan fizikal, memandangkan sistem kawalan akses dan saringan yang terjejas boleh menggemparkan armada atau menyembunyikan tindakan bermusuhan. Implikasinya ialah protokol AVSEC warisan mesti mengintegrasikan risikan ancaman siber ke dalam pembuatan keputusan akses fizikal, jika tidak, sektor tersebut kekal terdedah kepada kegagalan melata yang memberi kesan kinetik."
         }
       ]
+    },
+    {
+      "date": "2026-08-31",
+      "briefing": "Kebimbangan keselamatan penerbangan terkini didominasi oleh insiden siber yang menyasarkan lapangan terbang dan pembekal, di samping gangguan berkaitan dron di lapangan terbang Eropah, sementara pihak berkuasa mengukuhkan piawaian.",
+      "items": []
     }
   ],
-  "generatedAt": "2026-08-30T09:04:39.228Z",
+  "generatedAt": "2026-08-31T00:02:42.448Z",
   "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }
