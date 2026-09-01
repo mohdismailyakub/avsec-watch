@@ -4269,7 +4269,7 @@
     },
     {
       "date": "2026-09-01",
-      "briefing": "Keselamatan penerbangan global telah menyaksikan perkembangan terkini termasuk ketegangan geopolitik yang semakin memuncak di Timur Tengah yang mempengaruhi ruang udara serantau dan kerjasama antarabangsa yang berterusan menentang jenayah rentas sempadan di lapangan terbang. Badan kawal selia juga mengeluarkan arahan kelaikan udara baharu dan memajukan fasilitasi perjalanan rentas sempadan dengan implikasi keselamatan.",
+      "briefing": "Kebimbangan keselamatan penerbangan terkini tertumpu kepada pencerobohan UAS yang berterusan berhampiran lapangan terbang utama dan desakan kawal selia baharu untuk daya tahan siber, tanpa sebarang insiden besar yang disahkan hari ini.",
       "items": [
         {
           "title": "US dan Iran Berbalas Tembakan, Meningkatkan Risiko Ruang Udara Timur Tengah",
@@ -4329,6 +4329,6 @@
       ]
     }
   ],
-  "generatedAt": "2026-09-01T00:01:54.170Z",
-  "lastProvider": "Gemini (2.5 Flash) (terjemahan)"
+  "generatedAt": "2026-09-01T09:00:54.802Z",
+  "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }

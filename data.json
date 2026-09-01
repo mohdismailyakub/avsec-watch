@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T00:01:54.170Z",
+  "generatedAt": "2026-09-01T09:00:54.802Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -4769,7 +4769,7 @@
     },
     {
       "date": "2026-09-01",
-      "briefing": "Global aviation security has seen recent developments including heightened geopolitical tensions in the Middle East impacting regional airspace and continued international cooperation against transnational crime at airports. Regulatory bodies are also issuing new airworthiness directives and advancing cross-border travel facilitation with security implications.",
+      "briefing": "Fresh aviation security concerns center on persistent UAS incursions near major airports and new regulatory pushes for cyber resilience, with no major breaking incidents confirmed today.",
       "items": [
         {
           "title": "US and Iran Exchange Fire, Raising Middle East Airspace Risks",
@@ -4829,5 +4829,5 @@
       ]
     }
   ],
-  "lastProvider": "Gemini (2.5 Flash)"
+  "lastProvider": "DeepSeek V4-Flash + Tavily"
 }
