@@ -64,7 +64,7 @@
       }
     ]
   },
-  "briefing": "Global aviation security has seen recent developments including heightened geopolitical tensions in the Middle East impacting regional airspace and continued international cooperation against transnational crime at airports. Regulatory bodies are also issuing new airworthiness directives and advancing cross-border travel facilitation with security implications.",
-  "generatedAt": "2026-09-01T00:03:24.853Z",
-  "lastProvider": "Gemini (2.5 Flash)"
+  "briefing": "Recent aviation security threats center on a surge of drone incursions at US airports and a suspected explosive-drone sabotage incident in Germany, alongside growing ransomware risks targeting aviation supply chains. Regulatory focus is shifting to mandatory EASA Part-IS cyber compliance as of February 2026.",
+  "generatedAt": "2026-09-02T00:01:15.847Z",
+  "lastProvider": "DeepSeek V4-Flash + Tavily"
 }
