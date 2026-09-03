@@ -4391,7 +4391,7 @@
     },
     {
       "date": "2026-09-03",
-      "briefing": "Keselamatan penerbangan global kini berhadapan dengan ketegangan geopolitik yang semakin meningkat, yang membawa kepada ancaman yang disokong oleh negara seperti serangan dron ke atas infrastruktur kritikal lapangan terbang dan amaran mengenai ruang udara yang tidak selamat. Pada masa yang sama, badan kawal selia sedang melaksanakan langkah baharu untuk menangani ancaman yang semakin berkembang, termasuk sekatan ruang udara yang diperketatkan dan protokol akses penumpang yang diperhalusi.",
+      "briefing": "Insiden drone yang tidak dikenali terus mengganggu operasi lapangan terbang di peringkat global, manakala keselamatan siber penerbangan menghadapi peningkatan mendadak dalam serangan ransomware rantaian bekalan. Laporan hari ini memberi tumpuan kepada insiden drone Eropah yang terkini dan ancaman siber berterusan yang menyasarkan pembekal lapangan terbang.",
       "items": [
         {
           "title": "Jerman Mengaitkan Serangan Dron di Lapangan Terbang Leipzig kepada Rusia",
@@ -4462,6 +4462,6 @@
       ]
     }
   ],
-  "generatedAt": "2026-09-03T00:05:37.551Z",
-  "lastProvider": "Gemini (2.5 Flash) (terjemahan)"
+  "generatedAt": "2026-09-03T09:00:52.030Z",
+  "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }
