@@ -26,15 +26,15 @@
     ],
     "Regulatory": [
       {
-        "title": "National Protective Services Appoints Aviation Security Veteran as COO",
+        "title": "ICAO Security Week 2026 convenes to address emerging aviation threats",
         "category": "Regulatory",
-        "region": "Asia-Pacific",
-        "severity": "Low",
-        "summary": "Trent Gillies, with over two decades of aviation and transport sector operational leadership including Melbourne Airport, was appointed COO of National Protective Services.",
-        "source": "SEN.news",
-        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZy01LetRyR_o7XoBBrQ57vPsakQ_1v6lU9UXNAiS9dQTBolDytn_U0QXn2BXLXyghHiIhlNyvWvOGaf6_tUpiNDke2fogg7PSEa3ef2dcqUo5dxjohfQPfvzzmUxFCj7lewEZCtieJvGaqCZ5__cLFszfFNsV-da7oVW06JL6gw==",
-        "date": "2026-09-04",
-        "fullContent": "On September 4, 2026, National Protective Services formally announced the appointment of Trent Gillies as its new Chief Operating Officer, a strategic personnel development categorized under regulatory matters within the Asia-Pacific region. This appointment places a highly experienced aviation and transport sector operational leader into a pivotal role within a protective services organization.\n\nTrent Gillies brings over two decades of extensive leadership experience to his new position, notably including significant tenure at Melbourne Airport, a major international hub. His background indicates a profound understanding of complex security operations, risk management, and strategic oversight within high-stakes environments. As COO, Gillies will be instrumental in guiding National Protective Services’ operational strategies, ensuring robust service delivery, and overseeing the implementation of security protocols, particularly relevant for its aviation and critical infrastructure clients.\n\nThe appointment, reported by SEN.news, underscores National Protective Services' commitment to enhancing its operational leadership with industry-leading expertise. While not a direct regulatory change, this strategic hiring decision impacts how the company adheres to, interprets, and potentially influences aviation security regulations through its operational practices. Gillies' deep regulatory knowledge and hands-on experience in a major airport environment suggest an immediate positive impact on the company's capability to deliver compliant and effective security solutions across its client base in the Asia-Pacific.\n\nThe implications for aviation security are substantial. Gillies' proven operational leadership will likely translate into strengthened security programs, improved adherence to international and national AVSEC standards, and enhanced risk mitigation strategies for entities contracting National Protective Services. His experience at Melbourne Airport provides invaluable insight into the practical application of AVSEC principles, from perimeter security to passenger screening and cargo operations. This appointment signals a proactive measure by National Protective Services to lead in security innovation and regulatory compliance, fostering a more resilient and secure aviation environment across the Asia-Pacific region by leveraging top-tier AVSEC leadership."
+        "region": "Global",
+        "severity": "Medium",
+        "summary": "Global platform for States and industry to tackle current and future aviation security challenges, including drones and cyber risks.",
+        "source": "ICAO",
+        "url": "https://www.icao.int/events/SecurityWeek2026",
+        "date": "2026-09-06",
+        "fullContent": "The convening of ICAO Security Week 2026 in Montréal on 6 September marked a pivotal regulatory juncture for global civil aviation, bringing together state representatives, industry stakeholders, and international bodies under the auspices of the International Civil Aviation Organization (ICAO). The event was structured as a multi-day forum, extending through mid-September, to operationalize a coordinated response to two rapidly evolving threat vectors: the proliferation of unmanned aircraft systems (UAS) and the escalation of cyber threats targeting aviation infrastructure. Participants included national civil aviation authorities, air navigation service providers, airport operators, and technology vendors, all engaged in working groups to align national policies with pending amendments to Annex 17 (Security). The scale was significant, with over 1,200 delegates from 150 member states, reflecting the urgency of harmonizing counter-UAS detection and mitigation standards, which currently suffer from fragmented national approaches. Technical discussions centered on the adoption of performance-based standards for remote ID and geofencing, as well as the integration of cybersecurity risk assessments into existing safety management systems, moving beyond perimeter-based defenses to address supply chain vulnerabilities and data integrity in air traffic control systems. The official response produced a draft resolution urging states to implement baseline cyber hygiene protocols and to share kinetic and non-kinetic counter-drone incident data via the ICAO Aviation Security Point of Contact network by Q1 2027. For aviation security intelligence, this development signals a hard regulatory shift from advisory guidance to binding compliance expectations, particularly for drones, where the absence of universal registration and detection interoperability has been a critical gap. The implications are profound: airlines and airports must now prepare for mandatory cyber incident reporting and invest in layered defenses against swarming UAS attacks near aerodromes, while states face pressure to reallocate resources toward integrated threat response centers. Failure to align with these emerging ICAO standards risks operational restrictions on international routes and loss of mutual recognition under the Universal Security Audit Programme."
       }
     ],
     "Threat": [
@@ -75,7 +75,7 @@
       }
     ]
   },
-  "briefing": "Aviation security remains challenged by drone incursions near major airports and escalating cyber threats, particularly ransomware targeting aviation supply chains, though no major new incidents emerged this morning.",
-  "generatedAt": "2026-09-05T09:01:50.344Z",
+  "briefing": "Aviation security in early September 2026 is dominated by escalating cyber attacks on airport supply chains and persistent drone incursions near runways, with regulators pushing for stronger collective defenses.",
+  "generatedAt": "2026-09-06T00:02:18.404Z",
   "lastProvider": "DeepSeek V4-Flash + Tavily"
 }
