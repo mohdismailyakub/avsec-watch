@@ -4618,7 +4618,7 @@
     },
     {
       "date": "2026-09-06",
-      "briefing": "Keselamatan penerbangan pada awal September 2026 didominasi oleh serangan siber yang semakin meningkat terhadap rantaian bekalan lapangan terbang dan pencerobohan dron yang berterusan berhampiran landasan, dengan pihak berkuasa menekankan pertahanan kolektif yang lebih kukuh.",
+      "briefing": "Keselamatan penerbangan terus berada di bawah tekanan kritikal akibat peningkatan insiden pencerobohan dron sesat berhampiran lapangan terbang utama dan lonjakan mendadak serangan siber rantaian bekalan, dengan pihak berkuasa kawal selia mendesak mandat keselamatan maklumat baharu.",
       "items": [
         {
           "title": "Serangan ransomware lapangan terbang Eropah mendedahkan kelemahan rantaian bekalan",
@@ -4667,6 +4667,6 @@
       ]
     }
   ],
-  "generatedAt": "2026-09-06T00:01:24.192Z",
+  "generatedAt": "2026-09-06T09:00:53.020Z",
   "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T00:01:24.192Z",
+  "generatedAt": "2026-09-06T09:00:53.020Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -5118,7 +5118,7 @@
     },
     {
       "date": "2026-09-06",
-      "briefing": "Aviation security in early September 2026 is dominated by escalating cyber attacks on airport supply chains and persistent drone incursions near runways, with regulators pushing for stronger collective defenses.",
+      "briefing": "Aviation security remains under acute pressure from escalating rogue drone incursions near major airports and a sharp rise in supply-chain cyberattacks, with regulators pushing new information security mandates.",
       "items": [
         {
           "title": "European airports ransomware attack exposes supply chain fragility",
