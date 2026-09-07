@@ -39,15 +39,15 @@
     ],
     "Threat": [
       {
-        "title": "Ransomware in Aviation Supply Chain Up 600% Year-on-Year",
+        "title": "Lebanon Appeals for Aid Following Israeli Strikes, Mentions Drone Attack",
         "category": "Threat",
-        "region": "Global",
-        "severity": "High",
-        "summary": "Cyberattacks on airlines, airports, and manufacturers surged; ransomware in supply chain jumped 600%, highlighting systemic software and identity-layer risks.",
-        "source": "Technology Advancement Center",
-        "url": "https://thetac.tech/together-against-threats-advancing-aviation-cybersecurity-through-collective-action",
-        "date": "2026-09-05",
-        "fullContent": "The 600% year-on-year surge in ransomware attacks targeting the aviation supply chain represents a critical escalation in the threat landscape, moving beyond direct operational targets to exploit systemic vulnerabilities within interconnected logistics and maintenance networks. The Technology Advancement Center report indicates that between September 2025 and September 2026, attackers successfully compromised multiple third-party software vendors and identity management platforms used by airlines, airports, and original equipment manufacturers (OEMs). The primary vector was not brute-force encryption of flight systems but the exploitation of privileged access credentials and unpatched vulnerabilities in enterprise resource planning (ERP) and maintenance, repair, and overhaul (MRO) software. This allowed threat actors to encrypt critical data related to parts inventory, crew scheduling, and billing, effectively halting non-flight-critical but operationally essential processes. Notably, the timeline shows a concentrated spike in Q2 2026, correlating with the release of a new exploit kit targeting a widely used single sign-on (SSO) solution. The scale is staggering: at least 40 distinct entities, including two major European flag carriers and a North American MRO provider, reported incidents, with average downtime exceeding nine days and estimated recovery costs exceeding $250 million collectively. While no flight safety systems were directly compromised, the attacks forced manual workarounds for cargo manifest processing and delayed aircraft part deliveries, causing cascading schedule disruptions across the Atlantic corridor. The official response has been fragmented; the International Civil Aviation Organization (ICAO) issued a security advisory urging member states to mandate multi-factor authentication for all supply chain portals, while the European Union Aviation Safety Agency (EASA) launched a formal review of software supply chain assurance standards. For aviation security analysts, this development underscores a fundamental shift: the perimeter has dissolved, and the most significant vulnerability is now the trust placed in third-party digital identity and software update mechanisms. The implication is clear—AVSEC must integrate robust cyber resilience into physical security assessments, treating supply chain partners as extensions of the security architecture, not external vendors. Unaddressed, this vector will likely enable more severe consequences, including targeting of air traffic control interface software or in-flight entertainment network gateways that bridge to operational domains."
+        "region": "Middle East",
+        "severity": "Medium",
+        "summary": "Lebanon urged international action against Israeli attacks, following an alleged Hezbollah drone attack in southern Lebanon, highlighting ongoing conflict zone risks.",
+        "source": "RTHK",
+        "url": "https://news.rthk.hk/rthk/en/component/news/html/20260907_120406.html",
+        "date": "2026-09-07",
+        "fullContent": "On September 7, 2026, Lebanon formally appealed for international intervention and aid following a series of Israeli strikes. This diplomatic action was reportedly prompted by an alleged drone attack attributed to Hezbollah in southern Lebanon, highlighting a significant escalation or continuation of hostilities between Israeli forces and the non-state actor Hezbollah. The immediate impact of these events is a heightened state of alert within a volatile conflict zone, necessitating a direct plea from the Lebanese government for global attention and assistance to mitigate ongoing risks.\n\nWhile specific technical details regarding the alleged Hezbollah drone attack, such as drone type, payload, or precise target, remain undisclosed in the summary, its mention underscores the persistent threat posed by unmanned aerial systems (UAS) in this theatre. Lebanon's official response, urging international action, signifies a clear diplomatic effort to de-escalate tensions and secure humanitarian support, emphasizing the severe regional instability caused by the ongoing military engagements.\n\nThe implications for aviation security are significant. The continued use of drones by non-state actors like Hezbollah in a conflict zone near international air routes presents risks of misidentification, unintentional collateral damage, or deliberate targeting of aviation assets. Increased military activity in southern Lebanon and its proximity to major flight corridors necessitates heightened vigilance from air traffic control and airline operators, particularly concerning potential GPS jamming, spoofing, or the inadvertent entry of uncoordinated UAS into controlled airspace. Furthermore, airports within the broader Middle East region, including Beirut Rafic Hariri International Airport, face elevated security threats from potential retaliatory actions or a spillover of the conflict, mandating robust counter-UAS measures and enhanced perimeter security. Airlines are advised to reassess flight paths and conduct thorough risk assessments for operations transiting or originating from the affected region."
       }
     ],
     "Technology": [
@@ -75,7 +75,7 @@
       }
     ]
   },
-  "briefing": "Aviation security in early September 2026 is dominated by escalating cyber attacks on airport supply chains and persistent drone incursions near runways, with regulators pushing for stronger collective defenses.",
-  "generatedAt": "2026-09-06T00:02:18.404Z",
-  "lastProvider": "DeepSeek V4-Flash + Tavily"
+  "briefing": "Recent global aviation security developments include a fatal cargo plane crash in Miami and widespread flight disruptions in Indonesia due to a volcanic eruption. Geopolitical tensions continue to manifest with drone activity in the Middle East, while Germany is developing enhanced defenses against drone threats to airports.",
+  "generatedAt": "2026-09-07T00:05:18.655Z",
+  "lastProvider": "Gemini (2.5 Flash)"
 }
