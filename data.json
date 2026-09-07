@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T00:04:01.613Z",
+  "generatedAt": "2026-09-07T09:00:56.748Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -5168,7 +5168,7 @@
     },
     {
       "date": "2026-09-07",
-      "briefing": "Recent global aviation security developments include a fatal cargo plane crash in Miami and widespread flight disruptions in Indonesia due to a volcanic eruption. Geopolitical tensions continue to manifest with drone activity in the Middle East, while Germany is developing enhanced defenses against drone threats to airports.",
+      "briefing": "Drone incursions and cyber attacks on aviation supply chains remain the top active threats, with fresh reports of near-misses and regulatory responses emerging in early September 2026.",
       "items": [
         {
           "title": "Amazon Prime Air Cargo Plane Crash in Miami Kills Five",
@@ -5217,5 +5217,5 @@
       ]
     }
   ],
-  "lastProvider": "Gemini (2.5 Flash)"
+  "lastProvider": "DeepSeek V4-Flash + Tavily"
 }

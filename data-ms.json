@@ -4668,7 +4668,7 @@
     },
     {
       "date": "2026-09-07",
-      "briefing": "Perkembangan keselamatan penerbangan global terkini termasuk nahas kapal terbang kargo maut di Miami dan gangguan penerbangan meluas di Indonesia disebabkan letusan gunung berapi. Ketegangan geopolitik terus wujud dengan aktiviti dron di Timur Tengah, manakala Jerman sedang membangunkan pertahanan yang dipertingkatkan terhadap ancaman dron ke lapangan terbang.",
+      "briefing": "Pencerobohan dron dan serangan siber terhadap rantaian bekalan penerbangan kekal sebagai ancaman aktif utama, dengan laporan baharu mengenai insiden hampir berlanggar dan tindak balas kawal selia yang muncul pada awal September 2026.",
       "items": [
         {
           "title": "Nahas Kapal Terbang Kargo Amazon Prime Air di Miami Mengorbankan Lima Nyawa",
@@ -4717,6 +4717,6 @@
       ]
     }
   ],
-  "generatedAt": "2026-09-07T00:04:01.613Z",
-  "lastProvider": "Gemini (2.5 Flash) (terjemahan)"
+  "generatedAt": "2026-09-07T09:00:56.748Z",
+  "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }
