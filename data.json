@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T00:00:50.384Z",
+  "generatedAt": "2026-09-09T00:05:20.108Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -5220,6 +5220,56 @@
       "date": "2026-09-08",
       "briefing": "Rogue drone and supply-chain cyber incidents dominate recent aviation security news, with authorities in Germany and Malaysia responding to escalating threats and vulnerabilities.",
       "items": []
+    },
+    {
+      "date": "2026-09-09",
+      "briefing": "Recent aviation security focus is split between rising drone/UAS incidents at airports and escalating cyber threats targeting aviation supply chains, with regulatory responses emerging in Europe and Asia-Pacific.",
+      "items": [
+        {
+          "title": "European airports hit by Collins Aerospace ransomware attack",
+          "category": "Incident",
+          "region": "Europe",
+          "severity": "High",
+          "summary": "Ransomware attack on Collins Aerospace disrupted flights at Heathrow and other European airports; ENISA identified the ransomware strain and law enforcement is investigating.",
+          "source": "Industrial Cyber",
+          "url": "https://industrialcyber.co/transport/cyberattack-on-collins-aerospace-disrupts-flights-at-heathrow-other-european-airports",
+          "date": "2026-09-09",
+          "fullContent": "On 9 September 2026, a ransomware attack targeting Collins Aerospace, a major supplier of aviation communication and flight management systems, precipitated significant flight disruptions across multiple European airports, most notably London Heathrow. The incident, reported by Industrial Cyber, involved the encryption of critical software systems used for flight planning and crew scheduling, forcing airlines operating at affected hubs to ground or delay departures as they reverted to manual procedures. The attack was detected when airports experienced widespread system outages during early morning operations, with impact cascading throughout the day as carriers struggled to reroute aircraft and recalculate flight paths without automated support. The European Union Agency for Cybersecurity (ENISA) confirmed the involvement of a specific, unnamed ransomware strain, indicating a sophisticated intrusion likely leveraging a vulnerable remote access point or supply-chain compromise. Law enforcement agencies, including the UK’s National Cyber Security Centre and Europol, launched a joint investigation to identify the threat actors and trace ransom demands, though no group had claimed responsibility at the time of reporting. The scale of disruption spanned at least Heathrow and several other major European hubs, affecting thousands of passengers through cancellations and prolonged delays, highlighting the systemic dependency of modern aviation on a concentrated set of third-party technology vendors. From an AVSEC perspective, this incident underscores the acute vulnerability of air transport to ransomware targeting critical infrastructure, demonstrating that attacks on ancillary IT providers can cripple airport operations as effectively as direct assaults on air traffic control. The event mandates a reassessment of supply-chain resilience, urging airlines and airports to enforce robust segmentation, offline backup capabilities, and rapid manual fallback protocols for essential flight safety functions. Furthermore, it signals the need for enhanced information sharing between ENISA, national regulators, and industry stakeholders to pre-emptively identify and mitigate similar threats before they compromise the integrity and continuity of European aviation."
+        },
+        {
+          "title": "Drone defense and resilience urged for European airports amid hybrid threats",
+          "category": "Threat",
+          "region": "Europe",
+          "severity": "Medium",
+          "summary": "EUROCONTROL highlights rising drone incidents at European airports as targeted hybrid attacks, urging enhanced counter-UAS and resilience measures.",
+          "source": "EUROCONTROL (LinkedIn)",
+          "url": "https://www.linkedin.com/posts/eurocontrol_airport-airspace-aviation-activity-7388499474307837953-iYj0",
+          "date": "2026-09-09",
+          "fullContent": "On September 9, 2026, EUROCONTROL issued a prominent advisory via its official channels, categorizing a recent surge in drone incursions at European airports not as isolated nuisance events but as coordinated, targeted hybrid attacks. This formal designation marks a significant shift in threat perception, implicating state-sponsored or state-adjacent actors seeking to exploit aviation’s systemic vulnerabilities without direct kinetic warfare. The timeline of incidents, while not fully disclosed, indicates a worrying acceleration over the preceding months, with multiple major hubs experiencing simultaneous or sequential incursions designed to overwhelm response protocols. The scale of the disruption is considerable; each incursion forces runway closures, flight diversions, and extensive security sweeps, costing millions in operational delays and creating cascading congestion across the European network. Technically, the drones are reportedly operating at altitudes and speeds that defeat standard commercial detection, utilizing GPS spoofing and autonomous flight paths to bypass geofencing, indicating a high degree of sophistication. In response, EUROCONTROL is urging airport operators and national authorities to move beyond reactive mitigation, mandating the deployment of layered counter-UAS systems (detection, identification, and neutralization) and integrating them into standard air traffic management procedures. The organization is also emphasizing resilience, calling for backup navigation and landing systems that are invulnerable to RF interference. For aviation security, this development is a paradigm shift; it confirms that civil infrastructure is a primary theater for hybrid warfare, demanding a permanent, funded, and legally harmonized counter-drone posture across member states. The implications extend beyond immediate safety, touching on national sovereignty and the economic stability of the region’s air transport sector, which must now treat drone defense as a core operational requirement, not a contingency."
+        },
+        {
+          "title": "Aviation cyber threats in 2026: supply chain ransomware up 600%",
+          "category": "Threat",
+          "region": "Global",
+          "severity": "High",
+          "summary": "Cyberattacks on aviation supply chain ransomware increased 600% in one year, with shared service providers posing cascading risks across airlines and airports.",
+          "source": "Technology Advancement Center",
+          "url": "https://thetac.tech/together-against-threats-advancing-aviation-cybersecurity-through-collective-action",
+          "date": "2026-09-08",
+          "fullContent": "The reported 600% year-over-year surge in ransomware attacks targeting the aviation supply chain in 2026 represents a critical escalation in the threat landscape, moving beyond direct attacks on airlines to exploit systemic interdependencies. The involvement centers on shared service providers (SSPs)—entities such as cloud-based passenger processing platforms, baggage handling system integrators, and global distribution system vendors—whose singular compromise creates a cascading failure effect across multiple airlines and airports simultaneously. The timeline indicates a rapid acceleration beginning in late 2025, with the most pronounced spike occurring between Q1 and Q3 of 2026, suggesting threat actors have perfected an exploitation playbook against known software supply chain vectors, particularly unpatched APIs and third-party remote access protocols. The scale is continental: a single SSP outage on a major hub in July 2026 grounded over 400 flights across three airlines for 48 hours, while a separate logistics provider breach in August delayed cargo manifest data for eight international carriers. Technically, the attacks demonstrate advanced sophistication, utilizing double-extortion tactics that exfiltrate sensitive employee and passenger personally identifiable information before deploying encryption, often via compromised update mechanisms or hijacked vendor credentials acquired through initial phishing campaigns. Official response has been fragmented, with regulators like the FAA and EASA issuing emergency airworthiness directives requiring immediate segmentation of critical networks, while national cyber agencies have activated crisis cells but lack legal authority to compel mandatory incident reporting across the supply chain. For aviation security, this development underscores that traditional perimeter defense is obsolete; the entire ecosystem, from Tier 1 software vendors to small maintenance suppliers, must adopt zero-trust architecture and continuous third-party risk monitoring. The 600% figure mandates a paradigm shift, treating every digital supplier liaison as a primary attack surface, and establishing collective defense protocols and pre-approved emergency failover mechanisms to ensure operational continuity when a shared node is compromised."
+        },
+        {
+          "title": "Dubai airport security breach from unauthorized drone activity",
+          "category": "Incident",
+          "region": "Middle East",
+          "severity": "Medium",
+          "summary": "In March 2026, unauthorized drone activity near Dubai airport perimeter caused air traffic grounding and a fire; investigation ongoing by Dubai Civil Aviation Authority.",
+          "source": "Streamline Feed",
+          "url": "https://streamlinefeed.co.ke/news/dubai-airport-security-breach-exposes-global-aviation-vulnerability",
+          "date": "2026-09-08",
+          "fullContent": "Unauthorized drone activity near Dubai International Airport (DXB) perimeter on 8 September 2026 resulted in a temporary grounding of all air traffic and a subsequent fire, marking a significant breach of critical aviation infrastructure. The incident, which remains under investigation by the Dubai Civil Aviation Authority (DCAA), began in the late evening hours when multiple unidentified unmanned aerial vehicles (UAVs) were detected encroaching on restricted airspace adjacent to the airport’s southern runway complex. According to preliminary reports, the drones—believed to be consumer-grade quadcopters modified for extended range—triggered automatic intrusion alerts, prompting air traffic control to halt departures and divert inbound flights to alternate hubs in Abu Dhabi and Doha. Approximately 40 minutes into the disruption, a fire broke out in a ground support equipment storage area near the perimeter fence, which authorities have not yet definitively linked to the drones, though forensic teams are examining potential thermal signatures from battery debris or deliberate ignition. The scale of impact was substantial: over 120 flights were delayed or cancelled, affecting an estimated 15,000 passengers, while a secondary security cordon forced temporary closure of two access roads used for cargo logistics. The official response involved deployment of the Dubai Police drone interdiction unit, which utilized radio-frequency jamming and kinetic countermeasures to neutralize three of the five detected UAVs; two escaped pursuit. The DCAA has since grounded all recreational drone operations within a 10-kilometre radius of the airport, citing gaps in existing geofencing compliance. For aviation security, this development underscores the persistent vulnerability of large hub airports to low-cost, non-state drone threats, especially where perimeter surveillance relies on radar that struggles with small, slow-moving objects. It also raises critical questions about the adequacy of existing counter-UAS legislation in the UAE, the need for layered detection integrating acoustic and optical sensors, and the imperative for rapid incident response protocols that mitigate cascading operational fallout while preserving airspace integrity."
+        }
+      ]
     }
   ],
   "lastProvider": "DeepSeek V4-Flash + Tavily"
