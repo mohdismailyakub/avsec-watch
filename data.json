@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T00:03:54.634Z",
+  "generatedAt": "2026-09-11T09:02:47.045Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -5455,9 +5455,43 @@
     },
     {
       "date": "2026-09-11",
-      "briefing": "No aviation security developments meeting the freshness threshold are present in these search results; the most recent item dates to 20 August 2026. Rogue drone activity around airports remains the dominant operational threat theme, alongside escalating ransomware risks to aviation supply chains.",
-      "items": []
+      "briefing": "Global aviation security saw a focus on drone threats and operational safety. A drone attack shut down Myanmar's second-busiest airport, while a separate drone incident caused a scare near the Ukrainian President's plane in Moldova.",
+      "items": [
+        {
+          "title": "Myanmar Airport Shut Down After Drone Attack",
+          "category": "Incident",
+          "region": "Asia-Pacific",
+          "severity": "High",
+          "summary": "Myanmar's second-busiest airport, Tada-U International, closed for two days after pro-democracy rebels launched six suicide drones, disrupting domestic flights.",
+          "source": "Myanmar International TV, The Hindu, The Times of India",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHf-sECCFgBAnuan6d2if4-xfb7puS60FMOvnuB-J4xSCNPs9DjDha6_v22ENyHtaVVy5337qCwoRKD7ArKOFuBydp891V8T4nK-fxl01f5Q6JXZbldEQf8I2eX8IIaf0sgXyrH3rk47mbIw4TGSp2yHN20zZ4jmnUIun7e-DuNQPK8rhPjEFWhvOG0sXypjwQ=",
+          "date": "2026-09-11",
+          "fullContent": "On 11 September 2026, Myanmar’s second-busiest airport, Tada-U International, serving Mandalay, was shut down for two days after pro-democracy rebel forces launched six suicide drones against the facility, disrupting domestic flights and raising fresh concerns about the vulnerability of civil aviation to asymmetric drone threats in conflict zones. According to Myanmar International TV, The Hindu, and The Times of India, the coordinated attack prompted authorities to suspend all operations, stranding passengers and forcing diversions while security forces swept the airfield and surrounding areas for unexploded ordnance and additional devices. The rebels involved are aligned with pro-democracy resistance elements opposing the military junta, though no group immediately claimed responsibility at the time of reporting. The drones, described as suicide or loitering munitions, were likely commercial or improvised platforms modified to carry explosive payloads, a tactic increasingly observed in Myanmar’s internal conflict, where both state and non-state actors have fielded weaponized UAVs. The scale of the attack—six simultaneous drones—suggests a degree of operational planning, reconnaissance, and technical capability that exceeds crude harassment. While no casualties were reported in the immediate aftermath, the economic and logistical impact was significant: Tada-U is a key domestic hub linking Mandalay to Yangon and regional destinations, and its closure compounded existing aviation disruptions across the country. Myanmar’s military government responded by tightening perimeter security, deploying counter-drone measures, and vowing to pursue those responsible, though details of specific defensive systems were not disclosed. The incident underscores a broader aviation security challenge: traditional perimeter and screening measures are ill-suited to low-cost, small-profile drones capable of precision strikes on airfields. For AVSEC practitioners, Tada-U highlights the need for integrated counter-UAS capabilities, including detection, tracking, and mitigation, particularly at airports in or near active conflict zones where non-state actors can exploit gaps in layered defense. It also signals that airports may increasingly become deliberate targets in civil conflicts, not merely collateral infrastructure."
+        },
+        {
+          "title": "Zelenskiy's Plane Nearly Hit by Drone in Moldova",
+          "category": "Incident",
+          "region": "Europe",
+          "severity": "High",
+          "summary": "Ukrainian President Zelenskiy's flight from Moldova was delayed and nearly struck by a drone, forcing temporary airspace closure at Chisinau airport.",
+          "source": "The Nation",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHLKa5sME82ZBwAyWSFfjiguiO8zz7qu2ni9BNbrDBNlV3y1dKika5yI5fS0uQh0QhDX8IKZefTao6egcdZnMIWpwmX89msJE93TnNsoMtwExQqxPju5oLkf_xXnHS5pibuHY0_OlP3a2tEmEosnun7qLgcBDUzohZn-NUAUlOGcRHGIC80nmDxE-hUSH5nTC4RwdW-ahtPorgToqE=",
+          "date": "2026-09-11",
+          "fullContent": "On 11 September 2026, Ukrainian President Volodymyr Zelenskiy's departure flight from Chisinau International Airport in Moldova was delayed after an unmanned aerial vehicle came dangerously close to his aircraft, prompting Moldovan authorities to temporarily close the airspace. The incident occurred as Zelenskiy was concluding an official visit to Moldova, with the drone detected in the immediate vicinity of the presidential plane during its departure sequence. Moldovan air traffic control halted operations at Chisinau airport, grounding arrivals and departures until the airspace was cleared, while the Ukrainian delegation's flight was held on the ground as a precautionary measure. The drone was not intercepted or engaged, and no injuries or damage to the aircraft were reported, but the proximity of the UAV to a head-of-state flight represents a serious breach of aviation security protocols. Moldovan authorities have not publicly attributed the drone to a specific actor, though the incident occurs against the backdrop of persistent Russian drone activity near Moldovan and Ukrainian airspace. The event underscores the growing challenge of unmanned systems penetrating controlled airspace in Eastern Europe, where airports near conflict zones face elevated risk from stray or deliberately directed UAVs. It highlights critical gaps in counter-drone detection and mitigation at civilian airports, particularly regarding the protection of high-value diplomatic and executive flights. For AVSEC practitioners, the incident reinforces the need for integrated counter-UAS capabilities, real-time airspace surveillance, and coordinated emergency protocols between national security services and airport operators, especially in regions where geopolitical tensions translate directly into aviation risk."
+        },
+        {
+          "title": "FAA Proposes Airworthiness Directive for Dassault Falcon Aircraft Seats",
+          "category": "Regulatory",
+          "region": "North America",
+          "severity": "Medium",
+          "summary": "The FAA issued a proposed AD for Dassault Falcon 7X/900/2000 series aircraft due to reports of cabin seats sliding without passenger input.",
+          "source": "MarketScreener",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE_DjTLYzZC_gPqZk5YB7UVmHx9ZoRReZzXNDsGtu8eFA8e4IMcjnyzPD-jk0_y_edqxLvclKewh5UFXWgKf0uNWvXpYm3pygCgo66d8dMcH-IgyQMiwh4uVH5IsMOAWflDmgw_QqmZKD_s298FPEe-U_VPSckQiI7rpAyhC7kSb4RN2aoxNX6ukJOeDtcrSGsjRDThmlIxBJm-uM6lK5njT9XAYL1I6RIoptfTLdXv1f_5uUTBcsW7iScEVBtNfV34szWe-Aq7Kb5lTr9mvU11Z7daovg=",
+          "date": "2026-09-11",
+          "fullContent": "On September 11, 2026, the Federal Aviation Administration issued a proposed airworthiness directive (AD) targeting Dassault Falcon 7X, 900, and 2000 series aircraft, following multiple reports of cabin seats sliding unexpectedly without passenger input. The action involves the FAA as the issuing regulator, Dassault Aviation as the type certificate holder, and operators of the affected fleet across North America. The proposed AD would mandate repetitive inspections and potential corrective modifications to seat track locking mechanisms, with a standard comment period before finalization; if adopted, compliance timelines would likely range from 30 to 120 days depending on inspection results.\n\nWhile the precise number of incidents remains under review, the affected fleet spans hundreds of aircraft in business and charter service, creating a disproportionate operational burden on operators reliant on these long-range jets. Technically, the issue appears tied to insufficient friction or worn locking hardware in seat floor tracks, allowing seats to shift under flight loads, turbulence, or minor cabin movement. An unsecured seat can obstruct aisles, impede emergency egress, and cause passenger injury during abrupt maneuvers.\n\nThe FAA’s response, coordinated with Dassault, reflects a precautionary regulatory posture pending root-cause determination. From an aviation security perspective, uncommanded seat movement constitutes both a safety and security concern: it can complicate crew response to unruly passenger incidents, degrade evacuation efficiency, and create ambiguity during cabin disturbance events. The proposed AD underscores the importance of continued airworthiness oversight in business aviation, where cabin systems receive less scrutiny than commercial transport interiors. Operators should prepare for inspection scheduling and document any prior seat anomalies."
+        }
+      ]
     }
   ],
-  "lastProvider": "DeepSeek V4-Flash + Tavily"
+  "lastProvider": "Gemini (2.5 Flash)"
 }

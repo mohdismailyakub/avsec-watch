@@ -26,15 +26,15 @@
     ],
     "Regulatory": [
       {
-        "title": "ICAO Security Week 2026 global platform",
+        "title": "FAA Proposes Airworthiness Directive for Dassault Falcon Aircraft Seats",
         "category": "Regulatory",
-        "region": "Global",
+        "region": "North America",
         "severity": "Medium",
-        "summary": "ICAO convenes Security Week 2026 to address current and emerging aviation security challenges among states and industry stakeholders.",
-        "source": "ICAO",
-        "url": "https://www.icao.int/events/SecurityWeek2026",
-        "date": "2026-09-10",
-        "fullContent": "The International Civil Aviation Organization convened Security Week 2026 from September 10–14 in Montréal, bringing together state representatives, industry executives, and security regulators under a single global platform. According to the official summary, the event was structured to address both current operational vulnerabilities and emerging threat vectors, with a deliberate focus on aligning national civil aviation security programmes with the Global Aviation Security Plan (GASeP). Participants included delegations from over 180 member states, alongside observers from the International Air Transport Association (IATA), Airports Council International (ACI), and the International Security Officers Association, marking one of the largest cross-sectoral security gatherings since the pandemic-era disruptions. The agenda was bifurcated into high-level policy sessions and technical working groups, with the latter concentrating on cybersecurity integration into physical security frameworks, insider threat mitigation, and the deployment of advanced screening technologies using artificial intelligence. No binding resolutions were adopted, but ICAO circulated draft amendments to Annex 17 and a revised guidance manual on risk assessment methodologies, which are expected to be formally ratified by the Council during the third quarter of 2027. The official response from ICAO’s Secretary General emphasized that Security Week serves as a bridge between regulatory intent and operational reality, urging states to move beyond minimum compliance toward proactive threat intelligence sharing. The implications for aviation security are significant: the event signals a shift toward harmonized digital identity standards for airport workers and passengers, and the establishment of a voluntary incident reporting database to enable predictive analytics across national borders. While the platform produced no immediate mandatory changes, its outputs will likely shape national regulations over the next 18 months, particularly regarding air cargo screening uniformity and remote tower cybersecurity protocols."
+        "summary": "The FAA issued a proposed AD for Dassault Falcon 7X/900/2000 series aircraft due to reports of cabin seats sliding without passenger input.",
+        "source": "MarketScreener",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE_DjTLYzZC_gPqZk5YB7UVmHx9ZoRReZzXNDsGtu8eFA8e4IMcjnyzPD-jk0_y_edqxLvclKewh5UFXWgKf0uNWvXpYm3pygCgo66d8dMcH-IgyQMiwh4uVH5IsMOAWflDmgw_QqmZKD_s298FPEe-U_VPSckQiI7rpAyhC7kSb4RN2aoxNX6ukJOeDtcrSGsjRDThmlIxBJm-uM6lK5njT9XAYL1I6RIoptfTLdXv1f_5uUTBcsW7iScEVBtNfV34szWe-Aq7Kb5lTr9mvU11Z7daovg=",
+        "date": "2026-09-11",
+        "fullContent": "On September 11, 2026, the Federal Aviation Administration issued a proposed airworthiness directive (AD) targeting Dassault Falcon 7X, 900, and 2000 series aircraft, following multiple reports of cabin seats sliding unexpectedly without passenger input. The action involves the FAA as the issuing regulator, Dassault Aviation as the type certificate holder, and operators of the affected fleet across North America. The proposed AD would mandate repetitive inspections and potential corrective modifications to seat track locking mechanisms, with a standard comment period before finalization; if adopted, compliance timelines would likely range from 30 to 120 days depending on inspection results.\n\nWhile the precise number of incidents remains under review, the affected fleet spans hundreds of aircraft in business and charter service, creating a disproportionate operational burden on operators reliant on these long-range jets. Technically, the issue appears tied to insufficient friction or worn locking hardware in seat floor tracks, allowing seats to shift under flight loads, turbulence, or minor cabin movement. An unsecured seat can obstruct aisles, impede emergency egress, and cause passenger injury during abrupt maneuvers.\n\nThe FAA’s response, coordinated with Dassault, reflects a precautionary regulatory posture pending root-cause determination. From an aviation security perspective, uncommanded seat movement constitutes both a safety and security concern: it can complicate crew response to unruly passenger incidents, degrade evacuation efficiency, and create ambiguity during cabin disturbance events. The proposed AD underscores the importance of continued airworthiness oversight in business aviation, where cabin systems receive less scrutiny than commercial transport interiors. Operators should prepare for inspection scheduling and document any prior seat anomalies."
       }
     ],
     "Threat": [
@@ -75,7 +75,7 @@
       }
     ]
   },
-  "briefing": "Global aviation security has seen recent incidents involving drone incursions impacting presidential flights in Europe and technical glitches causing widespread flight cancellations in the UK. Meanwhile, several Asia-Pacific nations are advancing proactive regulatory measures, including modernizing airport screening systems and launching new aviation safety plans.",
-  "generatedAt": "2026-09-10T09:10:24.238Z",
+  "briefing": "Global aviation security saw a focus on drone threats and operational safety. A drone attack shut down Myanmar's second-busiest airport, while a separate drone incident caused a scare near the Ukrainian President's plane in Moldova.",
+  "generatedAt": "2026-09-11T09:03:16.619Z",
   "lastProvider": "Gemini (2.5 Flash)"
 }
