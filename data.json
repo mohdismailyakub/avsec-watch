@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T09:07:05.900Z",
+  "generatedAt": "2026-09-11T00:03:54.634Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -5452,7 +5452,12 @@
           "fullContent": "The 61st Conference of Directors General of Civil Aviation, Asia and Pacific Regions, convened by the International Civil Aviation Organization in Malaysia on 10 September 2026, brought together senior aviation regulators from across the Asia-Pacific to address aviation security, safety, emerging technologies, and regional cooperation. The conference serves as the principal annual forum for DGCA-level coordination in a region that accounts for a substantial share of global air traffic and includes several of the world's fastest-growing aviation markets. Delegations typically comprise directors general and senior security and safety officials from ICAO member states, alongside observers from industry bodies and international organizations. Because ICAO Asia-Pacific DGCA conferences operate by consensus, outcomes generally take the form of recommendations, resolutions, and agreed regional priorities rather than binding regulation, which are subsequently reflected in national civil aviation programmes and ICAO regional office work plans. The agenda addressed aviation security alongside cybersecurity, unmanned aircraft systems, and other emerging technologies, reflecting the growing convergence between traditional AVSEC threats and digital and counter-UAS risks. Discussions on innovation are particularly significant given the region's rapid adoption of biometric passenger processing, advanced screening equipment, and remotely piloted operations, all of which require updated security oversight frameworks. The participation of the Hong Kong Special Administrative Region government, which issued the source release, underscores the engagement of sub-national and special administrative jurisdictions in ICAO processes. For aviation security, the conference signals continued regional emphasis on harmonized threat assessment, information sharing, and capacity building, particularly for smaller Pacific island states with limited regulatory resources. The practical implication is that Asia-Pacific states will likely align near-term AVSEC priorities and technology adoption guidance with the consensus positions reached in Malaysia, shaping national compliance and investment decisions ahead of the next ICAO Assembly cycle."
         }
       ]
+    },
+    {
+      "date": "2026-09-11",
+      "briefing": "No aviation security developments meeting the freshness threshold are present in these search results; the most recent item dates to 20 August 2026. Rogue drone activity around airports remains the dominant operational threat theme, alongside escalating ransomware risks to aviation supply chains.",
+      "items": []
     }
   ],
-  "lastProvider": "Gemini (2.5 Flash)"
+  "lastProvider": "DeepSeek V4-Flash + Tavily"
 }
