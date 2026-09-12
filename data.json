@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T00:00:51.289Z",
+  "generatedAt": "2026-09-12T09:01:17.917Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -5494,9 +5494,21 @@
     },
     {
       "date": "2026-09-12",
-      "briefing": "No genuinely new aviation security developments were published within the required window since 2026-09-11 17:00 MYT; all retrieved results predate the cutoff. The most recent items available reflect drone-incident trends from June 2026, a CAAM security announcement from August 2026, and the upcoming ICAO Security Week 2026.",
-      "items": []
+      "briefing": "Recent aviation security developments highlight a significant policy shift in North America with the introduction of a new airport access program. No other major global incidents or regulatory changes have been reported within the strict daily reporting window.",
+      "items": [
+        {
+          "title": "TSA Introduces Gateside Program for Non-Ticketed Airport Access",
+          "category": "Regulatory",
+          "region": "North America",
+          "severity": "Medium",
+          "summary": "TSA launched the Gateside program at 13 US airports, allowing pre-screened non-fliers to access secure gate areas, a partial reversal of post-9/11 restrictions.",
+          "source": "Unspecified Publication",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQENXq-f8gVYN5NCwTsE_uu5486gxWxny5WjZF9bS-K8gbc07_Rzbwz760LEDwNcctDzytakm5vGvfzukH8gszUH2WZu1VnFbFwVa4TE4N7HRq1ByXsIedfHz3wvV8BPUPgs4ewJotjv3JBUaukmaI5VDe8x2EDfDGhc8kfnQGcoWrxMquN4SMmawOfo0s6KeAuig7RjgDkzErywrLCtgK8=",
+          "date": "2026-09-12",
+          "fullContent": "The Transportation Security Administration (TSA) initiated a significant policy shift on 2026-09-12 by launching its Gateside program across 13 US airports. This program marks a partial reversal of stringent post-9/11 aviation security regulations, permitting non-ticketed individuals who have undergone specific pre-screening to access secure gate areas. The immediate impact is localized to these initial sites, but the precedent set has broader implications for airport operations and public access nationwide. This development involves the TSA as the primary regulatory and implementing body, partnering with participating airports and engaging pre-screened non-fliers.\n\nTechnical details surrounding the \"pre-screened\" designation are paramount for understanding the program's security posture. While full specifics are not publicly detailed, it is understood that prospective Gateside participants undergo a vetting process likely involving identity verification, criminal background checks, and potentially biometric enrollment, akin to known traveler programs but tailored for non-flight secure area access. This aims to mitigate risks associated with increased foot traffic in sterile environments. The official TSA stance emphasizes balancing enhanced customer experience and family reunification with maintained robust security, portraying the program as a controlled relaxation based on evolving risk assessments and technological advancements in screening.\n\nFor aviation security, the Gateside program presents a complex set of implications. On one hand, it could foster positive public relations and ease travel for families, potentially reducing stress for those seeing off or meeting passengers. On the other, it introduces new vectors for consideration. Increased authorized personnel in secure areas, even if pre-screened, necessitates heightened vigilance from airport and airline staff and could strain existing security checkpoint throughput if not managed effectively. Questions arise regarding the depth and frequency of re-vetting, the potential for insider threat vulnerabilities through compromised credentials, and the operational impact on emergency response protocols with a larger population in sterile zones. AVSEC intelligence must continuously monitor participant vetting efficacy, operational integration, and potential exploitation pathways as the program matures."
+        }
+      ]
     }
   ],
-  "lastProvider": "DeepSeek V4-Flash + Tavily"
+  "lastProvider": "Gemini (2.5 Flash)"
 }
