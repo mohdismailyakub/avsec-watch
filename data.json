@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T09:02:47.045Z",
+  "generatedAt": "2026-09-12T00:00:51.289Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -5491,7 +5491,12 @@
           "fullContent": "On September 11, 2026, the Federal Aviation Administration issued a proposed airworthiness directive (AD) targeting Dassault Falcon 7X, 900, and 2000 series aircraft, following multiple reports of cabin seats sliding unexpectedly without passenger input. The action involves the FAA as the issuing regulator, Dassault Aviation as the type certificate holder, and operators of the affected fleet across North America. The proposed AD would mandate repetitive inspections and potential corrective modifications to seat track locking mechanisms, with a standard comment period before finalization; if adopted, compliance timelines would likely range from 30 to 120 days depending on inspection results.\n\nWhile the precise number of incidents remains under review, the affected fleet spans hundreds of aircraft in business and charter service, creating a disproportionate operational burden on operators reliant on these long-range jets. Technically, the issue appears tied to insufficient friction or worn locking hardware in seat floor tracks, allowing seats to shift under flight loads, turbulence, or minor cabin movement. An unsecured seat can obstruct aisles, impede emergency egress, and cause passenger injury during abrupt maneuvers.\n\nThe FAA’s response, coordinated with Dassault, reflects a precautionary regulatory posture pending root-cause determination. From an aviation security perspective, uncommanded seat movement constitutes both a safety and security concern: it can complicate crew response to unruly passenger incidents, degrade evacuation efficiency, and create ambiguity during cabin disturbance events. The proposed AD underscores the importance of continued airworthiness oversight in business aviation, where cabin systems receive less scrutiny than commercial transport interiors. Operators should prepare for inspection scheduling and document any prior seat anomalies."
         }
       ]
+    },
+    {
+      "date": "2026-09-12",
+      "briefing": "No genuinely new aviation security developments were published within the required window since 2026-09-11 17:00 MYT; all retrieved results predate the cutoff. The most recent items available reflect drone-incident trends from June 2026, a CAAM security announcement from August 2026, and the upcoming ICAO Security Week 2026.",
+      "items": []
     }
   ],
-  "lastProvider": "Gemini (2.5 Flash)"
+  "lastProvider": "DeepSeek V4-Flash + Tavily"
 }
