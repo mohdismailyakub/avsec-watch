@@ -39,15 +39,15 @@
     ],
     "Threat": [
       {
-        "title": "Airport drone blockade threat prompts ICAO alarm",
+        "title": "Cyber Attacks on Aviation Surge 600%, Airports Urged to Adopt Zero Trust",
         "category": "Threat",
         "region": "Global",
-        "severity": "Medium",
-        "summary": "ICAO stresses paramount need for technological counter-UAS responses as drone threats to airports grow beyond careless amateurs.",
-        "source": "MindFoundry",
-        "url": "https://www.mindfoundry.ai/blog/the-drone-blockade-airports-and-c-uas",
-        "date": "2026-09-10",
-        "fullContent": "The aviation security community has been placed on heightened alert following a stark warning from the International Civil Aviation Organization (ICAO) regarding the escalating threat of coordinated drone blockades targeting major airports. While the specific incident referenced in the advisory remains undisclosed, ICAO’s pronouncement on September 10, 2026, signals a shift in threat calculus, moving beyond the realm of careless amateur operators causing temporary disruptions to a deliberate, organized tactic capable of paralyzing critical infrastructure. The timeline of concern has accelerated over the past eighteen months, marked by several high-profile incursions that grounded flights at hubs in Europe and North America, but the current alarm suggests a qualitative leap in capability, likely involving swarms of fixed-wing UAS operating beyond visual line of sight, which can overwhelm traditional security perimeters.\n\nThe scale of impact from a successful blockade is catastrophic, potentially stranding tens of thousands of passengers, incurring millions in rerouting and delay costs, and forcing air traffic control to halt departures and divert inbound flights for hours. Crucially, the risk extends beyond inconvenience to catastrophic mid-air collision, as manned aircraft on approach or departure lack the time to avoid a small, fast-moving drone. ICAO’s response underscores the inadequacy of current detection and mitigation frameworks, which rely heavily on visual observation and radio frequency jamming. The organization stresses the paramount need for technological counter-UAS solutions, specifically citing the deployment of layered detection systems using radar, acoustic sensors, and AI-driven electro-optical tracking, coupled with effectors like kinetic interceptors, high-power microwave devices, and GPS spoofing to safely neutralize threats without endangering aircraft or ground personnel. This is a direct call for standardized, interoperable systems at every international airport. For aviation security, this development necessitates a paradigm shift from passive, reactive measures to proactive, predictive threat management, demanding that airports integrate UAS threat intelligence into their real-time operational centres and forge partnerships with national counter-drone agencies to enable rapid, legally sanctioned interdiction."
+        "severity": "High",
+        "summary": "Reports show a 600% increase in aviation cyber-attacks, driven by espionage and supply chain disruption, prompting calls for zero trust security.",
+        "source": "International Airport Review",
+        "url": "https://www.internationalairportreview.com/implementing-zero-trust-at-airports-digital-safety-in-the-age-of-ai/1672342.article",
+        "date": "2026-09-12",
+        "fullContent": "Recent intelligence, as of 2026-09-12, indicates an alarming 600% surge in cyber-attacks targeting the global aviation sector. This unprecedented increase highlights a concerted effort by various malicious actors, likely sophisticated state-sponsored groups and organized cybercriminals, whose motivations predominantly revolve around espionage and the disruption of critical aviation supply chains. This surge represents a sustained period of intensified malicious activity culminating in the recent report from the International Airport Review.\n\nThe sheer scale of this 600% increase is profoundly concerning, impacting numerous aviation entities worldwide, from major international hubs to smaller regional airports and their associated vendors. The primary impact stems from data exfiltration for espionage purposes, potentially compromising sensitive operational information, passenger data, and intellectual property. Furthermore, attempts to disrupt supply chains through malware insertion or denial-of-service attacks pose a direct threat to operational integrity and safety. While specific technical vectors are not detailed, the nature of the motivations suggests sophisticated exploits, likely leveraging phishing, ransomware, zero-day vulnerabilities, and compromises of vendor networks to gain access to critical infrastructure and data.\n\nIn response to this escalating threat, the International Airport Review, among other industry bodies, has strongly urged airports to adopt a comprehensive Zero Trust security model. This recommendation underscores the inadequacy of traditional perimeter-based defenses against current sophisticated threats. The implications for aviation security are significant and far-reaching: a fundamental re-evaluation of cybersecurity postures is immediately required, moving beyond mere compliance to proactive threat hunting and robust incident response. This surge directly impacts the integrity of aviation operations, potentially compromising safety systems, air traffic control, and passenger processing, thereby demanding enhanced collaboration across national and international intelligence agencies and industry stakeholders to secure the entire aviation ecosystem against persistent and evolving cyber threats."
       }
     ],
     "Technology": [
@@ -75,7 +75,7 @@
       }
     ]
   },
-  "briefing": "Recent aviation security developments highlight a significant policy shift in North America with the introduction of a new airport access program. No other major global incidents or regulatory changes have been reported within the strict daily reporting window.",
-  "generatedAt": "2026-09-12T09:01:37.949Z",
-  "lastProvider": "Gemini (2.5 Flash)"
+  "briefing": "Aviation security remains dominated by the persistent threat of unauthorized drone incursions near airports, highlighted by recent incidents in Europe and the US, alongside a surge in cyber-attacks targeting aviation infrastructure and supply chains. Regulatory bodies are responding with new cybersecurity rules and counter-UAS initiatives, but recent events underscore the urgent need for enhanced resilience across the sector.",
+  "generatedAt": "2026-09-13T00:05:04.517Z",
+  "lastProvider": "DeepSeek V4-Flash + Tavily"
 }
