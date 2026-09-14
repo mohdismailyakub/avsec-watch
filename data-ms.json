@@ -5050,7 +5050,7 @@
     },
     {
       "date": "2026-09-14",
-      "briefing": "Perkembangan keselamatan penerbangan global terkini termasuk amaran dron yang ketara di Lapangan Terbang Vilnius, yang menyebabkan penutupan sebentar dan tindak balas NATO, akhirnya dikenal pasti sebagai amaran palsu. Selain itu, pusat pemeriksaan keselamatan di AS mengalami masalah mekanikal yang menyebabkan kelewatan, dan sebuah pesawat awam tersilap mendarat di pangkalan tentera sensitif di UK.",
+      "briefing": "Tiada perkembangan keselamatan penerbangan baharu yang sahih yang diterbitkan sejak 2026-09-14 08:00 MYT muncul dalam hasil carian ini; semua item yang diperoleh bertarikh dari Jun–Ogos 2026 atau lebih awal. Kelompok terkini yang paling signifikan kekal lonjakan pertemuan dron berhampiran lapangan terbang AS dan gangguan sistem IT lapangan terbang Eropah yang didorong oleh ransomware.",
       "items": [
         {
           "title": "Amaran Dron Disyaki Menutup Lapangan Terbang Vilnius Sebentar",
@@ -5088,6 +5088,6 @@
       ]
     }
   ],
-  "generatedAt": "2026-09-14T00:03:44.829Z",
-  "lastProvider": "Gemini (2.5 Flash) (terjemahan)"
+  "generatedAt": "2026-09-14T09:04:01.987Z",
+  "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }
