@@ -75,7 +75,7 @@
       }
     ]
   },
-  "briefing": "Aviation security remains dominated by the persistent threat of unauthorized drone incursions near airports, highlighted by recent incidents in Europe and the US, alongside a surge in cyber-attacks targeting aviation infrastructure and supply chains. Regulatory bodies are responding with new cybersecurity rules and counter-UAS initiatives, but recent events underscore the urgent need for enhanced resilience across the sector.",
-  "generatedAt": "2026-09-13T00:05:04.517Z",
-  "lastProvider": "DeepSeek V4-Flash + Tavily"
+  "briefing": "Recent global aviation security developments include a notable drone alert at Vilnius Airport, which led to a brief closure and NATO response, ultimately identified as a false alarm. Additionally, a security checkpoint in the US experienced mechanical issues causing delays, and a civilian aircraft mistakenly landed at a sensitive military base in the UK.",
+  "generatedAt": "2026-09-14T00:04:16.536Z",
+  "lastProvider": "Gemini (2.5 Flash)"
 }
