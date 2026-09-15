@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T00:05:38.589Z",
+  "generatedAt": "2026-09-15T09:00:49.814Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -5589,7 +5589,7 @@
     },
     {
       "date": "2026-09-15",
-      "briefing": "Recent aviation security developments highlight enhanced technological cooperation in Asia-Pacific and strategic advancements in North American homeland defense against evolving aerial threats. Investigations continue into recent aviation safety incidents, underscoring the constant need for vigilance in aircraft maintenance and operational procedures.",
+      "briefing": "The dominant AVSEC development remains the fallout from the 2025 Collins Aerospace/MUSE ransomware incident, which exposed systemic supply-chain vulnerabilities across European airports and accelerated EASA Part-IS information security obligations now in force as of 22 February 2026. Drone incursions breaching the FAA's 400-foot limit and CAAM's August 2026 hardening measures signal continued attention to UAS threats and national regulatory tightening across regions.",
       "items": [
         {
           "title": "Vietjet, Thales Expand AI and Cybersecurity Collaboration",
@@ -5623,9 +5623,20 @@
           "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE1UcOtSxPY9j5EWLzJ1UoSE8JUIprGf-82s8P5T-s2XXKnuEDPfwWJqSP372oPF9dXRMahn1d_CICIxbJoj76S_2ksfxuZRSQ7XqvEA9XAz74EYpJzCmTiz5heOaMH5FCIVqY_Ti60lxragUwCWlN57-wdyFJzunWNej_mdcWJm4GwsR4M4mtFM93sxmThKYkxgfcWnpnKYrj_pshtFG0jg43aovjEP5iIrJUPxmASHP4SGNQmCA",
           "date": "2026-09-14",
           "fullContent": "On August 14, 2026, a Gulfstream IV business jet experienced a runway excursion at St. Louis Downtown Airport (KSUS), resulting in landing gear separation and significant aircraft damage. A preliminary report released by the National Transportation Safety Board (NTSB) on September 14, 2026, attributed the incident to a forgotten nose gear safety pin. This critical oversight during pre-flight procedures rendered the nose gear inoperative, causing the aircraft to veer off the runway during its takeoff or landing roll.\n\nThe incident directly involved the aircraft’s operating crew, whose procedural failure led to the event, and the NTSB as the lead investigative body. While KSUS is a general aviation airport rather than a major commercial hub, the event still caused substantial operational disruption and resource allocation at a key North American aviation facility. The NTSB’s preliminary findings point to a clear technical cause: the failure to remove the nose gear safety pin, a routine but essential pre-flight step designed to prevent accidental gear retraction while on the ground. This human factor oversight ultimately compromised flight safety and led to a costly incident.\n\nFrom an aviation security perspective, this incident, though purely operational in nature, underscores critical vulnerabilities. While not a deliberate act of sabotage, the \"forgotten\" safety pin highlights the persistent challenge of human factors and procedural compliance within aviation operations. A lapse in established pre-flight checks, whether accidental or intentional, can significantly compromise aircraft integrity and operational safety, requiring emergency response and airfield management resources which could otherwise be deployed for security-specific threats. This event reinforces the need for rigorous, double-checked pre-flight and maintenance security protocols, comprehensive human factors training, and robust insider threat awareness programs, as operational safety is intrinsically linked to overall aviation security posture."
+        },
+        {
+          "title": "ICAO Security Week 2026 to Address Evolving Threats to Civil Aviation",
+          "category": "Regulatory",
+          "region": "Middle East",
+          "severity": "Medium",
+          "summary": "ICAO Security Week 2026 under 'Secure Skies in a Complex World' covers AI, modernisation and resilience against evolving aviation threats.",
+          "source": "ICAO",
+          "url": "https://www.icao.int/events/SecurityWeek2026",
+          "date": "2026-09-15",
+          "fullContent": "The International Civil Aviation Organization convened its flagship Security Week 2026 in the Middle East on 15 September 2026, under the theme \"Secure Skies in a Complex World.\" The event gathered regulators, airport operators, airlines, and technology providers from ICAO's 193 member states to address the accelerating convergence of digital, physical, and insider threats facing civil aviation. Three thematic pillars structured the agenda: artificial intelligence in security operations, modernisation of screening and checkpoint infrastructure, and organisational resilience against hybrid attack scenarios. Technical discussions focused on AI-enabled threat detection at passenger and cargo screening points, behavioural analytics, biometric identity verification, and the cybersecurity exposure created by increasingly interconnected airport operational technology. Delegates also examined counter-UAS measures and information-sharing frameworks for insider risk, reflecting lessons drawn from recent drone incursions and sabotage incidents affecting European and Middle Eastern airports. ICAO framed the week as a response to a threat landscape in which adversaries adopt emerging technologies faster than regulators can update Annex 17 standards, with Middle East hubs—among the world's busiest transfer points—particularly exposed to state-linked and proxy threats. Official outcomes are expected to feed into updated ICAO guidance, training packages, and proposed amendments to Annex 17, with follow-up technical sessions planned through 2027. The implications for aviation security are significant: member states are likely to face pressure to accelerate AI certification standards, fund screening modernisation, harden airport cyber-physical systems, and deepen multilateral intelligence sharing. For Middle Eastern operators, the event signals both heightened scrutiny and an opportunity to shape global standards in a region where passenger volumes, transcontinental connectivity, and geopolitical risk intersect."
         }
       ]
     }
   ],
-  "lastProvider": "Gemini (2.5 Flash)"
+  "lastProvider": "DeepSeek V4-Flash + Tavily"
 }
