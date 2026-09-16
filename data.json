@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T00:00:50.402Z",
+  "generatedAt": "2026-09-16T09:02:01.558Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -5639,9 +5639,43 @@
     },
     {
       "date": "2026-09-16",
-      "briefing": "No genuinely fresh aviation security developments published since 2026-09-15 17:00 MYT were found in the search results; the most recent items surfaced date to June and August 2026. The dominant themes remain drone/UAS incursions at major airports and supply-chain ransomware attacks disrupting European airport operations.",
-      "items": []
+      "briefing": "Globally, aviation security saw an incident at Warsaw Chopin Airport with a bomb scare, and a significant cyberattack impacting Taiwan's Eva Air and Evergreen Aviation. Meanwhile, Oman has commenced an intensive consultation phase for its Advanced Air Mobility strategy, which includes low-altitude aviation security.",
+      "items": [
+        {
+          "title": "Warsaw Chopin Airport Evacuated Over Bomb Scare",
+          "category": "Incident",
+          "region": "Europe",
+          "severity": "Medium",
+          "summary": "Warsaw Chopin Airport was partially evacuated after unattended luggage prompted a bomb scare, leading to a security alert and expert investigation.",
+          "source": "Yeni Safak English",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE1cddrP_-tzg4Dxy8VANr8NJa7TpSvvOfK_wsdNepz_MgoxBdAWe2iASccq5MjgMON2wBKODU0n7Rpej6qbzJQfo1bW8OE99qDHIoCqHoY4TNzMYuZc8M7csyVi444nkavy00cGY-okPeeSni9wBFgbaC-sMc1tk1EXR-7RTCrSRE6FGMUjpgmCHxA367JRLP0",
+          "date": "2026-09-16",
+          "fullContent": "On 16 September 2026, Warsaw Chopin Airport (WAW), Poland's largest and busiest aviation hub, was partially evacuated following the discovery of unattended luggage that triggered a bomb scare. The incident unfolded when suspicious baggage was identified within a terminal area, prompting immediate security protocols. Airport authorities initiated a partial evacuation, clearing affected zones while allowing limited operations to continue elsewhere on the premises, demonstrating the graduated response framework employed at major European airports.\n\nPolish security services, including airport security personnel and bomb disposal experts, were deployed to investigate the suspicious item. The investigation involved specialist assessment of the luggage to determine whether it contained genuine explosive materials or posed an inert threat. Passenger processing in the affected areas was suspended during the alert, causing flight disruptions and delays for travelers. The scale of the impact reflected the airport's role as a critical node for both European and intercontinental traffic, with ripple effects extending to connecting flights and airline schedules.\n\nThe official response underscored established AVSEC protocols: immediate isolation of the threat area, evacuation of personnel and passengers, and expert technical assessment before declaring an all-clear. The source, Yeni Safak English, reported the incident as a security alert prompting expert investigation, though full technical details regarding the luggage's contents were not immediately disclosed.\n\nThis incident highlights persistent vulnerabilities in aviation security, particularly the challenge of abandoned baggage in high-traffic terminals—a longstanding threat vector. It reinforces the importance of public vigilance campaigns, the \"see something, say something\" doctrine, and the need for rapid, calibrated response mechanisms that balance security with operational continuity. For European aviation, the event serves as a reminder that even hoax or false alarms carry substantial economic and operational costs."
+        },
+        {
+          "title": "Eva Air and Evergreen Aviation Report Cyberattacks",
+          "category": "Incident",
+          "region": "Asia-Pacific",
+          "severity": "High",
+          "summary": "Taiwanese airlines Eva Air and Evergreen Aviation reported cyberattacks, with employee names and business contact information being accessed in the breach.",
+          "source": "Taiwan News",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHgaTu-qRtcIIFzAKhjj9_b-TFqE-C2egiizO24tOb4ZD8UYOKFp2Bk8PFVZqNSHUps-OpMy_beX_g_fh82l6E2q-vlhtQAKu-Hwmp-Eq2Z3cGSBAa3L7I-j4B405prvT3uZwPQQ==",
+          "date": "2026-09-16",
+          "fullContent": "On 2026-09-16, Taiwanese aviation entities Eva Air and Evergreen Aviation officially reported cyberattacks, confirming unauthorized access to employee names and business contact information. This incident involved two prominent players within the Asia-Pacific region's aviation sector, with the reporting originating from Taiwan News. The timeline indicates the public disclosure of the breaches on this date, though the exact duration or discovery of the intrusions remains unspecified.\n\nThe scale of the impact involves the compromise of sensitive personnel data across these organizations, creating significant avenues for follow-on attacks. While specific technical details regarding the attack vector, such as ransomware, phishing campaigns, or exploited vulnerabilities, were not provided, the exfiltration of employee data is a critical precursor for advanced social engineering, spear-phishing, or potential insider threat recruitment. The official response from Eva Air and Evergreen Aviation publicly acknowledged the breaches, although further details on their containment, forensic analysis, or notifications to affected individuals were not immediately available.\n\nFor aviation security, the implications are substantial. The exposure of employee names and business contact information provides adversaries with invaluable intelligence to craft highly targeted social engineering campaigns against personnel. This could lead to further network penetration, compromise of critical IT or operational technology (OT) systems, or even facilitate physical access to restricted areas by exploiting compromised credentials or trust. This incident underscores the persistent cyber threats facing the aviation industry, emphasizing the convergence of cyber and physical security risks and highlighting the need for robust employee cybersecurity awareness and comprehensive multi-layered defenses within critical infrastructure in the Asia-Pacific region."
+        },
+        {
+          "title": "Oman Advances National Advanced Air Mobility Strategy",
+          "category": "Regulatory",
+          "region": "Middle East",
+          "severity": "Low",
+          "summary": "Oman began intensive consultations for its national Advanced Air Mobility (AAM) strategy, addressing low-altitude aviation security, airspace management, and UTM.",
+          "source": "ZAWYA",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjy2VRrx31q3bYClj-6IUAW3bObUp0_o9JsBcKqXU7Crbh_rlMlaXxGhJSriOkF5za2CZyQh-QjAm-nOKEw14Wi2Wc8ZA5O_N-C_-3qa5BsIx9ZmAyD4CCjZAHrBLP4WaKYJmvA0KsZyY392Tsqy2weP3WE8Z-l4oIQ6ZytNhoMi9oPpXahvguB5M2fIiDB1cn8lUb-non39ZiCdwU6k7U5h4ap8-jrv1u9qo_VnWPf_Ig5hVZrvLfAcF78bNqxNCtrQULSjnw9CG5sKt12LSTJlLyGUC26A==",
+          "date": "2026-09-16",
+          "fullContent": "On September 16, 2026, Oman initiated comprehensive consultations for its national Advanced Air Mobility (AAM) strategy, marking a significant proactive step in integrating this emerging technology into its aviation landscape. This development involved Omani governmental bodies, likely led by the Civil Aviation Authority, in collaboration with various stakeholders, to establish a robust framework for future low-altitude air operations. The consultations address critical components including low-altitude aviation security, efficient airspace management, and the implementation of Unmanned Aircraft System Traffic Management (UTM).\n\nThe scale of this undertaking is national, reflecting Oman’s intent to be at the forefront of AAM adoption in the Middle East, with profound implications for the future of its urban and regional transport. Technically, AAM introduces novel challenges and opportunities due to operations occurring at lower altitudes, often within urban environments, utilizing diverse electric vertical take-off and landing (eVTOL) aircraft. For aviation security, this necessitates developing new protocols for threat detection and mitigation specific to these low-level operations, including unauthorized access to sensitive airspace, potential for illicit transport, and kinetic threats. Airspace management solutions must accommodate high-density traffic of varied aircraft types, requiring sophisticated digital infrastructure for real-time tracking, identification, and conflict resolution, integrated securely with existing air traffic control systems. UTM is crucial for maintaining real-time awareness, enabling dynamic geo-fencing, and ensuring secure communication channels resistant to spoofing or jamming.\n\nOman's official response to the advent of AAM is to develop a comprehensive national strategy through intensive consultations, aiming to build a secure and efficient ecosystem from the ground up. This proactive approach has critical implications for aviation security. It underscores the urgent need for new regulatory frameworks, investment in advanced surveillance and counter-UAS technologies, and enhanced inter-agency cooperation to address the expanded threat surface presented by low-altitude air operations. The successful implementation of Oman's strategy will serve as a valuable blueprint for safeguarding future skies against evolving threats while harnessing the transformative potential of AAM."
+        }
+      ]
     }
   ],
-  "lastProvider": "DeepSeek V4-Flash + Tavily"
+  "lastProvider": "Gemini (2.5 Flash)"
 }
