@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T09:00:49.814Z",
+  "generatedAt": "2026-09-16T00:00:50.402Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -5636,6 +5636,11 @@
           "fullContent": "The International Civil Aviation Organization convened its flagship Security Week 2026 in the Middle East on 15 September 2026, under the theme \"Secure Skies in a Complex World.\" The event gathered regulators, airport operators, airlines, and technology providers from ICAO's 193 member states to address the accelerating convergence of digital, physical, and insider threats facing civil aviation. Three thematic pillars structured the agenda: artificial intelligence in security operations, modernisation of screening and checkpoint infrastructure, and organisational resilience against hybrid attack scenarios. Technical discussions focused on AI-enabled threat detection at passenger and cargo screening points, behavioural analytics, biometric identity verification, and the cybersecurity exposure created by increasingly interconnected airport operational technology. Delegates also examined counter-UAS measures and information-sharing frameworks for insider risk, reflecting lessons drawn from recent drone incursions and sabotage incidents affecting European and Middle Eastern airports. ICAO framed the week as a response to a threat landscape in which adversaries adopt emerging technologies faster than regulators can update Annex 17 standards, with Middle East hubs—among the world's busiest transfer points—particularly exposed to state-linked and proxy threats. Official outcomes are expected to feed into updated ICAO guidance, training packages, and proposed amendments to Annex 17, with follow-up technical sessions planned through 2027. The implications for aviation security are significant: member states are likely to face pressure to accelerate AI certification standards, fund screening modernisation, harden airport cyber-physical systems, and deepen multilateral intelligence sharing. For Middle Eastern operators, the event signals both heightened scrutiny and an opportunity to shape global standards in a region where passenger volumes, transcontinental connectivity, and geopolitical risk intersect."
         }
       ]
+    },
+    {
+      "date": "2026-09-16",
+      "briefing": "No genuinely fresh aviation security developments published since 2026-09-15 17:00 MYT were found in the search results; the most recent items surfaced date to June and August 2026. The dominant themes remain drone/UAS incursions at major airports and supply-chain ransomware attacks disrupting European airport operations.",
+      "items": []
     }
   ],
   "lastProvider": "DeepSeek V4-Flash + Tavily"
