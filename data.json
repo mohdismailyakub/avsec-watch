@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T09:02:01.558Z",
+  "generatedAt": "2026-09-17T09:00:47.662Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -5675,7 +5675,12 @@
           "fullContent": "On September 16, 2026, Oman initiated comprehensive consultations for its national Advanced Air Mobility (AAM) strategy, marking a significant proactive step in integrating this emerging technology into its aviation landscape. This development involved Omani governmental bodies, likely led by the Civil Aviation Authority, in collaboration with various stakeholders, to establish a robust framework for future low-altitude air operations. The consultations address critical components including low-altitude aviation security, efficient airspace management, and the implementation of Unmanned Aircraft System Traffic Management (UTM).\n\nThe scale of this undertaking is national, reflecting Oman’s intent to be at the forefront of AAM adoption in the Middle East, with profound implications for the future of its urban and regional transport. Technically, AAM introduces novel challenges and opportunities due to operations occurring at lower altitudes, often within urban environments, utilizing diverse electric vertical take-off and landing (eVTOL) aircraft. For aviation security, this necessitates developing new protocols for threat detection and mitigation specific to these low-level operations, including unauthorized access to sensitive airspace, potential for illicit transport, and kinetic threats. Airspace management solutions must accommodate high-density traffic of varied aircraft types, requiring sophisticated digital infrastructure for real-time tracking, identification, and conflict resolution, integrated securely with existing air traffic control systems. UTM is crucial for maintaining real-time awareness, enabling dynamic geo-fencing, and ensuring secure communication channels resistant to spoofing or jamming.\n\nOman's official response to the advent of AAM is to develop a comprehensive national strategy through intensive consultations, aiming to build a secure and efficient ecosystem from the ground up. This proactive approach has critical implications for aviation security. It underscores the urgent need for new regulatory frameworks, investment in advanced surveillance and counter-UAS technologies, and enhanced inter-agency cooperation to address the expanded threat surface presented by low-altitude air operations. The successful implementation of Oman's strategy will serve as a valuable blueprint for safeguarding future skies against evolving threats while harnessing the transformative potential of AAM."
         }
       ]
+    },
+    {
+      "date": "2026-09-17",
+      "briefing": "No aviation security developments published since 2026-09-17 08:00 MYT appear in the provided search results, which consist mainly of generic security pages and older articles. The most recent AVSEC-relevant material dates from August 2026 or earlier, covering aviation cybersecurity threats and regulatory updates.",
+      "items": []
     }
   ],
-  "lastProvider": "Gemini (2.5 Flash)"
+  "lastProvider": "DeepSeek V4-Flash + Tavily"
 }
