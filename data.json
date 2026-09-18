@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T00:00:53.305Z",
+  "generatedAt": "2026-09-18T09:03:39.635Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -5683,7 +5683,7 @@
     },
     {
       "date": "2026-09-18",
-      "briefing": "The most recent significant aviation security developments center on dormant but unresolved drone-incident and cyber-attack themes, with only one item dated after the 2026-09-17 17:00 MYT cutoff. All drone, cyber, and regulatory stories in the search results appear to predate that cutoff and cannot be treated as fresh news.",
+      "briefing": "No genuinely fresh aviation security developments published since 2026-09-18 08:00 MYT appear in the provided search results; the most recent items date from June-August 2026 and cover drone incursions near airports, counter-UAS enforcement, and escalating cyber threats. All are therefore already covered under the twice-daily recency rule, but the most significant recent developments are summarised below.",
       "items": [
         {
           "title": "Cyber attack hits airport supplier, causing delays",
