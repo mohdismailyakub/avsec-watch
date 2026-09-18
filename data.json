@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T09:00:47.662Z",
+  "generatedAt": "2026-09-18T00:00:53.305Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -5680,6 +5680,23 @@
       "date": "2026-09-17",
       "briefing": "No aviation security developments published since 2026-09-17 08:00 MYT appear in the provided search results, which consist mainly of generic security pages and older articles. The most recent AVSEC-relevant material dates from August 2026 or earlier, covering aviation cybersecurity threats and regulatory updates.",
       "items": []
+    },
+    {
+      "date": "2026-09-18",
+      "briefing": "The most recent significant aviation security developments center on dormant but unresolved drone-incident and cyber-attack themes, with only one item dated after the 2026-09-17 17:00 MYT cutoff. All drone, cyber, and regulatory stories in the search results appear to predate that cutoff and cannot be treated as fresh news.",
+      "items": [
+        {
+          "title": "Cyber attack hits airport supplier, causing delays",
+          "category": "Incident",
+          "region": "Europe",
+          "severity": "High",
+          "summary": "LinkedIn post reports a cyber attack on Collins Aerospace supplier disrupting European airports and causing operational delays.",
+          "source": "LinkedIn",
+          "url": "https://www.linkedin.com/posts/rob-demain-01733468_heads-up-looks-like-a-cyber-attack-has-hit-activity-7375082251841347584-2BI_",
+          "date": "2026-09-17",
+          "fullContent": "On 17 September 2026, a cyber attack targeting a supplier to Collins Aerospace disrupted operations at multiple European airports, according to a LinkedIn post that surfaced the same day. The incident reportedly affected the third-party supplier's systems, cascading into operational delays for airlines and airport service providers dependent on Collins Aerospace components and support services. The exact number of airports and passengers affected remains unclear, but the disruption appears to have been felt across several European hubs, suggesting a supply chain attack with regional reach rather than an isolated IT failure. Technical details of the intrusion have not been publicly confirmed, though the incident bears hallmarks of a targeted attack on a vendor with privileged access to aviation maintenance, parts logistics, or flight operations systems. Because Collins Aerospace is a major tier-one supplier of avionics, communications, and airport infrastructure, even a secondary supplier compromise can ripple across airlines, ground handlers, and maintenance providers. Official responses from Collins Aerospace, affected airports, and European aviation authorities have not been fully detailed in the source material, and no threat actor has been claimed or attributed. The reliance on a LinkedIn disclosure rather than a formal security advisory highlights ongoing gaps in incident reporting and information sharing across the aviation supply chain. For AVSEC analysts, this event underscores the expanding threat surface created by third-party vendors, the need for stricter supplier cyber resilience requirements, and the importance of real-time intelligence sharing to contain downstream operational and safety impacts."
+        }
+      ]
     }
   ],
   "lastProvider": "DeepSeek V4-Flash + Tavily"

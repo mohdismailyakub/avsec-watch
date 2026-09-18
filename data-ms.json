@@ -5180,8 +5180,25 @@
       "date": "2026-09-17",
       "briefing": "Tiada perkembangan keselamatan penerbangan diterbitkan sejak 2026-09-17 08:00 MYT muncul dalam hasil carian yang diberikan, yang kebanyakannya terdiri daripada halaman keselamatan generik dan artikel lama. Bahan berkaitan AVSEC yang terbaharu bertarikh Ogos 2026 atau lebih awal, merangkumi ancaman keselamatan siber penerbangan dan kemas kini kawal selia.",
       "items": []
+    },
+    {
+      "date": "2026-09-18",
+      "briefing": "Perkembangan keselamatan penerbangan terkini yang paling signifikan tertumpu pada tema insiden dron dan serangan siber yang tidak aktif tetapi belum diselesaikan, dengan hanya satu item bertarikh selepas tarikh tutup 2026-09-17 17:00 MYT. Semua berita dron, siber dan kawal selia dalam hasil carian kelihatan sebelum tarikh tutup tersebut dan tidak boleh dianggap sebagai berita baharu.",
+      "items": [
+        {
+          "title": "Serangan siber melanda pembekal lapangan terbang, menyebabkan kelewatan",
+          "category": "Incident",
+          "region": "Europe",
+          "severity": "High",
+          "summary": "Catatan LinkedIn melaporkan serangan siber ke atas pembekal Collins Aerospace yang mengganggu lapangan terbang Eropah dan menyebabkan kelewatan operasi.",
+          "source": "LinkedIn",
+          "url": "https://www.linkedin.com/posts/rob-demain-01733468_heads-up-looks-like-a-cyber-attack-has-hit-activity-7375082251841347584-2BI_",
+          "date": "2026-09-17",
+          "fullContent": "Pada 17 September 2026, satu serangan siber yang menyasarkan pembekal kepada Collins Aerospace telah mengganggu operasi di beberapa lapangan terbang Eropah, menurut satu catatan LinkedIn yang muncul pada hari yang sama. Insiden itu dilaporkan menjejaskan sistem pembekal pihak ketiga tersebut, lalu meresap menjadi kelewatan operasi bagi syarikat penerbangan dan penyedia perkhidmatan lapangan terbang yang bergantung pada komponen dan perkhidmatan sokongan Collins Aerospace. Jumlah sebenar lapangan terbang dan penumpang yang terjejas masih tidak jelas, tetapi gangguan itu kelihatan dirasai di beberapa hab Eropah, menunjukkan serangan rantaian bekalan dengan jangkauan serantau dan bukan kegagalan IT yang terpencil. Butiran teknikal pencerobohan itu belum disahkan secara terbuka, walaupun insiden tersebut mempunyai ciri-ciri serangan bersasar terhadap vendor yang memiliki akses istimewa kepada penyelenggaraan penerbangan, logistik alat ganti, atau sistem operasi penerbangan. Oleh kerana Collins Aerospace ialah pembekal tier-one utama bagi avionik, komunikasi, dan infrastruktur lapangan terbang, walaupun kompromi pembekal sekunder boleh memberi kesan berantai kepada syarikat penerbangan, pengendali darat, dan penyedia penyelenggaraan. Respons rasmi daripada Collins Aerospace, lapangan terbang yang terjejas, dan pihak berkuasa penerbangan Eropah tidak diperincikan sepenuhnya dalam bahan sumber, dan tiada pelaku ancaman telah didakwa atau dikaitkan. Kebergantungan pada pendedahan LinkedIn dan bukan nasihat keselamatan rasmi menyerlahkan jurang berterusan dalam pelaporan insiden dan perkongsian maklumat merentas rantaian bekalan penerbangan. Bagi penganalisis AVSEC, peristiwa ini menekankan permukaan ancaman yang semakin meluas akibat vendor pihak ketiga, keperluan untuk syarat ketahanan siber pembekal yang lebih ketat, dan kepentingan perkongsian risikan masa nyata untuk mengekang kesan operasi dan keselamatan hiliran."
+        }
+      ]
     }
   ],
-  "generatedAt": "2026-09-17T09:00:47.662Z",
+  "generatedAt": "2026-09-18T00:00:53.305Z",
   "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }
