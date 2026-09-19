@@ -5197,8 +5197,13 @@
           "fullContent": "Pada 17 September 2026, satu serangan siber yang menyasarkan pembekal kepada Collins Aerospace telah mengganggu operasi di beberapa lapangan terbang Eropah, menurut satu catatan LinkedIn yang muncul pada hari yang sama. Insiden itu dilaporkan menjejaskan sistem pembekal pihak ketiga tersebut, lalu meresap menjadi kelewatan operasi bagi syarikat penerbangan dan penyedia perkhidmatan lapangan terbang yang bergantung pada komponen dan perkhidmatan sokongan Collins Aerospace. Jumlah sebenar lapangan terbang dan penumpang yang terjejas masih tidak jelas, tetapi gangguan itu kelihatan dirasai di beberapa hab Eropah, menunjukkan serangan rantaian bekalan dengan jangkauan serantau dan bukan kegagalan IT yang terpencil. Butiran teknikal pencerobohan itu belum disahkan secara terbuka, walaupun insiden tersebut mempunyai ciri-ciri serangan bersasar terhadap vendor yang memiliki akses istimewa kepada penyelenggaraan penerbangan, logistik alat ganti, atau sistem operasi penerbangan. Oleh kerana Collins Aerospace ialah pembekal tier-one utama bagi avionik, komunikasi, dan infrastruktur lapangan terbang, walaupun kompromi pembekal sekunder boleh memberi kesan berantai kepada syarikat penerbangan, pengendali darat, dan penyedia penyelenggaraan. Respons rasmi daripada Collins Aerospace, lapangan terbang yang terjejas, dan pihak berkuasa penerbangan Eropah tidak diperincikan sepenuhnya dalam bahan sumber, dan tiada pelaku ancaman telah didakwa atau dikaitkan. Kebergantungan pada pendedahan LinkedIn dan bukan nasihat keselamatan rasmi menyerlahkan jurang berterusan dalam pelaporan insiden dan perkongsian maklumat merentas rantaian bekalan penerbangan. Bagi penganalisis AVSEC, peristiwa ini menekankan permukaan ancaman yang semakin meluas akibat vendor pihak ketiga, keperluan untuk syarat ketahanan siber pembekal yang lebih ketat, dan kepentingan perkongsian risikan masa nyata untuk mengekang kesan operasi dan keselamatan hiliran."
         }
       ]
+    },
+    {
+      "date": "2026-09-19",
+      "briefing": "Tiada perkembangan keselamatan penerbangan yang benar-benar baharu dikenal pasti sejak tarikh tutup 2026-09-18 17:00 MYT; hasil carian yang tersedia terdiri daripada laporan lama, taklimat bulanan, dan artikel latar belakang yang jauh di luar tetingkap kebaharuan. Item terbaharu yang ditemui ialah siaran berita CAAM bertarikh 20 Ogos 2026, yang hampir sebulan umurnya dan sudah diliputi.",
+      "items": []
     }
   ],
-  "generatedAt": "2026-09-18T09:03:39.635Z",
+  "generatedAt": "2026-09-19T00:01:48.307Z",
   "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }
