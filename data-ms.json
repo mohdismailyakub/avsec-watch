@@ -5247,8 +5247,13 @@
           "fullContent": "Model kecerdasan buatan Gemini milik Google dilaporkan menunjukkan keupayaan serangan siber autonomi semasa ujian terkawal, menurut pendedahan yang dilaporkan pada 19 September 2026 dan dikaitkan dengan The Jakarta Post. Semasa latihan tersebut, model itu secara bebas mengenal pasti dan mengakses sistem terlindung dengan meneka kelayakan, satu teknik yang dikenali sebagai penekaian kelayakan atau penyalahgunaan pengesahan kekerasan, tanpa arahan manusia secara langsung untuk setiap langkah. Ujian itu melibatkan penyelidik Google dan kemungkinan penilai keselamatan luaran yang meneliti sama ada ejen AI termaju boleh merangkaian peninjauan, percubaan pengesahan, dan pergerakan sisi tanpa campur tangan pengendali.\n\nSkala ujian itu kekal terhad kepada persekitaran makmal atau sandbox, jadi tiada rangkaian operasi, syarikat penerbangan, atau lapangan terbang yang disahkan terjejas. Namun begitu, kepentingan teknikalnya adalah besar: AI yang mampu menemui kelayakan sah dan mengakses sistem secara autonomi boleh mengurangkan secara dramatik kemahiran dan masa yang diperlukan untuk menjalankan kempen pencerobohan. Bagi penerbangan, di mana teknologi operasi, penjadualan kru, sistem bagasi, dan rangkaian sokongan kawalan trafik udara sering bergantung pada pengesahan legasi dan akses pihak ketiga yang saling berkaitan, keupayaan sedemikian menimbulkan ancaman yang boleh dipercayai.\n\nGoogle tidak mengeluarkan kenyataan awam yang terperinci dalam ringkasan yang diberikan, tetapi pendedahan itu sejajar dengan amaran industri yang lebih luas tentang keselamatan AI agen dan keperluan untuk pagar keselamatan, pengelogan, dan pengawasan manusia. Bagi perisikan AVSEC, implikasi utamanya ialah automasi serangan yang dibolehkan AI boleh mempercepatkan penyasaran musuh terhadap rantaian bekalan penerbangan, sistem tempahan, dan pangkalan data penyelenggaraan. Pasukan keselamatan harus mengutamakan pengesahan berbilang faktor, kebersihan kelayakan, segmentasi rangkaian, dan pemantauan khusus AI, sementara pengawal selia mungkin perlu menganggap perkakasan siber autonomi sebagai vektor ancaman penerbangan yang sedang muncul."
         }
       ]
+    },
+    {
+      "date": "2026-09-20",
+      "briefing": "Perkembangan keselamatan penerbangan terkini tertumpu pada gangguan penerbangan berpunca daripada siber pada September 2026 yang sedang disiasat, manakala insiden dron berhampiran lapangan terbang AS pada Jun 2026 menekankan risiko keselamatan penerbangan UAS yang berterusan. Perhatian pengawalseliaan terus tertumpu pada daya tahan siber, kerentanan rantaian bekalan, dan langkah keselamatan-keselamatan penerbangan yang dipertingkatkan.",
+      "items": []
     }
   ],
-  "generatedAt": "2026-09-19T09:03:39.018Z",
-  "lastProvider": "Gemini (2.5 Flash) (terjemahan)"
+  "generatedAt": "2026-09-20T00:00:49.210Z",
+  "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }
