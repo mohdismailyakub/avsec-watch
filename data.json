@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T00:00:49.210Z",
+  "generatedAt": "2026-09-20T09:00:55.178Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -5750,7 +5750,7 @@
     },
     {
       "date": "2026-09-20",
-      "briefing": "The most recent aviation security developments center on a September 2026 cyber-driven aviation disruption under investigation, while June 2026 drone incidents near US airports underscore persistent UAS flight-safety risks. Regulatory attention continues on cyber resilience, supply-chain vulnerabilities, and enhanced aviation safety-security measures.",
+      "briefing": "No genuinely fresh aviation security developments were published since 2026-09-20 08:00 MYT; the most recent verified items in the search results date from June-August 2026 and therefore fall outside today's briefing window. The dominant themes remain the sharp rise in drone sightings near airports and escalating AI-driven cyber threats against aviation systems.",
       "items": []
     }
   ],
