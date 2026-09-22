@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T09:00:56.308Z",
+  "generatedAt": "2026-09-22T00:01:39.792Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -5757,6 +5757,45 @@
       "date": "2026-09-21",
       "briefing": "No fresh aviation security developments were published since 2026-09-21 08:00 MYT; the most recent significant items from open sources date to late August 2026. The dominant themes remain UAS/drone disruption at airports, ransomware and AI-driven cyber threats against aviation systems, and tightened regulatory reporting.",
       "items": []
+    },
+    {
+      "date": "2026-09-22",
+      "briefing": "The most recent aviation security developments centre on a major US airport access-control breach involving a stowaway who reached Paris without a passport, alongside continued concern over drone incursions near airports and surging aviation cyber-attacks. Regulatory activity is also visible with CAAM's August 2026 hardening of safety and security measures and ICAO's Security Week 2026 planning.",
+      "items": [
+        {
+          "title": "TSA responds to US airport security breach after stowaway reaches Paris",
+          "category": "Incident",
+          "region": "North America",
+          "severity": "High",
+          "summary": "Stowaway reportedly reached Paris without a passport after bypassing airport security; TSA responds to breach.",
+          "source": "WHAS11 / ABC News",
+          "url": "https://www.youtube.com/watch?v=3KvEzBw0l1c",
+          "date": "2026-09-21",
+          "fullContent": "A significant aviation security breach occurred at a United States airport when an individual successfully bypassed Transportation Security Administration (TSA) screening protocols and subsequently boarded a flight to Paris, France, without possessing a valid passport or travel documentation. The stowaway reportedly evaded multiple layers of security checkpoints before gaining access to an aircraft departing for Charles de Gaulle Airport. The incident, reported on September 21, 2026, by WHAS11 and ABC News, prompted an immediate TSA response and raised serious questions about the effectiveness of current passenger verification and access control measures at domestic airports.\n\nThe breach underscores critical vulnerabilities in the aviation security chain, particularly regarding identity verification and boarding gate access controls. The fact that an undocumented individual could penetrate secured areas, circumvent credential checks, and ultimately reach an international destination suggests potential failures in both technological screening systems and human monitoring protocols. The timeline indicates the stowaway managed to transit through multiple security layers undetected until arrival in Paris, where French authorities presumably intercepted the individual. The scale of this breach is significant given that it involved an international flight, exposing both US and European aviation security frameworks to scrutiny.\n\nThe TSA has initiated a comprehensive review of the incident, coordinating with airport authorities, airline personnel, and international partners to determine how security protocols were circumvented. Official responses have emphasized the agency's commitment to identifying systemic gaps and implementing corrective measures. This incident carries substantial implications for aviation security policy, potentially prompting reassessment of biometric verification systems, boarding pass validation procedures, and perimeter access controls. It also raises broader concerns about insider threat mitigation and the adequacy of layered security approaches in preventing unauthorized access to commercial aircraft, particularly on international routes where documentation requirements are strictly enforced."
+        },
+        {
+          "title": "Aviation cyber-attacks surge 600%, airports urged to adopt zero trust",
+          "category": "Threat",
+          "region": "Global",
+          "severity": "High",
+          "summary": "Reports show 600% surge in aviation cyber-attacks driven by espionage, ransomware and supply chain disruption.",
+          "source": "International Airport Review",
+          "url": "https://www.internationalairportreview.com/implementing-zero-trust-at-airports-digital-safety-in-the-age-of-ai/1672342.article",
+          "date": "2026-09-21",
+          "fullContent": "The International Airport Review reported on 21 September 2026 a 600 percent surge in cyber-attacks targeting the global aviation sector, marking one of the most severe threat escalations since the digitalisation of airport and airline operations. The campaign, attributed to a mix of state-sponsored espionage actors, ransomware syndicates and supply chain intruders, has affected airports, airlines, ground handlers and third-party technology vendors across multiple regions. Initial indicators emerged in late 2025, with incident volumes accelerating sharply through the first three quarters of 2026, prompting the report's release. The scale is unprecedented: attacks now range from credential theft and persistent network intrusion for intelligence collection to disruptive ransomware that has degraded check-in systems, baggage handling and departure displays. Supply chain compromises, particularly through shared software platforms and managed service providers, have enabled adversaries to pivot into multiple victim environments from a single foothold, amplifying both reach and impact. Technically, actors have exploited unpatched virtual private network appliances, weak multi-factor authentication, exposed operational technology interfaces and unsegmented IT-OT networks, while also leveraging legitimate remote management tools to evade detection. In response, regulators and industry bodies have urged airports to adopt zero trust architecture, enforcing strict identity verification, micro-segmentation, least-privilege access and continuous monitoring across all systems. National civil aviation authorities and organisations such as ICAO and IATA have issued advisories, while individual airports have accelerated incident response drills and threat-sharing arrangements. For aviation security, the implications are profound: cyber disruption now constitutes a direct safety and operational risk, not merely a data protection concern, and resilience must be engineered into every layer of airport and airline infrastructure."
+        },
+        {
+          "title": "Cyber attack hits airport supplier causing delays",
+          "category": "Incident",
+          "region": "Europe",
+          "severity": "Medium",
+          "summary": "Cyber attack on a major airport supplier caused operational delays, highlighting supply chain vulnerabilities.",
+          "source": "LinkedIn / Rob Demain",
+          "url": "https://www.linkedin.com/posts/rob-demain-01733468_heads-up-looks-like-a-cyber-attack-has-hit-activity-7375082251841347584-2BI_",
+          "date": "2026-09-21",
+          "fullContent": "On 21 September 2026, a cyber attack targeting a major supplier to European airport operators disrupted ground handling and check-in systems, resulting in operational delays across multiple airports. The incident, reported via LinkedIn by aviation security specialist Rob Demain, involved a supplier whose software and managed services underpin passenger processing and baggage reconciliation at several European hubs. Initial indications suggest the attackers gained access to the supplier's corporate or service-delivery environment and deployed malware or ransomware that degraded availability of hosted applications, though the precise intrusion vector and malware family have not been publicly confirmed.\n\nThe timeline appears to have unfolded rapidly: disruption was detected in the early hours, prompting the supplier to take systems offline as a containment measure. Because affected airports depend on the supplier for shared check-in and boarding platforms, manual fallback processes were activated, producing queues, delayed departures and baggage handling backlogs. While the full scale remains unclear, the cross-border footprint demonstrates how a single vendor compromise can cascade across numerous operators simultaneously.\n\nOfficially, the supplier has acknowledged the incident and is cooperating with national cybersecurity authorities and affected airport operators, while no formal attribution has been made. For aviation security, the event underscores the sector's acute supply chain exposure: threat actors increasingly target third-party providers to achieve maximum disruption with minimum effort. It reinforces the need for stricter vendor risk assessment, network segmentation, contractual security requirements, and rehearsed manual contingency procedures at airports reliant on interconnected service providers."
+        }
+      ]
     }
   ],
   "lastProvider": "DeepSeek V4-Flash + Tavily"
