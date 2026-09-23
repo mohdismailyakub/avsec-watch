@@ -5362,8 +5362,13 @@
           "fullContent": "Pada 22 September 2026, TigerByte Cyber muncul dari persembunyian dengan lebih daripada $10 juta dalam pembiayaan benih, menempatkan dirinya sebagai pembekal keselamatan siber pakar untuk sistem pesawat dan satelit di seluruh Amerika Utara. Syarikat permulaan itu, yang pelaburnya tidak didedahkan sepenuhnya dalam laporan Cyprus Shipping News, menyasarkan pertembungan dua domain kritikal: avionik dan infrastruktur komunikasi orbit, kedua-duanya semakin bergantung pada perisian berjaringan dan komponen komersial sedia ada di pasaran. Perolehan dana lapan angka itu meletakkan TigerByte bersama kumpulan syarikat yang semakin berkembang yang disokong oleh modal teroka, yang bertaruh bahawa transformasi digital penerbangan telah mengatasi postur pertahanannya.\n\nDari segi teknikal, tumpuan syarikat merangkumi avionik terbenam, bas data pesawat, pautan kawalan dan arahan satelit, serta rangkaian stesen darat. Sistem-sistem ini telah menarik perhatian yang semakin meningkat sejak penemuan kelemahan yang boleh dieksploitasi pada tahun 2023 dalam terminal satelit yang digunakan oleh syarikat penerbangan komersial, dan amaran seterusnya daripada pengawal selia mengenai seni bina ketersambungan dalam penerbangan yang tidak selamat. TigerByte belum memperincikan rangkaian produknya secara terbuka, tetapi penempatannya mencadangkan pengesanan pencerobohan dan alat pengukuhan yang disesuaikan untuk persekitaran yang terkawal, kritikal keselamatan, di mana ejen keselamatan IT konvensional tidak dapat beroperasi.\n\nSambutan rasmi agak senyap. Tiada pengawal selia, termasuk FAA atau TSA, mengeluarkan kenyataan bersempena pelancaran itu, dan tiada pensijilan atau kelulusan kelaikan udara telah diumumkan. Pembiayaan itu sendiri, walau bagaimanapun, menandakan keyakinan pelabur bahawa pengawal selia dan pengendali akan segera mewajibkan ketahanan siber yang lebih kukuh untuk aset avionik dan angkasa. Bagi pengamal keselamatan penerbangan, kemasukan TigerByte menyerlahkan jurang yang semakin melebar: pesawat dan satelit bergabung menjadi satu permukaan serangan, namun pengawasan masih terpisah antara pihak berkuasa penerbangan dan angkasa. Bagaimana jurang itu ditutup, sama ada melalui piawaian, keperluan perolehan, atau mandat yang didorong insiden, akan membentuk landskap ancaman sektor itu jauh sebelum dekad ini berakhir."
         }
       ]
+    },
+    {
+      "date": "2026-09-23",
+      "briefing": "Perkembangan AVSEC signifikan yang terkini tertumpu kepada pencerobohan dron yang semakin meningkat berhampiran lapangan terbang AS dan lonjakan mendadak 600% dalam serangan siber dipacu AI terhadap penerbangan. Momentum kawal selia semakin meningkat dengan peraturan pelaporan kejadian keselamatan EU yang baharu dan persiapan ICAO Security Week 2026.",
+      "items": []
     }
   ],
-  "generatedAt": "2026-09-22T09:03:03.164Z",
-  "lastProvider": "Gemini (2.5 Flash) (terjemahan)"
+  "generatedAt": "2026-09-23T00:03:46.655Z",
+  "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }

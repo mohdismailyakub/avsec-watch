@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T09:03:03.164Z",
+  "generatedAt": "2026-09-23T00:03:46.655Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -5862,7 +5862,12 @@
           "fullContent": "On 22 September 2026, TigerByte Cyber emerged from stealth with more than $10 million in seed funding, positioning itself as a specialist cybersecurity provider for aircraft and satellite systems across North America. The startup, whose investors were not fully disclosed in the Cyprus Shipping News report, is targeting the collision of two critical domains: avionics and orbital communications infrastructure, both of which increasingly rely on networked software and commercial off-the-shelf components. The eight-figure raise places TigerByte alongside a growing cluster of venture-backed firms betting that aviation's digital transformation has outpaced its defensive posture.\n\nTechnically, the company's focus spans embedded avionics, aircraft data buses, satellite command-and-control links, and ground station networks. These systems have drawn escalating scrutiny since the 2023 discovery of exploitable vulnerabilities in satellite terminals used by commercial airlines, and subsequent warnings from regulators about insecure in-flight connectivity architectures. TigerByte has not publicly detailed its product suite, but its positioning suggests intrusion detection and hardening tools tailored to constrained, safety-critical environments where conventional IT security agents cannot run.\n\nOfficial response has been muted. No regulator, including the FAA or TSA, issued a statement coinciding with the launch, and no certification or airworthiness approvals have been announced. The funding itself, however, signals investor confidence that regulators and operators will soon mandate stronger cyber resilience for avionics and space assets. For aviation security practitioners, TigerByte's entry highlights a widening gap: aircraft and satellites are converging into a single attack surface, yet oversight remains split between aviation and space authorities. How that gap is closed, whether through standards, procurement requirements, or incident-driven mandates, will shape the sector's threat landscape well before the decade ends."
         }
       ]
+    },
+    {
+      "date": "2026-09-23",
+      "briefing": "The most recent significant AVSEC developments center on escalating drone incursions near US airports and a stark 600% surge in AI-driven cyber-attacks against aviation. Regulatory momentum is building with new EU security occurrence reporting rules and ICAO Security Week 2026 preparations.",
+      "items": []
     }
   ],
-  "lastProvider": "Gemini (2.5 Flash)"
+  "lastProvider": "DeepSeek V4-Flash + Tavily"
 }
