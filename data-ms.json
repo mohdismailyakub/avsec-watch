@@ -5550,8 +5550,13 @@
           "fullContent": "Pada 24 September 2026, Wakil Don Beyer secara terbuka menggesa Pentadbiran Penerbangan Persekutuan supaya segera menggantung sistem pengurusan trafik udara yang disokong AI yang baru diguna pakai di lapangan terbang sekitar Washington, dengan menyatakan kebimbangan keselamatan yang belum diselesaikan berikutan perlanggaran udara pada 2025. Beyer, yang daerahnya merangkumi sebahagian Northern Virginia termasuk komuniti berhampiran Lapangan Terbang Kebangsaan Ronald Reagan Washington, menujukan gesaannya kepada kepimpinan FAA, menuntut sistem itu dinyahaktifkan sementara menunggu audit keselamatan bebas.\n\nFAA memulakan pelaksanaan berperingkat alat AI itu lebih awal pada 2026 di kemudahan Potomac Terminal Radar Approach Control yang memberi perkhidmatan kepada Reagan National, Dulles International, dan Baltimore/Washington International, tiga daripada persekitaran ruang udara paling sibuk dan paling kompleks di Amerika Syarikat. Sistem itu menggunakan pembelajaran mesin untuk meramalkan konflik trafik, mengoptimumkan urutan ketibaan, dan menjana nasihat pemisahan automatik untuk pengawal, yang berfungsi secara berkesan sebagai lapisan sokongan keputusan di atas infrastruktur radar dan pengawasan sedia ada.\n\nTuntutan Beyer menyusuli perlanggaran 2025, yang menimbulkan persoalan tentang beban kerja pengawal, jurang prosedur, dan kadar penerimaan automasi. Beliau berhujah bahawa FAA tidak mendedahkan data pengesahan yang mencukupi tentang cara AI mengendalikan kes pinggir seperti pengawasan yang merosot, pusingan semula yang tidak dijangka, atau trafik bercampur yang dilengkapi dan tidak dilengkapi.\n\nFAA telah mempertahankan penggunaan itu, dengan menyatakan sistem tersebut kekal sebagai nasihat sahaja, dengan pengawal manusia mengekalkan kuasa akhir, dan bahawa ia telah memenuhi penanda aras keselamatan dan pengesahan dalaman. Agensi itu tidak menunjukkan ia akan menggantung operasi.\n\nDari sudut pandangan AVSEC, pertikaian itu menyerlahkan ketegangan yang semakin meningkat antara integrasi AI yang pesat dan rangka kerja jaminan. Jika logik ramalan konflik sistem itu atau input datanya dikompromi atau dimanipulasi, akibatnya boleh melangkaui keselamatan kepada gangguan yang disengajakan terhadap operasi kawasan terminal, menjadikan pemodelan ancaman formal, ujian adversarial, dan pengawasan telus sebagai penting sebelum pengembangan selanjutnya."
         }
       ]
+    },
+    {
+      "date": "2026-09-26",
+      "briefing": "Tiada perkembangan keselamatan penerbangan yang benar-benar baharu diterbitkan sejak 2026-09-25 17:00 MYT; hasil carian yang tersedia ialah bahan latar belakang bertarikh atau tanpa tarikh. Tema terkini yang paling signifikan kekal sebagai pencerobohan UAS di lapangan terbang dan serangan rantaian bekalan yang dipacu ransomware terhadap vendor penerbangan.",
+      "items": []
     }
   ],
-  "generatedAt": "2026-09-24T09:03:39.108Z",
-  "lastProvider": "Gemini (2.5 Flash) (terjemahan)"
+  "generatedAt": "2026-09-26T00:00:49.123Z",
+  "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }
