@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T00:00:49.123Z",
+  "generatedAt": "2026-09-26T09:02:11.855Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -6053,9 +6053,43 @@
     },
     {
       "date": "2026-09-26",
-      "briefing": "No genuinely new aviation security developments were published since 2026-09-25 17:00 MYT; the available search results are dated or undated background material. The most significant recent themes remain UAS incursions at airports and ransomware-driven supply chain attacks on aviation vendors.",
-      "items": []
+      "briefing": "Global aviation security is currently experiencing disruptions across different regions, with a notable e-gate outage impacting major Australian airports and geopolitical tensions threatening flight operations in the Middle East. Additionally, a fatal plane crash has been reported in the Democratic Republic of Congo.",
+      "items": [
+        {
+          "title": "Iran Warns of Regional Flight Disruptions Amid US Sanctions",
+          "category": "Threat",
+          "region": "Middle East",
+          "severity": "High",
+          "summary": "Iran warns of widespread regional flight disruptions if foreign airports continue to restrict services for Iranian carriers following recent US sanctions.",
+          "source": "Caspian News",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGg8qZ3nXAcOnliYuOmUW1CatoG6WVA68G-Q85DmtiYGU_7PW3Nk2tZZf0Wq0Azr1W-DW_wG4M5LdQIt6gP1Uu68Ofkp4EBd8nB_6QYGtc_msdwFvOhVqJmJPPF2_QkY7o8oKHcSBQ6NStTqyc0EC0f9ESJMfU6Dkr4CAKZSo8EfVgBcCNYd4_4NOB7jfZQ82Qyx2PuTJJFXcaDrbkqEOuET4j6mIbQNfc",
+          "date": "2026-09-26",
+          "fullContent": "On September 26, 2026, Iran issued a stark warning through Caspian News, threatening widespread regional flight disruptions if foreign airports persist in restricting services for Iranian carriers. This development follows the imposition of recent US sanctions, which have presumably prompted foreign entities to curtail essential operational support for Iranian commercial and cargo aviation. The key actors involved are the Iranian government and its airlines, the United States (as the sanctioning body), and various foreign airports and nations in the Middle East and surrounding regions that are currently enforcing these restrictions.\n\nThe immediate impact of such a warning indicates an escalation in Iran's response to economic pressure, potentially leading to retaliatory measures. The technical details of these restrictions likely involve denial of critical services such as ground handling, refueling, maintenance, and potentially even overflight permissions or landing rights, directly impeding Iranian carriers' ability to operate. The scale of the threatened disruption is \"widespread regional,\" suggesting a potential shutdown or severe curtailment of air traffic routes impacting not only Iranian flights but also international carriers transiting through or operating within the broader Middle East airspace. This could severely affect regional connectivity, supply chains, and the passenger travel experience.\n\nIran’s warning serves as its official response, signaling a proactive stance against the perceived impact of US sanctions. This creates a significant aviation security challenge. Implications for aviation security are multi-faceted: there is an elevated risk of politically motivated airspace closures or arbitrary air traffic control directives, creating dangerous operational conditions. Furthermore, the potential for cyber attacks targeting regional air traffic management systems or airport infrastructure cannot be discounted as a non-kinetic means of retaliation. The increasing weaponization of aviation services and access underscores the need for heightened vigilance, robust contingency planning for airlines and air navigation service providers, and enhanced intelligence sharing to mitigate risks associated with potential state-sponsored disruption of civil aviation."
+        },
+        {
+          "title": "Fatal Plane Crash Kills 14 in Democratic Republic of Congo",
+          "category": "Incident",
+          "region": "Africa",
+          "severity": "High",
+          "summary": "A plane crash in Kenge, Democratic Republic of Congo, killed 14 people, including two senior military officials; the cause remains unknown.",
+          "source": "Northeast Live - Facebook",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF3CW8-zBa5-McE40oXf9O7tNVGdu56iIKmUwbHpZI4p0cpjufkelFeSbAmpPRQ0qn_-z6O_0DSz6Cxk4vpwYGu43f1-gw3CAyFOex9f3AoMYb0bJjRFG_d1buvPKU9x_RA8vcp0f_bW2FO0wRd6mBQnmzzW7nwUXYeqy1ImJF3VBJu2hkikvaK1QT4Sb-wr56QlGeGpezzw4r6jcHSj6UcLSiDImYte10ZGO19DSfLKTmG3tWYoh2OYFaH_o-NusfkTdzE6_dc7vLajnCRgBg",
+          "date": "2026-09-26",
+          "fullContent": "On September 26, 2026, a fatal plane crash occurred in Kenge, Democratic Republic of Congo, resulting in the immediate deaths of all 14 individuals on board. Among the casualties were two senior military officials, significantly elevating the profile of this tragic incident. The loss of high-ranking military personnel carries substantial national security implications for the DRC, potentially affecting ongoing operations or strategic command, particularly within a region prone to instability.\n\nCrucially, the exact cause of the crash remains unknown at this time. The absence of immediate technical details such as aircraft type, operator, or specific flight parameters complicates initial assessments for aviation security. While an official investigation is undoubtedly underway by DRC authorities to determine the circumstances, its findings will be paramount in determining whether the incident was a tragic accident attributable to mechanical failure or pilot error, or if it constitutes a deliberate act of sabotage or attack. Given the involvement of senior military officials, the latter scenario, though unconfirmed, cannot be immediately discounted and requires thorough scrutiny.\n\nFrom an aviation security perspective, this incident in a region with a history of both operational safety challenges and armed conflict warrants immediate attention. The potential targeting of an aircraft carrying high-value individuals, even if ultimately found to be coincidental, highlights persistent threats from non-state armed groups or even internal adversaries. AVSEC agencies must monitor the investigation closely for any indicators suggesting malicious intent, such as pre-flight tampering, insider threat vulnerabilities, or surface-to-air threats. This event underscores the critical need for robust intelligence gathering and enhanced protective measures for military and sensitive flights operating within complex security environments like the DRC, regardless of the ultimate determination of the crash's cause."
+        },
+        {
+          "title": "Australian E-Gate Outage Prompts Traveller Document Rethink",
+          "category": "Incident",
+          "region": "Asia-Pacific",
+          "severity": "Medium",
+          "summary": "A technical outage on September 18 affected e-gates at Sydney, Brisbane, and Melbourne airports, requiring manual processing and highlighting a need for improved document organization.",
+          "source": "GlobalNewslines.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFCKHLz_1SqQ2iSSYKuaiuwaNcV4nbRQfmGG0Tlxa2gz4gEhGSL2BcwVltEaCKzS7uuFT4LcMqCswj-9ydSlZS33lV9qTZQujCTpJHSqFCitfyG7AJ1wchQ-zcyWSpa7OETz978qIeWg-TbD8RaOjXi6KwCfcpv8bLtcYy-OiZgRTjx9ceMyqsCmytoO4mqh3eqe7_QeaUX7w",
+          "date": "2026-09-26",
+          "fullContent": "On 18 September 2026, a technical outage disabled automated border control e-gates at Sydney Kingsford Smith, Brisbane, and Melbourne Tullamarine airports, forcing Australian Border Force (ABF) officers to revert to manual passport processing for arriving and departing travellers. The disruption, first reported by GlobalNewslines.com and attributed to a software fault rather than a cyber incident, persisted for several hours during peak international traffic periods, generating lengthy queues and prompting airlines to advise passengers to arrive earlier than normal. The three affected airports collectively handle the majority of Australia's international passenger throughput, meaning the outage had nationwide knock-on effects on connections and ground operations even though it was geographically contained. In technical terms, the failure appears to have affected the biometric matching and document authentication layer that allows eligible ePassport holders to self-process, requiring officers to visually inspect travel documents and manually enter data into the ABF's border management system—a slower, more labour-intensive process that reduces throughput per lane and increases the risk of transcription error. The ABF acknowledged the disruption and confirmed contingency protocols were activated, with additional staff redeployed to manual processing desks while engineers restored the system later the same day. While no security breach was reported, the incident exposed the operational fragility of Australia's reliance on automated border clearance and underscored a recurring public-facing weakness: traveller document readiness. The event has renewed calls for improved passenger education on document organisation, including ensuring passports are valid, undamaged, and readily accessible, as well as for system redundancy and failover testing. From an aviation security intelligence perspective, the outage highlights the importance of layered contingency planning at border checkpoints, since prolonged e-gate failures could be exploited by adversaries seeking to overwhelm manual screening or introduce fraudulent documents under queue pressure."
+        }
+      ]
     }
   ],
-  "lastProvider": "DeepSeek V4-Flash + Tavily"
+  "lastProvider": "Gemini (2.5 Flash)"
 }
