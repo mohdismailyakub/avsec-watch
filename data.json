@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T09:00:47.651Z",
+  "generatedAt": "2026-09-28T00:00:50.496Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -6128,6 +6128,11 @@
           "fullContent": "The International Civil Aviation Organization (ICAO) has published new guidance material aimed at assisting aviation stakeholders in protecting civil aviation infrastructure from unauthorized unmanned aircraft system (UAS) incursions in regulated airspace. Announced on 27 September 2026, the guidance responds to the growing prevalence of drones operating without authorization near airports, runways, and other critical aviation facilities. ICAO, the United Nations specialized agency responsible for international civil aviation standards, developed the material in coordination with member states, industry operators, and air navigation service providers. The guidance addresses a threat vector that has escalated sharply over the past decade, with documented drone sightings disrupting operations at major hubs including London Gatwick, Dublin, and Newark. While ICAO standards are not binding in themselves, they typically inform national regulations and are widely adopted by contracting states, giving this guidance significant global reach across the 193 member nations. Technically, the material covers detection methodologies such as radio frequency scanning, radar, and electro-optical sensors, alongside mitigation options including geofencing, signal jamming, and kinetic interception—each with distinct legal and safety considerations. It also emphasizes coordination between airports, regulators, law enforcement, and military authorities, and stresses the importance of proportionate response given the risk of collateral interference with legitimate air traffic and communications systems. Official ICAO messaging frames the guidance as a voluntary but essential framework for harmonizing national approaches, noting that fragmented responses across jurisdictions create exploitable gaps. For aviation security, the implications are substantial: airports will be expected to integrate counter-UAS capabilities into broader security management systems, invest in detection infrastructure, and establish clear escalation protocols. The guidance also signals that ICAO may move toward more formal standards and recommended practices if UAS incursions continue to proliferate, potentially reshaping regulatory obligations for states and operators worldwide."
         }
       ]
+    },
+    {
+      "date": "2026-09-28",
+      "briefing": "The most recent available open-source aviation security reporting clusters around UAS/drone sightings near airports and a surge in aviation-targeted cyber threats, while fresh 24-hour breaking items are limited. No incidents or regulatory actions published since 2026-09-27 17:00 MYT are confirmed in the provided results.",
+      "items": []
     }
   ],
   "lastProvider": "DeepSeek V4-Flash + Tavily"
