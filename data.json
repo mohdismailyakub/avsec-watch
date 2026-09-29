@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T00:05:52.877Z",
+  "generatedAt": "2026-09-29T09:00:53.323Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -6136,7 +6136,7 @@
     },
     {
       "date": "2026-09-29",
-      "briefing": "The most recent aviation security developments in this search set are from June and July 2026, with no items published since 2026-09-28 17:00 MYT. Drone incursions near airports and cyber supply-chain threats to aviation remain the dominant themes.",
+      "briefing": "Rogue drone activity around airports remains the dominant near-term aviation security concern, with FAA-reported close encounters nearly doubling in Q2 2026 and multiple confirmed incursions into approach paths. Meanwhile, supply-chain cyber risk persists as the sector's most structurally dangerous threat vector following the 2025 Collins Aerospace/MUSE ransomware cascades.",
       "items": []
     }
   ],
