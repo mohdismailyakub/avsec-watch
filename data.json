@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T00:06:27.493Z",
+  "generatedAt": "2026-10-01T09:00:49.748Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -6180,7 +6180,7 @@
     },
     {
       "date": "2026-10-01",
-      "briefing": "The most recent aviation security developments center on regulatory actions covering drone security and cybersecurity resilience, alongside continuing concerns over UAS incursions near airports. No major new breaking incidents appear in the results since the last briefing window, with the freshest items being EASA's UAS security opinion and the FAA's updated UAS sighting report.",
+      "briefing": "No genuinely new aviation security developments were published since 2026-10-01 08:00 MYT; the most recent verified items in the search results date from mid-2026 and earlier. The dominant themes remain UAS incursions around airports and cascading cyber/supply-chain risks to aviation, both now subject to intensified ICAO, EASA and industry action.",
       "items": []
     }
   ],
