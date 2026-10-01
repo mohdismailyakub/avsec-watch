@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T09:02:21.145Z",
+  "generatedAt": "2026-10-01T00:06:27.493Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -6177,7 +6177,12 @@
           "fullContent": "On September 30, 2026, it was announced that Bangkok Suvarnabhumi Airport (BKK) will implement stricter baggage screening regulations beginning October 16, 2026. This significant development, sourced from Hainan Airlines, indicates that security personnel at BKK will be authorized to open suspicious luggage for inspection without the passenger present. This regulatory change directly involves BKK airport operations, its security contractors, the Thai civil aviation authority, and will ultimately impact all departing and transit passengers utilizing the airport's services.\n\nThe implementation of this enhanced procedure provides a two-week lead time for operational adjustments and passenger awareness. This measure significantly expands the scale of security intervention at BKK, moving towards a more proactive screening approach for all checked and potentially carry-on luggage deemed suspicious. Technically, this implies that once initial X-ray or Explosive Detection System (EDS) screening identifies an anomaly or threat signature, a secondary physical inspection can proceed immediately. This contrasts with previous protocols that typically required the passenger to be present for the opening of their bag, which often led to delays. The dissemination of this official directive to airlines operating at BKK highlights a coordinated effort for compliance.\n\nThe implications for aviation security are multifaceted. Primarily, it strengthens BKK's ability to interdict prohibited items, including explosives, weapons, and illicit goods, by streamlining the inspection process and reducing potential delays caused by locating passengers. This aligns BKK with practices common in other major international hubs, thereby enhancing Thailand's overall aviation security posture. However, it also introduces potential challenges related to passenger privacy concerns and necessitates robust oversight mechanisms, including clear Standard Operating Procedures (SOPs) and potentially video recording, to ensure accountability and prevent mishandling of baggage. This move underscores a global trend towards more stringent, risk-based security measures at critical aviation infrastructure."
         }
       ]
+    },
+    {
+      "date": "2026-10-01",
+      "briefing": "The most recent aviation security developments center on regulatory actions covering drone security and cybersecurity resilience, alongside continuing concerns over UAS incursions near airports. No major new breaking incidents appear in the results since the last briefing window, with the freshest items being EASA's UAS security opinion and the FAA's updated UAS sighting report.",
+      "items": []
     }
   ],
-  "lastProvider": "Gemini (2.5 Flash)"
+  "lastProvider": "DeepSeek V4-Flash + Tavily"
 }
