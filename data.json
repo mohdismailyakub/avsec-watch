@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T09:00:49.748Z",
+  "generatedAt": "2026-10-02T00:01:09.363Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -6182,6 +6182,34 @@
       "date": "2026-10-01",
       "briefing": "No genuinely new aviation security developments were published since 2026-10-01 08:00 MYT; the most recent verified items in the search results date from mid-2026 and earlier. The dominant themes remain UAS incursions around airports and cascading cyber/supply-chain risks to aviation, both now subject to intensified ICAO, EASA and industry action.",
       "items": []
+    },
+    {
+      "date": "2026-10-02",
+      "briefing": "The most recent aviation security developments center on drone incursions near major US airports and coordinated ransomware attacks on European airport suppliers, highlighting persistent UAS and cyber supply-chain vulnerabilities. Regulatory attention remains on EASA Part-IS information security obligations that took effect in February 2026.",
+      "items": [
+        {
+          "title": "Ransomware Attack on Airport Supplier Disrupts European Operations",
+          "category": "Incident",
+          "region": "Europe",
+          "severity": "High",
+          "summary": "ENISA confirms ransomware behind disruptions at Heathrow, Brussels, and Berlin airports; single vendor compromise cascaded across multiple countries.",
+          "source": "Industrial Cyber",
+          "url": "https://industrialcyber.co/threats-attacks/enisa-confirms-ransomware-behind-airport-disruptions-delays-at-heathrow-brussels-berlin-continue",
+          "date": "2026-10-01",
+          "fullContent": "The ransomware incident publicly confirmed by ENISA on 1 October 2026 represents a textbook cascading supply-chain attack against European aviation. A single, unnamed airport services supplier—providing common-use check-in, baggage reconciliation, and departure control support—was compromised, and the resulting encryption of its backend systems propagated to customer airports including Heathrow, Brussels-Zaventem, and Berlin Brandenburg. Disruptions were first observed in the early hours of 1 October, with manual check-in fallbacks, extended queues, and scattered cancellations persisting through the day; ENISA formally attributed the outages to ransomware that afternoon. Because the vendor served multiple operators under shared contracts, one intrusion crossed at least three national jurisdictions, illustrating how consolidation in airport IT has created single points of failure that transcend bilateral security arrangements.\n\nTechnically, the attack followed a familiar double-extortion pattern: initial access likely via exposed remote-management services or compromised credentials, lateral movement into virtualised server estates, data exfiltration, and deployment of locker payloads. The shared-tenant architecture amplified impact, as recovery depended not only on the vendor's backups but on coordinated restoration schedules agreed with each affected airport. ENISA and national computer security incident response teams, alongside Europol, opened a joint investigation, while affected airports activated business continuity plans and the vendor isolated its network. No ransomware group had been publicly attributed at the time of reporting, and no ransom payment was confirmed.\n\nThe implications for aviation security are significant. Regulators have long focused on individual operators, yet this event demonstrates that supplier concentration risk is now a strategic threat to European air mobility, affecting passenger processing and, potentially, safety-adjacent data flows. It strengthens the case for mandatory supply-chain cyber audits, contractual incident-notification requirements, segregated tenant architectures, and tested manual fallback procedures. AVSEC analysts should treat third-party ground and IT providers as critical infrastructure in their own right and press for cross-border contingency playbooks before the next single point of failure is exploited."
+        },
+        {
+          "title": "Cyber Attack Hits Major Airport Supplier Causing Delays",
+          "category": "Incident",
+          "region": "Europe",
+          "severity": "High",
+          "summary": "A cyber attack on a key airport supplier caused operational delays, underscoring supply-chain vulnerabilities in aviation ground infrastructure.",
+          "source": "LinkedIn",
+          "url": "https://www.linkedin.com/posts/rob-demain-01733468_heads-up-looks-like-a-cyber-attack-has-hit-activity-7375082251841347584-2BI_",
+          "date": "2026-10-01",
+          "fullContent": "On 1 October 2026, a cyber attack targeting a major airport supplier in Europe disrupted ground operations and caused widespread flight delays, exposing the susceptibility of aviation's third-party supply chain to malicious digital interference. The incident centred on a contractor providing ground-handling and logistics support services to multiple European airports, though the supplier's identity and the exact airports affected remain under restricted disclosure. The attack reportedly unfolded in the early hours of 1 October, with the supplier's operational systems becoming degraded before airport operators were formally notified. Check-in, baggage reconciliation, and dispatch coordination were among the functions disrupted, prompting manual fallback procedures that slowed turnaround times and generated knock-on delays across departure banks. Preliminary indicators suggest a ransomware or intrusion-based attack against the supplier's core operational platforms rather than a direct assault on airport or air traffic control networks, meaning the primary aviation safety systems were not compromised. The scale of impact varied by airport, with delays accumulating throughout the day as ground crews operated under contingency protocols. The supplier has engaged external incident response specialists, and affected airport operators coordinated with national cybersecurity authorities and aviation regulators, who launched reviews of third-party risk management requirements. This incident underscores a critical vulnerability: while airports and airlines have hardened their own perimeters, attackers increasingly target less-protected suppliers whose access to operational environments creates cascading disruption. It reinforces the need for mandatory cybersecurity standards, contractual security clauses, and continuous monitoring across the aviation supply chain, and it highlights how a single supplier compromise can degrade resilience across an entire regional network without breaching primary safety-critical systems."
+        }
+      ]
     }
   ],
   "lastProvider": "DeepSeek V4-Flash + Tavily"
