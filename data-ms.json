@@ -5685,7 +5685,7 @@
     },
     {
       "date": "2026-10-02",
-      "briefing": "Perkembangan keselamatan penerbangan terkini tertumpu kepada pencerobohan dron berhampiran lapangan terbang utama AS dan serangan ransomware yang diselaraskan terhadap pembekal lapangan terbang Eropah, menekankan kerentanan rantaian bekalan UAS dan siber yang berterusan. Perhatian pengawalseliaan kekal terhadap kewajipan keselamatan maklumat EASA Part-IS yang berkuat kuasa pada Februari 2026.",
+      "briefing": "Tiada perkembangan keselamatan penerbangan yang diterbitkan dalam tetingkap yang diperlukan pada 2026-10-02 08:00 MYT ditemui dalam hasil carian yang disediakan; semua item yang tersedia adalah dari Jun-Julai 2026 atau lebih awal dan oleh itu dianggap sudah diliputi. Tema utama terkini ialah pencerobohan drone/UAS berhampiran lapangan terbang dan risiko siber rantaian bekalan penerbangan.",
       "items": [
         {
           "title": "Serangan Ransomware terhadap Pembekal Lapangan Terbang Gangguan Operasi Eropah",
@@ -5712,6 +5712,6 @@
       ]
     }
   ],
-  "generatedAt": "2026-10-02T00:01:09.363Z",
+  "generatedAt": "2026-10-02T09:02:13.454Z",
   "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }
