@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T09:02:13.454Z",
+  "generatedAt": "2026-10-03T00:02:57.368Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -6210,6 +6210,11 @@
           "fullContent": "On 1 October 2026, a cyber attack targeting a major airport supplier in Europe disrupted ground operations and caused widespread flight delays, exposing the susceptibility of aviation's third-party supply chain to malicious digital interference. The incident centred on a contractor providing ground-handling and logistics support services to multiple European airports, though the supplier's identity and the exact airports affected remain under restricted disclosure. The attack reportedly unfolded in the early hours of 1 October, with the supplier's operational systems becoming degraded before airport operators were formally notified. Check-in, baggage reconciliation, and dispatch coordination were among the functions disrupted, prompting manual fallback procedures that slowed turnaround times and generated knock-on delays across departure banks. Preliminary indicators suggest a ransomware or intrusion-based attack against the supplier's core operational platforms rather than a direct assault on airport or air traffic control networks, meaning the primary aviation safety systems were not compromised. The scale of impact varied by airport, with delays accumulating throughout the day as ground crews operated under contingency protocols. The supplier has engaged external incident response specialists, and affected airport operators coordinated with national cybersecurity authorities and aviation regulators, who launched reviews of third-party risk management requirements. This incident underscores a critical vulnerability: while airports and airlines have hardened their own perimeters, attackers increasingly target less-protected suppliers whose access to operational environments creates cascading disruption. It reinforces the need for mandatory cybersecurity standards, contractual security clauses, and continuous monitoring across the aviation supply chain, and it highlights how a single supplier compromise can degrade resilience across an entire regional network without breaching primary safety-critical systems."
         }
       ]
+    },
+    {
+      "date": "2026-10-03",
+      "briefing": "No genuinely fresh aviation security developments published since 2026-10-02 17:00 MYT appear in these search results; all retrieved items date from June–July 2026 or earlier. The most recent material covers June 2026 drone incursions at US airports and mid-2026 cyber-supply-chain warnings, which fall outside the twice-daily recency window.",
+      "items": []
     }
   ],
   "lastProvider": "DeepSeek V4-Flash + Tavily"
