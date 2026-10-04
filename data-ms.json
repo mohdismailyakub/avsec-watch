@@ -5715,8 +5715,13 @@
       "date": "2026-10-03",
       "briefing": "Tiada perkembangan keselamatan penerbangan yang diterbitkan sejak 2026-10-03 08:00 MYT ditemui dalam hasil carian yang diberikan; item berkaitan terbaharu bertarikh Ogos 2026. Tema AVSEC signifikan terkini kekal sebagai pencerobohan UAS berhampiran lapangan terbang dan risiko keselamatan siber rantaian bekalan.",
       "items": []
+    },
+    {
+      "date": "2026-10-04",
+      "briefing": "Tiada perkembangan keselamatan penerbangan yang benar-benar baharu diterbitkan sejak 2026-10-03 17:00 MYT ditemui dalam hasil carian ini; item terbaharu bertarikh 2026-09-29 hingga 2026-09-30 dan terdiri daripada kandungan tajaan Aviation Week. Penganalisis harus ambil perhatian bahawa tema terkini yang paling berkaitan dengan keselamatan kekal sebagai ransomware rantaian bekalan penerbangan dan pelaksanaan keselamatan maklumat EASA Part-IS.",
+      "items": []
     }
   ],
-  "generatedAt": "2026-10-03T09:00:49.330Z",
+  "generatedAt": "2026-10-04T00:00:54.164Z",
   "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }
