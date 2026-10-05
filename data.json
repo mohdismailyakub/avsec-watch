@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T09:02:15.487Z",
+  "generatedAt": "2026-10-05T00:02:17.418Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -6276,7 +6276,12 @@
           "fullContent": "On 2026-10-04, Ethiopian federal forces successfully regained control of the Alula Aba Nega Airport (MQX/HAMK) in Mekelle, Tigray, from the Tigray People's Liberation Front (TPLF). This incident marks a significant development in the regional conflict, indicating a shift in strategic territorial control. The airport, a critical piece of infrastructure in the Tigray capital, had been under TPLF authority, and its recapture signifies an assertive move by the federal government to re-establish sovereign command over key assets.\n\nThe scale of this incident is localized to a single airport but carries broader strategic implications for the stability of the Tigray region. The \"retake\" operation suggests potential for damage to airport infrastructure, including runways, air traffic control facilities, terminal buildings, and existing aviation security screening and access control systems. Such environments often present risks of unexploded ordnance (UXO) and compromised security perimeters, necessitating a thorough technical assessment before any potential resumption of civilian operations.\n\nThe federal government's action serves as its immediate official response to reassert control. For aviation security, the implications are substantial. There is an urgent need for a comprehensive security assessment to verify the integrity of the airport's physical and technical security infrastructure against ICAO Annex 17 standards. This includes assessing personnel vetting processes, re-establishing robust access controls, ensuring effective passenger and baggage screening capabilities, and mitigating potential insider threats. Furthermore, the dynamic nature of the conflict in the region means that while federal forces now control the airport, the broader threat landscape from residual TPLF elements or other non-state actors could persist, potentially targeting air traffic or airport facilities. This development underscores the heightened risk profile for airspace and airports in conflict-affected areas, demanding continuous intelligence monitoring and updated threat assessments for all regional flight operations."
         }
       ]
+    },
+    {
+      "date": "2026-10-05",
+      "briefing": "No genuinely fresh aviation security developments published after 2026-10-04 17:00 MYT appear in the provided search results, with most items being monthly briefings, policy pages, or historical case studies. The available material points to continued drone incursion and cyber supply chain risk themes, but none qualify as new breaking stories for this cycle.",
+      "items": []
     }
   ],
-  "lastProvider": "Gemini (2.5 Flash)"
+  "lastProvider": "DeepSeek V4-Flash + Tavily"
 }
