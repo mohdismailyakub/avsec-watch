@@ -5856,7 +5856,7 @@
     },
     {
       "date": "2026-10-07",
-      "briefing": "Perkembangan keselamatan penerbangan terkini yang paling signifikan tertumpu pada aktiviti dron bermusuhan di lapangan terbang Eropah, dengan insiden UAS bermuatan bahan letupan di Leipzig/Halle serta gangguan di Dubai dan Sofia yang mencetuskan seruan segera untuk tindakan anti-UAS. Kerentanan rantaian bekalan siber dan mandat pelaporan kawal selia juga mendominasi landskap ancaman ketika sektor ini bergelut dengan risiko sistem-demi-sistem.",
+      "briefing": "Perkembangan keselamatan penerbangan terkini tertumpu pada integrasi berterusan panduan counter-UAS dan keperluan ketahanan keselamatan siber, dengan pengawal selia dan badan industri mengeluarkan arahan serta laporan baharu pada akhir 2026. Tiada insiden keselamatan baharu yang signifikan dilaporkan sejak tarikh potong 2026-10-07 08:00 MYT, namun beberapa item pengawalseliaan dan analisis ancaman kekal relevan untuk perancangan AVSEC semasa.",
       "items": [
         {
           "title": "Dron bermuatan bahan letupan ditemui di kawasan kargo Lapangan Terbang Leipzig/Halle",
@@ -5927,6 +5927,6 @@
       ]
     }
   ],
-  "generatedAt": "2026-10-07T00:05:17.212Z",
+  "generatedAt": "2026-10-07T09:00:55.051Z",
   "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }
