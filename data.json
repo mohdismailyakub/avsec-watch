@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T09:00:55.051Z",
+  "generatedAt": "2026-10-08T00:00:55.939Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -6425,6 +6425,11 @@
           "fullContent": "On 6 October 2026, ACI Europe issued an industry advisory warning that fragmentation across the airport supply-chain ecosystem is eroding the effectiveness of aviation security controls. The advisory, developed with input from Airbus Protect and circulated to European airport operators in May 2026 before its public release, addresses advanced threat vectors targeting the increasingly digitised and interdependent systems on which airport operations depend. The warning reflects growing concern that airports, as complex ecosystems of airlines, ground handlers, cargo agents, maintenance providers, and technology vendors, present a fragmented attack surface in which third-party and fourth-party risks are inconsistently governed.\n\nThe advisory identifies risks arising from the convergence of operational technology and information technology, weak supplier assurance, and gaps in background vetting across sub-contracted staff. Advanced persistent threats, including state-linked actors and sophisticated criminal groups, are assessed to be probing supply-chain entry points such as shared software platforms, maintenance interfaces, and cargo screening systems. Given that European airports collectively handle more than two billion passengers annually and support millions of jobs, any successful intrusion could disrupt operations, compromise screening integrity, or expose sensitive security data across multiple states simultaneously.\n\nACI Europe's Director General urged regulators and operators to move toward harmonised supply-chain security requirements under the EU's critical infrastructure frameworks, including NIS2 and forthcoming aviation-specific guidance. The organisation called for coordinated threat intelligence sharing, mandatory vendor security assessments, and clearer accountability for third-party providers. For aviation security, the development signals a shift from perimeter-focused regulation toward ecosystem-wide resilience, implying that future compliance will hinge on continuous supplier monitoring, contractual security clauses, and interoperable incident reporting across the European airport network."
         }
       ]
+    },
+    {
+      "date": "2026-10-08",
+      "briefing": "No genuinely fresh aviation security developments published since 2026-10-07 17:00 MYT appear in these search results; the most recent items date from mid-2026 and earlier. The dominant themes remain UAS incursions at airports and supply-chain cyber risk to aviation, both already well covered in prior briefings.",
+      "items": []
     }
   ],
   "lastProvider": "DeepSeek V4-Flash + Tavily"
