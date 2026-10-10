@@ -86,7 +86,7 @@
       }
     ]
   },
-  "briefing": "No genuinely fresh aviation security developments published since 2026-10-09 17:00 MYT appear in the provided search results; all retrieved material is either background, dated, or undated. Ongoing thematic risks remain unauthorised UAS activity near airports and supply-chain cyber attacks affecting shared airport systems.",
-  "generatedAt": "2026-10-10T00:02:31.690Z",
-  "lastProvider": "DeepSeek V4-Flash + Tavily"
+  "briefing": "Recent global aviation security developments include the revelation of a co-pilot's plot to crash a Flydubai jet into Tel Aviv airport, highlighting an insider threat. Additionally, the FAA has streamlined authorization processes for police drones operating near airports in North America.",
+  "generatedAt": "2026-10-10T09:02:32.830Z",
+  "lastProvider": "Gemini (2.5 Flash)"
 }

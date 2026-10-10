@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T00:01:35.609Z",
+  "generatedAt": "2026-10-10T09:02:06.521Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -6483,7 +6483,7 @@
     },
     {
       "date": "2026-10-10",
-      "briefing": "No genuinely fresh aviation security developments published since 2026-10-09 17:00 MYT appear in the provided search results; all retrieved material is either background, dated, or undated. Ongoing thematic risks remain unauthorised UAS activity near airports and supply-chain cyber attacks affecting shared airport systems.",
+      "briefing": "Recent global aviation security developments include the revelation of a co-pilot's plot to crash a Flydubai jet into Tel Aviv airport, highlighting an insider threat. Additionally, the FAA has streamlined authorization processes for police drones operating near airports in North America.",
       "items": [
         {
           "title": "Dozens of flights canceled after cyberattack on airport software",
@@ -6550,9 +6550,31 @@
           "url": "https://www.easa.europa.eu/en/the-agency/faqs/information-security-part",
           "date": "2026-10-10",
           "fullContent": "The European Union Aviation Safety Agency (EASA) has confirmed the entry into force of the Part-IS information security framework, publishing a Frequently Asked Questions document that clarifies its requirements and their relationship to the NIS2 Directive. Part-IS, formally established under Commission Implementing Regulation (EU) 2023/203 and Delegated Regulation (EU) 2023/1646, mandates that aviation organisations implement an information security management system (ISMS) aligned with ISO/IEC 27001 principles, addressing both safety-related and non-safety-related information systems. The framework applies to a broad spectrum of stakeholders, including air operators, maintenance organisations, air traffic management and air navigation service providers, aerodrome operators, and approved training organisations operating within EASA's regulatory scope. The compliance timeline requires affected organisations to designate an accountable manager for information security by February 2026, complete initial hazard and risk assessments by August 2027, and achieve full implementation of mitigation measures by December 2028. The FAQ addresses recurring industry questions regarding overlap with the NIS2 Directive, clarifying that Part-IS compliance does not automatically satisfy NIS2 obligations, as the two frameworks differ in scope, governance structures, and incident reporting requirements. Organisations identified as essential or important entities under NIS2 must therefore maintain parallel compliance programmes. EASA's official response emphasises a risk-based, proportionate approach while underscoring that information security is now an integral component of aviation safety management, not a separate discipline. The implications for European aviation security are significant: Part-IS institutionalises cyber resilience as a regulatory obligation, harmonises fragmented national approaches, and strengthens the sector's defence against evolving threats targeting aviation information systems, though industry bodies have cautioned about resource burdens, particularly for smaller operators."
+        },
+        {
+          "title": "Flydubai Co-Pilot Plotted Suicide Attack on Tel Aviv Airport",
+          "category": "Incident",
+          "region": "Middle East",
+          "severity": "High",
+          "summary": "Investigation reveals a Flydubai co-pilot intended to crash a passenger jet into Tel Aviv airport, inspired by 9/11 attacks.",
+          "source": "The Japan Times",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8Aca70dMeStRSioiCu8rHYpr02x_e0Cvz1DQAQmyt9XylcBZ2XF9_rFP3Mkl7diumql7fqdpcUb5RQ2HG0RBcMcHx0IFK2lto2ZsbAEa3u4X9xKrqd3prT2tv0rCZjB4UleowghvHZn1Bvqp1J-LgBwvhE79TgGlsMT0xAfWbO7mdn6g-e4yjfFosCDYYCg==",
+          "date": "2026-10-10",
+          "fullContent": "An investigation has uncovered a grave aviation security plot where a Flydubai co-pilot intended to deliberately crash a passenger jet into Tel Aviv airport on October 10, 2026. This heinous scheme, directly inspired by the devastating 9/11 attacks, involved a trained airline crew member weaponizing a commercial aircraft. While the specifics of how the plot was foiled or discovered remain limited from the summary, its revelation underscores a critical and ongoing insider threat within the aviation sector, highlighting the vulnerability inherent in trusted access.\n\nThe potential scale and impact of this planned attack were catastrophic. Had it materialized, it would have resulted in mass casualties, extensive damage to critical airport infrastructure, and severe regional and international air travel disruption, given Tel Aviv's status as a major regional hub. The method—utilizing a passenger aircraft as a guided missile—demonstrates a sophisticated and high-impact approach aimed at maximizing destruction and terror, mirroring previous successful acts of aviation terrorism and leveraging the perpetrator's professional access and expertise.\n\nThe official response, as indicated by the uncovering \"investigation,\" suggests successful intelligence gathering and threat neutralization. However, the implications for aviation security are profound, primarily highlighting the severe challenge of the insider threat. This incident necessitates a re-evaluation of current psychological screening protocols, continuous background checks, and advanced behavioral analysis for all flight crew members globally. It also reinforces the enduring threat of ideologically driven individuals seeking to exploit vulnerabilities within the aviation system, demanding persistent vigilance and adaptive, multi-layered security strategies to counter evolving terrorist tactics."
+        },
+        {
+          "title": "Police Drones Get Faster FAA Clearance Near Airports",
+          "category": "Regulatory",
+          "region": "North America",
+          "severity": "Medium",
+          "summary": "New integration allows public safety agencies to quickly obtain FAA authorization for drone operations in controlled airspace near airports.",
+          "source": "DroneDJ",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGowiTvnj02qsIpeWHUbfTDpv45rK5WXRri2MKEq411V-XBv9wxdbd-BrwyMttudcltvCjQvy6EVQxhPQ0LPraFfmFsy2QlPHtHhSvLgJwX87j3SS40qMcYpfIC4wF11_QCwYdnkeuG0AgdFInbZaHY0Gmnybrv4p56l0SVSABd",
+          "date": "2026-10-10",
+          "fullContent": "The Federal Aviation Administration has introduced a new integration that significantly accelerates the authorization process for public safety agencies seeking to operate drones in controlled airspace near airports, a development reported by DroneDJ on October 10, 2026. This initiative, developed in coordination with law enforcement and emergency response organizations across North America, allows police and other first responder agencies to obtain rapid FAA clearance for unmanned aircraft systems (UAS) operations within Class B, C, and D airspace, areas historically subject to stringent approval requirements due to their proximity to commercial aviation corridors. The expedited process leverages an automated integration with the FAA's Low Altitude Authorization and Notification Capability (LAANC) system, enabling near-real-time approvals that previously took hours or days to secure through manual coordination with air traffic control. The scale of this change is considerable, as thousands of law enforcement agencies across the United States routinely require drone access for missions including suspect pursuit, search and rescue, accident reconstruction, and crowd monitoring, often in urban areas that overlap with controlled airspace. By reducing the authorization timeline to minutes, the FAA aims to balance public safety operational urgency with the integrity of the National Airspace System. Official responses from both the FAA and participating law enforcement associations have emphasized that safety mitigations, including altitude ceilings, geo-fencing, and mandatory remote identification, remain in force. From an aviation security perspective, this development carries dual implications: it enhances law enforcement's ability to respond to security incidents and aerial threats near airports, but it also expands the volume of authorized UAS traffic in sensitive airspace, underscoring the need for robust counter-UAS coordination, airspace deconfliction protocols, and continuous monitoring to prevent conflicts with manned aircraft operations."
         }
       ]
     }
   ],
-  "lastProvider": "DeepSeek V4-Flash + Tavily"
+  "lastProvider": "Gemini (2.5 Flash)"
 }
