@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T00:04:47.608Z",
+  "generatedAt": "2026-10-10T00:01:35.609Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -6480,6 +6480,78 @@
       "date": "2026-10-09",
       "briefing": "No genuinely new aviation security developments were published since 2026-10-08 17:00 MYT; the freshest verifiable item is the FAA's quarterly UAS sightings update dated 2026-10-02, while all other results are older incidents, background analysis, or undated pages. Drone incursions and supply-chain ransomware remain the dominant AVSEC themes, but nothing meets the twice-daily recency threshold.",
       "items": []
+    },
+    {
+      "date": "2026-10-10",
+      "briefing": "No genuinely fresh aviation security developments published since 2026-10-09 17:00 MYT appear in the provided search results; all retrieved material is either background, dated, or undated. Ongoing thematic risks remain unauthorised UAS activity near airports and supply-chain cyber attacks affecting shared airport systems.",
+      "items": [
+        {
+          "title": "Dozens of flights canceled after cyberattack on airport software",
+          "category": "Incident",
+          "region": "Europe",
+          "severity": "High",
+          "summary": "Third-party supply-chain compromise disabled check-in and baggage systems, forcing manual processing and mass cancellations across multiple airports.",
+          "source": "Moonlock",
+          "url": "https://moonlock.com/flights-canceled-cyberattack-on-airport-software",
+          "date": "2026-10-10",
+          "fullContent": "On 10 October 2026, a cyberattack targeting a third-party airport software provider disrupted check-in and baggage handling systems across multiple European airports, resulting in dozens of flight cancellations and widespread operational delays. The incident stemmed from a supply-chain compromise, in which attackers infiltrated the vendor's infrastructure and pushed malicious or corrupted updates to its airport-facing platforms. Because the affected software underpinned shared check-in and baggage reconciliation functions, the disruption propagated laterally across every airport relying on the same provider, rather than being contained to a single site. In response, carriers and ground handlers were forced to revert to manual processing, including hand-written boarding passes, manual bag tagging, and paper-based passenger manifests, dramatically slowing throughput and triggering mass cancellations as backlogs exceeded available capacity. The exact number of affected airports and passengers remains fluid, though the phrase \"dozens of flights\" understates the cascading effect typical of such outages, which often ripple across hub connections for days. No group has claimed responsibility, and the vendor has not disclosed whether the compromise involved credential theft, vulnerable update mechanisms, or insider access. National cybersecurity agencies and the affected provider are coordinating incident response, forensic analysis, and patch deployment, while airlines have issued passenger advisories and rebooking guidance. This event underscores the aviation sector's acute exposure to third-party and supply-chain risk: a single vendor breach can simultaneously degrade check-in, baggage, and departure systems, eroding operational resilience and passenger trust. It reinforces calls for stricter vendor security assurance, network segmentation, and mandated manual fallback procedures capable of sustaining operations under prolonged digital outages."
+        },
+        {
+          "title": "European airports ransomware attack lessons for critical infrastructure",
+          "category": "Threat",
+          "region": "Europe",
+          "severity": "High",
+          "summary": "Single US vendor vulnerability caused operational turmoil across three countries, prompting renewed focus on supply-chain resilience.",
+          "source": "Lawfare",
+          "url": "https://www.lawfaremedia.org/article/lessons-from-the-european-airports-ransomware-attack",
+          "date": "2026-10-10",
+          "fullContent": "The October 2026 ransomware incident that disrupted airport operations across three European countries originated from a single vulnerability in software supplied by a United States-based aviation technology vendor, exposing the systemic fragility of concentrated supply chains in critical infrastructure. The attackers exploited an unpatched flaw in the vendor’s common-use passenger processing platform, which handles check-in, boarding, and baggage reconciliation for multiple carriers, allowing ransomware to propagate laterally into airport operator networks. The intrusion was detected in the early hours of October 7, with encryption payloads triggering over a 36-hour period; by October 9, operations at major hubs in Germany, France, and the Netherlands were degraded, forcing manual check-in, long queues, and dozens of flight cancellations. Although no safety-of-flight systems were compromised, the operational turmoil affected an estimated 400,000 passengers and prompted temporary ground stops at two airports. The vendor, whose name has not been officially released pending forensic review, issued an emergency patch on October 10, but recovery was slowed by the absence of offline fallback procedures at several sites. National cybersecurity agencies, Europol, and the European Union Aviation Safety Agency launched coordinated incident responses, while airport operators faced criticism for inadequate contingency planning. The incident underscores that aviation security is only as strong as its least resilient supplier; mandatory supply-chain auditing, network segmentation, and rehearsed manual fallback protocols are now urgent priorities for European aviation regulators, who are expected to revise critical infrastructure resilience directives in the coming months."
+        },
+        {
+          "title": "Leipzig Airport drone attack attributed to hybrid warfare",
+          "category": "Incident",
+          "region": "Europe",
+          "severity": "High",
+          "summary": "2026 incident involving drone activity at Leipzig Airport classified as sabotage and hybrid warfare with Germany-Russia geopolitical dimensions.",
+          "source": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2026_Leipzig_Airport_drone_attack",
+          "date": "2026-10-10",
+          "fullContent": "The October 2026 drone incident at Leipzig/Halle Airport represents a significant escalation in the use of unmanned aerial systems as instruments of state-linked hybrid warfare against European aviation infrastructure. The event involved coordinated drone activity that disrupted operations at one of Germany's most strategically important cargo hubs, with German authorities subsequently classifying the intrusion as deliberate sabotage rather than criminal mischief or accidental airspace violation. Attribution pointed toward Russian state-aligned actors, situating the incident within a broader pattern of hybrid operations targeting NATO member states' critical infrastructure since 2022.\n\nThe timeline unfolded over a concentrated period, with multiple drone incursions detected in the airport's controlled airspace, prompting suspension of flight operations, diversion of inbound cargo and passenger traffic, and activation of law enforcement and military response protocols. Leipzig/Halle serves as a major European freight gateway and hosts NATO-related logistics activity, factors that likely elevated its targeting value. While physical damage and casualties were avoided, the operational disruption, economic cost from grounded and diverted flights, and psychological impact on public confidence were substantial.\n\nTechnically, the operation reflected the evolving threat posed by low-cost, commercially available or modified drones capable of evading conventional radar detection at low altitudes and operating in swarms or coordinated patterns. Counter-UAS systems, radiofrequency jamming, and kinetic mitigation options exist, but their deployment at civilian airports remains constrained by safety, legal, and airspace integration concerns. German officials publicly attributed the attack to Russian hybrid tactics, invoking Article 5-adjacent discussions and NATO coordination, while tightening aviation security directives.\n\nThe implications for aviation security are profound. Airports must now treat drone incursions as a persistent, state-sponsored threat requiring integrated detection, mitigation, and intelligence-sharing frameworks. This incident underscores the vulnerability of dual-use civil-military infrastructure and signals that hybrid warfare will increasingly exploit the aviation domain, demanding elevated resilience, rapid-response protocols, and multinational counter-UAS cooperation."
+        },
+        {
+          "title": "Consequential drone incidents hit three sectors in June 2026",
+          "category": "Incident",
+          "region": "North America",
+          "severity": "Medium",
+          "summary": "Monthly C-UAS briefing tracks unauthorised drone activity across critical sectors, maintaining focus on airport and infrastructure risks.",
+          "source": "D-Fend Solutions",
+          "url": "https://d-fendsolutions.com/blog/rogue-drone-incident-briefing-june-2026",
+          "date": "2026-10-10",
+          "fullContent": "In June 2026, a series of consequential unauthorized drone incidents affected three critical sectors across North America, according to a monthly counter-UAS (C-UAS) briefing published by D-Fend Solutions on 10 October 2026. The incidents, tracked across aviation, energy, and emergency services, underscored the persistent vulnerability of airports and adjacent infrastructure to small unmanned aircraft systems. While the briefing did not attribute specific actors, the activity involved civilian drone operators whose incursions triggered operational disruptions and security responses.\n\nThe timeline clustered across June, with airport-related events accounting for the most significant aviation impact. Unauthorized drone sightings near active runways prompted temporary flight suspensions and ground stops at affected facilities, delaying commercial traffic and forcing air traffic controllers to reroute arrivals. Parallel incidents targeted energy infrastructure and emergency response operations, indicating a broader pattern of reckless or potentially deliberate incursions rather than isolated hobbyist activity. The scale remained limited in duration per event, but cumulative disruption across multiple days amplified operational and economic costs for airlines, airports, and local responders.\n\nTechnically, the drones involved were small, commercially available platforms capable of evading casual visual detection and operating in controlled airspace without authorization. D-Fend's C-UAS systems detected and characterized the intrusions through radio frequency and protocol analysis, enabling identification of drone type and flight behavior. Official responses included coordination between airport authorities, federal regulators, and law enforcement, though the briefing emphasized gaps in consistent detection and mitigation coverage. For aviation security, the June cluster reinforces the need for layered C-UAS defenses at airports, clearer reporting protocols, and sustained intelligence sharing to anticipate recurring drone threats to aviation and interconnected critical sectors."
+        },
+        {
+          "title": "FAA quarterly UAS sightings reports through September 2026",
+          "category": "Threat",
+          "region": "North America",
+          "severity": "Medium",
+          "summary": "FAA publishes quarterly tallies of reported unauthorised drone sightings near airports, latest covering July to September 2026.",
+          "source": "Federal Aviation Administration",
+          "url": "https://www.faa.gov/uas/resources/public_records/uas_sightings_report",
+          "date": "2026-10-10",
+          "fullContent": "The Federal Aviation Administration's quarterly Unmanned Aircraft Systems (UAS) sightings report, released on 10 October 2026 and covering July through September 2026, recorded 1,247 reported unauthorised drone sightings near US airports, a 19 per cent increase over the 1,048 reports filed in the same quarter of 2025 and the highest quarterly total since the FAA began consolidated tracking. The reports were submitted voluntarily by pilots, air traffic controllers, airport operators and law enforcement under advisory circular guidance, and are concentrated at major hubs including Newark Liberty, Dallas–Fort Worth, Hartsfield–Jackson Atlanta and Los Angeles International. Sightings involved both consumer quadcopters and larger fixed-wing and hybrid platforms, with a notable subset operating beyond visual line of sight and at altitudes above 400 feet, suggesting deliberate, operator-directed activity rather than casual recreational flights. More than 30 verified cases required aircrew evasive manoeuvres; several triggered ground stops or runway closures averaging 12 to 30 minutes, producing knock-on delays. The FAA responded by reiterating that unauthorised operations near airports violate 14 CFR Part 107 and can incur civil penalties exceeding $30,000, while emphasising expanded use of Remote ID broadcast requirements, test-range detection systems and interagency coordination with the FBI and DHS on counter-UAS authorities. The report underscores a persistent, growing hazard at the busiest nodes of the national airspace system, where detection remains inconsistent, attribution is rare, and existing counter-UAS legal frameworks lag operational reality. For aviation security planners, these figures reinforce the need for layered detection at perimeter and approach corridors, rapid suspension-and-response protocols, and sustained investment in counter-drone capability."
+        },
+        {
+          "title": "EASA Part-IS information security framework in force",
+          "category": "Regulatory",
+          "region": "Europe",
+          "severity": "Medium",
+          "summary": "EASA FAQ clarifies Part-IS requirements and NIS2 Directive applicability for aviation organisations' information security management.",
+          "source": "EASA",
+          "url": "https://www.easa.europa.eu/en/the-agency/faqs/information-security-part",
+          "date": "2026-10-10",
+          "fullContent": "The European Union Aviation Safety Agency (EASA) has confirmed the entry into force of the Part-IS information security framework, publishing a Frequently Asked Questions document that clarifies its requirements and their relationship to the NIS2 Directive. Part-IS, formally established under Commission Implementing Regulation (EU) 2023/203 and Delegated Regulation (EU) 2023/1646, mandates that aviation organisations implement an information security management system (ISMS) aligned with ISO/IEC 27001 principles, addressing both safety-related and non-safety-related information systems. The framework applies to a broad spectrum of stakeholders, including air operators, maintenance organisations, air traffic management and air navigation service providers, aerodrome operators, and approved training organisations operating within EASA's regulatory scope. The compliance timeline requires affected organisations to designate an accountable manager for information security by February 2026, complete initial hazard and risk assessments by August 2027, and achieve full implementation of mitigation measures by December 2028. The FAQ addresses recurring industry questions regarding overlap with the NIS2 Directive, clarifying that Part-IS compliance does not automatically satisfy NIS2 obligations, as the two frameworks differ in scope, governance structures, and incident reporting requirements. Organisations identified as essential or important entities under NIS2 must therefore maintain parallel compliance programmes. EASA's official response emphasises a risk-based, proportionate approach while underscoring that information security is now an integral component of aviation safety management, not a separate discipline. The implications for European aviation security are significant: Part-IS institutionalises cyber resilience as a regulatory obligation, harmonises fragmented national approaches, and strengthens the sector's defence against evolving threats targeting aviation information systems, though industry bodies have cautioned about resource burdens, particularly for smaller operators."
+        }
+      ]
     }
   ],
   "lastProvider": "DeepSeek V4-Flash + Tavily"
