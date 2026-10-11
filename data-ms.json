@@ -6074,8 +6074,13 @@
           "fullContent": "Federal Aviation Administration telah memperkenalkan satu integrasi baharu yang mempercepatkan secara signifikan proses kebenaran untuk agensi keselamatan awam yang ingin mengoperasikan dron dalam ruang udara terkawal berhampiran lapangan terbang, satu perkembangan yang dilaporkan oleh DroneDJ pada 10 Oktober 2026. Inisiatif ini, yang dibangunkan dengan kerjasama organisasi penguatkuasaan undang-undang dan tindak balas kecemasan di seluruh Amerika Utara, membolehkan polis dan agensi responder pertama yang lain memperoleh pelepasan FAA yang pantas untuk operasi sistem pesawat tanpa pemandu (UAS) dalam ruang udara Kelas B, C, dan D, kawasan yang secara historis tertakluk kepada keperluan kelulusan yang ketat kerana berdekatan dengan koridor penerbangan komersial. Proses dipercepat ini memanfaatkan integrasi automatik dengan sistem Low Altitude Authorization and Notification Capability (LAANC) FAA, yang membolehkan kelulusan hampir masa nyata yang sebelum ini mengambil masa berjam-jam atau berhari-hari untuk diperoleh melalui penyelarasan manual dengan kawalan trafik udara. Skala perubahan ini adalah besar, kerana beribu-ribu agensi penguatkuasaan undang-undang di seluruh Amerika Syarikat secara rutin memerlukan akses dron untuk misi termasuk mengejar suspek, mencari dan menyelamat, rekonstruksi kemalangan, dan pemantauan orang ramai, selalunya di kawasan bandar yang bertindih dengan ruang udara terkawal. Dengan mengurangkan tempoh kebenaran kepada beberapa minit, FAA bertujuan untuk mengimbangi kecemasan operasi keselamatan awam dengan integriti National Airspace System. Respons rasmi daripada kedua-dua FAA dan persatuan penguatkuasaan undang-undang yang menyertai telah menekankan bahawa langkah mitigasi keselamatan, termasuk siling altitud, geo-fencing, dan pengenalan jauh mandatori, kekal berkuat kuasa. Dari perspektif keselamatan penerbangan, perkembangan ini membawa implikasi dwi: ia meningkatkan keupayaan penguatkuasaan undang-undang untuk bertindak balas terhadap insiden keselamatan dan ancaman udara berhampiran lapangan terbang, tetapi ia juga mengembangkan jumlah trafik UAS yang dibenarkan dalam ruang udara sensitif, menekankan keperluan untuk penyelarasan counter-UAS yang kukuh, protokol dekonflik ruang udara, dan pemantauan berterusan untuk mencegah konflik dengan operasi pesawat berawak."
         }
       ]
+    },
+    {
+      "date": "2026-10-11",
+      "briefing": "Perkembangan keselamatan penerbangan terkini yang signifikan berpusat pada pencerobohan dron berhampiran lapangan terbang dan ancaman rantaian bekalan siber, dengan momentum kawal selia yang semakin meningkat melalui inisiatif ICAO dan IATA. Tiada insiden baharu yang tulen diterbitkan sejak 2026-10-10 17:00 MYT muncul dalam hasil carian yang diberikan, jadi item terkini yang boleh didapatkan semula bertarikh dalam beberapa hari hingga minggu yang lalu.",
+      "items": []
     }
   ],
-  "generatedAt": "2026-10-10T09:02:06.521Z",
-  "lastProvider": "Gemini (2.5 Flash) (terjemahan)"
+  "generatedAt": "2026-10-11T00:04:05.813Z",
+  "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }
