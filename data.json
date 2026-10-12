@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T09:00:53.127Z",
+  "generatedAt": "2026-10-12T00:04:53.936Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -6579,7 +6579,46 @@
       "date": "2026-10-11",
       "briefing": "The most recent verified aviation security development is the FAA's drone sighting data updated 2 October 2026, covering July–September 2026, with no new AVSEC stories published since 11 October 2026 08:00 MYT. The dominant ongoing threat stream remains unauthorised UAS incursions near airports and cyber supply-chain risk across the aviation ecosystem.",
       "items": []
+    },
+    {
+      "date": "2026-10-12",
+      "briefing": "Global aviation security saw a major incident in the Middle East with a deadly missile attack on Riyadh's airport. Additionally, a significant policy change emerged from Israel regarding dual-nationality aircrew, increasing operational complexities for airlines.",
+      "items": [
+        {
+          "title": "Deadly Houthi Missile Attack Shuts Riyadh Airport",
+          "category": "Incident",
+          "region": "Middle East",
+          "severity": "High",
+          "summary": "Houthi attacks on King Khalid International Airport in Riyadh killed 12 and injured over 300, leading to airport closure and EASA airspace warnings.",
+          "source": "ITV News, Euronews, UAE Ministry of Foreign Affairs",
+          "url": "https://www.itv.com/news/2026-10-11/at-least-12-killed-in-attack-on-saudi-arabias-riyadh-airport",
+          "date": "2026-10-11",
+          "fullContent": "On 11 October 2026, a coordinated Houthi missile and unmanned aerial system attack struck King Khalid International Airport (RUH) in Riyadh, Saudi Arabia, killing 12 people and injuring more than 300, according to ITV News, Euronews, and statements from the UAE Ministry of Foreign Affairs. The assault, which reportedly combined medium-range ballistic missiles with one-way attack drones, penetrated layered air defenses around the capital and impacted terminal and apron areas during peak evening operations, triggering immediate closure of the airport and diversion of inbound traffic to Dammam and Jeddah. The scale of casualties, including both passengers and airport workers, marks the deadliest strike on Saudi civil aviation infrastructure since the conflict with the Houthis escalated. The European Union Aviation Safety Agency issued airspace warnings advising operators to avoid western and central Saudi airspace, while multiple carriers suspended Riyadh services indefinitely. Saudi authorities confirmed the closure, activated emergency response protocols, and vowed retaliation, while the Houthi movement claimed responsibility, framing the attack as targeting military infrastructure. From an AVSEC intelligence perspective, the incident demonstrates the growing overlap between state-aligned non-state actors and civil aviation targets, the operational reach of drone-missile salvos beyond traditional conflict zones, and critical gaps in counter-UAS and air defense integration at major international hubs. It also raises urgent questions about risk assessment methodologies for airports in proximity to active theaters, the adequacy of NOTAM and EASA advisory coordination, and contingency planning for mass-casualty events and prolonged closures. Expect near-term tightening of overflight restrictions, enhanced passenger screening at Gulf hubs, and renewed pressure on ICAO and regional regulators to codify counter-UAS standards for civil airports."
+        },
+        {
+          "title": "Israel Bans Dual-Nationality Aircrew from 31 Countries",
+          "category": "Regulatory",
+          "region": "Middle East",
+          "severity": "Medium",
+          "summary": "Israel now prohibits foreign pilots and cabin crew with dual nationality from 31 specific countries from operating flights to Israel, citing thwarted terror plot.",
+          "source": "PYOK",
+          "url": "https://www.pyok.com/israel-bans-foreign-pilots-and-flight-attendants-with-dual-nationality-of-31-countries-in-response-to-thwarted-terror-attack/",
+          "date": "2026-10-11",
+          "fullContent": "On 11 October 2026, Israel's security authorities implemented a regulatory prohibition barring foreign pilots and cabin crew who hold dual nationality with any of 31 designated countries from operating flights into Israel. The measure, reported by PYOK, applies to non-Israeli aircrew employed by foreign carriers whose passports also carry citizenship from states Israeli officials assess as posing elevated security risk. According to the announcement, the ban was prompted by the thwarting of a terror plot that allegedly sought to exploit dual-nationality crew members to facilitate an attack against Israeli aviation targets. The restriction affects a broad segment of international carriers serving Ben Gurion Airport and other Israeli gateways, particularly airlines whose crew bases include significant numbers of dual nationals from the listed countries. Operationally, carriers must now verify nationality holdings during crew rostering and may need to reassign or substitute personnel, potentially disrupting schedules, increasing staffing costs, and reducing flexibility on routes to Israel. The 31-country list has not been fully publicized in the summary, but its breadth suggests a sweeping screening approach rather than a targeted one. Israeli officials framed the ban as a precautionary counterterrorism measure, while foreign regulators and airline associations have raised concerns about proportionality, discrimination, and the absence of transparent appeal mechanisms. For aviation security, the development signals a shift toward nationality-based risk profiling in crew vetting, a practice that could prompt reciprocal measures, complicate multilateral harmonization under ICAO standards, and strain carrier compliance with non-discrimination obligations, even as it underscores persistent concerns about insider threats and document fraud in commercial aviation."
+        },
+        {
+          "title": "Aviation Staff Security Facing Increased Scrutiny",
+          "category": "Regulatory",
+          "region": "Global",
+          "severity": "Low",
+          "summary": "Menzies CEO notes heightened public and industry scrutiny on rigorous security screening for airport and airline staff, following recent incidents.",
+          "source": "The Inside Brief",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE56j8kahi6esLL1QiYhg35qXNXGa3Tko2R2ODKQ9Oo22CbXyIsZOaOj0JCieDVd_a58hxFXa1qWalY41t8heEc4F-GoGKwG1Ptzy_E1-cGWC4W9C24DY4V2uw5JNc-_UVlX-ZT0mmHeXnS2AfTtciFi_d0jeSg3IXi4S3Yglk3LRbKYKiPRrsOzmAPT2Y9-kQEL9owpaa6X2sTGuEnrduSnp6c-xLpkPPG6iVSjYeUIBvtJGvKxdmeiXt450SSBsJfZaRIFiPi0kon73qOCYdW6Q=",
+          "date": "2026-10-11",
+          "fullContent": "On 11 October 2026, Menzies Aviation Chief Executive Officer Philipp Joeinig publicly acknowledged that airport and airline staff are now subject to heightened scrutiny regarding security screening, citing recent incidents that have drawn both public and industry attention to insider threat vulnerabilities. Menzies, a global ground handling and aviation services provider operating at more than 200 airports across 65 countries, employs tens of thousands of staff in roles that require airside access, making its workforce a critical component of the aviation security chain. The CEO's remarks followed a series of incidents in which insider access was allegedly exploited to compromise restricted areas, though specific cases remain under investigation by multiple national authorities. The timeline of concern spans several months of 2026, during which regulators in North America, Europe, and Asia-Pacific have intensified audits of staff vetting procedures, including background check renewal cycles, biometric access controls, and insider threat detection programs. The scale of impact is significant: ground handlers, caterers, cleaners, and maintenance crews collectively represent the largest cohort of aviation workers with unescorted access to security-restricted zones, and any tightening of screening protocols will affect workforce onboarding times and operational costs. Technically, the increased scrutiny focuses on continuous vetting rather than periodic checks, integration of criminal and terrorism databases across jurisdictions, and behavioral detection training for supervisors. Official responses have varied, with ICAO Annex 17 standards under review and several states proposing mandatory random screening of staff alongside passenger screening regimes. For aviation security, this development signals a shift toward treating insiders as a permanent and evolving threat vector, requiring layered, intelligence-led mitigation that balances operational efficiency with rigorous access governance."
+        }
+      ]
     }
   ],
-  "lastProvider": "DeepSeek V4-Flash + Tavily"
+  "lastProvider": "Gemini (2.5 Flash)"
 }
