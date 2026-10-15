@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T09:02:14.098Z",
+  "generatedAt": "2026-10-15T00:06:27.798Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -6684,6 +6684,11 @@
           "fullContent": "The European Union Aviation Safety Agency (EASA) has issued clarification on how the Part-IS information security requirements intersect with the NIS2 Directive, addressing a regulatory ambiguity that has persisted since Part-IS entered into force. The guidance, published on 14 October 2026, explains how references to NIS2 obligations embedded within Part-IS should be interpreted by aviation organizations, including airlines, airports, air navigation service providers, and continuing airworthiness management organizations. EASA, as the competent authority for aviation safety under Regulation (EU) 2018/1139, is the primary actor, though national supervisory authorities and the European Commission's NIS2 implementation framework also shape the outcome. The timeline matters: Part-IS applies to information security management systems from 2024 for certain domains and 2026 for others, while NIS2 transposition into national law by member states was due by October 2024, creating overlapping but not identical obligations. The clarification seeks to harmonize these regimes for entities that are both aviation organizations and essential or important entities under NIS2. Technically, Part-IS establishes management system requirements mirroring ISO 27001-style structures, while NIS2 imposes risk management, incident reporting, and supply chain security duties; EASA's guidance maps the two to avoid duplicative compliance and clarifies that Part-IS certification does not automatically confer NIS2 conformity. Scale and impact are significant, as thousands of European aviation entities fall under both frameworks, and divergent national implementations have caused confusion. Officially, EASA emphasizes a coordinated, risk-based approach and encourages organizations to align their information security management systems across both requirements. The implications for aviation security are substantial: clearer linkage reduces compliance uncertainty, strengthens cyber resilience across the sector, and reinforces a single, coherent regulatory baseline for protecting critical aviation systems against evolving cyber threats."
         }
       ]
+    },
+    {
+      "date": "2026-10-15",
+      "briefing": "No genuinely fresh aviation security developments have surfaced since the 2026-10-14 17:00 MYT cutoff; the most recent dated materials in the search set are the FAA UAS sightings update of October 2, 2026 and ICAO/regulatory policy items. The dominant ongoing AVSEC themes remain UAS intrusions around airports and supply-chain cyber risk to aviation systems.",
+      "items": []
     }
   ],
   "lastProvider": "DeepSeek V4-Flash + Tavily"
