@@ -6194,8 +6194,13 @@
       "date": "2026-10-16",
       "briefing": "Tiada perkembangan keselamatan penerbangan tulen yang diterbitkan sejak 2026-10-16 08:00 MYT muncul dalam hasil carian ini; item terkini yang boleh disahkan bertarikh dari akhir September hingga awal Oktober 2026 dan sebahagian besarnya adalah latar belakang atau laporan berulang. Tema dominan kekal pencerobohan UAS berhampiran lapangan terbang dan penyasaran ransomware/siber yang semakin meningkat terhadap rantaian bekalan penerbangan dan logistik.",
       "items": []
+    },
+    {
+      "date": "2026-10-17",
+      "briefing": "Kemas kini berkaitan AVSEC yang disahkan terkini tertumpu pada pelaporan pencerobohan UAS/lapangan terbang (data penampakan FAA dikemas kini 2026-10-02) dan aliran kerja dasar/ketahanan siber utama (panduan UAS ICAO, mandat pelaporan EU 2026/247, dorongan SeOA/SEIR IATA) berbanding satu insiden baharu. Tiada insiden keselamatan penerbangan yang benar-benar baharu (diterbitkan sejak 2026-10-16 17:00 MYT) muncul dalam hasil yang diberikan, jadi semua item di bawah bertarikh tepat mengikut tarikh penerbitan yang dinyatakan.",
+      "items": []
     }
   ],
-  "generatedAt": "2026-10-16T09:02:14.511Z",
+  "generatedAt": "2026-10-17T00:03:34.028Z",
   "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }
