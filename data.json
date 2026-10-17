@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T00:03:34.028Z",
+  "generatedAt": "2026-10-17T09:00:48.083Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -6697,7 +6697,7 @@
     },
     {
       "date": "2026-10-17",
-      "briefing": "The most recent verified AVSEC-relevant updates cluster around UAS/airport intrusion reporting (FAA sightings data refreshed 2026-10-02) and major policy/cyber-resilience workstreams (ICAO UAS guidance, EU 2026/247 reporting mandates, IATA SeOA/SEIR push) rather than a single fresh incident. No genuinely new (published since 2026-10-16 17:00 MYT) breaking aviation-security incident appears in the provided results, so all items below are dated strictly to their stated publication dates.",
+      "briefing": "No aviation security developments published since 2026-10-17 08:00 MYT appear in the supplied search results, which consist of older background and reference material. The most recent verifiable item is the FAA's UAS sightings report page last updated 2026-10-02, indicating continued drone incursion reporting but no fresh incident today.",
       "items": []
     }
   ],
