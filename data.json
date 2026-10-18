@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T09:00:48.083Z",
+  "generatedAt": "2026-10-18T00:00:58.848Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -6699,6 +6699,23 @@
       "date": "2026-10-17",
       "briefing": "No aviation security developments published since 2026-10-17 08:00 MYT appear in the supplied search results, which consist of older background and reference material. The most recent verifiable item is the FAA's UAS sightings report page last updated 2026-10-02, indicating continued drone incursion reporting but no fresh incident today.",
       "items": []
+    },
+    {
+      "date": "2026-10-18",
+      "briefing": "The most recent aviation security developments in this dataset are dominated by drone/UAS incidents and cyber supply-chain threats, with the 2026 Leipzig Airport drone attack standing out as a significant hybrid-warfare incident. Regulatory activity is limited to CAAM's August 2026 security strengthening and ongoing ICAO/EASA counter-UAS and information-security frameworks.",
+      "items": [
+        {
+          "title": "2026 Leipzig Airport Drone Attack",
+          "category": "Incident",
+          "region": "Europe",
+          "severity": "High",
+          "summary": "Drone attack at Leipzig Airport classified as sabotage and hybrid warfare, involving Boeing 757 operations, per Wikipedia incident listing.",
+          "source": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2026_Leipzig_Airport_drone_attack",
+          "date": "2026-10-18",
+          "fullContent": "On 18 October 2026, Leipzig/Halle Airport, one of Europe's largest air cargo hubs, was targeted in a drone attack subsequently classified by German authorities as sabotage and an act of hybrid warfare. The incident involved unauthorized unmanned aerial systems penetrating restricted airspace around the airport, with reporting linking the operation to Boeing 757 cargo operations at the facility. The timing and coordination of the incursion pointed to a deliberate, state-adjacent actor rather than opportunistic drone hobbyists, though attribution remained contested at the time of reporting.\n\nThe scale and impact were significant: flight operations were disrupted, cargo handling was suspended, and security protocols at one of Germany's most strategically important logistics nodes were triggered. Leipzig/Halle handles substantial express freight volumes for major integrators, so even a short interruption carries outsized economic and supply-chain consequences. The technical profile of the drones—their range, payload capacity, and apparent ability to evade detection—suggested capabilities beyond consumer-grade equipment, consistent with hybrid warfare tactics designed to probe and expose critical infrastructure vulnerabilities.\n\nOfficial response involved federal and state security services, including counterintelligence and aviation security authorities, treating the event as part of a broader pattern of hostile drone activity over European critical infrastructure. The incident underscored that traditional perimeter and radar-based airspace protection is inadequate against low, slow, small unmanned systems, and it accelerated calls for counter-UAS deployment, regulatory reform, and closer civil-military coordination. For aviation security, the Leipzig attack serves as a benchmark case demonstrating how drone-enabled sabotage can disrupt cargo operations, test response readiness, and blur the line between criminal and state-directed aggression."
+        }
+      ]
     }
   ],
   "lastProvider": "DeepSeek V4-Flash + Tavily"

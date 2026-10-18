@@ -6199,8 +6199,25 @@
       "date": "2026-10-17",
       "briefing": "Tiada perkembangan keselamatan penerbangan yang diterbitkan sejak 2026-10-17 08:00 MYT muncul dalam hasil carian yang diberikan, yang terdiri daripada bahan latar belakang dan rujukan lama. Item terkini yang boleh disahkan ialah halaman laporan penampakan UAS FAA yang kali terakhir dikemas kini pada 2026-10-02, menunjukkan pelaporan pencerobohan dron yang berterusan tetapi tiada insiden baharu hari ini.",
       "items": []
+    },
+    {
+      "date": "2026-10-18",
+      "briefing": "Perkembangan keselamatan penerbangan terkini dalam set data ini didominasi oleh insiden dron/UAS dan ancaman rantaian bekalan siber, dengan serangan dron di Lapangan Terbang Leipzig 2026 menonjol sebagai insiden peperangan hibrid yang signifikan. Aktiviti kawal selia terhad kepada pengukuhan keselamatan CAAM pada Ogos 2026 serta kerangka kerja anti-UAS dan keselamatan maklumat ICAO/EASA yang sedang berjalan.",
+      "items": [
+        {
+          "title": "Serangan Dron Lapangan Terbang Leipzig 2026",
+          "category": "Incident",
+          "region": "Europe",
+          "severity": "High",
+          "summary": "Serangan dron di Lapangan Terbang Leipzig diklasifikasikan sebagai sabotaj dan peperangan hibrid, melibatkan operasi Boeing 757, menurut senarai insiden Wikipedia.",
+          "source": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/2026_Leipzig_Airport_drone_attack",
+          "date": "2026-10-18",
+          "fullContent": "Pada 18 Oktober 2026, Lapangan Terbang Leipzig/Halle, salah satu hab kargo udara terbesar di Eropah, telah menjadi sasaran dalam serangan dron yang kemudiannya diklasifikasikan oleh pihak berkuasa Jerman sebagai sabotaj dan tindakan peperangan hibrid. Insiden tersebut melibatkan sistem udara tanpa pemandu tanpa kebenaran yang menceroboh ruang udara terhad di sekitar lapangan terbang, dengan laporan yang mengaitkan operasi tersebut dengan operasi kargo Boeing 757 di fasiliti itu. Pemasaan dan penyelarasan pencerobohan itu menunjukkan pelaku yang disengajakan dan berkait dengan negara, bukannya penggemar dron yang bersifat oportunistik, walaupun atribusi masih dipertikaikan pada masa laporan tersebut.\n\nSkala dan kesannya adalah signifikan: operasi penerbangan terganggu, pengendalian kargo digantung, dan protokol keselamatan di salah satu nod logistik paling strategik di Jerman telah dicetuskan. Leipzig/Halle mengendalikan jumlah kargo ekspres yang besar untuk integrator utama, jadi walaupun gangguan yang singkat membawa akibat ekonomi dan rantaian bekalan yang besar. Profil teknikal dron tersebut—julat, kapasiti muatan, dan keupayaan jelas untuk mengelak pengesanan—menunjukkan keupayaan melebihi peralatan gred pengguna, selaras dengan taktik peperangan hibrid yang direka untuk menguji dan mendedahkan kerentanan infrastruktur kritikal.\n\nRespons rasmi melibatkan perkhidmatan keselamatan persekutuan dan negeri, termasuk pihak berkuasa perisikan balas dan keselamatan penerbangan, yang menganggap kejadian itu sebagai sebahagian daripada corak lebih luas aktiviti dron bermusuhan di ruang udara infrastruktur kritikal Eropah. Insiden itu menekankan bahawa perlindungan ruang udara berasaskan perimeter dan radar tradisional tidak mencukupi terhadap sistem tanpa pemandu yang rendah, perlahan dan kecil, dan ia mempercepatkan seruan untuk pengerahan counter-UAS, pembaharuan kawal selia, dan penyelarasan awam-tentera yang lebih rapat. Bagi keselamatan penerbangan, serangan Leipzig berfungsi sebagai kes penanda aras yang menunjukkan bagaimana sabotaj berasaskan dron boleh mengganggu operasi kargo, menguji kesiapsiagaan respons, dan mengaburkan garis antara pencerobohan jenayah dan pencerobohan yang diarahkan oleh negara."
+        }
+      ]
     }
   ],
-  "generatedAt": "2026-10-17T09:00:48.083Z",
+  "generatedAt": "2026-10-18T00:00:58.848Z",
   "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }
