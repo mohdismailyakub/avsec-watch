@@ -15,15 +15,15 @@
     ],
     "Regulatory": [
       {
-        "title": "EASA clarifies Part-IS linkage to NIS2 Directive",
+        "title": "Laos to Amend Civil Aviation Law for Enhanced Security",
         "category": "Regulatory",
-        "region": "Europe",
-        "severity": "Medium",
-        "summary": "EASA explains how NIS2 references apply to Part-IS information security requirements for aviation organizations.",
-        "source": "EASA",
-        "url": "https://www.easa.europa.eu/en/the-agency/faqs/information-security-part",
-        "date": "2026-10-14",
-        "fullContent": "The European Union Aviation Safety Agency (EASA) has issued clarification on how the Part-IS information security requirements intersect with the NIS2 Directive, addressing a regulatory ambiguity that has persisted since Part-IS entered into force. The guidance, published on 14 October 2026, explains how references to NIS2 obligations embedded within Part-IS should be interpreted by aviation organizations, including airlines, airports, air navigation service providers, and continuing airworthiness management organizations. EASA, as the competent authority for aviation safety under Regulation (EU) 2018/1139, is the primary actor, though national supervisory authorities and the European Commission's NIS2 implementation framework also shape the outcome. The timeline matters: Part-IS applies to information security management systems from 2024 for certain domains and 2026 for others, while NIS2 transposition into national law by member states was due by October 2024, creating overlapping but not identical obligations. The clarification seeks to harmonize these regimes for entities that are both aviation organizations and essential or important entities under NIS2. Technically, Part-IS establishes management system requirements mirroring ISO 27001-style structures, while NIS2 imposes risk management, incident reporting, and supply chain security duties; EASA's guidance maps the two to avoid duplicative compliance and clarifies that Part-IS certification does not automatically confer NIS2 conformity. Scale and impact are significant, as thousands of European aviation entities fall under both frameworks, and divergent national implementations have caused confusion. Officially, EASA emphasizes a coordinated, risk-based approach and encourages organizations to align their information security management systems across both requirements. The implications for aviation security are substantial: clearer linkage reduces compliance uncertainty, strengthens cyber resilience across the sector, and reinforces a single, coherent regulatory baseline for protecting critical aviation systems against evolving cyber threats."
+        "region": "Asia-Pacific",
+        "severity": "Low",
+        "summary": "The Laotian government is moving to amend its Civil Aviation Law, aiming to strengthen aviation safety and security and modernize its regulatory framework.",
+        "source": "The Star",
+        "url": "https://vertexaisearch.cloud.google.net/grounding-api-redirect/AUZIYQG348e6EbRYvGgraoMgsHWUvuYJ9JSuWU-Q7DScMpNNiN9BAYmCZAda8MNecLcqgdDsOdRd3U_kuSfceYHod8J4gE80q7wbafca5ElSaZav0jjVACrd5ax4wpI1hxj4Dwjj8QwPS95nCOvOBDPXlPhCcOdc3Acdu2279h39CHq93bstU57TiT6rlmyC_IbCzpWqSDFRu5Eycnx49E919sGLGTwmILWTeMmfwUSGYRem0X3M",
+        "date": "2026-10-18",
+        "fullContent": "The Laotian government is reportedly initiating a significant regulatory overhaul by moving to amend its existing Civil Aviation Law, as reported on 2026-10-18. This proactive legislative action, led by Laotian authorities, underscores a national commitment to bolster the integrity of its civil aviation sector. The official objective is to fundamentally strengthen aviation safety and security, while simultaneously modernizing the entire regulatory framework governing air operations within the country.\n\nThis amendment represents a nationwide regulatory adjustment with substantial scale, impacting all facets of civil aviation operations, infrastructure, and personnel throughout Laos. Technically, the modernization effort will likely involve updating provisions related to security screening standards, air cargo security procedures, airport access control, cybersecurity protocols for aviation systems, and personnel vetting. Such changes are crucial for aligning Laos's civil aviation practices with contemporary international benchmarks, particularly those outlined in ICAO Annex 17 (Security), and addressing potential vulnerabilities identified through ongoing assessments. The anticipated impact includes elevating Laos's global aviation security standing and fostering greater confidence among international operators and passengers.\n\nFor aviation security, the implications are primarily positive, signaling a proactive stance against evolving threats in the Asia-Pacific region. Enhanced security provisions could lead to more robust threat mitigation capabilities, improved intelligence sharing mechanisms with international partners, and a reduction in potential security gaps. However, successful implementation will necessitate significant investment in training, technology upgrades, and sustained oversight. This move will also require airlines and airports operating within Laos to adapt to potentially stricter compliance requirements, ensuring a consistent and elevated security baseline across the entire Laotian aviation ecosystem."
       }
     ],
     "Threat": [
@@ -64,7 +64,7 @@
       }
     ]
   },
-  "briefing": "The most recent aviation security developments in this dataset are dominated by drone/UAS incidents and cyber supply-chain threats, with the 2026 Leipzig Airport drone attack standing out as a significant hybrid-warfare incident. Regulatory activity is limited to CAAM's August 2026 security strengthening and ongoing ICAO/EASA counter-UAS and information-security frameworks.",
-  "generatedAt": "2026-10-18T00:01:10.614Z",
-  "lastProvider": "DeepSeek V4-Flash + Tavily"
+  "briefing": "Global aviation security is currently challenged by perimeter breaches at European airports and significant drone attacks disrupting operations in Russia. Meanwhile, regulatory efforts continue worldwide, with Laos moving to modernize its civil aviation laws to bolster safety and security.",
+  "generatedAt": "2026-10-18T09:02:40.931Z",
+  "lastProvider": "Gemini (2.5 Flash)"
 }
