@@ -6252,7 +6252,7 @@
     },
     {
       "date": "2026-10-19",
-      "briefing": "Perkembangan keselamatan penerbangan terkini menekankan cabaran berterusan dengan keselamatan perimeter fizikal di lapangan terbang di Eropah dan Amerika Utara. Insiden-insiden ini, yang melibatkan akses kenderaan tanpa kebenaran dan pencerobohan landasan, menekankan keperluan berterusan untuk langkah keselamatan fizikal yang mantap.",
+      "briefing": "Perkembangan keselamatan penerbangan terkini yang paling ketara tertumpu pada pencerobohan dron berhampiran lapangan terbang dan peraturan counter-UAS yang sedang berkembang, dengan campuran insiden terkini dan tindak balas dasar. Ancaman siber terhadap penyedia perkhidmatan penerbangan bersama kekal sebagai risiko sistemik yang berterusan merentas sektor ini.",
       "items": [
         {
           "title": "Kenderaan Menceroboh Pagar Keselamatan di Lapangan Terbang Leipzig/Halle, Jerman",
@@ -6279,6 +6279,6 @@
       ]
     }
   ],
-  "generatedAt": "2026-10-19T00:04:29.408Z",
-  "lastProvider": "Gemini (2.5 Flash) (terjemahan)"
+  "generatedAt": "2026-10-19T09:00:53.158Z",
+  "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }
