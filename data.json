@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T00:01:18.766Z",
+  "generatedAt": "2026-10-20T09:01:35.580Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -6780,7 +6780,7 @@
     },
     {
       "date": "2026-10-20",
-      "briefing": "The dominant theme is the growing convergence of drone and cyber threats against aviation infrastructure, with a Dubai drone fire incident underscoring persistent counter-UAS vulnerabilities. Regulatory and industry responses are accelerating, from CAAM safety directives to global counter-UAS cooperation and supply-chain cybersecurity pressure.",
+      "briefing": "Global aviation security saw a critical regulatory announcement today with the expected certification of the Boeing 737 MAX 10. Meanwhile, a grave security incident unfolded in Africa as drone strikes near Khartoum airport caused significant casualties.",
       "items": [
         {
           "title": "Dubai Airport Halts Flights After Drone Fire Incident",
@@ -6825,9 +6825,31 @@
           "url": "https://blog.polyswarm.io/turbulence-ahead-cyber-threats-targeting-aviation-and-aerospace-in-2026",
           "date": "2026-10-19",
           "fullContent": "On 19 October 2026, the threat intelligence firm PolySwarm published an analysis identifying ransomware, watering-hole attacks, and supply-chain compromises as the principal cyber risks facing the global aviation and aerospace sector through the remainder of 2026. The report, drawing on PolySwarm's crowdsourced malware telemetry and threat-hunting data, did not attribute the activity to a single actor but described a diversified threat landscape in which financially motivated ransomware crews, state-aligned intrusion sets, and opportunistic exploit brokers converge on aviation's sprawling digital estate, including airline IT and operational technology, airport systems, maintenance and repair organizations, and aerospace manufacturers. PolySwarm assessed that aviation's dependence on interconnected third-party software and managed service providers makes it an attractive target, with watering-hole campaigns observed compromising industry-relevant websites and aviation supplier portals to deliver malware to employees of airlines and manufacturers. Supply-chain compromises centered on trusted software updates and contractor access pathways, enabling adversaries to reach multiple operators through a single upstream foothold. The report noted that ransomware operators increasingly exfiltrate data before encryption to pressure victims with regulatory and reputational exposure, and that operational disruption to check-in, baggage handling, and flight-planning systems remains a realistic consequence, though it emphasized that no evidence indicated a credible threat to flight safety-critical avionics. PolySwarm urged aviation organizations to prioritize third-party risk management, network segmentation between IT and operational technology, and continuous monitoring of supplier-facing infrastructure. While the briefing reflects vendor analysis rather than a formal government advisory, it aligns with longstanding regulator and industry warnings that cyber risk is now a core aviation security concern, reinforcing the need for AVSEC programs to integrate cyber threat intelligence, supply-chain assurance, and cross-border information sharing into routine risk assessments."
+        },
+        {
+          "title": "Deadly Drone Strikes Near Khartoum Airport Kill Dozens",
+          "category": "Incident",
+          "region": "Africa",
+          "severity": "High",
+          "summary": "Drone strikes in Sudan, including near Khartoum airport, have killed over 160 people, highlighting ongoing conflict's aviation security risks.",
+          "source": "The New Arab",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH5N7-gxCveh-lzxKcMeRLDPIyEQdBNmD2d8M_BVF7GwZMU2JLe4dFSzoOOiuRhlB-fkoPFsmnOtRxKCe_gdQCjXIQ4zFEwaD1mVHPCNWudHJd_hmoYa0PDP7wVPuA8O0ckfFgMSKOe-e8UlAlPApXSquNBXgNQH_vgAcA0WJeWO4ULH6-x9_SRGQ==",
+          "date": "2026-10-20",
+          "fullContent": "The incident on 2026-10-20 involved multiple deadly drone strikes in Sudan, with significant activity reported near Khartoum International Airport. These attacks tragically resulted in over 160 fatalities, highlighting the severe human cost and the direct proximity of conflict to critical aviation infrastructure. While specific belligerents are not identified in the provided summary, the context points to ongoing armed conflict between various factions within Sudan, with civilians unfortunately bearing the brunt of the violence in contested areas around the capital.\n\nThe scale of casualties underscores the destructive capability of the drones deployed, implying the use of weaponized Unmanned Aircraft Systems (UAS) capable of delivering lethal payloads over a wide area. Their operation in the immediate vicinity of Khartoum airport represents a grave technical concern, demonstrating the ability of non-state or irregular actors to project force into airspace traditionally considered critical national infrastructure. This proximity poses direct threats to aircraft, airport personnel, and ground operations, even if the airport itself was not the primary target, by creating an uncontrolled and hostile air environment.\n\nRegarding official response, there has been no specific statement from Sudanese aviation authorities addressing immediate mitigation measures for the airport’s security perimeter or airspace control in the aftermath of these specific strikes. This lack of explicit AVSEC response underscores the inherent difficulties of enforcing conventional airspace security protocols in an active war zone. The implications for aviation security are profound and multi-faceted: the event confirms that modern conflicts increasingly leverage readily available drone technology to operate near and potentially impact airports. This necessitates urgent review of counter-UAS (C-UAS) capabilities for airports in or near conflict zones, robust perimeter defense, and enhanced real-time intelligence sharing to detect and neutralize such threats. The incident serves as a stark reminder of the evolving threat landscape where airspace integrity around civilian airports can be compromised by readily available, weaponized drone technology, posing an undeniable risk to civil aviation operations and infrastructure globally, particularly in volatile regions."
+        },
+        {
+          "title": "FAA Expected to Certify Boeing 737 MAX 10",
+          "category": "Regulatory",
+          "region": "North America",
+          "severity": "Medium",
+          "summary": "The US FAA is set to announce certification of the Boeing 737 MAX 10, a significant regulatory milestone for the aircraft type.",
+          "source": "PYOK / Reuters",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGcs0hYoTOCZn1UT9ykaUPJGqPiOpMzAP8NqEurEFLzv5mvi9P-6u2EVcwNDzhJfI7uWwYPyPZUc-FVEcVtk98xEl8c0Dw7Tm08AzxW9ChfDP6kEDoN9j_UsmY1GG76e6BHtemK_sfb_1Mh9Ac_kABSy1_lwxHCTnabhbhal9ud1RP5rlu2TFlfux_qgadfTuV4GAhTMx9oRKVLg_3q42PIe-lZY29aWA-IrGiwqmTHR8_-R65G0PMmk5LPeZeVQwtoBld9aUDFqYYHjyLEbI6dM5Zmqdxd",
+          "date": "2026-10-20",
+          "fullContent": "The US Federal Aviation Administration (FAA) is anticipated to announce the certification of the Boeing 737 MAX 10 on 2026-10-20, a significant regulatory milestone for this aircraft type. This prospective action, as reported by PYOK and Reuters, signifies the culmination of an extensive regulatory and developmental process involving the FAA as the primary certifier and Boeing as the manufacturer. This official confirmation will greenlight the largest variant of the 737 MAX family for commercial service, integrating it into the global aviation fleet.\n\nThe certification will have a substantial impact, enabling airlines worldwide to operate the MAX 10, potentially increasing passenger capacity and expanding route networks. From an aviation security (AVSEC) standpoint, this development introduces several critical considerations. The introduction of a new aircraft type necessitates a comprehensive review and potential update of security protocols for ground operations, maintenance, and pre-flight procedures to address any specific vulnerabilities or design characteristics of the MAX 10. The global deployment of these aircraft will also heighten the focus on supply chain security, demanding robust vigilance against the introduction of counterfeit components or malicious tampering during manufacturing, transport, and maintenance.\n\nFurthermore, the increased operational footprint of the MAX 10 could exacerbate existing insider threat risks across airport operations, MRO facilities, and ground handling services. Given the prior controversies associated with the 737 MAX program, this certification may also attract heightened attention from activist groups or individuals, potentially increasing the risk of protest activities or targeted acts of sabotage. AVSEC teams must therefore monitor these potential physical and cyber threats, particularly concerning the advanced avionics systems and interconnected networks within modern aircraft, which present new vectors for cyber exploitation."
         }
       ]
     }
   ],
-  "lastProvider": "DeepSeek V4-Flash + Tavily"
+  "lastProvider": "Gemini (2.5 Flash)"
 }
