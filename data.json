@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T09:01:35.580Z",
+  "generatedAt": "2026-10-21T00:04:25.470Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -6849,7 +6849,12 @@
           "fullContent": "The US Federal Aviation Administration (FAA) is anticipated to announce the certification of the Boeing 737 MAX 10 on 2026-10-20, a significant regulatory milestone for this aircraft type. This prospective action, as reported by PYOK and Reuters, signifies the culmination of an extensive regulatory and developmental process involving the FAA as the primary certifier and Boeing as the manufacturer. This official confirmation will greenlight the largest variant of the 737 MAX family for commercial service, integrating it into the global aviation fleet.\n\nThe certification will have a substantial impact, enabling airlines worldwide to operate the MAX 10, potentially increasing passenger capacity and expanding route networks. From an aviation security (AVSEC) standpoint, this development introduces several critical considerations. The introduction of a new aircraft type necessitates a comprehensive review and potential update of security protocols for ground operations, maintenance, and pre-flight procedures to address any specific vulnerabilities or design characteristics of the MAX 10. The global deployment of these aircraft will also heighten the focus on supply chain security, demanding robust vigilance against the introduction of counterfeit components or malicious tampering during manufacturing, transport, and maintenance.\n\nFurthermore, the increased operational footprint of the MAX 10 could exacerbate existing insider threat risks across airport operations, MRO facilities, and ground handling services. Given the prior controversies associated with the 737 MAX program, this certification may also attract heightened attention from activist groups or individuals, potentially increasing the risk of protest activities or targeted acts of sabotage. AVSEC teams must therefore monitor these potential physical and cyber threats, particularly concerning the advanced avionics systems and interconnected networks within modern aircraft, which present new vectors for cyber exploitation."
         }
       ]
+    },
+    {
+      "date": "2026-10-21",
+      "briefing": "The most significant fresh aviation security signal is the continued surge in reported drone sightings near U.S. airports, with FAA data showing close encounters nearly doubled between Q1 and Q2 2026. Cyber risk to aviation remains an elevated structural threat, though the major ransomware incidents referenced are historic background rather than new developments.",
+      "items": []
     }
   ],
-  "lastProvider": "Gemini (2.5 Flash)"
+  "lastProvider": "DeepSeek V4-Flash + Tavily"
 }
