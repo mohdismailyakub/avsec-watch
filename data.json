@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T09:02:10.463Z",
+  "generatedAt": "2026-10-24T00:00:53.437Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -6998,7 +6998,12 @@
           "fullContent": "On 23 October 2026, a Ukrainian-operated Antonov AN-124 Ruslan heavy cargo aircraft caught fire during landing at Chubu Centrair International Airport, the primary international gateway serving the Nagoya region of Japan. The aircraft, one of the world's largest freighter types and operated under Ukrainian registration, was reportedly completing a routine cargo flight when the incident occurred during the landing roll. Emergency services responded immediately, and the runway was temporarily closed, disrupting arrivals and departures while firefighting and recovery operations proceeded. No fatalities have been reported at this stage, though the extent of damage to the airframe and any injuries to crew members remain under assessment.\n\nThe timeline indicates the fire broke out as the aircraft touched down or during the subsequent rollout, prompting airport authorities to suspend runway operations and activate emergency protocols. The closure of a runway at a major international hub carries significant scale and impact, causing diversions, delays, and cascading schedule disruptions across regional and international networks. Chubu Centrair handles substantial passenger and cargo traffic, and even a temporary closure can ripple through Asia-Pacific logistics chains.\n\nTechnically, the AN-124's four D-18T turbofan engines and complex landing gear and braking systems present known fire risks during heavy landings, particularly where brake overheating or hydraulic failures occur. Investigators will examine maintenance records, landing performance data, and cargo manifests.\n\nJapanese aviation authorities, in coordination with Ukrainian operators and the aircraft's state of registry, have launched a formal investigation. For aviation security, the incident underscores the need for robust emergency response readiness at cargo-heavy airports, heightened oversight of aging heavy freighters operating international routes, and continued attention to supply chain security where cargo origins and handling may warrant scrutiny."
         }
       ]
+    },
+    {
+      "date": "2026-10-24",
+      "briefing": "No genuinely fresh aviation security developments published since 2026-10-23 17:00 MYT appear in the provided search results; all items are dated weeks or months earlier. The dominant themes remain hostile drone incursions at European airports and ransomware-driven supply chain attacks on aviation IT providers.",
+      "items": []
     }
   ],
-  "lastProvider": "Gemini (2.5 Flash)"
+  "lastProvider": "DeepSeek V4-Flash + Tavily"
 }
