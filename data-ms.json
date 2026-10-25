@@ -6506,7 +6506,7 @@
     },
     {
       "date": "2026-10-25",
-      "briefing": "Keselamatan penerbangan global baru-baru ini menyaksikan ancaman berterusan daripada serangan dron dan peluru berpandu yang menjejaskan operasi lapangan terbang di Timur Tengah. Pada masa yang sama, insiden yang menekankan ancaman dalaman dan kelemahan keselamatan sistemik di lapangan terbang antarabangsa utama menyerlahkan cabaran berterusan dalam faktor manusia dan kawalan sempadan.",
+      "briefing": "Tiada perkembangan keselamatan penerbangan yang diterbitkan sejak 2026-10-25 08:00 MYT muncul dalam hasil yang diberikan. Item terkini ialah data penampakan dron FAA hujung September/Oktober 2026 dan insiden dron Reagan National pada 17 September, kedua-duanya mendahului tarikh tutup taklimat.",
       "items": [
         {
           "title": "Houthi Mensasarkan Lapangan Terbang Aden dan Kemudahan dengan Peluru Berpandu Balistik",
@@ -6544,6 +6544,6 @@
       ]
     }
   ],
-  "generatedAt": "2026-10-25T00:01:41.242Z",
-  "lastProvider": "Gemini (2.5 Flash) (terjemahan)"
+  "generatedAt": "2026-10-25T09:00:49.448Z",
+  "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }

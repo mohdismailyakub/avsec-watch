@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T00:01:41.242Z",
+  "generatedAt": "2026-10-25T09:00:49.448Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -7006,7 +7006,7 @@
     },
     {
       "date": "2026-10-25",
-      "briefing": "Global aviation security has recently seen continued threats from drone and missile attacks impacting airport operations in the Middle East. Concurrently, incidents highlighting insider threats and systemic security weaknesses at major international airports underscore persistent challenges in human factors and border control.",
+      "briefing": "No aviation security developments published since 2026-10-25 08:00 MYT appear in the provided results. The most recent items are late-September/October 2026 FAA drone-sighting data and a September 17 Reagan National drone incident, both predating the briefing cutoff.",
       "items": [
         {
           "title": "Houthis Target Aden Airport and Facilities with Ballistic Missiles",
@@ -7044,5 +7044,5 @@
       ]
     }
   ],
-  "lastProvider": "Gemini (2.5 Flash)"
+  "lastProvider": "DeepSeek V4-Flash + Tavily"
 }
