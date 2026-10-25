@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T00:00:53.437Z",
+  "generatedAt": "2026-10-25T00:01:41.242Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -7003,7 +7003,46 @@
       "date": "2026-10-24",
       "briefing": "No genuinely fresh aviation security developments published since 2026-10-23 17:00 MYT appear in the provided search results; all items are dated weeks or months earlier. The dominant themes remain hostile drone incursions at European airports and ransomware-driven supply chain attacks on aviation IT providers.",
       "items": []
+    },
+    {
+      "date": "2026-10-25",
+      "briefing": "Global aviation security has recently seen continued threats from drone and missile attacks impacting airport operations in the Middle East. Concurrently, incidents highlighting insider threats and systemic security weaknesses at major international airports underscore persistent challenges in human factors and border control.",
+      "items": [
+        {
+          "title": "Houthis Target Aden Airport and Facilities with Ballistic Missiles",
+          "category": "Incident",
+          "region": "Middle East",
+          "severity": "High",
+          "summary": "Houthi militants launched ballistic missile attacks against Aden International Airport, port, and two coast guard facilities in Yemen.",
+          "source": "Anadolu Agency",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGMdvMBlNzVxAwb5UfQhhYLTs4mnnQoWEjpKrKeUD0SQq91M0usFwanxmeDtxwzrecojNHYvlRPvEY_iiYpodnfiKPuA8iyWGyhwLE3ml0HvkLTElkokozH5IbBwN5xtJ7DZrpSMVUgGjec6CsybOpcvDKY1XoMmosWt4llWLLL_IpbCDlWdVESFBS3dbtrrOjiVT6_AK0a81OdFweDYmIgG5AgzpmP3-NRSNO1_VYMzLlLSRYxPgvseFLoS0n7xrlrVDM5SjZF",
+          "date": "2026-10-24",
+          "fullContent": "On October 24, 2026, Houthi militants launched coordinated ballistic missile attacks targeting vital infrastructure in Yemen, specifically Aden International Airport, the adjacent port facilities, and two coast guard installations. This incident involved Houthi forces as the perpetrators, demonstrating their intent to disrupt key transportation and security assets critical to the region's operations and stability. While the summary provided by Anadolu Agency details this as a singular event on the specified date, the simultaneous targeting of multiple high-value sites indicates a significant scale, aiming to impact civil aviation, maritime activities, and national security capabilities within the Aden area.\n\nThe use of ballistic missiles underscores a concerning technical capability possessed by the Houthi group, implying an intent for precision targeting and substantial destructive potential. Such weapon systems pose a direct and severe kinetic threat to fixed installations like airports, which are inherently vulnerable to long-range attacks. Although the summary does not detail the official response, incidents of this magnitude would typically trigger immediate security alerts, damage assessments, and strong condemnation from Yemeni authorities and international bodies, potentially leading to increased defensive measures and calls for de-escalation.\n\nFor aviation security, these attacks carry profound implications. The direct targeting of Aden International Airport elevates the threat assessment for airports situated in or near conflict zones, particularly those within the range of established Houthi missile capabilities. It necessitates a re-evaluation of physical perimeter security, air traffic control resilience, and emergency response protocols. Airlines and international aviation organizations operating in or transiting the region must factor in this kinetic threat when conducting risk assessments, potentially leading to route diversions, increased operational costs, or temporary flight suspensions. This incident highlights the critical need for robust intelligence sharing regarding evolving threat actors and their weapon capabilities to safeguard civil aviation infrastructure and personnel against sophisticated, long-range assaults."
+        },
+        {
+          "title": "Riyadh's King Khalid Airport to Resume Flights After Houthi Attacks",
+          "category": "Incident",
+          "region": "Middle East",
+          "severity": "Medium",
+          "summary": "King Khalid International Airport in Riyadh announced it will resume domestic and international flights on Sunday, October 25, following recent Houthi missile and drone attacks.",
+          "source": "Saudi Gazette",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEegOGUYvzXcG37nfqtx8QSkvKkCoeSjdHynfxTqPpfcshZQYjAwEzjnt3NJlRu8FCZX29CgFiChfA-FGMqXczzYqgXFsyJiT6lL8wH-J30bUW2BT3r2Hop9rp1AgeQ2S_8wmK50XKY6bKMaxYM3HGPKhYlE9QEXu_EpZi2WmxIGdVi2N2b_nM6NlZ80eEatdX1H3uaCxQExQzncgNFtmPGzzUwYvzWphInx8liED7Tg6NsPZ7EWVEa",
+          "date": "2026-10-24",
+          "fullContent": "King Khalid International Airport (RUH) in Riyadh announced it will resume domestic and international flight operations on Sunday, October 25, 2026, following a temporary suspension prompted by recent missile and drone attacks attributed to the Houthi movement in Yemen. The incident marks a significant escalation in the targeting of Saudi Arabia's primary aviation hub, which serves as a major gateway for both commercial and government traffic and handles tens of millions of passengers annually. The attacks involved unmanned aerial systems and ballistic missiles, consistent with the Houthi arsenal that has increasingly employed low-cost drones and medium-range missiles capable of penetrating layers of air defense. While Saudi officials have not disclosed precise damage assessments, the suspension of flights indicates the disruption was serious enough to require safety and security inspections of runways, terminal infrastructure, and navigational aids before operations could safely restart. Saudi air defense forces have historically intercepted a substantial proportion of such projectiles, but the resumption timeline suggests residual risk assessments and infrastructure checks were conducted over several days. The official response, as reported by the Saudi Gazette, emphasized a phased return to normal operations beginning Sunday, with coordination between airport authorities, the General Authority of Civil Aviation, and security agencies. For aviation security, this development underscores the persistent threat posed by asymmetric aerial platforms to civilian airports in conflict-adjacent regions, the vulnerability of hub airports to operational disruption even when intercepts succeed, and the growing need for integrated counter-UAS measures, layered air defense, and rapid recovery protocols at high-value aviation assets across the Middle East."
+        },
+        {
+          "title": "Malaysia Examines KLIA Security After Pilot's Drug Arrest Raises Corruption Concerns",
+          "category": "Incident",
+          "region": "Asia-Pacific",
+          "severity": "High",
+          "summary": "A recent article highlights a prosecution linked to a Malaysia Airlines pilot's drug arrest at KLIA, raising concerns about border security weaknesses and corruption.",
+          "source": "Borneo Post Online",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGi6q3eZ4eTgsApTzfPY8ANpuUlkPDN0EHVvHQA1YcFlpvufv1P56-8ABYVoCdBCNfTmUTFTsX5RRtEEOicVJ50vyVGLQIVLKRigqav9rcmBz0gvx6zGuq7kdqq9bOy2aS5y87R9VhaELUMnMMANxLqbwOsIAPek34DQ7PDjGW7KlOQ",
+          "date": "2026-10-24",
+          "fullContent": "A Malaysia Airlines pilot was arrested at Kuala Lumpur International Airport (KLIA) on drug-related charges, with the subsequent prosecution exposing potential weaknesses in border security and raising concerns about corruption within airport screening processes. The case, reported on October 24, 2026, centers on the pilot's apparent ability to transit through security checkpoints while allegedly carrying controlled substances, prompting Malaysian authorities to examine whether internal collusion facilitated the breach. While specific details regarding the quantity and type of drugs involved remain limited in public reporting, the prosecution has drawn attention to the vulnerability of airside access controls when insiders—particularly flight crew members who receive expedited screening—are involved.\n\nThe timeline suggests the arrest followed a targeted operation, though the exact duration of the pilot's alleged activity remains under investigation. The scale of impact is significant given KLIA's status as a major Asia-Pacific hub handling tens of millions of passengers annually; any indication that crew privileging systems can be exploited undermines confidence in layered security architecture. Technically, the case highlights the tension between crew facilitation—where pilots undergo streamlined screening to maintain operational efficiency—and the need for robust random inspection regimes and behavioral detection protocols. Malaysia's response has included a formal review of KLIA security procedures, with engagement from airport operator Malaysia Airports Holdings Berhad and the Civil Aviation Authority of Malaysia, alongside law enforcement scrutiny of possible collusion among screening personnel.\n\nFor aviation security, the implications are twofold. First, insider threat mitigation must extend to flight crew, whose trusted status can be leveraged to bypass controls. Second, corruption within AVSEC ranks represents a systemic risk requiring enhanced vetting and oversight. The case underscores the need for periodic reassessment of Known Consignor and crew screening exemptions, and reinforces the value of intelligence-led random checks and whistleblower protections. As Malaysia examines its processes, the outcome may inform regional best practices for balancing operational efficiency with uncompromised security assurance across Asia-Pacific airport environments."
+        }
+      ]
     }
   ],
-  "lastProvider": "DeepSeek V4-Flash + Tavily"
+  "lastProvider": "Gemini (2.5 Flash)"
 }
