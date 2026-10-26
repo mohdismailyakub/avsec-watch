@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T00:00:56.776Z",
+  "generatedAt": "2026-10-26T09:02:56.553Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -7045,9 +7045,43 @@
     },
     {
       "date": "2026-10-26",
-      "briefing": "No aviation security developments meeting the strict recency threshold (published after 2026-10-25 17:00 MYT) were returned by the provided search results, which contain only items dated weeks or months in the past. The dominant recent themes in the corpus remain drone/UAS intrusions at European airports and supply-chain cyber attacks affecting airport operations.",
-      "items": []
+      "briefing": "Global aviation security developments today include a focus on advancements in air cargo screening technology and updated regulatory timelines in North America, alongside a recent passenger disturbance incident on a commercial flight. Additionally, new AI-powered X-ray screening solutions are being explored for expanded use in airport security.",
+      "items": [
+        {
+          "title": "United Flight Diverts Due to Passenger Disturbance",
+          "category": "Incident",
+          "region": "North America",
+          "severity": "Medium",
+          "summary": "A United Airlines flight from Las Vegas to Newark diverted back to Las Vegas following a passenger disturbance, delaying the flight overnight.",
+          "source": "WBZ NewsRadio 1030 / KFBK News Radio",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFJQcjJ4OGkEGf1wIyLckNq_38qurtyJzu32bKI1hQqdkMs_njEUM4MqUUJXeGgIeYo1d94tF96_eeIaQozLP-0On50kUWI3x-0BBsSmPql9wWKv313d9yD_eLi6C2AHeUAIjTabvL5Ss5awCcBZSUWPF5SYEd0H48QndvK2IFQ1XYrCzOH0St7rp6oxZWiAUh6iL09UIQpGKT8qQjwWhE",
+          "date": "2026-10-26",
+          "fullContent": "On October 26, 2026, a United Airlines flight destined from Las Vegas (LAS) to Newark (EWR) experienced a passenger disturbance, prompting the flight to divert back to Las Vegas. The incident, reported by WBZ NewsRadio 1030 and KFBK News Radio, involved one or more passengers causing sufficient disruption to necessitate the flight crew's decision to return to the point of origin. This immediate action by the flight crew, involving multiple passengers and United Airlines, resulted in the flight being delayed overnight at LAS.\n\nThe scale of impact was significant for the affected flight, resulting in considerable inconvenience for all passengers due to the overnight delay, and operational disruption for United Airlines. While specific technical details such as the flight number or precise nature of the disturbance are not publicly available, the diversion itself represents the execution of a critical aviation security protocol. Upon landing, airport security and local law enforcement would have initiated an official response to address the disruptive individual(s), ensuring their removal and potential legal action, thus upholding the safety of the flight environment.\n\nThis event underscores the persistent challenge of unruly passenger behavior within commercial aviation. Although not a malicious security threat, such incidents divert critical crew attention from operational duties, impacting flight safety and requiring immediate intervention. The implications for aviation security include the reinforcement of crew training in de-escalation tactics, enhancing passenger screening processes to identify potential issues pre-flight, and ensuring robust coordination mechanisms are in place between flight crews, air traffic control, and ground security agencies for swift and effective incident management."
+        },
+        {
+          "title": "AI X-ray Screening Technology Explores Defense Market for Airport Security",
+          "category": "Technology",
+          "region": "Asia-Pacific",
+          "severity": "Low",
+          "summary": "Deepnoid is expanding its AI-powered X-ray screening technology, used in airport security, into the defense sector, showcasing its solution at a logistics expo.",
+          "source": "The Financial News",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHl9svxyiQegD5vUN01FL7DraqXK-vk2nAKWqjySXRuYQ9mRqTsB_Tz-beuqSoT3Yid_dz6fLpdi9HZEwSCIleM6qIUqaxVhiR-nSi7QJd3kKp0P8Mkxwv5jZanmPyS47CxNuFkdmS3ig==",
+          "date": "2026-10-26",
+          "fullContent": "The aviation security sector notes the recent development concerning Deepnoid, an Asia-Pacific based technology firm, which announced on 2026-10-26 its strategic expansion of AI-powered X-ray screening technology into the defense sector. This move, showcased at a logistics expo, builds directly upon the company's established presence and operational experience within airport security environments. Deepnoid's technology currently plays a role in enhancing screening capabilities for baggage and cargo within aviation, signifying a matured and proven application base that now seeks to broaden its impact.\n\nThe core technology involves artificial intelligence augmenting conventional X-ray systems, enabling automated threat detection, reduced false alarms, and improved throughput by potentially decreasing reliance on human operators for initial assessments. This capability directly addresses the evolving nature of threats in both aviation and defense logistics, where rapid, accurate identification of contraband, explosives, or other prohibited items is paramount. The scale of this initiative suggests Deepnoid aims to capture a significant market share in defense supply chain and personnel screening, drawing upon the robust demands and stringent performance criteria typically associated with military applications, which often exceed civilian requirements.\n\nWhile no immediate official response from aviation regulatory bodies has been specifically documented regarding this cross-sector expansion, its prior adoption within airports indicates a measure of regulatory approval or acceptance of the underlying technology for AVSEC purposes. The implications for aviation security are largely positive. This dual-use strategy is likely to accelerate research and development, attract greater investment, and foster innovations in threat detection that can directly benefit airport screening processes. The rigorous operational demands of the defense sector will push the technology towards greater reliability, resilience, and efficacy, creating a beneficial feedback loop for its application in civil aviation, ultimately enhancing overall aviation security posture through more advanced, intelligent screening solutions."
+        },
+        {
+          "title": "Air Cargo Security Equipment Market Driven by Advanced Screening and Regulations",
+          "category": "Regulatory|Technology",
+          "region": "North America",
+          "severity": "Low",
+          "summary": "The air cargo security equipment market is growing due to stricter regulations and demand for advanced screening, with US CBP extending enhanced screening enforcement to May 2027.",
+          "source": "openPR.com",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEiP2bMojvJQ7ALJaQAzlZSG7KuSktp6iO6jpEsA5VUXSKdvQuPBls-MW8vMtyQsibVwMw66QvrO1UBn0X-P0QjqNmcHvkOBD-_ZUDdje3A1R2Zfkt5Re3zInbqjIDNx7Hit26amsCVURVwz6aR7_d9mHxOBnarOqmg9-DNcuTs9elBIvwp_su64UaBM50Yd_Pp5JkCR6zqJ0OOcbutnw==",
+          "date": "2026-10-26",
+          "fullContent": "The air cargo security landscape in North America is undergoing significant transformation, marked by a burgeoning market for advanced security equipment. This development is primarily driven by an industry-wide demand for sophisticated screening technologies and the ongoing implementation of stricter regulations. Notably, the U.S. Customs and Border Protection (CBP) has extended the enforcement deadline for these enhanced screening requirements to May 2027. This decision impacts a broad spectrum of stakeholders, including air cargo carriers, logistics providers, screening technology manufacturers, and ultimately, global supply chains relying on air freight, with the analysis, dated October 26, 2026, highlighting this trend as a critical future development.\n\nThe focus on \"advanced screening\" implies a shift towards more robust detection capabilities, likely encompassing technologies such as Computed Tomography (CT) systems, Explosive Detection Systems (EDS), and potentially Artificial Intelligence (AI) integration for enhanced threat recognition. CBP’s extension of the enforcement deadline serves as a pragmatic official response, acknowledging the significant investment and operational adjustments required by the industry to comply with the new standards. While pushing back compliance, this regulatory adjustment underscores the commitment to elevate security while allowing necessary lead time for equipment procurement, installation, and personnel training across the cargo sector.\n\nThe implications for aviation security are multifaceted. Positively, the widespread adoption of these advanced technologies will significantly enhance the ability to detect explosives, illicit materials, and other contraband within the cargo stream, thereby reducing vulnerabilities in the air cargo supply chain. This move strengthens the overall aviation security framework by applying a more rigorous and uniform screening standard. However, the extension also indicates potential challenges for the industry in fully adopting these measures within previously envisioned timelines, pointing to potential issues with equipment availability, cost, or operational integration. In the long term, this regulatory and technological push is expected to foster a more resilient and secure air cargo environment against evolving threats."
+        }
+      ]
     }
   ],
-  "lastProvider": "DeepSeek V4-Flash + Tavily"
+  "lastProvider": "Gemini (2.5 Flash)"
 }
