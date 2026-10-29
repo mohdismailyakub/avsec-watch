@@ -6591,8 +6591,13 @@
       "date": "2026-10-28",
       "briefing": "Tiada perkembangan keselamatan penerbangan yang benar-benar baharu diterbitkan selepas 2026-10-28 08:00 MYT dalam hasil ini; item terkini yang boleh disahkan ialah kemas kini FAA pada 2 Oktober 2026 kepada rekod penampakan UAS. Semua hasil lain ialah latar belakang lama atau laporan sejarah dari pertengahan 2026 atau lebih awal.",
       "items": []
+    },
+    {
+      "date": "2026-10-29",
+      "briefing": "Perkembangan keselamatan penerbangan yang paling terkini dan ketara ialah penampakan dron pada 26 Oktober 2026 yang menghentikan sementara operasi penerbangan di Lapangan Terbang Nasional Reagan, meneruskan corak pencerobohan UAS berulang ke ruang udara yang dilindungi. Hasil carian selebihnya adalah latar belakang, sejarah, atau tiada tarikh penerbitan yang boleh disahkan dalam tetingkap taklimat semasa.",
+      "items": []
     }
   ],
-  "generatedAt": "2026-10-28T09:04:29.099Z",
+  "generatedAt": "2026-10-29T00:03:01.895Z",
   "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }
