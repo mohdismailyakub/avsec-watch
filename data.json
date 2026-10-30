@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T09:00:55.184Z",
+  "generatedAt": "2026-10-30T09:02:02.981Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -7096,7 +7096,24 @@
       "date": "2026-10-29",
       "briefing": "The dominant near-term AVSEC risk remains hostile or reckless UAS activity disrupting airport operations, with Germany experiencing the most serious recent case involving an explosives-laden drone near a Ukrainian cargo aircraft. Cyber resilience and regulatory obligations (EASA Part-IS, EU resilience legislation) continue to reshape airport and supplier security requirements.",
       "items": []
+    },
+    {
+      "date": "2026-10-30",
+      "briefing": "Global aviation security reports a significant incident in Eastern Europe today, with drone attacks causing airport disruptions in Moscow. No other major regulatory or technological developments have been reported within the strict recency window.",
+      "items": [
+        {
+          "title": "Moscow Airports Temporarily Closed After Ukrainian Drone Attacks",
+          "category": "Incident",
+          "region": "Europe",
+          "severity": "High",
+          "summary": "Ukrainian drones caused temporary closures at Moscow's major airports and struck a military oil refinery in overnight attacks.",
+          "source": "Kyiv Post",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEN1f5xNouahRIKjV0v4-CidI8F3p3bUxyCo7FwLJ2SX0zHuhzQB8GY4VZzx-NaDpHuIORSbBObt4eMb1oNM57Xumkmwg3ab--20Efr14ZQEH4l5KzB9fSGg1rj6vU-",
+          "date": "2026-10-30",
+          "fullContent": "On October 30, 2026, overnight, Ukrainian drone operations directly targeted Moscow, impacting both civilian aviation infrastructure and a military site. Ukrainian forces deployed unmanned aerial vehicles (UAVs) which necessitated the temporary closure of Moscow's major airports, causing significant disruptions to air traffic. Concurrently, a military oil refinery was also struck in these coordinated attacks, indicating a strategic targeting approach by Ukrainian military assets against critical Russian infrastructure.\n\nThe scale of the impact on civil aviation was substantial, resulting in widespread flight delays and cancellations due to the operational halt at multiple major airport facilities within the Moscow region. While specific technical details regarding the drone types were not provided, their successful penetration of Russian airspace and the subsequent disruption of airport operations underscore the evolving sophistication and range of Ukrainian UAV capabilities. The concurrent strike on a military oil refinery suggests a dual-purpose strategy aimed at disrupting military logistics while simultaneously demonstrating the vulnerability of critical national assets, including civilian aviation hubs.\n\nAlthough an immediate, explicit official response beyond the airport closures is not detailed, the operational halt at key airports served as a de facto response to mitigate immediate safety and security risks. This incident critically highlights a persistent vulnerability in urban air defense systems and existing airport security protocols against drone incursions. The recurring nature of such events near major international airports demands urgent enhancements in counter-UAS capabilities, revised airspace management procedures, and real-time threat detection technologies for civilian aviation to prevent future disruptions and potential catastrophic incidents, signaling an escalating and adaptable threat to aviation security worldwide."
+        }
+      ]
     }
   ],
-  "lastProvider": "DeepSeek V4-Flash + Tavily"
+  "lastProvider": "Gemini (2.5 Flash)"
 }

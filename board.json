@@ -2,15 +2,15 @@
   "categories": {
     "Incident": [
       {
-        "title": "United Flight Diverts Due to Passenger Disturbance",
+        "title": "Moscow Airports Temporarily Closed After Ukrainian Drone Attacks",
         "category": "Incident",
-        "region": "North America",
-        "severity": "Medium",
-        "summary": "A United Airlines flight from Las Vegas to Newark diverted back to Las Vegas following a passenger disturbance, delaying the flight overnight.",
-        "source": "WBZ NewsRadio 1030 / KFBK News Radio",
-        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFJQcjJ4OGkEGf1wIyLckNq_38qurtyJzu32bKI1hQqdkMs_njEUM4MqUUJXeGgIeYo1d94tF96_eeIaQozLP-0On50kUWI3x-0BBsSmPql9wWKv313d9yD_eLi6C2AHeUAIjTabvL5Ss5awCcBZSUWPF5SYEd0H48QndvK2IFQ1XYrCzOH0St7rp6oxZWiAUh6iL09UIQpGKT8qQjwWhE",
-        "date": "2026-10-26",
-        "fullContent": "On October 26, 2026, a United Airlines flight destined from Las Vegas (LAS) to Newark (EWR) experienced a passenger disturbance, prompting the flight to divert back to Las Vegas. The incident, reported by WBZ NewsRadio 1030 and KFBK News Radio, involved one or more passengers causing sufficient disruption to necessitate the flight crew's decision to return to the point of origin. This immediate action by the flight crew, involving multiple passengers and United Airlines, resulted in the flight being delayed overnight at LAS.\n\nThe scale of impact was significant for the affected flight, resulting in considerable inconvenience for all passengers due to the overnight delay, and operational disruption for United Airlines. While specific technical details such as the flight number or precise nature of the disturbance are not publicly available, the diversion itself represents the execution of a critical aviation security protocol. Upon landing, airport security and local law enforcement would have initiated an official response to address the disruptive individual(s), ensuring their removal and potential legal action, thus upholding the safety of the flight environment.\n\nThis event underscores the persistent challenge of unruly passenger behavior within commercial aviation. Although not a malicious security threat, such incidents divert critical crew attention from operational duties, impacting flight safety and requiring immediate intervention. The implications for aviation security include the reinforcement of crew training in de-escalation tactics, enhancing passenger screening processes to identify potential issues pre-flight, and ensuring robust coordination mechanisms are in place between flight crews, air traffic control, and ground security agencies for swift and effective incident management."
+        "region": "Europe",
+        "severity": "High",
+        "summary": "Ukrainian drones caused temporary closures at Moscow's major airports and struck a military oil refinery in overnight attacks.",
+        "source": "Kyiv Post",
+        "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEN1f5xNouahRIKjV0v4-CidI8F3p3bUxyCo7FwLJ2SX0zHuhzQB8GY4VZzx-NaDpHuIORSbBObt4eMb1oNM57Xumkmwg3ab--20Efr14ZQEH4l5KzB9fSGg1rj6vU-",
+        "date": "2026-10-30",
+        "fullContent": "On October 30, 2026, overnight, Ukrainian drone operations directly targeted Moscow, impacting both civilian aviation infrastructure and a military site. Ukrainian forces deployed unmanned aerial vehicles (UAVs) which necessitated the temporary closure of Moscow's major airports, causing significant disruptions to air traffic. Concurrently, a military oil refinery was also struck in these coordinated attacks, indicating a strategic targeting approach by Ukrainian military assets against critical Russian infrastructure.\n\nThe scale of the impact on civil aviation was substantial, resulting in widespread flight delays and cancellations due to the operational halt at multiple major airport facilities within the Moscow region. While specific technical details regarding the drone types were not provided, their successful penetration of Russian airspace and the subsequent disruption of airport operations underscore the evolving sophistication and range of Ukrainian UAV capabilities. The concurrent strike on a military oil refinery suggests a dual-purpose strategy aimed at disrupting military logistics while simultaneously demonstrating the vulnerability of critical national assets, including civilian aviation hubs.\n\nAlthough an immediate, explicit official response beyond the airport closures is not detailed, the operational halt at key airports served as a de facto response to mitigate immediate safety and security risks. This incident critically highlights a persistent vulnerability in urban air defense systems and existing airport security protocols against drone incursions. The recurring nature of such events near major international airports demands urgent enhancements in counter-UAS capabilities, revised airspace management procedures, and real-time threat detection technologies for civilian aviation to prevent future disruptions and potential catastrophic incidents, signaling an escalating and adaptable threat to aviation security worldwide."
       }
     ],
     "Regulatory": [
@@ -75,7 +75,7 @@
       }
     ]
   },
-  "briefing": "Global aviation security developments today include a focus on advancements in air cargo screening technology and updated regulatory timelines in North America, alongside a recent passenger disturbance incident on a commercial flight. Additionally, new AI-powered X-ray screening solutions are being explored for expanded use in airport security.",
-  "generatedAt": "2026-10-26T09:03:56.640Z",
+  "briefing": "Global aviation security reports a significant incident in Eastern Europe today, with drone attacks causing airport disruptions in Moscow. No other major regulatory or technological developments have been reported within the strict recency window.",
+  "generatedAt": "2026-10-30T09:02:23.173Z",
   "lastProvider": "Gemini (2.5 Flash)"
 }

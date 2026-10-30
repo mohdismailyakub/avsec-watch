@@ -6596,8 +6596,25 @@
       "date": "2026-10-29",
       "briefing": "Risiko AVSEC jangka terdekat yang dominan kekal sebagai aktiviti UAS bermusuhan atau melulu yang mengganggu operasi lapangan terbang, dengan Jerman mengalami kes terbaru paling serius membabitkan dron bermuatan bahan letupan berhampiran pesawat kargo Ukraine. Ketahanan siber dan kewajipan kawal selia (EASA Part-IS, perundangan ketahanan EU) terus membentuk semula keperluan keselamatan lapangan terbang dan pembekal.",
       "items": []
+    },
+    {
+      "date": "2026-10-30",
+      "briefing": "Laporan keselamatan penerbangan global melaporkan satu insiden signifikan di Eropah Timur hari ini, dengan serangan dron menyebabkan gangguan lapangan terbang di Moscow. Tiada perkembangan kawal selia atau teknologi utama lain dilaporkan dalam tetingkap kebaharuan yang ketat.",
+      "items": [
+        {
+          "title": "Lapangan Terbang Moscow Ditutup Sementara Selepas Serangan Dron Ukraine",
+          "category": "Incident",
+          "region": "Europe",
+          "severity": "High",
+          "summary": "Dron Ukraine menyebabkan penutupan sementara di lapangan terbang utama Moscow dan menyerang sebuah kilang penapisan minyak tentera dalam serangan semalaman.",
+          "source": "Kyiv Post",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEN1f5xNouahRIKjV0v4-CidI8F3p3bUxyCo7FwLJ2SX0zHuhzQB8GY4VZzx-NaDpHuIORSbBObt4eMb1oNM57Xumkmwg3ab--20Efr14ZQEH4l5KzB9fSGg1rj6vU-",
+          "date": "2026-10-30",
+          "fullContent": "Pada 30 Oktober 2026, sepanjang malam, operasi dron Ukraine secara langsung menyasarkan Moscow, memberi kesan kepada kedua-dua infrastruktur penerbangan awam dan tapak ketenteraan. Pasukan Ukraine mengerahkan kenderaan udara tanpa pemandu (UAV) yang memerlukan penutupan sementara lapangan terbang utama Moscow, menyebabkan gangguan ketara kepada trafik udara. Pada masa yang sama, sebuah kilang penapisan minyak tentera juga diserang dalam serangan yang diselaraskan ini, menunjukkan pendekatan sasaran strategik oleh aset ketenteraan Ukraine terhadap infrastruktur kritikal Rusia.\n\nSkala impak ke atas penerbangan awam adalah besar, mengakibatkan kelewatan dan pembatalan penerbangan yang meluas disebabkan oleh penghentian operasi di beberapa kemudahan lapangan terbang utama di wilayah Moscow. Walaupun butiran teknikal khusus mengenai jenis dron tidak diberikan, penembusan ruang udara Rusia yang berjaya oleh dron tersebut dan gangguan operasi lapangan terbang seterusnya menggariskan kecanggihan dan julat keupayaan UAV Ukraine yang semakin berkembang. Serangan serentak ke atas kilang penapisan minyak tentera menunjukkan strategi dwifungsi yang bertujuan untuk mengganggu logistik ketenteraan sambil pada masa yang sama menunjukkan kelemahan aset negara yang kritikal, termasuk hab penerbangan awam.\n\nWalaupun tindak balas rasmi yang segera dan jelas di luar penutupan lapangan terbang tidak diperincikan, penghentian operasi di lapangan terbang utama berfungsi sebagai tindak balas de facto untuk mengurangkan risiko keselamatan dan sekuriti serta-merta. Insiden ini secara kritikal menyerlahkan kelemahan yang berterusan dalam sistem pertahanan udara bandar dan protokol keselamatan lapangan terbang sedia ada terhadap pencerobohan dron. Sifat berulang kejadian sedemikian berhampiran lapangan terbang antarabangsa utama menuntut peningkatan segera dalam keupayaan tindak balas terhadap UAS, prosedur pengurusan ruang udara yang disemak semula, dan teknologi pengesanan ancaman masa nyata untuk penerbangan awam bagi mengelakkan gangguan masa hadapan dan potensi insiden bencana, menandakan ancaman yang semakin meningkat dan mudah menyesuaikan diri terhadap keselamatan penerbangan di seluruh dunia."
+        }
+      ]
     }
   ],
-  "generatedAt": "2026-10-29T09:00:55.184Z",
-  "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
+  "generatedAt": "2026-10-30T09:02:02.981Z",
+  "lastProvider": "Gemini (2.5 Flash) (terjemahan)"
 }
