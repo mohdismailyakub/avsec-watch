@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T00:04:29.117Z",
+  "generatedAt": "2026-11-01T09:00:47.598Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -7155,7 +7155,7 @@
     },
     {
       "date": "2026-11-01",
-      "briefing": "Global aviation security has seen multiple incidents over the past 24 hours, with drone disruptions impacting European airspace and kinetic attacks affecting a Middle Eastern airport. Additionally, several airlines are grappling with cybersecurity breaches from a common third-party vendor, highlighting persistent digital threats.",
+      "briefing": "No aviation security developments published since 2026-11-01 08:00 MYT appear in the provided search results. The most recent items are from August-October 2026 and predate the current briefing window.",
       "items": [
         {
           "title": "Riyadh Airport Attacked by Houthi Drones and Missiles",
@@ -7226,5 +7226,5 @@
       ]
     }
   ],
-  "lastProvider": "Gemini (2.5 Flash)"
+  "lastProvider": "DeepSeek V4-Flash + Tavily"
 }
