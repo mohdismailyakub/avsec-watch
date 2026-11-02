@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T09:00:47.598Z",
+  "generatedAt": "2026-11-02T00:00:59.986Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -7224,6 +7224,11 @@
           "fullContent": "EOS Defense Systems has announced plans to establish US-based production of its Slinger counter-drone system, a development disclosed on October 31, 2026, that signals a significant shift in the domestic manufacture of counter-unmanned aircraft systems (C-UAS) for North American defense and security markets. The Australian-origin defense contractor is responding to escalating demand from US military, homeland security, and critical infrastructure stakeholders for reliable, domestically produced counter-drone capabilities. The Slinger system integrates a radar and electro-optical targeting suite with a stabilized 30mm cannon and AI-assisted targeting software, offering adjustable autonomy that allows operators to calibrate the degree of automated decision-making from manual engagement to fully autonomous tracking and fire control, depending on rules of engagement and operational context. This human-on-the-loop flexibility is designed to address legal and ethical constraints around autonomous weapons while maximizing response speed against fast-moving Group 1 and Group 2 UAV threats. The system's primary effect is kinetic—engaging drones with precision cannon fire—but it also supports non-kinetic mission profiles through its sensor architecture. While site selection and exact production capacity were not disclosed, the move aligns with broader US initiatives to onshore defense manufacturing and reduce dependence on foreign supply chains for counter-drone technology. The timeline suggests initial production could begin within 12 to 24 months, contingent on facility readiness and certification. For aviation security, the Slinger's US production could accelerate deployment of robust C-UAS protection at airports, military airfields, and critical aviation infrastructure, where unauthorized drone incursions remain a persistent threat to flight operations and passenger safety. However, the integration of autonomous targeting into airspace security introduces complex questions around rules of engagement, collateral risk in dense aviation environments, and regulatory oversight by the FAA and DoD. The development underscores a widening convergence of defense and civil aviation security priorities, with counter-drone capability increasingly viewed as essential infrastructure protection rather than niche military technology."
         }
       ]
+    },
+    {
+      "date": "2026-11-02",
+      "briefing": "Rogue drone activity around airports remains the dominant physical security threat, with new counter-UAS authorities expanding in the US and EU. Aviation cyber risk is simultaneously escalating, with reports pointing to a 600% surge in attacks and regulators tightening information-security obligations.",
+      "items": []
     }
   ],
   "lastProvider": "DeepSeek V4-Flash + Tavily"
