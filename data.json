@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T09:02:05.218Z",
+  "generatedAt": "2026-11-05T00:05:07.232Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -7371,6 +7371,23 @@
           "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFdqqPDsiKdzClM83Ex-WQ1kz2Y-s6Rl1b6dVKsLu07-X26faTPMGr2uvPJjhPRiqS8E8qJOmlJt1FzTxbtCnvs27r3NXPsgveBOxIViMXu2QWuyjDXUrA_sC6aYkIgJOiOz747m3u8AA9F4PRXcoXbFudCOE2fxth-l2TawCe00fVj5PY_-MPLPetSp7eDoZs5d2BnEUoYvHGugJnpnM-GaXaZCEF0fCUNhdj_zQ==",
           "date": "2026-11-04",
           "fullContent": "On November 4, 2026, Vietnam's Ministry of Construction formally proposed a significant investment in anti-drone systems across the nation's airports. This crucial development follows a series of recent incidents involving unauthorized drone activity, which have resulted in flight disruptions and posed substantial threats to aviation safety within Vietnamese airspace. The proposal signifies a proactive governmental response from the Ministry, acknowledging the escalating danger posed by unmanned aerial systems (UAS) to critical aviation infrastructure and operations.\n\nThe initiative aims to implement robust counter-UAS technologies across multiple airports, encompassing both detection and mitigation capabilities. While specific technical details remain under wraps, anti-drone systems typically involve a layered approach, including radar or acoustic sensors for early detection of rogue drones, followed by mitigation tools such as radio frequency (RF) jamming to disable command and control signals, GPS spoofing, or even physical interception methods. This broad deployment is intended to safeguard not just specific flights but the entire aviation ecosystem from both accidental incursions and deliberate malicious acts, ensuring the integrity of the terminal area and approach/departure corridors.\n\nThe proposal from the Ministry of Construction serves as a decisive official response to a growing international aviation security challenge. For aviation security, this initiative carries significant implications, indicating a mature understanding of the evolving threat landscape in the Asia-Pacific region. It will substantially enhance perimeter security and airspace management around Vietnamese airports, potentially leading to the development of new regulatory frameworks for drone operations and setting a precedent for other nations grappling with similar issues. This strategic investment positions Vietnam at the forefront of regional efforts to fortify aviation against the increasingly complex challenges posed by drone technology."
+        }
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "briefing": "The global aviation security landscape continues to grapple with dynamic and evolving threats, most notably from unauthorized drone activity around critical airport infrastructure. Regulators and operators are continuously adapting their strategies and technologies to enhance resilience against both physical incursions and sophisticated cyber threats.",
+      "items": [
+        {
+          "title": "Illegal Drone Activity Disrupts Jersey Airport Flights",
+          "category": "Incident",
+          "region": "Europe",
+          "severity": "High",
+          "summary": "Unauthorized drone sightings over two nights at Jersey Airport led to significant flight disruptions, diversions, and the cancellation of vital medical procedures, initiating an ongoing investigation and security review.",
+          "source": "Trip Board",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHIT6aPx44VUpq92GFVFlDEpNeli5k7r2N2RRHLYjG-wq8zDmfXosBmkhTBzGkFyzA5CeW8WbDvEIVuNG5fPkoIWPgP41lQhLTwiXWldkV2JPO2Le2HBM-20zM1DyS69b9VtU5RsCmcaW1A6d7u2RgliT1yzMVeQm1UWHU=",
+          "date": "2026-11-04",
+          "fullContent": "On the nights of 2 and 3 November 2026, unauthorized drone activity in the vicinity of Jersey Airport (JER) prompted significant disruption to commercial aviation operations at the Channel Islands' principal gateway. Multiple drone sightings were reported over the two-night period, forcing air traffic control to implement safety protocols that halted arrivals and departures during active incursions. Inbound flights were diverted, principally to Guernsey and Southampton, while several services were cancelled outright. The disruption extended beyond aviation, with the cancellation of vital medical procedures dependent on air links to the United Kingdom, underscoring the cascading consequences of airspace denial at an island airport with limited alternative connectivity.\n\nThe incident involved unidentified drone operators, whose numbers, intent and equipment remain under investigation. No injuries or direct aircraft contact were reported. The scale of impact was nonetheless substantial relative to Jersey's constrained operating environment: a single runway, high dependency on UK connections, and limited diversion options amplify even short-duration closures. Technical details remain sparse, though the persistence of sightings across consecutive nights suggests deliberate, repeated deployment rather than isolated recreational use, complicating detection and interdiction by local law enforcement and airport authorities.\n\nThe response comprised an ongoing police investigation, coordination with UK aviation security partners, and an airport security review examining detection capabilities and response procedures. For AVSEC practitioners, the case reinforces the vulnerability of regional and island airports to low-cost drone disruption, the difficulty of attribution, and the need for integrated counter-UAS detection, rapid law enforcement response, and contingency planning that accounts for medical and humanitarian flight dependencies."
         }
       ]
     }
