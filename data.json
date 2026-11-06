@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T00:00:53.334Z",
+  "generatedAt": "2026-11-06T09:03:21.036Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -7393,7 +7393,7 @@
     },
     {
       "date": "2026-11-06",
-      "briefing": "No genuinely fresh aviation security developments published after 2026-11-05 17:00 MYT appear in the supplied results; the most recent items are drone-incident reporting and cybersecurity analysis from earlier in 2026. The dominant themes remain rogue UAS disruption of airport operations and supply-chain ransomware risk, reinforced by EASA Part-IS compliance deadlines now in effect.",
+      "briefing": "No genuine aviation security developments published within the required window (since 2026-11-06 08:00 MYT) appear in these search results; the freshest substantive items are drone-incursion reports from September 2026. All retrieved content is stale relative to the twice-daily recency rule and should be treated as already covered or background.",
       "items": []
     }
   ],
