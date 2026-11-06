@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T09:01:02.912Z",
+  "generatedAt": "2026-11-06T00:00:53.334Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -7390,6 +7390,11 @@
           "fullContent": "On the nights of 2 and 3 November 2026, unauthorized drone activity in the vicinity of Jersey Airport (JER) prompted significant disruption to commercial aviation operations at the Channel Islands' principal gateway. Multiple drone sightings were reported over the two-night period, forcing air traffic control to implement safety protocols that halted arrivals and departures during active incursions. Inbound flights were diverted, principally to Guernsey and Southampton, while several services were cancelled outright. The disruption extended beyond aviation, with the cancellation of vital medical procedures dependent on air links to the United Kingdom, underscoring the cascading consequences of airspace denial at an island airport with limited alternative connectivity.\n\nThe incident involved unidentified drone operators, whose numbers, intent and equipment remain under investigation. No injuries or direct aircraft contact were reported. The scale of impact was nonetheless substantial relative to Jersey's constrained operating environment: a single runway, high dependency on UK connections, and limited diversion options amplify even short-duration closures. Technical details remain sparse, though the persistence of sightings across consecutive nights suggests deliberate, repeated deployment rather than isolated recreational use, complicating detection and interdiction by local law enforcement and airport authorities.\n\nThe response comprised an ongoing police investigation, coordination with UK aviation security partners, and an airport security review examining detection capabilities and response procedures. For AVSEC practitioners, the case reinforces the vulnerability of regional and island airports to low-cost drone disruption, the difficulty of attribution, and the need for integrated counter-UAS detection, rapid law enforcement response, and contingency planning that accounts for medical and humanitarian flight dependencies."
         }
       ]
+    },
+    {
+      "date": "2026-11-06",
+      "briefing": "No genuinely fresh aviation security developments published after 2026-11-05 17:00 MYT appear in the supplied results; the most recent items are drone-incident reporting and cybersecurity analysis from earlier in 2026. The dominant themes remain rogue UAS disruption of airport operations and supply-chain ransomware risk, reinforced by EASA Part-IS compliance deadlines now in effect.",
+      "items": []
     }
   ],
   "lastProvider": "DeepSeek V4-Flash + Tavily"
