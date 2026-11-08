@@ -6900,8 +6900,25 @@
       "date": "2026-11-07",
       "briefing": "Tiada perkembangan keselamatan penerbangan yang diterbitkan sejak 2026-11-07 08:00 MYT muncul dalam hasil carian yang diberikan; item terkini yang boleh disahkan bertarikh Oktober 2026 atau lebih awal dan oleh itu mendahului tetingkap taklimat semasa. Tema dominan kekal ancaman pencerobohan UAS di lapangan terbang dan risiko keselamatan siber rantaian bekalan yang berturutan, kedua-duanya kekurangan laporan baharu hari ini.",
       "items": []
+    },
+    {
+      "date": "2026-11-08",
+      "briefing": "Landskap keselamatan penerbangan global pada masa ini menghadapi ancaman berterusan daripada insiden seperti ugutan bom palsu yang menyebabkan gangguan meluas, di samping kebimbangan berterusan mengenai kerentanan siber. Peristiwa ini menekankan keperluan untuk kewaspadaan berterusan dan protokol keselamatan yang teguh di seluruh sektor penerbangan.",
+      "items": [
+        {
+          "title": "Lapangan Terbang Prague Berdepan Ugutan Bom pada Beberapa Penerbangan",
+          "category": "Incident",
+          "region": "Europe",
+          "severity": "High",
+          "summary": "Polis Czech menyiasat ugutan bom yang menyasarkan sembilan penerbangan di Lapangan Terbang Václav Havel Prague pada 6 November, mencetuskan pemeriksaan keselamatan.",
+          "source": "Nation Path India",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGyxGSx3__8sbVSV-XHogW_ee0bUhQX9f-gYMYVib61WlGdoEVd8Pvof-E0tFLnTkG853SZReBVXzBjbKQebYJBomVEe6Ff2AKte09z4iGfMHBzKnkEVSbEZqSLvnjbXnH-0F6-aBXVsn6KMN2NDiBuwClEoNa1NsejSL9oN2mZNwGSVpXUo-RxgqDALpvpRdj9wrm7geQ_Trp8uo1eKfpJMwB3UZmL",
+          "date": "2026-11-07",
+          "fullContent": "Pada 6 November 2026, polis Czech bertindak balas terhadap ancaman bom yang menyasarkan sembilan penerbangan di Lapangan Terbang Václav Havel di Prague, mencetuskan pemeriksaan keselamatan ke atas beberapa pesawat dan mengganggu operasi di salah sebuah hab paling sibuk di Eropah Tengah. Ancaman tersebut, yang dilaporkan oleh Nation Path India, mendorong tindak balas bersepadu daripada anggota polis dan kakitangan keselamatan lapangan terbang, yang memulakan pemeriksaan ke atas penerbangan terlibat selaras dengan protokol pengurusan ancaman standard. Insiden itu berlaku sepanjang hari tersebut, dengan pihak berkuasa berusaha untuk membersihkan pesawat dan mengesahkan keselamatan penumpang serta anak kapal sebelum membenarkan operasi disambung semula.\n\nSkala insiden itu—sembilan penerbangan disasarkan secara serentak atau berturutan—menandakan gangguan yang signifikan, memerlukan pengagihan semula sumber keselamatan dan potensi kelewatan atau pembatalan perkhidmatan. Walaupun sumber tersebut tidak menyatakan jumlah penumpang atau tempoh kelewatan, ancaman melibatkan berbilang penerbangan seumpama ini lazimnya membebankan kapasiti saringan lapangan terbang, penjadualan pintu masuk, dan aset penguatkuasaan undang-undang, serta boleh memberi kesan berantai kepada rangkaian sesebuah syarikat penerbangan selama berjam-jam. Penglibatan polis Czech menunjukkan ancaman tersebut dianggap cukup dipercayai untuk mewajarkan pemeriksaan fizikal dan bukan sekadar penilaian jauh semata-mata.\n\nButiran teknikal masih terhad dalam laporan yang tersedia: sumber tersebut tidak mendedahkan kaedah penyampaian ancaman, sama ada ancaman tersebut diselaraskan, atau sama ada sebarang peranti ditemui. Ketiadaan bahan letupan yang disahkan, jika berterusan, akan menunjukkan ke arah kempen palsu atau gangguan—taktik yang semakin lazim yang mengenakan kos operasi dan ekonomi sebenar walaupun tanpa kehadiran peranti tulen.\n\nTindak balas rasmi tertumpu pada pemeriksaan yang diketuai polis dan penyelarasan antara agensi dengan keselamatan lapangan terbang. Bagi pengamal keselamatan penerbangan, insiden ini menekankan cabaran berterusan dalam pengurusan ancaman bom dalam penerbangan Eropah, kepentingan protokol tindak balas yang berskala untuk berbilang ancaman serentak, dan keperluan perkongsian risikan untuk mengenal pasti dan mengaitkan pelaku ancaman, sama ada bermotifkan jenayah atau geopolitik."
+        }
+      ]
     }
   ],
-  "generatedAt": "2026-11-07T09:00:51.845Z",
-  "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
+  "generatedAt": "2026-11-08T00:02:36.485Z",
+  "lastProvider": "Gemini (2.5 Flash) (terjemahan)"
 }

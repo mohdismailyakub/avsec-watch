@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T09:00:51.845Z",
+  "generatedAt": "2026-11-08T00:02:36.485Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -7400,7 +7400,24 @@
       "date": "2026-11-07",
       "briefing": "No aviation security developments published since 2026-11-07 08:00 MYT appear in the provided search results; the most recent verifiable items date from October 2026 or earlier and therefore precede the current briefing window. The dominant themes remain UAS intrusion threats at airports and cascading supply-chain cybersecurity risk, both of which lack fresh reporting today.",
       "items": []
+    },
+    {
+      "date": "2026-11-08",
+      "briefing": "The global aviation security landscape currently faces persistent threats from incidents such as bomb hoaxes causing widespread disruptions, alongside ongoing concerns regarding cyber vulnerabilities. These events underscore the need for continuous vigilance and robust security protocols across the aviation sector.",
+      "items": [
+        {
+          "title": "Prague Airport Faces Bomb Threats on Multiple Flights",
+          "category": "Incident",
+          "region": "Europe",
+          "severity": "High",
+          "summary": "Czech police investigated bomb threats targeting nine flights at Prague's Václav Havel Airport on November 6, prompting security inspections.",
+          "source": "Nation Path India",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGyxGSx3__8sbVSV-XHogW_ee0bUhQX9f-gYMYVib61WlGdoEVd8Pvof-E0tFLnTkG853SZReBVXzBjbKQebYJBomVEe6Ff2AKte09z4iGfMHBzKnkEVSbEZqSLvnjbXnH-0F6-aBXVsn6KMN2NDiBuwClEoNa1NsejSL9oN2mZNwGSVpXUo-RxgqDALpvpRdj9wrm7geQ_Trp8uo1eKfpJMwB3UZmL",
+          "date": "2026-11-07",
+          "fullContent": "On 6 November 2026, Czech police responded to bomb threats targeting nine flights at Prague's Václav Havel Airport, triggering security inspections across multiple aircraft and disrupting operations at one of Central Europe's busiest hubs. The threats, reported by Nation Path India, prompted a coordinated response from police and airport security personnel, who initiated inspections of the affected flights in line with standard threat-management protocols. The incident unfolded over the course of the day, with authorities working to clear aircraft and verify the safety of passengers and crew before permitting operations to resume.\n\nThe scale of the incident—nine flights simultaneously or successively targeted—marks a significant disruption, requiring the diversion of security resources and the potential delay or cancellation of services. While the source did not specify passenger volumes or the duration of delays, multi-flight threats of this nature typically strain airport screening capacity, gate scheduling, and law enforcement assets, and can ripple through an airline's network for hours. The involvement of Czech police indicates the threats were treated as credible enough to warrant physical inspections rather than remote assessment alone.\n\nTechnical details remain limited in the available reporting: the source did not disclose the method of threat delivery, whether the threats were coordinated, or whether any device was found. The absence of confirmed explosive materials, if sustained, would point toward a hoax or disruption campaign—an increasingly common tactic that imposes real operational and economic costs despite the lack of genuine device.\n\nThe official response centered on police-led inspections and interagency coordination with airport security. For aviation security practitioners, the incident underscores the persistent challenge of bomb-threat management in European aviation, the importance of scalable response protocols for multiple simultaneous threats, and the need for intelligence sharing to identify and attribute threat actors, whether criminally or geopolitically motivated."
+        }
+      ]
     }
   ],
-  "lastProvider": "DeepSeek V4-Flash + Tavily"
+  "lastProvider": "Gemini (2.5 Flash)"
 }
