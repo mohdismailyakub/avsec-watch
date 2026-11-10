@@ -6988,8 +6988,13 @@
       "date": "2026-11-09",
       "briefing": "Tiada perkembangan keselamatan penerbangan yang diterbitkan dalam tetingkap yang diperlukan pada 2026-11-09 08:00 MYT ditemui dalam hasil carian yang disediakan; semua item yang diperoleh adalah bahan latar belakang yang lebih lama. Tema penting terkini kekal sebagai serangan dron di lapangan terbang Leipzig pada Ogos 2026 serta kebimbangan yang lebih luas mengenai counter-UAS dan rantaian bekalan siber.",
       "items": []
+    },
+    {
+      "date": "2026-11-10",
+      "briefing": "Tiada perkembangan keselamatan penerbangan yang benar-benar baharu diterbitkan dalam tempoh yang diperlukan; semua bahan yang diperoleh adalah lebih awal daripada tarikh tutup 2026-11-09 17:00 MYT dan telah pun diliputi. Item di bawah ialah thread AVSEC terkini yang paling signifikan yang diperoleh tetapi harus dianggap sebagai latar belakang, bukan berita terkini.",
+      "items": []
     }
   ],
-  "generatedAt": "2026-11-09T09:00:52.491Z",
+  "generatedAt": "2026-11-10T00:00:55.062Z",
   "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }
