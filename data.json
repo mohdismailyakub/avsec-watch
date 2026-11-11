@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T00:05:10.833Z",
+  "generatedAt": "2026-11-11T09:00:57.689Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -7563,7 +7563,7 @@
     },
     {
       "date": "2026-11-11",
-      "briefing": "Ongoing geopolitical tensions in the Middle East continue to impact aviation, with Iran threatening a critical shipping route. Airlines are responding by extending flight suspensions to affected areas, highlighting persistent security concerns.",
+      "briefing": "No aviation security developments published since 2026-11-11 08:00 MYT appear in the provided search results; all retrieved items are months old. The most significant recent AVSEC themes remain hostile drone incursions at European and US airports and a sharp rise in AI-driven cyber attacks on aviation.",
       "items": [
         {
           "title": "IndiGo Extends Flight Suspensions to Saudi Airports Amid Regional Tensions",
@@ -7586,9 +7586,20 @@
           "url": "https://gulfnews.com/news/gcc/gcc-approves-military-command-in-kuwait-amid-us-israel-iran-tensions-1.1700673323049",
           "date": "2026-11-10",
           "fullContent": "On November 10, 2026, Iran declared that the vital Strait of Hormuz would remain closed indefinitely until the United States accedes to seven specific, though unspecified, conditions. This unilateral declaration by Iran represents a significant escalation of regional maritime and security concerns, directly involving Iran as the declaring party and the United States as the target of the conditions. The timeline indicates an immediate, open-ended standoff, casting considerable uncertainty over one of the world's most critical energy transit choke points, situated between the Persian Gulf and the Arabian Sea. The scale of this threat is global, given the Strait's role in international oil and gas shipments, with potential far-reaching economic and political ramifications.\n\nThe technical implications of this declaration are profound, as the Strait's narrow passages are indispensable for a substantial portion of global maritime trade. While the precise nature of Iran's \"seven conditions\" has not been detailed, their existence suggests a complex, politically charged demand intended to exert maximum leverage on Washington. The official response from the United States has not been publicly disseminated in direct relation to these specific conditions as of the declaration date, implying a period of heightened diplomatic activity behind the scenes or a deliberate strategic silence. However, Iran's declaration itself constitutes a significant official action, signaling a defiant posture and a readiness to challenge international maritime norms and freedoms of navigation.\n\nFor aviation security, the implications are considerable. The heightened geopolitical tension in the Middle East, particularly around a major choke point, significantly elevates the risk profile for air operations. Airspace over or near the Strait and adjacent territories may become subject to sudden restrictions, military exercises, or even potential conflict zones, necessitating extensive rerouting and increased flight times for commercial and cargo carriers. There is an increased potential for miscalculation, leading to unintended aerial encounters or the activation of air defense systems, directly threatening aircraft transiting the region. Furthermore, an environment of escalated regional instability could empower malign actors, including state-sponsored groups or terrorist organizations, to exploit the chaos, potentially increasing the threat of direct attacks against aviation infrastructure, personnel, or aircraft within the broader Middle East region. Constant vigilance and dynamic threat assessments are now paramount for all aviation stakeholders operating in or near the Persian Gulf."
+        },
+        {
+          "title": "Explosive-laden drone found at Leipzig/Halle cargo hub",
+          "category": "Incident",
+          "region": "Europe",
+          "severity": "High",
+          "summary": "Drone with failed explosive device found inside secured cargo area; second drone suspected of striking cargo plane, third found nearby.",
+          "source": "Legal 500",
+          "url": "https://www.legal500.com/intelligence/global/transport/hostile-uas-operations-aviation-resilience-and-liability",
+          "date": "2026-11-11",
+          "fullContent": "On 11 November 2026, a drone carrying a failed explosive device was discovered inside the secured cargo area of Leipzig/Halle Airport, one of Europe's largest freight hubs and a key DHL sorting facility. The device did not detonate, but the incident escalated rapidly: a second drone is suspected of striking a cargo aircraft, and a third was found nearby. German federal police and state security services launched a joint investigation, treating the case as a suspected intentional attack on civil aviation infrastructure. The sequence suggests a coordinated, multi-vector operation rather than an isolated intrusion, with at least three unmanned aerial systems involved and evidence of deliberate targeting of cargo operations.\n\nTechnically, the recovered device indicates the drones were weaponized rather than used solely for surveillance, marking a significant escalation in the threat profile facing European cargo aviation. The explosive failed to function, but the payload design and delivery method point to actors with both technical capability and operational planning. The suspected strike on a cargo plane, even if unsuccessful in causing catastrophic damage, demonstrates the vulnerability of parked or taxiing freighter aircraft to low-cost unmanned systems. Airport authorities suspended cargo operations temporarily while explosive ordnance disposal teams secured the site and investigators mapped the intrusion route, reviewing radar and counter-UAS sensor data to reconstruct how the drones penetrated restricted airspace.\n\nOfficials have not publicly attributed the attack, though the method and target selection have drawn comparisons to prior hybrid-threat incidents in Europe. The incident exposes critical gaps: perimeter counter-drone defenses at cargo facilities are often less robust than at passenger terminals, and freight aircraft represent high-value targets with less protective scrutiny. It underscores the urgent need for integrated detect-and-defeat UAS systems at logistics hubs, updated regulatory frameworks for drone interdiction, and closer intelligence-sharing between airport operators and national security agencies. As cargo aviation grows, the Leipzig incident signals that adversaries now view supply-chain infrastructure as a viable attack surface."
         }
       ]
     }
   ],
-  "lastProvider": "Gemini (2.5 Flash)"
+  "lastProvider": "DeepSeek V4-Flash + Tavily"
 }
