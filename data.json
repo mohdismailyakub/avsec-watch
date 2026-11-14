@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T09:00:55.463Z",
+  "generatedAt": "2026-11-14T00:00:53.689Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -7675,6 +7675,11 @@
     {
       "date": "2026-11-13",
       "briefing": "No genuinely fresh aviation security developments from the last 12 hours appear in these search results; the most recent items date from September 2026 or earlier. The dominant themes remain hostile drone activity near airports and escalating cyber/supply-chain attacks on aviation, with regulators urging stronger state commitments and national safeguards.",
+      "items": []
+    },
+    {
+      "date": "2026-11-14",
+      "briefing": "No aviation security developments published since 2026-11-13 17:00 MYT appear in the provided search results, which largely cover older events from mid-2026. The most notable recent AVSEC themes remain hostile drone activity at European cargo hubs and a surge in aviation-targeted cyber threats.",
       "items": []
     }
   ],
