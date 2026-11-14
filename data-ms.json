@@ -7179,10 +7179,22 @@
     },
     {
       "date": "2026-11-14",
-      "briefing": "Tiada perkembangan keselamatan penerbangan yang diterbitkan sejak 2026-11-13 17:00 MYT muncul dalam hasil carian yang diberikan, yang sebahagian besarnya meliputi peristiwa lama dari pertengahan 2026. Tema AVSEC terkini yang paling ketara kekal sebagai aktiviti dron bermusuhan di hab kargo Eropah dan lonjakan ancaman siber yang menyasarkan penerbangan.",
-      "items": []
+      "briefing": "Satu gangguan telekomunikasi utama menyebabkan penghentian penerbangan seluruh negara di seluruh United States pada 13 November, mempengaruhi ribuan penerbangan, dengan pihak berkuasa melancarkan siasatan terhadap kegagalan sistem tersebut. Walaupun laporan awal menolak cyberattack sebagai punca, mengaitkannya dengan peralatan usang yang dibebani oleh teknologi baharu, pihak berkuasa tidak menolak sebarang kemungkinan semasa operasi pulih perlahan-lahan.",
+      "items": [
+        {
+          "title": "Penghentian Penerbangan Seluruh Negara US Disebabkan Gangguan Telekomunikasi",
+          "category": "Incident",
+          "region": "North America",
+          "severity": "High",
+          "summary": "Satu gangguan telekomunikasi utama menyebabkan penghentian penerbangan seluruh negara di seluruh United States pada 13 November, mempengaruhi ribuan penerbangan sebelum ia ditarik balik. Siasatan sedang dijalankan, dengan pihak berkuasa menyatakan peralatan usang yang dibebani oleh teknologi baharu.",
+          "source": "Multiple (The Hindu, The Guardian, Anadolu Ajansı, Rediff, FITSNews)",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGHt1KL--UgnZQVVakmnTltcnl0Oehc3NmELOorlsm71_ObuiEK5rxWGCrbLL8G2xBjE6z2vxPIdKNkwYeDpL-7yKYWVe4gybmqxRtmlYvuvyHvANdqeuYz1C_VKlBr4yQ8mR6-_z2oVANaZQ1_izW4lm-ZsptoHJAPgG5R5ZupFxYkGDB7r15Ely0s4wRS52XdUmi5I7sjbWR4bwUrsPtWfK99OF59ku3Wq4W_xLY4YO3C6jlnkghjRKSGZGrITlynihElxosEEDIIe_Y=",
+          "date": "2026-11-14",
+          "fullContent": "Pada 13 November 2026, Amerika Syarikat mengalami pemberhentian penerbangan seluruh negara yang belum pernah berlaku, yang secara berkesan menghentikan semua trafik udara domestik. Insiden kritikal ini, yang berlarutan selama beberapa jam sebelum ditarik balik pada hari yang sama, melibatkan seluruh ekosistem penerbangan Amerika Syarikat, termasuk Federal Aviation Administration (FAA), syarikat penerbangan, lapangan terbang, dan jutaan penumpang. Ribuan penerbangan terjejas, menyebabkan gangguan operasi yang meluas dan impak ekonomi yang signifikan di seluruh rantau Amerika Utara.\n\nPunca utama dikenal pasti sebagai gangguan telekomunikasi utama yang menjejaskan sistem kritikal yang menyokong pengurusan trafik udara. Kenyataan rasmi menunjukkan insiden itu berpunca daripada peralatan lama yang dibebani oleh integrasi teknologi baharu, mencadangkan kelemahan infrastruktur yang bersifat sistemik dan bukannya serangan siber langsung atau tindakan berniat jahat. Siasatan masih diteruskan untuk menentukan dengan tepat punca kegagalan dan mengenal pasti strategi mitigasi yang perlu. Ini menunjukkan kegagalan kebergantungan infrastruktur kritikal yang memerlukan penutupan segera di seluruh sistem.\n\nDari perspektif keselamatan penerbangan, insiden ini menggariskan kelemahan mendalam perjalanan udara moden terhadap kegagalan infrastruktur bukan berniat jahat. Walaupun bukan pelanggaran keselamatan langsung, kekacauan meluas dan lumpuh operasi menunjukkan bagaimana gangguan dalam telekomunikasi kritikal boleh menjejaskan dengan teruk keupayaan untuk mengurus ruang udara negara dengan selamat dan cekap. Ia menyerlahkan permukaan serangan yang signifikan untuk pelaku berniat jahat yang berpotensi menyasarkan rangkaian komunikasi penting, mendedahkan keperluan kritikal untuk daya tahan yang dipertingkatkan, redundansi, dan langkah keselamatan siber yang mantap dalam infrastruktur penerbangan negara yang lebih luas untuk mencegah insiden serupa, tanpa mengira asal-usulnya. Peristiwa itu menjadi peringatan jelas bahawa AVSEC yang mantap bergantung bukan sahaja pada pertahanan fizikal dan siber terhadap ancaman langsung, tetapi juga pada integriti yang tidak berbelah bahagi sistem sokongan operasi yang mendasari."
+        }
+      ]
     }
   ],
-  "generatedAt": "2026-11-14T00:00:53.689Z",
-  "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
+  "generatedAt": "2026-11-14T09:01:56.387Z",
+  "lastProvider": "Gemini (2.5 Flash) (terjemahan)"
 }

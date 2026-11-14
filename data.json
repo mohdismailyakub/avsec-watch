@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T00:00:53.689Z",
+  "generatedAt": "2026-11-14T09:01:56.387Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -7679,9 +7679,21 @@
     },
     {
       "date": "2026-11-14",
-      "briefing": "No aviation security developments published since 2026-11-13 17:00 MYT appear in the provided search results, which largely cover older events from mid-2026. The most notable recent AVSEC themes remain hostile drone activity at European cargo hubs and a surge in aviation-targeted cyber threats.",
-      "items": []
+      "briefing": "A major telecommunications outage led to a nationwide flight ground stop across the United States on November 13, impacting thousands of flights, with authorities launching investigations into the system failure. While initial reports dismissed cyberattack as the cause, attributing it to outdated equipment overwhelmed by new technology, officials are not ruling out any possibilities as operations slowly recover.",
+      "items": [
+        {
+          "title": "US Nationwide Flight Ground Stop Due to Telecommunications Outage",
+          "category": "Incident",
+          "region": "North America",
+          "severity": "High",
+          "summary": "A major telecommunications outage caused a nationwide ground stop across the United States on November 13, affecting thousands of flights before being lifted. Investigations are ongoing, with officials citing aging equipment overwhelmed by new technology.",
+          "source": "Multiple (The Hindu, The Guardian, Anadolu Ajansı, Rediff, FITSNews)",
+          "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGHt1KL--UgnZQVVakmnTltcnl0Oehc3NmELOorlsm71_ObuiEK5rxWGCrbLL8G2xBjE6z2vxPIdKNkwYeDpL-7yKYWVe4gybmqxRtmlYvuvyHvANdqeuYz1C_VKlBr4yQ8mR6-_z2oVANaZQ1_izW4lm-ZsptoHJAPgG5R5ZupFxYkGDB7r15Ely0s4wRS52XdUmi5I7sjbWR4bwUrsPtWfK99OF59ku3Wq4W_xLY4YO3C6jlnkghjRKSGZGrITlynihElxosEEDIIe_Y=",
+          "date": "2026-11-14",
+          "fullContent": "On November 13, 2026, the United States experienced an unprecedented nationwide flight ground stop, effectively halting all domestic air traffic. This critical incident, which lasted for several hours before being lifted the same day, involved the entire US aviation ecosystem, including the Federal Aviation Administration (FAA), airlines, airports, and millions of passengers. Thousands of flights were affected, causing extensive operational disruption and significant economic impact across the North American region.\n\nThe root cause was identified as a major telecommunications outage impacting critical systems supporting air traffic management. Official statements indicate the incident stemmed from aging equipment being overwhelmed by new technology integrations, suggesting a systemic infrastructure vulnerability rather than a direct cyberattack or malicious act. Investigations remain ongoing to precisely determine the point of failure and identify necessary mitigation strategies. This points to a critical infrastructure dependency failure that necessitated an immediate, system-wide shutdown.\n\nFrom an aviation security perspective, this incident underscores the profound vulnerability of modern air travel to non-malicious infrastructure failures. While not a direct security breach, the widespread chaos and operational paralysis demonstrate how disruptions in critical telecommunications can severely compromise the ability to safely and efficiently manage the national airspace. It highlights a significant attack surface for potential malicious actors targeting essential communication networks, revealing a critical need for enhanced resilience, redundancy, and robust cybersecurity measures within the broader national aviation infrastructure to prevent similar incidents, regardless of their origin. The event serves as a stark reminder that robust AVSEC relies not just on physical and cyber defenses against direct threats, but also on the unwavering integrity of underlying operational support systems."
+        }
+      ]
     }
   ],
-  "lastProvider": "DeepSeek V4-Flash + Tavily"
+  "lastProvider": "Gemini (2.5 Flash)"
 }
