@@ -7193,8 +7193,13 @@
           "fullContent": "Pada 13 November 2026, Amerika Syarikat mengalami pemberhentian penerbangan seluruh negara yang belum pernah berlaku, yang secara berkesan menghentikan semua trafik udara domestik. Insiden kritikal ini, yang berlarutan selama beberapa jam sebelum ditarik balik pada hari yang sama, melibatkan seluruh ekosistem penerbangan Amerika Syarikat, termasuk Federal Aviation Administration (FAA), syarikat penerbangan, lapangan terbang, dan jutaan penumpang. Ribuan penerbangan terjejas, menyebabkan gangguan operasi yang meluas dan impak ekonomi yang signifikan di seluruh rantau Amerika Utara.\n\nPunca utama dikenal pasti sebagai gangguan telekomunikasi utama yang menjejaskan sistem kritikal yang menyokong pengurusan trafik udara. Kenyataan rasmi menunjukkan insiden itu berpunca daripada peralatan lama yang dibebani oleh integrasi teknologi baharu, mencadangkan kelemahan infrastruktur yang bersifat sistemik dan bukannya serangan siber langsung atau tindakan berniat jahat. Siasatan masih diteruskan untuk menentukan dengan tepat punca kegagalan dan mengenal pasti strategi mitigasi yang perlu. Ini menunjukkan kegagalan kebergantungan infrastruktur kritikal yang memerlukan penutupan segera di seluruh sistem.\n\nDari perspektif keselamatan penerbangan, insiden ini menggariskan kelemahan mendalam perjalanan udara moden terhadap kegagalan infrastruktur bukan berniat jahat. Walaupun bukan pelanggaran keselamatan langsung, kekacauan meluas dan lumpuh operasi menunjukkan bagaimana gangguan dalam telekomunikasi kritikal boleh menjejaskan dengan teruk keupayaan untuk mengurus ruang udara negara dengan selamat dan cekap. Ia menyerlahkan permukaan serangan yang signifikan untuk pelaku berniat jahat yang berpotensi menyasarkan rangkaian komunikasi penting, mendedahkan keperluan kritikal untuk daya tahan yang dipertingkatkan, redundansi, dan langkah keselamatan siber yang mantap dalam infrastruktur penerbangan negara yang lebih luas untuk mencegah insiden serupa, tanpa mengira asal-usulnya. Peristiwa itu menjadi peringatan jelas bahawa AVSEC yang mantap bergantung bukan sahaja pada pertahanan fizikal dan siber terhadap ancaman langsung, tetapi juga pada integriti yang tidak berbelah bahagi sistem sokongan operasi yang mendasari."
         }
       ]
+    },
+    {
+      "date": "2026-11-15",
+      "briefing": "Gambaran ancaman AVSEC yang dominan kekal sebagai aktiviti dron musuh dan ransomware yang menyasarkan rantaian bekalan penerbangan, dengan hab kargo Eropah dan penyedia IT syarikat penerbangan paling terdedah. Bagaimanapun, tiada hasil carian membawa cap waktu penerbitan yang boleh disahkan selewat 2026-11-14 17:00 MYT, jadi tiada apa-apa yang layak sebagai baharu untuk kitaran ini.",
+      "items": []
     }
   ],
-  "generatedAt": "2026-11-14T09:01:56.387Z",
-  "lastProvider": "Gemini (2.5 Flash) (terjemahan)"
+  "generatedAt": "2026-11-15T00:05:50.466Z",
+  "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }
