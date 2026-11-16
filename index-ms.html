@@ -306,7 +306,6 @@ Promise.all([
   document.getElementById("feed").innerHTML='<div class="empty">Feed kosong — sila akses melalui pautan Netlify.</div>';
 });
 
-function latest(){return DATA.days&&DATA.days.length?DATA.days[DATA.days.length-1]:null}
 function monthLabel(ym){const p=(ym||"").split("-");return p.length<2?ym:MON[(+p[1])-1]+" '"+p[0].slice(2)}
 function tdot(c){return '<span class="tdot" style="background:'+c+'"></span>'}
 function esc(s){return(s==null?"":(""+s)).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':'&quot;'}[c]))}
