@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T09:08:07.369Z",
+  "generatedAt": "2026-11-17T00:03:11.331Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -7792,7 +7792,12 @@
           "fullContent": "On November 16, 2026, Ukrainian drone attacks targeting Russian industrial sites in the Yaroslavl Region directly resulted in the implementation of significant flight restrictions at a regional airport within the affected area. This incident involved Ukrainian forces conducting the strikes and Russian authorities imposing the airspace limitations to manage the ensuing security situation. The timeline indicates an immediate, cascading effect where military action against ground targets directly impacted civil aviation operations on the same day.\n\nThe scale of this incident, though localized to a single regional airport, represents a tangible disruption to air travel and potentially cargo operations. While the airport itself was not a direct target, the proximity of the industrial sites to controlled airspace, or the potential for drone flight paths and subsequent air defense operations to intersect civilian air corridors, necessitated the flight restrictions. The technical details point to the evolving threat posed by unmanned aerial systems (UAS); even when their primary objective is non-aviation critical infrastructure, their operational footprint can quickly encroach upon civilian airspace, demanding immediate protective measures.\n\nIn response, Russian authorities promptly implemented the flight restrictions, underscoring a proactive stance to mitigate risks to aircraft and passengers. This swift action reflects established protocols for managing airspace during potential security threats or active conflict scenarios. The broader implications for aviation security are profound, emphasizing the critical need for enhanced airspace surveillance and robust Counter-UAS (C-UAS) capabilities around airports and flight paths, particularly in regions adjacent to conflict zones. This incident serves as a stark reminder that the indirect effects of military drone operations can severely impact civil aviation, necessitating dynamic threat assessments and adaptive security protocols to maintain safe and efficient air travel."
         }
       ]
+    },
+    {
+      "date": "2026-11-17",
+      "briefing": "The most significant recent aviation security development is the August 2026 hostile drone incident at Leipzig/Halle Airport, where an explosive-laden drone penetrated a secured cargo area, underscoring the growing UAS threat to European cargo hubs. Cyber threats, supply-chain vulnerabilities, and drone incursions near airports continue to dominate AVSEC risk assessments globally throughout 2026.",
+      "items": []
     }
   ],
-  "lastProvider": "Gemini (2.5 Flash)"
+  "lastProvider": "DeepSeek V4-Flash + Tavily"
 }
