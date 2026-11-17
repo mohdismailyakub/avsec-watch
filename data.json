@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T00:03:11.331Z",
+  "generatedAt": "2026-11-17T09:00:56.326Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -7795,7 +7795,7 @@
     },
     {
       "date": "2026-11-17",
-      "briefing": "The most significant recent aviation security development is the August 2026 hostile drone incident at Leipzig/Halle Airport, where an explosive-laden drone penetrated a secured cargo area, underscoring the growing UAS threat to European cargo hubs. Cyber threats, supply-chain vulnerabilities, and drone incursions near airports continue to dominate AVSEC risk assessments globally throughout 2026.",
+      "briefing": "No aviation security developments published since 2026-11-17 08:00 MYT appear in the provided search results, which instead reference older incidents from mid-2026 and background material. The most significant recent items remain the Leipzig/Halle hostile drone incident and the Collins Aerospace ransomware disruption of European airports.",
       "items": []
     }
   ],
