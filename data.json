@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T00:06:15.159Z",
+  "generatedAt": "2026-11-19T09:00:54.037Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -7861,7 +7861,7 @@
     },
     {
       "date": "2026-11-19",
-      "briefing": "Global aviation security has seen a high-severity incident with a US military aircraft destroyed in an axe attack at an Irish airport. Concurrently, an easyJet flight experienced a bird strike in Europe, and analyses emphasize the evolving nature of threats from drones and perimeter intrusions.",
+      "briefing": "No genuinely fresh aviation security developments published since 08:00 MYT on 2026-11-19 appear in the supplied search results. The most recent relevant material comprises drone-incident reporting and cyber/supply-chain threat analysis from mid-to-late 2026, all of which predates the current briefing window.",
       "items": [
         {
           "title": "EasyJet Flight Returns to Bristol Following Bird Strike",
@@ -7899,5 +7899,5 @@
       ]
     }
   ],
-  "lastProvider": "Gemini (2.5 Flash)"
+  "lastProvider": "DeepSeek V4-Flash + Tavily"
 }
