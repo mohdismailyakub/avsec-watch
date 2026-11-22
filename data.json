@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T09:02:12.585Z",
+  "generatedAt": "2026-11-22T00:01:00.631Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -8107,7 +8107,12 @@
           "fullContent": "On 21 November 2026, aviation security at Sri Guru Ram Dass Jee International Airport in Amritsar, Punjab, was substantially reinforced to facilitate the high-profile movement of jailed Member of Parliament Amritpal Singh, who was permitted temporary release to attend his grandmother's cremation. The operation involved approximately 800 police personnel drawn from Punjab Police and paramilitary units, deployed across the airport terminal, perimeter, access roads, and surrounding approaches. Singh, detained under the National Security Act and held at Dibrugarh Central Jail in Assam, was transported under heavy escort to Punjab for the brief family emergency, with his return journey routed through Amritsar airport. The scale of the deployment—well beyond routine airport policing—reflected the sensitive security profile of the lawmaker, who remains a polarising figure associated with the pro-Khalistan movement, and the anticipated presence of supporters and media at the airport. Technically, the operation would have entailed layered access control, sterilisation of arrival and departure zones, convoy routing coordination with airport operators and the Bureau of Civil Aviation Security, and enhanced screening protocols to prevent weapons or disruptive items entering the terminal environment. Airport authorities and Punjab Police coordinated with central agencies to sequence the movement while minimising disruption to scheduled commercial flights. While no specific threat materialised publicly, the official response underscored the persistent tension between facilitating VIP prisoner movements and maintaining normal airport operations. For aviation security, the incident illustrates the growing frequency of high-risk ground-side security operations at regional Indian airports, the resource burden such deployments impose on airport protection systems, and the need for pre-planned contingency protocols governing escort movements, crowd control, and terminal access when politically sensitive individuals transit civil aviation facilities."
         }
       ]
+    },
+    {
+      "date": "2026-11-22",
+      "briefing": "The dominant AVSEC theme remains unauthorized drone activity disrupting airport operations, with U.S. sightings nearly doubling quarter-over-quarter. Cyber and supply-chain vulnerabilities also persist as elevated concerns for aviation stakeholders.",
+      "items": []
     }
   ],
-  "lastProvider": "Gemini (2.5 Flash)"
+  "lastProvider": "DeepSeek V4-Flash + Tavily"
 }
