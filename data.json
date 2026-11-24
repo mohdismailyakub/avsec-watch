@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T00:05:17.906Z",
+  "generatedAt": "2026-11-24T00:00:54.390Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -8196,7 +8196,12 @@
           "fullContent": "Brussels Airport (BRU) was forced to cancel all flights for November 23, 2026, due to a national trade union strike involving air traffic controllers (ATCs). This incident, reported on November 22, 2026, involved a national trade union whose industrial action rendered the Belgian Air Navigation Service Provider (ANSP) unable to maintain sufficient staffing levels to safely manage airspace and ground operations at a major European hub.\n\nThe strike resulted in a complete operational cessation at BRU for the specified day, significantly impacting thousands of passengers and cargo operations. This forced closure underscores the critical reliance of aviation on human operators for Air Traffic Management (ATM) systems, where insufficient personnel render even advanced technical infrastructure inoperable for safety-critical functions. The official response involved the airport being \"forced\" to cancel flights, indicating a safety-driven decision by airport and ANSP management to prevent unsafe operational conditions.\n\nFrom an aviation security perspective, while not a direct security incident, this widespread operational disruption presents several vulnerabilities. The unexpected cancellation likely led to significant numbers of stranded passengers within the airport terminals, necessitating increased security presence for crowd management and mitigating potential public disorder or frustration that could be exploited. Furthermore, numerous aircraft parked on aprons and stands for an extended period could become targets for unauthorized access or present opportunities for insider threat activity, even if standard security protocols remain in place. The disruption also highlights the need for robust contingency planning to manage security risks associated with non-physical, yet highly impactful, operational disruptions, ensuring cargo security and perimeter integrity are maintained amidst the chaos."
         }
       ]
+    },
+    {
+      "date": "2026-11-24",
+      "briefing": "No fresh aviation security developments were published within the required window since 2026-11-23 17:00 MYT; all retrieved items predate the cutoff and are considered already covered. The current landscape remains dominated by drone incursions at airports and ransomware/supply-chain cyber threats to air navigation infrastructure.",
+      "items": []
     }
   ],
-  "lastProvider": "Gemini (2.5 Flash)"
+  "lastProvider": "DeepSeek V4-Flash + Tavily"
 }
