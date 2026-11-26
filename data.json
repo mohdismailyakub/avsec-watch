@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T09:00:54.174Z",
+  "generatedAt": "2026-11-26T00:00:52.336Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -8272,6 +8272,11 @@
     {
       "date": "2026-11-25",
       "briefing": "The most recent significant aviation security developments center on escalating drone incursions near airports, highlighted by a June 2026 incident at Eastern Iowa Airport and a sharp rise in FAA-reported drone sightings. Cyber supply chain attacks against European airport IT providers and Middle East drone/missile activity also remain prominent AVSEC threats.",
+      "items": []
+    },
+    {
+      "date": "2026-11-26",
+      "briefing": "No genuinely fresh aviation-security developments published after 2026-11-25 17:00 MYT appear in these results; the most recent verifiable items date from August 2026 and earlier. The dominant themes are counter-UAS incidents and airport drone-defense buildouts in Europe and the Middle East, alongside persistent supply-chain cyber/ransomware risk to aviation.",
       "items": []
     }
   ],
