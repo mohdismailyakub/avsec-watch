@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T09:04:10.596Z",
+  "generatedAt": "2026-11-27T00:02:38.860Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -8334,7 +8334,12 @@
           "fullContent": "On November 26, 2026, in the early hours, Sudanese army air defenses successfully intercepted and shot down an FH-95 'enemy drone' operating west of Kadugli in South Kordofan state, as reported by Africa News. This incident involved the Sudanese military and an unidentified adversary utilizing an Unmanned Aerial System (UAS), highlighting ongoing aerial surveillance and conflict dynamics within the region. The swift action by the Sudanese army demonstrates their active air defense posture against unauthorized aerial incursions.\n\nThe FH-95 designation suggests a sophisticated drone model, likely possessing advanced reconnaissance capabilities, and potentially extended range and operational altitudes, consistent with military-grade UAS. While the scale of this particular event involved a single platform, its presence signifies a persistent aerial threat in a volatile conflict zone. The immediate impact is a successful defensive operation by the Sudanese army, demonstrating their capability to counter such threats and reinforcing their territorial air integrity. The official response from the Sudanese army, as indicated by the public announcement of the downing, serves to inform stakeholders and potentially deter further unauthorized drone activity.\n\nFor aviation security, this incident carries significant implications. The proliferation and operational use of advanced UAS, like the FH-95, by state or non-state actors in conflict zones pose tangible risks to regional airspace safety and security. Unauthorized drone operations can create collision hazards with manned civil aircraft, contribute to airspace congestion, or potentially target critical aviation infrastructure. Furthermore, the act of downing a drone can lead to falling debris, and the presence of active air defense systems always introduces an element of risk to legitimate airspace users. This event underscores the urgent need for robust counter-UAS strategies, enhanced airspace situational awareness, and improved intelligence sharing among civil aviation authorities and security agencies to mitigate emerging threats posed by hostile or unidentified drone activity."
         }
       ]
+    },
+    {
+      "date": "2026-11-27",
+      "briefing": "The dominant aviation security theme remains hostile UAS activity around airports, highlighted by the August 2026 explosive drone incident at Leipzig/Halle, while cyber attacks on aviation supply chains continue to disrupt European operations. Regulatory attention is shifting toward counter-UAS guidance and supply-chain resilience, though no genuinely fresh story published since 2026-11-26 17:00 MYT appears in these results.",
+      "items": []
     }
   ],
-  "lastProvider": "Gemini (2.5 Flash)"
+  "lastProvider": "DeepSeek V4-Flash + Tavily"
 }
