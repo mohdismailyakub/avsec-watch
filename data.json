@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T00:02:38.860Z",
+  "generatedAt": "2026-11-27T09:00:52.081Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -8337,7 +8337,7 @@
     },
     {
       "date": "2026-11-27",
-      "briefing": "The dominant aviation security theme remains hostile UAS activity around airports, highlighted by the August 2026 explosive drone incident at Leipzig/Halle, while cyber attacks on aviation supply chains continue to disrupt European operations. Regulatory attention is shifting toward counter-UAS guidance and supply-chain resilience, though no genuinely fresh story published since 2026-11-26 17:00 MYT appears in these results.",
+      "briefing": "No aviation security developments published since 2026-11-27 08:00 MYT appear in the provided search results; all items are undated or clearly earlier (June-August and October 2026). The dominant themes remain rogue-drone incursions near airports and ransomware/supply-chain cyber threats to aviation.",
       "items": []
     }
   ],
