@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-28T00:01:48.859Z",
+  "generatedAt": "2026-11-28T09:03:13.979Z",
   "note": "Seed backfill compiled from major public AVSEC events Jul 2025 - May 2026. Best-effort major-event reconstruction, thinner than the live daily pull. The daily Action accumulates fresh data from here.",
   "days": [
     {
@@ -8342,7 +8342,7 @@
     },
     {
       "date": "2026-11-28",
-      "briefing": "No search result carries a publication timestamp confirming it was released after 2026-11-27 17:00 MYT, so none of the listed developments qualify as fresh for this briefing cycle. The most consequential themes remain hostile UAS activity against European cargo hubs and cyber-supply-chain disruption at major airports, but these appear to be previously covered background items.",
+      "briefing": "No aviation security developments from within the last 24 hours were returned in this search result set; the most recent verifiable items are from earlier in 2026. The dominant threats remain hostile UAS activity at major hubs and supply-chain ransomware targeting shared aviation software vendors.",
       "items": [
         {
           "title": "Explosive-laden drone found in Leipzig/Halle cargo area",

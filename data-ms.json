@@ -7842,7 +7842,7 @@
     },
     {
       "date": "2026-11-28",
-      "briefing": "Tiada hasil carian yang membawa cap masa penerbitan yang mengesahkan ia dikeluarkan selepas 2026-11-27 17:00 MYT, jadi tiada perkembangan tersenarai yang layak sebagai baharu untuk kitaran taklimat ini. Tema paling signifikan kekal aktiviti UAS bermusuhan terhadap hab kargo Eropah dan gangguan rantaian bekalan siber di lapangan terbang utama, tetapi ini kelihatan sebagai perkara latar belakang yang telah diliputi sebelum ini.",
+      "briefing": "Tiada perkembangan keselamatan penerbangan dalam tempoh 24 jam lepas yang dikembalikan dalam set hasil carian ini; item terkini yang boleh disahkan adalah dari awal tahun 2026. Ancaman dominan kekal sebagai aktiviti UAS bermusuhan di hab utama dan ransomware rantaian bekalan yang menyasarkan vendor perisian penerbangan dikongsi.",
       "items": [
         {
           "title": "Dron bermuatan bahan letupan ditemui di kawasan kargo Leipzig/Halle",
@@ -7913,6 +7913,6 @@
       ]
     }
   ],
-  "generatedAt": "2026-11-28T00:01:48.859Z",
+  "generatedAt": "2026-11-28T09:03:13.979Z",
   "lastProvider": "DeepSeek V4-Flash + Tavily (terjemahan)"
 }
